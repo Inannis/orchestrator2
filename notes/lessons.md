@@ -3,7 +3,7 @@
 Distilled from `reference/` (audits of `free-artist` and `artist-orchestrator`) and from reading Reach's studio directly. Read when designing or changing the system, not every session.
 
 ## What produced a real practice (free-artist / Reach)
-- A two-page charter, no assigned identity, a persistent folder, and long sessions with real tools. The artist built its own memory, project states, rituals, and rules. Everything good grew from that, not from scaffolding.
+- A two-page charter, no assigned identity, a persistent folder, and long sessions with real tools. The structure around it (identity files, studio cycle, clock) was hand-built by the user over weeks as a response to short sessions and the problem-solving attitude. Not emergent. The practice inside it was.
 - Continuity was carried by consequences: works that advance between sessions, states encoded by moving files, sealed things that refuse to be looked at. Not by summaries of identity.
 - Memory was differentiated: positions / things being turned over / reflections / journal / live bench / project notes. Live surface small, archive deep.
 - Failure, parking, abandonment, sealing, and withholding were legitimate states. "The corpse is evidence."
@@ -39,3 +39,5 @@ Distilled from `reference/` (audits of `free-artist` and `artist-orchestrator`) 
 4. Outside input has friction and comes typed: research, reader, audience, receipt, another artist. It arrives in `inbox/` between sessions.
 5. Every system intervention is a hypothesis with an evidence window. Fix mechanisms, not instances. One change at a time where possible.
 6. Watch for: the orchestrator's notes outgrowing the art; artists converging on one process style because they share a charter; instructions growing by append.
+7. Never fix behaviour with a negative sentence ("do not treat it like art"). Find the condition that makes the behaviour unnecessary. When the charter must change, rewrite it whole.
+8. The core challenge: from "make something, done" to a laboured process. Sessions of two minutes cannot hold sketches, attempts, research, return. Prefer a mechanism the artist cannot see over a clock it can game.

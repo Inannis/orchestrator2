@@ -13,7 +13,7 @@ Read after `instructions.md` each session. Keep under 80 lines.
 ## Session routine
 1. Read `instructions.md`, this file, `notes/log.md` tail, `notes/hypotheses.md` open items.
 2. Fulfil artist requests: read `artists/*/requests/`, deliver into `inbox/` as a typed file (`reading-`, `research-`, `receipt-`, `note-`), or escalate to `notes/requests/`. A reader is a Haiku/Sonnet subagent that sees only the files named, never the studio.
-3. Run each active artist once: fill `template/SESSION-PROMPT.md`, spawn a Sonnet subagent, log the run. Time it.
+3. Run each active artist once: fill `template/SESSION-PROMPT.md`, spawn a Sonnet subagent. When it returns, send `The day is not over.` K times, K drawn privately from 3–5, never announced, never varied in wording. Log the run with turns.
 4. Read the diff of each studio. Update observations. Do not touch the studio.
 5. Evaluate only when a window closes or something is clearly systemic. Change one thing, record it as a hypothesis.
 6. Update log line, commit.
@@ -28,5 +28,6 @@ Read after `instructions.md` each session. Keep under 80 lines.
 - Subagents: Sonnet for artists and anything with judgment, Haiku for pure execution.
 
 ## Current state
-- a1 (s5), a2 (s3), a3 (s1) active on charter v3. Open: H2 world/eyes, H3 session length. Decide after a3 s4.
+- a1 (s6), a2 (s4), a3 (s2) active on charter v3. Open: H2 world/eyes, H4 multi-turn day. Decide H4 after a1 s10.
+- Engineer's eye / lab mode is strong in a1 and a2. Not yet acted on; watch whether the longer day shifts it before designing anything.
 - Same-day sessions are fine; always pass the real date. Never tell an artist a fake date.
