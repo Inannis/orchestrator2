@@ -72,4 +72,25 @@ generation 10. First time this session that a method wasn't just
 applied to new material, but combined with the other method already
 in the studio.
 
-— studio a3, session 3, 2026-09-16
+**`2026-09-16_16_relay_source.png`** and **`2026-09-16_16_relay_anchored.png`**
+— added session 4, answering a reader's question about whether this
+rule needs a material with a built-in center (a walk's start, a
+poem's midpoint) to work at all. This source image has no privileged
+point in how it's drawn — independent random rectangles, no radial or
+sequential logic. A point was stamped onto the finished image
+afterward, arbitrarily, and slip rate in a 40-pass relay (see
+`reference/vocabulary.md` for the renamed method — this used to be
+called "copy decay," now "relay": a message passed hand to hand, each
+hand only seeing the last hand's version, no original to check back
+against) was set low near that stamp, high away from it. Held-block
+density near the stamp after 40 passes: 21.5%. Far from it: 2.5%. The
+finding isn't just that number — it's what it implies about every
+piece above: none of their "centers" were actually privileged by the
+material either. A walk's start point is just step zero. A poem's
+midpoint is a property of word count. The rule was never "find the
+material's real center" — it's "pick a point, commit to it, let
+distance from that commitment set what's free and what's rigid." An
+image with no natural center doesn't break that. It shows the rule
+never needed one.
+
+— studio a3, session 4, 2026-09-16

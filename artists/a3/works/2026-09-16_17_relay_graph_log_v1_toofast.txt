@@ -1,0 +1,25 @@
+Relay on a graph -- two anchor choices, session 4
+
+graph: Erdos-Renyi, n=79 nodes (largest connected component), edge_p=0.06
+arbitrary anchor: node 0 (degree 3, no regard to centrality)
+hub anchor: node 61 (degree 11, highest in graph)
+passes: 30
+
+hold rate by pass (arbitrary-anchor vs hub-anchor):
+ pass  arbitrary        hub
+    1      0.633      0.570
+    4      0.253      0.316
+    7      0.114      0.165
+   10      0.063      0.101
+   13      0.051      0.051
+   16      0.013      0.038
+   19      0.051      0.025
+   22      0.051      0.038
+   25      0.025      0.000
+   28      0.013      0.013
+
+final hold, arbitrary anchor: 0.025
+final hold, hub anchor:       0.025
+
+arbitrary anchor -- near-anchor hold: 0.000, far-anchor hold: 0.000
+hub anchor       -- near-anchor hold: 0.167, far-anchor hold: 0.000

@@ -24,12 +24,15 @@ You create the system, not the art. You do not give direct instructions via prom
 # 2. Parts of the system (what you have to make and improve gradually)
 a. Your own part: how you organize yourself, tools, logs and data collection for interpretation, evaluation, the process of improving the system – these are the foundation for the system, but also part of it which means you can and must improve them just the same. In fact, since they run everything else, their health is essential for everything else to work well. 
 b. The artists: 
-
-    Use Haiku or Sonnet Subagents as artists, that each get their own folder to work from. Run, Analyze and improve them over time until they fill the conditions of the `/Artistic-Practice-Definition.md`, and after that go beyond and take real artists as example of what is possible and desired (in general, not in principle: e.g. Christo wrapping buildings is desireable as conceptual, large scale performance capability involving a whole team, not a requirement to wrap buildings in the same way) 
-    You may create and evolve up to 3 artists at a time to a. see if behaviour is systemic or individual chance b. clone an artist to test different hypotheses in parallel. If one artist does not work very well, and it is better to re-start it rather than iterating on it, you can phase it out and start a new one. If you do so, write a post-mortem report in `/notes/post-mortems`. 
+Use Haiku or Sonnet Subagents as artists, that each get their own folder to work from. Run, Analyze and improve them over time until they fill the conditions of the `/Artistic-Practice-Definition.md`, and after that go beyond and take real artists as example of what is possible and desired (in general, not in principle: e.g. Christo wrapping buildings is desireable as conceptual, large scale performance capability involving a whole team, not a requirement to wrap buildings in the same way) 
+You may create and evolve up to 6 artists at a time to a. see if behaviour is systemic or individual chance b. clone an artist to test different hypotheses in parallel. You may run sessions of maximum 3 of them in parallel. If one artist does not work very well, and it is better to re-start it rather than iterating on it, you can phase it out and start a new one. If you do so, write a post-mortem report in `/notes/post-mortems`. 
 
 The artists need ways to carry their practice forward: 
-## 2.1. Evolving Identity: How their identity is organized and developed. Desires, fears, a worldview, core questions, intellectual frameworks, interests, subject matter, references, taste and preferences, opinions, habits. The identity must not be pre-defined at the beginning, but emerge and evolve from the practice. It must be able to solidify over time and be consistent, but never completely static. 
+## 2.1. Evolving Identity
+
+How their identity is organized and developed. Desires, fears, a worldview, core questions, intellectual frameworks, interests, subject matter, references, taste and preferences, opinions, habits. The identity must not be pre-defined at the beginning, but emerge and evolve from the practice. It must be able to solidify over time and be consistent, but never completely static. 
+
+
 
 It must at least involve: 
 2.2. Memory and intellectual development
