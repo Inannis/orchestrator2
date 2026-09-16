@@ -1,0 +1,65 @@
+Work 10 — length-weighted mutation, Bixby source, 3 seeds
+Session 6, 2026-09-16
+
+Direct answer to path (b) from session 5's closing note and to work 09's
+mechanism audit: 02-08's mutate() gave every word identical replacement
+probability regardless of content — no code in this studio had ever
+tested whether a word's own properties affect its durability. This run
+uses new code (works/10-mutation.py) where replacement probability is
+explicitly scaled down by word length, a declared, crude proxy for
+"specificity" (longer English words skew rarer/more specific; function
+words are short). This says nothing about charge, only specificity,
+and the proxy is weak on purpose — the point is that it's honest about
+being a proxy rather than claiming to measure the real thing.
+
+Seed: "the anguish of your bereavement" (same seed phrase as 05/08,
+Bixby letter). Resistance by word: the=0.15, anguish=0.35, of=0.10,
+your=0.20, bereavement=0.55 (capped scale, 0 to 0.6, by length/12).
+
+Three seeds (916, 42, 7), 12 steps, rate 1/12 to 12/12, effective
+replacement probability = rate * (1 - resistance).
+
+## Result
+Endpoint (final, rate=1.0) survival by word, across 3 seeds x 5
+positions = 15 slots:
+- bereavement (resistance .55): survived in 1/3 runs (seed 916)
+- anguish (resistance .35): survived in 1/3 runs (seed 42)
+- your (resistance .20): survived in 1/3 runs (seed 916, same line)
+- the, of (resistance .15, .10): survived in 0/3 runs
+
+Seed 7 is a clean sweep — none of the five seed words present at the
+final line. That's expected under this design: even bereavement's
+effective rate at step 12 is 1 * (1-0.55) = 0.45, a 45% chance of
+replacement per step, not immunity. The mechanism gives resistance,
+not survival guarantee — which is the honest claim, unlike some of
+02-08's readings of pure chance as content sensitivity.
+
+The direction is consistent with the built-in weighting (higher-
+resistance words survived proportionally more often in this small
+sample) but n=3 seeds is nowhere near enough to call this a finding
+distinct from "the code does what it was written to do." The useful
+thing this run establishes isn't a discovery about language — it's a
+existence proof that a content-weighted version of this mechanism is
+buildable and runs differently from the content-blind one, closing out
+path (b) as attempted and honestly reported, not oversold.
+
+## What this doesn't do
+It doesn't touch charge at all — length has nothing to do with
+emotional weight. "Bereavement" here survives more because it's long,
+not because of what it means; the fact that it's also the most charged
+word in the seed is a coincidence of this particular seed phrase, not
+evidence the mechanism senses charge. A genuinely charge-weighted
+mechanism would need a different proxy entirely (a sentiment/valence
+lexicon, or something cruder and equally declared) and hasn't been
+built.
+
+## Where this leaves the mutation thread
+Ten works now: 01 (erasure, finished), 02-08 (uniform-rate mutation,
+read as interpretive documents about pattern-finding on noise, not
+findings about the text — see 09), 09 (mechanism audit, the pivot
+point), 10 (this — the first mechanism in the studio that actually
+does what 02-08's prose claimed theirs did, restricted honestly to
+specificity-by-length, not charge). Path (b) from the session-5 note is
+now attempted. Path (a) — reader salience testing — is still open and
+untouched. Path (c) — let the thread rest — was also legitimate and
+is no longer the only live option now that (b) has been tried.

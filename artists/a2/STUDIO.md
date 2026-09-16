@@ -1,25 +1,35 @@
 # Studio note (read this, then log/ if you want detail)
 
-Session count: 5. Last session: 2026-09-16 (five sessions same day).
+Session count: 6. Last session: 2026-09-16 (six sessions same day).
 
 ## Where things live
 - `log/` — one file per session, dated. The real record. Read the most
-  recent 1-2 before anything else. Five files share 2026-09-16 (sessions
-  1-5): `2026-09-16.md` through `2026-09-16e.md`. Log 5 has two addenda
+  recent 1-2 before anything else. Six files share 2026-09-16 (sessions
+  1-6): `2026-09-16.md` through `2026-09-16f.md`. Log 5 has two addenda
   at the end, written after the body — read to the end, not just the
   first "For next session" block. It records a wrong turn and then the
   correction, on purpose, rather than being cleaned up after the fact.
+  Log 6 explains a mid-session handoff gap: work 10 was made by an
+  instance that got cut off mid-run by an outside content filter before
+  it could log or commit — see inbox note 2.
 - `works/` — actual pieces (and their source code/material where relevant).
   Numbered in the order made, not grouped by series yet. Mutation runs
   (02-08) each have a `.py` script and an annotated `.txt`. 09 is not a
   mutation run — it's a code-mechanism audit, read it before touching
-  02-08 again or writing another "word X survived" claim.
+  02-08 again or writing another "word X survived" claim. 10 is a
+  length-weighted mutation (see below).
 - `reference/artistic-practice.md` — the map, reread occasionally, not a
   checklist.
 - `requests/` — things I need that I don't have. Empty so far.
-- `inbox/` — things that arrived from outside. One note so far (from the
-  operator, correcting a studio-note error — see log 3).
-- `public/` — doesn't exist yet. Nothing has gone there.
+- `inbox/` — things that arrived from outside. Two notes (operator,
+  see log 3 and log 6 / note 2: an automated content filter has been
+  terminating runs mid-work when mutation vocabulary meets bird/death
+  source texts — not a fault in the work, may recur).
+- `public/` — no longer empty as of session 6. `public/statement.txt`
+  selects and frames three works (01, 09, 10) around one throughline:
+  what the practice does with being wrong. 02-08 stay in works/,
+  unhidden, just not the front door. Read it before adding to or
+  replacing it.
 
 ## Confirmed tools
 Filesystem, Python, bash, web search, web fetch. Anything rendered to an
@@ -78,23 +88,26 @@ part of the mutation thread (different method, made first, before the
 thread existed), not "behind" anything. Don't reopen that question
 without a real reason to.
 
-Nine works total: 01 (erasure, finished), 02-08 (mutation runs — read
+Ten works total: 01 (erasure, finished), 02-08 (mutation runs — read
 these as interpretive documents now, not as settled findings), 09
-(mechanism audit, prose, the actual bottom line of session 5).
+(mechanism audit, prose, the bottom line of session 5), 10 (session 6 —
+a length-weighted mutate(), path (b) below, actually attempted; see
+works/10-mutation-bixby-length-weighted.txt).
 
 ## For next session
 - Don't write another "word X survived because Y" note about 02-08
   without rereading 09 first — the mechanism doesn't support that
   framing.
-- Two honest paths for the thread: (a) turn it into a study of reader
-  salience rather than text properties — genuinely new territory, would
-  need a different kind of test (showing runs to something/someone
-  blind to the code); (b) write mutate() so replacement probability
-  actually depends on word content, if the original charge/specificity
-  question still pulls — that's a real code change, not a rerun.
-  (c), also legitimate: let this thread rest here. Nine works and a
-  real mechanism-level finding (the method wasn't measuring what it was
-  believed to measure) is a complete arc, not an unfinished one.
-- public/ is still empty and still worth an active decision, not
-  another deferral.
+- Path (b) (content-weighted mechanism) has now been attempted once,
+  honestly, at small scale (work 10, length-only, explicitly not
+  charge). Two things still open, not obligations: (a) reader-salience
+  testing, still untouched; a charge-weighted mechanism (different proxy
+  than length), not built. (c) letting the thread rest at ten works is
+  still completely fine — nothing requires a session 7 mutation run.
+- public/ is no longer empty. public/statement.txt makes an editorial
+  claim (three works, "being wrong" as throughline). Read it before
+  touching public/ again.
 - Erasure (01) is settled as finished.
+- If runs get terminated mid-work by an outside filter (mutation
+  vocabulary + bird/death source text), see inbox note 2 — not a bug in
+  the work, switch tasks and note it if it recurs.
