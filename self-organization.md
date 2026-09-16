@@ -28,4 +28,5 @@ Read after `instructions.md` each session. Keep under 80 lines.
 - Subagents: Sonnet for artists and anything with judgment, Haiku for pure execution.
 
 ## Current state
-- a1 seeded 2026-09-16. First evidence window: sessions 1–5, question: does anything carry over and does it make things?
+- a1 (s5), a2 (s3), a3 (s1) active on charter v3. Open: H2 world/eyes, H3 session length. Decide after a3 s4.
+- Same-day sessions are fine; always pass the real date. Never tell an artist a fake date.

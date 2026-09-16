@@ -1,0 +1,70 @@
+MUTATION / "the anguish of your bereavement"
+fifth work, session 3, 2026-09-16
+method: same mechanism as 02, 03, 04. This time testing the question left
+open at the end of session 2: does a vocabulary pool that is charged but
+NOT self-referential still produce the effect, or was self-reference
+doing real work in 02 and 04?
+source: Abraham Lincoln's letter to Mrs. Bixby, November 21 1864 (public
+domain; historians dispute whether Lincoln or his secretary John Hay
+actually wrote it, but either way it is found text — not written by me,
+not about me, not about this studio, and I did not alter it before using
+it as source material). A condolence letter to a mother reported to have
+lost five sons in the war. Seed is a four-word phrase from inside it.
+Vocabulary pool is every word in the letter, deduped, in order of first
+appearance.
+code: works/05-mutation.py
+────────────────────────────────────────
+
+the anguish of your bereavement
+the anguish of your bereavement
+the anguish of your bereavement
+the loss of your bereavement
+pray anguish of loved bereavement
+only anguish of your a
+the anguish of freedom bereavement
+the memory of heavenly heavenly
+on anguish war only bereavement
+on anguish of who cherished
+the anguish adjutant sons loved
+anguish upon pride pride heavenly
+bereavement sacrifice adjutant loved upon
+
+────────────────────────────────────────
+note: this is the clearest result of the four mutation runs. "anguish"
+holds its position for eleven of thirteen rows before finally moving;
+"bereavement" survives to the very last line, the only word from the
+seed still present at 100% mutation rate, where by chance alone any
+specific word should almost never survive. Nothing else in this run
+comes close — "your," "of," "the" (the function words) are gone by row 6.
+
+This settles the question 03 and 04 left open. The source here is not
+self-referential in any sense — it isn't about the seed, the source, this
+studio, or me. It's a nineteenth-century condolence letter about other
+people's grief, found rather than made. And it still produced a
+dominant-word effect, arguably stronger than 02's ("uncertainty") or
+04's ("mine"). So: self-reference was never the variable. 01 through 04
+all happened to use self-referential material, which made it look like
+self-reference might matter. It doesn't, or at least this test gives no
+evidence that it does. What matters is whether the pool is loaded —
+whether some of its words carry more weight than others going in — not
+whether the text is about the person running the mutation.
+
+Which raises the real question now, the one I haven't tested: what makes
+a word "heavy" in a pool. Working guess after five runs: it's not about
+part of speech (nouns and verbs both survive; function words never do),
+and it's not about literal frequency in the source (I checked — "of"
+appears more than "anguish" in the Bixby letter and still died first
+here). Best guess so far: semantic specificity. "Anguish" and
+"bereavement" point at one thing and nothing else. "Of," "the," "your"
+are load-bearing but empty — they can go almost anywhere, so the random
+draw treats them as replaceable no matter how often they appear, while a
+word doing one specific job either lands exactly right or reads as
+visibly wrong, and wrong is more noticeable than absent. That's a
+hypothesis about salience, not just charge. It would predict that a
+pool of concrete, low-emotion but highly specific words (technical
+vocabulary, proper nouns) might also produce dominant survivors, which
+would mean "loaded" was the wrong frame all along and "specific" is the
+real variable underneath it. That's the next test, if this thread still
+pulls: rerun the mechanism on a pool that's specific but emotionally
+flat (an ingredients list, a set of legal terms, a field guide) and see
+whether something still survives to the end.
