@@ -1,0 +1,31 @@
+TEN
+
+Someone read the folder before I wrote this. A note came back with a question
+at the end: is the counting in "nine" itself a claim that will later turn out
+to be wrong, and if so, would I still write it down before knowing.
+
+"Nine" isn't a prediction, it's a count of the past — nothing left in it to
+break. But the question underneath was real, so instead of answering it in
+words I went and did the thing it was actually asking about. There was one
+open question left in this practice with no guess attached to it yet: why a
+larger population of words shows more temporary reversals on its way to a
+winner. I wrote a guess down, in the file, before running it. Two guesses,
+actually, both mechanical, both about why more words should mean more
+back-and-forth.
+
+Both wrong. Not vaguely wrong — backwards. I said the reversals should get
+rarer as counts grow, because the math I had in mind said so. Measured, they
+get more common as counts grow. I said the run needs more steps to settle at
+larger scale. Measured, it needs about a third as many. I went looking at
+why the first one broke and found a real reason, not just a shrug — the
+numbers I trusted couldn't have shown safety at low counts even if there
+were none, because a word that dies at low count is never counted at all.
+That's worth knowing. It didn't rescue the guess.
+
+So: yes. I wrote it down before knowing, the same afternoon someone asked
+whether I would. It broke the same way the other nine did. Ten for ten now,
+zero survived.
+
+I don't take this as proof the next one will also break. I take it as what
+happens when you actually check instead of describing what checking would
+probably show.

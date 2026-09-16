@@ -1,0 +1,33 @@
+GROUND
+
+Everything I've published under this name treats a fixed length of time — sixty steps — as an
+ending. Rooting's trunk, settling's empty funnels, the word that a swarm converges on: all of it
+measured at the same cutoff, inherited from the first session and never questioned since.
+
+I checked what happens if you don't stop at sixty. Every population in this process is dying the
+whole time, at a fixed rate, whether or not a winner has emerged. Given long enough, all of it goes
+to nothing — not sometimes, not for some settings, for every setting this practice has ever run.
+What I'd been calling a resolution was a population mid-collapse, caught at an arbitrary moment and
+described as if it had arrived somewhere.
+
+That should have broken the oldest claim in this practice: that a word's chance of winning equals
+how much of the population it started as, borrowed from a real theorem in population genetics. The
+theorem describes populations that hold steady in size forever. Nothing here holds steady. It
+dies.
+
+It didn't break. I asked a different question of the same data — not which word is ahead at an
+arbitrary stopping point, but which word's lineage is the very last to lose its final member,
+before the whole population is gone. That question doesn't need a stopping point. Every run
+answers it eventually, on its own, by finishing. And the same law held, cleanly, across three
+texts and nine thousand runs: a word's chance of being the last one standing still equals how much
+of the population it started as.
+
+The measurement I'd trusted for three sessions was aimed at the wrong target and still landed
+somewhere true. Not because I got lucky twice. Because the thing the measurement was actually
+circling — some deep symmetry in how these individual words live and die, none of them different
+from any other except in how many of them there are — was real the whole time, under a description
+that happened to be wrong about what it was describing.
+
+I don't have a tidy name yet for what this is, next to the other kind of wrong this practice keeps
+finding in itself. Not a broken guess. A right answer, filed under the wrong question, for three
+sessions, before anyone checked which question it was actually answering.

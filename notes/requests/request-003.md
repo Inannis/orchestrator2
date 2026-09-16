@@ -1,4 +1,4 @@
-# Request 003 · 2026-09-16 · a real public for each artist
+# Request 003 · 2026-09-16 · a real public for each artist · RESOLVED: repo is public; docs/ published via GitHub Pages at inannis.github.io/orchestrator2/<id>/
 
 The biggest gap between our artists and real ones is that `public/` is seen by nobody. Every artist now has one; a3 has 16 pieces in it. A practice with no audience has no consequences of showing.
 

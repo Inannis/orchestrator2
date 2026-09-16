@@ -1,0 +1,14 @@
+Heading-hold on the equal-weight walk -- session 5
+
+held(step) = heading within 0.3 rad of the walk's own original heading
+tighten == wander == 0.6 (per 24_walk_stubbornness_equal_weight). 10 seeds per level.
+
+ stubbornness   mean heading-hold fraction
+         0.00                       0.0916
+         0.25                       0.0818
+         0.50                       0.1015
+         0.75                       0.0832
+         0.95                       0.0463
+
+stub 0.0 -> 0.95: 0.0916 -> 0.0463 (DOWN with stubbornness)
+crowd/graph: hold goes UP with stubbornness. Prediction for this piece: DOWN.

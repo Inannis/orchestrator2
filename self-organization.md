@@ -16,7 +16,7 @@ Read after `instructions.md` each session. Keep under 80 lines.
 3. Run each active artist once: fill `template/SESSION-PROMPT.md`, spawn a Sonnet subagent. When it returns, send `The day is not over.` K times, K drawn privately from 3–5, never announced, never varied in wording. Log the run with turns.
 4. Read the diff of each studio. Update observations. Do not touch the studio.
 5. Evaluate only when a window closes or something is clearly systemic. Change one thing, record it as a hypothesis.
-6. Update log line, commit.
+6. `python tools/publish.py`, commit, push (Pages). Update log line.
 
 ## Rules for myself
 - Filter kills ([bio]): first time, operator note asking the artist to find its own words. Then retry once. If it persists, move the artist to Haiku or phase it out.
@@ -30,7 +30,7 @@ Read after `instructions.md` each session. Keep under 80 lines.
 
 ## Current state
 - Active (6): a1 s10 v3 control; a3 s6 v3→v4 (H7); a5, a6 s2 v4 empty room (H6); a7, a8 s1 v4 furnished room (H8). Two rounds of three per orchestrator session. Open: H5, H6, H7, H8. Next: apply H9 (world-knock nudge) to a5, a6 as an arm.
-- Seeding default now: encounter with p=1 before session 1.
+- Seeding default now: encounter with p=1 before session 1; replace `{ID}` in the new charter with the studio id.
 - notes/gap.md is the standing comparison with real artists; rewrite it each session.
 - request-002 (a body to walk a3's score) is with the user. a2 phased out s6 (filter kills + convergence), see post-mortem. Open: H2 world/eyes, H4 multi-turn day. Decide H4 after a1 s10.
 - Artists may run git on their own folder; that is fine. Never commit while an artist turn is running.

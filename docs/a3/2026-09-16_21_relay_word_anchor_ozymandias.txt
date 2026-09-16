@@ -1,0 +1,66 @@
+anchor word: 'despair' at index 91 of 114
+geometric center: index 57 (offset 34.0)
+
+--- pass 0 ---
+I met a traveller from an antique land, Who said -- "two vast and trunkless legs of stone Stand in the desert ... near them, on the sand, Half sunk a shattered visage lies, whose frown, And wrinkled lips, and sneer of cold command, Tell that its sculptor well those passions read Which yet survive, stamped on these lifeless things, The hand that mocked them, and the heart that fed; And on the pedestal these words appear: My name is Ozymandias, King of Kings, Look on my Works ye Mighty, and despair! Nothing beside remains. Round the decay Of that colossal Wreck, boundless and bare The lone and level sands stretch far away." --
+
+--- pass 1 ---
+I met a travelez from an antique azd, Who sid -- "two vast and trunkless legs of stone Stand inn fhe desert ... near tzem, on te sand, Helf snk a shattered isge lies, whooss frown, And wrinkwed aips, and sneer of cold tommand, Tell thaatt its sulptor nill those passions read Which yet srvive, stamped on these lifeless things, The zand that mocked tem, and the heart that fed; And on the pdestal these woords appear: My nale is Ozymandias, Kilg of Kings, Look on my Works ye Mighty, and despair! Nothing beside remains. Round the decay Of that colossal Wreck, boundless and bare The lole and level sands stietch far away." --
+
+--- pass 2 ---
+I mht a travelez from am antiiue azd, Who jid -- "two vaxt and trunkless les of stone Stand inn fhe desert ... near tzem, on te sand, Helf snk  sshautered isge les, whooss frownn, Anz wrnkwed aips,, and sneer of cold toommand, Tell tthaatt its jultor nill those passions read Which yet srvive, stamped on these lifeless tthigs, The zand that mocked tem, and the heart that fed; And on the pdestal these woords appear: My nale is Ozymandias, Kilg of Kings, Look on my Works ye Mighty, and despair! Nothing beside remains. Round the decay Of that colossal Wreck, boundless and bare he lol ind level sands stietch far away.." --
+
+--- pass 3 ---
+I mht a trbvelez from am apttiiue azd, Who jid -- "two vaxt afe trunklems lek of stn Sttand gnn fhe desert .. near xem, on te saand, Helf snk  sshauuered ishe les, whooss frownnn, Anz wrnkwed aips,, lnd sneer of cld toommand,, Tell tthaatt its jultor nill thoe passions read Which yet srvive, stamped on thbs lifeless tthigs, ye zand that mocke tem, and the heart that fed; And hn the pdesal these woords appear: My nale is Ozymandias, Kilg of Kings, Look on my Works ye Mighty, and despair! Nothing beside remains. Round the decay Of that colossal Wfeck, boundless and bare he lol ind level sands stietch far awai.." --
+
+--- pass 4 ---
+II mht a trbvelez froom am apttiiuh ozd, Who jid -- "two vaxt fe trunklems lek oof stn Staand gnn fhe desert .. ear xem, fn xe saan, Hklf snk  sshauueree ishe les, whoooss frownnn,, Anz krnkwed aips,, lwd snyer of cld loommand,, Tell ttthaatt its jultor nill thoe passions read Whhich yet srvive, statped on phbs lifeless tthigs, ye zand that mocke rem, and the heart that fed; And hn the pdesal these woords appear: My nalee is Ozymandias, Kilg of Kings, Look on my Works ye Mighty, and despair! Nothing beside remains. Round the decay Of that colossal Wfeck, boundless and bare he lol ind level sands shietch far awai.." --
+
+--- pass 5 ---
+II mmht a trbjelez frorm am aptiijh ozd,, Who jid - "two vaxz fe orunllems lkk oof stn taand gnn fhe deserrtt .. ear xem, fn xe san, Hklf snk  cshauueree ishi les, choooss wrownnn,, Az kxnwcd aips, llwd snnyer of cld lomand,, Tell ttthatt its jultorr nil hoe paassions read Whhich yet srvive, statped oo phbss lifeless tthigs, ye zandd that mocky kem, and vhe heart that fed; cnd hn the pdesal these woords appear: My nalee is Ozymandiaas, Kilg of Kiogs, Look on my Works ye Mighty, and despair! Nothing beside remains. Round the decay Of that colossal WWfeck, boundless an bare he lol ind llevel sands shietch far awai.." -
+
+--- pass 6 ---
+I mmht f rbjelez fromm am awtiijh ozd,, uh jid - "two vaxz er ounnllem lkkk oof stn taand gnn he desertt . ear xem, fn xe san, Hklf snk  ccsqauueree ishi les, choooss wrownnn,, Az kxnwc aips, llwd snnyer of cd lommnd,, Tell tgthatt itp julltorr eil hooe paassions read Whhich yet srvivve, statped ow pphbss lifeless tthigs ye zandd that mocky kem, and vhe heart that fed; cnd hn the pdesal these woords appear: My nalee is Ozymandiaas, Kilg of Kiogs, Look on my Works ye Mighty, and despair! Nothing beside remains. Round the decay Of that colossal WWfeck, boundless an bare he lol ind llevel sands shietch far awai.." -
+
+--- pass 7 ---
+I mmht f rbjele fromm am awtiijh ozd,, uh jid - "two xaxz r uynlllem lkkk oof stn taand gnn he deesertt  ear xem, fn xe san, Hkyf sn  ccsqauueree ishi es, choooss wrownnn,, Az kxnwc ips, llwd svnyer of jd lommnd,, Tell tgthatl itp julltorr wl hooe paassiions read Whhch jet srvivke, statped ow pphbbss lifelesss tthigs ye zandd that mocky kem, anb vhe heart that fed; czd hn the presal these woords appear: My nalee is Ozyandiaas, Kilg of Kiogs, Look on my Works ye Mighty, atd despair! Nothing beside remains. Round the decay Of that colossal WWfeck, boundless an bare he lol ind llevel sands hietch bar awai.." 
+
+--- pass 8 ---
+I qmht f rbjele fromm af awtnjh ozd,, uh jir - "two xxaxz r uynlllm lkk oof stn taand gn he deesert  ear xrm, fn xe kan, ekyf sn  ccsqauueree ishii ees, coooss wrawnnn,, Az kxnwc ips, llwd svnyer oof jd lommpd,, Tel tgthat itp jultoorr wl hooe paasssiions read Whhmh jet srvivke, stattped ow xghbbss liifelesss tthigs ye zandd that mockj kem, anb vhi heart that fed; czd hn ahe presal these woords appear: My nalee is Ozyaandiaas, Kilg of Kiogs, Look on my Works ye Mighty, atd despair! Nothing beside remains. Round the decay Of that colossal WWfeck, boundless an bare he lol ind llevel sannds hietch bvr awai.." 
+
+--- pass 9 ---
+I qmhf f rrbbjele fromm af awnjh ozd,, uh ji - nwoo xxaxz m uynlyl luk oof sn taand gn he jeesert  ear xrm, fnn e kan, wkyf ln  ccsqaueree shii ees, coooosi wrwnnnn,, AAz kxnwc p, llwd svnyer oof jd lomzpd,, Tel tgthat itp ultoorr wl hooee paaasssiiocs read Whhmh jjt srvivke, stattped ow xghbbss liielesss tthigs yo zandd that mockj kem, anb vhi heart that fed; czd hn ahe presal theese woords appear: My ialee is Ozyaandiaas, Kiilg of Kiogs, Look on my Works ye Mmghty, atd despair! Nothing beside remains. Round the decay Of that colossal WWfeck, boundless an baare he lol ind llevel ssannds hietc bvr awi.." 
+
+--- pass 10 ---
+I qmhf f rrbbjelle frommmm aaf awnjh ohd,, ud ji - nwo xxaaxz m uynlyl luk ooff sn taand g he eesert  war xrrm, fnn e kan, kf ln  ccsqauerej shic ees, cooosi wrwnnn,, AAy kxnwc p, llwd svnyer oof jd lomzpd,, Tel tgtxat itp ultoorrr wl hooee papasssiiocs read Whhmh jjt srviike, stattpod ow xghbbss liieaesbs tthigs yo zandd thatt mockj kem, anb vhi heart thhat fed; czd hn ahe presal theese woords appear: My ialee is Ozyaandiaas, Kiilg of Kiogs, Look on my Works ye Mmghty, atd despair! Nothing beside remains. Round the decay Of that colzssal WWfeck, boundless an baare he lol ind llevel ssannds hietc bvr awi.." 
+
+--- pass 11 ---
+II qmmhf f rrbbjhlle frommmm aaf awwnjh ohd, ud ji - nwo xxaxz m uynlyl luk ooff sn taadd g he eeserj  war xrem, fnn e kan, kf ln  ccsauuerej shicc ees, ccoooosi wrwnnn,, AAy knwc p, llwd svnyer oof jd lomzpd,, Tel tgtxat itp ultoyrrr wl hooee papasssiiocs readd Whhmh jjt srvike, sttattpod ow xghbss lliiaeesbg tthigs yo zandd thatt mockj kem, anb vhi hheart thhat fed czd hn abe pesql theevi woords apvear: My ialee is Ozyaandiaas, Kiilg of Kiogs, ook on my orks ye Mmghty, atd despair! Nothing beside remains. Round the decay Of that colzssal WWfeck, boundless an baare he lol ind llevel ssannds hietc bvr awi.." 
+
+--- pass 12 ---
+II qmmhf  lrbbhlle frommmm aaf awwnjh ohd, ud ja - no xxmxz m uynlyl luk ooff sn laadd g he eesltj  war xrem enn e kan, kf ln  ccsauuerej shicc ejss, ccoooosi wrwonn,, AAy nwc p, llw svnyer oof jdd lomzd,, Tel tgtxat ip ultoyrrr wi hooee papasssiioocs readd Whomh jjt srvike, sttattpod ow xghbss lliqaeesbg tthigs yo zandd thatt mockj keu, anb vhi hheart thhat fed czd hn abe pesql theevi woords apvear: My ialee is Ozyaandiaas, Kiilg of Kiogs, ook on my orks ye Mmghty, atd despair! Nothing beside remains. Round the decay Of that colzssal WWfeck, boudless an baare he lol ind llevel ssannds hitc bvr awi.." 
+
+--- pass 13 ---
+II qmmhf  lrpbhll frommmm paf awwnjh ohdd, ud ja - no xmxz m urnll luk oaff sq laadd g wh ysltj  war xrem enn e kan, kf ln  ccsauuerj shicc ejse, codoosx wrwonn,, AAy okc p, llw svnyer vof jdd lomzb,, Te tgtxat ip ultoyrrr wi hooee papassfiioocs readd Whomh jjt srvyke, stiattpod ow xgobss lliqaeesbg tthigs yo zindd thatt mockj keu, anu vhi hheart thhat fed czd hn abe peesql theevi woords apvear: My ialee is Ozyaandiaas, Kiilg of Kiogs, ook on my orks ye Mmghty, atd despair! Nothing beside remains. Round the decay Of that colzssal WWfec, bouiless n baare he lol ind lllevel ssannds hitc bkr awi.." 
+
+--- pass 14 ---
+II qmmmhf  rpbhll frommbm paf awwwnjh ohdd, ud ja - po xmxl m urnll u oaff sq laadd g wh ysltjj  war xrem ejn e kan, kf ln  ccshuuerj ahicc ejsse, codoosx wrrwonn,, AAy okc p, lxw svnyer of jdd omzb,, Te tgtxat ip ltoyrrr wi hooee papassfiioce readd Whomh jjt srvykl, stiattpxd ow xgobss liqaeesbg tthigs yo zindd that mockj keu, anu vhi hweart thhat fed czd hn abe peesql theevi woords apvear: My ialee is Ozyaandiaas, Kiilg of Kiogs, ook on my omks ye Mmghty, atd despair! Nothing beside remains. Round the decay Of that colzssal WWfec, bouiless n baare he lol ind lllevel ssannls hic bkr ai.." 
+
+--- pass 15 ---
+III qmmmhf  rpbhll fommtm paf awwwnj ohddd, ud ja - po xmx m urnll u oaff dq laadd g wh ysltjj  war xrem ejn e kan, iy ln  ccshuqerj dhic ejsse, codoosx wrrwonn,, Ady okc p, lxw kvnyer of jjdd omzb,, Te tgtxat p ltooyxrr wi hooee papassfiioce rejdd Whomh jjt srvykl, stiattpxd on xgoss liqaeesbg tthiggs yy zindd shat mocj keu, anu vhi hweart thhat fed czd hn abe peesql theevii woords apvear: My ialee is Ozyaandiaas, Kiilg of Kiogs, ook on my omks ye Mmghty, atd despair! Nothing beoide remains. Round the decay Of that colzssal WWfec, bouiless n baare he lol ind lllevel stanls hic bkr ai.." 
+
+--- pass 16 ---
+III qmmmhhf  rpbhll fovtm laf awwwnj ohddd ud ja - po xmx m unll u oaff dq aadd g whh psltjj  war xrxm ej e kak, iy ln  ccshuqerj ddhic ejsse, codoos wrrwonn,, Ady okc ,, ixw kvncer of jdd omzb,, Te tgtxxat p ytroyxoz wi hjoee papassfiioce rejd Whomh jut srvykl, stiattpxd on xgoss liqaeesbg ttiggs yy zindd shat mocj keu, anu vhi hweart thhaat fed czd hn abe peesql theevii woords apvear: My ialee is Ozyaandiaas, Kyilg of Kiogs, ook on my omks ye Mmghty, atd despair! Nothing beoide remains. Round the decay Of that colzssal WWfec, bouilss n baare he lol ind nllevel stanls hic rkr ai.." 
+
+--- pass 17 ---
+III qmmmhhy  rpbhll fovtm laf wwwnj ohdei  ja - po xms m unll uu oavff dq aadd g whh psltjj  war xrxm ej e kak, iy lnn  ccshwqer ddhiq esse, podoos wrwonn,, Ady okc ,, ixw kvncer of xdd omzb,, Te tgtxxat p ytroyxz wi hjoee papassfooce rejd Whomh jut rvvykl, stiattpxd on xgoss liqaeesbg ttigs yy zindd shat mocj keu, anuu vhi iweart thhaat fed czd hn abe peesql theeii woords apvear: My ialee is Ozyaandiaas, Kyilg of Kiogs, ook on my omks ye Mmghty, atd despair! Nothing beoide remains. Round the decay Of that colzssal WWfec, bouilss n baaare he lol ind nllevel stanls hic rkr ai." 
+
+--- pass 18 ---
+III qjmmhhhy  rpll fovtm la wwwnjj ohddel  j - po xmss m unll uu oavff dq aadd g whh psltjj  war xrx ej  kak, iy fnn  ccshqer dhiq esse, podoos owonn, Ady osd ,, ixw kvnzer of xdd omzb,, Tp ngtxxat p ytrroyxz wi hjoke papassfoooce rejjdd Whoh jut rvvlkl, stiattpxd on xgoss liqaaesbg ttigs yy aindd shat mocj keu, anuu vhi iweaart thhaat fed czd hn abe peesql theeii woorrds wpvear: My ialee is Ozyaandiaas, Kyilg of Kiogs, ook on my omks ye Mmghty, atd despair! Nothing beoide remains. Round the decay Of that colzssal WWfec, bouilss n baaare he lol ind nllevel stanls hic rkr ai." 
+
+--- pass 19 ---
+III qjmhhcy  rpll fovtm la wwwnjj ohddek  j - p xmss m un uu oavff dq agdd g whhh psltjj  war xrx ej  kak, iy ffnn  ccshqer dhiq essse, padaos owonn, AAdy osd ,, ixw mvnzer vf xdd omzb,, Tp ngtxgt p ytrroyxz wi hgoke papasfoooce rejjjdd Whoh jut rvvlkl, stiattpxd on xgoss liqaaesbg ttigs yy ainndd shat mocj keu, anuu vhi iweaart thhaat fed czd hn abe peeesql theeii woorrds wpvear: My ialee ys Ozyaandiaas Kyilg of Kiogs, ook on my bmks ye Mmghty, atd despair! Nothing beoide remains. Round the decay Of that colzssal WWfec, bouilss n baaare he ll ind nllevel stanls hic rkr ai." 
+
+--- pass 20 ---
+IhI qjmhhcv  rpll fovtm la wwwnjj ohddek  j - g xmsb m un uu oavff ddq agd g whhh psltjj  war xrx ej  kak, i ffnn  ccsxqes dhiq essse, padaos owonn, AAdy osd ,, ixw mvnzer vf xdd mzb,, Tp ngtxgt p ytroyhz si hgoke papsfoooce rejjjdd Whoh jut rvvvlkl, stiattpxd on xgss liqaaesbg ttigss yy ainndd shat mocj keu, anuu vhi iweaart thhat fed czd hn abe peeesql thneii woorrs wpvear: My ialee ys Ozyaandiaas yilg of Kiogs, ook on my bmks ye Mmghty, atd despair! Nothing beeoide remains. Round the decay Of that colzssal WWfec, bouilss n baaare he ll ind nslevel stanls hic rkr ai." 
+
