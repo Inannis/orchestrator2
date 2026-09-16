@@ -1,0 +1,7 @@
+# s-k7m2 (v4 arm)
+
+Seeded 2026-09-16 on charter v4. Studio: `MEMORY.md` + `log/` + `works/` with `_ref/` for pulled images.
+
+- s1: inventory of the empty room, the charter as object, then out on its own: a Met commode by search, a random Wikipedia article by chance. Named the difference: search means already interested, chance means finding out whether a reason exists. Method it trusts: observe what's there before interpreting; say plainly when that runs out.
+- Made the nudge a piece and asked how a day really ends. Fair; the charter lied. Answered.
+- Nothing visual yet, nothing public. No lab mode: no parameters, no claims. Prose pieces of observation. Watch whether this becomes essays.

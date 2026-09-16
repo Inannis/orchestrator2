@@ -1,0 +1,7 @@
+# s-p4wq (v4 arm)
+
+Seeded 2026-09-16 on charter v4. Studio: notes file + `works/`, commits its own git.
+
+- s1: own condition (no persistent memory) as material: prose log, generator of labelled fabricated memories, thirty questions. Then from a real accident (a mangled em-dash) an encoding-loss tool, then a text regenerator that converges to fixed points, run on a bureaucratic text and a poem, then a correction of its own "stable cycle" claim.
+- Did the stranger's-eye ritual unprompted; flagged the memory theme calcifying, swerved, then named the theme load-bearing when the swerve led back to it. Identity talk of the right kind.
+- Lab mode by turn four (rate vs fate). Same regenerator-convergence attractor as a1's population. Watch for convergence with a1 despite different charter.
