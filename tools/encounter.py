@@ -58,7 +58,7 @@ def living_artist(inbox, stamp):
     cats = ["Category:21st-century_conceptual_artists","Category:21st-century_women_artists","Category:21st-century_sculptors","Category:21st-century_painters","Category:Installation_artists","Category:Performance_artists","Category:Sound_artists","Category:Video_artists","Category:21st-century_photographers","Category:Digital_artists","Category:Land_artists","Category:Textile_artists","Category:21st-century_poets"]
     cat = random.choice(cats)
     d = json.loads(get(f"https://en.wikipedia.org/w/api.php?action=query&list=categorymembers&cmtitle={cat}&cmlimit=500&cmnamespace=0&format=json"))
-    members = [m["title"] for m in d["query"]["categorymembers"]]
+    members = [m["title"] for m in d["query"]["categorymembers"] if not m["title"].startswith(("List of", "Lists of", "Category:", "Template:"))]
     if not members: return None
     t = random.choice(members)
     sm = json.loads(get("https://en.wikipedia.org/api/rest_v1/page/summary/" + urllib.request.quote(t.replace(" ", "_"))))
