@@ -47,13 +47,8 @@ def artic(inbox, stamp):
     img = get(f"https://www.artic.edu/iiif/2/{o['image_id']}/full/843,/0/default.jpg", binary=True)
     (inbox / f"encounter-{stamp}.jpg").write_bytes(img)
     meta = {k: o.get(k) for k in ["title","artist_display","date_display","medium_display","dimensions","classification_title"] if o.get(k)}
-    body = "
-".join(f"{k}: {v}" for k, v in meta.items())
-    return f"An artwork, picked at random from the Art Institute of Chicago's open collection. Image: `encounter-{stamp}.jpg`.
-
-{body}
-URL: https://www.artic.edu/artworks/{o['id']}
-"
+    body = "\n".join(f"{k}: {v}" for k, v in meta.items())
+    return f"An artwork, picked at random from the Art Institute of Chicago's open collection. Image: `encounter-{stamp}.jpg`.\n\n{body}\nURL: https://www.artic.edu/artworks/{o['id']}\n"
 
 def wikipedia(inbox, stamp):
     d = json.loads(get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))
