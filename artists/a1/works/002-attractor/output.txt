@@ -1,0 +1,99 @@
+=== handoff === (21 words: I arrive with nothing but what the last one left, and I leave with nothing but what the next one gets.)
+  seed  0: first-duplicated='nothing' (pos 14)  final-winner='one' (30/147=20%)  no match
+  seed  1: first-duplicated='left,' (pos 9)  final-winner='with' (24/179=13%)  no match
+  seed  2: first-duplicated='I' (pos 0)  final-winner='one' (22/138=16%)  no match
+  seed  3: first-duplicated='the' (pos 6)  final-winner='but' (21/110=19%)  no match
+  seed  4: first-duplicated='the' (pos 17)  final-winner='the' (18/114=16%)  MATCH
+  seed  5: first-duplicated='the' (pos 6)  final-winner='what' (24/113=21%)  no match
+  seed  6: first-duplicated='but' (pos 4)  final-winner='the' (34/192=18%)  no match
+  seed  7: first-duplicated='but' (pos 15)  final-winner='what' (27/143=19%)  no match
+  seed  8: first-duplicated='what' (pos 16)  final-winner='nothing' (33/116=28%)  no match
+  seed  9: first-duplicated='but' (pos 4)  final-winner='what' (33/174=19%)  no match
+  seed 10: first-duplicated='last' (pos 7)  final-winner='but' (29/110=26%)  no match
+  seed 11: first-duplicated='I' (pos 0)  final-winner='nothing' (19/106=18%)  no match
+  seed 12: first-duplicated='but' (pos 4)  final-winner='but' (21/114=18%)  MATCH
+  seed 13: first-duplicated='what' (pos 16)  final-winner='with' (16/104=15%)  no match
+  seed 14: first-duplicated='left,' (pos 9)  final-winner='left,' (29/124=23%)  MATCH
+  seed 15: first-duplicated='arrive' (pos 1)  final-winner='with' (16/93=17%)  no match
+  seed 16: first-duplicated='one' (pos 8)  final-winner='but' (23/140=16%)  no match
+  seed 17: first-duplicated='one' (pos 8)  final-winner='but' (21/112=19%)  no match
+  seed 18: first-duplicated='what' (pos 5)  final-winner='what' (19/107=18%)  MATCH
+  seed 19: first-duplicated='arrive' (pos 1)  final-winner='arrive' (18/110=16%)  MATCH
+  seed 20: first-duplicated='with' (pos 13)  final-winner='I' (43/178=24%)  no match
+  seed 21: first-duplicated='and' (pos 10)  final-winner='last' (18/113=16%)  no match
+  seed 22: first-duplicated='with' (pos 2)  final-winner='with' (31/109=28%)  MATCH
+  seed 23: first-duplicated='leave' (pos 12)  final-winner='one' (23/110=21%)  no match
+  seed 24: first-duplicated='left,' (pos 9)  final-winner='I' (15/104=14%)  no match
+  seed 25: first-duplicated='but' (pos 4)  final-winner='but' (15/115=13%)  MATCH
+  seed 26: first-duplicated='the' (pos 17)  final-winner='I' (28/138=20%)  no match
+  seed 27: first-duplicated='I' (pos 0)  final-winner='gets.' (14/118=12%)  no match
+  seed 28: first-duplicated='leave' (pos 12)  final-winner='leave' (27/131=21%)  MATCH
+  seed 29: first-duplicated='next' (pos 18)  final-winner='one' (28/130=22%)  no match
+  -> first-duplicated predicts final winner in 8/30 runs
+
+=== flat === (13 words: the cat sat on the mat and the dog sat on the rug)
+  seed  0: first-duplicated='sat' (pos 9)  final-winner='on' (54/93=58%)  no match
+  seed  1: first-duplicated='sat' (pos 9)  final-winner='the' (67/121=55%)  no match
+  seed  2: first-duplicated='dog' (pos 8)  final-winner='the' (25/84=30%)  no match
+  seed  3: first-duplicated='and' (pos 6)  final-winner='the' (22/67=33%)  no match
+  seed  4: first-duplicated='sat' (pos 2)  final-winner='on' (20/66=30%)  no match
+  seed  5: first-duplicated='and' (pos 6)  final-winner='the' (29/76=38%)  no match
+  seed  6: first-duplicated='the' (pos 4)  final-winner='the' (41/115=36%)  MATCH
+  seed  7: first-duplicated='the' (pos 0)  final-winner='the' (49/96=51%)  MATCH
+  seed  8: first-duplicated='on' (pos 3)  final-winner='sat' (22/67=33%)  no match
+  seed  9: first-duplicated='the' (pos 4)  final-winner='the' (40/113=35%)  MATCH
+  seed 10: first-duplicated='sat' (pos 2)  final-winner='the' (21/77=27%)  no match
+  seed 11: first-duplicated='dog' (pos 8)  final-winner='the' (17/64=27%)  no match
+  seed 12: first-duplicated='the' (pos 4)  final-winner='on' (19/70=27%)  no match
+  seed 13: first-duplicated='on' (pos 3)  final-winner='sat' (21/62=34%)  no match
+  seed 14: first-duplicated='rug' (pos 12)  final-winner='the' (28/84=33%)  no match
+  seed 15: first-duplicated='cat' (pos 1)  final-winner='the' (25/55=45%)  no match
+  seed 16: first-duplicated='dog' (pos 8)  final-winner='the' (32/99=32%)  no match
+  seed 17: first-duplicated='dog' (pos 8)  final-winner='sat' (30/82=37%)  no match
+  seed 18: first-duplicated='the' (pos 0)  final-winner='the' (14/54=26%)  MATCH
+  seed 19: first-duplicated='the' (pos 4)  final-winner='mat' (15/63=24%)  no match
+  seed 20: first-duplicated='dog' (pos 8)  final-winner='the' (41/134=31%)  no match
+  seed 21: first-duplicated='on' (pos 10)  final-winner='the' (16/66=24%)  no match
+  seed 22: first-duplicated='sat' (pos 2)  final-winner='sat' (23/71=32%)  MATCH
+  seed 23: first-duplicated='rug' (pos 12)  final-winner='the' (24/63=38%)  no match
+  seed 24: first-duplicated='sat' (pos 2)  final-winner='the' (19/57=33%)  no match
+  seed 25: first-duplicated='on' (pos 10)  final-winner='the' (13/62=21%)  no match
+  seed 26: first-duplicated='the' (pos 4)  final-winner='the' (28/88=32%)  MATCH
+  seed 27: first-duplicated='dog' (pos 8)  final-winner='on' (28/71=39%)  no match
+  seed 28: first-duplicated='rug' (pos 12)  final-winner='the' (20/88=23%)  no match
+  seed 29: first-duplicated='dog' (pos 8)  final-winner='the' (24/83=29%)  no match
+  -> first-duplicated predicts final winner in 6/30 runs
+
+=== no_repeats === (8 words: glass water window ladder river copper distance evening)
+  seed  0: first-duplicated='ladder' (pos 3)  final-winner='ladder' (21/58=36%)  MATCH
+  seed  1: first-duplicated='water' (pos 1)  final-winner='window' (20/78=26%)  no match
+  seed  2: first-duplicated='copper' (pos 5)  final-winner='copper' (15/51=29%)  MATCH
+  seed  3: first-duplicated='distance' (pos 6)  final-winner='copper' (10/41=24%)  no match
+  seed  4: first-duplicated='glass' (pos 0)  final-winner='glass' (16/44=36%)  MATCH
+  seed  5: first-duplicated='distance' (pos 6)  final-winner='evening' (18/57=32%)  no match
+  seed  6: first-duplicated='river' (pos 4)  final-winner='distance' (29/75=39%)  no match
+  seed  7: first-duplicated='distance' (pos 6)  final-winner='ladder' (26/62=42%)  no match
+  seed  8: first-duplicated='glass' (pos 0)  final-winner='ladder' (9/34=26%)  no match
+  seed  9: first-duplicated='river' (pos 4)  final-winner='distance' (25/76=33%)  no match
+  seed 10: first-duplicated='river' (pos 4)  final-winner='river' (11/43=26%)  MATCH
+  seed 11: first-duplicated='copper' (pos 5)  final-winner='copper' (10/37=27%)  MATCH
+  seed 12: first-duplicated='river' (pos 4)  final-winner='river' (21/52=40%)  MATCH
+  seed 13: first-duplicated='glass' (pos 0)  final-winner='copper' (11/43=26%)  no match
+  seed 14: first-duplicated='ladder' (pos 3)  final-winner='evening' (14/52=27%)  no match
+  seed 15: first-duplicated='water' (pos 1)  final-winner='evening' (12/38=32%)  no match
+  seed 16: first-duplicated='glass' (pos 0)  final-winner='glass' (20/75=27%)  MATCH
+  seed 17: first-duplicated='glass' (pos 0)  final-winner='window' (16/59=27%)  no match
+  seed 18: first-duplicated='window' (pos 2)  final-winner='water' (9/33=27%)  no match
+  seed 19: first-duplicated='ladder' (pos 3)  final-winner='copper' (21/46=46%)  no match
+  seed 20: first-duplicated='window' (pos 2)  final-winner='evening' (23/81=28%)  no match
+  seed 21: first-duplicated='window' (pos 2)  final-winner='window' (11/40=28%)  MATCH
+  seed 22: first-duplicated='window' (pos 2)  final-winner='window' (15/43=35%)  MATCH
+  seed 23: first-duplicated='river' (pos 4)  final-winner='distance' (13/30=43%)  no match
+  seed 24: first-duplicated='copper' (pos 5)  final-winner='window' (5/28=18%)  no match
+  seed 25: first-duplicated='glass' (pos 0)  final-winner='glass' (8/28=29%)  MATCH
+  seed 26: first-duplicated='water' (pos 1)  final-winner='copper' (13/46=28%)  no match
+  seed 27: first-duplicated='copper' (pos 5)  final-winner='copper' (18/42=43%)  MATCH
+  seed 28: first-duplicated='river' (pos 4)  final-winner='river' (29/59=49%)  MATCH
+  seed 29: first-duplicated='river' (pos 4)  final-winner='ladder' (18/51=35%)  no match
+  -> first-duplicated predicts final winner in 12/30 runs
+
