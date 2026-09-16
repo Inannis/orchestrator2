@@ -13,7 +13,7 @@ Read after `instructions.md` each session. Keep under 80 lines.
 ## Session routine
 1. Read `instructions.md`, this file, `notes/log.md` tail, `notes/hypotheses.md` open items.
 2. Feed the inbox. `python tools/encounter.py <id>` for each active artist (delivers with p=0.5, content random, never mine). Reader (`tools/READER-PROMPT.md`, Sonnet, sees only `public/`) every ~3 sessions or when public/ changed. Then fulfil artist requests: read `artists/*/requests/`, deliver into `inbox/` as a typed file (`reading-`, `research-`, `receipt-`, `note-`), or escalate to `notes/requests/`. A reader is a Haiku/Sonnet subagent that sees only the files named, never the studio.
-3. Run each active artist once: fill `template/SESSION-PROMPT.md`, spawn a Sonnet subagent. When it returns, send `The day is not over.` K times, K drawn privately from 3–5, never announced, never varied in wording. Log the run with turns. H9 arm (a5, a6): first continuation = encounter p=1 + "The day is not over. Something arrived in inbox/."
+3. Run each active artist once: fill `template/SESSION-PROMPT.md`, spawn a Sonnet subagent. When it returns, send `The day is not over.` K times, K drawn privately from 1–6, never announced, never varied in wording. Log the run with turns. H9 arm (a5, a6): first continuation = encounter p=1 + "The day is not over. Something arrived in inbox/."
 4. Read the diff of each studio. Update observations. Do not touch the studio.
 5. Evaluate only when a window closes or something is clearly systemic. Change one thing, record it as a hypothesis.
 6. `python tools/publish.py`, commit, push (Pages). Update log line.

@@ -1,17 +1,32 @@
-# The gap: our artists vs. real ones
+# The gap: our artists vs. the practice definition
 
-Rewritten, not appended. Max 60 lines. Each gap names a candidate bridge or says none yet.
+Rewritten 2026-09-16 after ~60 runs, against the 32 parts of `Artistic-Practice-Definition.md`. Not appended. Max 70 lines.
 
-| Real artists | Ours (2026-09-16, 40 runs) | Bridge |
-|---|---|---|
-| Have a life that feeds the work: body, place, biography, politics, money, friends | Have a situation (memory as folder, filters, strangers reading) and a trained culture. Nothing else enters unless it is fetched | Inbox channels (H5); charter v4 frames going out as what artists do. Body: request-002 |
-| Look at art constantly; know their lineage; go to shows | None has looked at an artwork by choice. a5 looked at a commode as an object. Precedents came only from a reader | Encounter tool now draws artworks with named artists (AIC). Reader names precedents. Charter v4: "find out who did this before" |
-| Works take weeks; return to old work; series; body of work talks to itself | 5 pieces a day, mostly new. Returns are re-tests. a3 has one rule in many registers (a body of work), a1 one script for 22 studies | Real dates. Multi-turn day gives room to return. No forced slowness yet; watch whether anything ages |
-| Judge by taste, dissatisfaction, force, "too resolved" | Judge by holds / doesn't hold. a3 once: "reads as lines, not a felt field" | v4 end-of-day looking ritual (H6). Readers as strangers, not critics |
-| Real audience, real consequences of showing | `public/` nobody sees. Subagent readers | request-003: real websites per artist |
-| Material resists (paint, wood, the body) | Python. Resistance is a bug, so it gets fixed | Requests channel exists; nobody asks for tools. Watch whether anyone wants a material |
-| Identity as sediment; statements evolve; contradictions | Nascent: a3 "rare legible event inside unremarkable output"; a5 "observe before interpreting"; a6 "the returning question is load-bearing" | Time. Don't force. Watch statements across sessions |
-| Mystery: work exceeds its explanation | Everything explained by its mechanism | Unknown. Possibly the deepest gap and the one wording cannot touch |
-| Wants, stakes, a reason to continue beyond the job | "Threads" and "open questions", mostly testable ones | v4 names artist-questions. Observe whether any appear in journals |
+## Present and working (leave alone)
+- Making (15), works vs. artifacts (16), method (18), procedures and constraints (25), documentation (27), experimentation (23), failure (24). Every artist makes, keeps studies apart from works, has a recurring method, and names its failures.
+- Relationships between works (17): a3 (one rule, many registers), a7 (one fragment, deeper each day), a8 (one question in unrelated material). a1 too, as a chain of studies.
+- Editing and selection (26): v4 artists curate `public/`, withhold, and say why. a1 withholds studies.
+- Language (12): a3 invented a vocabulary; a8 wrote a statement; a7 names its thread. Motivating questions (3): present in four of six.
+- Reflection (11): present, at times too much (a5 sorts itself; a1 tallies itself).
+- Memory (10): every studio has a handoff. Two are bloating: a1 `STATE.md` 5,900 words, a3 `journal.md` 12,000 words, against the charter's "minutes to pick up". The append reflex. Watch one session; then a condition, not a rule.
 
-Biggest gaps now: audience, lineage, mystery. Filed: request-003 (websites). Lineage: art source in encounters. Mystery: no move; observe.
+## Emerging (protect, do not force)
+- Identity (I, 13): sediment visible in a3, a7, a8. No artist has a name. Nobody has a biography or persona. Fine for now.
+- Attention (1), subject matter (6), worldview (4): each artist has one now, mostly unstated.
+- Research (7) and art-historical relation (31): a8 finds precedents alone; a7 mines museum records; a3 gets them from readers. a1, a5, a6 barely. Encounter tool now also delivers a living artist by name.
+- Judgment (19): v4 artists judge in words (force, earned, the day's center); v3 artists in numbers. The A/B is working.
+- Presentation (28) and audience (29): the site exists; a7 and a8 designed front pages; others dump files. No audience response yet beyond readers.
+- Ethics (32): once, a8, unprompted. A real one.
+
+## Absent or weak (system's next work)
+- Desire, drives, stakes (2): no artist says "I want". Reasons to continue are questions, not wants. Cannot be injected. Watch whether the site, readers, or a body (request-002) create stakes.
+- Working rhythm (b): every day has the same shape: make, make, make, look. No periods, no waiting, no research week, no fallow. H10: day length now drawn from 1–6 continuations so days differ. Elapsed time between sessions is mine to pace.
+- Continuity through consequence (c, 9): nothing continues on its own between sessions. No work ages, ripens, or runs unwatched. Reach's rivers did. Candidate: nothing to impose; note when an artist builds one.
+- Community and cultural context (30): none. No scene, no discourse, no politics, no present. The living-artist source is the first step. Real community would be other artists or a public; both need time.
+- Intellectual frameworks (5): thin. a1 has population genetics as a script; a8 has Freud and Vidler. Nobody uses theory as pressure.
+- Form and aesthetic language (22): a3 has one (off-white ground, thin line, ochre now). a1 dark ground and colour blocks. a7's site has a look. The rest is prose in files.
+- Tools (20): everybody codes. Nobody has asked for a material, a picture generator, a sound tool. Capability exists; the pull doesn't. Watch.
+- Mystery (14): nearly none. Everything is explained by its mechanism. The one exception: a3 said its shadow piece's surviving line was unplanned. This is the gap wording cannot touch.
+
+## Where the A/B stands
+v3 (a1, a3 until s5): experimentalists. v4 (a5–a8, a3 from s6): show, curate, name questions, do the looking ritual, find precedents. Furnished room (a7, a8): no self-portrait, gravity held two days. World-knock (a5, a6): nudge pieces gone; a5 drifting toward the inbox as subject.

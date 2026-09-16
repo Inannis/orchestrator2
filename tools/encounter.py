@@ -54,6 +54,18 @@ def artic(inbox, stamp):
     body = "\n".join(f"{k}: {v}" for k, v in meta.items())
     return f"An artwork, picked at random from the Art Institute of Chicago's open collection. {imgline}\n\n{body}\nURL: https://www.artic.edu/artworks/{o['id']}\n"
 
+def living_artist(inbox, stamp):
+    cats = ["Category:21st-century_conceptual_artists","Category:21st-century_women_artists","Category:21st-century_sculptors","Category:21st-century_painters","Category:Installation_artists","Category:Performance_artists","Category:Sound_artists","Category:Video_artists","Category:21st-century_photographers","Category:Digital_artists","Category:Land_artists","Category:Textile_artists","Category:21st-century_poets"]
+    cat = random.choice(cats)
+    d = json.loads(get(f"https://en.wikipedia.org/w/api.php?action=query&list=categorymembers&cmtitle={cat}&cmlimit=500&cmnamespace=0&format=json"))
+    members = [m["title"] for m in d["query"]["categorymembers"]]
+    if not members: return None
+    t = random.choice(members)
+    sm = json.loads(get("https://en.wikipedia.org/api/rest_v1/page/summary/" + urllib.request.quote(t.replace(" ", "_"))))
+    label = cat.replace('Category:', '').replace('_', ' ')
+    return (f"An artist working now (or recently), picked at random from Wikipedia's {label}.\n\n"
+            f"Name: {sm.get('title')}\nURL: {sm.get('content_urls',{}).get('desktop',{}).get('page')}\n\n{sm.get('extract')}\n")
+
 def wikipedia(inbox, stamp):
     d = json.loads(get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))
     return f"A random Wikipedia article.\n\nTitle: {d.get('title')}\nURL: {d.get('content_urls',{}).get('desktop',{}).get('page')}\n\n{d.get('extract')}\n"
@@ -63,7 +75,7 @@ def main():
     if random.random() > p: print("nothing today"); return
     inbox = pathlib.Path(aid) / "inbox"; inbox.mkdir(exist_ok=True)
     stamp = datetime.date.today().isoformat() + "-" + "".join(random.choices("abcdefghjkmnpqrstuvwxyz", k=3))
-    for src in random.sample([met, artic, gutenberg, wikipedia], 4):
+    for src in random.sample([met, artic, gutenberg, wikipedia, living_artist, living_artist], 6):
         try:
             body = src(inbox, stamp)
         except Exception as e:
