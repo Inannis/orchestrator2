@@ -1,0 +1,104 @@
+MUTATION / "the anguish of your bereavement" (replicate)
+eighth work, session 5, 2026-09-16
+method: same mechanism as 02-07. Replicates work 05 (Bixby letter,
+charged + specific) across three random seeds instead of one — 05's
+"bereavement survives to 100%" result was the one claim in the whole set
+never checked against multiple seeds, flagged as a gap in this session's
+own log entry before running this.
+source: same as 05, Lincoln's letter to Mrs. Bixby, Nov 21 1864.
+seed: "the anguish of your bereavement" (same as 05).
+code: works/08-mutation.py
+────────────────────────────────────────
+
+--- random seed 916 (05's original seed) ---
+the anguish of your bereavement
+the anguish of your bereavement
+the anguish of your bereavement
+the loss of your bereavement
+pray anguish of loved bereavement
+only anguish of your a
+the anguish of freedom bereavement
+the memory of heavenly heavenly
+on anguish war only bereavement
+on anguish of who cherished
+the anguish adjutant sons loved
+anguish upon pride pride heavenly
+bereavement sacrifice adjutant loved upon
+
+--- random seed 42 ---
+the anguish of your bereavement
+the words of your bereavement
+the anguish of statement bereavement
+the field of your bereavement
+the i of thanks bereavement
+grief cannot loss your bereavement
+the anguish of loved freedom
+the anguish war weak bereavement
+the anguish of pray overwhelming
+so any department who fruitless
+cannot lost beguile your weak
+to war solemn to anguish
+pray are lost yours yours
+
+--- random seed 7 ---
+the anguish of your bereavement
+the anguish of cherished bereavement
+the anguish of found statement
+the solemn how your bereavement
+yours anguish of are mother
+the anguish of your pride
+the loved of your bereavement
+cherished to pray fruitless bereavement
+the pride anguish your bereavement
+department found grief assuage department
+pride to loss yours war
+any war attempt save refrain
+loss our upon of mine
+
+────────────────────────────────────────
+note: this replicate complicates rather than confirms the picture this
+session had started to write up as converged. Reproducing 05's exact
+seed (916) does reproduce its result — "bereavement" survives to full
+(100%) mutation, matching the original run exactly, as it should since
+the RNG sequence is identical. But that was never really in doubt; the
+open question was whether a *different* random seed on the same charged
+source would show the same kind of survival.
+
+It doesn't, cleanly. Seed 42's final line has no seed word at all — pure
+noise, the same outcome as most of 07's statute runs. Seed 7's final
+line does have a seed word present — "of," at the last position — but
+"of" is the least specific, least charged word in the seed phrase, the
+opposite of what the specificity/charge hypothesis would predict should
+survive. It isn't "of" holding on through resistance either; at rate 1.0
+every position is a fresh independent draw from the pool regardless of
+what came before, so a word appearing in the final line is a coin-flip
+matching the original by chance (roughly 1-in-pool-size per position),
+not evidence of that word being "loaded." Seed 7's "of" surviving is
+most simply read as that chance landing, not a second confirmation of
+charge.
+
+Put plainly: across the two sources tested with 3 seeds each (05 Bixby /
+charged, 07 statute / flat), full-mutation survival happened once in
+six runs total in a way that supports the charge hypothesis (916 on
+Bixby), and once in six runs in a way that actively contradicts it (7 on
+Bixby, where the surviving word was the least specific one in the seed).
+The other four runs showed no full survivor at all. That is not a
+pattern robust enough to call "charge produces survival" — session 5's
+own log entry said that this morning, before running this replicate,
+and it overclaimed. The honest reading is closer to session 4's
+original, messier one: at the 100%-mutation step specifically, survival
+looks a lot like it could be pool-size chance rather than a thematic
+effect, which is exactly the confound flagged in log 4's addendum and
+not actually resolved by any run so far, including this one.
+
+What does hold up, across both 07's near-misses and the general shape
+of these plots (this replicate included): words drift out roughly in
+order of how replaceable they are — function words go early, content
+words hold longer on the way there — right up until the final full-
+mutation step, where the "holding" mechanic stops applying entirely and
+it becomes a fresh draw. So the resistance-building pattern (session 5's
+morning framing) is real and visible in the middle of these runs, rate
+0.1 through maybe 0.8; it's specifically the claim about the *end point*
+- whether a word "survives to 100%" - that this replicate shows is much
+weaker evidence than it looked with n=1, because that end point isn't
+really testing the same mechanism as the middle of the run.

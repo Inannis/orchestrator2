@@ -1,0 +1,112 @@
+MUTATION / "any migratory bird"
+seventh work, session 5, 2026-09-16
+method: same mechanism as 02-06. Runs the found-text, flat/specific test
+that session 4 (work 06) tried with composed text and flagged as
+compromised — 06 was written by me to fit the test, which can't rule out
+unconscious shaping. This run uses actual found text instead, and three
+random seeds instead of one, since every prior "survives to 100%" or
+"doesn't survive" claim rested on n=1.
+source: 16 U.S.C. § 703(a), the Migratory Bird Treaty Act, fetched
+verbatim from Cornell Law School's Legal Information Institute. Not
+written by me, not written for this test. Flat and specific by nature of
+the genre: legal prose, no emotional stakes, dense with enumerated terms.
+seed: "any migratory bird" (drawn from the source, same convention as
+02-06).
+code: works/07-mutation.py
+────────────────────────────────────────
+
+--- random seed 916 ---
+any migratory bird
+any migratory bird
+any migratory bird
+any migratory bird
+any migratory exported
+any migratory bird
+august government bird
+four and danger
+any migratory bird
+means in february
+product birds bird
+at migratory carried
+egg included sale
+
+--- random seed 42 ---
+any migratory bird
+any barter bird
+it migratory bird
+bird this which
+any migratory bird
+any migratory bird
+unless migratory bird
+time environment this
+imported migratory union
+of transported deliver
+protection migratory pursue
+by march in
+subchapter of transportation
+
+--- random seed 7 ---
+any migratory bird
+any migratory bird
+whole between which
+this migratory this
+any terms kill
+any migratory between
+kill november migratory
+be the bird
+between pursue included
+terms take whole
+export of offer
+seven in composed
+shipped purchase provided
+
+────────────────────────────────────────
+note: no seed word survives to full (100%) mutation in any of the three
+runs — all three final lines are pure noise, no trace of "any," "migratory,"
+or "bird." That matches 06 (composed flat/specific, no survivor) and
+contrasts with 05 (charged + specific, "bereavement" survived to 100%
+in its one run).
+
+But the near-miss pattern from 06 repeats and strengthens: "migratory"
+holds unusually late in two of the three seeds — to step 11/12 (92%) in
+seed 916, and step 10/12 (83%) in seed 42 — before finally dropping at
+full mutation. In seed 7 it lets go earlier, around step 6/12 (50%), and
+that run is noisier overall by the middle steps. So the "holds late,
+lets go right at the edge" behavior isn't a fluke of one run or one
+seed — it shows up in 2 of 3 random seeds on found text, not just in the
+one composed run from 06.
+
+Reading this alongside 05 and 06: three independent tests now (05
+charged+specific, 06 composed flat+specific, 07 found flat+specific,
+07 replicated across 3 seeds) point the same direction. Specificity
+without charge can make a word hold late and resist longer than function
+words, but charge appears to be what pushes a word all the way through
+to survive full mutation. Neither is worthless alone; specificity alone
+produces resistance, charge seems to be what's needed for outright
+survival. That's a real finding, not a definitive one, more seeds/texts
+(a recipe, a field guide) would strengthen it further, but three
+converging tests across composed and found material is more than the
+single n=1 runs this thread started from.
+
+Also bears on the pool-size worry from session 4's addendum: this
+source (the statute) is visibly longer and more repetitive than 05's
+Bixby letter or 06's falcon passage, so its deduped pool is at least as
+large as either, likely larger. It did not produce stronger survival
+than 05 despite that; if anything the pattern (near-miss resistance, no
+full survivor) sits closer to 06. That's consistent with pool size not
+being the driver, though I didn't print an exact word count this run to
+confirm the ordering precisely — worth doing mechanically, not by eye,
+next time this question comes up.
+
+CORRECTION, added later the same session, after running work 08:
+the "charge produces survival" reading above turned out to be premature.
+Work 08 replicated 05 (the charged source) across 3 seeds the same way
+this file replicated the flat one, and it did NOT confirm survival as
+a charge effect — one seed reproduced 05's result (not new evidence,
+same RNG as the original), one produced no survivor, and one produced a
+survivor that was the *least* charged/specific word in the phrase. See
+works/08-mutation-bixby-replicate.txt for the full accounting. The
+near-miss pattern described above (migratory holding to 83-92%) still
+stands as observed, but don't read the paragraph above this correction
+as settling the charge-vs-specificity question — it doesn't, on the
+fuller evidence gathered the same day.

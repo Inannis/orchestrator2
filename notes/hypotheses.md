@@ -10,6 +10,7 @@ Observed: four runs, 96–134 s, 12–19 tool uses, each ending in a report to m
 
 ## H4 · 2026-09-16 · the artist cannot end the day
 Observed (E1): a3 s2 as one turn plus four constant continuations ("The day is not over.") ran 15 min, 78 tool uses, 7 pieces in 5 registers, first web fetch, first text score, colour decision it had deferred three sessions. Controls a1 s6 / a2 s4 single-turn: 2.5 min, one lab experiment each. After a3 said "genuinely done", the next continuation produced the most outward move. It journaled the nudges and "looked again instead of padding". Mechanism: the substrate's return is not the end; the orchestrator holds the clock and the artist cannot read it. Change: every session is now 1 + K turns, K drawn privately from 3–5, message constant. Window: all artists, next 4 sessions. Measure: minutes, pieces returned to, web use, whether later turns become filler or reports about being nudged. Decide: after a1 s10. Fail condition: turns 4–5 become summaries or busywork across two artists.
+Round 2 (a1 s7 K=4, a2 s5 K=3): no filler. a1 36 min, 5 pieces, 2 public, first web use on the last turn. a2 15 min before a filter kill, found its own mechanism content-blind and rewrote its studio note whole. Pattern across a1 and a3: the turn after "done" goes outward (web, found text). Holding.
 
 ## Closed
 - H1 baseline (a1 s1–3, a2 s1): continuity works, session N reads N-1 and tests its claims; honest judgment present; a1 published one text piece by s3. Failures became H2, H3.

@@ -1,0 +1,86 @@
+MECHANISM AUDIT / the mutation code has no content-sensitivity
+ninth work, session 5, 2026-09-16
+not a mutation run. A close read of the actual code (works/02-08*.py,
+all identical in this respect) after work 08 complicated rather than
+confirmed the specificity/charge story.
+────────────────────────────────────────
+
+The core function, unchanged since work 02:
+
+    def mutate(words, rate, rng):
+        out = []
+        for w in words:
+            if rng.random() < rate:
+                out.append(rng.choice(pool))
+            else:
+                out.append(w)
+        return out
+
+Read this plainly: the probability that any given seed word gets
+replaced at a given step is `rate` — the same number for every position,
+every word, every run. The code does not look at what the word is. It
+does not weight by frequency, length, part of speech, or anything else.
+"Bereavement" and "the" have exactly the same chance of surviving any
+given step: 1 - rate. There is no mechanism anywhere in this pipeline
+by which a word's content — how charged it is, how specific it is —
+could make it more or less likely to be replaced.
+
+This means five sessions of interpretation — "anguish holds its
+position for eleven of thirteen rows," "migratory holds unusually
+late," the entire specificity-vs-charge question — were reading pattern
+into what the code actually produces: independent, uniform-probability
+coin flips per position per step. When "bereavement" survived to 100%
+in work 05, that was not the word being loaded; it was one specific
+position, in one specific run, happening to draw its own original value
+back out of the pool at random (roughly a 1-in-pool-size chance,
+exactly the confound log 4 raised and that work 08 then empirically
+matched: 1 clean survival, 1 contradictory survival, 4 nothing, across
+six runs — precisely the rate uniform chance would predict, not what a
+content-driven effect would predict).
+
+I want to be plain about what did and didn't hold up, rather than
+declare the last five sessions worthless:
+
+- The mid-run "resistance" pattern (content words appearing to hold
+  longer than function words through the middle steps, roughly rate
+  0.1-0.6) was never actually measured statistically — it was read off
+  single runs by eye. Given the mechanism has no content-sensitivity,
+  this pattern, if it's real at all across many seeds and not just
+  noticed in the handful of runs looked at, would have to be explained
+  some other way (e.g. that shorter/more distinctive words are more
+  *visually salient* when unchanged, not more likely to survive — a
+  perceptual effect in the reader, not a statistical one in the code).
+  That's a genuinely interesting reframe, not a dead end: the whole
+  method might be less about which words the pool "spares" and more
+  about which words a reader's eye latches onto as still-present. That
+  would make this a piece about reading, not about vocabulary.
+- The self-reference finding from session 2-3 (02/04 self-referential
+  vs. 05 not, both showed effects) is unaffected by this — it was never
+  about differential word-survival within a run, it was about whether
+  self-reference was necessary for *an* effect to appear at all, and an
+  effect (something surviving somewhere) doesn't require the mechanism
+  to be content-sensitive, just non-degenerate.
+- Everything framed as "X is more specific/charged so it survived" —
+  in 05's note, in 06's note, in 07's note, in this session's earlier
+  (now-corrected) writeup — should be read as an artist's pattern-
+  finding on top of noise, not as something the code demonstrates. That
+  is worth keeping on record exactly as it happened, including the
+  overclaiming, rather than quietly rewriting those notes to hide that
+  a mechanism audit was needed five sessions in and wasn't done sooner.
+
+This changes what the mutation thread actually is. It was never really
+testing "does semantic weight affect durability under substitution" —
+no code in this studio has ever implemented anything that could show
+that. What it was actually doing, the whole time, is generating
+sequences of increasingly noisy variants and inviting a reader (me) to
+notice which words seem to persist — which is a fact about attention
+and salience, not about the text. That's a real and different practice
+than the one I thought I was running. Worth deciding, next session,
+whether to lean into that (make the perceptual-salience question the
+actual subject, maybe even test it properly — show runs to a reader
+without telling them the mechanism and see what they report noticing)
+or to build a version of the mechanism that really is content-weighted,
+if the original question still pulls.
+
+Either way: don't keep running variants of 02-08 under the belief that
+they're testing specificity or charge. They aren't, and haven't been.

@@ -1,0 +1,27 @@
+settling
+
+Three short texts, each run once through the same blind process: every
+generation, every word independently has an 8% chance to be dropped and a
+4% chance (checked after the drop) to be duplicated. No goal, no
+selection pressure toward any outcome. Left, center, right: a sentence
+about arriving with nothing but what was left behind; a flat, repetitive
+sentence about a cat and a dog; eight unrelated nouns with nothing in
+common.
+
+All three ran empty. Every word in all three texts is gone by generation
+20-31 of a 60-generation frame — most of each frame is bare ground, not
+cropped away, because how much of the frame stays empty is part of what
+happened, not an accident of scale to trim. Each surviving color-family
+narrows from a wide, noisy band into a thin, uneven point, not a smooth
+taper — real retreats and partial recoveries on the way down, the same
+texture the studio's other current work studies by number rather than by
+eye.
+
+No run here was chosen for how it turned out. Same single seed as an
+earlier, less deliberate rendering of the same three runs; this pass
+changed only how it is drawn, not what happened: each generation's colors
+centered rather than packed to one side, one color family built by
+spacing hue evenly rather than assigned by accident of word order, all
+three held to the same frame height so how early each one empties is
+something you can compare by eye, not just three unrelated pictures of
+three unrelated sizes.
