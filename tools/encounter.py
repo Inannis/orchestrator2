@@ -1,5 +1,5 @@
 """Deliver one unbidden encounter to an artist's inbox. Sources are public and picked at random; the orchestrator never chooses content.
-usage: python tools/encounter.py <artist-id> [--p 0.5]  (nothing delivered with probability 1-p)"""
+usage: python tools/encounter.py <studio-path> [--p 0.5]  (nothing delivered with probability 1-p)"""
 import sys, json, random, re, ssl, urllib.request, datetime, pathlib
 try:
     import certifi; CTX = ssl.create_default_context(cafile=certifi.where())
@@ -46,7 +46,7 @@ def wikipedia(inbox, stamp):
 def main():
     aid = sys.argv[1]; p = float(sys.argv[sys.argv.index("--p")+1]) if "--p" in sys.argv else 0.5
     if random.random() > p: print("nothing today"); return
-    inbox = pathlib.Path("artists") / aid / "inbox"; inbox.mkdir(exist_ok=True)
+    inbox = pathlib.Path(aid) / "inbox"; inbox.mkdir(exist_ok=True)
     stamp = datetime.date.today().isoformat() + "-" + "".join(random.choices("abcdefghjkmnpqrstuvwxyz", k=3))
     for src in random.sample([met, gutenberg, wikipedia], 3):
         try:

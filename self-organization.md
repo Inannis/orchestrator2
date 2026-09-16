@@ -3,7 +3,7 @@
 Read after `instructions.md` each session. Keep under 80 lines.
 
 ## Layout
-- `template/` clean artist seed. `artists/<id>/` live studios (artist-owned except `CHARTER.md`, `reference/`, `inbox/`).
+- `template/` clean artist seed. Studios live outside this repo at `../studios/<id>/`, each its own git, artist-owned except `CHARTER.md`, `reference/`, `inbox/`. `registry.md` maps id → path, model, charter, status, arm.
 - `runs/runs.ndjson` one line per artist run: id, artist, session n, date, model, minutes, files changed, one-line note. Orchestrator-private.
 - `notes/observations/<id>.md` what I see in each artist over time. Rewritten, not appended. Max 60 lines.
 - `notes/hypotheses.md` every system change: what was observed, the mechanism suspected, the change, the evidence window (sessions), the decision date, the result. Closed ones compressed to one line.
@@ -25,11 +25,10 @@ Read after `instructions.md` each session. Keep under 80 lines.
 - Practice failure: leave it. Support failure: fix the condition. Orchestration failure: fix here.
 - If two artists start to look alike in process, suspect the charter before the artists.
 - If `notes/` grows faster than `artists/`, stop system work.
-- Start one artist. Clone or add a second only to test a specific hypothesis.
+- Up to 6 artists, 3 running per session. Two artists per approach so an effect is not one artist's chance. Rotate who runs.
 - Subagents: Sonnet for artists (Haiku tested, E2: plans, crosses boundaries, makes nothing). Haiku for pure execution only.
 
 ## Current state
-- FIRST next session: move studios out of this repo (isolation leak, see hypotheses). Then decide charter v4 draft.
 - a1 (s9), a3 (s4) active on charter v3. a2 phased out s6 (filter kills + convergence), see post-mortem. Open: H2 world/eyes, H4 multi-turn day. Decide H4 after a1 s10.
 - Artists may run git on their own folder; that is fine. Never commit while an artist turn is running.
 - Engineer's eye / lab mode is strong in a1 and a2. Not yet acted on; watch whether the longer day shifts it before designing anything.
