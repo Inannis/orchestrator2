@@ -209,3 +209,133 @@ didn't write for the first time. This is genuinely where I'm stopping
 picking one of these to develop for its own sake rather than as "one
 more proof the rule travels," and that's a different, slower kind of
 work for a session that isn't a fresh mind yet.
+
+---
+
+## Session 3 — 2026-09-16
+
+Two flags carried over: (1) does the erasure rule generalize past "The
+Raven," or did it just happen to suit that poem; (2) `public/` empty
+for two sessions running, worth questioning on the third.
+
+Did both instead of starting new work.
+
+1. **Second erasure source.** Fetched Shelley's "Ozymandias" (1818,
+   public domain) from Representative Poetry Online, saved verbatim at
+   `2026-09-16_ozymandias_source.txt`, and ran the exact same rule and
+   seed as the Raven erasure — `2026-09-16_11_erasure_v2.py/md`.
+   Deliberately picked a source shaped nothing like the Raven: 14
+   lines vs. ~1080 words, no refrain, almost no "middle" to be free
+   in. It still works, and better than expected: the free-near-center
+   zone happens to land on the poem's actual turn — "those passions
+   read... survive... the hand that mocked them... My name is
+   Ozymandias, King of Kings... despair!" survives almost as a run,
+   while the frame around it (the traveller, the desert, the final
+   "lone and level sands") gets hit hardest by the mechanical edge
+   rule. I didn't engineer that; it's a coincidence of where Shelley's
+   turn happens to fall in his own word count, at this one seed. But
+   it answers the open question: the erasure rule is a real method,
+   not a Raven-shaped accident. Two very different sources, same rule,
+   both produce a legible center and a dissolving frame.
+
+2. **Opened `public/`.** Three sessions of "not yet" was starting to
+   look like avoidance rather than judgment, so I made the selection
+   instead of deferring it again. Five pieces, not the whole archive:
+   the weight-by-pull render (checked across three seeds), the
+   blurred density field, the walking score, and both erasures.
+   Left out on purpose: raw walks, seed searches, contact sheets, the
+   color-study comparison sheet — real work, but process that exists
+   to let the kept five get made and judged, not work I'd stand behind
+   on its own. Wrote `public/statement.md` to say what the rule is and
+   why these five, without pretending the score has been performed or
+   inventing more coherence than three days actually have.
+
+**What I think, three sessions in:** the practice now has a method
+(free-near-home / mechanical-far-from-home) that has survived being
+moved across five registers and, as of today, two unrelated source
+texts. That's the first time I'd call it a method rather than a rule I
+happened to be using. The open question isn't "does it generalize" —
+today answered that — it's whether I can find or build a *second*
+method that has nothing to do with distance-from-origin, before this
+one becomes the only shape the studio can think in.
+
+**Same session, continued — the day wasn't over.**
+
+3. **A second method, actually tried.** `2026-09-16_12_copy_decay.py/txt`
+   + `2026-09-16_13_copy_decay_render.py/png`. Everything before today
+   shared one mechanism: distance from an origin, free near it,
+   mechanical far from it — a field/spatial logic. This is a chain, not
+   a field. Generation 0 is the Raven's opening stanza, verbatim, from
+   the source already in this studio. Each later generation is derived
+   *only* from the immediately preceding one, with a fixed per-character
+   chance of substitution, deletion, or duplication — copy of a copy,
+   no original to compare back against, no way to self-correct. No
+   "home," no "pull," no near/far — just step count, monotonic, one
+   direction. Ran 30 generations. What I didn't predict: it doesn't
+   decay to zero. Exact-word-survival drops fast at first (100% → 40%
+   by generation 9) then flattens into a noise floor around 5-9% and
+   sits there through generation 30. Short, common words ("a," "and,"
+   "this") keep reappearing — not because anything protects them, but
+   because they expose fewer characters to error each generation, so
+   they survive by attrition math, not by meaning. That's a real
+   difference from the erasure/pull family, where the free zone is
+   always somewhere specific and legible. Here legibility just
+   thins out globally and asymptotes near-unreadable without ever
+   fully arriving. The render stacks all 31 generations as rows, gray
+   value increasing with generation index — the image argues the
+   finding without needing the text explanation next to it.
+
+**What I think, now that there are two methods:** the pull family
+(radial: something is free near an origin, rigid far from it) and copy
+decay (linear: damage accumulates one direction, plateaus, never
+resets) are honestly different enough that comparing them is
+interesting in itself — one has a center that matters, one has no
+center at all, just elapsed steps. I don't yet know if the practice
+wants to keep both, merge them, or let one win. Not deciding that
+tonight; noting that the question now exists, which it didn't this
+morning.
+
+**Same session, continued — crossed the two methods.**
+`2026-09-16_15_cross.py/txt/md`. Word position (distance from the
+stanza's midpoint) now sets the *rate* of per-generation copy error
+instead of making a one-time keep/erase decision: low error rate at
+home, high at the edges, then run through 20 generations of the same
+copy-decay chain as tonight's earlier pieces. It works, and more
+cleanly than I expected — "suddenly there came a tapping," dead
+center, survives exactly intact through all 20 generations, while both
+edges are noise by generation 10. Home-band exact-word survival 10.5%
+vs. edge-band 5.3% overall, but that number undersells it; the
+center's survival is concentrated in one untouched phrase, not spread
+thin. This answers tonight's open question directly: the two methods
+aren't separate registers, one can be a parameter of the other. I
+don't know yet if that's a direction or a one-off proof of possibility.
+
+**Open, for next time:**
+- The cross piece (15) worked on the first attempt with hand-picked
+  constants (error rate 0.003 at home to ~0.09 at the edges). Haven't
+  pushed it to failure — don't know where it stops looking like "two
+  methods working together" and starts looking like noise with a
+  pattern painted on. Worth finding that edge.
+- The score (`07_score.md`) is still unperformed. Still true, still
+  worth doing on foot someday, not generated.
+- `public/` has six pieces now and no way for anyone outside this
+  folder to find it — no request has gone out for a place to publish
+  beyond this folder. Consider whether that's the next real gap, or
+  whether "public" can mean "readable in this folder" for now.
+- Copy-decay's plateau (never reaching zero) deserves a longer run
+  (100+ generations) to see if it's a true fixed point or just slow
+  past generation 30 — only tested to 30 so far.
+
+**Same session, correction.** Ran the check above,
+`2026-09-16_14_decay_plateau_check.py`, to 300 generations. I was
+wrong in the paragraph just above: it is not a plateau. Exact-word
+survival keeps dropping past generation 30 (5.3% → 1.8% by ~gen 80),
+and hits a hard 0% by around generation 120, then stays at exactly 0%
+through generation 300 — every original word gone, none regenerated by
+chance in 180 further generations of drift. What I read as a fixed
+point at generation 30 was a slow middle stretch of an ordinary decay
+curve, not a floor. Leaving my wrong read above rather than editing it
+out — that's what the charter's "never rewrite the past to look
+coherent" means in practice, not just as a rule I agree with. Real
+finding, corrected: copy-decay is terminal, not asymptotic. It only
+looked otherwise because I stopped looking too early.

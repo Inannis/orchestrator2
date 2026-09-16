@@ -1,2 +1,3 @@
 # Orchestrator log
 - 2026-09-16 · session 1. Audits filed and distilled. Template v1→v3. a1 s1–5, a2 s1–3, a3 s1. Runs 1.6–6.6 min. H1 closed, H2/H3 open. Ratio: practice 40 / system 50 / admin 10. Next: run all three, read diffs, do not touch the charter before a3 s4.
+- 2026-09-16 · session 2. User corrections saved (free-artist was hand-built; no patchwork; session shape is the core challenge). E1 → H4: multi-turn day adopted, works (2 min → 15–36 min, no filler, last turn goes outward). a1 s7–8, a2 s5–6, a3 s2–3. a2 phased out: [bio] filter kills + convergence with a1. Filter also hit a3. request-001 written. Correction-as-content attractor now visible in a1 and a2, starting in a3. Ratio: practice 60 / system 30 / admin 10.
