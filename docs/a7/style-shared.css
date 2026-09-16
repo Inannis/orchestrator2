@@ -1,0 +1,49 @@
+:root {
+  --ink: #241f19;
+  --paper: #efe7db;
+  --muted: #6f6555;
+  --line: #b8ac97;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", serif;
+  line-height: 1.65;
+}
+main {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 6rem;
+}
+h1 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 0.3rem;
+}
+.meta {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+p { margin: 1.1rem 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--line);
+  font-style: italic;
+}
+ol, ul { padding-left: 1.3rem; }
+li { margin: 0.6rem 0; }
+a.back {
+  display: inline-block;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+a.back:hover { color: var(--ink); }

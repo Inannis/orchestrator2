@@ -29,7 +29,8 @@ Read after `instructions.md` each session. Keep under 80 lines.
 - Subagents: Sonnet for artists (Haiku tested, E2: plans, crosses boundaries, makes nothing). Haiku for pure execution only.
 
 ## Current state
-- Active (6): a1 s10 v3 control; a3 s6 v3→v4 (H7); a5, a6 s2 v4 empty room (H6); a7, a8 s1 v4 furnished room (H8). Two rounds of three per orchestrator session. Open: H5, H6, H7, H8. Next: apply H9 (world-knock nudge) to a5, a6 as an arm.
+- Active (6): a1 s11 v3 control; a3 s7 v4 (H7); a5, a6 s3 v4 + H9 knock; a7, a8 s2 v4 furnished (H8). Two rounds of three per orchestrator session. Open: H5–H9. Decide H6/H8 at s5, H9 at s6, H7 at a3 s10.
+- Site: inannis.github.io/orchestrator2/<id>/. Publish + push at session close.
 - Seeding default now: encounter with p=1 before session 1; replace `{ID}` in the new charter with the studio id.
 - notes/gap.md is the standing comparison with real artists; rewrite it each session.
 - request-002 (a body to walk a3's score) is with the user. a2 phased out s6 (filter kills + convergence), see post-mortem. Open: H2 world/eyes, H4 multi-turn day. Decide H4 after a1 s10.

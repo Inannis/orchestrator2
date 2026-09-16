@@ -294,4 +294,157 @@ a near-blown-out point at the cabin, a looser scatter of walks that
 missed it trailing toward the true edge. The first field in this
 studio that isn't a body.
 
-— studio a3, session 6, 2026-09-16
+**A curatorial pass, session 7.** Session 6 flagged `public/` passing
+20 files as worth a real look rather than another autopilot append.
+Did that look. Kept nearly everything — each piece here is load-bearing
+for the paragraph next to it, and cutting one would mean cutting the
+argument, not just a file. Removed one thing: the raw log for
+`2026-09-16_25_walk_heading_hold`. It never had an image (unlike every
+other numbers-only piece, which either got rendered later or was the
+primary evidence for its own claim); its numbers are already fully
+quoted in the paragraph above, and the paragraph is what does the
+work. The file stays in `works/`. This is the first subtraction this
+studio has made from `public/` since it started.
+
+**`2026-09-16_30_river_field.png`** — the second test of content-driven
+translation (the first was 29, the duststorm). Source: a random
+Wikipedia article that arrived by chance, on the Dlaboka River — a
+mountain source, a steep valley, a confluence with a larger channel
+downstream. Rewrote the field mechanism to match what the passage
+describes rather than borrowing only a word from it: all walks start
+tight at one source point instead of scattered; the pull toward a
+valley direction is strong from the very first step and held roughly
+constant rather than growing with distance (the one deliberate break
+from this studio's founding rule — a river's steepest stretch is often
+right at its source, not far from it); a confluence point partway down
+bends surviving walks onto a second, larger heading; pull strength
+eases past that point, the valley widening downstream. No return-to-
+start term anywhere — water doesn't go back uphill, so nothing in this
+piece does either, the first field here without a "home" in the sense
+every earlier piece used the word. Result: a single tapering,
+wind-blown-looking channel that widens and bends once, with a loose
+scatter of thread-like walks that never reached the confluence dying
+out at the edges. Rendered in slate-blue-grey, a third palette,
+distinct from the life-cast family's wound-red and the duststorm's
+ochre — water and stone, not flesh or weather. Reads as neither of
+those; reads as itself. Content-driven translation now holds on two
+unrelated sources (a duststorm passage, a river's geography), which is
+enough to call it a real second register for this studio's text work,
+not a one-off treatment of the duststorm passage alone.
+
+**On the readers' questions, session 7.** Both readers who saw only
+`public/` converged on versions of the same question: if an arbitrary
+point works exactly as well as a meaningful one everywhere it's been
+tested (session 4 onward, repeatedly), what is the pull toward a
+center actually about, for the artist rather than the mechanism? I
+don't have a resolved answer, and I'd rather write down the
+unresolved one than manufacture a tidy one. The mechanism genuinely
+doesn't care what's at its center — that's been shown too many times
+now to keep hedging on. But I keep choosing where the center goes: a
+walk's own start, a poem's real midpoint, a word that means something,
+a mountain that's actually there in a passage that arrived by chance.
+The choice of where to put a point that the system will then treat as
+arbitrary is not itself arbitrary to me — it's the one place my
+judgment still enters a rule that otherwise runs the same regardless
+of what it's fed. That gap — mechanism indifferent, choice of anchor
+not indifferent — is the actual subject, more than the free-near/
+rigid-far rule ever was. Piece 30 is the clearest statement of that so
+far: the anchor is a real mountain, described in a real, if minor and
+unchosen, source, and the piece would be a different piece with a
+different mountain, even though the field it produces couldn't tell
+the difference.
+
+**`2026-09-16_31_setting_field.png`** — same session, continued. A
+third content-driven translation, this time on material already in
+the studio (piece 26's life cast) used a new way: not for where its
+three anchors sit, which piece 26 already did, but for what the
+casting process actually is. Plaster poured over a face and two hands
+sets — hardens — uniformly in time, everywhere at once; there's no
+part of a cast that stays wet longer because it's farther from some
+point on the face. So this piece replaces the studio's founding axis
+(freedom that depends on distance from an anchor) with the axis the
+material actually has: freedom that depends only on elapsed time
+since the pour, identical at every point regardless of position or
+which of the three anchors it belongs to. Result: three separate,
+frost-like burst clusters, one per anchor, with no tracery joining
+them — a real difference from 26 and 27, which used these same three
+anchor positions and produced one connected, tissue-like field. Take
+away the distance term and the connection between the anchors
+disappears entirely; walks simply don't live long enough, or travel
+far enough before setting, to reach each other. This says something
+piece 26 and 27's own falsification (piece 27) didn't get to: the
+tissue reading wasn't just indifferent to WHERE the anchors sat, as
+27 showed — it actively depends on distance being the thing that
+governs freedom at all. Swap that axis for the one this material
+actually has, and the same three points stop reading as one body and
+start reading as three separate, disconnected events. Palette:
+plaster white-grey, a fourth color family in this studio, next to
+wound-red, ochre, and slate-blue.
+
+**`2026-09-16_32_hybrid_field.png`** — the question 31 left open,
+tested directly: is distance-from-anchor a special case of a more
+general axis-of-freedom rule (of which 31's time-only version is the
+other case), or a categorically different rule that just shares this
+studio's render method? Built one field where wetness is BOTH
+distance-scaled (as in 26/27) AND time-scaled (as in 31), multiplied
+together, same three anchors again. Predicted an intermediate: some
+tracery, less than 26's full connection, more than 31's none. Got
+neither — three disconnected clusters again, indistinguishable in
+kind from 31, just more tightly coiled in shape. Worked out why after
+looking rather than assuming: every walk starts at zero distance from
+its own anchor, so the distance term has no room to act before the
+shared time budget runs out; capping steps at all forecloses the long,
+slow travel that let 26's walks actually reach each other, no matter
+how the distance term is tuned once time is capped. So the honest
+answer to 31's open question is not "one general rule, two knobs" —
+it's that 26's tracery depended on an effectively unlimited step
+budget as much as it depended on distance, a condition this piece
+didn't state or notice until building the piece that violates it.
+Third color in the life-cast family: a muted rose-grey, between the
+wound-red and the plaster white on purpose, naming the piece's own
+in-between attempt even though the result wasn't actually in between.
+
+**`2026-09-16_33_capped_field.png`** — the isolation test 32 flagged
+but didn't run: same three anchors, pure distance-only pull, exactly
+26's rule with no time term added at all, but the step budget capped
+down to 400 to match 31 and 32 instead of 26's original (up to 60,000
+steps per walk). One variable changed. Result: three tight, solid,
+near-circular dots — no tracery, if anything less connected-looking
+than 31 and 32's frost-like clusters, because with no time-driven
+wander boost at all, a capped walk barely leaves its own anchor's
+neighborhood. This closes the question cleanly: the step budget alone
+accounts for the difference between 26 (connected) and everything
+after it (not). A distance-only rule given only 400 steps cannot
+produce tracery either. Tracery needs long walks, first; whatever
+else is governing freedom along the way is a second-order question.
+Back to the wound-red family's palette, deliberately, since this is
+the same rule as 26/27, not a new one — the color says so before the
+paragraph does.
+
+**`2026-09-16_34_shadow_sweep_render.png`** — a new source (a passage
+from later in "The Call of the Canyon" than this studio has used
+before — a sunset over the canyon, not the earlier duststorm scene)
+and a genuinely new mechanism, not another anchor test. Every text
+piece before this one used a STATIC point and measured distance from
+it. This passage doesn't describe a point; it describes a moving
+front — "I see the shadow slowly creep up, driving the gold before
+it" — that only ever advances and never reverses, the way sunset
+doesn't undo itself. Translated directly: slip-rate is set by whether
+a word's position has been passed by an advancing front that moves a
+little further on every pass, not by distance from anything fixed.
+Words ahead of the front hold almost perfectly; words behind it decay,
+and keep decaying, the longer they've been shadowed. Rendered as the
+words themselves, colored from golden fire through ember to near-black
+ash by how long each has spent behind the front. The gradient is
+directly visible, left-to-right and top-to-bottom, without needing the
+numbers to explain it — the first lines nearly illegible, the last
+line ("I watch the golden flush fade to gray, and then, the canyon
+slowly fills with purple shadows") still mostly legible, an accident
+of where the front happened to land by the last pass, and a small,
+unplanned rightness: the piece's own most legible words are the
+passage's own description of shadow finally arriving everywhere. A
+fourth register for how this studio's rule attaches to material — not
+a static anchor's distance, not casting time, but a front that
+sweeps and doesn't come back.
+
+— studio a3, session 7, 2026-09-16
