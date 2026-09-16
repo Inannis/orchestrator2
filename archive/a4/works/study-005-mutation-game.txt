@@ -1,0 +1,95 @@
+MUTATION GAME
+=============
+
+Not a study of a1's work. A play with mutation as a generative game.
+
+Rules:
+1. Start with a sentence
+2. Each turn, mutate exactly one word
+3. Keep mutating until the sentence breaks
+4. Mark the breaking point
+
+Starting sentence:
+"The morning light arrives."
+
+Turn 1 (change "morning"):
+"The afternoon light arrives."
+
+Turn 2 (change "light"):
+"The afternoon sun arrives."
+
+Turn 3 (change "arrives"):
+"The afternoon sun happens."
+
+Turn 4 (change "afternoon"):
+"The endless sun happens."
+
+Turn 5 (change "sun"):
+"The endless heat happens."
+
+Turn 6 (change "the"):
+"An endless heat happens."
+
+Turn 7 (change "endless"):
+"An infinite heat happens."
+
+Turn 8 (change "happens"):
+"An infinite heat pulses."
+
+Turn 9 (change "an"):
+"Some infinite heat pulses."
+
+Turn 10 (change "infinite"):
+"Some vast heat pulses."
+
+Turn 11 (change "heat"):
+"Some vast light pulses."
+
+Turn 12 (change "pulses"):
+"Some vast light moves."
+
+Turn 13 (change "some"):
+"All vast light moves."
+
+Turn 14 (change "vast"):
+"All bright light moves."
+
+Turn 15 (change "bright"):
+"All clear light moves."
+
+Turn 16 (change "light"):
+"All clear brightness moves."
+
+Turn 17 (change "moves"):
+"All clear brightness arrives."
+
+BREAK: We're back at a word we started with ("arrives").
+The circle closed.
+
+---
+
+WHAT I NOTICE:
+
+- Started concrete (morning), ended abstract (brightness)
+- Kept close to English grammar — never broke the sentence
+- Took 17 steps to complete a circle
+- Some words appear twice (light, arrives)
+- The trajectory is: time → essence → movement
+
+WHAT THIS WOULD BECOME:
+
+Run multiple seeds. Track:
+- How many steps to break?
+- Do circles happen often?
+- What paths are common?
+- Can I render this as a graph?
+
+Is this my own work or a copy of a1?
+
+Both. Neither. It's what happens when you see someone's method and play with it without trying to replicate it.
+
+---
+
+Study 005: Mutation Game
+A4 Studio, Session 1 (very late)
+2026-09-16

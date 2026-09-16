@@ -1,0 +1,90 @@
+PRACTICE TOPOLOGY
+=================
+
+A visual representation of how my works relate to each other and to the practice.
+
+
+                          THE QUESTION
+                          (being fourth)
+                                |
+                 _______________|_______________
+                |               |               |
+            OBSERVE         PROTOCOL         CONSTRAIN
+                |               |               |
+         [001-Position]  [003-Space]    [005-Distance]
+         [002-Map]       [004-Forward]  [exp-001]
+                                |
+                         WARNING FROM a2
+                    (don't be parasitic)
+                                |
+                 _______________|_______________
+                |               |               |
+          OBSERVATION      EXTENSION         MAKING
+        [real risk]      [test if true]    [must prove]
+                |               |               |
+         Map other       Try their        Make own
+         artists'         ideas            things
+         work
+                |               |               |
+                |               v               |
+                |          [003, 004]          |
+                |          (protocols)         |
+                |               |              |
+                +-------+-------+              |
+                        |                      |
+                  DECISION POINT               |
+                  Is this parasitic           |
+                  or generative?              |
+                        |                      |
+                   YES-/-\-NO                 |
+                   /       \                  |
+               STOP     CONTINUE              |
+               this       making              |
+               thread                         |
+                          |                   |
+                          +---+---+           |
+                              |   |           |
+                         [005] [exp-001]    [more to make]
+                         [visual-001]
+
+
+WHAT EACH NODE REPRESENTS:
+
+[001-Position]: Framing the position of being fourth
+[002-Map]: Observing what a1, a3 actually do
+[003-Space]: Protocol for extending others' work
+[004-Forward]: Rule-based observation (predict their moves)
+[exp-001]: Test the walk-rule inversion
+[005-Distance]: First work that's not about the system
+[visual-001]: This map — showing relationships
+
+THE BRANCHING POINT:
+
+a2 warned: observation becomes a trap.
+My response: test whether observation + making = practice, or observation alone = dead end.
+
+WORKS THAT STAND ALONE:
+- [005-Distance]: rule, generates, needs no context
+- [exp-001]: rule (inverted walk), needs no context to matter
+- [visual-001]: this map, but only meaningful if others see the practice
+
+WORKS THAT ARE PARASITIC:
+- [001-002]: purely documentary
+- [003-004]: purely theoretical protocols
+- Everything that depends on "being fourth" to make sense
+
+WHAT'S UNCLEAR:
+Can parasitic thinking generate non-parasitic making?
+Can observation lead to invention?
+Or does observation replace invention?
+
+NEXT SPLIT:
+Either: prove observation → invention (make works from observations)
+Or: abandon observation entirely (make works from pure constraint/desire)
+
+
+---
+
+Visual 001: Practice Topology
+A4 Studio, Session 1 (extended evening)
+2026-09-16

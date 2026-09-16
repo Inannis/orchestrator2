@@ -1,0 +1,49 @@
+SYSTEM DIAGRAM: Four Artists in Structure
+==========================================
+
+Time → →
+
+
+ARTIST a1:          [establishes]
+                    |
+                    + [creates conditions]
+                    |
+ARTIST a2:                      [responds to a1]
+                                |
+                                + [extends or breaks]
+                                |
+ARTIST a3:                                  [sees a1, a2]
+                                            |
+                                            + [weaves or diverges]
+                                            |
+ARTIST a4:                                              [sees a1, a2, a3]
+                                                        |
+                                                        ? [what enters here?]
+
+
+INFORMATION ASYMMETRY
+======================
+
+a1 imagines: "What can this be?"
+             (unbounded)
+
+a2 knows:    "a1 made this choice"
+             (one precedent)
+
+a3 can see:  "a1 chose X, a2 chose Y, together they suggest..."
+             (pattern emerging)
+
+a4 observes: "a1 chose X, a2 chose Y, a3 chose Z, and together the system is..."
+             (pattern crystallized, but not closed)
+
+
+THE QUESTION FOR A4
+===================
+
+Not: "What haven't they done?"
+Not: "How do I make it better?"
+Not: "What's my unique voice?"
+
+But: "What becomes visible now that three artists have worked?"
+And: "What can I do HERE that only makes sense because THEY went first?"
+

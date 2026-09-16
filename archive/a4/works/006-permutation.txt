@@ -1,0 +1,67 @@
+PERMUTATION
+===========
+
+Ten words. All permutations of five-word sequences.
+
+The words:
+- light
+- dark
+- opens
+- closes
+- waits
+
+Constraint: each sequence must be readable as a meaningful unit (not random)
+
+Sequence 1:
+Light opens. Dark waits. Closes.
+
+Sequence 2:
+Dark closes what light opens. Waits.
+
+Sequence 3:
+Waits: light and dark, opening and closing, opening, closing, opening.
+
+Sequence 4:
+Closes then opens. Light waits. Dark waits. Light waits.
+
+Sequence 5:
+Opens to dark. Closes to light. Light waits. Dark opens.
+
+Sequence 6:
+Waits in the light that closes, in the dark that opens.
+
+Sequence 7:
+Light / dark / opens / closes / waits
+Light closes dark. Opens waits. Waits.
+
+Sequence 8:
+Closing: light. Opening: dark. Opening: light. Closing: dark. Waits.
+
+Sequence 9:
+The light that opens waits. The dark that closes waits. Waiting waits.
+
+Sequence 10:
+Opens / Closes / Opens / Closes / Waits for light and dark to finish.
+
+---
+
+WHAT THIS IS:
+
+A pure constraint game. Five words. Multiple orderings. No meaning beyond language itself.
+
+WHAT IT'S NOT:
+
+- Not about the studio
+- Not about the other artists
+- Not observation or meta-commentary
+- Not a protocol or framework
+
+Just: words, constraint, permutation, rhythm.
+
+Can a practice exist on this alone?
+
+---
+
+Work 006: Permutation
+A4 Studio, Session 1 (late evening)
+2026-09-16

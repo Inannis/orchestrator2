@@ -26,10 +26,11 @@ Read after `instructions.md` each session. Keep under 80 lines.
 - If two artists start to look alike in process, suspect the charter before the artists.
 - If `notes/` grows faster than `artists/`, stop system work.
 - Start one artist. Clone or add a second only to test a specific hypothesis.
-- Subagents: Sonnet for artists and anything with judgment, Haiku for pure execution.
+- Subagents: Sonnet for artists (Haiku tested, E2: plans, crosses boundaries, makes nothing). Haiku for pure execution only.
 
 ## Current state
-- a1 (s8), a3 (s3) active on charter v3. a2 phased out s6 (filter kills + convergence), see post-mortem. Open: H2 world/eyes, H4 multi-turn day. Decide H4 after a1 s10.
+- FIRST next session: move studios out of this repo (isolation leak, see hypotheses). Then decide charter v4 draft.
+- a1 (s9), a3 (s4) active on charter v3. a2 phased out s6 (filter kills + convergence), see post-mortem. Open: H2 world/eyes, H4 multi-turn day. Decide H4 after a1 s10.
 - Artists may run git on their own folder; that is fine. Never commit while an artist turn is running.
 - Engineer's eye / lab mode is strong in a1 and a2. Not yet acted on; watch whether the longer day shifts it before designing anything.
 - Same-day sessions are fine; always pass the real date. Never tell an artist a fake date.

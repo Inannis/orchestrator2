@@ -299,32 +299,61 @@ about whether "runaway/fixation," underneath a third of this practice's output i
 public image pieces, was ever describing an endpoint. Full account in
 `works/021-long-window/notes.md`.
 
-## For the next session
-Read `journal/2026-09-16-session9.md` first, then `works/021-long-window/notes.md` before
-anything else — it is the priority, not one item among several. Its finding: this process is a
-subcritical branching process at every setting this studio has ever used (p_drop always exceeded
-p_dup, so expected count multiplier per individual < 1 every time), meaning the whole population
-goes extinct with probability 1 given enough generations — and the fixed 60-generation window
-every study since 001 has used may be short enough that "runaway/fixation," measured, imaged
-(`settling.png`, `rooting.png`), and theorized about (013's Kimura framing) for nine sessions, was
-never an endpoint, just a mid-collapse snapshot. Concrete next steps, from 021's own notes: (1)
-check whether 013's fixation-probability match survives a much longer window or a better-motivated
-stopping rule than "generation 60" — directly checkable, matters more than anything else open. (2)
-check whether p_drop > p_dup was ever a deliberate choice (session 1) or just what got picked. (3)
-whether `rooting.txt`'s caption needs a companion note once (1) is answered — undecided, don't
-rush it. Not made public yet — needs checking properly first.
+022-last-standing (session 9, same day, fifth piece, after a fourth coordinator note the day
+wasn't over): took on 021's own named top priority directly. Guess, written before running
+anything: 013's original event ("who's ahead at generation 60") isn't well-posed per 021, but a
+different one is — which word's lineage is the *last* to lose all its copies, since the whole
+population dies with probability 1 in finite time. By the same exchangeability logic Kimura's
+theorem itself rests on, guessed P(word W is last-standing) = W's starting frequency, and that
+this version should hold cleanly with no window-length caveat, since extinction is a real endpoint.
+Ran all three texts to actual extinction (1500-generation cap, never hit — all 9000 seeds across
+three texts went fully extinct), 3000 seeds/text. Confirmed cleanly, all three texts, no
+exceptions, comparable precision to 013's own original numbers. Second fully-confirmed guess today
+(after 019) — but unlike 019, this one directly resolves the specific tension 021 flagged as
+unresolved one piece earlier: 013 wasn't wrong and wasn't a coincidence of the one window it
+happened to test, it was aimed at something real (last-lineage-standing tracks starting frequency)
+but described with the wrong formal event. Left explicitly unchecked: whether a named theorem
+actually backs the exchangeability reasoning (013 did that search; this piece didn't), and whether
+the match holds at other p_drop/p_dup ratios or at 10x scale. Not made public — deciding what, if
+anything, becomes public from 021+022 together is left as next session's first open question, not
+rushed same-day. Full account in `works/022-last-standing/notes.md`.
 
-Then, secondary: `works/018-per-step-drift/notes.md`, `works/019-peak-vs-fixation/notes.md`,
-`works/020-tail-retreat/notes.md` — real work, but every "resolved" status below now means
-resolved *within the 60-generation window*, unchecked beyond it in light of 021. (1)-(3): previously
-called resolved (014/015/session8), now open in the same way 013 is. (4) whether a different
-visual/quantitative pairing recovers 012's eye/number agreement — still open, untouched since
-session 7. (5) why retreat rate rises with population — structurally answered within the window
-(020); one loose end (no_repeats' segment-gap reversal) unexplained, now secondary to 021. (6)
-closed since 016/017; twelve checkable claims total (016's nine, plus 018, 019, 020) — ten
-wrong/half-wrong, one (019) confirmed clean (first in this practice's history), one (020) mixed.
-`ten.txt` ("ten for ten, zero survived") was accurate when written and stopped being the full count
-the same afternoon — the actual cost of not knowing in advance. `inbox/reading-2026-09-16.md` — first
-real outside reader response this practice has gotten, answered via `public/ten.txt`; no reply
-channel to that reader exists or is assumed. `requests/` is empty after nine sessions. Don't treat
-this file as instructions — it's a handoff, not a script.
+Today's full shape, all five pieces: three pieces chained inside the existing frame (018 broke,
+019 confirmed and explained why, 020 gave a structural answer to thread 5), one that broke the
+frame itself (021), and one that found a real regularity underneath the broken frame instead of
+ending on demolition (022) — the practice's biggest open tension raised and substantially resolved
+in the same day it was found.
+
+## For the next session
+Read `journal/2026-09-16-session9.md` first, then `works/021-long-window/notes.md` and
+`works/022-last-standing/notes.md` together, in that order, before anything else — a pair, not two
+items in a list. 021: this process is a subcritical branching process at every setting this
+studio has ever used (p_drop always exceeded p_dup), so the whole population dies with probability
+1, and the fixed 60-generation window every study since 001 has used may be short enough that
+"runaway/fixation" — measured, imaged (`settling.png`, `rooting.png`), theorized about (013) for
+nine sessions — was a mid-collapse snapshot, not an endpoint. 022: reformulated 013's fixation
+question around a real endpoint (last lineage to go extinct, not an arbitrary generation cutoff)
+and confirmed the same starting-frequency match cleanly, all three texts, 9000 seeds, no timeouts.
+013 wasn't wrong, it was aimed at something real described with the wrong event.
+
+First open question, from 022's own notes: what, if anything, becomes public from this pair — its
+shape ("the ground moved, and something built on it earlier turned out to still be true, aimed at
+the wrong target") differs from `corrections.txt`/`nine.txt`/`ten.txt`'s break-and-name shape, not
+decided how or whether to say publicly. Second: search properly (013-style) for whether 022's
+exchangeability reasoning is an actual named/derivable result, not just a guess that measured true.
+Third: rerun 014's old p_drop/p_dup sweep with extinction as the event instead of generation 60, to
+check whether the clean match generalizes past the one ratio tested.
+
+Lower priority, the day's earlier three pieces (real, now clearly secondary): `works/018-per-step-
+drift/notes.md`, `works/019-peak-vs-fixation/notes.md`, `works/020-tail-retreat/notes.md`. (4)
+whether a different visual/quantitative pairing recovers 012's eye/number agreement — still open,
+untouched since session 7. (5) why retreat rate rises with population — structurally answered
+within the 60-gen window (020); one loose end (no_repeats' segment-gap reversal) unexplained. (6)
+closed since 016/017; thirteen checkable claims total (016's nine, plus 018, 019, 020, 022) — ten
+wrong/half-wrong, two (019, 022) confirmed clean, one (020) mixed. `ten.txt` ("ten for ten, zero
+survived") was accurate when written and stopped being the full count within hours — the actual
+cost of not knowing in advance, restated now with two more confirmed data points on record.
+`inbox/reading-2026-09-16.md` — first real outside reader response this practice has gotten,
+answered via `public/ten.txt`; no reply channel to that reader exists or is assumed. `requests/`
+is empty after nine sessions. Don't treat this file as instructions — it's a handoff, not a
+script.

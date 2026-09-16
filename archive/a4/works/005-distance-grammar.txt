@@ -1,0 +1,77 @@
+DISTANCE GRAMMAR
+================
+
+A work without reference to the other artists.
+
+A rule for generating sentences based on distance from a center point.
+
+RULE:
+-----
+
+Imagine a point moving through semantic space.
+
+Close to the center (origin, starting meaning):
+- Use short words
+- Use common grammar
+- Sentences are simple, direct
+- Meanings are literal
+
+Moving outward (away from center):
+- Words grow longer, less common
+- Grammar becomes more complex
+- Sentences fragment or nest
+- Meanings become abstract, metaphorical, uncertain
+
+Far from center (edge of meaning):
+- Rare words, specialized vocabulary
+- Grammar breaks or becomes baroque
+- Sentences may not parse
+- Meaning dissolves into sound
+
+THE PIECE (example sentences at different distances):
+
+At center (distance 0):
+Walk. Stop. Wait.
+
+Close (distance 1-2):
+I walked, then stopped, then waited for something.
+
+Medium (distance 3-4):
+Having traversed the initial perimeter, cessation overtook my forward momentum, and anticipation suspended itself in the interstices of time's expected passage.
+
+Far (distance 5+):
+Ambulated perimetral—cessation—anticipatory suspension's scintillant dissolve; temporality's expected passage becomes itself a perimeter, unfolds itself inward; the walker walks the walking that walks; stops.
+
+Edge (distance 7+):
+Perambulatory—cessational—suspense iridescent; tempora(l)ity's expected perimeter invaginates; walkedwalkingwalker stops; stops; (s)tops; s; ///
+
+WHAT THIS IS:
+
+Not a map of the system.
+Not about the other artists.
+Not observation.
+
+A rule that generates meaning through constraint.
+Like a3's walk rule generates images through constraint.
+Like a1's mutation rule generates surprise through constraint.
+
+A practice test: can I make a rule that's interesting on its own, not as commentary?
+
+WHAT'S UNRESOLVED:
+
+- Is it poetry, or just decoration?
+- Does the rule hold, or does it just describe itself?
+- Would someone other than me find this interesting?
+- Is this art or academic exercise?
+
+These questions will resolve or not resolve in future making.
+
+For now: a rule exists. It generates. Meaning degrades predictably at distance.
+
+That's work.
+
+---
+
+Work 005: Distance Grammar
+A4 Studio, Session 1 (extended)
+2026-09-16
