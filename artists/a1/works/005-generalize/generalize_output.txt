@@ -1,0 +1,198 @@
+--- handoff, p_drop=0.02 ---
+  ratio=0.000 empty= 0/50 avg_share(non-empty)=24%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.125 empty= 0/50 avg_share(non-empty)=27%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.250 empty= 0/50 avg_share(non-empty)=30%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.375 empty= 0/50 avg_share(non-empty)=27%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.500 empty= 0/50 avg_share(non-empty)=28%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.625 empty= 0/50 avg_share(non-empty)=29%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.750 empty= 0/50 avg_share(non-empty)=31%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.875 empty= 0/50 avg_share(non-empty)=28%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.000 empty= 0/50 avg_share(non-empty)=30%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.125 empty= 0/50 avg_share(non-empty)=29%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.250 empty= 0/50 avg_share(non-empty)=28%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.375 empty= 0/50 avg_share(non-empty)=27%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.500 empty= 0/50 avg_share(non-empty)=28%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.625 empty= 0/50 avg_share(non-empty)=28%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.750 empty= 0/50 avg_share(non-empty)=29%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.875 empty= 0/50 avg_share(non-empty)=28%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=2.000 empty= 0/50 avg_share(non-empty)=28%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  peak runaway@0.80 is at ratio=0.0 (rate=0%)
+  peak runaway@0.90 is at ratio=0.0 (rate=0%)
+  peak runaway@0.95 is at ratio=0.0 (rate=0%)
+
+--- handoff, p_drop=0.04 ---
+  ratio=0.000 empty=10/50 avg_share(non-empty)=64%  runaway@0.80=34%  runaway@0.90=34%  runaway@0.95=34%
+  ratio=0.125 empty= 7/50 avg_share(non-empty)=67%  runaway@0.80=36%  runaway@0.90=36%  runaway@0.95=36%
+  ratio=0.250 empty= 6/50 avg_share(non-empty)=62%  runaway@0.80=28%  runaway@0.90=26%  runaway@0.95=26%
+  ratio=0.375 empty= 2/50 avg_share(non-empty)=57%  runaway@0.80=22%  runaway@0.90=22%  runaway@0.95=22%
+  ratio=0.500 empty= 2/50 avg_share(non-empty)=54%  runaway@0.80=12%  runaway@0.90=10%  runaway@0.95=10%
+  ratio=0.625 empty= 0/50 avg_share(non-empty)=50%  runaway@0.80=12%  runaway@0.90=12%  runaway@0.95=10%
+  ratio=0.750 empty= 0/50 avg_share(non-empty)=48%  runaway@0.80=8%  runaway@0.90=8%  runaway@0.95=6%
+  ratio=0.875 empty= 0/50 avg_share(non-empty)=44%  runaway@0.80=4%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.000 empty= 0/50 avg_share(non-empty)=41%  runaway@0.80=2%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.125 empty= 0/50 avg_share(non-empty)=40%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.250 empty= 0/50 avg_share(non-empty)=38%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.375 empty= 0/50 avg_share(non-empty)=35%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.500 empty= 0/50 avg_share(non-empty)=35%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.625 empty= 0/50 avg_share(non-empty)=33%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.750 empty= 0/50 avg_share(non-empty)=34%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.875 empty= 0/50 avg_share(non-empty)=32%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=2.000 empty= 0/50 avg_share(non-empty)=29%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  peak runaway@0.80 is at ratio=0.125 (rate=36%)
+  peak runaway@0.90 is at ratio=0.125 (rate=36%)
+  peak runaway@0.95 is at ratio=0.125 (rate=36%)
+
+--- handoff, p_drop=0.08 ---
+  ratio=0.000 empty=41/50 avg_share(non-empty)=100%  runaway@0.80=18%  runaway@0.90=18%  runaway@0.95=18%
+  ratio=0.125 empty=40/50 avg_share(non-empty)=97%  runaway@0.80=18%  runaway@0.90=18%  runaway@0.95=18%
+  ratio=0.250 empty=32/50 avg_share(non-empty)=94%  runaway@0.80=30%  runaway@0.90=30%  runaway@0.95=30%
+  ratio=0.375 empty=30/50 avg_share(non-empty)=88%  runaway@0.80=30%  runaway@0.90=30%  runaway@0.95=30%
+  ratio=0.500 empty=18/50 avg_share(non-empty)=84%  runaway@0.80=38%  runaway@0.90=36%  runaway@0.95=36%
+  ratio=0.625 empty=16/50 avg_share(non-empty)=78%  runaway@0.80=32%  runaway@0.90=30%  runaway@0.95=30%
+  ratio=0.750 empty= 9/50 avg_share(non-empty)=70%  runaway@0.80=28%  runaway@0.90=20%  runaway@0.95=20%
+  ratio=0.875 empty= 2/50 avg_share(non-empty)=67%  runaway@0.80=32%  runaway@0.90=24%  runaway@0.95=20%
+  ratio=1.000 empty= 1/50 avg_share(non-empty)=57%  runaway@0.80=16%  runaway@0.90=14%  runaway@0.95=10%
+  ratio=1.125 empty= 0/50 avg_share(non-empty)=57%  runaway@0.80=22%  runaway@0.90=8%  runaway@0.95=6%
+  ratio=1.250 empty= 0/50 avg_share(non-empty)=49%  runaway@0.80=4%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=1.375 empty= 0/50 avg_share(non-empty)=41%  runaway@0.80=4%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=1.500 empty= 0/50 avg_share(non-empty)=39%  runaway@0.80=2%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=1.625 empty= 0/50 avg_share(non-empty)=37%  runaway@0.80=2%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.750 empty= 0/50 avg_share(non-empty)=35%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.875 empty= 0/50 avg_share(non-empty)=29%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=2.000 empty= 0/50 avg_share(non-empty)=32%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  peak runaway@0.80 is at ratio=0.5 (rate=38%)
+  peak runaway@0.90 is at ratio=0.5 (rate=36%)
+  peak runaway@0.95 is at ratio=0.5 (rate=36%)
+
+--- flat, p_drop=0.02 ---
+  ratio=0.000 empty= 0/50 avg_share(non-empty)=46%  runaway@0.80=6%  runaway@0.90=6%  runaway@0.95=6%
+  ratio=0.125 empty= 0/50 avg_share(non-empty)=45%  runaway@0.80=6%  runaway@0.90=6%  runaway@0.95=6%
+  ratio=0.250 empty= 0/50 avg_share(non-empty)=47%  runaway@0.80=6%  runaway@0.90=6%  runaway@0.95=6%
+  ratio=0.375 empty= 0/50 avg_share(non-empty)=43%  runaway@0.80=2%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=0.500 empty= 0/50 avg_share(non-empty)=44%  runaway@0.80=2%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=0.625 empty= 0/50 avg_share(non-empty)=42%  runaway@0.80=2%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=0.750 empty= 0/50 avg_share(non-empty)=41%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.875 empty= 0/50 avg_share(non-empty)=47%  runaway@0.80=6%  runaway@0.90=4%  runaway@0.95=2%
+  ratio=1.000 empty= 0/50 avg_share(non-empty)=45%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.125 empty= 0/50 avg_share(non-empty)=43%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.250 empty= 0/50 avg_share(non-empty)=43%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.375 empty= 0/50 avg_share(non-empty)=41%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.500 empty= 0/50 avg_share(non-empty)=42%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.625 empty= 0/50 avg_share(non-empty)=44%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.750 empty= 0/50 avg_share(non-empty)=42%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.875 empty= 0/50 avg_share(non-empty)=42%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=2.000 empty= 0/50 avg_share(non-empty)=41%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  peak runaway@0.80 is at ratio=0.0 (rate=6%)
+  peak runaway@0.90 is at ratio=0.0 (rate=6%)
+  peak runaway@0.95 is at ratio=0.0 (rate=6%)
+
+--- flat, p_drop=0.04 ---
+  ratio=0.000 empty=17/50 avg_share(non-empty)=81%  runaway@0.80=38%  runaway@0.90=38%  runaway@0.95=38%
+  ratio=0.125 empty=12/50 avg_share(non-empty)=78%  runaway@0.80=42%  runaway@0.90=42%  runaway@0.95=42%
+  ratio=0.250 empty= 9/50 avg_share(non-empty)=68%  runaway@0.80=28%  runaway@0.90=28%  runaway@0.95=28%
+  ratio=0.375 empty= 6/50 avg_share(non-empty)=76%  runaway@0.80=38%  runaway@0.90=38%  runaway@0.95=38%
+  ratio=0.500 empty= 6/50 avg_share(non-empty)=70%  runaway@0.80=34%  runaway@0.90=30%  runaway@0.95=30%
+  ratio=0.625 empty= 3/50 avg_share(non-empty)=72%  runaway@0.80=34%  runaway@0.90=30%  runaway@0.95=30%
+  ratio=0.750 empty= 3/50 avg_share(non-empty)=66%  runaway@0.80=28%  runaway@0.90=26%  runaway@0.95=26%
+  ratio=0.875 empty= 2/50 avg_share(non-empty)=59%  runaway@0.80=20%  runaway@0.90=14%  runaway@0.95=14%
+  ratio=1.000 empty= 3/50 avg_share(non-empty)=59%  runaway@0.80=12%  runaway@0.90=8%  runaway@0.95=8%
+  ratio=1.125 empty= 1/50 avg_share(non-empty)=55%  runaway@0.80=18%  runaway@0.90=12%  runaway@0.95=8%
+  ratio=1.250 empty= 1/50 avg_share(non-empty)=57%  runaway@0.80=8%  runaway@0.90=6%  runaway@0.95=4%
+  ratio=1.375 empty= 0/50 avg_share(non-empty)=49%  runaway@0.80=8%  runaway@0.90=4%  runaway@0.95=2%
+  ratio=1.500 empty= 0/50 avg_share(non-empty)=54%  runaway@0.80=10%  runaway@0.90=4%  runaway@0.95=2%
+  ratio=1.625 empty= 0/50 avg_share(non-empty)=48%  runaway@0.80=4%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=1.750 empty= 0/50 avg_share(non-empty)=47%  runaway@0.80=10%  runaway@0.90=4%  runaway@0.95=4%
+  ratio=1.875 empty= 0/50 avg_share(non-empty)=51%  runaway@0.80=6%  runaway@0.90=4%  runaway@0.95=2%
+  ratio=2.000 empty= 0/50 avg_share(non-empty)=45%  runaway@0.80=4%  runaway@0.90=0%  runaway@0.95=0%
+  peak runaway@0.80 is at ratio=0.125 (rate=42%)
+  peak runaway@0.90 is at ratio=0.125 (rate=42%)
+  peak runaway@0.95 is at ratio=0.125 (rate=42%)
+
+--- flat, p_drop=0.08 ---
+  ratio=0.000 empty=48/50 avg_share(non-empty)=100%  runaway@0.80=4%  runaway@0.90=4%  runaway@0.95=4%
+  ratio=0.125 empty=46/50 avg_share(non-empty)=88%  runaway@0.80=6%  runaway@0.90=6%  runaway@0.95=6%
+  ratio=0.250 empty=43/50 avg_share(non-empty)=100%  runaway@0.80=14%  runaway@0.90=14%  runaway@0.95=14%
+  ratio=0.375 empty=32/50 avg_share(non-empty)=94%  runaway@0.80=30%  runaway@0.90=30%  runaway@0.95=30%
+  ratio=0.500 empty=27/50 avg_share(non-empty)=95%  runaway@0.80=42%  runaway@0.90=40%  runaway@0.95=40%
+  ratio=0.625 empty=16/50 avg_share(non-empty)=92%  runaway@0.80=54%  runaway@0.90=54%  runaway@0.95=54%
+  ratio=0.750 empty=14/50 avg_share(non-empty)=82%  runaway@0.80=44%  runaway@0.90=38%  runaway@0.95=38%
+  ratio=0.875 empty= 7/50 avg_share(non-empty)=74%  runaway@0.80=34%  runaway@0.90=30%  runaway@0.95=28%
+  ratio=1.000 empty= 6/50 avg_share(non-empty)=76%  runaway@0.80=40%  runaway@0.90=30%  runaway@0.95=28%
+  ratio=1.125 empty= 3/50 avg_share(non-empty)=66%  runaway@0.80=28%  runaway@0.90=18%  runaway@0.95=12%
+  ratio=1.250 empty= 1/50 avg_share(non-empty)=62%  runaway@0.80=20%  runaway@0.90=14%  runaway@0.95=12%
+  ratio=1.375 empty= 1/50 avg_share(non-empty)=62%  runaway@0.80=18%  runaway@0.90=12%  runaway@0.95=10%
+  ratio=1.500 empty= 1/50 avg_share(non-empty)=53%  runaway@0.80=6%  runaway@0.90=4%  runaway@0.95=4%
+  ratio=1.625 empty= 0/50 avg_share(non-empty)=52%  runaway@0.80=6%  runaway@0.90=4%  runaway@0.95=4%
+  ratio=1.750 empty= 0/50 avg_share(non-empty)=49%  runaway@0.80=2%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=1.875 empty= 0/50 avg_share(non-empty)=51%  runaway@0.80=8%  runaway@0.90=2%  runaway@0.95=0%
+  ratio=2.000 empty= 0/50 avg_share(non-empty)=45%  runaway@0.80=2%  runaway@0.90=2%  runaway@0.95=2%
+  peak runaway@0.80 is at ratio=0.625 (rate=54%)
+  peak runaway@0.90 is at ratio=0.625 (rate=54%)
+  peak runaway@0.95 is at ratio=0.625 (rate=54%)
+
+--- no_repeats, p_drop=0.02 ---
+  ratio=0.000 empty= 1/50 avg_share(non-empty)=49%  runaway@0.80=16%  runaway@0.90=16%  runaway@0.95=16%
+  ratio=0.125 empty= 1/50 avg_share(non-empty)=53%  runaway@0.80=14%  runaway@0.90=14%  runaway@0.95=14%
+  ratio=0.250 empty= 1/50 avg_share(non-empty)=51%  runaway@0.80=10%  runaway@0.90=10%  runaway@0.95=10%
+  ratio=0.375 empty= 1/50 avg_share(non-empty)=45%  runaway@0.80=2%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=0.500 empty= 2/50 avg_share(non-empty)=46%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.625 empty= 2/50 avg_share(non-empty)=48%  runaway@0.80=2%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.750 empty= 0/50 avg_share(non-empty)=48%  runaway@0.80=8%  runaway@0.90=4%  runaway@0.95=4%
+  ratio=0.875 empty= 0/50 avg_share(non-empty)=52%  runaway@0.80=8%  runaway@0.90=4%  runaway@0.95=4%
+  ratio=1.000 empty= 0/50 avg_share(non-empty)=48%  runaway@0.80=6%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=1.125 empty= 0/50 avg_share(non-empty)=50%  runaway@0.80=10%  runaway@0.90=6%  runaway@0.95=4%
+  ratio=1.250 empty= 0/50 avg_share(non-empty)=50%  runaway@0.80=6%  runaway@0.90=6%  runaway@0.95=4%
+  ratio=1.375 empty= 0/50 avg_share(non-empty)=53%  runaway@0.80=6%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=1.500 empty= 0/50 avg_share(non-empty)=50%  runaway@0.80=2%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.625 empty= 0/50 avg_share(non-empty)=48%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=1.750 empty= 0/50 avg_share(non-empty)=47%  runaway@0.80=4%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=1.875 empty= 0/50 avg_share(non-empty)=50%  runaway@0.80=2%  runaway@0.90=2%  runaway@0.95=2%
+  ratio=2.000 empty= 0/50 avg_share(non-empty)=46%  runaway@0.80=4%  runaway@0.90=0%  runaway@0.95=0%
+  peak runaway@0.80 is at ratio=0.0 (rate=16%)
+  peak runaway@0.90 is at ratio=0.0 (rate=16%)
+  peak runaway@0.95 is at ratio=0.0 (rate=16%)
+
+--- no_repeats, p_drop=0.04 ---
+  ratio=0.000 empty=32/50 avg_share(non-empty)=82%  runaway@0.80=24%  runaway@0.90=24%  runaway@0.95=24%
+  ratio=0.125 empty=24/50 avg_share(non-empty)=84%  runaway@0.80=36%  runaway@0.90=36%  runaway@0.95=36%
+  ratio=0.250 empty=14/50 avg_share(non-empty)=87%  runaway@0.80=52%  runaway@0.90=52%  runaway@0.95=52%
+  ratio=0.375 empty=13/50 avg_share(non-empty)=77%  runaway@0.80=36%  runaway@0.90=36%  runaway@0.95=36%
+  ratio=0.500 empty= 9/50 avg_share(non-empty)=77%  runaway@0.80=42%  runaway@0.90=38%  runaway@0.95=38%
+  ratio=0.625 empty= 9/50 avg_share(non-empty)=70%  runaway@0.80=26%  runaway@0.90=22%  runaway@0.95=22%
+  ratio=0.750 empty= 7/50 avg_share(non-empty)=73%  runaway@0.80=28%  runaway@0.90=26%  runaway@0.95=24%
+  ratio=0.875 empty= 6/50 avg_share(non-empty)=62%  runaway@0.80=16%  runaway@0.90=14%  runaway@0.95=14%
+  ratio=1.000 empty= 3/50 avg_share(non-empty)=68%  runaway@0.80=26%  runaway@0.90=22%  runaway@0.95=20%
+  ratio=1.125 empty= 2/50 avg_share(non-empty)=65%  runaway@0.80=22%  runaway@0.90=20%  runaway@0.95=18%
+  ratio=1.250 empty= 2/50 avg_share(non-empty)=61%  runaway@0.80=22%  runaway@0.90=18%  runaway@0.95=12%
+  ratio=1.375 empty= 1/50 avg_share(non-empty)=60%  runaway@0.80=14%  runaway@0.90=6%  runaway@0.95=6%
+  ratio=1.500 empty= 1/50 avg_share(non-empty)=59%  runaway@0.80=18%  runaway@0.90=10%  runaway@0.95=6%
+  ratio=1.625 empty= 1/50 avg_share(non-empty)=52%  runaway@0.80=10%  runaway@0.90=6%  runaway@0.95=6%
+  ratio=1.750 empty= 1/50 avg_share(non-empty)=54%  runaway@0.80=16%  runaway@0.90=4%  runaway@0.95=2%
+  ratio=1.875 empty= 1/50 avg_share(non-empty)=48%  runaway@0.80=6%  runaway@0.90=4%  runaway@0.95=2%
+  ratio=2.000 empty= 1/50 avg_share(non-empty)=52%  runaway@0.80=8%  runaway@0.90=4%  runaway@0.95=2%
+  peak runaway@0.80 is at ratio=0.25 (rate=52%)
+  peak runaway@0.90 is at ratio=0.25 (rate=52%)
+  peak runaway@0.95 is at ratio=0.25 (rate=52%)
+
+--- no_repeats, p_drop=0.08 ---
+  ratio=0.000 empty=50/50 avg_share(non-empty)=0%  runaway@0.80=0%  runaway@0.90=0%  runaway@0.95=0%
+  ratio=0.125 empty=48/50 avg_share(non-empty)=100%  runaway@0.80=4%  runaway@0.90=4%  runaway@0.95=4%
+  ratio=0.250 empty=45/50 avg_share(non-empty)=100%  runaway@0.80=10%  runaway@0.90=10%  runaway@0.95=10%
+  ratio=0.375 empty=42/50 avg_share(non-empty)=96%  runaway@0.80=14%  runaway@0.90=14%  runaway@0.95=14%
+  ratio=0.500 empty=38/50 avg_share(non-empty)=85%  runaway@0.80=16%  runaway@0.90=16%  runaway@0.95=16%
+  ratio=0.625 empty=30/50 avg_share(non-empty)=89%  runaway@0.80=30%  runaway@0.90=30%  runaway@0.95=30%
+  ratio=0.750 empty=24/50 avg_share(non-empty)=85%  runaway@0.80=32%  runaway@0.90=28%  runaway@0.95=28%
+  ratio=0.875 empty=17/50 avg_share(non-empty)=85%  runaway@0.80=42%  runaway@0.90=36%  runaway@0.95=36%
+  ratio=1.000 empty= 8/50 avg_share(non-empty)=87%  runaway@0.80=60%  runaway@0.90=60%  runaway@0.95=56%
+  ratio=1.125 empty= 7/50 avg_share(non-empty)=83%  runaway@0.80=52%  runaway@0.90=46%  runaway@0.95=44%
+  ratio=1.250 empty= 7/50 avg_share(non-empty)=69%  runaway@0.80=34%  runaway@0.90=20%  runaway@0.95=16%
+  ratio=1.375 empty= 3/50 avg_share(non-empty)=67%  runaway@0.80=34%  runaway@0.90=20%  runaway@0.95=14%
+  ratio=1.500 empty= 3/50 avg_share(non-empty)=61%  runaway@0.80=20%  runaway@0.90=10%  runaway@0.95=10%
+  ratio=1.625 empty= 3/50 avg_share(non-empty)=60%  runaway@0.80=18%  runaway@0.90=10%  runaway@0.95=8%
+  ratio=1.750 empty= 0/50 avg_share(non-empty)=60%  runaway@0.80=20%  runaway@0.90=14%  runaway@0.95=14%
+  ratio=1.875 empty= 0/50 avg_share(non-empty)=57%  runaway@0.80=14%  runaway@0.90=12%  runaway@0.95=8%
+  ratio=2.000 empty= 0/50 avg_share(non-empty)=54%  runaway@0.80=14%  runaway@0.90=4%  runaway@0.95=4%
+  peak runaway@0.80 is at ratio=1.0 (rate=60%)
+  peak runaway@0.90 is at ratio=1.0 (rate=60%)
+  peak runaway@0.95 is at ratio=1.0 (rate=56%)
+

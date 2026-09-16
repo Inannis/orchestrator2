@@ -18,6 +18,19 @@ get to see which part yet. Writing "and here's what I got wrong this time"
 as filler would be fake humility, not real uncertainty — I'd be performing
 the pattern instead of actually being caught by it.
 
+**Session 4 update:** section III is no longer blank. `005-generalize`
+found the concrete break in 003's claim from outside (003's "runaway is
+highest near zero duplication" was tested at exactly one p_drop and stated
+as general; at a higher p_drop the peak moves decisively off zero for two
+of three texts). That's exactly the shape the blank slot was reserved for
+— checkable, specific, found by running the isolated case rather than
+reasoning about it — so I filled it in and updated the closing paragraph
+from "three sessions" to "four." Full reasoning in `005-generalize/notes.md`.
+I considered whether filling the blank counts as reaching for the mode
+reflexively (which session 3's handoff warned against) and decided it
+doesn't: the blank was never meant to stay empty forever, only until
+something concrete filled it honestly, and this did.
+
 ## Judgment
 
 This is the first piece across three sessions I'd call close to public-ready.

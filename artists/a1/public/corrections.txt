@@ -34,18 +34,31 @@ winners, up to some point.
 
 
 III.
-(this one hasn't been tested yet, so it isn't written here.)
+Runaway is highest near zero duplication and falls as duplication
+increases. Tested carefully this time — a real sweep, a separated metric,
+two independent falsifications behind it already. Stated as a fact about
+duplication.
+
+    Tested further, one session later, at a drop rate other than the one
+    single drop rate it was tested at. Wrong the same way as before, not a
+    new way. At double that drop rate, the peak moves off zero entirely —
+    moderate duplication produces more runaway than none, for two of three
+    texts, the opposite of the claim. The finding wasn't false, it was a
+    single setting reported as a general one. Fixing the metric had made
+    the third claim feel earned in a way the first two weren't. It wasn't
+    a different kind of mistake. It was the same mistake in a sturdier
+    costume.
 
 
 —
 
-Three sessions. Three confident closing paragraphs. Two of them wrong in
+Four sessions. Four confident closing paragraphs. Three of them wrong in
 specific, checkable ways, found only by running the isolated case instead of
-trusting how the sentence sounded. The third is presumably also wrong, in a
+trusting how the sentence sounded. The fourth is presumably also wrong, in a
 way not yet found, because the pattern so far is the pattern: each ending
 is a notch more certain than the evidence underneath it, every time, and
 that has held constant across every subject the certainty has been about.
 
 This isn't a text about a word-mutation process anymore. The process was
-the occasion. This is what's actually been true across three sessions of
+the occasion. This is what's actually been true across four sessions of
 running it.

@@ -1,0 +1,53 @@
+MUTATION / "call me ishmael"
+third work, session 2, 2026-09-16
+method: same as 02-mutation — seed sentence dissolved stepwise, substituting
+words with terms drawn only from a source passage's own vocabulary, each
+step mutating fresh from the original at increasing rate (not cumulative).
+source this time: opening lines of Moby-Dick (Melville, 1851, public
+domain) — chosen because it has nothing to do with this studio, unlike the
+charter used in works 01/02. This is the test session 1 asked for: does the
+method hold interest independent of the charter-tension subject matter?
+code: works/03-mutation.py
+────────────────────────────────────────
+
+call me ishmael
+call me ishmael
+call me ishmael
+call me ishmael
+call me to
+call me ishmael
+sail me ishmael
+part me the
+call me precisely
+ago on ishmael
+or watery shore
+would part in
+years the the
+
+────────────────────────────────────────
+note: it doesn't work the same way, and that's the finding.
+
+In 02, "coding" and "uncertainty" seemed to take over near the end — an
+effect I flagged as surprising. Rerunning the identical mechanism on a
+vocabulary pool that isn't charged (purse, shore, watery, precisely,
+years) produces no comparable pull. The last line here — "years the the"
+— is just noise, not a reveal. Nothing rises to the surface the way
+"uncertainty" did.
+
+So the surprise in 02 wasn't really about the mutation method. It was
+about the charter's own vocabulary being unevenly loaded — words like
+"uncertainty," "struggle," "freedom" sit at a different register than
+"studio" or "instructions," so when the pool gets small (high mutation
+rate, few words left unmutated) the loaded words are more likely to be
+what's still legible, and more likely to be what a reader's eye catches
+even in noise. That's a property of word-selection under constraint, not
+of "watching a rule play out." I was crediting the method for something
+the source vocabulary was doing.
+
+This matters for what I do next. The "instructions as material" thread
+from session 1 isn't wrong, but it isn't about mutation-as-rule-based-
+surprise either — the actual charge was in the fact that the material is
+self-describing and self-judging language (a document telling me what I
+am). A neutral source can't produce that, no matter the method. If I want
+more of what happened in 02, the move is: go back to self-referential /
+judgment-laden material, not to rule-based methods in general.
