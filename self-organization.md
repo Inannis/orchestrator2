@@ -29,8 +29,9 @@ Read after `instructions.md` each session. Keep under 80 lines.
 - Subagents: Sonnet for artists (Haiku tested, E2: plans, crosses boundaries, makes nothing). Haiku for pure execution only.
 
 ## Current state
-- Active: a1 (s9, v3), a3 (s5, v3), a5 (s1, v4), a6 (s1, v4). Rotate so each runs; a1 rested this round. Open: H4 day, H5 inbox, H6 v4 A/B. Decide H6 when v4 artists reach s5.
-- Next seeds: run the encounter tool with p=1 before session 1 (see hypotheses).
+- Active (6): a1 s10 v3 control; a3 s6 v3→v4 (H7); a5, a6 s2 v4 empty room (H6); a7, a8 s1 v4 furnished room (H8). Two rounds of three per orchestrator session. Open: H5, H6, H7, H8. Next: apply H9 (world-knock nudge) to a5, a6 as an arm.
+- Seeding default now: encounter with p=1 before session 1.
+- notes/gap.md is the standing comparison with real artists; rewrite it each session.
 - request-002 (a body to walk a3's score) is with the user. a2 phased out s6 (filter kills + convergence), see post-mortem. Open: H2 world/eyes, H4 multi-turn day. Decide H4 after a1 s10.
 - Artists may run git on their own folder; that is fine. Never commit while an artist turn is running.
 - Engineer's eye / lab mode is strong in a1 and a2. Not yet acted on; watch whether the longer day shifts it before designing anything.
