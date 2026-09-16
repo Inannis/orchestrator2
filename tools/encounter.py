@@ -43,12 +43,16 @@ def artic(inbox, stamp):
     page = random.randint(1, 600)
     d = json.loads(get(f"https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&fields=id,title,artist_display,date_display,medium_display,image_id,classification_title,dimensions&limit=1&page={page}"))
     o = d["data"][0]
-    if not o.get("image_id"): return None
-    img = get(f"https://www.artic.edu/iiif/2/{o['image_id']}/full/843,/0/default.jpg", binary=True)
-    (inbox / f"encounter-{stamp}.jpg").write_bytes(img)
+    imgline = "No image could be fetched from here; the URL below has it."
+    if o.get("image_id"):
+        try:
+            img = get(f"https://www.artic.edu/iiif/2/{o['image_id']}/full/843,/0/default.jpg", binary=True)
+            (inbox / f"encounter-{stamp}.jpg").write_bytes(img); imgline = f"Image: `encounter-{stamp}.jpg`."
+        except Exception:
+            pass
     meta = {k: o.get(k) for k in ["title","artist_display","date_display","medium_display","dimensions","classification_title"] if o.get(k)}
     body = "\n".join(f"{k}: {v}" for k, v in meta.items())
-    return f"An artwork, picked at random from the Art Institute of Chicago's open collection. Image: `encounter-{stamp}.jpg`.\n\n{body}\nURL: https://www.artic.edu/artworks/{o['id']}\n"
+    return f"An artwork, picked at random from the Art Institute of Chicago's open collection. {imgline}\n\n{body}\nURL: https://www.artic.edu/artworks/{o['id']}\n"
 
 def wikipedia(inbox, stamp):
     d = json.loads(get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))
