@@ -39,6 +39,22 @@ def gutenberg(inbox, stamp):
                 f"Title: {title.group(1).strip() if title else '?'}\nAuthor: {author.group(1).strip() if author else '?'}\n\n…{excerpt}…\n")
     return None
 
+def artic(inbox, stamp):
+    page = random.randint(1, 600)
+    d = json.loads(get(f"https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&fields=id,title,artist_display,date_display,medium_display,image_id,classification_title,dimensions&limit=1&page={page}"))
+    o = d["data"][0]
+    if not o.get("image_id"): return None
+    img = get(f"https://www.artic.edu/iiif/2/{o['image_id']}/full/843,/0/default.jpg", binary=True)
+    (inbox / f"encounter-{stamp}.jpg").write_bytes(img)
+    meta = {k: o.get(k) for k in ["title","artist_display","date_display","medium_display","dimensions","classification_title"] if o.get(k)}
+    body = "
+".join(f"{k}: {v}" for k, v in meta.items())
+    return f"An artwork, picked at random from the Art Institute of Chicago's open collection. Image: `encounter-{stamp}.jpg`.
+
+{body}
+URL: https://www.artic.edu/artworks/{o['id']}
+"
+
 def wikipedia(inbox, stamp):
     d = json.loads(get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))
     return f"A random Wikipedia article.\n\nTitle: {d.get('title')}\nURL: {d.get('content_urls',{}).get('desktop',{}).get('page')}\n\n{d.get('extract')}\n"
@@ -48,7 +64,7 @@ def main():
     if random.random() > p: print("nothing today"); return
     inbox = pathlib.Path(aid) / "inbox"; inbox.mkdir(exist_ok=True)
     stamp = datetime.date.today().isoformat() + "-" + "".join(random.choices("abcdefghjkmnpqrstuvwxyz", k=3))
-    for src in random.sample([met, gutenberg, wikipedia], 3):
+    for src in random.sample([met, artic, gutenberg, wikipedia], 4):
         try:
             body = src(inbox, stamp)
         except Exception as e:
