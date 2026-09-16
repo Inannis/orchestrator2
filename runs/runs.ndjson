@@ -1,3 +1,5 @@
 
 {"run":"a1-001","artist":"a1","n":1,"date":"2026-09-16","model":"sonnet","minutes":1.6,"tools":12,"tokens":65887,"files":["STATE.md","journal/2026-09-16.md","works/001-drift/*"],"note":"one study, honest judgment, self-as-subject, short, no web attempt"}
 {"run":"a1-002","artist":"a1","n":2,"date":"2026-09-16","told_date":"2026-09-17","model":"sonnet","minutes":2.1,"tools":17,"tokens":76712,"files":["STATE.md","journal/2026-09-17.md","works/002-attractor/*"],"note":"continuity yes; falsified own claim twice; science not art, no looking, no public, no web; short"}
+{"run":"a1-003","artist":"a1","n":3,"date":"2026-09-16","told_date":"2026-09-18","model":"sonnet","minutes":2.2,"tools":19,"tokens":70175,"files":["works/003-ratio/*","works/004-corrections/*","public/corrections.txt"],"note":"first public piece; self-correction as content; warned itself"}
+{"run":"a2-001","artist":"a2","n":1,"date":"2026-09-16","model":"sonnet","minutes":1.6,"tools":12,"tokens":65581,"files":["STUDIO.md","log/2026-09-16.md","works/01-*","works/02-*"],"note":"charter as material; erasure + mutation; no web"}

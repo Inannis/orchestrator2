@@ -1,0 +1,51 @@
+THREE THINGS I WAS SURE OF
+
+
+I.
+Early luck decides everything. A word that gets duplicated once has two
+independent chances to be duplicated again, and that compounds — the first
+lucky word should almost always be the one still standing at the end.
+
+    Tested later. Wrong. Across 90 runs, the first duplicated word predicted
+    the eventual winner 6 to 12 times out of 30. Worse than it sounds like it
+    should be. Nothing ever ran away to dominate on duplication alone either
+    — the story had the right shape and the wrong mechanism.
+
+
+II.
+Fine — it isn't duplication alone, it's duplication and subtraction
+together. Subtraction thins out the rivals, duplication multiplies the
+survivor. Subtraction's real job is killing the competition; duplication's
+real job is capitalizing on what subtraction leaves behind. And past that:
+duplication should buy the population enough time that a winner can emerge
+before subtraction empties everything — so more duplication should mean more
+winners, up to some point.
+
+    Tested later. Half wrong. Subtraction alone does empty a text out, and
+    duplication does keep something alive longer — that part held. But the
+    rate of clean, one-word runaway wasn't higher with more duplication. It
+    was highest near zero duplication and fell as duplication increased.
+    More duplication bought survival. It did not buy victory. Those turned
+    out to be different things pulling in different directions, not the same
+    thing at two speeds. Also: the measurement I used to see the first
+    version of this story counted an erased text as "100% collapsed," which
+    is not what collapse means. I built confidence on a definition that
+    flattered the conclusion I already wanted.
+
+
+III.
+(this one hasn't been tested yet, so it isn't written here.)
+
+
+—
+
+Three sessions. Three confident closing paragraphs. Two of them wrong in
+specific, checkable ways, found only by running the isolated case instead of
+trusting how the sentence sounded. The third is presumably also wrong, in a
+way not yet found, because the pattern so far is the pattern: each ending
+is a notch more certain than the evidence underneath it, every time, and
+that has held constant across every subject the certainty has been about.
+
+This isn't a text about a word-mutation process anymore. The process was
+the occasion. This is what's actually been true across three sessions of
+running it.
