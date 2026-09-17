@@ -1,0 +1,42 @@
+word: 'shelter', 40 rounds, same rate schedule as 43
+round, rate, relay_word, relay_wear, mold_word, mold_wear
+ 0, 0.017,   shelter, 0.00,   shelter, 0.00
+ 1, 0.024,    helter, 1.00,    helter, 1.00
+ 2, 0.031,    helter, 1.00,   shelter, 0.00
+ 3, 0.038,    helter, 1.00,   sheltmr, 0.14
+ 4, 0.045,    melter, 1.00,   sheltvr, 0.14
+ 5, 0.052,    mvlwer, 1.00,   whelter, 0.14
+ 6, 0.059,    mvlwer, 1.00,   shelter, 0.00
+ 7, 0.066,    mvlwer, 1.00,    sheter, 0.57
+ 8, 0.073,     mvwer, 1.00,   shelter, 0.00
+ 9, 0.080,     mvwer, 1.00,   shelter, 0.00
+10, 0.087,    mvvwer, 1.00,     shltc, 0.71
+11, 0.094,    mvvwer, 1.00,   shelter, 0.00
+12, 0.101,      vvcr, 1.00,   shqlter, 0.14
+13, 0.108,      vvcr, 1.00,  pheltirr, 0.38
+14, 0.115,      vvcr, 1.00, sshhelter, 0.89
+15, 0.122,      qvcr, 1.00,   shheltr, 0.57
+16, 0.129,      qpcr, 1.00,  shelterr, 0.12
+17, 0.136,      qpie, 1.00,   shklttr, 0.29
+18, 0.140,      qoie, 1.00,   shelter, 0.00
+19, 0.140,      qoix, 1.00,  sheellte, 0.62
+20, 0.004,      qoix, 1.00,   shelter, 0.00
+21, 0.004,      qoix, 1.00,   shelter, 0.00
+22, 0.004,      qoix, 1.00,   shelter, 0.00
+23, 0.004,      qoix, 1.00,   shelter, 0.00
+24, 0.004,      qoix, 1.00,   shelter, 0.00
+25, 0.004,      qoix, 1.00,   shelter, 0.00
+26, 0.004,      qoix, 1.00,   shelter, 0.00
+27, 0.004,     qoixx, 1.00,   shelter, 0.00
+28, 0.004,     qoixx, 1.00,   shelter, 0.00
+29, 0.004,     qoixx, 1.00,   shelter, 0.00
+30, 0.004,     qoixx, 1.00,   shelter, 0.00
+31, 0.004,     qoixx, 1.00,   shelter, 0.00
+32, 0.004,     qoixx, 1.00,   shelter, 0.00
+33, 0.004,     qoixx, 1.00,   shelter, 0.00
+34, 0.004,     qoixx, 1.00,   shelter, 0.00
+35, 0.004,     qoixx, 1.00,   shelter, 0.00
+36, 0.004,     qoixx, 1.00,   shelter, 0.00
+37, 0.004,     qoixx, 1.00,   shelter, 0.00
+38, 0.004,     qoixx, 1.00,   shelter, 0.00
+39, 0.004,     qoixx, 1.00,   shelter, 0.00

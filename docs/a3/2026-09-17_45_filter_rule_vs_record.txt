@@ -1,0 +1,20 @@
+source: The Raven, 1075 words, 5 arbitrary categories (length mod 5)
+round, forbidden_categories, rule_currently_shows, record_ever_shown
+ 0, [1, 3]          ,  706,  706
+ 1, [1, 3]          ,  706,  706
+ 2, [1, 2, 3]       ,  445,  445
+ 3, [1, 2, 3]       ,  445,  445
+ 4, [2, 3, 4]       ,  290,  143
+ 5, [2, 3, 4]       ,  290,  143
+ 6, [2, 4]          ,  512,  143
+ 7, [2, 4]          ,  512,  143
+ 8, [4]             ,  773,  143
+ 9, [4]             ,  773,  143
+10, []              , 1075,  143
+11, []              , 1075,  143
+
+final round text (rule's current view -- only never-forbidden-yet categories, {4} unforbidden last):
+The Raven by Edgar Allan Poe Once upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten lore— While I nodded, nearly napping, suddenly there came a tapping, As of some one gently rapping, rapping at my chamber door. “’Tis some visiter,” I muttered, “tapping at my chamber door— Only this and nothing more.” Ah, distinctly I remember it was in the bleak December, And each separate dying ember wrought its ghost upon the floor. Eagerly I wished the morrow;—vainly I had sought to borrow From my books surcease of sorrow—sorrow for the lost Lenore— For the rare and radiant maiden whom the angels name Lenore— Nameless here for evermore. And
+
+record view (every word ever removed at any round stays marked, even though the rule now permits everything):
+___ Raven ___ Edgar Allan ___ ___ ___ ___ ___ ___ while ___ ___ ___ ___ weary, ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ While ___ ___ ___ ___ ___ there ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ distinctly ___ ___ ___ ___ ___ ___ bleak ___ ___ ___ ___ dying ember ___ ___ ghost ___ ___ floor. ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ books ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
