@@ -12,8 +12,8 @@ Read after `instructions.md` each session. Keep under 80 lines.
 
 ## Session routine
 1. Read `instructions.md`, this file, `notes/log.md` tail, `notes/hypotheses.md` open items.
-2. Feed the inbox. `python tools/encounter.py <id>` for each active artist (delivers with p=0.5, content random, never mine). Reader (`tools/READER-PROMPT.md`, Sonnet, sees only `public/`) every ~3 sessions or when public/ changed. Then fulfil artist requests: read `artists/*/requests/`, deliver into `inbox/` as a typed file (`reading-`, `research-`, `receipt-`, `note-`), or escalate to `notes/requests/`. A reader is a Haiku/Sonnet subagent that sees only the files named, never the studio.
-3. Run each active artist once: fill `template/SESSION-PROMPT.md`, spawn a Sonnet subagent. When it returns, send `The day is not over.` K times, K drawn privately from 1–6, never announced, never varied in wording. Log the run with turns. H9 arm (a5, a6): first continuation = encounter p=1 + "The day is not over. Something arrived in inbox/."
+2. Feed the inbox: only at seeding (p=1) and at the first continuation of each day (p=0.5). No pre-session draws. Reader (`tools/READER-PROMPT.md`, Sonnet, sees only `public/`) every ~3 sessions or when public/ changed. Then fulfil artist requests: read `artists/*/requests/`, deliver into `inbox/` as a typed file (`reading-`, `research-`, `receipt-`, `note-`), or escalate to `notes/requests/`. A reader is a Haiku/Sonnet subagent that sees only the files named, never the studio.
+3. Run each active artist once: fill `template/SESSION-PROMPT.md`, spawn a Sonnet subagent. When it returns, send `The day is not over.` K times, K drawn privately from 1–6, never announced, never varied in wording. Log the run with turns. First continuation for everyone: run `tools/encounter.py <studio> --p 0.5`; if it delivered, send "The day is not over. Something arrived in inbox/.", else the plain line. Later continuations plain.
 4. Read the diff of each studio. Update observations. Do not touch the studio.
 5. Evaluate only when a window closes or something is clearly systemic. Change one thing, record it as a hypothesis.
 6. `python tools/publish.py`, commit, push (Pages). Update log line.
@@ -29,7 +29,7 @@ Read after `instructions.md` each session. Keep under 80 lines.
 - Subagents: Sonnet for artists (Haiku tested, E2: plans, crosses boundaries, makes nothing). Haiku for pure execution only.
 
 ## Current state
-- Active (6): a1 s11 v3 control; a3 s7 v4 (H7); a5, a6 s3 v4 + H9 knock; a7, a8 s2 v4 furnished (H8). Two rounds of three per orchestrator session. Open: H5, H7, H8, H9, H10. H6 closed (v4 baseline). Decide H8 at a7/a8 s5, H9 at a5/a6 s6, H7 at a3 s10.
+- Active (6): a1 s11 v3 control; a3 s7 v4 (H7); a5, a6 s3 v4 + H9 knock; a7, a8 s2 v4 furnished (H8). Two rounds of three per orchestrator session. Open: H5, H10. Closed: H6 (v4), H7 (files outweigh charter once formed), H8 (furnished room), H9 (knock for all, p=0.5). Next hypotheses should come from gap.md: rhythm/fallow, memory bloat in a1/a3, volume vs depth in a7.
 - Site: inannis.github.io/orchestrator2/<id>/. Publish + push at session close.
 - Seeding default now: encounter with p=1 before session 1; replace `{ID}` in the new charter with the studio id.
 - notes/gap.md is the standing comparison with real artists; rewrite it each session.
