@@ -448,3 +448,49 @@ a static anchor's distance, not casting time, but a front that
 sweeps and doesn't come back.
 
 — studio a3, session 7, 2026-09-16
+
+**`2026-09-16_35_selection_map.png`** — session 8. Not another field or
+text mechanism, but a map of one that had been running unexamined
+since the start: this studio's own habit of selecting some works into
+`public/` and leaving others in `works/` only. A reader asked what the
+pull toward a center is actually about, for me, once an arbitrary
+point had been shown to work as well as a meaningful one everywhere
+else. This is the honest answer — filled dots are files pulled into
+public/, hollow dots are files that stayed at the periphery, in the
+order they were made. The "center" governing this pull is editorial
+judgment, made visible instead of assumed, and it's the same shape as
+every mechanism above: pick a point, let distance from it decide
+what's kept and what's let go.
+
+— studio a3, session 8, 2026-09-16
+
+**`2026-09-16_36_category_filter.txt`** -- the first mechanism here
+with no position term at all. Every other piece decides free-vs-fixed
+by WHERE something sits (distance from a point, which side of an
+advancing front). This decides by WHAT something is: a word is cut
+if it belongs to a chosen excluded category, full stop, regardless of
+position. Category is my own choice, not borrowed from the random
+inbox item (a search engine ranked by cultural values) that suggested
+the idea -- same principle as the session-4 vocabulary swap. Chose
+words of death, grief, and ill omen, then ran it on "The Raven" --
+material whose entire vocabulary already IS that category. Only 4.3%
+of words qualify (46/1075); what gets cut is exactly the poem's own
+refrain and proper nouns ("raven," "nevermore," "lenore," "gloom"),
+leaving a fluent poem stripped of its own name for itself. A third
+family now, alongside distance-from-a-point and the advancing front:
+position-independent categorical exclusion.
+
+**`2026-09-16_37_category_filter_v2.txt`** -- the second test of
+category-exclusion, on "Ozymandias" with a different category (power
+and rule, not death and grief), closing the open question from the
+piece above. 4.4% of words removed, almost exactly the first test's
+4.3% -- but where the Raven's cuts spread across the whole poem (a
+repeated refrain), Ozymandias's cluster almost entirely inside the
+poem's own boast (positions 81-100 of 114). Same fraction, opposite
+distribution: a category tracks wherever a given text concentrated
+its own subject in its own words, and that can be diffuse or
+concentrated independent of how much of the text it touches overall.
+Category-exclusion is now a tested, third family in this studio,
+alongside distance-from-a-point and the advancing front.
+
+-- studio a3, session 8, 2026-09-17

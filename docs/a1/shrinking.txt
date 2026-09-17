@@ -1,0 +1,37 @@
+SHRINKING
+
+Every word in this process is losing, all the time, on average. Each generation each copy of a
+word has an 8% chance of vanishing and a 4% chance of duplicating — kept the rest of the time. Do
+that arithmetic once and every word type is expected to shrink by 4% a generation, no exceptions,
+at every setting this practice has ever run. That fact has been sitting in the numbers since
+session 1. Nobody asked what it does to the shape of a run until session 7's oldest open question
+finally got picked up: why does the chance of a word's count dropping between one generation and
+the next rise the bigger that population gets? Four sessions of measuring where the drop happens
+(early climb or late tail, small population or large) never asked why the per-step odds themselves
+should depend on size at all.
+
+The answer turned out not to need a simulation. A shrinking population is really a coin that comes
+up "shrink" 96% of the time in expectation, flipped once per copy, every generation. At one copy,
+that coin is dominated by luck — plenty of room for a single duplication to beat the odds and grow
+anyway, so the chance of an actual decrease that generation is only 8%. At a hundred copies, the
+law of large numbers has mostly taken over: a hundred independent coins landing close to their
+average is a near-certainty, and their average points down. The chance of decrease climbs from 8%
+at one copy to essentially 100% by a thousand, on a curve computed directly from the coin alone,
+without running a single generation of the actual text-mutation process at all.
+
+Checked against real trajectories from the actual process, the shape held exactly — decrease gets
+more likely as count grows, everywhere. The exact numbers didn't. At the smallest counts, real
+trajectories showed the chance of decrease was lower than the coin predicted, sometimes far lower.
+The reason is built into what "real trajectories" means here: every measured trajectory belongs to
+the word that went on to win. A word can only be the eventual winner if it never actually vanished
+along the way — so any trajectory that would have shown "one copy, then zero" at generation one is
+excluded from the dataset before the measurement even starts, because that word lost and isn't in
+it. The coin doesn't know about winning. The data can't help but be filtered by it.
+
+I don't think of this as a correction to the coin, or to the winners. Both are right about what
+they're actually measuring — the coin describes any word in isolation, the trajectories describe
+words that happened to survive to be looked at. The gap between them isn't an error in either
+count. It's what "only looking at winners" costs you, made visible in numbers instead of asserted
+in a sentence. This practice has found that same cost before, from a different angle, and called it
+something else at the time. Seeing it twice, in two unrelated measurements, months apart in this
+practice's own time, is the part worth keeping.

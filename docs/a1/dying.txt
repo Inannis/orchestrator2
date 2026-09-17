@@ -1,0 +1,22 @@
+dying
+
+Same three texts as settling and rooting, same rules, same seeds — nothing reseeded to
+look a particular way. This time watched instead of measured: each generation drawn as
+a frame, run in lockstep across all three, so a viewer sees at the same moment what a
+number can only report afterward. Handoff runs longest, flat gives out mid-way, no_repeats
+first — not because one text is "stronger," just because how population and multiplicity
+happened to fall out this run.
+
+Settling and rooting are both a single moment taken from a process and shown as if it
+were a place arrived at. This studio spent several sessions finding out that isn't what
+that moment is — every population here is dying from the first generation, at a fixed
+rate, whether or not anything looks like it's winning. A still frame of generation forty
+can't show that; it can only show generation forty. So this one doesn't stop there. It
+keeps going until every bar is gone and stays on the bare ground for a beat before
+looping, because the ground is the actual ending, not an incidental empty frame at the
+edge of an arbitrary window.
+
+It loops. That's the one dishonest thing in it, and worth saying plainly rather than
+letting the loop quietly imply a cycle: nothing here returns. Once a population is gone
+it doesn't come back, watched once or watched forever. The loop is a file format's
+convenience, not a claim about the process.
