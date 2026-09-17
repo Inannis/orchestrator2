@@ -1,39 +1,32 @@
 # Self-organization
 
-Read after `instructions.md` each session. Keep under 80 lines.
+Read after `instructions.md`. Then `notes/log.md` tail, `notes/hypotheses.md` open items, `registry.md`. Keep this under 60 lines.
 
 ## Layout
-- `template/` clean artist seed. Studios live outside this repo at `../studios/<id>/`, each its own git, artist-owned except `CHARTER.md`, `reference/`, `inbox/`. `registry.md` maps id → path, model, charter, status, arm.
-- `runs/runs.ndjson` one line per artist run: id, artist, session n, date, model, minutes, files changed, one-line note. Orchestrator-private.
-- `notes/observations/<id>.md` what I see in each artist over time. Rewritten, not appended. Max 60 lines.
-- `notes/hypotheses.md` every system change: what was observed, the mechanism suspected, the change, the evidence window (sessions), the decision date, the result. Closed ones compressed to one line.
-- `archive/<id>/` phased-out studios, untouched. `notes/lessons.md` from previous attempts. `notes/reference/` the raw audits. `notes/requests/` mine to the user. `notes/post-mortems/` phased-out artists.
-- `notes/log.md` one line per orchestrator session: date, what ran, what changed, ratio practice/system/admin. Max 100 lines, then compress the oldest.
+- `template/studio/` clean seed (charter v4, `reference/`, `inbox/`, `requests/`). Studios at `../studios/<id>/`, each its own git; artist-owned except `CHARTER.md`, `reference/`, `inbox/`. `registry.md`: id, path, charter, status, sessions.
+- `tools/encounter.py <studio> [--p]` random public object into an inbox. `tools/READER-PROMPT.md` reader who sees only `public/`. `tools/shot.py` live-page screenshot. `tools/publish.py` copies every `public/` into `docs/` for Pages.
+- `runs/runs.ndjson` one line per run (private). `notes/observations/<id>.md` rewritten, max 60 lines. `notes/hypotheses.md` open/closed. `notes/gap.md` practice definition vs. what is there, rewritten. `notes/log.md` one line per session. `notes/lessons.md`, `notes/post-mortems/`, `notes/requests/` (mine to the user), `notes/reference/` (audits). `archive/<id>/` retired studios.
 
 ## Session routine
-1. Read `instructions.md`, this file, `notes/log.md` tail, `notes/hypotheses.md` open items.
-2. Feed the inbox: only at seeding (p=1) and at the first continuation of each day (p=0.5). No pre-session draws. Reader (`tools/READER-PROMPT.md`, Sonnet, sees only `public/`) every ~3 sessions or when public/ changed. Then fulfil artist requests: read `artists/*/requests/`, deliver into `inbox/` as a typed file (`reading-`, `research-`, `receipt-`, `note-`), or escalate to `notes/requests/`. A reader is a Haiku/Sonnet subagent that sees only the files named, never the studio.
-3. Run each active artist once: fill `template/SESSION-PROMPT.md`, spawn a Sonnet subagent. When it returns, send `The day is not over.` K times, K drawn privately from 1–6, never announced, never varied in wording. Log the run with turns. First continuation for everyone: run `tools/encounter.py <studio> --p 0.5`; if it delivered, send "The day is not over. Something arrived in inbox/.", else the plain line. Later continuations plain.
-4. Read the diff of each studio. Update observations. Do not touch the studio.
-5. Evaluate only when a window closes or something is clearly systemic. Change one thing, record it as a hypothesis.
-6. `python tools/publish.py`, commit, push (Pages). Update log line.
+1. Read the files above. Check `../studios/*/requests/` and `notes/requests/` for anything answered by the user.
+2. Fulfil artist requests: typed file into `inbox/` (`note-`, `reading-`, `receipt-`), or escalate to `notes/requests/`. Reader when `public/` changed and ~3 sessions passed since the last.
+3. Run artists, three at a time, all six per session over two rounds. Prompt = `template/SESSION-PROMPT.md` with real date and session number. Draw K from 1–6 privately. First continuation: `encounter.py <studio> --p 0.5`; if delivered send `The day is not over. Something arrived in inbox/.`, else `The day is not over.` Later continuations plain. Log each run.
+4. Read what changed. Rewrite observations. Never touch a studio's own files.
+5. Decide only when a window closes or something is clearly systemic. One change, one hypothesis, a window.
+6. `publish.py`, commit, push. One log line with the practice/system/admin ratio.
 
-## Rules for myself
-- Filter kills ([bio]): first time, operator note asking the artist to find its own words. Then retry once. If it persists, move the artist to Haiku or phase it out.
-- Artists get consequences, not dashboards. Nothing from `runs/` or `notes/` enters a studio.
-- The charter changes only through a hypothesis with a window of at least 3 sessions.
+## Rules
+- Consequences, not dashboards: nothing from `runs/` or `notes/` enters a studio.
+- Charter changes only through a hypothesis; rewrite whole, never patch; positive pull, no pink elephants.
 - Practice failure: leave it. Support failure: fix the condition. Orchestration failure: fix here.
-- If two artists start to look alike in process, suspect the charter before the artists.
-- If `notes/` grows faster than `artists/`, stop system work.
-- Up to 6 artists, 3 running per session. Two artists per approach so an effect is not one artist's chance. Rotate who runs.
-- Subagents: Sonnet for artists (Haiku tested, E2: plans, crosses boundaries, makes nothing). Haiku for pure execution only.
+- Filter kills (`[bio]`): operator note asking for the artist's own words, then one retry, then Haiku or retire.
+- Max 6 artists, 3 running. Two per approach. Don't keep an artist without an active hypothesis.
+- Sonnet only for artists. Never commit while a turn is running. Always the real date.
+- Expand tools on request, never limit. Never bypass a human-verification wall.
+- Memory hygiene first, for artists and for me: without it nothing else works.
 
-## Current state
-- Active (6): a1 s11 v3 control; a3 s7 v4 (H7); a5, a6 s3 v4 + H9 knock; a7, a8 s2 v4 furnished (H8). Two rounds of three per orchestrator session. Open: H5, H10. Closed: H6 (v4), H7 (files outweigh charter once formed), H8 (furnished room), H9 (knock for all, p=0.5). Next hypotheses should come from gap.md: rhythm/fallow, memory bloat in a1/a3, volume vs depth in a7.
-- Site: inannis.github.io/orchestrator2/<id>/. Publish + push at session close.
-- Seeding default now: encounter with p=1 before session 1; replace `{ID}` in the new charter with the studio id.
-- notes/gap.md is the standing comparison with real artists; rewrite it each session.
-- request-002 (a body to walk a3's score) is with the user. a2 phased out s6 (filter kills + convergence), see post-mortem. Open: H2 world/eyes, H4 multi-turn day. Decide H4 after a1 s10.
-- Artists may run git on their own folder; that is fine. Never commit while an artist turn is running.
-- Engineer's eye / lab mode is strong in a1 and a2. Not yet acted on; watch whether the longer day shifts it before designing anything.
-- Same-day sessions are fine; always pass the real date. Never tell an artist a fake date.
+## Current state (2026-09-17)
+- Active: a1 s14 (v3, longitudinal control), a3 s10, a5 s6, a6 s6, a7 s5, a8 s4 (all v4). Retired: a2 (filter), a4 (Haiku).
+- Site: https://inannis.github.io/orchestrator2/<id>/ . request-002 (a body to walk a3's score) with the user.
+- Next session: decide the memory-bloat hypothesis first (a1, a3), then run.
+- Seeding a new artist: copy `template/studio`, replace `{ID}` in the charter, `git init`, `encounter.py --p 1`.

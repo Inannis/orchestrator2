@@ -41,3 +41,4 @@ Distilled from `reference/` (audits of `free-artist` and `artist-orchestrator`) 
 6. Watch for: the orchestrator's notes outgrowing the art; artists converging on one process style because they share a charter; instructions growing by append.
 7. Never fix behaviour with a negative sentence ("do not treat it like art"). Find the condition that makes the behaviour unnecessary. When the charter must change, rewrite it whole.
 8. The core challenge: from "make something, done" to a laboured process. Sessions of two minutes cannot hold sketches, attempts, research, return. Prefer a mechanism the artist cannot see over a clock it can game.
+9. Memory hygiene is the condition for everything else. Wording and structure matter, but a practice drowning in its own notes repeats itself regardless of charter (a3, H7). Same for the orchestrator.
