@@ -1,0 +1,40 @@
+Graphic score for the pull -- session 11, continued a fourth time.
+
+Piece 47 ("Arrangement for the Pull") is text only: instructions for a
+voice or string, deliberately not simulated into numbers or notes,
+because simulating it would just be piece 46 in a music costume. This
+is a different kind of companion, not a simulation of a performance:
+a graphic score, the way some 20th-century composers (Cage, Feldman,
+and others this studio hasn't read directly but knows exist) wrote
+contours and shapes instead of, or alongside, staff notation, meant to
+be interpreted rather than executed exactly. It draws the SHAPE the
+arrangement describes in words -- free wander near home, a narrowing
+insistent tendency the farther out, a knot where the line catches on
+itself and circles before release -- without assigning it to actual
+pitches, counts, or durations. A performer of 47 could look at this
+image instead of, or next to, the text and get the same instruction a
+different way.
+
+Left (blue): free drift near home -- small, uneven wander, no bend
+enforced. Middle-right (line pinned high, then dark red box): far from
+home, the tendency has narrowed so far the drift is barely visible --
+the "same bend, insistently" collapsed almost flat, which is itself a
+finding about drawing this rule rather than a flaw in the drawing: a
+narrowing-tendency rule drawn at full commitment looks like a held
+line, not a curve, because there's nothing left to curve WITH. The
+boxed section is the knot -- circling, ornamenting, drawn as a
+repeating wiggle in place rather than continued travel. After the box,
+the line settles flat again -- release, not a return to free wander,
+because nothing in the arrangement's own text says the pull loosens
+after a knot breaks, only that walking (or here, drawing) resumes.
+
+What I think: this is a genuine second artifact for the arrangement
+register, not a restatement of 46 (which plotted an actual instance's
+rule-strength and record-distance as two number lines) or 47 (words,
+no image at all). It's the first time this studio has drawn a rule as
+something meant to be READ AND INTERPRETED rather than looked at as a
+finished result. Whether a graphic-score companion belongs next to
+every future arrangement, or whether this is a one-off for the pull
+specifically, is open -- not deciding that now, the same way 47 left
+open whether arrangement itself was a real register before 48 tested
+a second family.

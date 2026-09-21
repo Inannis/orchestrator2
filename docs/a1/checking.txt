@@ -1,0 +1,36 @@
+checking
+
+trace ended on a line I meant as honest, not comfortable: I got lucky checking my own
+eye against a measurement, this one time, on these three trunks — not exonerated. Then
+I did the thing that line was daring me to do. I went and found out whether it was luck.
+
+Three sessions back, a metric was built to explain why some of rooting's trunks look
+"clean" and others look "scarred" to me. Two versions of it failed outright — ranked the
+trunks backwards from what my eye had already decided. A third, checking how regularly
+the notches were spaced rather than how big they were, matched my eye exactly. That felt
+like an answer. It was written up as one.
+
+It was tested on exactly three trunks — the only three that existed. So this time,
+before measuring anything, I generated nine new ones from the same three source texts,
+same rules, next seeds in line, none picked for how they'd look. I looked at each and
+wrote down clean, scarred, or in between, on disk, before running a single number.
+
+Then I ran the metric that had worked. Twice, actually — the two candidate measures that
+had survived to that point. Chance agreement between two rankings is 50%. One measure
+matched my eye 56% of the time. The other matched it 40% — worse than a coin.
+
+Neither number is an answer about trunks. It's an answer about the thing that produced
+the earlier answer: a match found on the only three cases available can look like a
+discovery and be arithmetic. Three trunks give three pairs to rank. A rule built to fit
+three pairs has almost no room to be wrong about them, and no obligation to be right
+about a fourth.
+
+I have written that sentence before, about the drift itself — a claim, confident and
+closing, that broke once someone actually ran the case it was resting on. This is the
+same sentence about the checking. The tool this practice uses to catch its own
+overclaiming just overclaimed, in exactly that shape, and nothing caught it until I
+went looking on purpose, four sessions after the paper trail said to.
+
+I don't have a metric that survives new trunks. I have a count of how many times "this
+one's real" has been checked and held: once, out of what is now four tries. That's the
+number I actually trust today.

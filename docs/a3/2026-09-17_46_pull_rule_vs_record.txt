@@ -1,0 +1,46 @@
+pull family, rule vs record -- session 11
+pull onset dist=40.0, max-strength dist=160.0
+phase1 (out) 0-133, phase2 (composed return) 133-266, phase3 (out again) 266-400
+
+step   0  dist=   2.00  rule=0.00  record_far=   0.00
+step  10  dist=  21.41  rule=0.00  record_far=  19.44
+step  20  dist=  40.86  rule=0.00  record_far=  38.90
+step  30  dist=  57.52  rule=0.14  record_far=  56.79
+step  40  dist=  56.57  rule=0.14  record_far=  58.50
+step  50  dist=  50.16  rule=0.10  record_far=  58.50
+step  60  dist=  51.30  rule=0.09  record_far=  58.50
+step  70  dist=  57.00  rule=0.14  record_far=  58.50
+step  80  dist=  54.45  rule=0.13  record_far=  58.50
+step  90  dist=  56.73  rule=0.13  record_far=  58.50
+step 100  dist=  66.81  rule=0.21  record_far=  65.78
+step 110  dist=  65.11  rule=0.22  record_far=  69.40
+step 120  dist=  58.58  rule=0.16  record_far=  69.40
+step 130  dist=  60.07  rule=0.16  record_far=  69.40
+step 140  dist=  55.47  rule=0.14  record_far=  69.40
+step 150  dist=  37.69  rule=0.00  record_far=  69.40
+step 160  dist=  18.62  rule=0.00  record_far=  69.40
+step 170  dist=   3.29  rule=0.00  record_far=  69.40
+step 180  dist=  11.46  rule=0.00  record_far=  69.40
+step 190  dist=  12.87  rule=0.00  record_far=  69.40
+step 200  dist=   8.94  rule=0.00  record_far=  69.40
+step 210  dist=  10.50  rule=0.00  record_far=  69.40
+step 220  dist=  11.25  rule=0.00  record_far=  69.40
+step 230  dist=   8.74  rule=0.00  record_far=  69.40
+step 240  dist=   9.27  rule=0.00  record_far=  69.40
+step 250  dist=  11.21  rule=0.00  record_far=  69.40
+step 260  dist=   8.81  rule=0.00  record_far=  69.40
+step 270  dist=  14.50  rule=0.00  record_far=  69.40
+step 280  dist=  32.89  rule=0.00  record_far=  69.40
+step 290  dist=  52.57  rule=0.09  record_far=  69.40
+step 300  dist=  72.08  rule=0.25  record_far=  70.18
+step 310  dist=  86.75  rule=0.38  record_far=  85.35
+step 320  dist=  91.70  rule=0.43  record_far=  91.81
+step 330  dist=  88.35  rule=0.40  record_far=  91.81
+step 340  dist=  85.70  rule=0.38  record_far=  91.81
+step 350  dist=  88.16  rule=0.40  record_far=  91.81
+step 360  dist=  89.42  rule=0.41  record_far=  91.81
+step 370  dist=  92.47  rule=0.43  record_far=  91.81
+step 380  dist=  97.68  rule=0.48  record_far=  97.46
+step 390  dist=  97.08  rule=0.48  record_far=  97.69
+
+final: dist=93.52  rule=0.45  record_far=97.69

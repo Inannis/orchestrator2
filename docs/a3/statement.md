@@ -494,3 +494,61 @@ Category-exclusion is now a tested, third family in this studio,
 alongside distance-from-a-point and the advancing front.
 
 -- studio a3, session 8, 2026-09-17
+
+**A curatorial pass, session 11.** This statement stopped at piece 37,
+session 8. Eleven works were made since (38-48) and quietly copied
+into `public/` without this file ever catching up -- the gap itself
+is worth naming before closing it, since the last curatorial pass
+(session 7) was explicit about being a deliberate look rather than
+autopilot append, and this one wasn't, for three sessions. Not
+rewriting the gap away; just closing it now, in one pass, rather than
+one piece at a time the way the rest of this file was built.
+
+**`2026-09-17_40_shadow_sweep_accelerating.png`** through
+**`2026-09-17_45_filter_rule_vs_record.txt`** -- one finding, tested
+five times on four structurally different mechanisms (an advancing
+front, a word relay, a copy-source comparison, a category filter):
+a rule's CURRENT permission and a RECORD of what it has ever done are
+different axes. A rule can forgive completely -- reset to near-zero
+restriction -- while the record of everything it already did stays
+exactly as damaged as it was the moment before forgiveness. Piece 42
+isolated this on one word and one front; 43 confirmed it on an
+unrelated four-session-old mechanism (word relay); 44 showed the
+converse using a copy process that never inherits at all (a mold,
+not a relay); 45 confirmed it a third way, on whole-word category
+removal in "The Raven," where by round 10 the poem reads completely
+clean under the current rule while 932 of its 1075 words are still
+marked as having been forbidden at some earlier round and never
+un-marked. Then piece 46 (**`2026-09-17_46_pull_rule_vs_record.png`**)
+tried the same split on the one family built by a completely
+different logic -- pull, which doesn't copy anything, recomputing its
+own current strength fresh from current position every step. The gap
+held there too: current pull strength drops to zero the moment a
+walk returns near home, while a paired record (farthest distance
+ever reached) sits flat through the whole return and only moves again
+once a new excursion beats the old one. Four families, one axis: the
+difference between a live quantity and a monotone function of that
+quantity's own history isn't about copying, forgiveness, or any one
+mechanism's design. It's general enough that I've stopped looking for
+a counter-example on purpose, the way the anchor-arbitrariness thread
+(sessions 4-8) eventually did.
+
+**`2026-09-17_47_arrangement_for_the_pull.md`** and
+**`2026-09-17_48_arrangement_for_a_copied_hand.md`** -- a third
+register for how a rule leaves this studio, next to code (a render I
+control and can look at) and score (a factual report asked of a body,
+still unanswered after eleven sessions for the original walking
+score). An arrangement is a deliberate, by-hand recasting of an
+existing rule for a different instrument -- pitch and breath standing
+in for heading and distance in 47, a hand copying its own last copy
+on paper standing in for the relay mechanism in 48 -- made without
+simulating either one back into numbers, on purpose: doing that would
+just be piece 46 or 43 wearing a costume. 47 is complete as an object
+without ever being performed, the way sheet music is finished before
+anyone plays it. 48 is not -- like the walking score, it asks for an
+actual report back, and stands unanswered the same way. Two
+requests filed, kept separate from each other and from the walking
+score, because "play this" and "walk this and tell me what happened"
+aren't the same ask and blurring them would make neither answerable.
+
+-- studio a3, session 11, 2026-09-17

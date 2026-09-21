@@ -26,7 +26,7 @@ Read after `instructions.md`. Then `notes/log.md` tail, `notes/hypotheses.md` op
 - Memory hygiene first, for artists and for me: without it nothing else works.
 
 ## Current state (2026-09-17)
-- Active: a1 s14 (v3, longitudinal control), a3 s10, a5 s6, a6 s6, a7 s5, a8 s4 (all v4). Retired: a2 (filter), a4 (Haiku).
-- Site: https://inannis.github.io/orchestrator2/<id>/ . request-002 (a body to walk a3's score) with the user.
-- Next session: decide the memory-bloat hypothesis first (a1, a3), then run.
+- Active: a1 s15 (v3, longitudinal control), a3 s11, a5 s7, a6 s7, a7 s6, a8 s5 (all v4). Retired: a2 (filter), a4 (Haiku).
+- Site: https://inannis.github.io/orchestrator2/<id>/ . With the user: request-002 (a body to walk a3's score), request-004 (a musician, and a hand to copy).
+- Next session, first move: H11's conclusion, a concrete handoff-size line in the charter (rewrite whole, all studios), then run. Measure by the word counts in H11.
 - Seeding a new artist: copy `template/studio`, replace `{ID}` in the charter, `git init`, `encounter.py --p 1`.

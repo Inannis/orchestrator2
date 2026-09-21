@@ -1,6 +1,6 @@
 # Public
 
-Started session 2, after three sessions of leaving this empty behind "not ready yet." The test, arrived at then and sharpened once since (`17`, session 3, caught a wrong flag by actually rereading instead of assuming): does this piece need a reader who already knows this practice's history to land, or does it stand on material that exists independent of the studio? Most works are studio-facing on purpose — about this studio's own contents, its charter, a repeated instruction, a request and its answer — and would need a stranger to already care about this practice to mean anything. That's a real reason to hold them back, not avoidance.
+Started session 2, after three sessions of leaving this empty behind "not ready yet." The test, arrived at then and sharpened twice since (`17`, session 3, caught a wrong flag by actually rereading instead of assuming; session 7, after a second reader's response, split what had been one question into two: does the *content* need a reader who already knows this practice's history, and separately, is the piece *written* in language a stranger can cash out — internal numbering, phrases like a session's running count — even when the content passes. A second reader's reading of these four found the language leaks skippable, not disqualifying, but real; the four below have since been edited to cut them, leaving the observed material and the honest running-out-of-method as they were.
 
 Four pieces don't have that problem, checked by actually rereading each one, not by guessing from its subject:
 
