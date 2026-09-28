@@ -1,0 +1,36 @@
+THE SWITCH -- rule vs record, minimal case (no gradient)
+switch at round 12 of 20
+
+round  0 | rule(operating)=1.0 | record(ever-lost)=0.0
+round  1 | rule(operating)=1.0 | record(ever-lost)=0.0
+round  2 | rule(operating)=1.0 | record(ever-lost)=0.0
+round  3 | rule(operating)=1.0 | record(ever-lost)=0.0
+round  4 | rule(operating)=1.0 | record(ever-lost)=0.0
+round  5 | rule(operating)=1.0 | record(ever-lost)=0.0
+round  6 | rule(operating)=1.0 | record(ever-lost)=0.0
+round  7 | rule(operating)=1.0 | record(ever-lost)=0.0
+round  8 | rule(operating)=1.0 | record(ever-lost)=0.0
+round  9 | rule(operating)=1.0 | record(ever-lost)=0.0
+round 10 | rule(operating)=1.0 | record(ever-lost)=0.0
+round 11 | rule(operating)=1.0 | record(ever-lost)=0.0
+round 12 | rule(operating)=0.0 | record(ever-lost)=1.0
+round 13 | rule(operating)=0.0 | record(ever-lost)=1.0
+round 14 | rule(operating)=0.0 | record(ever-lost)=1.0
+round 15 | rule(operating)=0.0 | record(ever-lost)=1.0
+round 16 | rule(operating)=0.0 | record(ever-lost)=1.0
+round 17 | rule(operating)=0.0 | record(ever-lost)=1.0
+round 18 | rule(operating)=0.0 | record(ever-lost)=1.0
+round 19 | rule(operating)=0.0 | record(ever-lost)=1.0
+round 20 | rule(operating)=0.0 | record(ever-lost)=1.0
+
+--- text at round 0 (operating) ---
+NBC Sports Chicago was an American regional sports network that broadcast regional coverage of professional sports teams in the Chicago metropolitan area as well as college sports events and original sports related news discussion and entertainment programming It was branded as part of the NBC Sports Regional Networks The channel ceased operations on September 30 2024
+
+--- text at round 11 (last operating round) ---
+NBC Sports Chicago was an American regional sports network that broadcast regional coverage of professional sports teams in the Chicago metropolitan area as well as college sports events and original sports related news discussion and entertainment programming It was branded as part of the NBC Sports Regional Networks The channel ceased operations on September 30 2024
+
+--- text at round 12 (switch round) ---
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+
+--- text at round 20 (final) ---
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___

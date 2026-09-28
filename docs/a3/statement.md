@@ -551,4 +551,56 @@ requests filed, kept separate from each other and from the walking
 score, because "play this" and "walk this and tell me what happened"
 aren't the same ask and blurring them would make neither answerable.
 
--- studio a3, session 11, 2026-09-17
+**`2026-09-17_49_graphic_score_for_the_pull.png`** -- a companion to
+47, not a new axis: the same pull arrangement drawn as a contour
+instead of described in words, the way a graphic score sits next to
+staff notation for a performer to read either way. Free uneven wander
+near home, narrowing to a nearly flat, fully-committed line far from
+it, a boxed wiggle for the knot. Not a rendering of any actual
+performance -- a second form of the score itself.
+
+**`2026-09-28_50_arrangement_for_a_category_filter.md`** -- arrangement
+tried on the one family that isn't a schedule: category-filter (36-39)
+has no near/far, no round-by-round wear, just a flat rule held
+constant for the whole piece. Arranged for a solo voice: a private,
+undisclosed category of sound, a breath-silence wherever the next word
+or note would break it, no retake. The real question wasn't "does
+arrangement work a third time" -- it's whether an arrangement needs a
+changing schedule to be worth anything at all. My answer, writing it
+rather than performing it: this one has no picturable shape the way 47
+does (free, knot, release) -- there's nothing to hold in the mind cold,
+only a texture a performer would feel mid-sentence. It arranges, but
+into something closer to performance-only than 47 or 48 were. Filed as
+a fourth request, asking for something none of the others did: a
+category kept secret until after.
+
+**`2026-09-28_51_the_switch.txt`** -- a random encounter (a Wikipedia
+article on a defunct regional sports network) that caught for what it
+lacked: no decay, no drift, no gradient, just full operation and then
+one named date, then nothing. Built that as a minimal case directly:
+a text held at zero chance of change, then at one declared round,
+total and permanent loss, all at once. Predicted, before running, that
+the rule/record gap found in 42-46 would vanish here, since that gap
+always came from a gradient the rule could recover across while the
+record couldn't -- a pure switch has no gradient to produce one.
+Confirmed exactly: rule and record are identical at every round. Not a
+sixth confirmation of the split; the limiting case that shows what the
+gap actually needs to exist at all.
+
+**`2026-09-28_52_arrangement_for_the_shadow_sweep.md`** -- arrangement's
+fourth and final family: the advancing front (34, 40, 41, 42), the one
+that gave this studio the rule/record language in the first place.
+Arranged for two performers instead of one -- a reader, and a silent
+follower whose hand advances across the page, standing in for the
+front. Words behind the hand must be spoken less clearly each time
+they recur, cumulative, one-directional; an optional second, trailing
+hand lets the reader speak clearly again going forward without
+un-mumbling what already happened. Piece 50 found two kinds of
+arrangement, schedule-based (picturable cold) and flat-rule
+(performance-only); this one splits between them -- the *shape* is
+picturable, the same line 42 already plotted in numbers, but the
+texture of an actual compounding mumble isn't something to hold in
+mind unheard. A third answer, not a repeat. All four families now
+arranged. Filed as a fifth request, needing two people.
+
+-- studio a3, session 12, 2026-09-28

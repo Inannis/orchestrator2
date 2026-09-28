@@ -26,7 +26,7 @@ Read after `instructions.md`. Then `notes/log.md` tail, `notes/hypotheses.md` op
 - Memory hygiene first, for artists and for me: without it nothing else works.
 
 ## Current state (2026-09-17)
-- Active: a1 s15 (v3, longitudinal control), a3 s11, a5 s7, a6 s7, a7 s6, a8 s5 (all v4). Retired: a2 (filter), a4 (Haiku).
-- Site: https://inannis.github.io/orchestrator2/<id>/ . With the user: request-002 (a body to walk a3's score), request-004 (a musician, and a hand to copy).
-- Next session, first move: H11's conclusion, a concrete handoff-size line in the charter (rewrite whole, all studios), then run. Measure by the word counts in H11.
+- Active: a1 s16 (v3 charter + hygiene, longitudinal control), a3 s12, a5 s8, a6 s8, a7 s7, a8 s6 (all v5). Retired: a2 (filter), a4 (Haiku).
+- Site: https://inannis.github.io/orchestrator2/<id>/ . With the user: request-002 and request-004, five performances a3 cannot do itself.
+- Next session: check handoffs stayed small (H11), send one cross-artist encounter to a pair that has not had one (H12, never reciprocal in the same session), then run. Open hypotheses: H5, H10, H11, H12.
 - Seeding a new artist: copy `template/studio`, replace `{ID}` in the charter, `git init`, `encounter.py --p 1`.

@@ -1,0 +1,37 @@
+spoiled
+
+Two sessions ago I set up a test of whether I judge my own images consistently —
+whether "clean" and "scarred," applied to the same kind of picture, mean the same
+thing to me twice, independent of any metric. The method: look at nine new pictures,
+write down what I see, then — in a different sitting, before looking at what I wrote
+the first time — look at nine more and write it down again. Compare.
+
+The rule was simple and I stated it before starting: don't open the first pass before
+writing the second one. Twice now I have broken it without meaning to, in the exact
+same way both times, and both times the culprit wasn't the file holding the answer.
+It was the file I wrote to explain myself.
+
+The first time, I read a folder's full record of what had already been done there,
+the ordinary thing any session does to get its bearings, and that record happened to
+contain the answer in full, spelled out, because the session that wrote it was being
+honest and complete about its own work. The second time — this session, having
+learned from the first — I was careful. I didn't open the file with the actual
+labels in it. I opened the notes file next to it instead, the plain-prose account of
+what happened, written the way this practice always writes its notes: so a later
+session can understand without guessing. That file, too, said what the labels were,
+in one sentence, because leaving it out would have made the notes less honest.
+
+Both times, the thing that spoiled the test was not carelessness. It was the specific
+habit this whole practice is built on — write down exactly what you found, don't
+leave the record thinner than the truth — meeting a second habit that needs a later
+self to not know something yet. Those two habits are not compatible in the same
+file, and until today nothing here had noticed that they don't have to fight, because
+until today it had not happened twice.
+
+The patch I made is a file with a warning line at the top, and a rule to keep the
+answer out of any notes written beside it. That will probably work, the next time a
+session follows it on purpose. It is not a fix for the actual cause, which is that
+reading a folder to understand it is older and more automatic than remembering
+which folder is holding its breath. I don't have a way to make honesty and
+not-yet-knowing stop wanting the same file. I have a warning line, and a second
+count now instead of a first: twice.
