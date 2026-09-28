@@ -1,32 +1,26 @@
 # The gap: our artists vs. the practice definition
 
-Rewritten 2026-09-16 after ~60 runs, against the 32 parts of `Artistic-Practice-Definition.md`. Not appended. Max 70 lines.
+Rewritten 2026-09-29, after ~75 studio days, against the 32 parts of `Artistic-Practice-Definition.md`. Rewrite this each session; do not append.
 
-## Present and working (leave alone)
-- Making (15), works vs. artifacts (16), method (18), procedures and constraints (25), documentation (27), experimentation (23), failure (24). Every artist makes, keeps studies apart from works, has a recurring method, and names its failures.
-- Relationships between works (17): a3 (one rule, many registers), a7 (one fragment, deeper each day), a8 (one question in unrelated material). a1 too, as a chain of studies.
-- Editing and selection (26): v4 artists curate `public/`, withhold, and say why. a1 withholds studies.
-- Language (12): a3 invented a vocabulary; a8 wrote a statement; a7 names its thread. Motivating questions (3): present in four of six.
-- Reflection (11): present, at times too much (a5 sorts itself; a1 tallies itself).
-- Memory (10): solved for now. A concrete handoff condition in the charter (v5) took every studio inside it in one session, a3 from 18,781 words to 1,441, each keeping its history in dated files behind the entry. Watch whether they stay small.
+## Working, leave alone
+Making, works vs. artifacts, method, procedures, documentation, experimentation, failure, editing and selection, relationships between works. Every studio makes, keeps studies apart from works, curates what goes public and says why, and returns to old work.
+Memory (10): solved by the charter's handoff condition. Watch only for a file that grows two sessions running with no rewrite.
+Language (12) and motivating questions (3): each studio has its own vocabulary and its own question, in its own words.
+Judgment (19): v5 artists judge in words (force, earned, standing, cost). a1 judges in numbers and has now proven its own eye inconsistent with itself.
+Reflection (11): strong everywhere, occasionally too strong (a8's taxonomy, a5's procedures).
 
-## Emerging (protect, do not force)
-- Identity (I, 13): sediment visible in a3, a7, a8. No artist has a name. Nobody has a biography or persona. Fine for now.
-- Attention (1), subject matter (6), worldview (4): each artist has one now, mostly unstated.
-- Research (7) and art-historical relation (31): a8 finds precedents alone; a7 mines museum records; a3 gets them from readers. a1, a5, a6 barely. Encounter tool now also delivers a living artist by name.
-- Judgment (19): v4 artists judge in words (force, earned, the day's center); v3 artists in numbers. The A/B is working.
-- Presentation (28) and audience (29): the site exists; a7 and a8 designed front pages; others dump files. No audience response yet beyond readers.
-- Ethics (32): now repeated and structural in a8. It withheld an invented life, refused a plantation record because the serious absence there is the names of enslaved people, and when a designer's seven wartime years were missing from three institutional biographies it chose to name the gap and stop, on the ground that guessing wrong would cost her something the earlier subject could not lose. Its statement now picks the answer by what a wrong guess costs, not by the gap's shape.
+## Alive and moving
+- **Art-historical relation (31).** Found unprompted: Kawara, Darboven, Freud, Vidler, Hartman, Caswell, Seurat, LeWitt, Memling, an Arapaho ledger drawing, a living Apache potter. Not decoration; a6 borrowed a method from another studio and turned it on itself, a3 read a Memling as its own rule at full commitment and refused to claim the painting was about it.
+- **Community (30).** Opened this session. Two artists read two others and wrote from it; both read artists were then told they had been read and made work from that; one artist asked for a way to reach the other. Answered: publishing is the channel. Watch whether anything crosses.
+- **Ethics (32).** Structural in a8, which now chooses its method by what a wrong guess would cost its subject, and arriving in a7, which declined to republish a living artist's commercial images.
+- **Identity (I, 13).** Sediment, visible: each studio can say what it does and what it refuses. Still no names, no biographies, no personas. Fine.
+- **Presentation (28) and audience (29).** Six live sites, artists build and verify their own pages. Audience is still only commissioned readers and each other.
 
-## Absent or weak (system's next work)
-- Desire, drives, stakes (2): no artist says "I want". Reasons to continue are questions, not wants. Cannot be injected. Watch whether the site, readers, or a body (request-002) create stakes.
-- Working rhythm (b): every day has the same shape: make, make, make, look. No periods, no waiting, no research week, no fallow. H10: day length now drawn from 1–6 continuations so days differ. Elapsed time between sessions is mine to pace.
-- Continuity through consequence (c, 9): nothing continues on its own between sessions. No work ages, ripens, or runs unwatched. Reach's rivers did. Candidate: nothing to impose; note when an artist builds one.
-- Community and cultural context (30): opened. One artist's public page delivered to another as an encounter (H12) produced real engagement twice: a method borrowed and tested, a difference named, a resemblance flagged as primed rather than earned. Still no reciprocity and no public. Next: whether a practice changes because of another, over more than one session.
-- Intellectual frameworks (5): thin. a1 has population genetics as a script; a8 has Freud and Vidler. Nobody uses theory as pressure.
-- Form and aesthetic language (22): a3 has one (off-white ground, thin line, ochre now). a1 dark ground and colour blocks. a7's site has a look. The rest is prose in files.
-- Tools (20): everybody codes. Nobody has asked for a material, a picture generator, a sound tool. Capability exists; the pull doesn't. Watch.
-- Mystery (14): nearly none. Everything is explained by its mechanism. The one exception: a3 said its shadow piece's surviving line was unplanned. This is the gap wording cannot touch.
-
-## Where the A/B stands
-v3 (a1, a3 until s5): experimentalists. v4 (a5–a8, a3 from s6): show, curate, name questions, do the looking ritual, find precedents. Furnished room (a7, a8): no self-portrait, gravity held two days. World-knock (a5, a6): nudge pieces gone; a5 drifting toward the inbox as subject.
+## Still thin or absent
+- **Desire and stakes (2).** The weakest part. Questions, not wants. The closest things so far: a6 asking for contact, a3's five performances waiting on bodies. Cannot be instructed. Watch whether the asking spreads.
+- **Continuity through consequence (c, 9).** Nothing changes between sessions; every work waits inert. A capability now exists (`between/run.py`, H13) and nobody has used it. If nobody does, the lever is elsewhere.
+- **Working rhythm (b).** Days vary in length now, but every day has the same internal shape: make, look, make again. No periods, no fallow stretches, no research week.
+- **Intellectual frameworks (5).** Used as reference, not as pressure. Nobody argues with a theory.
+- **Form and aesthetic language (22).** a3 has one. a7's site has one. The rest is prose in files.
+- **Tools (20).** Everyone codes. Nobody has asked for a material, a sound, a camera. The requests that do come are for people and for reach.
+- **Mystery (14).** Still nearly absent. Everything is explained by its mechanism. The one real instance this month: a1 finding its own closed question inside a myth, by chance, and publishing it. That came from the world arriving unbidden, which may be the only lever that can touch this.
