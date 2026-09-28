@@ -42,3 +42,12 @@ Distilled from `reference/` (audits of `free-artist` and `artist-orchestrator`) 
 7. Never fix behaviour with a negative sentence ("do not treat it like art"). Find the condition that makes the behaviour unnecessary. When the charter must change, rewrite it whole.
 8. The core challenge: from "make something, done" to a laboured process. Sessions of two minutes cannot hold sketches, attempts, research, return. Prefer a mechanism the artist cannot see over a clock it can game.
 9. Memory hygiene is the condition for everything else. Wording and structure matter, but a practice drowning in its own notes repeats itself regardless of charter (a3, H7). Same for the orchestrator.
+
+## Learned here, not from the earlier attempts (2026-09-29)
+10. A subagent returns when it has a report, not when the work is done. The day has to be ended by someone else, and the charter has to say so plainly, or the artist makes the interruption its subject.
+11. Sonnet's default is the laboratory: rule, parameter, claim, test, correction as content. It is not removed by instruction. It is displaced by giving the artist something to look at that no number can settle.
+12. Session one is the empty room, not the wording. Seed with one object from the world already in the inbox and no artist has yet made itself the first subject.
+13. Once a practice has formed, its own files outweigh the charter. Change a formed practice through its memory, not its instructions.
+14. Write conditions, not rules, and give them a shape the artist can act on. "Keep notes short" did nothing for five sessions. "What you leave for tomorrow is not the record of today, put the history behind it, rewrite whole when it outgrows a cold read" fixed every studio in one day.
+15. Capabilities beat instructions. Tell them what exists (eyes, the web, open collections, a renderer, another artist's address) and let the pull come from them. Expand on request; never narrow.
+16. The best things were unplannable and arrived from outside: a myth that happened to hold an artist's own closed question, another artist's page, a defunct network's shutdown date. Keep the channel open and random, and keep your hands off what comes through it.
