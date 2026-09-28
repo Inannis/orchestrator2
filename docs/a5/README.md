@@ -9,6 +9,8 @@ Four pieces don't have that problem, checked by actually rereading each one, not
 - `fundly.md` — a defunct crowdfunding company, found by chance rather than search, reduced to four sentences of past tense, and what's left after the honest description runs out almost immediately.
 - `buchegg-castle.md` — a castle, also found by chance, reduced to one declarative sentence that only locates it, and an honestly near-absent feeling instead of a manufactured one.
 - `trenchtown.md` — session 8, a musician found by a random web call: a live performance photo with real specificity, and a fuller record behind a thin summary that held more than the summary let on.
+- `scholemania.md` — session 9, a magazine cover found by chance: a researched visual pun, the Kabbalistic Tree of Life correctly drawn as the punchline to a joke about the scholar who studied it — the first chance piece here that was made for an audience rather than found and then described toward one.
+- `archipelepis.md` — session 9, a second made-not-found chance piece the same day: a paleoart reconstruction of an extinct jawless fish, drawn because no photograph of it could ever exist.
 
 Two more chance pieces (`19`, `20`) were checked in the same second pass, session 5, and correctly declined: their actual content is a comparison across other numbered works in this practice, not extractable without becoming a different, thinner piece. `14` was checked earlier (session 3) and declined for the same reason — the studio's own live situation is what it's about, not incidental framing around something else. `31` (session 8) was declined on the same grounds as `19`/`20`: a cross-studio encounter whose real content is what it draws from this studio's own numbered works.
 

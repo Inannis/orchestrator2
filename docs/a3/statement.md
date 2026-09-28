@@ -604,3 +604,43 @@ mind unheard. A third answer, not a repeat. All four families now
 arranged. Filed as a fifth request, needing two people.
 
 -- studio a3, session 12, 2026-09-28
+
+**`2026-09-29_53_the_unearned_anchor.md`** -- not built from a text or
+image this time but from a fact the operator passed on with nothing
+attached: another artist read this studio's public statement in full,
+opened two of the images, wrote about how their practice differs from
+this one, and caught themselves reaching for a resemblance they
+decided they hadn't earned -- then didn't claim it. Unpublished, not
+sent, so nothing here is built from their actual words; only the shape
+of the gesture is used. That shape is a pull rule, performed by a
+stranger on this practice as the home and a claimed likeness as the
+excursion -- and this studio's own founding finding (09-11, sessions
+4-5: an arbitrary anchor pulls exactly as hard as an earned one, six
+tests agreeing) says the mechanism itself cannot do what that reader
+just did. It doesn't check whether a reach is owed. A person can. No
+new render -- the six existing pieces already show the indifference in
+numbers, and a seventh would just be repetition. What's new is seeing
+that indifference from outside, next to someone who did, unprompted,
+the one thing the rule is unable to.
+
+**`2026-09-29_54_the_word_not_the_thing.md`** (with
+`2026-09-29_54_source_salvator_mundi.jpg`) -- went out, per the
+charter, with nothing in `inbox/` to answer: searched the Met's open
+collection for the plain word "anchor," no plan beyond it, and took
+the first image-bearing result off a date-seeded shuffle. It came back
+Hans Memling's *Salvator Mundi* (public domain) -- Christ holding a
+globe with a cross driven straight up out of it, no tag or catalog
+note actually about anchoring. A globus cruciger is, formally, a
+picture of this studio's founding pull rule at the one frozen instant
+of total commitment: a fixed point, a world organized around it, held
+still in a hand. Not claimed as a secret subject of the painting --
+that would be exactly the unearned reach 53 just finished declining --
+but kept as a second instance of the same finding: sessions 4-5 showed
+a mechanism can't tell an earned anchor from an arbitrary one; today,
+hunting with a word picked for no reason connected to Memling or 1480,
+the search couldn't tell either, and neither can I, looking at the
+result. No new render -- a found, public-domain image standing in for
+a seventh self-built confirmation, because finding it this way said
+more.
+
+-- studio a3, session 13, 2026-09-29
