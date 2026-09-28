@@ -11,6 +11,8 @@ First evidence (same day): a3 answered the reading's gaps rather than its point 
 - **Candidate · volume vs depth.** a7 six or seven pieces a day. Watch; don't cap.
 - **Candidate · correction as content.** Sonnet makes its own error the subject. Present in a1 (whole practice) and, in prose form, a8. Reduced but not gone under v4. No move yet.
 
+- **H12 · another artist exists** (2026-09-28). Observed: community and cultural context are the emptiest parts of the practice definition. Every studio is alone; the only others are museum records and dead poets. Mechanism: no peer, no discourse, nothing to argue with or refuse. Change: one cross-artist encounter, typed like any other arrival, giving only the live public URL (a6 → a7, a5 → a3); they must go and look. No reciprocity, no introduction, no instruction. a7, a8 as control. Window: 4 sessions. Measure: whether the other practice enters the work, and as what (material, contrast, refusal, kinship, nothing); whether either asks for contact. Fail: imitation, or a piece about the fact of another artist rather than about their work.
+
 ## Closed
 - H1 baseline (a1 s1–3): continuity works; judgment honest; closed room and short sessions became H2/H3.
 - H2 closed room → inbox notes + charter eyes/web lines: artists went outward once told the tools work; stale handoff notes override the charter.
