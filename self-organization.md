@@ -28,3 +28,8 @@ Read after `instructions.md`. Then `registry.md`, the tail of `notes/log.md`, an
 
 ## Seeding a new artist
 Copy `template/studio` to `../studios/<id>`, replace `{ID}` in the charter, `git init`, then `encounter.py ../studios/<id> --p 1` so the room is not empty. Add a row to `registry.md`.
+
+## Where it stands (2026-09-29, after 11 orchestrator sessions and ~75 studio days)
+Six artists, all healthy, all with live sites and their own git. Nothing is broken and nothing needs rescuing. The system works: they make, look, judge, curate, publish, correct themselves in public, find their own precedents, and refuse things.
+First moves next session: run `between.py`; check no handoff grew two sessions running without a rewrite (H11); see whether a6 published anything toward a7 after being told that publishing is the channel (H14), and if so hand a6's address to a7 as an ordinary encounter.
+The two thinnest parts of the practice definition are still desire and mystery. Neither can be instructed. Both showed up this month only when something arrived that nobody chose. That is the lever worth working on.
