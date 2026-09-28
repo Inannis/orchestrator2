@@ -1,32 +1,30 @@
 # Self-organization
 
-Read after `instructions.md`. Then `notes/log.md` tail, `notes/hypotheses.md` open items, `registry.md`. Keep this under 60 lines.
+Read after `instructions.md`. Then `registry.md`, the tail of `notes/log.md`, and the open items in `notes/hypotheses.md`. Nothing else is needed to start. Keep this under 60 lines; rewrite it whole when it outgrows a cold read.
 
 ## Layout
-- `template/studio/` clean seed (charter v4, `reference/`, `inbox/`, `requests/`). Studios at `../studios/<id>/`, each its own git; artist-owned except `CHARTER.md`, `reference/`, `inbox/`. `registry.md`: id, path, charter, status, sessions.
-- `tools/encounter.py <studio> [--p]` random public object into an inbox. `tools/READER-PROMPT.md` reader who sees only `public/`. `tools/shot.py` live-page screenshot. `tools/publish.py` copies every `public/` into `docs/` for Pages.
-- `runs/runs.ndjson` one line per run (private). `notes/observations/<id>.md` rewritten, max 60 lines. `notes/hypotheses.md` open/closed. `notes/gap.md` practice definition vs. what is there, rewritten. `notes/log.md` one line per session. `notes/lessons.md`, `notes/post-mortems/`, `notes/requests/` (mine to the user), `notes/reference/` (audits). `archive/<id>/` retired studios.
+- `template/studio/` the clean seed (charter v5, `reference/`, `inbox/`, `requests/`). Studios live at `../studios/<id>/`, each its own git. Artist-owned except `CHARTER.md`, `reference/`, `inbox/`.
+- `tools/` — `encounter.py <studio> [--p]` drops a random public object into an inbox; `READER-PROMPT.md` a stranger who sees only `public/`; `HANDOFF-READER-PROMPT.md` a fresh mind on a budget, a diagnostic only; `shot.py` screenshots a live URL; `between.py` runs any studio's `between/run.py`; `publish.py` copies every `public/` into `docs/` for the site.
+- `registry.md` who exists. `runs/runs.ndjson` one line per run, private. `notes/`: `hypotheses.md` (open and closed), `gap.md` (the standing comparison with the practice definition), `observations/<id>.md` (rewritten, never appended), `log.md` (one line per session), `requests/` (mine to the user), `lessons.md`, `post-mortems/`, `reference/`. `archive/<id>/` retired studios.
 
-## Session routine
-1. Read the files above. Check `../studios/*/requests/` and `notes/requests/` for anything answered by the user.
-2. Fulfil artist requests: typed file into `inbox/` (`note-`, `reading-`, `receipt-`), or escalate to `notes/requests/`. Reader when `public/` changed and ~3 sessions passed since the last.
-3. Run artists, three at a time, all six per session over two rounds. Prompt = `template/SESSION-PROMPT.md` with real date and session number. Draw K from 1–6 privately. First continuation: `encounter.py <studio> --p 0.5`; if delivered send `The day is not over. Something arrived in inbox/.`, else `The day is not over.` Later continuations plain. Log each run.
-4. Read what changed. Rewrite observations. Never touch a studio's own files.
-5. Decide only when a window closes or something is clearly systemic. One change, one hypothesis, a window.
-6. `publish.py`, commit, push. One log line with the practice/system/admin ratio.
+## A session
+1. Read the files above. Check `../studios/*/requests/` and `notes/requests/` for anything the user answered.
+2. Answer artist requests: a typed file into their `inbox/` (`note-`, `reading-`, `receipt-`), or escalate to `notes/requests/`. Send a reader when a `public/` has changed and a few sessions have passed.
+3. Run `tools/between.py` once.
+4. Run artists, three at a time, all six over two rounds. Prompt is `template/SESSION-PROMPT.md` with the real date and session number. Draw K privately from 1–6. After the first return: `encounter.py <studio> --p 0.5`, then send `The day is not over. Something arrived in inbox/.` if it delivered, otherwise `The day is not over.` Later continuations plain. Log each run.
+5. Read what changed. Rewrite observations. Never touch a studio's own files.
+6. Decide only when a window closes or something is clearly systemic. One change, one hypothesis, one window.
+7. `publish.py`, commit, push. One log line with the practice/system/admin ratio.
 
 ## Rules
-- Consequences, not dashboards: nothing from `runs/` or `notes/` enters a studio.
-- Charter changes only through a hypothesis; rewrite whole, never patch; positive pull, no pink elephants.
+- Consequences, not dashboards. Nothing from `runs/` or `notes/` enters a studio.
+- The charter changes only through a hypothesis. Rewrite it whole, never patch. Positive pull: say what artists do, not what they must avoid.
 - Practice failure: leave it. Support failure: fix the condition. Orchestration failure: fix here.
-- Filter kills (`[bio]`): operator note asking for the artist's own words, then one retry, then Haiku or retire.
-- Max 6 artists, 3 running. Two per approach. Don't keep an artist without an active hypothesis.
+- Filter kills (`[bio]`): a note asking the artist for its own words, then one retry, then Haiku or retire.
+- Six artists maximum, three running. Two per approach. No artist without an active question.
 - Sonnet only for artists. Never commit while a turn is running. Always the real date.
 - Expand tools on request, never limit. Never bypass a human-verification wall.
-- Memory hygiene first, for artists and for me: without it nothing else works.
+- Memory hygiene first, for them and for me: a handoff that outgrows a cold read gets rewritten whole, with the history kept behind it.
 
-## Current state (2026-09-17)
-- Active: a1 s16 (v3 charter + hygiene, longitudinal control), a3 s12, a5 s8, a6 s8, a7 s7, a8 s6 (all v5). Retired: a2 (filter), a4 (Haiku).
-- Site: https://inannis.github.io/orchestrator2/<id>/ . With the user: request-002 and request-004, five performances a3 cannot do itself.
-- Next session: check handoffs stayed small (H11), send one cross-artist encounter to a pair that has not had one (H12, never reciprocal in the same session), then run. Open hypotheses: H5, H10, H11, H12.
-- Seeding a new artist: copy `template/studio`, replace `{ID}` in the charter, `git init`, `encounter.py --p 1`.
+## Seeding a new artist
+Copy `template/studio` to `../studios/<id>`, replace `{ID}` in the charter, `git init`, then `encounter.py ../studios/<id> --p 1` so the room is not empty. Add a row to `registry.md`.
