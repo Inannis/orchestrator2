@@ -1,5 +1,5 @@
 """Deliver one unbidden encounter to an artist's inbox. Sources are public and picked at random; the orchestrator never chooses content.
-usage: python tools/encounter.py <studio-path> [--p 0.5]  (nothing delivered with probability 1-p)"""
+usage: python tools/encounter.py <studio-path> [--p 0.5] [--feed museum|wide]  (nothing delivered with probability 1-p; feed defaults to the studio's condition)"""
 import sys, json, random, re, ssl, urllib.request, datetime, pathlib
 try:
     import certifi; CTX = ssl.create_default_context(cafile=certifi.where())
@@ -70,12 +70,56 @@ def wikipedia(inbox, stamp):
     d = json.loads(get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))
     return f"A random Wikipedia article.\n\nTitle: {d.get('title')}\nURL: {d.get('content_urls',{}).get('desktop',{}).get('page')}\n\n{d.get('extract')}\n"
 
+def commons_photo(inbox, stamp):
+    d = json.loads(get("https://commons.wikimedia.org/w/api.php?action=query&generator=random&grnnamespace=6&grnlimit=20&prop=imageinfo&iiprop=url|extmetadata|mime&iiurlwidth=1000&format=json"))
+    for p in d["query"]["pages"].values():
+        ii = p["imageinfo"][0]
+        if ii["mime"] == "image/jpeg" and not re.search(r"DPLA|btv1b|pdf|page ?\d+|map|scan", p["title"], re.I): break
+    else: return None
+    (inbox / f"encounter-{stamp}.jpg").write_bytes(get(ii["thumburl"], binary=True))
+    desc = re.sub(r"<[^>]+>", "", ii.get("extmetadata", {}).get("ImageDescription", {}).get("value", "")).strip()[:600]
+    return f"A photograph, picked at random from Wikimedia Commons. Image: `encounter-{stamp}.jpg`.\n\n{p['title'][5:]}\n{desc}\n{ii['descriptionurl']}\n"
+
+def current_event(inbox, stamp):
+    day = datetime.date.today() - datetime.timedelta(days=random.randint(0, 2))
+    t = f"Portal:Current_events/{day.year}_{day.strftime('%B')}_{day.day}"
+    w = json.loads(get("https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=" + urllib.request.quote(t)))
+    if "parse" not in w: return None
+    items = [l.lstrip("*").strip() for l in w["parse"]["wikitext"]["*"].splitlines() if re.match(r"\*{2,}[^*]", l)]
+    items = [i for i in items if len(i) > 80]
+    if not items: return None
+    i = random.choice(items)
+    i = re.sub(r"\[https?://\S+ \(([^)]*)\)\]", r"(\1)", i)
+    i = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", i).replace("''", "")
+    return f"Something that happened in the world this week, picked at random from Wikipedia's current events for {day.isoformat()}.\n\n{i}\n"
+
+def inaturalist(inbox, stamp):
+    o = json.loads(get(f"https://api.inaturalist.org/v1/observations?photos=true&quality_grade=research&per_page=1&order_by=observed_on&page={random.randint(1, 300)}"))
+    r = o["results"][0]
+    (inbox / f"encounter-{stamp}.jpg").write_bytes(get(r["photos"][0]["url"].replace("square", "large"), binary=True))
+    tx = r.get("taxon") or {}
+    return (f"A living thing, seen by someone this week and posted to iNaturalist, picked at random. Image: `encounter-{stamp}.jpg`.\n\n"
+            f"{tx.get('preferred_common_name') or ''} ({tx.get('name')})\nSeen: {r.get('observed_on')}, {r.get('place_guess')}\nhttps://www.inaturalist.org/observations/{r['id']}\n")
+
+FEEDS = {"museum": [met, artic, gutenberg, wikipedia, living_artist, living_artist],
+         "wide": [commons_photo, current_event, inaturalist, gutenberg, wikipedia, living_artist, met]}
+
+def feed_of(studio):
+    """The feed named by the studio's condition: registry.md row -> conditions.md row."""
+    root = pathlib.Path(__file__).resolve().parent.parent
+    sid = pathlib.Path(studio).resolve().name
+    m = re.search(rf"^\| {sid} \|[^|]*\|[^|]*\| (\w+) \|", (root / "registry.md").read_text(encoding="utf-8"), re.M)
+    if not m: return "museum"
+    c = re.search(rf"^\| {m.group(1)} \|[^|]*\| (\w+) \|", (root / "template" / "conditions.md").read_text(encoding="utf-8"), re.M)
+    return c.group(1) if c else "museum"
+
 def main():
     aid = sys.argv[1]; p = float(sys.argv[sys.argv.index("--p")+1]) if "--p" in sys.argv else 0.5
     if random.random() > p: print("nothing today"); return
     inbox = pathlib.Path(aid) / "inbox"; inbox.mkdir(exist_ok=True)
     stamp = datetime.date.today().isoformat() + "-" + "".join(random.choices("abcdefghjkmnpqrstuvwxyz", k=3))
-    for src in random.sample([met, artic, gutenberg, wikipedia, living_artist, living_artist], 6):
+    feed = sys.argv[sys.argv.index("--feed")+1] if "--feed" in sys.argv else feed_of(aid)
+    for src in random.sample(FEEDS[feed], len(FEEDS[feed])):
         try:
             body = src(inbox, stamp)
         except Exception as e:
@@ -83,5 +127,5 @@ def main():
         if body: break
     else: print("no source available"); return
     (inbox / f"encounter-{stamp}.md").write_text("From: the world, at random. Nobody chose this for you. Nothing is expected.\n\n" + body, encoding="utf-8")
-    print("delivered", stamp, src.__name__)
+    print("delivered", stamp, feed, src.__name__)
 main()

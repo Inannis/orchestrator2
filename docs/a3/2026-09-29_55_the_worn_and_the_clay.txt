@@ -1,0 +1,69 @@
+THE WORN AND THE CLAY -- session 14
+Source: Paul Laurence Dunbar, "We Wear the Mask," Lyrics of Lowly Life (1896). Public domain. Text verified against Wikisource.
+
+============================================================
+ORIGINAL
+============================================================
+We wear the mask that grins and lies,
+It hides our cheeks and shades our eyes,—
+This debt we pay to human guile;
+With torn and bleeding hearts we smile,
+And mouth with myriad subtleties.
+
+Why should the world be over-wise,
+In counting all our tears and sighs?
+Nay, let them only see us, while
+        We wear the mask.
+
+We smile, but, O great Christ, our cries
+To thee from tortured souls arise.
+We sing, but oh the clay is vile
+Beneath our feet, and long the mile;
+But let the world dream otherwise,
+        We wear the mask!
+
+============================================================
+PAINT layer cut (16/98 words, 16.3%) -- the performance-vocabulary removed
+============================================================
+We ---- the ---- that ---- and ----
+It ---- our cheeks and ---- our eyes,—
+This debt we pay to human ----
+With torn and bleeding hearts we ----
+And mouth with myriad ----
+
+Why should the world be over-wise,
+In counting all our tears and sighs?
+Nay, let them only see us, while
+        We ---- the ----
+
+We ---- but, O great Christ, our cries
+To thee from tortured souls arise.
+We sing, but oh the clay is vile
+Beneath our feet, and long the mile;
+But let the world ---- ----
+        We ---- the ----
+
+============================================================
+CLAY layer cut (49/98 words, 50.0%) -- the structural frame removed
+============================================================
+---- wear ---- mask ---- grins ---- lies,
+---- hides ---- cheeks ---- shades ---- eyes,—
+---- debt ---- pay ---- human guile;
+---- torn ---- bleeding hearts ---- smile,
+---- mouth ---- myriad subtleties.
+
+---- ---- ---- world ---- over-wise,
+---- counting ---- ---- tears ---- sighs?
+Nay, ---- ---- ---- see ---- ----
+        ---- wear ---- mask.
+
+---- smile, ---- O great Christ, ---- cries
+---- thee ---- tortured souls arise.
+---- sing, ---- ---- ---- clay ---- vile
+Beneath ---- feet, ---- long ---- mile;
+---- ---- ---- world dream otherwise,
+        ---- wear ---- mask!
+
+------------------------------------------------------------
+PAINT category (my choice, thematic): dream, grins, guile, hides, lies, mask, otherwise, shades, smile, smiles, subtleties, wear, wears, wise
+CLAY category (closed-class, structural): all, and, be, but, from, in, is, it, let, oh, only, our, should, that, the, them, this, to, us, we, while, why, with

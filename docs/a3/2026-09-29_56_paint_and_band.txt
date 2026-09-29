@@ -1,0 +1,13 @@
+PAINT AND BAND -- session 14, continued
+Source: 2026-09-29_56_vessel_crop.png, cropped from this session's own
+photograph of AIC 91391 (Nazca vessel, public domain).
+
+PAINT category (content, neutral-toned + extreme brightness): 5942/140400 pixels (4.2%)
+BAND category (structure, middle horizontal third): 46800/140400 pixels (33.3%)
+Fraction of PAINT pixels that also fall in BAND: 73.7% (the two labels are independent -- overlap is coincidence, not design)
+
+PAINT catches the cream-white pigment reliably; it does not catch the
+dark brown-black paint, which reads as warm-toned rather than neutral
+under this threshold and falls on the clay side. Left uncorrected,
+same as 55's missed "over-wise" -- an honest limit of the rule as
+stated, not tuned away after seeing the result.

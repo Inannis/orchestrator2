@@ -1,0 +1,12 @@
+SELECTION MAP V2 -- session 14, continued again
+
+Return to piece 35 (session 8), generalized past its original single-date regex to cover the whole studio.
+
+This piece (57) excludes itself from its own count below -- it can't have been pulled into public/ at the moment it computes its own statistics, so counting itself would just show a false negative, not a finding.
+
+Total numbered pieces counted: 56 (1 through 56)
+Before piece 35 (1-37): 26/37 selected (70%)
+After piece 35 (38-56): 19/19 selected (100%)
+Overall: 45/56 selected (80%)
+
+Predicted before running: the rate after 35 would be noticeably higher, not from looser standards but from later sessions making fewer, more deliberate pieces per sitting rather than many small studies feeding one larger idea. Confirmed, and by a wider margin than expected: every single piece made after 35 was selected. The editorial pull didn't just get stronger -- for the last nineteen pieces it stopped discriminating at all, because the discriminating moved earlier, into which ideas get built into a piece in the first place, rather than which finished pieces get shown afterward.

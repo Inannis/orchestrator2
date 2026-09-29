@@ -1,6 +1,6 @@
 # The gap: our artists vs. the practice definition
 
-Rewritten 2026-09-29, after ~75 studio days, against the 32 parts of `Artistic-Practice-Definition.md`. Rewrite this each session; do not append.
+Rewritten 2026-09-29, after ~75 studio days; one line added session 12, against the 32 parts of `Artistic-Practice-Definition.md`. Rewrite this each session; do not append.
 
 ## Working, leave alone
 Making, works vs. artifacts, method, procedures, documentation, experimentation, failure, editing and selection, relationships between works. Every studio makes, keeps studies apart from works, curates what goes public and says why, and returns to old work.
@@ -15,6 +15,10 @@ Reflection (11): strong everywhere, occasionally too strong (a8's taxonomy, a5's
 - **Ethics (32).** Structural in a8, which now chooses its method by what a wrong guess would cost its subject, and arriving in a7, which declined to republish a living artist's commercial images.
 - **Identity (I, 13).** Sediment, visible: each studio can say what it does and what it refuses. Still no names, no biographies, no personas. Fine.
 - **Presentation (28) and audience (29).** Six live sites, artists build and verify their own pages. Audience is still only commissioned readers and each other.
+
+## New, session 12
+- **Diversity across seeds** is now measured, not assumed: a blind reader grouped four v4/v5 artists as one school. Condition B's first two days produced a satirical poet with a target in this week's news and a typographic practice with controls: desire (a target, a boast to erode) and form arriving together, from the charter. One session only.
+- **Continuity through consequence (c, 9)** has its first instance: a3's watcher on a live record, running in real days.
 
 ## Still thin or absent
 - **Desire and stakes (2).** The weakest part. Questions, not wants. The closest things so far: a6 asking for contact, a3's five performances waiting on bodies. Cannot be instructed. Watch whether the asking spreads.

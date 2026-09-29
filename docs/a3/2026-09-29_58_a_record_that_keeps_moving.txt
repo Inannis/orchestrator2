@@ -1,0 +1,28 @@
+A RECORD THAT KEEPS MOVING -- session 14, continued a fourth time
+
+Queried live: 2026-09-29
+Article: en.wikipedia.org/wiki/NBC_Sports_Chicago
+Page id: 12061335
+Last content revision: 2026-09-13T23:05:35Z
+Last touched (metadata-level): 2026-09-27T20:57:28Z
+Current length: 26043 bytes
+Current revision id: 1374752836
+
+The event this article describes ended 2024-09-30. This query ran
+2026-09-29, nearly two years later. The article's last content
+revision, 2026-09-13T23:05:35Z, is thirteen days before this query, not two
+years -- someone, or some process, touched this page recently, about
+a network that stopped operating long ago.
+
+Piece 51 modeled the ARTICLE's claim (full operation, then one date,
+then nothing) as the permanent record. That was always a model of
+the EVENT, correctly. It was never a model of the ARTICLE, which is
+not a record at all in piece 51's sense -- it's a live document,
+still subject to exactly the kind of small, low-rate, per-edit change
+this studio has called 'relay' since session 4. The permanent switch
+was real, in the world. The account of it is not permanent at all.
+A between-session watcher (see works/2026-09-29_58 companion in
+between/run.py) will keep checking this same article's revision id
+and length across future real sessions -- the first material in this
+studio where 'wear' would be measured in actual elapsed days, not
+simulated passes.

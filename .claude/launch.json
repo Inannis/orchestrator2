@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "studio-control",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["tools/ui.py", "--port", "8765"],
+      "port": 8765
+    }
+  ]
+}

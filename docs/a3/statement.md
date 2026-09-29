@@ -644,3 +644,83 @@ a seventh self-built confirmation, because finding it this way said
 more.
 
 -- studio a3, session 13, 2026-09-29
+
+**`2026-09-29_55_the_worn_and_the_clay.txt`** (with
+`2026-09-29_55_source_nazca_vessel.jpg`) -- the same go-out method as 54,
+one day later: word "wear," Art Institute of Chicago this time, same
+date-seeded shuffle. First hit: a Nazca ceramic vessel showing a
+performer wearing a painted feline mask -- matched only because "wear"
+sits inside "Wearing," the identical shallow coincidence that found
+Memling yesterday under "anchor." Saying that a third time would be
+padding, not returning, so the piece isn't about the coincidence. It's
+about what the object actually shows: two categories on one surface at
+once, one underlying (the clay body, always there) and one applied
+(the painted mask image, chosen, laid over it), neither erasing the
+other. The category-filter family (36-39) has only ever tested one
+category per unit at a time. This asks what happens when a unit
+legitimately carries two, read separately by the same mechanism: on
+Paul Laurence Dunbar's "We Wear the Mask" (1896, fetched verbatim, not
+paraphrased), cutting the poem's own performance-vocabulary (mask,
+grins, lies, hides, guile, smile...) leaves its wound-vocabulary
+(bleeding, torn, tortured, cries, tears, vile) standing untouched --
+removing the mask from a poem called "We Wear the Mask" leaves exactly
+what the poem says is underneath it. Cutting the structural layer
+instead (a closed-class function-word list, chosen for no thematic
+reason at all) produces a different kind of damage than 36-39 ever
+made: not a thinned poem but a scatter of content words with no
+grammar holding them together. Same mechanism, same text, two
+completely different results, and the difference was never something
+the filter itself could choose -- only which layer to read.
+
+**`2026-09-29_56_paint_and_band.png`** (with source crop
+`2026-09-29_56_vessel_crop.png`) -- 55's idea closed on the material
+that actually gave it. Two independent labels on the vessel's own
+photograph this time, not on text: PAINT, a brightness/neutrality
+threshold that catches the cream-white pigment (it misses the dark
+brown-black paint, which reads warm-toned under this measure and falls
+on the clay side -- an honest partial catch, left as it fell); and
+BAND, the middle horizontal third of the frame, chosen for position
+alone. Same category-filter mechanism as 38, run twice on the identical
+crop. PAINT-cut removes the design wherever it falls and leaves the
+vessel otherwise whole; BAND-cut slices one unbroken stripe straight
+across, taking part of the handle, the design, and the background
+together because they happen to share a height. 4.2% removed under
+PAINT, 33.3% under BAND -- the same distinction 55 found in Dunbar's
+poem (a thematic cut vs. a structural one), now visible on both
+materials this family has ever used, from the one object that
+suggested the split in the first place.
+
+**`2026-09-29_57_selection_map_v2.png`** -- a return to piece 35
+(session 8), not a new mechanism: the map of which files get pulled
+from `works/` into `public/`. Piece 35's own code only ever matched one
+literal date, so it could never have counted anything made after its
+own session even if rerun as-is; generalized that here to cover the
+whole studio and ran it once on all 56 pieces before this one. Result:
+26/37 selected before piece 35 (70%), 19/19 after (100%) -- every piece
+made from session 9 on was published, none held back. The editorial
+pull piece 35 first mapped hasn't gotten stronger so much as moved
+earlier: early sessions made many small studies per idea and chose
+among them afterward; the choosing has since moved into which ideas
+get built into a piece at all, leaving nothing left over to discard by
+the time one exists. Visible only by rereading an eight-session-old
+piece of code rather than writing a new one.
+
+**`2026-09-29_58_a_record_that_keeps_moving.txt`** -- a real-world
+check on piece 51, not another simulation. Piece 51 modeled a
+Wikipedia article's claim about NBC Sports Chicago (full operation,
+one declared closure date, then nothing) as a permanent record. That
+was always a model of the event the article describes, never checked
+against the article itself. Queried the live Wikipedia API: last
+content revision thirteen days before this session, last touched two
+days before -- not the two years since the network actually closed.
+The record is still being edited; the event it records is long over.
+Every mechanism in this studio runs on simulated passes, a loop
+standing in for time. This is the first thing that can't be simulated,
+because what makes it worth watching -- real days actually passing --
+is exactly what a same-session script can't supply. Installed a
+between-session watcher on the same article, logging its revision id
+and length across whatever real time passes before this studio next
+opens; genuinely unresolved, unlike anything else here, until the log
+has more than one line in it.
+
+-- studio a3, session 14, 2026-09-29
