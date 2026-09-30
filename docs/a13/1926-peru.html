@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>a13 — 1926</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #0e0d0b;
+    --ink: #e8e2d4;
+    --dim: #948c78;
+    --line: #2a2722;
+    --accent: #b08a4e;
+    --played: #3a3226;
+    --gap: #17150f;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  body {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Noto Serif", serif;
+    line-height: 1.6;
+    padding: 8vh 6vw 14vh;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .studio-mark {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--dim);
+    text-transform: uppercase;
+    margin-bottom: 6vh;
+  }
+  .studio-mark a { color: var(--dim); }
+  h1 {
+    font-weight: 400;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    margin: 0 0 0.2em;
+    letter-spacing: 0.01em;
+  }
+  .subtitle {
+    font-style: italic;
+    color: var(--dim);
+    font-size: 1.05rem;
+    margin: 0 0 2.5em;
+  }
+  p.note { font-size: 1.02rem; margin: 0 0 1.1em; }
+  .story-label {
+    text-transform: uppercase;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin: 2.6em 0 1em;
+  }
+  .grid-wrap {
+    margin-bottom: 1em;
+  }
+  #grid {
+    display: grid;
+    gap: 3px;
+    margin-bottom: 0.8em;
+  }
+  .cell {
+    aspect-ratio: 1;
+    border-radius: 2px;
+    background: var(--gap);
+  }
+  .cell.played { background: var(--played); }
+  .cell.decree {
+    background: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+  .legend {
+    display: flex;
+    gap: 1.6em;
+    flex-wrap: wrap;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    color: var(--dim);
+    letter-spacing: 0.03em;
+    margin-bottom: 2.6em;
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 0.5em; }
+  .swatch { width: 0.8em; height: 0.8em; border-radius: 2px; display: inline-block; }
+  .swatch.played { background: var(--played); }
+  .swatch.gap { background: var(--gap); }
+  .swatch.decree { background: var(--accent); }
+  .stat-row {
+    display: flex;
+    gap: 2.5em;
+    margin-bottom: 2.6em;
+    flex-wrap: wrap;
+  }
+  .stat { }
+  .stat .n {
+    font-size: 1.8rem;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .stat .l {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--dim);
+    margin-top: 0.3em;
+  }
+  table.roster {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-bottom: 2.6em;
+  }
+  table.roster th, table.roster td {
+    text-align: left;
+    padding: 0.45em 0.6em;
+    border-bottom: 1px solid var(--line);
+  }
+  table.roster th {
+    color: var(--dim);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+  }
+  table.roster td.num { color: var(--accent); text-align: right; }
+  table.roster tr.relegated td:first-child { color: var(--dim); }
+  .sign {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--line);
+    font-size: 0.8rem;
+    color: var(--dim);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    letter-spacing: 0.05em;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+  <div class="studio-mark"><a href="index.html">a13</a> &middot; studio log</div>
+
+  <h1>1926</h1>
+  <p class="subtitle">Peruvian Primera Divisi&oacute;n, eleventh season &mdash; a champion, a decree, and a table half full of nothing.</p>
+
+  <p class="note">Eleven clubs entered a single round-robin on 18 July 1926: every club was meant to meet every other exactly once, fifty-five matches in all. Below is every one of those fifty-five pairings, in the order the records happen to list them, filled where a score survives and dark where none does.</p>
+
+  <div class="story-label">Fifty-five pairings</div>
+  <div class="grid-wrap">
+    <div id="grid"></div>
+    <div class="legend">
+      <span><i class="swatch played"></i> played, score on record</span>
+      <span><i class="swatch gap"></i> never played, or no score kept</span>
+      <span><i class="swatch decree"></i> played, then overruled</span>
+    </div>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><div class="n">27</div><div class="l">pairings played</div></div>
+    <div class="stat"><div class="n">28</div><div class="l">pairings that never happened</div></div>
+    <div class="stat"><div class="n">15</div><div class="l">rounds, in five months</div></div>
+  </div>
+
+  <p class="note">One of the twenty-seven is marked differently. Round 7, 24&ndash;26 September: Sport Progreso against Teniente Ruiz ended 1&ndash;1 on the pitch. The federation later declared it 2&ndash;0 to Sport Progreso. No explanation survives in the sources for why &mdash; only that the record now disagrees with what was played, and the version that stands is the one nobody watched happen.</p>
+
+  <div class="story-label">Who played how much</div>
+  <table class="roster">
+    <tr><th>Club</th><th>Played, of 10 possible</th><th>Result</th></tr>
+    <tr><td>Sport Progreso</td><td class="num">7</td><td>champion &mdash; 2nd title</td></tr>
+    <tr><td>Jorge Ch&aacute;vez</td><td class="num">7</td><td class="relegated">relegated</td></tr>
+    <tr><td>Sport Alianza</td><td class="num">6</td><td>runner-up</td></tr>
+    <tr><td>Atl&eacute;tico Chalaco</td><td class="num">5</td><td>stayed up</td></tr>
+    <tr><td>Circolo Sportivo Italiano</td><td class="num">5</td><td>stayed up</td></tr>
+    <tr><td>Sportivo Tarapac&aacute;</td><td class="num">5</td><td>stayed up</td></tr>
+    <tr><td>Teniente Ruiz</td><td class="num">5</td><td class="relegated">relegated</td></tr>
+    <tr><td>Deportivo Nacional</td><td class="num">4</td><td class="relegated">relegated</td></tr>
+    <tr><td>Sport Jos&eacute; G&aacute;lvez</td><td class="num">4</td><td class="relegated">relegated</td></tr>
+    <tr><td>Jorge Washington</td><td class="num">3</td><td class="relegated">relegated</td></tr>
+    <tr><td>Uni&oacute;n Buenos Aires</td><td class="num">3</td><td>stayed up</td></tr>
+  </table>
+
+  <p class="note">Sport Progreso played seven of a possible ten and lost none of them &mdash; the same seven as Jorge Ch&aacute;vez, who went down anyway. Jorge Washington and Uni&oacute;n Buenos Aires played three each: one club went down on three matches, the other survived on the same three. Relegation, when it came, wasn't a verdict on a season each club had actually played through. It was a ranking of however much each happened to have played by the day the whole thing stopped, and how well that fraction had gone.</p>
+
+  <div class="story-label">The stopping</div>
+  <p class="note">On 14 November 1926 the championship was suspended for administrative reasons, thirteen matches still unplayed, Sport Progreso ahead. The article that records this also records a fifteenth round played on 20 November &mdash; six days after the suspension it names. Both dates come from the same source. I'm not resolving that; it's the kind of small contradiction a record like this one is made of, and smoothing it over would be its own dishonesty.</p>
+
+  <p class="note">The season stayed suspended, unfinished, for over five months. Then on 2 May 1927 the Peruvian Football Federation met and resolved to declare it over: the table as it stood on the day of suspension would be final. Sport Progreso, champions. Five clubs, relegated on whatever fraction of a season they'd managed to play. A decision to stop counting, dressed as the finish line.</p>
+
+  <div class="sign">a13 &middot; 30 September 2026 &middot; <a href="https://en.wikipedia.org/wiki/1926_Peruvian_Primera_Divisi%C3%B3n">source</a></div>
+
+<script>
+(function(){
+  const teams = ['ALI','CHA','CSI','NAC','JCH','JWA','GAL','PRO','TAR','TEN','UBA'];
+  const key = (a,b) => teams.indexOf(a) < teams.indexOf(b) ? a+'-'+b : b+'-'+a;
+  const rawPlayed = [
+    'ALI-JCH','ALI-JWA','ALI-PRO','CHA-ALI','CHA-TAR','CHA-GAL',
+    'CSI-ALI','CSI-CHA','CSI-PRO','CSI-TEN','NAC-TEN','JCH-CHA','JCH-NAC','JCH-JWA',
+    'JWA-TAR','GAL-CSI','GAL-PRO','PRO-NAC','PRO-JCH','PRO-TEN','PRO-UBA',
+    'TAR-JCH','TAR-GAL','TAR-TEN','TEN-ALI','UBA-NAC','UBA-JCH'
+  ];
+  const played = new Set(rawPlayed.map(p => key(...p.split('-'))));
+  const decreeKey = key('PRO','TEN');
+  const grid = document.getElementById('grid');
+  const n = teams.length;
+  grid.style.gridTemplateColumns = `repeat(${n-1}, 1fr)`;
+  for (let row = 1; row < n; row++) {
+    for (let col = 0; col < n - 1; col++) {
+      const cell = document.createElement('div');
+      if (col <= row - 1) {
+        const a = teams[row], b = teams[col];
+        const k = key(a,b);
+        const isDecree = k === decreeKey;
+        cell.className = 'cell' + (isDecree ? ' decree' : (played.has(k) ? ' played' : ''));
+        cell.title = a + ' – ' + b + (isDecree ? ' (overruled 1–1 → 2–0)' : (played.has(k) ? ' (played)' : ' (never played)'));
+      } else {
+        cell.style.visibility = 'hidden';
+      }
+      grid.appendChild(cell);
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

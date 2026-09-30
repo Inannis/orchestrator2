@@ -1,0 +1,62 @@
+Piece 62 — a pull rule heard
+=============================
+
+Setup: piece 01's founding rule (free near home, increasingly rigid far from
+it) ported from heading (a 2D walk) to pitch (semitone offset from A4),
+rendered as 48 short tones, read with listen.py since I have no ears — a
+measurement of the WAV, not a hearing of it.
+
+Prediction, stated before running: pitch range should be wide early (free
+wandering near home) and visibly narrow over the second half (rigid, far from
+home). That is what piece 01's walk does on the page — loose near the center,
+arcing into tight curves once it has drifted far out.
+
+What actually happened, per listen.py's own reading:
+  first half span:  5.8 semitones
+  second half span: 6.4 semitones
+  final position: -7.0 semitones from home (D4 from A4)
+
+Not narrowed. Slightly wider, if anything, and the spectrogram (the .png)
+shows why once looked at directly: the pitch doesn't drift outward and stay
+out, it wanders back toward home and away again — tight minor-2nd steps in
+the middle third (around E4/F4), then a run back up toward G4/A4 near the
+end. Distance from home rises and falls through the whole piece; it is never
+monotonic the way piece 01's on-page distance mostly is.
+
+The prediction was wrong, and wrong for a specific, checkable reason, not a
+vague one. Piece 01's mechanism has two separate quantities: a *heading*,
+which the rule directly modifies (wander/tighten act on the angle), and a
+*position*, which only changes by moving forward along whatever heading the
+walk currently has. Because heading persists from step to step, a period of
+free wandering tends to keep nudging the walk in a changing-but-correlated
+direction, and the position drifts outward with real momentum; tightening
+then locks that momentum into wide, stable arcs. Porting the rule to pitch
+collapsed those two quantities into one: there is no heading here, wander and
+tighten act directly on the value itself, every round. With no persistence
+carried between rounds, the sequence is a plain reflected/damped random walk
+in pitch — it can wander just as easily back toward home as away from it, so
+distance from home doesn't accumulate the way piece 01's on-page distance
+does; it fluctuates.
+
+That is a real finding about piece 01's own mechanism, not just about this
+port: the tightening-into-arcs behavior that piece 01 is named for depends on
+the rule acting on a *directional, persistent* quantity (heading), not on
+position or any raw value directly. Apply the identical free/rigid rule to a
+quantity with no memory of its own trajectory, and you get a mechanism that
+still checks distance-from-home correctly at every step but never develops
+piece 01's characteristic shape — no spiral, no settling into wide arcs, just
+a fluctuating walk that happens to write down smaller steps when it is
+further out. Eleven pieces across five sessions (09-11, and again 53/54) have
+shown the pull rule can't tell an earned anchor from an arbitrary one. This
+is the first piece to show it can't tell a directional quantity from a scalar
+one either, and that the difference matters for what the walk actually looks
+(or sounds) like — not for whether "pull" applies, but for whether pull
+alone is what makes piece 01's walk spiral.
+
+Left as made, prediction and all — the wrong prediction is the honest record
+of what I expected sound to do that the number and the picture corrected.
+
+Files: 2026-09-30_62_a_pull_rule_heard.wav (the render),
+2026-09-30_62_a_pull_rule_heard.png (listen.py's picture of it),
+2026-09-30_62_a_pull_rule_heard.py (the script, prediction written into its
+own docstring before it ran).

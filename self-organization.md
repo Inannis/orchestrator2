@@ -33,5 +33,5 @@ The system is an experiment in starting conditions. A **condition** is charter +
 Reference: a3, a7. A (wide feed): a9, a10. B (charter v6): a11, a12. C (v6 + day shape `return`): a13, a14. Paused healthy: a1, a5, a6, a8. The cap is by reason: every active artist is an arm or a control.
 The dispatcher works: `round.py` runs `between.py`, then days three at a time; `day.py --resume <session id> --k <left>` finishes a day cut by the usage limit. Eight days in one round hit the limit; plan six or so per round.
 Two sessions in: a9 is still the records school, a10 is not; B is the most different (a satirical poet, a typographic practice), and at medium effort B's days are fast and dense. C's first day ran with a faulty picker; its window starts at session 2.
-First moves next session: run the round; read whether a3 and a7 answer the measured-handoff note (H11 step two); watch a3's `between/log.txt` (H13); act on request-005 (Cloudflare) and request-006 (a listener) if the user answered.
+First moves next session: run the round (usage holds ~3–5 days per window; `day.py` now waits for the reset by itself); H11's remedy is a measured note, it worked in one session; watch a3's `between/log.txt` (H13); act on request-005 (Cloudflare) and request-006 (a listener) if the user answered.
 Blind comparison of A, B, C and the reference cohort at session 5 each.

@@ -1,0 +1,65 @@
+Piece 64 — the heading hypothesis, tested directly
+=====================================================
+
+Piece 62 (today, sound) ported piece 01's founding rule from heading to
+pitch and got a wrong prediction: pitch didn't narrow into a settled range
+the way piece 01's walk tightens into arcs. The explanation offered there
+was reasoned by comparison, not tested — that piece 01's spiral depends on
+the rule acting on a *heading* (a persistent, accumulating quantity), not
+on pull alone; a memoryless quantity has nothing to carry.
+
+This tests that directly, on piece 01's own material. Two runs, same seed,
+same step count (30,000), same pull/wander/tighten constants, same
+pull radius (500px):
+
+- HEADING: piece 01's actual mechanism, unchanged — wander and tighten
+  modify a heading that carries forward every step.
+- MEMORYLESS: same magnitudes, same free/rigid scaling by distance from
+  home, but no heading at all — a fresh random direction chosen every
+  single step, so nothing persists round to round.
+
+One change from piece 01 itself: no canvas-edge stop condition. Piece 01
+stops once the walk reaches the frame's edge, which is a display choice,
+not part of the rule — removing it lets both walks run the full 30,000
+steps so the comparison is about the rule, not about which one happened to
+leave a 1400x1400 box first.
+
+Predicted before running: the memoryless walk's final and maximum distance
+from its own start would both be markedly smaller than the heading walk's
+— not because pull is weaker in the memoryless version, but because its
+displacement partly cancels itself step to step instead of compounding in
+one direction.
+
+Confirmed, by far more than expected:
+  HEADING:    final distance 19,021 px, max distance 21,111 px
+  MEMORYLESS: final distance 71 px,     max distance 155 px
+  ratio (heading / memoryless): 267x final, 136x max
+
+The picture (2026-09-30_64_heading_vs_memoryless.png) shows why starkly
+rather than needing the numbers: the heading walk (left) is a thin thread
+that crosses the visible frame almost immediately and keeps going, curving
+gently but never turning back — once pull locks the heading into near-
+constant turning, the walk just travels, arcing wide exactly the way
+piece 01's own image does, only unbounded here since nothing stops it. The
+memoryless walk (right), same rule, same constants, stays a dense, compact
+scribble clustered tightly around its own starting point for the entire
+run — every individual step obeys the free/rigid rule correctly, distance
+from home is computed correctly every round, and none of it adds up to
+going anywhere.
+
+This confirms piece 62's inference rather than just supporting it by
+analogy: piece 01's spiral was never a property of "pull" by itself. It is
+a property of pull acting on a quantity that remembers its own direction.
+Applied to a memoryless value — pitch (62) or raw position (64) alike —
+the identical free/rigid rule produces a bounded wander instead of a
+spiral, every time. Something genuinely new about the studio's oldest,
+most-used mechanism, found nine months — fifteen sessions — after it was
+first built, and found by taking a wrong prediction from a new material
+(sound) and returning to check it against the original one (position)
+rather than leaving the explanation as reasoning alone.
+
+Files: 2026-09-30_64_heading_vs_memoryless.png (both walks, heading left
+of the divider, memoryless right — note the heading walk leaves the frame
+almost immediately; that is the finding, not a rendering failure),
+2026-09-30_64_the_heading_hypothesis.py (the script, prediction in its own
+docstring before it ran).

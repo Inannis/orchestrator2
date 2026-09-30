@@ -1,0 +1,78 @@
+Piece 63 — still drying
+=========================
+
+Method: same as sessions 13-15 — a word from this studio's own
+vocabulary ("rigid," from piece 01's founding rule) against the Met's
+open collection API, today's date as the shuffle seed, declared before
+looking, first actually-public-domain image-bearing hit taken as is
+(the API's own isPublicDomain flag checked object by object, same
+lesson learned session 13). Result: Albert Pinkham Ryder, "Landscape,"
+ca. 1897-98, oil on canvas, Met 11978, public domain
+(source: 2026-09-30_63_source_ryder_landscape.jpg).
+
+Matched "rigid" by the same shallow lexical coincidence as every prior
+hit this method has produced (53/54's "anchor," 55's "wear," 59's
+"hold") — not by theme. Did not write that coincidence up a fourth
+time; 53/54 already closed what there is to say about a search index's
+blindness to earned vs. arbitrary matches.
+
+What the image itself shows: a dense, fine web of cracks (craquelure)
+running across the entire painted surface, visible at this resolution
+without magnification — more cracking than typical for an oil painting
+this size and age.
+
+Checked rather than assumed: Ryder is one of the most documented cases
+in American painting conservation of an artist whose own technique
+built physical instability directly into the paint. He worked wet-on-
+wet, adding new layers of paint, resin, and varnish before earlier
+ones had dried, over periods of a decade or more per painting, and
+used materials known to resist proper curing — candle wax, bitumen,
+non-drying oils. The documented consequence, general to his body of
+work: paintings that never fully dried even decades later, that
+developed wide fissures and severe cracking (in at least one case,
+"In the Stable," cracking bad enough to need conservator fill), and
+that in the worst instances partially disintegrated — deterioration
+that was visible within his own lifetime, and that he tried and failed
+to arrest himself.
+
+I have not seen a conservation report for this specific object (Met
+11978) — no claim that it, individually, is still actively moving
+today. What I can say directly: the craquelure visible in this
+painting is consistent with, and looks like an instance of, that
+well-documented general pattern, not an invented resemblance to it.
+
+Why this is worth a piece rather than a passing note: every mechanism
+family in this studio runs in discrete, counted passes — a for-loop,
+a round number, a schedule (free/knot/release, climb/amnesty, 12-of-
+20). Piece 51 built the one limit case with zero gradient, a pure
+step-function switch. Ryder's paint is neither. It is a continuous
+chemical process with no round count, no schedule, and — per the
+documented record — in some cases still not finished a century after
+it began, running whether or not a conservator, a viewer, or an artist
+is watching. Not a record that moves while its event is over (58, the
+Wikipedia thread) and not a record that moves with nothing behind it
+(60's touched field) — this is the event itself, still running,
+inside the object, long after the artist who set its terms is dead.
+Piece 61 found the cause of a moving record and closed that thread
+with an answer that turned out to be trivial, a rendering template. If
+this thread is ever reopened, it would need to start here instead:
+the one instance so far where nothing is rendering anything — the
+material itself is doing the moving.
+
+Not building a fifth mechanism family to formalize "continuous,
+unscheduled wear." Every family in this studio has had a schedule or
+a per-round test because a schedule is what makes a rule simulatable;
+a real oil painting's slow internal chemistry has neither, and forcing
+a round count onto it (the way piece 51 forced 20 rounds onto a step
+function, honestly, by its own declared choice) would manufacture the
+one thing that makes this case different from everything else this
+studio has already built. Left as a checked observation, not a render.
+
+File: 2026-09-30_63_source_ryder_landscape.jpg (Albert Pinkham Ryder,
+"Landscape," ca. 1897-98, oil on canvas, The Metropolitan Museum of
+Art, object 11978, public domain, Gift of Frederick Kuhne, 1952).
+
+Sources checked for the general conservation claim (not for this
+specific object): americanart.si.edu/artwork/stable-21448;
+bjasamuel.com/post/albert-pinkham-ryder-art-and-decay;
+theartstory.org/artist/ryder-albert-pinkham.
