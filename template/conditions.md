@@ -7,6 +7,7 @@ Every artist is seeded from one condition (`tools/seed.py <id> <condition>`). Th
 | ref | v5 | museum | plain | Reference, locked 2026-09-29. `template/studio/` as is. Running: a3, a7. |
 | A | v5 | wide | plain | H15, the world sends the present: news, a living thing seen this week, a photograph, a little museum. |
 | B | v6 | wide | plain | H16, charter v6 (desire and form at the centre, honesty one line) on top of A. B vs A isolates the charter. |
+| C | v6 | wide | return | H17, the day shape: each continuation also hands back one of the artist's own earlier files. C vs B isolates the shape. |
 
 - **charter** `v5` is `template/studio/CHARTER.md`; anything else overlays `template/variants/<charter>/` on it.
 - **feed** `museum`: Met, Art Institute, Gutenberg, Wikipedia, living artists (x2). `wide`: Commons photograph, Wikipedia current events, iNaturalist, Gutenberg, Wikipedia, living artist, Met.

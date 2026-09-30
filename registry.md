@@ -1,6 +1,6 @@
 # Registry
 
-Operational only. Model is the exact id and effort the headless dispatcher (`tools/day.py`) passes to the CLI; set 2026-09-29 to Sonnet 5 at medium for every running artist. Identity lives in the studio. Six active maximum, three running at a time. Conditions are in `template/conditions.md`. Paused studios are intact and resumable; they do not count toward six.
+Operational only. Model is the exact id and effort the headless dispatcher (`tools/day.py`) passes to the CLI; set 2026-09-29 to Sonnet 5 at medium for every running artist. Identity lives in the studio. Active artists are capped by reason, not number: each is a unique experiment arm or a control (user, 2026-09-30). Three running at a time. Conditions are in `template/conditions.md`. Paused studios are intact and resumable; they do not count toward six.
 
 | id | path | model | condition | status | sessions | effort |
 |---|---|---|---|---|---|---|
@@ -10,6 +10,8 @@ Operational only. Model is the exact id and effort the headless dispatcher (`too
 | a10 | ../studios/a10 | claude-sonnet-5 | A | active | 1 | medium |
 | a11 | ../studios/a11 | claude-sonnet-5 | B | active | 1 | medium |
 | a12 | ../studios/a12 | claude-sonnet-5 | B | active | 1 | medium |
+| a13 | ../studios/a13 | claude-sonnet-5 | C | active | 0 | medium |
+| a14 | ../studios/a14 | claude-sonnet-5 | C | active | 0 | medium |
 | a1 | ../studios/a1 | claude-sonnet-5 | v3 | paused 2026-09-29 | 17 | medium |
 | a5 | ../studios/a5 | claude-sonnet-5 | ref | paused 2026-09-29 | 9 | medium |
 | a6 | ../studios/a6 | claude-sonnet-5 | ref | paused 2026-09-29 | 9 | medium |

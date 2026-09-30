@@ -3,7 +3,7 @@ usage: python tools/day.py <id> [--k K] [--model M] [--effort E] [--shape S] [--
 Shapes (how the day is kept going; see template/conditions.md): "plain" says only that the day is not over;
 "return" also hands back one of the artist's own earlier files, drawn at random.
 Needs the claude CLI logged in (`claude auth login` or CLAUDE_CODE_OAUTH_TOKEN). Handbacks go to runs/days/, not to anyone's context."""
-import sys, json, re, random, subprocess, pathlib, datetime, time
+import sys, json, re, random, subprocess, pathlib, datetime, time, shutil, os
 root = pathlib.Path(__file__).resolve().parent.parent
 args = sys.argv[1:]; aid = args[0]
 def opt(name, default=None):
@@ -38,8 +38,17 @@ TOOLS = "Bash Read Write Edit Glob Grep WebFetch WebSearch"
 out = root / "runs" / "days"; out.mkdir(parents=True, exist_ok=True)
 log = out / f"{aid}-{n:03d}.md"
 
+def claude_exe():
+    """The native CLI binary; on Windows `claude` is a .cmd wrapper that subprocess cannot start and cmd.exe would mangle."""
+    w = shutil.which("claude")
+    if w and w.lower().endswith((".cmd", ".ps1")) or (w and os.name == "nt"):
+        exe = pathlib.Path(w).parent / "node_modules" / "@anthropic-ai" / "claude-code" / "bin" / "claude.exe"
+        if exe.exists(): return str(exe)
+    return w or "claude"
+CLAUDE = claude_exe()
+
 def turn(text, sid=None):
-    cmd = ["claude", "-p", text, "--model", model, "--output-format", "json", "--effort", effort, "--permission-mode", "acceptEdits",
+    cmd = [CLAUDE, "-p", text, "--model", model, "--output-format", "json", "--effort", effort, "--permission-mode", "acceptEdits",
            "--allowedTools", TOOLS, "--settings", '{"autoMemoryEnabled": false}']
     if sid: cmd += ["--resume", sid]
     r = subprocess.run(cmd, cwd=studio, capture_output=True, text=True, encoding="utf-8", timeout=5400)
