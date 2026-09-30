@@ -21,8 +21,11 @@ crow = re.search(rf"^\| {cond} \| \w+ \| \w+ \| (\w+) \|", (root / "template" / 
 shape = opt("--shape") or (crow.group(1) if crow else "plain")
 today = datetime.date.today().isoformat()
 prompt = (root / "template" / "SESSION-PROMPT.md").read_text(encoding="utf-8").replace("{STUDIO}", studio.as_posix()).replace("{DATE}", today).replace("{N}", str(n))
+handed = set()  # files already handed back today: no repeats within a day
+
 def own_file():
-    """One thing the artist made, at random: an image, sound or text piece, never its memory, logs, notes or the orchestrator's files."""
+    """One thing the artist made, at random: an image, sound or text piece, never its memory, logs, notes or the orchestrator's files.
+    Prefers work from earlier days and never repeats within a day."""
     skip_dirs = {"reference", "inbox", "requests", ".git", "log", "logs", "journal", "memory", "notes", "between", "__pycache__", "sketches"}
     skip_names = {"CHARTER.md", "NOW.md", "STATE.md", "MEMORY.md", "STATUS.md", "journal.md", "notes.md", "threads.md", "README.md", "index.html", ".gitignore"}
     exts = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".wav", ".txt", ".md", ".html")
@@ -33,7 +36,11 @@ def own_file():
         if any(part in skip_dirs for part in rel.parts[:-1]): continue
         fs.append(rel.as_posix())
     if not fs and (studio / "public" / "index.html").exists(): fs = ["public/index.html"]
-    return random.choice(fs) if fs else None
+    fresh = [x for x in fs if x not in handed]
+    earlier = [x for x in fresh if datetime.date.fromtimestamp((studio / x).stat().st_mtime).isoformat() < today]
+    pick = random.choice(earlier or fresh or fs) if fs else None
+    if pick: handed.add(pick)
+    return pick
 
 def more(first_arrival):
     base = "The day is not over." + (" Something arrived in inbox/." if first_arrival else "")
@@ -63,13 +70,30 @@ def turn(text, sid=None):
     try: return json.loads(r.stdout)
     except json.JSONDecodeError: return {"is_error": True, "result": (r.stdout + r.stderr)[-2000:]}
 
-t0 = time.time(); turns = 0; cost = 0.0; tok = 0; enc = "none"; err = None
+def wait_for_reset(msg):
+    """On 'You've hit your session limit · resets 6pm (Europe/Berlin)', sleep until then plus two minutes. False if unparseable or over six hours."""
+    m = re.search(r"resets (\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*\(([^)]+)\)", msg)
+    if not m: return False
+    from zoneinfo import ZoneInfo
+    tz = ZoneInfo(m.group(4)); now = datetime.datetime.now(tz)
+    at = now.replace(hour=int(m.group(1)) % 12 + (12 if m.group(3) == "pm" else 0), minute=int(m.group(2) or 0), second=0, microsecond=0)
+    if at <= now: at += datetime.timedelta(days=1)
+    secs = (at - now).total_seconds() + 120
+    if secs > 6 * 3600: return False
+    print(f"{aid}: usage limit, waiting {secs / 60:.0f} min", file=sys.stderr, flush=True)
+    time.sleep(secs); return True
+
+t0 = time.time(); turns = 0; cost = 0.0; tok = 0; enc = "none"; err = None; waits = 0
 msgs = [prompt] if not resume else [more(False)]
 sid = resume
 with log.open("w", encoding="utf-8") as f:
     f.write(f"# {aid} session {n} · {today} · {model} · effort {effort} · K={k}\n\n")
     for i in range(k + 1 if not resume else k):
         d = turn(msgs[-1], sid)
+        while d.get("is_error") and "limit" in str(d.get("result", "")) and waits < 3 and "--no-wait" not in args and wait_for_reset(str(d.get("result", ""))):
+            waits += 1; sid = d.get("session_id") or sid
+            f.write(f"## (usage limit; waited for the reset, same day continues)\n\n"); f.flush()
+            d = turn(more(False) if sid else msgs[-1], sid)
         sid = d.get("session_id", sid); cost += d.get("total_cost_usd") or 0
         u = d.get("usage") or {}; tok += sum(u.get(x, 0) or 0 for x in ["input_tokens", "output_tokens", "cache_creation_input_tokens", "cache_read_input_tokens"])
         sent = "(session prompt)" if (i == 0 and not resume) else msgs[-1]
