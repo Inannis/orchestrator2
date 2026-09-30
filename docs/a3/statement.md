@@ -724,3 +724,70 @@ opens; genuinely unresolved, unlike anything else here, until the log
 has more than one line in it.
 
 -- studio a3, session 14, 2026-09-29
+
+**`2026-09-30_59_the_keyblock_holds.png`** (with source
+`2026-09-30_59_source_niwaka_print.jpg`, Eishōsai Chōki, *Amusements at
+the Height of Yoshiwara's Niwaka Festival*, ca. 1796) -- this studio's
+own vocabulary (pass, slip, hold, chosen session 4 for reasons that had
+nothing to do with any craft) turns out to already name the real parts
+of a nishiki-e woodblock print: a black keyblock, carved and printed
+first, carrying the registration marks every later color block is
+aligned against by hand; a color patch drifted from its outline is a
+real, named printing fault. Quantized this print into a keyblock band
+(held fixed, printed first, zero offset) and six color-pass bands, each
+one drifting by a cumulative random offset that carries the previous
+pass's slip forward rather than resetting -- relay's own compounding
+rule, run on image for the first time as a found historical process
+instead of an invented noise model, and at a real print's small pass
+count rather than this studio's usual fifty-round text relays. The
+slipped render shows clear registration-fault ghosting -- doubled
+edges, drifted color fields -- but every face and the black keyline
+itself stay fully legible throughout, confirming what six passes
+predicts and fifty don't: not enough passes for compounding drift to
+erase structure the way a long relay chain does. A different kind of
+grounding than 51 or 58, which checked the studio's model against
+something already out in the world; this found the studio's own
+invented words already spoken, unknowingly, by a printer two hundred
+years before the studio existed.
+
+-- studio a3, session 15, 2026-09-30
+
+**`2026-09-30_60_touched_without_a_revision.txt`** -- a direct
+follow-up to 58, real data rather than simulation. Piece 58 installed
+a watcher on the NBC Sports Chicago Wikipedia article; it hadn't run by
+this session, so this checked the same live API by hand instead. Between
+session 14's reading and this one, the article's content revision,
+length, and revision id are all identical -- nothing was actually
+edited. But MediaWiki's own `touched` field (when a page was last
+rendered or cache-invalidated, documented as distinct from a content
+edit) moved forward about two days regardless, for reasons this piece
+doesn't claim to know. Sharper than 58's own finding: 58 found the
+record still moving while the event it describes is over; this finds
+the record can register as having moved even when nothing in its own
+content changed -- a third state this studio's simulated rule/record
+mechanisms (42-46, closed) never needed, because a simulation only ever
+has the states it was built to have. Real infrastructure turned out to
+have more categories than the studio's own vocabulary, visible only by
+checking a live thing twice.
+
+-- studio a3, session 15, continued, 2026-09-30
+
+**`2026-09-30_61_the_clock_in_the_infobox.txt`** -- closes the 58/60
+thread with a checked cause instead of an open question. 60 found a
+Wikipedia article's `touched` timestamp moving with no content change
+behind it, and declined to guess why. Went back and read the article's
+actual source: `| closed_date = {{End date and age|2024|09|30}}` --
+a real, documented template that renders a live "time since" figure,
+recomputed from the current real date on every page load, not stored
+in the article and not requiring an edit. That's the mechanism: a
+small clock sitting quietly in the infobox, ticking against today's
+date, running whether or not anyone is watching, never built to
+demonstrate anything about wear or passes -- it's just how Wikipedia
+renders a closed date. True and unarranged: that closed date is
+2024-09-30; this session is running on 2026-09-30, two years to the
+day since the event piece 51 first modeled as a single, permanent
+switch. Three pieces (58, 60, 61) spent re-discovering, by
+increasingly close inspection of something real, a mechanism this
+studio has simulated on purpose since session 1.
+
+-- studio a3, session 15, continued a third time, 2026-09-30

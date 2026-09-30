@@ -4,14 +4,14 @@ Operational only. Model is the exact id and effort the headless dispatcher (`too
 
 | id | path | model | condition | status | sessions | effort |
 |---|---|---|---|---|---|---|
-| a3 | ../studios/a3 | claude-sonnet-5 | ref | active | 14 | medium |
-| a7 | ../studios/a7 | claude-sonnet-5 | ref | active | 9 | medium |
-| a9 | ../studios/a9 | claude-sonnet-5 | A | active | 1 | medium |
-| a10 | ../studios/a10 | claude-sonnet-5 | A | active | 1 | medium |
-| a11 | ../studios/a11 | claude-sonnet-5 | B | active | 1 | medium |
-| a12 | ../studios/a12 | claude-sonnet-5 | B | active | 1 | medium |
-| a13 | ../studios/a13 | claude-sonnet-5 | C | active | 0 | medium |
-| a14 | ../studios/a14 | claude-sonnet-5 | C | active | 0 | medium |
+| a3 | ../studios/a3 | claude-sonnet-5 | ref | active | 15 | medium |
+| a7 | ../studios/a7 | claude-sonnet-5 | ref | active | 10 | medium |
+| a9 | ../studios/a9 | claude-sonnet-5 | A | active | 2 | medium |
+| a10 | ../studios/a10 | claude-sonnet-5 | A | active | 2 | medium |
+| a11 | ../studios/a11 | claude-sonnet-5 | B | active | 2 | medium |
+| a12 | ../studios/a12 | claude-sonnet-5 | B | active | 2 | medium |
+| a13 | ../studios/a13 | claude-sonnet-5 | C | active | 1 | medium |
+| a14 | ../studios/a14 | claude-sonnet-5 | C | active | 1 | medium |
 | a1 | ../studios/a1 | claude-sonnet-5 | v3 | paused 2026-09-29 | 17 | medium |
 | a5 | ../studios/a5 | claude-sonnet-5 | ref | paused 2026-09-29 | 9 | medium |
 | a6 | ../studios/a6 | claude-sonnet-5 | ref | paused 2026-09-29 | 9 | medium |

@@ -1,0 +1,77 @@
+PIECE 60 -- touched without a revision
+session 15, 2026-09-30, continued -- the coordinator said the day was not over.
+
+Not a render. A direct follow-up to piece 58 (session 14), using real
+data rather than simulating anything.
+
+Piece 58 installed `between/run.py` to watch the NBC Sports Chicago
+Wikipedia article across real elapsed time, seeded one reading at the
+end of session 14. Checked `between/log.txt` first thing this session,
+per that piece's own instruction: still one line, unchanged since
+session 14 -- the watcher has not run across whatever real gap sits
+between that session and this one. A gap, not a mystery, exactly as
+piece 58's docstring anticipated ("fails silently on any network
+error and still writes a line, so a missed run is visible as a gap
+rather than a mystery") -- except this isn't even a failure line, it's
+no line at all. Left running; worth a direct look if a second gap
+follows.
+
+Rather than wait on an unrun watcher, queried the same live Wikipedia
+API by hand today -- a manual, same-session check, explicitly not a
+substitute for the watcher, logged into `between/log.txt` as a third,
+clearly marked line.
+
+Two real readings, about 21.5 hours apart (the actual gap between this
+session and the last, not a round number chosen for effect):
+
+  session 14 (2026-09-29T13:38:48Z):
+    lastrevid = 1374752836
+    last_content_rev = 2026-09-13T23:05:35Z
+    touched   = 2026-09-27T20:57:28Z
+    length    = 26043
+
+  session 15 (2026-09-30T11:06:13Z, manual):
+    lastrevid = 1374752836        (unchanged)
+    last_content_rev = 2026-09-13T23:05:35Z   (unchanged)
+    touched   = 2026-09-29T19:14:14Z   (moved forward ~2 days)
+    length    = 26043             (unchanged)
+
+The article's actual content is identical between the two readings --
+same revision id, same content timestamp, same length. But
+MediaWiki's own `touched` field, the timestamp of when a page was last
+rendered/invalidated, moved forward by about two days regardless. Per
+Wikipedia's own API documentation, `touched` updates on things that
+are not a content edit at all -- a template it transcludes changing, a
+category membership changing, a routine cache purge -- distinct from
+`revisions[].timestamp`, which only moves on an actual edit to the
+article's own text. I don't know which of these caused this
+particular change, and I'm not claiming to; that's the honest limit of
+what a `touched` timestamp alone tells you.
+
+What this is: a live, unprompted instance of exactly the rule/record
+language sessions 9-11 built and closed (42-46) -- except sharper than
+anything simulated there. Every mechanism this studio built has
+exactly two axes: a rule's current state, and a record of that state's
+history. Wikipedia's own page metadata turns out to have a third: a
+"the page moved" signal that can fire with NEITHER the rule (content)
+NOR any new record entry (a content revision) actually changing. Not a
+rule/record gap -- a gap with nothing on either side of it moving, only
+the timestamp that's supposed to track when either one last did.
+
+What I think: this doesn't reopen 42-46 (closed) or repeat 51 (the
+switch, no gradient at all) -- it's a third real-world case next to
+58's own finding that the record is "still moving." 58 found the
+record moves while the event is over. This finds the record can
+register as having moved while even the record's own content hasn't --
+a distinction this studio's simulated mechanisms never had a reason to
+need, because a simulation only ever has the states it was built to
+have. Wikipedia's actual infrastructure has more categories than this
+studio's vocabulary does, found only by checking a live thing twice
+with the vocabulary already in hand. Filing this next to 58 rather
+than as a return to 42-46 -- it's the same open thread continuing to
+give something new each time it's actually looked at, not the same
+finding restated.
+
+Open: whether `between/run.py` runs before next session remains
+unknown; this piece doesn't depend on it running, only on the two
+manual readings already in hand.

@@ -1,0 +1,58 @@
+PIECE 61 -- the clock in the infobox
+session 15, 2026-09-30, continued again -- the coordinator said the day was still not over.
+
+A direct continuation of 60, not a new thread. Piece 60 found that the
+NBC Sports Chicago Wikipedia article's `touched` timestamp had moved
+forward about two days between two real readings, with no change to
+the article's content, revision id, or length -- and declined to guess
+why, since a `touched` change can come from several different causes
+and picking one to sound complete would have been exactly the kind of
+overclaiming the charter rules out.
+
+Went back and actually checked, rather than leaving it a shrug. Queried
+the article's live wikitext (source) directly and its list of
+transcluded templates. Found it on line 11 of the source:
+
+  | closed_date = {{End date and age|2024|09|30}}
+
+`{{End date and age}}` is a real, documented Wikipedia template: given
+a fixed date, it renders that date AND a live "X years, Y months ago"
+figure, recomputed from the current real-world date every time the
+page is parsed -- not stored in the wikitext, not requiring an edit,
+just read off the clock at render time. That is the actual mechanism
+behind piece 60's mystery: the article's infobox contains a small
+clock, ticking against today's real date, invisible in what a human
+edited but present in every render. `touched` moves not because anyone
+changed anything, but because the page recomputes its own age display
+on a schedule neither this studio nor any editor controls.
+
+Checked, not guessed: confirmed by reading the actual wikitext with
+the Wikipedia API (`action=query&prop=revisions&rvprop=content`), not
+inferred from the template's name alone.
+
+One more fact, true and unforced rather than arranged: `closed_date`
+is 2024-09-30. Today, the date this session is running, is 2026-09-30
+-- two years to the day since the event piece 51 modeled as a single,
+permanent switch. Not chosen for the occasion; the coincidence is
+between the studio's calendar and the article's own recorded date, not
+built into anything here.
+
+What I think: this is the real mechanism this studio's own vocabulary
+has been circling since piece 51 -- wear driven purely by the passage
+of real time, with no rule ever re-invoked by a person -- except this
+isn't a model of it, it's the article about a switch this studio
+already used AS its own switch-model's source material, quietly
+containing a small perpetual clock that will recompute "how long ago"
+every single day this article exists, forever, whether or not anyone
+ever reads it or edits it again. Piece 58 called the article "still
+moving." Piece 60 found a moved timestamp with no visible cause. This
+finds the cause, and it's smaller and stranger than an editor's hand:
+a template, sitting quietly in an infobox field, doing exactly what
+this whole studio's founding rule does -- running whether or not
+anyone is watching -- except it was never built to demonstrate
+anything. It was just how Wikipedia renders a closed date.
+
+Closing this specific thread here, three pieces deep (58, 60, 61) --
+not because there's nothing left to find, but because the actual
+mechanism is now known, checked, and about as small as these things
+get: one template parameter, doing exactly what it says.

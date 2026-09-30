@@ -1,0 +1,31 @@
+PIECE 59 -- the keyblock holds
+source: 2026-09-30_59_source_niwaka_print.jpg (Met 56822, Eisyosai Choki, ca. 1796)
+resized working size: 870x1291
+passes: 1 keyblock (holds, zero offset) + 6 color passes (cumulative slip)
+max slip ceiling: 14px
+
+Per-pass cumulative offset (relay-style: each pass's drift
+carries the previous pass's drift forward, doesn't reset):
+  pass 1/6  offset=(-1,+1)px  drift=1.4px  pixels_in_band=160417
+  pass 2/6  offset=(+1,-1)px  drift=1.4px  pixels_in_band=160483
+  pass 3/6  offset=(+3,+1)px  drift=3.2px  pixels_in_band=160381
+  pass 4/6  offset=(+5,-4)px  drift=6.4px  pixels_in_band=160521
+  pass 5/6  offset=(+9,-5)px  drift=10.3px  pixels_in_band=160427
+  pass 6/6  offset=(+13,-4)px  drift=13.6px  pixels_in_band=160489
+
+keyblock pixel fraction (held fixed, zero slip): 14.3%
+fraction of non-keyblock pixels changed by slip: 58.2%
+
+Note: fixed-width luminance bins were tried first and gave the
+keyblock band (0-36 of 255) zero pixels -- this print's blacks,
+after resize and JPEG compression, never read as true black.
+Caught before running, not tuned after seeing a bad result;
+switched to quantile bin edges (equal population per band) so
+the keyblock has anything to hold. Left in the record because
+it's the same shape as 55's missed 'over-wise' and 56's warm-
+toned black paint: an exact mechanical rule doing exactly what
+it does, including failing plainly when its assumption is wrong.
+
+Predicted: at only 6 passes, the image should stay recognizably
+itself even fully slipped -- not enough passes for compounding
+drift to erase structure the way this studio's long text relays do.

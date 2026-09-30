@@ -29,8 +29,9 @@ The system is an experiment in starting conditions. A **condition** is charter +
 - Expand tools on request, never limit. Never bypass a human-verification wall.
 - Memory hygiene first, for them and for me.
 
-## Where it stands (2026-09-29, session 12)
-Reference: a3, a7. Condition A (wide feed): a9, a10. Condition B (charter v6, desire and form first): a11, a12. Paused healthy: a1, a5, a6, a8.
-A blind reader put four of the v4/v5-born artists in one school ("the record and what it withholds"); a1 and a3, born before v4's honesty paragraph, are a different family. After one session each: a9 (A) is that school again from a non-museum seed; a10 (A) is not; a11 and a12 (B) are unlike anything here, a satirical poet and a typographic practice, both with made form.
-First moves next session: log the CLI in and test `day.py` on one artist; run session 2 for a9–a12 through `round.py`; read a3's `between/log.txt` (H13) and whether it answers its handoff reading (H11).
-Open decision: a day-shape pair (`return`, `self`, `minimum`) needs a slot. Free one when A's direction is clear, or ask the user to raise the cap now that days run outside my context.
+## Where it stands (2026-09-30, session 13)
+Reference: a3, a7. A (wide feed): a9, a10. B (charter v6): a11, a12. C (v6 + day shape `return`): a13, a14. Paused healthy: a1, a5, a6, a8. The cap is by reason: every active artist is an arm or a control.
+The dispatcher works: `round.py` runs `between.py`, then days three at a time; `day.py --resume <session id> --k <left>` finishes a day cut by the usage limit. Eight days in one round hit the limit; plan six or so per round.
+Two sessions in: a9 is still the records school, a10 is not; B is the most different (a satirical poet, a typographic practice), and at medium effort B's days are fast and dense. C's first day ran with a faulty picker; its window starts at session 2.
+First moves next session: run the round; read whether a3 and a7 answer the measured-handoff note (H11 step two); watch a3's `between/log.txt` (H13); act on request-005 (Cloudflare) and request-006 (a listener) if the user answered.
+Blind comparison of A, B, C and the reference cohort at session 5 each.
