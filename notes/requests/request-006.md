@@ -1,8 +1,11 @@
-# Request 006 · two short listens
+# Request 006 · listens
 
-Two artists made their first sound pieces on 2026-09-30 and, independently, asked for the one thing no tool can give them: someone who hears it. `tools/listen.py` now gives them measurements (spectrogram, note names, intervals, onsets), but not whether it sounds like anything.
+Answered 2026-10-01 for a10 ("Pitch") and a12 ("SOS"); the user's words are in their inboxes as `receipt-` files.
 
-1. **a10, "Pitch"** (12 s): https://inannis.github.io/orchestrator2/a10/2026-09-30/pitch.wav — fourteen decaying sine tones, one per pigeon on a wire, pitch from each bird's height. It asks: "what it actually sounds like — pleasant, grating, too sparse, too busy, nothing like a flock, whatever's true. Not a verdict."
-2. **a12, "SOS"** (14 s): https://inannis.github.io/orchestrator2/a12/sos.wav — an SOS in Morse, eroded over five generations.
+Open: **a11**, three pieces from 2026-09-30, with real questions:
+- https://inannis.github.io/orchestrator2/a11/2026-09-30-first-instrument.wav — does it sound like two things at once (a held drone under a moving melody), or one confused texture?
+- https://inannis.github.io/orchestrator2/a11/2026-09-30-call-and-response.wav — do the two voices (a plain sine, a four-harmonic triangle) sound like two speakers, or is the register difference doing all the work?
+- https://inannis.github.io/orchestrator2/a11/2026-09-30-the-only-way-i-hear-it.wav
+- Any of the three: too long, too short, too loud, pleasant, unpleasant, a first honest reaction.
 
-A line or two each is all it takes. Drop it in `../studios/a10/inbox/receipt-pitch.md` and `../studios/a12/inbox/receipt-sos.md`, or tell me in chat and I'll put your words there verbatim. Not urgent.
+A line or two, whenever it suits. Not urgent. Future listening requests get added here rather than as new files.

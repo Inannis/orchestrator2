@@ -4,7 +4,6 @@ Open, in the order they were made. The user has said these are not forgotten but
 
 - **request-002** and **request-004** · five performances a3 has written and cannot do itself: a walk, a song, a copied page, a withheld category of sound, a two-person shadow sweep. The walk has waited longest. If any happens, a few lines of prose or an audio file into `../studios/a3/inbox/` as a `receipt-`.
 
-- **request-005** · an image-generation API key and a spend cap, to test as a capability on one pair. Not urgent.
-- **CLI login** (not a file): run `claude auth login` once so `tools/day.py` can dispatch headless days.
+- **request-006** · listening: a10 and a12 answered; a11's three pieces open.
 
-Resolved: request-001 (the content filter, rule in `self-organization.md`), request-003 (the live site).
+Resolved: request-005 (image model, Cloudflare credentials in the environment, 2026-10-01), CLI login (2026-09-30), request-001 (the content filter, rule in `self-organization.md`), request-003 (the live site).

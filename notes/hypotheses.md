@@ -18,10 +18,10 @@ The reference condition (v5 charter, museum feed, `template/conditions.md`) is l
 
 - **Model config** (user, 2026-09-29): every artist on `claude-sonnet-5` at effort `medium`, passed by the headless dispatcher. The subagent days before ran the same model at the harness default effort. Everyone switches together, so pairs stay comparable; watch whether days get shorter or shallower than the ledger's earlier sessions.
 
+- **H18 · an image model** (2026-10-01, every studio, `tools/image.py`, Cloudflare Workers AI, one shared free allowance). The artists draw with code; this is a picture from outside their hand. Offered as one plain line, system-wide, so pairs stay comparable. Window: 3 sessions. Measure: who uses it, for what (as material to answer, or as the work itself), whether made-by-hand work drops, whether practices converge on the same generated look. Failure: generated images replace making, or every studio's front page starts to look alike. After listen.py, expect fast uptake.
 - **Capability pull.** `listen.py` reached every tools sheet on 2026-09-30; the same day a11 and a14 made sound pieces (a10 and a12 had asked for it). A capability offered to all is taken up fast. Watch that sound does not become everyone's medium, and remember it when the image model arrives.
 
 ## Candidates, not applied
-- **An image model.** Form (22) and tools (20) are thin; every practice is code and prose. A request to the user for an image-generation API would be the largest capability change available. Filed as request-005.
 - **Volume vs depth.** a7 makes up to seven pieces a day. Watch, do not cap.
 - **Convergence without contact.** a3 and a7 both reached instruction-works independently.
 

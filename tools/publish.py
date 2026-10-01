@@ -16,4 +16,14 @@ for i in ids:
 links = "\n".join(f'<li><a href="{i}/">{i}</a></li>' for i in ids)
 (docs / "index.html").write_text(f"<!doctype html><meta charset=utf-8><title>studios</title><ul>{links}</ul>", encoding="utf-8")
 (docs / ".nojekyll").write_text("")
+# never publish a credential: the artists inherit the environment, so check every published file for the secret values
+import os
+secrets = [v for k, v in os.environ.items() if k.startswith("CLOUDFLARE_") and len(v) >= 16]
+for f in docs.rglob("*"):
+    if f.is_file() and secrets:
+        data = f.read_bytes()
+        hit = [s for s in secrets if s.encode() in data]
+        if hit:
+            shutil.rmtree(f.parents[len(f.relative_to(docs).parts) - 2]) if len(f.relative_to(docs).parts) > 1 else f.unlink()
+            raise SystemExit(f"STOPPED: a credential appears in {f.relative_to(docs)}; that studio's docs folder was removed. Do not commit.")
 print("published", ids)
