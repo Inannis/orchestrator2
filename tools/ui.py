@@ -1,7 +1,7 @@
 """A local control room: every artist, its condition and prompts, its runs, and a button that dispatches a working day.
 usage: python tools/ui.py [--port 8765]   then open http://127.0.0.1:8765
 Reads registry.md, template/conditions.md, runs/runs.ndjson, runs/days/, the studios' git. Dispatch runs tools/day.py, three at a time."""
-import sys, json, re, subprocess, pathlib, datetime, time, threading, html
+import sys, os, json, re, subprocess, pathlib, datetime, time, threading, html
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 root = pathlib.Path(__file__).resolve().parent.parent
@@ -57,6 +57,8 @@ def state():
         c = conds.get(cond, {})
         n = int(sessions) + 1
         with lock: run = running.get(aid)
+        lv = jread(root / "runs" / "days" / f"{aid}.live.json")
+        stf = jread(root / "runs" / "days" / f"{aid}.state.json")
         arts.append(dict(
             id=aid, model=model, model_label=MODELS.get(model, model), effort=effort or "–", condition=cond, status=status, sessions=int(sessions), cond=c,
             seeded=first[0] if first else None, runs=len(mine), last=mine[-1].get("date") if mine else None,
@@ -65,9 +67,33 @@ def state():
             url=f"https://inannis.github.io/orchestrator2/{aid}/",
             prompt=prompt_t.replace("{STUDIO}", studio.as_posix()).replace("{DATE}", today).replace("{N}", str(n)),
             continuations=continuation_examples(c.get("shape", "plain")),
-            running=None if not run else dict(since=run["started"], minutes=round((time.time() - run["t0"]) / 60, 1), k=run["k"])))
-    return dict(artists=arts, models=MODELS, efforts=EFFORTS, conditions=conds, max=MAX, now=datetime.datetime.now().isoformat(timespec="seconds"),
+            running=None if not run else dict(since=run["started"], minutes=round((time.time() - run["t0"]) / 60, 1), k=run["k"]),
+            live=lv, resumable=(stf or {}).get("left") if stf else None))
+    return dict(round=round_info(), artists=arts, models=MODELS, efforts=EFFORTS, conditions=conds, max=MAX, now=datetime.datetime.now().isoformat(timespec="seconds"),
                 recent=list(reversed(rs[-12:])))
+
+DETACH = 0x00000008 | 0x00000200 if os.name == "nt" else 0
+
+def pid_alive(pid):
+    if not pid: return False
+    if os.name == "nt":
+        r = subprocess.run(["tasklist", "/FI", f"PID eq {pid}", "/NH"], capture_output=True, text=True)
+        return str(pid) in r.stdout
+    try: os.kill(pid, 0); return True
+    except OSError: return False
+
+def jread(p):
+    try: return json.loads(p.read_text(encoding="utf-8"))
+    except Exception: return None
+
+def round_info():
+    r = jread(root / "runs" / "round.json") or {}
+    alive = pid_alive(r.get("pid")) if r else False
+    if r and r.get("state") in ("running", "stopping") and not alive: r["state"] = "interrupted (process gone)"
+    logs = sorted((root / "runs").glob("round-*.log"))
+    tail = logs[-1].read_text(encoding="utf-8", errors="replace").strip().splitlines()[-10:] if logs else []
+    resumable = sorted(p.name.split(".")[0] for p in (root / "runs" / "days").glob("*.state.json"))
+    return dict(r, alive=alive, log=tail, resumable=resumable)
 
 def reap():
     with lock:
@@ -76,16 +102,26 @@ def reap():
 
 def dispatch(aid, k=None, model=None, effort=None):
     reap()
+    if round_info().get("alive"): return False, "a round is running; it already handles its artists"
     with lock:
         if aid in running: return False, f"{aid} is already working"
         if len(running) >= MAX: return False, f"{MAX} artists are already working; wait for one to finish"
         cmd = [sys.executable, str(root / "tools" / "day.py"), aid]
+        st = jread(root / "runs" / "days" / f"{aid}.state.json")
+        if st and st.get("left", 0) > 0: cmd += ["--resume", st["sid"], "--n", str(st["n"])]; k = k or st["left"]
         if k: cmd += ["--k", str(int(k))]
         if model: cmd += ["--model", model]
         if effort: cmd += ["--effort", effort]
-        p = subprocess.Popen(cmd, cwd=root, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+        p = subprocess.Popen(cmd, cwd=root, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, stdin=subprocess.DEVNULL, creationflags=DETACH, close_fds=True)
         running[aid] = dict(proc=p, t0=time.time(), started=datetime.datetime.now().strftime("%H:%M"), k=k or "private")
-    return True, f"{aid} dispatched"
+    return True, f"{aid} dispatched" + (" (resuming its unfinished day)" if "--resume" in cmd else "")
+
+def start_round(resume_only=False):
+    if round_info().get("alive"): return False, "a round is already running"
+    if running: return False, "single days are running; wait for them"
+    cmd = [sys.executable, str(root / "tools" / "round.py"), "--detach"] + (["--resume-only"] if resume_only else [])
+    r = subprocess.run(cmd, cwd=root, capture_output=True, text=True)
+    return True, ("resuming unfinished days" if resume_only else "round started") + " (detached; survives closing this page)"
 
 def daylog(aid):
     logs = sorted((root / "runs" / "days").glob(f"{aid}-*.md"))
@@ -111,8 +147,11 @@ class H(BaseHTTPRequestHandler):
         self.send('{"error":"not found"}', code=404)
     def do_POST(self):
         u = urlparse(self.path)
-        if u.path != "/api/dispatch": return self.send('{"error":"not found"}', code=404)
         body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or "{}")
+        if u.path == "/api/round":
+            ok, msg = start_round(body.get("mode") == "resume")
+            return self.send(json.dumps({"ok": ok, "message": msg}), code=200 if ok else 409)
+        if u.path != "/api/dispatch": return self.send('{"error":"not found"}', code=404)
         aid = body.get("id", "")
         if not re.fullmatch(r"a\d+", aid): return self.send('{"error":"bad id"}', code=400)
         model, effort = body.get("model") or None, body.get("effort") or None
@@ -144,10 +183,14 @@ input,select{background:var(--bg);color:var(--ink);border:1px solid var(--line);
 input{width:64px}a{color:var(--acc)}table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
 th{color:var(--mute);font-weight:500}h2{font-size:15px;margin:28px 0 10px}.msg{font-size:13px;color:var(--acc2)}
 .note{color:var(--mute);font-size:12.5px;margin-top:6px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px}
+.panel.warn{border-color:var(--acc2)}.state{font-weight:650}.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.chip{font-size:12px;border-radius:99px;padding:1px 9px;border:1px solid var(--line)}.chip.running{border-color:var(--run);color:var(--run)}
+.chip.done{border-color:var(--acc);color:var(--acc)}.chip.stopped{border-color:var(--acc2);color:var(--acc2)}.livebar{font-size:13px;margin-top:8px}
 @media (max-width:600px){header,main{padding-left:16px;padding-right:16px}.grid{grid-template-columns:1fr}}
 </style></head><body>
-<header><h1>Studio Control</h1><span class="sub" id="meta"></span><span class="msg" id="msg"></span></header>
-<main><div class="grid" id="grid"></div>
+<header><h1>Studio Control</h1><span class="sub" id="meta"></span><a class="sub" href="https://inannis.github.io/orchestrator2/" target="_blank">public site</a><span class="msg" id="msg"></span></header>
+<main><div class="panel" id="round"></div><div class="grid" id="grid"></div>
 <h2>Conditions</h2><table id="conds"></table>
 <h2>Recent days</h2><table id="recent"></table></main>
 <script>
@@ -155,11 +198,21 @@ const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>]/g,c=>(
 let open={};
 async function load(){
   const s=await (await fetch('/api/state')).json(); const busy=s.artists.filter(a=>a.running).length;
-  $('#meta').textContent=`${busy}/${s.max} working · ${s.now.replace('T',' ')}`;
+  $('#meta').textContent=`${busy}/${s.max} single days · ${s.now.replace('T',' ')}`;
+  const R=s.round||{}; const jobs=Object.entries(R.jobs||{}); const st=R.state||'no round yet';
+  const warn=/stop|interrupt/.test(st); $('#round').className='panel'+(warn?' warn':'');
+  $('#round').innerHTML=`<div class="top"><span class="state">Round: ${esc(st)}</span>${R.started?`<span class="sub">started ${esc(R.started.replace('T',' '))} · updated ${esc((R.updated||'').replace('T',' '))}</span>`:''}</div>
+    ${R.reason?`<div class="msg">${esc(R.reason)} — continue by hand after the reset.</div>`:''}
+    ${jobs.length?`<div class="chips">${jobs.map(([id,j])=>`<span class="chip ${esc(j.status.split(' ')[0])}">${id}${j.resume?' ↻':''}: ${esc(j.status)}${j.turns!=null?` (${j.turns} turns)`:''}</span>`).join('')}</div>`:''}
+    <div class="row"><button ${R.alive?'disabled':''} onclick="round('all')">Start round (all active)</button>
+    <button class="ghost" ${R.alive||!(R.resumable||[]).length?'disabled':''} onclick="round('resume')">Resume unfinished${(R.resumable||[]).length?' ('+R.resumable.join(', ')+')':''}</button>
+    <span class="sub">${R.alive?'a round is running; it stops by itself on a usage limit':'nothing runs unless started here or by tools/round.py'}</span></div>
+    ${(R.log||[]).length?`<details data-k="rlog" ${open['rlog']?'open':''}><summary>Round log</summary><pre>${esc(R.log.join('\n'))}</pre></details>`:''}`;
   $('#grid').innerHTML=s.artists.map(a=>{const c=a.cond||{}; const paused=!a.status.startsWith('active');
     return `<div class="card ${paused?'paused':''}"><div class="top"><span class="id">${a.id}</span>
       <span class="tag c">${esc(a.condition)}</span><span class="tag" title="${esc(a.model)}">${esc(a.model_label)} · ${esc(a.effort)}</span><span class="tag">${esc(a.status)}</span>
       ${a.running?`<span class="tag run">working since ${a.running.since} · ${a.running.minutes} min · K ${a.running.k}</span>`:''}</div>
+      ${a.live?`<div class="livebar">${a.live.status==='running'?`<span class="tag run">day ${a.live.n}: turn ${a.live.turn}/${a.live.turns}${a.live.resumed?' (resumed)':''} · since ${esc((a.live.since||'').slice(11,16))}</span>`:a.live.status==='stopped'?`<span class="tag" style="color:var(--acc2);border-color:var(--acc2)">day ${a.live.n} stopped after ${a.live.turns_done} turns: ${esc(a.live.limit?'usage limit'+(a.live.reset?' · resets '+a.live.reset:''):(a.live.error||'').slice(0,80))}</span>`:`<span class="sub">last day ${a.live.n} done · ${esc((a.live.updated||'').replace('T',' ').slice(0,16))}</span>`}</div>`:''}
       <dl><dt>charter · feed · shape</dt><dd>${esc(c.charter||'?')} · ${esc(c.feed||'?')} · ${esc(c.shape||'?')}</dd>
       <dt>seeded</dt><dd>${esc(a.seeded)}</dd><dt>sessions</dt><dd>${a.sessions} (ledger: ${a.runs} runs, ${a.minutes} min, last ${esc(a.last||'–')})</dd>
       <dt>handoff</dt><dd>${a.entry?`${esc(a.entry)} · ${a.entry_words} words`:'–'}</dd><dt>works · public</dt><dd>${a.works??'–'} · ${a.public} files · <a href="${a.url}" target="_blank">site</a></dd>
@@ -168,7 +221,7 @@ async function load(){
       <details data-k="p-${a.id}" ${open['p-'+a.id]?'open':''}><summary>Prompts for session ${a.sessions+1}</summary><pre>${esc(a.prompt)}</pre><pre>${a.continuations.map(esc).join('\n')}</pre></details>
       <details data-k="c-${a.id}" data-fetch="charter" data-id="${a.id}" ${open['c-'+a.id]?'open':''}><summary>Charter</summary><pre>…</pre></details>
       <details data-k="l-${a.id}" data-fetch="log" data-id="${a.id}" ${open['l-'+a.id]?'open':''}><summary>Latest headless day</summary><pre>…</pre></details>
-      <div class="row"><button ${a.running||paused||busy>=s.max?'disabled':''} onclick="go('${a.id}')">Dispatch a day</button>
+      <div class="row"><button ${a.running||paused||busy>=s.max||R.alive||(a.live&&a.live.status==='running')?'disabled':''} onclick="go('${a.id}')">${a.resumable?`Resume day (${a.resumable} left)`:'Dispatch a day'}</button>
       <label class="sub">K <input id="k-${a.id}" placeholder="private"></label>
       <label class="sub">model <select id="m-${a.id}">${Object.entries(s.models).filter(([id])=>!['sonnet','haiku'].includes(id)).map(([id,l])=>`<option value="${id===a.model?'':id}" ${id===a.model?'selected':''}>${esc(l)} · ${esc(id)}${id===a.model?' (registry)':''}</option>`).join('')}</select></label>
       <label class="sub">effort <select id="e-${a.id}">${s.efforts.map(e=>`<option value="${e===a.effort?'':e}" ${e===a.effort?'selected':''}>${e}${e===a.effort?' (registry)':''}</option>`).join('')}</select></label></div></div>`}).join('');
@@ -176,11 +229,13 @@ async function load(){
   $('#conds').innerHTML='<tr><th>name</th><th>charter</th><th>feed</th><th>shape</th><th>notes</th></tr>'+Object.entries(s.conditions).map(([n,c])=>`<tr><td>${esc(n)}</td><td>${esc(c.charter)}</td><td>${esc(c.feed)}</td><td>${esc(c.shape)}</td><td>${esc(c.notes)}</td></tr>`).join('');
   $('#recent').innerHTML='<tr><th>run</th><th>date</th><th>model · effort</th><th>min</th><th>turns</th><th>note</th></tr>'+s.recent.map(r=>`<tr><td>${esc(r.run)}</td><td>${esc(r.date)}</td><td>${esc(r.model)}${r.effort?' · '+esc(r.effort):''}</td><td>${esc(r.minutes)}</td><td>${esc(r.turns)}</td><td>${esc((r.note||r.error||'').slice(0,200))}</td></tr>`).join('');
 }
+async function round(mode){const r=await fetch('/api/round',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({mode})});
+  $('#msg').textContent=(await r.json()).message; load()}
 async function fill(d){const r=await (await fetch(`/api/${d.dataset.fetch}?id=${d.dataset.id}`)).json(); d.querySelector('pre').textContent=r.text}
 async function go(id){const k=$('#k-'+id).value, model=$('#m-'+id).value, effort=$('#e-'+id).value;
   const r=await fetch('/api/dispatch',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,k,model,effort})});
   $('#msg').textContent=(await r.json()).message; load()}
-load(); setInterval(load,15000);
+load(); setInterval(load,10000);
 </script></body></html>"""
 
 if __name__ == "__main__":

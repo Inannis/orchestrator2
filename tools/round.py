@@ -1,14 +1,64 @@
-"""Run tools/between.py once, then a working day for several artists, three at a time, each through tools/day.py.
-usage: python tools/round.py a9 a10 a11 [...]   (no ids: every active artist in registry.md)"""
-import sys, re, subprocess, pathlib
+"""Run tools/between.py once, finish any unfinished day, then a working day for each remaining artist, three at a time.
+usage: python tools/round.py [ids...] [--detach] [--resume-only]   (no ids: every active artist in registry.md)
+A day cut short (usage limit, crash, closed session) keeps runs/days/<id>.state.json and is resumed by the next round.
+On a usage limit the round starts nothing new and says so in runs/round.json; continue by hand (control room or this script) after the reset.
+--detach starts the round as its own process so it outlives the session or UI that launched it; output in runs/round-<time>.log."""
+import sys, re, json, subprocess, pathlib, datetime, os, threading
 from concurrent.futures import ThreadPoolExecutor
 root = pathlib.Path(__file__).resolve().parent.parent
-ids = sys.argv[1:] or re.findall(r"^\| (a\d+) \|.*\| active \|", (root / "registry.md").read_text(encoding="utf-8"), re.M)
-def day(i):
-    r = subprocess.run([sys.executable, str(root / "tools" / "day.py"), i], capture_output=True, text=True, encoding="utf-8")
-    return i, (r.stdout.strip().splitlines() or [r.stderr.strip()[-300:]])[-1]
-# what runs while they are away runs once before the round, so a studio's between/run.py sees the real gap
+flags_ = {"--detach", "--resume-only"}
+args = [a for a in sys.argv[1:] if a not in flags_]
+status_file = root / "runs" / "round.json"
+now = lambda: datetime.datetime.now().isoformat(timespec="seconds")
+
+if "--detach" in sys.argv:
+    log = root / "runs" / f"round-{datetime.datetime.now():%Y-%m-%d-%H%M}.log"
+    flags = 0x00000008 | 0x00000200 if os.name == "nt" else 0  # DETACHED_PROCESS | CREATE_NEW_PROCESS_GROUP
+    with log.open("w", encoding="utf-8") as out:
+        p = subprocess.Popen([sys.executable, __file__, *[a for a in sys.argv[1:] if a != "--detach"]], cwd=root, stdout=out,
+                             stderr=subprocess.STDOUT, stdin=subprocess.DEVNULL, creationflags=flags, start_new_session=(os.name != "nt"), close_fds=True)
+    print(json.dumps({"detached": True, "pid": p.pid, "log": str(log)})); sys.exit()
+
+active = re.findall(r"^\| (a\d+) \|.*\| active \|", (root / "registry.md").read_text(encoding="utf-8"), re.M)
+ids = args or active
+jobs = []
+for i in ids:
+    st = root / "runs" / "days" / f"{i}.state.json"
+    if st.exists():
+        s = json.loads(st.read_text(encoding="utf-8"))
+        if s.get("left", 0) > 0: jobs.append([i, "--resume", s["sid"], "--k", str(s["left"]), "--n", str(s["n"])]); continue
+        st.unlink()
+    if "--resume-only" not in sys.argv: jobs.append([i])
+
+lock = threading.Lock()
+status = {"pid": os.getpid(), "started": now(), "state": "running", "reason": None,
+          "jobs": {j[0]: {"status": "queued", "resume": len(j) > 1} for j in jobs}}
+def save():
+    status["updated"] = now(); status_file.write_text(json.dumps(status, indent=1), encoding="utf-8")
+save()
+
+def run(cmd):
+    i = cmd[0]
+    with lock:
+        if status["state"] == "stopping":
+            status["jobs"][i]["status"] = "not started"; save(); return i, "not started (usage limit earlier in the round)"
+        status["jobs"][i]["status"] = "running"; save()
+    r = subprocess.run([sys.executable, str(root / "tools" / "day.py"), *cmd], capture_output=True, text=True, encoding="utf-8")
+    out = (r.stdout.strip().splitlines() or [r.stderr.strip()[-300:]])[-1]
+    try: res = json.loads(out)
+    except json.JSONDecodeError: res = {"error": out}
+    with lock:
+        err = res.get("error")
+        status["jobs"][i].update(status="stopped" if err else "done", turns=res.get("turns"), k=res.get("k"), error=err)
+        if err and "limit" in err:
+            status["state"] = "stopping"; status["reason"] = err
+        save()
+    return i, out
+
 print(subprocess.run([sys.executable, str(root / "tools" / "between.py")], capture_output=True, text=True).stdout.strip() or "between: nothing to run", flush=True)
+print(now(), "starting:", ", ".join(j[0] + (" (resume)" if len(j) > 1 else "") for j in jobs), flush=True)
 with ThreadPoolExecutor(3) as ex:
-    for i, res in ex.map(day, ids):
-        print(i, res, flush=True)
+    for i, res in ex.map(run, jobs):
+        print(now(), i, res, flush=True)
+status["state"] = "stopped: usage limit" if status["state"] == "stopping" else "done"
+save(); print(now(), "round", status["state"], flush=True)

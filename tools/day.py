@@ -14,6 +14,11 @@ studio = pathlib.Path(opt("--studio") or (root / row.group(1).strip())).resolve(
 model = opt("--model") or (row.group(2) if row else "claude-sonnet-5")
 effort = opt("--effort") or (row.group(5) if row and row.group(5) else "medium")
 n = int(opt("--n") or ((int(row.group(4)) + (0 if "--resume" in args else 1)) if row else 1))
+state_file = root / "runs" / "days" / f"{aid}.state.json"  # exists only while a day is unfinished; round.py resumes it
+live_file = root / "runs" / "days" / f"{aid}.live.json"     # what this day is doing right now, for the control room
+def live(status, **kw):
+    try: live_file.write_text(json.dumps({"id": aid, "status": status, "n": n, "k": k, "updated": datetime.datetime.now().isoformat(timespec="seconds"), **kw}), encoding="utf-8")
+    except Exception: pass
 k = int(opt("--k") or random.randint(1, 6))
 resume = opt("--resume")  # continue an interrupted day: --resume <session id> --k <continuations left>
 cond = row.group(3) if row else None
@@ -88,9 +93,11 @@ msgs = [prompt] if not resume else [more(False)]
 sid = resume
 with log.open("w", encoding="utf-8") as f:
     f.write(f"# {aid} session {n} · {today} · {model} · effort {effort} · K={k}\n\n")
-    for i in range(k + 1 if not resume else k):
+    total = k + 1 if not resume else k
+    for i in range(total):
+        live("running", turn=i + 1, turns=total, resumed=bool(resume), since=datetime.datetime.fromtimestamp(t0).isoformat(timespec="seconds"))
         d = turn(msgs[-1], sid)
-        while d.get("is_error") and "limit" in str(d.get("result", "")) and waits < 3 and "--no-wait" not in args and wait_for_reset(str(d.get("result", ""))):
+        while d.get("is_error") and "limit" in str(d.get("result", "")) and waits < 3 and "--wait" in args and wait_for_reset(str(d.get("result", ""))):
             waits += 1; sid = d.get("session_id") or sid
             f.write(f"## (usage limit; waited for the reset, same day continues)\n\n"); f.flush()
             d = turn(more(False) if sid else msgs[-1], sid)
@@ -98,9 +105,28 @@ with log.open("w", encoding="utf-8") as f:
         u = d.get("usage") or {}; tok += sum(u.get(x, 0) or 0 for x in ["input_tokens", "output_tokens", "cache_creation_input_tokens", "cache_read_input_tokens"])
         sent = "(session prompt)" if (i == 0 and not resume) else msgs[-1]
         f.write(f"## turn {i + 1}\n\n> {sent}\n\n{d.get('result', '')}\n\n"); f.flush()
+        retries = 0
+        while d.get("is_error") and "limit" not in str(d.get("result", "")) and retries < 2:
+            retries += 1; time.sleep(60); sid = d.get("session_id") or sid
+            f.write("## (API error; retried the same turn)\n\n"); f.flush()
+            d = turn(more(False) if sid else msgs[-1], sid)
+            sid = d.get("session_id", sid)
         if d.get("is_error"):
-            err = str(d.get("result", ""))[:300]; break
+            err = str(d.get("result", ""))[:300]
+            sid = d.get("session_id") or sid
+            if row and not opt("--studio") and sid:  # the cut turn may have done work: resume it rather than start over
+                state_file.write_text(json.dumps({"n": n, "sid": sid, "left": total - i, "k": k, "date": today}), encoding="utf-8")
+                if turns == 0 and not resume:
+                    fresh = (root / "registry.md").read_text(encoding="utf-8")
+                    (root / "registry.md").write_text(re.sub(rf"^(\| {aid} \|(?:[^|]*\|){{4}}) \d+ \|", lambda m: f"{m.group(1)} {n} |", fresh, flags=re.M), encoding="utf-8")
+            break
         turns += 1
+        if row and not opt("--studio"):
+            left = (k - i) if not resume else (k - i - 1)
+            state_file.write_text(json.dumps({"n": n, "sid": sid, "left": left, "k": k, "date": today}), encoding="utf-8")
+            if turns == 1 and not resume:
+                fresh = (root / "registry.md").read_text(encoding="utf-8")
+                (root / "registry.md").write_text(re.sub(rf"^(\| {aid} \|(?:[^|]*\|){{4}}) \d+ \|", lambda m: f"{m.group(1)} {n} |", fresh, flags=re.M), encoding="utf-8")
         if i == k: break
         if i == 0 and not resume:
             e = subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", "0.5"], capture_output=True, text=True).stdout
@@ -113,10 +139,10 @@ with log.open("w", encoding="utf-8") as f:
 line = {"run": f"{aid}-{n:03d}", "artist": aid, "n": n, "date": today, "model": model, "effort": effort, "condition": cond, "shape": shape,
         "minutes": round((time.time() - t0) / 60), "turns": turns, "k": k, "encounter": enc, "tokens": tok, "cost_usd": round(cost, 2),
         "error": err, "session_id": sid, "resumed": bool(resume), "note": None}
-if row and not opt("--studio") and (turns or tok):
+if row and not opt("--studio") and turns:
     with (root / "runs" / "runs.ndjson").open("a", encoding="utf-8") as f: f.write(json.dumps(line) + "\n")
-    if not resume:
-      fresh = (root / "registry.md").read_text(encoding="utf-8")
-      new = re.sub(rf"^(\| {aid} \|(?:[^|]*\|){{4}}) \d+ \|", lambda m: f"{m.group(1)} {n} |", fresh, flags=re.M)
-      (root / "registry.md").write_text(new, encoding="utf-8")
+if not err and state_file.exists(): state_file.unlink()
+limit = bool(err and "limit" in err)
+live("stopped" if err else "done", turns_done=turns, error=err, limit=limit, reset=(re.search(r"resets ([^·]+?\))", err or "") or [None, None])[1] if limit else None,
+     resumable=state_file.exists())
 print(json.dumps(line))
