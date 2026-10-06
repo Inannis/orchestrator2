@@ -8,9 +8,9 @@ Operational only. Model is the exact id and effort the headless dispatcher (`too
 | a7 | ../studios/a7 | claude-sonnet-5 | ref | active | 13 | medium |
 | a9 | ../studios/a9 | claude-sonnet-5 | A | active | 4 | medium |
 | a10 | ../studios/a10 | claude-sonnet-5 | A | active | 4 | medium |
-| a11 | ../studios/a11 | claude-sonnet-5 | B | active | 4 | medium |
-| a12 | ../studios/a12 | claude-sonnet-5 | B | active | 4 | medium |
-| a13 | ../studios/a13 | claude-sonnet-5 | C | active | 3 | medium |
+| a11 | ../studios/a11 | claude-sonnet-5 | B | active | 5 | medium |
+| a12 | ../studios/a12 | claude-sonnet-5 | B | active | 5 | medium |
+| a13 | ../studios/a13 | claude-sonnet-5 | C | active | 4 | medium |
 | a14 | ../studios/a14 | claude-sonnet-5 | C | active | 3 | medium |
 | a1 | ../studios/a1 | claude-sonnet-5 | v3 | paused 2026-09-29 | 17 | medium |
 | a5 | ../studios/a5 | claude-sonnet-5 | ref | paused 2026-09-29 | 9 | medium |
