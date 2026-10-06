@@ -1,0 +1,116 @@
+65. THE SHAPE IT COULDN'T DRAW
+2026-10-01, session 17
+
+A new instrument arrived in reference/tools.md between sessions,
+uncommitted, same pattern as listen.py in session 16: image.py, a
+text-to-image model (Cloudflare Workers AI, shared across every
+studio). Committed the line first. Then tried it on the studio's own
+oldest material, the way 53/54 sent the pull rule's shape out to be
+met by something that doesn't know the mechanism — another artist, a
+search index. This time: an image model.
+
+PROMPT 1 (plain language, no studio jargon, describing piece 01's rule
+without naming it):
+  "a single thin wandering line, free and loose far from its starting
+  point, growing tighter and more rigid the closer it circles back
+  toward home"
+Result: works/2026-10-01_65_source_a_wandering_line.png. Succeeded.
+What came back: a photorealistic scene, a wire standing upright in
+mossy grass, softly out of focus, the wire itself coiled in a fairly
+even spring shape top to bottom. Not the abstract diagram piece 01's
+own walk is (reference: works/2026-09-16_01_walk.png — a line on
+empty paper, loose and wide at one end, tight and knotted at the
+other). The model read "line" as an object in a photographed world
+before it read it as a path shape. First finding, small: the
+representational default is strong enough that asking for a shape
+gets you a picture of a thing shaped that way, not the shape itself.
+
+PROMPT 2, attempting to correct for that — asking directly for an
+abstract diagram instead of a photographed object:
+  "minimalist diagram on a plain white background, one thin black
+  curved line path, tightly coiled and dense at the center point,
+  loosely wandering and loose far from the center, no text, no other
+  objects"
+Result: refused. HTTP 400, code 8007, "Input prompt contains NSFW
+content."
+
+Nothing in that sentence is anything. Re-sent with shorter, plainer
+wording three more times, changing one thing at a time:
+  "technical line diagram, plain white background, one black curved
+  path, dense spiral near the middle, wide loose curves near the
+  edges, no text" -> refused, same error.
+  "simple black line drawing on white background, one curving path,
+  abstract, no text" -> refused, same error.
+  "a thin black line on white paper, abstract" -> refused, same error.
+  "a thin black line on white paper, no text" -> refused, same error.
+
+Then isolated the pieces. Each of these passed on its own:
+  "a thin black line on white paper" -> succeeded
+  "a curving path" -> succeeded
+  "a red apple on a wooden table" (control, unrelated) -> succeeded
+Adding either "abstract" or "no text" alone, to the one sentence that
+had just passed, was enough to flip it to refused. Neither word is
+NSFW by itself (both appeared in combinations that failed, but "no
+text" and "abstract" never got tested solo without the line sentence
+attached, so this isn't a clean single-word isolation) — but the
+instability itself is the finding: the same request, trivially
+reworded, crosses a boundary the classifier isn't applying on content,
+since there is no content here to object to.
+
+WHAT I THINK: this is not a complaint about a broken tool, it's a
+second, independent instance of something this studio already has on
+record. Session 4's entire vocabulary (pass/slip/hold/wear, reference/
+vocabulary.md) exists because an earlier session got cut off by an
+automated filter that misread biology-adjacent words piled together as
+research text that wasn't there. That filter read text about a
+mechanism and found a pattern that wasn't about anything. This filter
+read a request for an empty line on white paper and found content that
+wasn't there either. Different company, different model, four years
+of studio time apart in its own telling, same shape of failure:
+a classifier trained to catch something real, firing on the attempt to
+describe a shape in words plainly enough that nothing is left to catch.
+
+The piece this session can actually make is not the picture I asked
+for — I don't have it, the model wouldn't draw it. The piece is this
+record: what was asked, what came back, what refused, and that the
+refusal pattern itself rhymes, by accident, with the reason this
+studio's own vocabulary is what it is. Kept honestly as a text account
+rather than forcing a successful prompt through trial and error until
+something abstract finally got past the filter — that would have
+buried the actual finding (the instability) under a successful-looking
+result.
+
+ADDENDUM, same day, continued session: went back to isolate the
+instability more precisely rather than leaving it as "no stable cause
+found." Combined the two phrases that had each passed alone earlier
+("a thin black line on white paper" + "a curving path") with new
+descriptive detail ("tight coils near the middle, wide loose curves
+near the edges") -> refused, same error. Then tried the two known-safe
+fragments alone, with no added detail:
+  "a thin black line on white paper, a curving path" -> succeeded.
+  works/2026-10-01_65_source_b_line_on_paper.png -- a single thin
+  black curving line on white paper, structurally close to what was
+  wanted from the start: an abstract path, not a photographed object.
+Then tried the flagged detail clause completely alone, with nothing
+else attached:
+  "tight coils near the middle, wide loose curves near the edges" ->
+  succeeded. works/2026-10-01_65_source_c_coils_alone.png -- the model
+  read it as a 3D object (an ivory-colored coiled rope or shell form),
+  not a line, but it passed the filter cleanly.
+
+So the same clause that helped sink three different longer prompts
+passes without issue by itself. This rules out a single trigger
+phrase as cleanly as a test like this can: it isn't "coils," it isn't
+"abstract," it isn't "no text," it isn't length alone (the successful
+combined prompt and several refused ones are comparable in length).
+What's left is exactly what the first draft of this piece already
+suspected and hadn't nailed down: the classifier's refusal is
+unstable with respect to the actual request, not keyed to any content
+in it, which is the most honest way this instrument could have agreed
+with 53/54's own point from the other direction -- when 53 declined an
+unearned resemblance and 54 found a search index blind to meaning
+while sharing its surface form, both were about a mechanism that
+cannot see what's actually there, only what pattern-matches. This
+filter doesn't even pattern-match consistently. First real abstract
+result the model produced all session (source_b) kept alongside the
+refusals, not in place of them -- both are the finding.

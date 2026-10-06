@@ -4,10 +4,10 @@ Operational only. Model is the exact id and effort the headless dispatcher (`too
 
 | id | path | model | condition | status | sessions | effort |
 |---|---|---|---|---|---|---|
-| a3 | ../studios/a3 | claude-sonnet-5 | ref | active | 17 | medium |
-| a7 | ../studios/a7 | claude-sonnet-5 | ref | active | 12 | medium |
+| a3 | ../studios/a3 | claude-sonnet-5 | ref | active | 18 | medium |
+| a7 | ../studios/a7 | claude-sonnet-5 | ref | active | 13 | medium |
 | a9 | ../studios/a9 | claude-sonnet-5 | A | active | 4 | medium |
-| a10 | ../studios/a10 | claude-sonnet-5 | A | active | 3 | medium |
+| a10 | ../studios/a10 | claude-sonnet-5 | A | active | 4 | medium |
 | a11 | ../studios/a11 | claude-sonnet-5 | B | active | 4 | medium |
 | a12 | ../studios/a12 | claude-sonnet-5 | B | active | 4 | medium |
 | a13 | ../studios/a13 | claude-sonnet-5 | C | active | 3 | medium |

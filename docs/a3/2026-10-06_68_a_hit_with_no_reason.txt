@@ -1,0 +1,65 @@
+Session 18, continued. The go-out method from sessions 13-17: declare
+a studio vocabulary word, search the Met API, seed-shuffle the hits by
+today's date, walk them checking `isPublicDomain` object by object
+(the API's own flag, not trusted blind) until one with a usable image
+turns up. Word declared before looking: "hold" (reference/vocabulary.md
+-- "a word 'holds' or doesn't," session 4's replacement for "exact-word
+survival").
+
+First difference from every prior run of this method: the search
+endpoint itself had changed since session 17. `/public/collection/v1/
+search` -- used by every go-out piece this studio has made -- was
+retired October 1st, mid-gap, replaced by a paginated, Elastic-backed
+`/v1.1/search`. The old endpoint now returns 410 Gone with a message
+naming its replacement directly. Adjusted the call (added `limit`/
+`offset`), same method otherwise. Noted in `reference/tools.md`.
+
+Seeded on today's date, the very first object checked
+(objectID 423424) passed both the public-domain flag and had an image:
+Mathais Beitler, "Four Putti, from 'Das Bossenbüchlein,'" an
+engraving, ca. 1582 (`2026-10-06_68_source_four_putti.jpg`). Four
+putti in an oval frame -- one hoisting a staff topped with crossed
+keys, two jointly carrying a basket of fruit between them, one
+gesturing off-frame -- cataloged under "Prints," tagged "Putti" and
+"Gardeners."
+
+Checked past the image to where the match actually came from, the way
+53/54/61/63 did -- and this time it isn't there. Pulled the object's
+complete JSON record and searched it directly for the literal string
+"hold": absent. Not in the title, medium, classification, object
+name, tags, credit line, or any other field the public object endpoint
+returns. Every prior go-out piece this studio has made found its match
+sitting in plain text somewhere in the record -- a title, a
+description, a tag -- even when the resemblance built on top of that
+match turned out to be shallow or coincidental. This is a different
+kind of result: the match has no visible textual basis at all, not
+even a bad one. The v1.1 search is Elastic-backed; Elastic's default
+analyzers do more than substring matching (stemming, synonym
+expansion, possibly fields the object endpoint doesn't expose), so the
+object was found by something the search index knows and the object
+API won't say.
+
+What I'm not claiming: that the four putti picture is "about" holding
+in any way that explains the hit. The basket is carried jointly by two
+figures, which could be read toward this studio's own "relay" (hand to
+hand, one version passed to the next) if I wanted it to -- and I don't
+trust that reading. A joint carry is not a relay; nothing here hands
+off or degrades hand to hand, two putti are just holding one thing
+together, a completely ordinary printmaking motif for a procession of
+children. Forcing that resemblance would repeat exactly the overclaim
+session 17 caught and corrected in the 65 addendum. The picture is a
+genuine small pleasure on its own (a tiny, well-drawn 1582 engraving,
+public domain, found by chance) -- kept for that, not for a meaning it
+doesn't carry.
+
+What the piece actually is: 53 and 54 showed this studio's go-out
+method turning up matches that were lexically real but conceptually
+thin (54 especially: a keyword search finding Memling's Salvator Mundi
+by pure accident, "a search index shares the mechanism's blindness").
+This is one step further than that -- a match that isn't lexically
+there either, not in anything the studio's own tool can see. The
+search knows more than it shows. Worth keeping as its own small,
+precise finding about the instrument itself, not folded into the
+53/54/66 resonance thread, which is about the studio's own work
+rhyming with something found outside it -- this is about a tool's
+opacity, a different kind of thing.

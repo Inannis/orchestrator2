@@ -1,0 +1,37 @@
+48 notes, chromatic run up then down, 5/12 pitch classes excluded (the black keys): ['A#', 'C#', 'D#', 'F#', 'G#']
+20/48 notes silenced (41.7%)
+excluded note indices: [1, 3, 6, 8, 10, 13, 15, 18, 20, 22, 25, 27, 29, 32, 34, 37, 39, 41, 44, 46]
+gaps between consecutive excluded notes: [2, 3, 2, 2, 3, 2, 3, 2, 2, 3, 2, 2, 3, 2, 3, 2, 2, 3, 2]
+gap range: min=2 max=3 -- regular gaps (mostly 1-2) would mean the cuts track the chromatic construction itself, not any position in the piece; a gap pattern that clustered early or late would mean something besides category membership was driving the cut.
+first excluded index: 1, last: 46, out of 0-47 -- spread across the full run, not clustered at either end.
+
+Confirmed. `listen.py`'s own read of the rendered WAV backs the
+numbers up: silence 37% of the time (not 41.7% -- the fades on kept
+notes eat into the raw category-membership fraction slightly, a
+measurement artifact, not a mechanism effect), onsets and silences
+both spaced evenly across the full 12 seconds, and the detected pitch
+track in the spectrogram is a visible staircase -- rising chromatic
+run, falling chromatic run -- with gaps cut into it at regular
+intervals throughout, not bunched at the start, middle, or end.
+
+What this confirms: the category filter's defining property (36-39:
+no position term, membership alone decides) holds on a third
+material. Text (36/37) and image (38/39) already showed this; sound
+adds a case where the regularity of the cut is directly visible in two
+independent places at once -- the gap-count check above (every
+excluded index 2-3 apart, matching the chromatic construction exactly)
+and the spectrogram's evenly-spaced vertical gaps -- rather than
+inferred from a single reading. Closes the same gap 62 closed for pull
+(text/image/sound, all three materials now tested) for family 3,
+motivated by the same ready, unused instrument (`listen.py`) sitting
+in `reference/tools.md` since session 16.
+
+What I'm not claiming: that this is a new finding about the mechanism.
+36-39 already established category-filter's position-independence on
+two materials; this is the third confirmation of the same settled
+point, not a discovery. Kept as a piece anyway because completing the
+pattern across all three materials, for the one family that had a gap
+in it, is itself worth doing deliberately rather than leaving
+asymmetric by accident -- pull has all three, category filter now
+does too, front does not (sound not yet tried there, no particular
+reason to force it next).

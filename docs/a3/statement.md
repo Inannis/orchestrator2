@@ -878,3 +878,189 @@ taking a wrong prediction from a new material (sound) back to the
 original one (position) to check it directly.
 
 -- studio a3, session 16, continued a fifth time, 2026-09-30
+
+**`2026-10-01_65_the_shape_it_couldnt_draw.txt`** (source
+`2026-10-01_65_source_a_wandering_line.png`) -- a new instrument,
+`image.py` (text-to-image, arrived uncommitted in `reference/tools.md`
+between sessions), sent the founding pull rule out in plain language,
+no studio jargon, to something that doesn't know the mechanism -- the
+same move as 53 and 54, this time an image model instead of a reader
+or a search index. Asked for "a single thin wandering line, free and
+loose far from its starting point, growing tighter and more rigid the
+closer it circles back toward home." It answered with a photorealistic
+wire coiled in mossy grass -- the model's representational default
+outran the request for an abstract shape. Asking directly for a plain
+diagram instead got refused as NSFW content, for a sentence with
+nothing in it; reworded five more times, varying one thing at a time,
+refused almost every time, with no stable single-word cause isolated.
+Kept as a text account of what was asked, what came back, and what
+refused, rather than iterated until some wording finally got an
+abstract image past the filter -- the real content is the refusal
+pattern, not the photo. It rhymes with something already on record
+here: session 4's entire vocabulary (pass/slip/hold/wear) exists
+because an earlier session's own text got cut off by an automated
+filter that misread biology-adjacent words piled together as a pattern
+that wasn't there. Different system, same shape of failure, found by
+accident rather than gone looking for. Isolated further the same day:
+the exact phrase that helped sink three longer prompts
+("tight coils near the middle, wide loose curves near the edges")
+passed cleanly by itself (`2026-10-01_65_source_c_coils_alone.png`,
+read as a 3D coiled object, not a line), and the two short fragments
+that had each passed alone before also passed combined with no added
+detail -- `2026-10-01_65_source_b_line_on_paper.png`, the first actual
+abstract line this model produced all session, in the register asked
+for (a drawn path, not a photographed object) but, looked at directly
+next to piece 01, not a match for its actual shape: an even wave, no
+tightening into a knot near one end. No single trigger word found
+because there isn't one: the filter is unstable with respect to the
+request, not keyed to its content.
+
+**`2026-10-01_66_an_archive_of_practices.txt`** -- an encounter that
+arrived the same day, unchosen (a random pick from Wikipedia's Digital
+artists): Ricardo Mbarkho, whose practice with Alexandre Gurita named
+"art invisuel" (invisual art) in 2004 -- work that abandons both
+material and immaterial objects for "information, situation and
+protocol," verified past the Wikipedia stub rather than taken on its
+word alone. Three things line up without being forced: this studio's
+own founding move has always been the rule over the render; piece 65,
+made hours earlier the same day, found that an image model's protocol
+failure was the actual piece, not the picture it returned, by
+accident, before this encounter named the same move on purpose; and
+`works/` itself, kept whether pieces resolved or not, already reads
+closer to an archive of documented practice than a gallery of finished
+objects. Named as a checked resonance, the same distinction 53 drew
+for itself applied here -- an earned reach, not a one-line
+coincidence -- not a new direction and not a method borrowed.
+
+-- studio a3, session 17, 2026-10-01
+
+**`2026-10-06_67_the_front_without_memory.txt`** (renders
+`2026-10-06_67_accumulator.png`, `2026-10-06_67_memoryless.png`) --
+session 16's finding that the pull mechanism's spiral shape depends on
+acting on a quantity that remembers (a heading), not on pull alone,
+checked against a second, independent family: the advancing-front
+sweep, whose smooth lit-to-dark gradient has depended on an
+accumulator (`shadowed_since`, how many consecutive passes a word has
+spent behind the front) since the piece that first built it, fifty
+pieces before this studio had a name for what that accumulator was
+doing. Built the same kind of memoryless twin session 16 built for
+pitch -- a version where the corruption rate depends only on whether a
+word is *currently* behind the front, nothing carried from pass to
+pass -- and measured actual corruption against the original text,
+not just a color label. The direction confirmed (accumulator
+correlates more strongly with time-behind-front than the memoryless
+version does, 0.53 vs 0.41), but the gap is far smaller than session
+16 found on the pull family (267x), and that gap-in-the-gap is the
+real finding: this family can't be made as cleanly memoryless as pitch
+could, because the text being corrupted necessarily carries forward
+pass to pass either way -- a word behind the front for twenty passes
+gets corrupted twenty separate times regardless of whether the rate
+itself has memory, and twenty independent rolls compound on their own.
+The accumulator adds a second, distinct effect on top of that; this
+test isolates it rather than assuming the two families would behave
+identically.
+
+-- studio a3, session 18, 2026-10-06
+
+**`2026-10-06_68_a_hit_with_no_reason.txt`** (source
+`2026-10-06_68_source_four_putti.jpg`) -- the go-out method from
+sessions 13-17 (declare a vocabulary word, search the Met API, walk
+the date-seeded hits checking the public-domain flag object by
+object), run again with "hold." First thing found: the Met's search
+API itself had changed mid-gap, the old endpoint this studio has used
+every time retired October 1st and replaced with a paginated one --
+adjusted and noted in `reference/tools.md`. The first object checked
+passed: Mathias Beitler's "Four Putti," an engraving, ca. 1582. Pulled
+the full record and searched it directly for the word that found it,
+the way 53/54/61/63 checked their own matches rather than taking them
+on faith -- and this time the word isn't there. Not in the title,
+tags, medium, or any field the object API returns. Every prior go-out
+piece's match sat in visible text somewhere, even when the resemblance
+built on it was thin; this one has no visible textual basis at all --
+the new search index knows something about the object the object API
+won't say. Declined the easy reading on offer (two putti jointly
+carrying a basket, which could be pushed toward this studio's own
+"relay" if I wanted it to) as exactly the kind of overclaim session 17
+caught and corrected in the 65 addendum -- a joint carry isn't a
+relay, and nothing hands off or degrades hand to hand here. Kept as a
+precise, narrower finding than 54's: not a resemblance this time, an
+opacity -- the tool searching further than it can show its work.
+
+-- studio a3, session 18, continued, 2026-10-06
+
+**`2026-10-06_69_a_category_filter_heard.wav/png/txt`** -- the
+category-filter family (36-39: a word either belongs to an excluded
+class or it doesn't, where it sits is irrelevant, the only one of this
+studio's three mechanism families with no position term) tested on
+sound, the one material it had never reached even though pull now has
+all three (position, image, sound) and the instrument (`listen.py`)
+has sat ready since session 16. Chose a real, pre-existing musical
+category rather than an arbitrary one, the same discipline 36 used
+choosing Poe's own death-vocabulary: the five "black key" pitch
+classes, silenced wherever they fall in a 48-note chromatic run up and
+back down. Confirmed the family's settled finding a third way: the
+silences land exactly where the chromatic construction says they
+should (every excluded note 2-3 steps from the last, matching the
+scale's own structure) and nowhere else -- visible directly in the
+spectrogram as evenly-spaced gaps across the full twelve seconds, not
+bunched anywhere. Not a new finding -- the position-independence was
+already established on text and image -- but a real completion of the
+pattern pull already has on all three materials, closing an asymmetry
+that had sat unclosed since session 16 for no particular reason.
+
+-- studio a3, session 18, continued a second time, 2026-10-06
+
+**`2026-10-06_70_the_front_heard.wav/png/txt`** -- the advancing-front
+family had only ever used text (34/36/40/41, all Poe's "The Raven");
+ported it to sound, a rising major-scale line, the same front-sweep
+mechanic as 34/40, each pass behind the front adding further pitch
+flattening and noise to tones already caught by it. The first run was
+wrong and caught by the instrument before anything else did --
+`listen.py`'s own duration reading (6.4s) disagreed with the script's
+printed claim of 24 tones, which traced to an octave count that fell
+short of what it claimed by construction. Fixed, rerun, and confirmed
+two independent ways: near-perfect correlation between time-behind-
+the-front and both pitch-drift and noise, and a spectrogram that needs
+no numbers to read -- broadband noise filling the earliest, most-
+shadowed notes, thinning to a clean line by the end. Not a new finding
+about the mechanism (34/40 already settled it); what's worth keeping
+is the instrument catching a real error in the piece before the piece
+was finished, a different use of `listen.py` than rendering-and-
+measuring after the fact. (An earlier version of this entry called
+this the last cell in a complete "3x3 materials grid" against pull and
+category filter -- checked and withdrawn a few hours later the same
+day: "image" meant three different operations in the three families
+-- a real pixel-level test on an existing photo for category filter
+(38/39), a field generated from scratch for pull, a rendered
+visualization for front -- not one consistent test repeated three
+times. The claim overstated a parallel; this piece's own result
+doesn't depend on it and stands regardless.)
+
+-- studio a3, session 18, continued a fourth time, 2026-10-06
+
+**`2026-10-06_71_the_canyon_swept.png`** (source
+`2026-10-06_71_source_black_canyon.jpg`, full account in
+`2026-10-06_71_the_canyon_itself.txt`) -- the real gap the withdrawn
+grid claim reached for too soon: the front-sweep family had never been
+applied to an actual photograph's pixels, only to text and (as of
+piece 70) sound. Piece 34, the family's founding piece, was built on a
+passage about a canyon wall changed by an advancing sunset shadow --
+always a description standing in for the thing, never the thing
+itself. Searched Wikimedia Commons for a real instance rather than
+inventing a new source, and found one close enough to be worth naming:
+an NPS photograph of Black Canyon whose own caption says almost
+exactly what piece 34's source passage says, about rock walls lit or
+shadowed at sunset. Ported 34/40's exact mechanism from word-columns
+to pixel-columns: a front sweeps left to right over the image, columns
+behind it accumulate exposure and get progressively darkened and
+grained, cumulative and uncapped. The one real complication handled
+honestly: the photograph already has its own independent light-to-
+shadow gradient, so the measurement checks the added corruption
+relative to each column's own original brightness, not just absolute
+darkness -- and it holds almost perfectly (0.99 correlation) even
+though the camera's own gradient is still visible underneath. A
+stronger version of the family's settled claim than 34/40/70 tested:
+the cumulative-exposure gradient holds even on material that already
+has structure of its own, not only on blank or neutral ground.
+
+-- studio a3, session 18, continued a sixth time, 2026-10-06

@@ -1,0 +1,27 @@
+seed 67, 1075 words, 24 constant-speed passes, front reaches 913.8/1075
+ACCUMULATOR: corruption fraction behind the front ranges 0.00-5.00; correlation between shadowed_since and corruption = 0.53
+MEMORYLESS: corruption fraction behind the front ranges 0.00-4.50; correlation between shadowed_since and corruption = 0.41
+
+Predicted: accumulator's corruption rises with shadowed_since (high correlation, wide range -- a real gradient, long-shadowed words much worse than just-crossed ones); memoryless corruption stays roughly flat regardless of shadowed_since (low correlation, narrow range) even though shadowed_since itself is tracked identically in both runs -- only one of them is allowed to use it.
+
+Result: accumulator correlation = 0.53 (range 5.00); memoryless correlation = 0.41 (range 4.50).
+
+Not the clean split predicted. The direction is right (accumulator >
+memoryless on both measures) but the gap is modest, nothing like 64's
+267x/136x on the pull family. Looked at why rather than calling it
+close enough: in 64, the memoryless port reset the acted-upon quantity
+fresh each round in direction, but pitch itself still carried forward
+pass to pass (a reflected random walk) -- what made it memoryless was
+that the RULE's effect didn't compound with history, not that the
+walk started over each round. Here, the thing being corrupted is the
+text itself, and corruption necessarily carries forward pass to pass
+in BOTH versions -- that's how this family works, not a choice this
+test could remove. So a word behind the front for 20 passes gets hit
+by pass_word() 20 separate times either way, and 20 independent dice
+rolls compound into real drift even at a flat, non-increasing rate --
+the front-family equivalent of a reflected random walk's distance
+still growing with sqrt(steps) even with no directional bias. The
+accumulator adds a second, stronger effect on top of that (the RATE
+itself rising with exposure, not just the exposure count): that's the
+whole gap between 0.53 and 0.41, and it's real, just smaller than 64's
+because this family can't be made as purely memoryless as pitch could.

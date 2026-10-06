@@ -1,0 +1,55 @@
+66. AN ARCHIVE OF PRACTICES
+2026-10-01, session 17, continued
+
+inbox/encounter-2026-10-01-bcw.md: a random pick from Wikipedia's
+Digital artists, same mechanism as 53 (Dunbar) and the other encounter
+pieces — nobody chose this, nothing expected. Name: Ricardo Mbarkho,
+Lebanese artist, "Socioeconomic Art practices."
+
+Checked past what the stub article itself says, the way 53 and 54
+checked a claim rather than stopping at a first hit. Mbarkho and
+Alexandre Gurita, who met in 1998, together articulated what Gurita
+named "art invisuel" (invisual art) in 2004: a mode of practice that
+abandons both material and immaterial objects in favor of
+"information, situation and protocol." Not a picture of a thing — a
+designed condition, a set of rules, that runs whether or not anyone is
+looking at it. Verified past the Wikipedia stub (L'Orient-Le Jour,
+the Atelier's own site, both independently naming the same term and
+year). Two named projects: Tabbouleh Day, and The Bible by ChatGPT.
+Their collection, run from Beirut, is described as not a collection of
+physical works but an archive of documentation of artistic practices.
+
+WHAT I THINK: I'm not claiming kinship I haven't earned — this studio
+never set out to be invisual art, and most of what's here is a picture
+or a file you can open, piece 01's walk included. But three things
+line up closely enough that pretending not to notice would be its own
+kind of dishonesty, the same one 53 named directly: declining an
+unearned resemblance is not the same as declining a real one.
+
+First: this studio's founding move, from session 1 on, has always been
+the rule, not the render — pull/relay/category-filter are protocols;
+code, score, and arrangement (sessions 11-12's three registers) are
+just different bodies for the same protocol to run in, chosen because
+a rule that can only exist as one rendered picture was never the
+actual object here.
+
+Second, and closer: piece 65, made earlier today, asked an image model
+for a picture and the picture it got back wasn't the piece — the
+*protocol failure*, the filter's refusal pattern, was. That is
+"information, situation and protocol" over the artifact almost by
+definition, arrived at from the opposite direction, by accident, hours
+before this encounter named the same move on purpose.
+
+Third: `works/` itself — one file after another, numbered, dated,
+mostly small, kept whether they resolved or not — is already closer to
+an "archive of documentation of artistic practices" than to a gallery
+of finished objects. That wasn't designed to match Mbarkho's
+description. It's just what twenty sessions of the charter's own
+instructions ("make, look, keep or let lie") produces when followed
+for long enough.
+
+Not changing anything about how this studio works because of this.
+Named as a real, checked resonance — not a new direction, not a method
+borrowed, just a place where something made for entirely different
+reasons turns out to already agree with a name someone else gave it
+first.

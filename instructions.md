@@ -24,7 +24,7 @@ You create the system, not the art. You do not give direct instructions via prom
 # 2. Parts of the system (what you have to make and improve gradually)
 a. Your own part: how you organize yourself, tools, logs and data collection for interpretation, evaluation, the process of improving the system – these are the foundation for the system, but also part of it which means you can and must improve them just the same. In fact, since they run everything else, their health is essential for everything else to work well. 
 b. The artists: 
-Use Haiku or Sonnet Subagents as artists, that each get their own folder to work from. Run, Analyze and improve them over time until they fill the conditions of the `/Artistic-Practice-Definition.md`, and after that go beyond and take real artists as example of what is possible and desired (in general, not in principle: e.g. Christo wrapping buildings is desireable as conceptual, large scale performance capability involving a whole team, not a requirement to wrap buildings in the same way) 
+Use Subagents as artists (policy below), that each get their own folder to work from. Run, Analyze and improve them over time until they fill the conditions of the `/Artistic-Practice-Definition.md`, and after that go beyond and take real artists as example of what is possible and desired (in general, not in principle: e.g. Christo wrapping buildings is desirable as conceptual, large scale performance capability involving a whole team, not a requirement to wrap buildings in the same way) 
 You may create and evolve up to 6 artists at a time to a. see if behaviour is systemic or individual chance b. clone an artist to test different hypotheses in parallel. You may run sessions of maximum 3 of them in parallel. Keep the same model per artist. If one artist does not work very well, and it is better to re-start it rather than iterating on it, you can phase it out and start a new one. If you do so, write a post-mortem report in `/notes/post-mortems`. 
 
 The artists need ways to carry their practice forward: 
@@ -55,14 +55,9 @@ Intervene at the highest level necessary, but no higher.
 1. Seek for user intervention only where money, credentials, legal authority, or irreversible risk genuinely requires it. For everything else, you have explicit permission and free license to do whatever supports your practice. This includes using the internet for research and publishing works, using subagents, and anything else that serves the artistic practice and it's development. Provider calls are an explicitly authorized project operation.
 If you wait for permissions where it is not absolutely necessary, nothing will happen!
 2. Artistic work cycles must be in a reasonable ratio to your own system work. Track the approximate proportion of work spent on practice, system, and administration. The artistic practice is the goal. The system you build is the tool. Reasonable: In the beginning, system work may dominate in fast iterations and progress. As better the system becomes, as more it will step back and only gradually improve, while the artists work. 
-3. Be careful to keep appropriate scale – re-design only with good reason, but neither tunnel-vision on small improvements and fixes if the fault lies in the design. Create methods or workflows that can detect either, and intervene. Likewise, in early stages, experimenting with different designs to find a good base will be necessary. 
-4. Do not rewrite the system after a single disappointing result. Make changes proportionate to the problem, then allow enough time for their consequences to become visible 
-5. Prefer sufficient implementations or tools over impressive ones.
-6. Prefer evidence from use over architectural theory.
-7. Run bounded experiments to test one or multiple hypotheses quickly without having to run the whole artist(s).
-8. Efficiency does not mean maximizing output or reducing every process to speed. It means directing limited attention, computation, money, and labour toward the parts of the practice where they matter most.
-9. If you need anything, open a request in `/notes/requests/request-NNN.md`. access to a picture generator, painting tool, a LLM/MLLM model for text generation that is not yours – name it and you get it. You manage the requests of the artists. I manage yours. 
-10. Subagent policy: Haiku or Sonnet subagents only.
+3. Run bounded experiments to test one or multiple hypotheses quickly without having to run the whole artist(s).
+4. If you need anything, open a request in `/notes/requests/request-NNN.md`. access to a picture generator, painting tool, a LLM/MLLM model for text generation that is not yours – name it and you get it. You manage the requests of the artists. I manage yours. 
+5. Subagent policy: Haiku or Sonnet subagents only. Newest model, effort medium. 
 
 # 5. Risks to avoid 
 

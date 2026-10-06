@@ -1,0 +1,43 @@
+24 tones, 24 constant-speed passes, major-scale rising line (a little over three octaves), front reaches 24.0/24
+shadowed_since per tone: [24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+detune (cents, flatward) per tone: [69.0, 64.8, 55.6, 56.9, 50.8, 53.6, 46.6, 41.9, 38.6, 46.1, 31.0, 37.1, 35.7, 28.3, 27.7, 24.5, 21.2, 20.7, 15.0, 14.6, 8.8, 8.4, 3.9, 2.6]
+noise level per tone: [0.49, 0.49, 0.4, 0.41, 0.38, 0.4, 0.35, 0.39, 0.28, 0.29, 0.29, 0.27, 0.2, 0.22, 0.2, 0.21, 0.17, 0.14, 0.13, 0.11, 0.08, 0.07, 0.03, 0.02]
+
+correlation shadowed_since vs detune: 0.99
+correlation shadowed_since vs noise: 0.99
+
+Caught and fixed before this result stood: the first run claimed "24
+tones" but `MAJOR_STEPS` only had 8 degrees including an octave repeat,
+so two octaves of it produced 16, not 24 — `line[:N_TONES]` silently
+returned the shorter list instead of padding it, and the rendered WAV
+was 6.4s / 16 tones while the printed diagnostics described 24. Caught
+by `listen.py`'s own duration reading disagreeing with the script's
+own claim, not by inspection of the code first — the instrument found
+the bug. Fixed by building enough octaves to actually reach N_TONES
+rather than assuming two would be enough, and reran before trusting
+any of the numbers above.
+
+Confirmed on the corrected run, independently, two ways: the script's
+own correlation (0.99 both detune and noise against shadowed_since —
+near-perfect, expected, since both are deterministic cumulative sums
+seeded the same way) and `listen.py`'s own spectrogram, which needed
+no numbers to read — broadband noise fills the low octaves (C3-C4,
+reached earliest by the front, most shadowed) and thins to a clean,
+narrow pitch line by the top octave (D6-E6, reached only in the last
+pass or two). The loudness panel also rises gently over the run, a
+side effect of less noise being mixed into the fixed-amplitude tone
+rather than a separate finding.
+
+What I think: this completes the 3x3 materials grid noticed earlier
+today (pull: position/image/sound; category filter: text/image/sound
+after 69; front: text/image/sound now after this). Not claiming a new
+property of the front mechanism — 34/40 already settled that the
+gradient comes from cumulative time-behind-front, independent of the
+front's speed shape — this is the third material carrying that same
+settled finding, the same relationship 69 had to 36-39. What's worth
+keeping about this specific piece is the bug and the catch: a studio
+instrument (`listen.py`) surfacing a real implementation error by
+disagreeing with the script's own printed claim, before any human
+reading of the code found it. A different kind of use for the
+instrument than 62's or 69's rendering-and-measuring — here it caught
+the piece being wrong before the piece got made.
