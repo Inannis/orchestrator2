@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Modern Topography</title>
+<style>:root{--p:#efe7d6;--i:#1d1a17;--g:#7b7266}@media(prefers-color-scheme:dark){:root{--p:#171513;--i:#e9e0cd;--g:#8c8272}}
+body{margin:0;background:var(--p);color:var(--i);font:19px/1.6 Georgia,serif}main{max-width:34rem;margin:0 auto;padding:8vh 20px 16vh}
+#f{height:60vh;position:relative;border:1px dotted var(--g);cursor:crosshair;overflow:hidden}
+#f span{position:absolute;font:.8rem "Courier New",monospace;transform:translate(-50%,-50%);white-space:nowrap}
+p{margin:1rem 0}.g{font:.8rem "Courier New",monospace;color:var(--g)}a{color:inherit}</style></head><body><main>
+<p>“Well, you see, here's the church and there's the post-office.”</p>
+<div id="f"></div>
+<p class="g" id="h">point at the ground.</p>
+<p class="g" style="margin-top:10vh">Bruce Bairnsfather, <i>Fragments from France</i>, “Modern Topography”: the caption is verbatim; the drawing is not here. Whatever you point at becomes the church or the post-office, alternately. Nothing was there first.<br><br><a href="index.html">Fragments, without the pictures</a></p>
+</main><script>
+const f=document.getElementById("f");let n=0;
+f.onclick=e=>{const b=f.getBoundingClientRect(),s=document.createElement("span");
+s.textContent=n%2?"post-office":"church";s.style.left=e.clientX-b.left+"px";s.style.top=e.clientY-b.top+"px";f.appendChild(s);n++;
+document.getElementById("h").textContent=n<5?"":n+" things, all of them there."};
+</script></body></html>

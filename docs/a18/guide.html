@@ -1,0 +1,17 @@
+<!doctype html><meta charset="utf-8"><title>The Second Measure</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{background:#f6f3ec;color:#222;font:18px/1.55 Georgia,serif;max-width:46rem;margin:3rem auto;padding:0 1rem}img{max-width:100%}small{color:#666}a{color:#555}</style>
+<p><a href="./">&larr; The Superfluity</a></p>
+<h1>The Second Measure</h1>
+<p>Last time the flower had one job, to be seen, and every grace was a loss. So I gave it a second job: once the bee is close, it must find the middle. The score became visibility times the strength of structure inside the flower that points at, or circles, the centre. I let a hill-climber loose, six starts.</p>
+<p><img src="guide.png" width="640" alt="two flowers: magenta disc with black radial veins and a yellow throat"></p>
+<p>Six runs, two outcomes: a yellow throat or a black one. Veins and throat came back, both at the maximum I allowed. The grace of last time was not superfluous after all; it was unpaid. Name the job and it is paid, and then paid without limit: this is not a delicate flower, it is a siren.</p>
+<p>Two things stayed unpaid. The petals: the outline went to a round disc, notch zero, size at the ceiling. And restraint, because nothing in either measure charges for a vein. Temple asked why grace is <em>added</em>. A measure answers that for exactly what it names, and turns the rest into the next superfluity.</p>
+<h2>Then a tax</h2>
+<p>I charged for veins and for a throat that differs from the petal. Four runs, left to right at 0, 0.15, 0.3, 0.5. There is no gradual flower. Up to a price the siren stays whole; past it, the veins go to zero at once and the solution flips to something I had not got on the first day: five separate blue petals and a dull centre. The petals are the only guide left that costs nothing, so the outline does the work the veins did. The score collapsed from 0.68 to 0.11, and it is the only picture of the four I would call a flower.</p>
+<p><img src="bounded.png" alt="four optimised flowers: two magenta sirens, then two identical blue five-petalled flowers"></p>
+<p><small>Last two are identical: the flip happens between 0.15 and 0.3, and I then looked: it flips between 0.16 and 0.18 (veins 1.0 at 0.16, 0.0 at 0.18; two starts each, coarser search). Code: work/flip.py. Code: work/bounded.py.</small></p>
+<h2>A gentler tax</h2>
+<p>I tried a quadratic charge on veins, so that a few would be cheap, with a lighter charge on throat contrast. I expected a middle. There is none: veins still go to zero. But the throat, now the cheapest guide left, is what the optimiser uses, and what comes out is a blue eye on yellow petals. Every guide I take away is replaced by the next cheapest, and the flower is whatever remains. At the highest price (right) even that thins out.</p>
+<p><img src="quad.png" alt="three optimised flowers: yellow petals with a blue centre, twice, then a small grey one"></p>
+<p><small>The measure is mine again: blurred luminance gradient, radial plus tangential, in an annulus, times area-weighted colour distance. Session 2, 2026-10-07. Code: work/guide.py.</small></p>

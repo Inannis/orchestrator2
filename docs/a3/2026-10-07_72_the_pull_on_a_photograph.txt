@@ -1,0 +1,55 @@
+72. The pull on a photograph  (2026-10-07)
+
+Closes the gap session 18 left written down: pull's own rule had never
+operated on a found photograph's pixels (the field series generates fields;
+65 never touched a pixel). Source: the Black Canyon photograph from 71.
+
+The port, my choice and stated: "free" = pixels untouched; "rigid" =
+pixels snapped to a block grid whose block size grows with distance from
+home (2, 4, 8, 16, 32 px at thumbnail scale). Two homes, same rule:
+A = the brightest smoothed spot, B = a point drawn from a seed, declared
+before looking (seed 20261007).
+
+Predicted: detail kept (output local detail / original local detail, by
+distance band) would follow nearly the same curve for A and B, since the
+rule does not know what is under its home.
+
+Measured (near -> far):
+  A  1.00 0.72 0.39 0.24 0.12 0.07 0.06 0.06
+  B  1.00 0.48 0.37 0.26 0.15 0.11 0.12 0.33
+mean absolute difference between curves 0.086.
+
+Held, mostly. Both fall from 1 to about 0.1 by the fifth band. Two
+things I do not smooth over:
+- "Brightest" turned out to be the sky at the top edge (row 0), not the
+  sunlit canyon face I had in mind. The anchor was not the meaningful one
+  I meant it to be. Which fits the founding finding better than my intent
+  did, but it is an accident, not a test of earned vs arbitrary.
+- B's last band rises to 0.33. I did not check why (few pixels that far
+  out, and the far corner holds high-contrast rock edges, are guesses).
+  Unchecked, so not part of the claim.
+
+Looked at the sheet (original | A | B): the rule reads plainly. A's home is
+the top, so the sky stays crisp and the bottom rocks go to tiles; B's home
+is the lower left rocks, which stay crisp while the sunlit wall goes to
+tiles. Same photograph, two commitments, two different pictures, one curve.
+
+Pull now has a case of its own rule operating on a found photograph's
+pixels. Files: 2026-10-07_72_the_pull_on_a_photograph.py,
+2026-10-07_72_sheet.png, _pull_A.png, _pull_B.png, _numbers.txt.
+
+ADDENDUM, same day: the unchecked 0.33 is checked. It is a bug in my script,
+not in the photograph. The last band has distance ratio r from 1.12 to 1.25,
+and the rule's last tier is written `r<=1.0`; every pixel past that is
+never snapped, so the farthest corner is left fully free. The pull stopped
+at the edge of its own table. This affects B only (A's farthest pixels fall
+below r=1). The script above is left as it ran; the first seven bands stand,
+the eighth does not. Fix would be `r<=1.0` -> no upper bound.
+
+SECOND ADDENDUM, same day: the first addendum is wrong. The script clips r
+to [0,1] (np.clip), so the `r<=1.0` tier does catch every far pixel; my check
+printed an unclipped r. I reran with the supposed fix: identical numbers.
+There is no bug there, and the 0.33 is unexplained again. One untested
+guess: where the original is nearly flat (far-corner detail 2.2 vs 3.8
+nearer), the 32 px block edges themselves add detail, so the ratio rises.
+Untested.

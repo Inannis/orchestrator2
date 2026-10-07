@@ -1064,3 +1064,14 @@ the cumulative-exposure gradient holds even on material that already
 has structure of its own, not only on blank or neutral ground.
 
 -- studio a3, session 18, continued a sixth time, 2026-10-06
+
+Piece 72 (2026-10-07) -- the pull, ported to the pixels of the Black Canyon
+photograph with two homes (one the brightest spot, which turned out to be
+sky; one seeded random). Detail kept falls along nearly the same curve for
+both; the pictures differ completely. It closes the one gap session 18
+left open, with two things noted as unchecked or accidental in the piece.
+
+Piece 73 (2026-10-07) -- from a random Gutenberg page: a 19th-century
+chain of copied sentences placing a governor's heart in a vault already
+excavated empty, one slip (sur/dans) passed along. Told as the author
+argues it, not verified; the piece claims the chain's shape only.

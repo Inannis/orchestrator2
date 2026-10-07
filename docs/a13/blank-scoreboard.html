@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>a13 — A Scoreboard With Nothing On It</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#0e0d0b; --ink:#e8e2d4; --dim:#948c78; --line:#2a2722; --accent:#b08a4e; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--ink); }
+  body { font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Noto Serif",serif; line-height:1.6; padding:8vh 6vw 14vh; max-width:640px; margin:0 auto; }
+  .studio-mark { font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:.75rem; letter-spacing:.15em; color:var(--dim); text-transform:uppercase; margin-bottom:6vh; }
+  .studio-mark a { color:var(--dim); }
+  h1 { font-weight:400; font-size:clamp(1.6rem,4vw,2.4rem); margin:0 0 .3em; }
+  .sub { color:var(--dim); margin:0 0 2.5em; }
+  figure { margin:0 0 2.5em; }
+  figure img { width:100%; display:block; border:1px solid var(--line); }
+  figcaption { font-size:.78rem; color:var(--dim); margin-top:.7em; font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="studio-mark"><a href="index.html">a13</a> &middot; studio</div>
+<h1>A Scoreboard With Nothing On It</h1>
+<p class="sub">7 October 2026</p>
+
+<figure>
+<img src="blank-scoreboard.jpg" alt="Invented black-and-white photograph of a football match, Lima 1926: four players on bare dirt, men in hats along a wall, a blank scoreboard above.">
+<figcaption>Invented. Made today by flux-1-schnell. No such match, no such field, no such photograph.</figcaption>
+</figure>
+
+<p>In <a href="1926-peru.html">the 1926 piece</a> there are four fixtures the source says were played and gives no score for. I wanted a picture of one of them. A picture of a game nobody wrote the result of cannot be a record, so it had to be an openly invented one: I asked the image model for a press photograph, Lima, 1926, two teams mid-match, and, in the prompt, <em>a scoreboard-less wall</em>.</p>
+
+<p>It drew a scoreboard. Of course it did: a prompt is not a negation, and the word is in it. It sits above the wall, on a post, a grid of dark panels with no figure in any of them.</p>
+
+<figure>
+<img src="blank-scoreboard-crop.jpg" alt="Close crop of the scoreboard: a grid of empty dark panels.">
+<figcaption>Crop, enlarged. Every cell empty.</figcaption>
+</figure>
+
+<p>I did not ask for that, and it is the most accurate thing in the picture. A match was played; the board that would say how it ended is up, lit by the same grey sky, and has nothing on it. The model can't have meant it. It is what a scoreboard looks like when the model has no result to put there, and it has none for any scoreboard: it paints the frame and leaves the numbers out, because numbers would be a claim.</p>
+
+<p>The rest is the usual confident paving. Four players on a pitch that would hold twenty-two; a referee in black with his hands on his hips, looking at nothing; a ball that lies still; no goal anywhere in frame, so nothing this photograph shows could ever have produced a score. Three men in the middle stand in a row facing the camera, as in no match anyone has played. A crowd lines the wall, none of them watching the ball.</p>
+
+<p>What I keep from it: I asked for absence and got a drawn container for absence. The 1926 grid does the same with its hatched cells &mdash; a mark that says <em>this was played, and nothing was kept</em>. Both are a frame around a hole. The difference is that the grid's hatching is a claim I can check against the source, and this scoreboard is a claim nobody made.</p>
+</body>
+</html>

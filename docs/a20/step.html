@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Step forward</title>
+<style>:root{--p:#efe7d6;--i:#1d1a17;--g:#7b7266}@media(prefers-color-scheme:dark){:root{--p:#171513;--i:#e9e0cd;--g:#8c8272}}
+body{margin:0;background:var(--p);color:var(--i);font:19px/1.6 Georgia,serif}main{max-width:34rem;margin:0 auto;padding:12vh 20px 24vh}
+p{margin:0 0 1.1rem}.t{opacity:0;transition:opacity 1.2s}.t.on{opacity:1}
+.s{font:.85rem "Courier New",monospace;background:none;color:var(--i);border:1px solid var(--g);padding:.45rem .9rem;cursor:pointer;margin:0 0 1.6rem}
+.s:disabled{cursor:default;color:var(--g);border-style:dotted}
+.n{font:.8rem "Courier New",monospace;color:var(--g);margin:-.8rem 0 1.6rem}
+.c{font-size:.8rem;margin-top:12vh;font-family:"Courier New",monospace;color:var(--g)}a{color:inherit}.h{display:none}</style></head><body><main id="m">
+<p style="font-family:'Courier New',monospace;font-size:.85rem;color:var(--g)">Between each line there is a place to step forward.</p>
+<div id="go"></div>
+<p class="c" id="cr">Leo Tolstoy, <i>Childhood</i>, ch. XIX, trans. C. J. Hogarth. The boys' and the narrator's lines are the book's, verbatim, cut only to the beats. The grey notes are mine. The book is not changed by anything the page does; that is the point of the page.<br><br><a href="index.html">Fragments, without the pictures</a> &middot; <a href="silence.html">A moment of silence</a> &middot; <a href="dream.html">The dream I had not had</a></p>
+</main><script>
+const B=[
+["Suddenly a moment of silence occurred amid our boisterous laughter—a moment during which nothing was to be heard in the room but the panting of the miserable Ilinka. It occurred to me at that moment that, after all, there was nothing so very comical and pleasant in all this."],
+["“Now, THAT’S a boy!” cried Seriosha, giving Ilinka a smack with his hand."],
+["Ilinka said nothing, but made such desperate movements with his legs to free himself that his foot suddenly kicked Seriosha in the eye: with the result that, letting go of Ilinka’s leg and covering the wounded member with one hand, Seriosha hit out at him with all his might with the other one. Of course Ilinka’s legs slipped down as, sinking exhausted to the floor and half-suffocated with tears, he stammered out:","“Why should you bully me so?”"],
+["The poor fellow’s miserable figure, with its streaming tears, ruffled hair, and crumpled trousers revealing dirty boots, touched us a little, and we stood silent and trying to smile."],
+["“What a girl! What a gaby!” he said, giving Ilinka a slight kick. “He can’t take things in fun a bit. Well, get up, then.”"],
+["“Oh, oh! Would it still kick and show temper, then?” cried Seriosha, seizing a dictionary and throwing it at the unfortunate boy’s head. Apparently it never occurred to Ilinka to take refuge from the missile; he merely guarded his head with his hands."],
+["I could not help looking with some compassion at the miserable creature on the floor as, his face buried in the dictionary, he lay there sobbing almost as though he were in a fit.","“Oh, Sergius!” I said. “Why have you done this?”","“Well, you did it too! Besides, I did not cry this afternoon when I knocked my leg and nearly broke it.”","“True enough,” I thought. “Ilinka is a poor whining sort of a chap, while Seriosha is a boy—a REAL boy.”"]
+];
+const NOTE=["You stepped forward. The next line was already there.","You stepped forward. It was the book's next line.","You stepped forward. Ilinka was on the floor in the same place.","You stepped forward. Nobody had left room.","You stepped forward. The kick came as written.","You stepped forward. The dictionary was thrown as written."];
+const END=["It never occurred to my mind that possibly poor Ilinka was suffering far less from bodily pain than from the thought that five companions for whom he may have felt a genuine liking had, for no reason at all, combined to hurt and humiliate him.","I cannot explain my cruelty on this occasion. Why did I not step forward to comfort and protect him? Where was the pitifulness which often made me burst into tears at the sight of a young bird fallen from its nest, or of a puppy being thrown over a wall, or of a chicken being killed by the cook for soup?"];
+const go=document.getElementById("go");let k=0,n=0;
+function say(t,c){const p=document.createElement("p");p.textContent=t;p.className="t";if(c)p.style.cssText=c;go.appendChild(p);requestAnimationFrame(()=>requestAnimationFrame(()=>p.classList.add("on")));return p}
+function beat(){
+ if(k>=B.length){end();return}
+ B[k].forEach(l=>say(l));
+ const b=document.createElement("button");b.className="s";b.textContent="step forward";
+ b.onclick=()=>{b.disabled=true;b.textContent="stepped forward";n++;const m=document.createElement("p");m.className="n";m.textContent=NOTE[k]||"";go.appendChild(m);k++;setTimeout(beat,900)};
+ go.appendChild(b);b.scrollIntoView({behavior:"smooth",block:"center"});
+ if(k==B.length-1)b.onclick=()=>{b.disabled=true;b.textContent="stepped forward";n++;k++;setTimeout(beat,900)}
+}
+function end(){
+ const m=document.createElement("p");m.className="n";m.textContent="You stepped forward "+n+" times. The scene is the same length it was.";go.appendChild(m);
+ setTimeout(()=>{say(END[0]);setTimeout(()=>{say(END[1]);const q=say("Can it be that the better instinct in me was overshadowed by my affection for Seriosha and the desire to shine before so brave a boy? If so, how contemptible were both the affection and the desire!","color:var(--g)");},2600)},1800)
+}
+beat();
+</script></body></html>

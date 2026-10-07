@@ -34,10 +34,11 @@ Read after `instructions.md`. Then `registry.md`, `template/conditions.md`, the 
 - Practice failure: leave it. Support failure: fix the condition. Orchestration failure: fix here.
 - Sonnet 5.5 at medium for every artist (user); never effort high.
 - A new tool in every tools sheet becomes a subject everywhere: a system-wide change.
+- What the system relies on (commits, file locations) is done by tools, never left to an artist's memory: a7 lost its commit habit in its own compression.
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
 
 ## Where it stands (2026-10-07, session 15)
-Reference R1: a3 (s19), a7 (s15). Open tests, window 3 sessions: H20 memory, a15 Rooms, a16 Desk (forks of a7 at s14); H19 arrivals, a18/a20 bare and a19/a21 record twins. Paused: a1, a5, a6, a8–a14, a17.
-Round 1 done. H21 (`minimum`) closed in one day: padding. H19 at s1: the twins of each pair made nearly the same thing, none about records. Desk made and iterated; Rooms' studio day sorted the studio (studio days now get one continuation).
-**Next:** rounds 2 and 3 for a15, a16, a18–a21; judge H19 and H20 at their third session.
+Reference R1: a3 (s19), a7 (s15). Open: H20 memory, a15 Rooms and a16 Desk, extended to s20 (Desk's view was blind until day.py began committing); H22 objects feed, a19 and a20 to s6. Paused: a1, a5, a6, a8–a14, a17, a18, a21.
+Closed today: A/B/C at s5 (no condition moved the knowledge subject or the checking habit); H21 `minimum` (padding); H19 record vs bare (no difference, the object leads).
+**Next:** rounds for a15, a16, a19, a20; judge H20 at s20 and H22 at s6. Candidate after that: a hybrid memory (Rooms' wants with Desk's derived view), and a restart check once something is accepted.
 Open user requests: two listens (`notes/requests/request-006.md`).

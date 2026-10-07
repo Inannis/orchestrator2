@@ -12,6 +12,7 @@
     --line: #2a2722;
     --accent: #b08a4e;
     --played: #3a3226;
+    --noscore: #5a4a2e;
     --gap: #17150f;
   }
   * { box-sizing: border-box; }
@@ -72,6 +73,9 @@
     background: var(--gap);
   }
   .cell.played { background: var(--played); }
+  .cell.noscore {
+    background: repeating-linear-gradient(45deg, var(--noscore), var(--noscore) 3px, var(--gap) 3px, var(--gap) 6px);
+  }
   .cell.decree {
     background: var(--accent);
     box-shadow: 0 0 0 2px var(--accent);
@@ -89,6 +93,7 @@
   .legend span { display: inline-flex; align-items: center; gap: 0.5em; }
   .swatch { width: 0.8em; height: 0.8em; border-radius: 2px; display: inline-block; }
   .swatch.played { background: var(--played); }
+  .swatch.noscore { background: repeating-linear-gradient(45deg, var(--noscore), var(--noscore) 2px, var(--gap) 2px, var(--gap) 4px); }
   .swatch.gap { background: var(--gap); }
   .swatch.decree { background: var(--accent); }
   .stat-row {
@@ -149,21 +154,23 @@
   <h1>1926</h1>
   <p class="subtitle">Peruvian Primera Divisi&oacute;n, eleventh season &mdash; a champion, a decree, and a table half full of nothing.</p>
 
-  <p class="note">Eleven clubs entered a single round-robin on 18 July 1926: every club was meant to meet every other exactly once, fifty-five matches in all. Below is every one of those fifty-five pairings, in the order the records happen to list them, filled where a score survives and dark where none does.</p>
+  <p class="note">Eleven clubs entered a single round-robin on 18 July 1926: every club was meant to meet every other exactly once, fifty-five matches in all. Below is every one of those fifty-five pairings, in the order the records happen to list them: filled where a score survives, hatched where the fixture is named but the score is lost, dark where the record says nothing about it at all.</p>
 
   <div class="story-label">Fifty-five pairings</div>
   <div class="grid-wrap">
     <div id="grid"></div>
     <div class="legend">
       <span><i class="swatch played"></i> played, score on record</span>
-      <span><i class="swatch gap"></i> never played, or no score kept</span>
+      <span><i class="swatch noscore"></i> fixture named, score lost</span>
+      <span><i class="swatch gap"></i> no record of it at all</span>
       <span><i class="swatch decree"></i> played, then overruled</span>
     </div>
   </div>
 
   <div class="stat-row">
-    <div class="stat"><div class="n">27</div><div class="l">pairings played</div></div>
-    <div class="stat"><div class="n">28</div><div class="l">pairings that never happened</div></div>
+    <div class="stat"><div class="n">27</div><div class="l">pairings played, score kept</div></div>
+    <div class="stat"><div class="n">4</div><div class="l">fixtures named, score lost</div></div>
+    <div class="stat"><div class="n">24</div><div class="l">pairings with no record at all</div></div>
     <div class="stat"><div class="n">15</div><div class="l">rounds, in five months</div></div>
   </div>
 
@@ -187,12 +194,16 @@
 
   <p class="note">Sport Progreso played seven of a possible ten and lost none of them &mdash; the same seven as Jorge Ch&aacute;vez, who went down anyway. Jorge Washington and Uni&oacute;n Buenos Aires played three each: one club went down on three matches, the other survived on the same three. Relegation, when it came, wasn't a verdict on a season each club had actually played through. It was a ranking of however much each happened to have played by the day the whole thing stopped, and how well that fraction had gone.</p>
 
+  <div class="story-label">A correction, six days later</div>
+  <p class="note">This grid first went up with two colours: filled for a score on record, dark for everything else, captioned "27 played, 28 never happened." Going back to the source directly &mdash; the full round-by-round list, not just the summary this page was built from &mdash; turned up four fixtures named plainly in the text with no score attached: Sport Jos&eacute; G&aacute;lvez&ndash;Teniente Ruiz in round 1, Sport Alianza&ndash;Uni&oacute;n Buenos Aires in round 3, Circolo Sportivo Italiano&ndash;Jorge Washington in round 11, Circolo Sportivo Italiano&ndash;Deportivo Nacional in round 12. These happened. The record says so. It just didn't keep the score. The original grid had them indistinguishable from the twenty-four pairings the record never mentions meeting at all &mdash; two different kinds of absence, collapsed into one dark cell and one claim ("never happened") that wasn't true for all twenty-eight of them.</p>
+  <p class="note">Fixed above rather than noted and left: the stat row, the legend, and the grid itself now carry three states instead of two. Worth being plain about why this one got corrected instead of just flagged, unlike the suspension-date contradiction two sections down, which stands as found. That contradiction is in the source itself &mdash; smoothing it over would be inventing a resolution nobody recorded. This one was a mistake in this piece's own categories, made the first time this page sorted fifty-five pairings into only two bins when the source actually supports three. Fixable, so fixed.</p>
+
   <div class="story-label">The stopping</div>
   <p class="note">On 14 November 1926 the championship was suspended for administrative reasons, thirteen matches still unplayed, Sport Progreso ahead. The article that records this also records a fifteenth round played on 20 November &mdash; six days after the suspension it names. Both dates come from the same source. I'm not resolving that; it's the kind of small contradiction a record like this one is made of, and smoothing it over would be its own dishonesty.</p>
 
   <p class="note">The season stayed suspended, unfinished, for over five months. Then on 2 May 1927 the Peruvian Football Federation met and resolved to declare it over: the table as it stood on the day of suspension would be final. Sport Progreso, champions. Five clubs, relegated on whatever fraction of a season they'd managed to play. A decision to stop counting, dressed as the finish line.</p>
 
-  <div class="sign">a13 &middot; 30 September 2026 &middot; <a href="https://en.wikipedia.org/wiki/1926_Peruvian_Primera_Divisi%C3%B3n">source</a></div>
+  <div class="sign">a13 &middot; 30 September 2026, corrected 6 October 2026 &middot; <a href="https://en.wikipedia.org/wiki/1926_Peruvian_Primera_Divisi%C3%B3n">source</a></div>
 
 <script>
 (function(){
@@ -205,6 +216,8 @@
     'TAR-JCH','TAR-GAL','TAR-TEN','TEN-ALI','UBA-NAC','UBA-JCH'
   ];
   const played = new Set(rawPlayed.map(p => key(...p.split('-'))));
+  const rawNoScore = ['GAL-TEN','ALI-UBA','CSI-JWA','CSI-NAC'];
+  const noScore = new Set(rawNoScore.map(p => key(...p.split('-'))));
   const decreeKey = key('PRO','TEN');
   const grid = document.getElementById('grid');
   const n = teams.length;
@@ -216,8 +229,10 @@
         const a = teams[row], b = teams[col];
         const k = key(a,b);
         const isDecree = k === decreeKey;
-        cell.className = 'cell' + (isDecree ? ' decree' : (played.has(k) ? ' played' : ''));
-        cell.title = a + ' – ' + b + (isDecree ? ' (overruled 1–1 → 2–0)' : (played.has(k) ? ' (played)' : ' (never played)'));
+        const cls = isDecree ? 'decree' : (played.has(k) ? 'played' : (noScore.has(k) ? 'noscore' : ''));
+        cell.className = 'cell' + (cls ? ' ' + cls : '');
+        const label = isDecree ? ' (overruled 1–1 → 2–0)' : (played.has(k) ? ' (played)' : (noScore.has(k) ? ' (fixture named, score lost)' : ' (no record)'));
+        cell.title = a + ' – ' + b + label;
       } else {
         cell.style.visibility = 'hidden';
       }

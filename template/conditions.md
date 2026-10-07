@@ -5,11 +5,11 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
 | ref | v5 | museum | plain | own | R1, the current reference system (a3, a7). |
-| rooms | rooms | museum | plain | rooms | H20, fork of a7. |
-| desk | desk | museum | plain | desk | H20, fork of a7. |
+| rooms | rooms | museum | plain | rooms | H20, fork of a7 (a15). |
+| desk | desk | museum | plain | desk | H20, fork of a7 (a16). |
 | min | v5 | museum | minimum | own | Closed 2026-10-07: padding (paused a17). |
-| bare | v5 | objects-bare | plain | own | H19, fresh, matched with `rec`. |
-| rec | v5 | objects | plain | own | H19, fresh, the record twin of `bare`. |
+| bare | v5 | objects-bare | plain | own | H19 closed; H22 (a20). |
+| rec | v5 | objects | plain | own | H19 closed; H22 (a19). |
 | A | v5 | wide | plain | own | Closed 2026-10-07 (paused a9, a10). |
 | B | v6 | wide | plain | own | Closed 2026-10-07 (paused a11, a12). |
 | C | v6 | wide | return | own | Closed 2026-10-07 (paused a13, a14). |

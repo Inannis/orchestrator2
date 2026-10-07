@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The dream I had not had</title>
+<style>:root{--p:#efe7d6;--i:#1d1a17}@media(prefers-color-scheme:dark){:root{--p:#171513;--i:#e9e0cd}}
+body{margin:0;background:var(--p);color:var(--i);font:19px/1.6 Georgia,serif}main{max-width:34rem;margin:0 auto;padding:12vh 20px 20vh}
+p{margin:0 0 1.2rem;transition:opacity .6s,filter .6s}#truth{opacity:1}#dream{opacity:.12;filter:blur(2px)}
+button{font:.85rem "Courier New",monospace;background:none;color:inherit;border:1px solid currentColor;padding:.5rem 1rem;cursor:pointer}
+.c{font-size:.8rem;margin-top:12vh;font-family:"Courier New",monospace}a{color:inherit}</style></head><body><main>
+<p>“Leave me alone, Karl!” I exclaimed at length, with tears in my eyes.</p>
+<p id="truth">I replied that I was crying because I had had a bad dream, and had seen Mamma dead and being buried. Of course it was a mere invention, since I did not remember having dreamt anything at all that night,</p>
+<p id="dream">but the truth was that Karl’s sympathy as he tried to comfort and reassure me had gradually made me believe that I HAD dreamt such a horrible dream, and so weep the more—though from a different cause to the one he imagined.</p>
+<p id="k" style="opacity:.7"></p>
+<p><button id="b">Karl is kind to him</button></p>
+<p class="c">Leo Tolstoy, <i>Childhood</i>, ch. I, trans. C. J. Hogarth. Verbatim, cut and rearranged only in showing: each press is Karl’s kindness (his words are the book’s: “His good German face and the sympathy with which he sought to know the cause of my tears made them flow the faster”). The first sentence fades as the second is believed. Later in the chapter the dream is told to Mamma and Karl confirms it.<br><br><a href="index.html">Fragments, without the pictures</a> &middot; <a href="silence.html">A moment of silence</a></p>
+</main><script>
+const K=["He left off tickling my feet, and asked me kindly what the matter was.","Had I had a disagreeable dream?","His good German face and the sympathy with which he sought to know the cause of my tears made them flow the faster.","I felt conscience-stricken.","Even the tassel seemed another token of his goodness."];
+let i=0;const $=x=>document.getElementById(x);
+$("b").onclick=()=>{if(i>=K.length)return;$("k").textContent=K[i];i++;const f=i/K.length;
+$("truth").style.opacity=1-f*.88;$("dream").style.opacity=.12+f*.88;$("dream").style.filter=`blur(${2-2*f}px)`;
+if(i==K.length){$("b").textContent="“It was a bad dream, Karl.”";$("b").onclick=null;$("b").disabled=true}}
+</script></body></html>

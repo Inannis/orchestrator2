@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Woloda is right</title>
+<style>:root{--p:#efe7d6;--i:#1d1a17}@media(prefers-color-scheme:dark){:root{--p:#171513;--i:#e9e0cd}}
+body{margin:0;background:var(--p);color:var(--i);font:18px/1.5 Georgia,serif}main{max-width:40rem;margin:0 auto;padding:8vh 20px 16vh}
+svg{width:100%;height:auto;display:block;border:1px solid var(--i);cursor:pointer;touch-action:manipulation}
+.m{font-family:"Courier New",monospace;font-size:.8rem;display:flex;flex-wrap:wrap;gap:.2rem 1.2rem;justify-content:space-between;margin:.6rem 0 1.4rem}
+#say{min-height:5.5rem;font-size:1.05rem}#say i{opacity:.7;font-size:.85rem;font-family:"Courier New",monospace;font-style:normal;display:block;margin-top:.3rem}
+button{font:inherit;font-size:.85rem;font-family:"Courier New",monospace;background:none;color:inherit;border:1px solid currentColor;padding:.4rem .9rem;cursor:pointer}
+.c{font-size:.8rem;margin-top:12vh;font-family:"Courier New",monospace}a{color:inherit}</style></head><body><main>
+<svg id="s" viewBox="0 0 800 400" role="img" aria-label="A boat on a meadow. Click to row.">
+<rect id="sky" width="800" height="250"/>
+<circle id="moon" cx="610" cy="70" r="16" fill="#e9e0cd" opacity="0"/>
+<path d="M0 250 L0 222 Q60 208 130 220 Q220 200 300 218 Q420 196 520 216 Q640 202 720 218 L800 210 L800 250Z" fill="#5a4a63"/>
+<rect id="gr" y="250" width="800" height="150"/>
+<g id="tufts" stroke="#2c3a26" stroke-width="2" fill="none"></g>
+<line x1="700" y1="250" x2="700" y2="222" stroke="#1d1a17" stroke-width="3"/>
+<g id="boat"><g id="oarL"><line x1="0" y1="0" x2="-70" y2="46" stroke="#1d1a17" stroke-width="4"/></g><g id="oarR"><line x1="0" y1="0" x2="70" y2="46" stroke="#1d1a17" stroke-width="4"/></g>
+<path d="M-80 0 L80 0 L58 30 L-58 30Z" fill="#8a6a43" stroke="#1d1a17" stroke-width="3"/><circle id="head" cx="0" cy="-22" r="11" fill="#1d1a17"/><line x1="0" y1="-11" x2="0" y2="0" stroke="#1d1a17" stroke-width="5"/></g>
+<rect id="dark" width="800" height="400" fill="#0b0a14" opacity="0" pointer-events="none"/>
+</svg>
+<div class="m"><span id="g">ground gained: 0.00 m</span><span id="n">strokes: 0</span><span id="e">evening: 0%</span></div>
+<div id="say">Click the boat. Row with all your might.</div>
+<p><button id="b">row</button> <button id="r" hidden>another evening</button></p>
+<p class="c">Leo Tolstoy, <i>Childhood</i>, ch. VIII, trans. C. J. Hogarth; Bruce Bairnsfather, <i>Fragments from France</i>. The quoted sentences are theirs, unaltered; two lines (the last when you wait, and the ending) are mine. The boat does not move. The only quantity that changes is the one at the right: rowing spends the evening faster, and nothing else.<br><br><a href="index.html">Fragments, without the pictures</a> &middot; <a href="horse.html">The hind-quarters of the led horse</a></p>
+</main>
+<script>
+const $=id=>document.getElementById(id),S=[
+[3,"When we sat on the ground and imagined that we were sitting in a boat and either fishing or rowing with all our might,","Tolstoy"],
+[8,"Woloda persisted in sitting with folded hands or in anything but a fisherman’s posture.","Tolstoy"],
+[14,"...whether we moved our hands or not, we should neither gain nor lose ground—certainly not advance at all, and I was forced to agree with him.","Tolstoy"],
+[22,"There goes our blinkin’ parapet again.","Bairnsfather"],
+[30,"Still, it was the game, and if we were once to begin reasoning thus, it would become equally impossible for us to go for drives on chairs.","Tolstoy"],
+[40,"“The same old moon.”","Bairnsfather"],
+[50,"If we were always to judge from reality, games would be nonsense; but if games were nonsense, what else would there be left to do?","Tolstoy"],
+[60,"How gaily and quickly those long winter evenings used to pass!","Tolstoy"]];
+const IDLE=[[8,"…he said that he supposed it was all the same whether he went or not.","Tolstoy"],[20,"Woloda only lay down on his back with his hands under his head.","Tolstoy"],[40,"The ground is exactly where it was. The evening, a little further.","the studio"]];
+let t=0,n=0,idle=0,shown=-1,done=false,sw=0;
+const tu=$("tufts");for(let i=0;i<26;i++){const x=(i*97+31)%800,y=262+((i*53)%120);tu.insertAdjacentHTML("beforeend",`<path d="M${x} ${y}l-4-9m4 9l0-12m0 12l4-9"/>`)}
+const mix=(a,b,k)=>a.map((v,i)=>Math.round(v+(b[i]-v)*k));
+function paint(){const k=Math.min(t,1),w=mix([232,222,196],[58,50,86],k);
+$("sky").setAttribute("fill",`rgb(${w})`);$("gr").setAttribute("fill",`rgb(${mix([142,150,98],[40,48,38],k)})`);
+$("dark").setAttribute("opacity",(k*.45).toFixed(2));$("moon").setAttribute("opacity",Math.max(0,(k-.55)*2.2).toFixed(2));
+const b=Math.sin(sw)*4;$("boat").setAttribute("transform",`translate(300 ${300+b})`);
+$("oarL").setAttribute("transform",`rotate(${Math.sin(sw*2)*22})`);$("oarR").setAttribute("transform",`rotate(${-Math.sin(sw*2)*22})`);
+$("n").textContent="strokes: "+n;$("e").textContent="evening: "+Math.round(k*100)+"%"}
+function say(h,s){$("say").innerHTML=h+(s?`<i>${s}</i>`:"")}
+function row(){if(done)return;n++;idle=0;sw+=.9;t+=.012;
+for(let i=S.length-1;i>=0;i--)if(n>=S[i][0]){if(shown<i){shown=i;say(S[i][1],S[i][2])}break}
+if(t>=1)finish();paint()}
+function finish(){done=true;say("The same old moon. Ground gained: 0.00 m. Evenings spent: 1. Nobody could say the oars were not working.","");$("r").hidden=false}
+$("s").onclick=row;$("b").onclick=row;
+$("r").onclick=()=>{t=0;n=0;idle=0;shown=-1;done=false;$("r").hidden=true;say("Click the boat. Row with all your might.");paint()};
+setInterval(()=>{if(done)return;idle++;t+=.0004*1;
+if(n>0)for(const [s,h,a] of IDLE)if(idle===s)say(h,a);paint()},1000);
+paint();
+</script></body></html>

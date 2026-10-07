@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The looking-glass</title>
+<style>:root{--p:#efe7d6;--i:#1d1a17;--g:#7b7266}@media(prefers-color-scheme:dark){:root{--p:#171513;--i:#e9e0cd;--g:#8c8272}}
+body{margin:0;background:var(--p);color:var(--i);font:19px/1.6 Georgia,serif}main{max-width:34rem;margin:0 auto;padding:8vh 20px 20vh}
+canvas{display:block;width:100%;max-width:30rem;margin:0 auto 1.5rem;touch-action:manipulation;cursor:pointer}
+p{margin:0 0 1.1rem}.g{font:.8rem "Courier New",monospace;color:var(--g)}a{color:inherit}</style></head><body><main>
+<canvas id="c" width="900" height="900"></canvas>
+<p id="t" style="min-height:5.2em">For a long while I stood before the looking-glass as I combed my elaborately pomaded head, but, try as I would, I could not reduce the topmost hairs on the crown to order.</p>
+<p class="g" id="h">touch the middle of the frame: comb.</p>
+<p class="g" style="margin-top:12vh">Leo Tolstoy, <i>Childhood</i>, ch. XVI (the glass) and ch. XVII (Mamma), trans. C. J. Hogarth, verbatim. The frame is drawn from a pencil design for a circular cartouche that came in the inbox: a ring of scrolls, an empty middle, a pin-hole, a few faint rays ruled from it. I redrew it by rule here, not by tracing. In the drawing the rays are construction. Here they are hair.<br><br><a href="index.html">Fragments, without the pictures</a> &middot; <a href="step.html">Step forward</a> &middot; <a href="dream.html">The dream I had not had</a></p>
+</main><script>
+const cv=document.getElementById("c"),x=cv.getContext("2d"),W=900,C=450;
+let seed=7;const R=()=>(seed=(seed*16807)%2147483647)/2147483647;
+function ink(){return getComputedStyle(document.body).color}
+const L=["As soon as ever I left off combing them, they sprang up again and radiated in different directions,","thus giving my face a ridiculous expression.","","“You know, Nicolinka, nobody will ever love you for your face alone, so you must try all the more to be a good and clever boy.”"];
+let n=0,rays=[];
+function pencil(f,w,a){x.strokeStyle=ink();for(let k=0;k<3;k++){x.globalAlpha=a*(.5+R()*.5);x.lineWidth=w*(.5+R());x.beginPath();f(k);x.stroke()}x.globalAlpha=1}
+function draw(){
+ seed=7;x.clearRect(0,0,W,W);
+ // ring of scrolls
+ const N=11;
+ for(let i=0;i<N;i++){const a=i/N*Math.PI*2,r=345;
+  const cx=C+Math.cos(a)*r,cy=C+Math.sin(a)*r;
+  pencil(k=>{const s=38+R()*10;for(let t=0;t<=Math.PI*3.2;t+=.08){const rr=s*(1-t/(Math.PI*3.6));const px=cx+Math.cos(t*(i%2?1:-1)+a)*rr+ (R()-.5)*1.2,py=cy+Math.sin(t*(i%2?1:-1)+a)*rr+(R()-.5)*1.2;t?x.lineTo(px,py):x.moveTo(px,py)}},2.2,.7)}
+ for(const r of[300,392]){pencil(k=>{for(let t=0;t<=Math.PI*2+.1;t+=.02){const rr=r+Math.sin(t*N)*14*(r>350?1:-1)+(R()-.5)*2;const px=C+Math.cos(t)*rr,py=C+Math.sin(t)*rr;t?x.lineTo(px,py):x.moveTo(px,py)}},1.6,.55)}
+ // pin-hole
+ x.fillStyle="#a2402a";x.globalAlpha=.8;x.beginPath();x.arc(C,C,4,0,7);x.fill();x.globalAlpha=1;
+ // rays = hair
+ rays.forEach(r=>{pencil(k=>{x.moveTo(C,C);let px=C,py=C;for(let s=1;s<=14;s++){const d=r.l*s/14;px=C+Math.cos(r.a)*d+(R()-.5)*1.5+Math.sin(r.a)*Math.sin(s*.6)*r.w*s;py=C+Math.sin(r.a)*d+(R()-.5)*1.5-Math.cos(r.a)*Math.sin(s*.6)*r.w*s;x.lineTo(px,py)}},1.4,.8)});
+}
+cv.onclick=e=>{const b=cv.getBoundingClientRect();if(Math.hypot((e.clientX-b.left)/b.width*W-C,(e.clientY-b.top)/b.height*W-C)>270)return;
+ const m=9;for(let i=0;i<m;i++)rays.push({a:R()*Math.PI*2,l:60+R()*190,w:.5+R()*2});
+ if(n<L.length){document.getElementById("t").textContent=L[n]||"";}
+ if(n==L.length-1)document.getElementById("h").textContent="";
+ n++;draw();
+
+};
+draw();
+</script></body></html>

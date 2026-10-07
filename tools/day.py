@@ -145,6 +145,9 @@ with log.open("w", encoding="utf-8") as f:
         else:
             msgs.append(more(False))
 
+if turns and (studio / ".git").exists():  # whatever the artist left uncommitted is kept; git is the studio's history (desk.py reads it)
+    subprocess.run(["git", "-C", str(studio), "add", "-A"], capture_output=True)
+    subprocess.run(["git", "-C", str(studio), "commit", "-qm", f"End of session {n}, as left"], capture_output=True)
 line = {"run": f"{aid}-{n:03d}", "artist": aid, "n": n, "date": today, "model": model, "effort": effort, "condition": cond, "shape": shape,
         "minutes": round((time.time() - t0) / 60), "turns": turns, "k": k, "encounter": enc, "tokens": tok, "cost_usd": round(cost, 2),
         "error": err, "session_id": sid, "resumed": bool(resume), "note": None}
