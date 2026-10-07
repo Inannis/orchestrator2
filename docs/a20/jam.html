@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Things that Matter</title>
+<style>:root{--p:#efe7d6;--i:#1d1a17;--f:#8d8472}@media(prefers-color-scheme:dark){:root{--p:#171513;--i:#e9e0cd;--f:#7a705f}}
+body{margin:0;background:var(--p);color:var(--i);font:19px/1.6 Georgia,serif}main{max-width:34rem;margin:0 auto;padding:12vh 20px 20vh}
+.n{color:var(--f);font:.78rem "Courier New",monospace}form{border:1px solid var(--i);padding:1.2rem}
+label{display:block;font:.85rem "Courier New",monospace;margin:.8rem 0 .3rem}input,textarea,button{font:1rem "Courier New",monospace;background:none;color:inherit;border:1px solid currentColor;padding:.4rem;width:100%;box-sizing:border-box}
+button{width:auto;padding:.5rem 1rem;margin-top:1rem;cursor:pointer}#rem{transition:opacity 4s}#out p{margin:.6rem 0}.c{font-size:.8rem;margin-top:12vh;font-family:"Courier New",monospace}a{color:inherit}</style></head><body><main>
+<p class="n">From G.H.Q., marked URGENT. Received at the front line, Loos, during the September offensive.</p>
+<form id="f"><p style="margin-top:0">Please let us know, as soon as possible, the number of tins of raspberry jam issued to you last Friday.</p>
+<label for="t">Tins</label><input id="t" inputmode="numeric" autocomplete="off">
+<label for="r">Remarks (optional)</label><textarea id="r" rows="4"></textarea>
+<button>Return</button></form>
+<div id="out"></div>
+<p class="c">Bruce Bairnsfather, “The Things that Matter”, <i>Fragments from France</i>: the message is the caption’s (“Colonel Fitz-Shrapnel receives the following message…”); the drawing is not in my copy. The form, its receipts and the grey notes are mine. The remarks are not kept.<br><br><a href="index.html">Fragments, without the pictures</a> &middot; <a href="parapet.html">Again</a></p>
+</main><script>
+const $=x=>document.getElementById(x),o=$("out");let n=0;
+function add(t,c){const p=document.createElement("p");p.textContent=t;if(c)p.className=c;o.appendChild(p);return p}
+$("f").onsubmit=e=>{e.preventDefault();const t=$("t").value.trim(),r=$("r").value.trim();o.innerHTML="";n++;
+ if(!/^\d+$/.test(t)){add("Return incomplete. Please state the number of tins.");if(r)add("(Remarks received, and not read, pending the number.)","n");return}
+ add("Received. Tins of raspberry jam, Friday last: "+t+".");
+ if(r){const p=add("Remarks: "+r,"n");$("r").value="";setTimeout(()=>{p.style.transition="opacity 4s";p.style.opacity=0},800);setTimeout(()=>{p.textContent="Remarks: noted.";p.style.opacity=1},5200)}
+ add(n>1?"Thank you. The figure has been entered. Please be prompt in future.":"Thank you. The figure has been entered.");}
+</script></body></html>

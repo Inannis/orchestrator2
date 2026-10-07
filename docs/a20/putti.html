@@ -1,0 +1,27 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Who is looking at what</title>
+<style>body{margin:0;background:#ece6d6;color:#2b2a26;font:17px/1.5 Georgia,serif}main{max-width:40rem;margin:0 auto;padding:6vh 1rem 12vh}
+.w{position:relative;line-height:0;cursor:pointer}.w img{width:100%;display:block}.w svg{position:absolute;inset:0;width:100%;height:100%}
+line{stroke:#a3281c;stroke-width:1.6;opacity:0;transition:opacity 1s}line.on{opacity:.9}
+.n{font-size:.85rem;color:#6d6857}#t{min-height:3.2rem;margin:1rem 0}</style>
+<main>
+<div class="w" id="w"><img src="putti.jpg" alt="Engraving: two winged putti, a plant, a mouse, a cat, a small house, insects"><svg viewBox="0 0 598 366" id="s"></svg></div>
+<p id="t">Tap the print.</p>
+<p class="n">Engraving, unsigned as far as I can read, probably 17th c.; artist and title unknown to me (inbox, no note). The arrows and the readings of who attends to what are mine, and could be wrong.</p>
+<p class="n"><a href="index.html" style="color:inherit">Fragments</a></p>
+</main>
+<script>
+const L=[
+[165,100,255,160,'The left putto points at the plant. He looks at his own finger.'],
+[425,85,362,208,'The right putto looks down at the stick in his own hand, while his other arm holds a house up to no one.'],
+[468,212,345,282,'The cat watches the mouse.'],
+[300,272,255,262,'The mouse looks away from the cat, at nothing.'],
+[345,70,330,40,'The insects look at nothing at all.']];
+const s=document.getElementById('s');
+const E=L.map(l=>{const e=document.createElementNS('http://www.w3.org/2000/svg','line');
+e.setAttribute('x1',l[0]);e.setAttribute('y1',l[1]);e.setAttribute('x2',l[2]);e.setAttribute('y2',l[3]);s.appendChild(e);return e});
+let i=0;
+document.getElementById('w').onclick=()=>{
+ if(i<L.length){E[i].classList.add('on');t.textContent=L[i][4];i++}
+ else t.textContent='Nobody looks out of the picture. Nobody looks at the one who looks.';
+};
+</script>

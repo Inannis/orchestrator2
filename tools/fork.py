@@ -18,7 +18,7 @@ base = root / "template" / ("studio" if charter == "v5" else f"variants/{charter
 if memory == "rooms":
     for d in ["days", "found", "projects/active", "projects/resting", "projects/done", "projects/left"]:
         (studio / d).mkdir(parents=True, exist_ok=True); (studio / d / ".keep").touch()
-if memory == "desk":
+if memory in ("desk", "deskw"):
     for d in ["days", "works"]:
         (studio / d).mkdir(parents=True, exist_ok=True); (studio / d / ".keep").touch()
 if charter != "v5":
@@ -26,7 +26,7 @@ if charter != "v5":
         "The part of your charter about how the studio is kept has changed. Everything you made and wrote is where you left it.\n", encoding="utf-8")
 subprocess.run(["git", "-C", str(studio), "add", "-A"], check=True)
 subprocess.run(["git", "-C", str(studio), "commit", "-qm", f"Forked from {src} under condition {cond}"], check=True)
-lines = text.split("\n"); last = max(i for i, l in enumerate(lines) if "| active |" in l)
+lines = text.split("\n"); last = max(i for i, l in enumerate(lines) if re.match(r"\| a\d+ \| \.\./studios/", l))
 lines.insert(last + 1, f"| {aid} | ../studios/{aid} | {srow.group(1)} | {cond} | active | {srow.group(2)} | medium |")
 reg.write_text("\n".join(lines), encoding="utf-8")
 print("forked", src, "->", aid, cond, "at session", srow.group(2))

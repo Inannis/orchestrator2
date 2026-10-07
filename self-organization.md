@@ -9,7 +9,7 @@ Read after `instructions.md`. Then `registry.md`, `template/conditions.md`, the 
 - Per day: `runs/days/<id>-<n>.md` and one ledger line with a `note` in `runs/runs.ndjson`.
 
 ## The design
-- **Reference.** Two artists (a3, a7) carry the current best system, R1, R2… (row `ref` in conditions). Two, so chance and system can be told apart. Every accepted change moves into the reference: into `template/` and into the two live studios.
+- **Reference.** Two artists carry the current best system, R1, R2… (row `ref` in conditions; who, in the registry). Two, so chance and system can be told apart. Every accepted change moves into the reference: into `template/` and into the two live studios.
 - **Running is a decision.** No artist runs by default. A reference runs only when a question needs its new sessions; its recent sessions already are the control. An `active` artist is an arm of an open test and runs until its window closes, then pauses.
 - **Tests.** A **fork** clones a reference studio at today's commit and changes one thing (`tools/fork.py`); for anything that acts on a formed practice. **Fresh matched seeds** are two new studios differing only in the change, from the same first arrival (`seed.py --like`); for anything that acts on beginnings. **Replays** rerun one day from a cloned state (`day.py --studio <clone> --enc-p 0`, no ledger); for model and wording questions. Several tests run at once, one question each. Window: 3 sessions.
 - **Judgement is mine.** I read the work and decide. Readers are the same model with less capability: use them for an overview of what artists did (so my context stays on the questions), and for a second opinion only with a targeted question where a clean context is a real advantage (`tools/compare.py`, `COMPARE-READER-PROMPT.md`). A reader's verdict is not more objective than mine.
@@ -38,7 +38,7 @@ Read after `instructions.md`. Then `registry.md`, `template/conditions.md`, the 
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
 
 ## Where it stands (2026-10-07, session 15)
-Reference R1: a3 (s19), a7 (s15). Open: H20 memory, a15 Rooms and a16 Desk, extended to s20 (Desk's view was blind until day.py began committing); H22 objects feed, a19 and a20 to s6. Paused: a1, a5, a6, a8–a14, a17, a18, a21.
-Closed today: A/B/C at s5 (no condition moved the knowledge subject or the checking habit); H21 `minimum` (padding); H19 record vs bare (no difference, the object leads).
-**Next:** rounds for a15, a16, a19, a20; judge H20 at s20 and H22 at s6. Candidate after that: a hybrid memory (Rooms' wants with Desk's derived view), and a restart check once something is accepted.
+Reference R2 (Desk memory, objects feed): a16 (a7's practice, s20) and a22 (fresh, the restart check). R1 (a3, a7) paused. Open: H23 wants on Desk, a23 (fork of a16), s21–25; restart check, a22, to s5.
+Closed today: A/B/C (nothing moved the knowledge subject or the checking habit); H21 `minimum` (padding); H19 record vs bare (the object leads); H20 (Desk accepted); H22 (`objects` accepted).
+**Next:** rounds of a22 and a23; judge at a22 s5 and a23 s25. Candidate after: the checking habit (work that cannot be checked; a person who answers).
 Open user requests: two listens (`notes/requests/request-006.md`).

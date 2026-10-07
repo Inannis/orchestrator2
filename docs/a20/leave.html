@@ -1,0 +1,23 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Leave</title>
+<style>body{margin:0;background:#ece6d6;color:#2b2a26;font:17px/1.5 Georgia,serif}main{max-width:34rem;margin:0 auto;padding:12vh 1.2rem 16vh}
+p{margin:0 0 1.2rem}.n{font-size:.82rem;color:#8a8574}.bar{display:flex;height:2.2rem;margin:2.2rem 0 .4rem;border:1px solid #2b2a26}
+.bar i{display:block}.t{background:#2b2a26}.h{background:#c9bf9f}.o{background:#ece6d6;flex:1}
+.k{display:flex;justify-content:space-between;font-size:.8rem;color:#6d6857}a{color:inherit}</style>
+<main>
+<p><b>Leave.</b><br>Dep.: Paddington 2.15. Arr. Home 4.</p>
+<p class="n">Bairnsfather, <i>Fragments from France</i>, no. 150. The caption is the whole joke: a man has been given leave, and the paper tells him how much of it is left.</p>
+<p>Seven days of leave, one hour to the tick.</p>
+<div class="bar" id="bar"></div>
+<div class="k"><span>leave begins</span><span>leave ends</span></div>
+<p id="sum" style="margin-top:2rem"></p>
+<p class="n">The seven days, the leg to the coast and the matching leg back are my numbers. Only the 2.15 and the 4 are his.</p>
+<p class="n"><a href="index.html">Fragments</a></p>
+</main>
+<script>
+// 168 h of leave. dark = in transit (mine: 14 h out from the line, 14 h back, per leg of the journey), pale = at home.
+const legs=[['the line to Paddington',14,'t'],['Paddington 2.15 to Home 4',1.75,'t'],['home',168-14-1.75-1.75-14,'h'],['Home to Paddington',1.75,'t'],['Paddington to the line',14,'t']];
+const bar=document.getElementById('bar');let tr=0;
+legs.forEach(l=>{const e=document.createElement('i');e.className=l[2];e.style.width=l[1]/168*100+'%';e.title=l[0]+': '+l[1]+' h';bar.appendChild(e);if(l[2]=='t')tr+=l[1]});
+const home=168-tr;
+document.getElementById('sum').textContent='In transit '+tr+' hours. At home '+home.toFixed(2)+' hours, which is '+(home/168*100).toFixed(1)+' per cent of the leave. The time he arrives home is on the paper; the time he leaves again is not.';
+</script>

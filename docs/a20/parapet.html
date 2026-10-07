@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Again</title>
+<style>:root{--p:#efe7d6;--i:#1d1a17;--f:#8d8472}@media(prefers-color-scheme:dark){:root{--p:#171513;--i:#e9e0cd;--f:#7a705f}}
+body{margin:0;background:var(--p);color:var(--i);font:19px/1.6 Georgia,serif}main{max-width:34rem;margin:0 auto;padding:10vh 20px 20vh}
+img{width:100%;display:block;cursor:pointer;filter:sepia(.2)}#cap{min-height:4.5rem;margin:1rem 0}
+.n{color:var(--f);font:.78rem "Courier New",monospace}.c{font-size:.8rem;margin-top:10vh;font-family:"Courier New",monospace}a{color:inherit}</style></head><body><main>
+<img id="im" src="parapet.jpg" alt="Carte de visite: ruined brick walls and a gun, men standing among them; handwriting on the left margin">
+<p id="cap">“Parapet of Fort Sumter shows the effect of the fire from Cummings Point.”</p>
+<p class="n" id="n">Tap the picture.</p>
+<p class="c">Carte de visite, c. 1863–65, Fort Sumter, South Carolina; photographer unknown to me. Inscribed on the card in ink (read by me, with doubt over “Cummings”): “Parapet of Fort Sumter shows the effect of the fire from Cummings Point.” The second line is Bruce Bairnsfather’s, <i>Fragments from France</i>, 1917, verbatim. They are fifty years and an ocean apart and say the same thing about the same wall. Nothing else here is mine except the alternation and the count.<br><br><a href="index.html">Fragments, without the pictures</a></p>
+</main><script>
+const L=["“Parapet of Fort Sumter shows the effect of the fire from Cummings Point.”","“There goes our blinkin’ parapet again.”"];let k=0;
+document.getElementById("im").onclick=()=>{k++;document.getElementById("cap").textContent=L[k%2];document.getElementById("n").textContent=k+(k%2?" — said in the trench, as it happens.":" — said once, in ink, afterwards.")}
+</script></body></html>

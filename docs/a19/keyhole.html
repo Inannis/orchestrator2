@@ -1,0 +1,14 @@
+<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Keyhole</title>
+<body style="margin:0;background:#161814;color:#cfcfc4;font:22px/1.7 Georgia,serif;overflow:hidden;height:100vh">
+<div id=t style="position:absolute;inset:0;padding:12vh 12vw;color:#cfcfc4;-webkit-mask-image:radial-gradient(circle 90px at 50% 50%,#000 60%,transparent 100%);mask-image:radial-gradient(circle 90px at 50% 50%,#000 60%,transparent 100%)">
+She is wiping her hip.<br>Nobody asked her to be graceful.<br>She does not know the angle is good.<br>The back is not turned for us; it is turned for the hip.<br>Where she is not performing, the bronze is rough all the way down.<br>The roughness is not for us either.
+</div>
+<p style="position:absolute;bottom:1em;left:1em;margin:0;font-size:14px;color:#777">Edgar Degas, Seated Woman Wiping her Left Hip, bronze, cast 1920 (Met). Move to look.</p>
+<script>
+const t=document.getElementById('t');let X=innerWidth/2,Y=innerHeight/2,gx=X,gy=Y;
+function m(e){X=e.clientX;Y=e.clientY}
+addEventListener('pointermove',m);
+(function f(){gx+=(X-gx)*.08;gy+=(Y-gy)*.08;
+const g=`radial-gradient(circle 90px at ${gx}px ${gy}px,#000 60%,transparent 100%)`;
+t.style.webkitMaskImage=t.style.maskImage=g;requestAnimationFrame(f)})();
+</script>

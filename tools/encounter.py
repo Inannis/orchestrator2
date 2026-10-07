@@ -107,7 +107,7 @@ def inaturalist(inbox, stamp):
 
 FEEDS = {"museum": [met, artic, gutenberg, wikipedia, living_artist, living_artist],
          "wide": [commons_photo, current_event, inaturalist, gutenberg, wikipedia, living_artist, met],
-         "objects": [met, artic, gutenberg]}
+         "objects": [met, met, gutenberg]}
 
 def bare(src, body, inbox, stamp):
     """The thing without its record: the picture, the passage, or the text alone. None if there is no thing."""

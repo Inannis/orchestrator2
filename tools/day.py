@@ -28,7 +28,7 @@ memory = crow.group(2) if crow else "own"
 FLOOR = 20 * 60 if shape == "minimum" else 0  # minimum: the day goes on until it has lasted this long, never said
 today = datetime.date.today().isoformat()
 prompt = (root / "template" / "SESSION-PROMPT.md").read_text(encoding="utf-8").replace("{STUDIO}", studio.as_posix()).replace("{DATE}", today).replace("{N}", str(n))
-if memory == "rooms" and n % 5 == 0:  # a studio day is for sorting, not making, so it is short
+if memory in ("rooms", "deskw") and n % 5 == 0:  # a studio day is for sorting, not making, so it is short
     prompt += "\n\nToday is a studio day."; k = min(k, 1)
 handed = set()  # files already handed back today: no repeats within a day
 
@@ -92,10 +92,10 @@ def wait_for_reset(msg):
     print(f"{aid}: usage limit, waiting {secs / 60:.0f} min", file=sys.stderr, flush=True)
     time.sleep(secs); return True
 
-if not resume and memory in ("rooms", "desk") and (studio / "NOW.md").exists():
+if not resume and memory in ("rooms", "desk", "deskw") and (studio / "NOW.md").exists():
     (studio / "days").mkdir(exist_ok=True)
     (studio / "NOW.md").replace(studio / "days" / f"{n - 1:03d}.md")
-if not resume and memory == "desk":
+if not resume and memory in ("desk", "deskw"):
     subprocess.run([sys.executable, str(root / "tools" / "desk.py"), str(studio)])
 t0 = time.time(); turns = 0; cost = 0.0; tok = 0; enc = "none"; err = None; waits = 0
 msgs = [prompt] if not resume else [more(False)]

@@ -1,0 +1,27 @@
+<!doctype html><meta charset=utf-8><title>Unwatched</title>
+<body style="margin:0;background:#161814;overflow:hidden">
+<canvas id=c style="display:block"></canvas>
+<script>
+const c=document.getElementById('c'),x=c.getContext('2d');
+let W=c.width=innerWidth,H=c.height=innerHeight;
+let mx=-999,my=-999,last=-1e5;
+onmousemove=e=>{mx=e.clientX;my=e.clientY;last=performance.now()};
+onresize=()=>{W=c.width=innerWidth;H=c.height=innerHeight};
+const n=140,b=[];let s=11;const R=()=>(s=(s*16807)%2147483647)/2147483647;
+for(let i=0;i<n;i++)b.push({x:R()*W,g:0,h:30+R()*90,ph:R()*6,lean:R()-.5});
+x.fillStyle='#161814';
+function f(t){
+ x.fillStyle='rgba(22,24,20,1)';x.fillRect(0,0,W,H);
+ const still=(t-last)>1500;
+ x.strokeStyle='#8a9a6a';x.lineWidth=1.4;
+ for(const k of b){
+  const near=Math.hypot(k.x-mx,H-k.h*k.g*.5-my)<160;
+  if(near)k.g=Math.max(0,k.g-.02);
+  else if(still)k.g=Math.min(1,k.g+.003);
+  const hh=k.h*k.g;if(hh<.5)continue;
+  x.beginPath();x.moveTo(k.x,H);
+  x.quadraticCurveTo(k.x+k.lean*hh*.4,H-hh*.6,k.x+k.lean*hh*.8+Math.sin(t/900+k.ph)*2,H-hh);x.stroke()}
+ x.fillStyle='#cfcfc4';x.fillRect(W/2-1,H-8,2,8);
+ requestAnimationFrame(f)}
+requestAnimationFrame(f);
+</script>

@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yes, my love, yes</title>
+<style>:root{--p:#efe7d6;--i:#1d1a17;--f:#8d8472}@media(prefers-color-scheme:dark){:root{--p:#171513;--i:#e9e0cd;--f:#7a705f}}
+body{margin:0;background:var(--p);color:var(--i);font:19px/1.6 Georgia,serif}main{max-width:34rem;margin:0 auto;padding:12vh 20px 20vh}
+p{margin:0 0 .9rem}.me{opacity:.85}.she{margin-left:1.4rem}.pa{margin-left:1.4rem;font-style:italic}.n{color:var(--f);font:.78rem "Courier New",monospace}
+#log{min-height:6rem}button{font:.85rem "Courier New",monospace;background:none;color:inherit;border:1px solid currentColor;padding:.5rem 1rem;cursor:pointer}
+.c{font-size:.8rem;margin-top:12vh;font-family:"Courier New",monospace}a{color:inherit}
+#smoke{display:block;margin:.5rem 0 1.5rem 1.4rem;width:60px;height:70px}#smoke path{fill:none;stroke:var(--i);stroke-width:1;opacity:0;transition:opacity 2s}</style></head><body><main>
+<p class="n" id="t">Natalia Savishna’s room.</p>
+<div id="log"></div>
+<svg id="smoke" viewBox="0 0 60 70"><path d="M30 68c-8-10 8-16 0-26s8-16 0-26"/></svg>
+<p><button id="b">Leave my lessons and run to her room</button></p>
+<p class="c">Leo Tolstoy, <i>Childhood</i>, ch. XIII, trans. C. J. Hogarth. Her lines and the pastille are the book’s; his boasts are the book’s list (“to become a general, to marry a beautiful woman…”) cut into separate sentences, with my “I meant”. Hers never changes. “Not only did she never talk, but she seemed never even to think, of herself.” The count in grey is mine. In the book she says “this is nearly the last one” once, and the pastille is still there; here it is still there each time.<br><br><a href="index.html">Fragments, without the pictures</a> &middot; <a href="dream.html">The dream I had not had</a></p>
+</main><script>
+const B=["to become a general","to marry a beautiful woman","to buy a chestnut horse","to build myself a house of glass","to invite Karl Ivanitch’s relatives to come and visit me from Saxony"];
+let v=0,k=0,yes=0;const $=x=>document.getElementById(x);
+function add(c,s){const p=document.createElement("p");p.className=c;p.textContent=s;$("log").appendChild(p);p.scrollIntoView({block:"nearest"})}
+$("b").onclick=()=>{
+ if(k==B.length){add("pa","(She opens the blue trunk, and takes from it a fumigation pastille, which she lights and shakes for my benefit.)");
+  add("she","“These, dear, are the pastilles which your grandfather (now in Heaven) brought back from Otchakov after fighting against the Turks.” Then she adds with a sigh: “But this is nearly the last one.”");
+  $("smoke").firstElementChild.style.opacity=1;setTimeout(()=>$("smoke").firstElementChild.style.opacity=0,5000);
+  k=0;v++;$("t").textContent="Visits: "+v+". Pastilles left: nearly the last one.";$("b").textContent="Leave my lessons and run to her room";return}
+ if(k==0)add("n","— "+(v?"again":"")+" —");
+ add("me","I meant "+B[k]+".");k++;add("she","“Yes, my love, yes.”");yes++;
+ $("t").textContent="Visits: "+v+". She has said yes "+yes+" times. She has said nothing of herself.";
+ if(k==B.length)$("b").textContent="Rise, and prepare to go";}
+</script></body></html>
