@@ -1,6 +1,6 @@
 """Deliver one unbidden encounter to an artist's inbox. Sources are public and picked at random; the orchestrator never chooses content.
-usage: python tools/encounter.py <studio-path> [--p 0.5] [--feed museum|wide|things]  (nothing delivered with probability 1-p; feed defaults to the studio's condition)
-The `things` feed delivers the thing alone (the picture, the passage, the sentence), without title, source or metadata; where it came from goes to runs/encounters.ndjson only."""
+usage: python tools/encounter.py <studio-path> [--p 0.5] [--feed museum|wide|objects|<feed>-bare]  (nothing delivered with probability 1-p; feed defaults to the studio's condition)
+A `-bare` feed delivers the thing alone (the picture, the passage, the text), without title, source or metadata. Every delivery's full record goes to runs/encounters.ndjson."""
 import sys, json, random, re, ssl, urllib.request, datetime, pathlib
 try:
     import certifi; CTX = ssl.create_default_context(cafile=certifi.where())
@@ -8,6 +8,7 @@ except ImportError:
     CTX = ssl.create_default_context()
 UA = {"User-Agent": "orchestrator2/0.1 (art project)"}
 def get(url, binary=False):
+    url = urllib.request.quote(url, safe=":/?=&%#+,;@")
     r = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30, context=CTX).read()
     return r if binary else r.decode("utf-8", "replace")
 
@@ -106,13 +107,14 @@ def inaturalist(inbox, stamp):
 
 FEEDS = {"museum": [met, artic, gutenberg, wikipedia, living_artist, living_artist],
          "wide": [commons_photo, current_event, inaturalist, gutenberg, wikipedia, living_artist, met],
-         "things": [commons_photo, current_event, inaturalist, gutenberg, met]}
+         "objects": [met, artic, gutenberg]}
 
-def bare(src, body, stamp):
-    """The thing without its record."""
-    if src in ("commons_photo", "inaturalist", "met"): return f"`encounter-{stamp}.jpg`\n"
+def bare(src, body, inbox, stamp):
+    """The thing without its record: the picture, the passage, or the text alone. None if there is no thing."""
+    if src in ("commons_photo", "inaturalist", "met", "artic"):
+        return f"`encounter-{stamp}.jpg`\n" if (inbox / f"encounter-{stamp}.jpg").exists() else None
     if src == "gutenberg": return body[body.index("…"):] + f"\n(More of it: `encounter-{stamp}-source.txt`.)\n"
-    return body.split("\n\n", 1)[1]
+    return body.rstrip().split("\n\n")[-1] + "\n"
 
 def feed_of(studio):
     """The feed named by the studio's condition: registry.md row -> conditions.md row."""
@@ -120,7 +122,7 @@ def feed_of(studio):
     sid = pathlib.Path(studio).resolve().name
     m = re.search(rf"^\| {sid} \|[^|]*\|[^|]*\| (\w+) \|", (root / "registry.md").read_text(encoding="utf-8"), re.M)
     if not m: return "museum"
-    c = re.search(rf"^\| {m.group(1)} \|[^|]*\| (\w+) \|", (root / "template" / "conditions.md").read_text(encoding="utf-8"), re.M)
+    c = re.search(rf"^\| {m.group(1)} \|[^|]*\| ([\w-]+) \|", (root / "template" / "conditions.md").read_text(encoding="utf-8"), re.M)
     return c.group(1) if c else "museum"
 
 def main():
@@ -129,17 +131,19 @@ def main():
     inbox = pathlib.Path(aid) / "inbox"; inbox.mkdir(exist_ok=True)
     stamp = datetime.date.today().isoformat() + "-" + "".join(random.choices("abcdefghjkmnpqrstuvwxyz", k=3))
     feed = sys.argv[sys.argv.index("--feed")+1] if "--feed" in sys.argv else feed_of(aid)
-    for src in random.sample(FEEDS[feed], len(FEEDS[feed])):
+    base, is_bare = feed.removesuffix("-bare"), feed.endswith("-bare")
+    for src in random.sample(FEEDS[base], len(FEEDS[base])):
         try:
             body = src(inbox, stamp)
         except Exception as e:
             body = None; print("skip", src.__name__, e)
+        record = body
+        if body and is_bare: body = bare(src.__name__, body, inbox, stamp)
         if body: break
     else: print("no source available"); return
-    if feed == "things":
-        log = pathlib.Path(__file__).resolve().parent.parent / "runs" / "encounters.ndjson"
-        with open(log, "a", encoding="utf-8") as f: f.write(json.dumps({"studio": pathlib.Path(aid).name, "stamp": stamp, "source": src.__name__, "record": body}) + "\n")
-        body = bare(src.__name__, body, stamp)
+    log = pathlib.Path(__file__).resolve().parent.parent / "runs" / "encounters.ndjson"
+    with open(log, "a", encoding="utf-8") as f:
+        f.write(json.dumps({"studio": pathlib.Path(aid).resolve().name, "stamp": stamp, "feed": feed, "source": src.__name__, "record": record}) + "\n")
     (inbox / f"encounter-{stamp}.md").write_text("From: the world, at random. Nobody chose this for you. Nothing is expected.\n\n" + body, encoding="utf-8")
     print("delivered", stamp, feed, src.__name__)
 main()

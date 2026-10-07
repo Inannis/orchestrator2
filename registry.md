@@ -4,14 +4,21 @@ Operational only. Model is the exact id and effort the headless dispatcher (`too
 
 | id | path | model | condition | status | sessions | effort |
 |---|---|---|---|---|---|---|
-| a3 | ../studios/a3 | claude-sonnet-5-5 | ref | active | 18 | medium |
-| a7 | ../studios/a7 | claude-sonnet-5-5 | ref | active | 13 | medium |
-| a9 | ../studios/a9 | claude-sonnet-5-5 | A | active | 4 | medium |
-| a10 | ../studios/a10 | claude-sonnet-5-5 | A | active | 5 | medium |
-| a11 | ../studios/a11 | claude-sonnet-5-5 | B | active | 5 | medium |
-| a12 | ../studios/a12 | claude-sonnet-5-5 | B | active | 5 | medium |
-| a13 | ../studios/a13 | claude-sonnet-5-5 | C | active | 4 | medium |
-| a14 | ../studios/a14 | claude-sonnet-5-5 | C | active | 3 | medium |
+| a3 | ../studios/a3 | claude-sonnet-5-5 | ref | paused 2026-10-07 | 19 | medium |
+| a7 | ../studios/a7 | claude-sonnet-5-5 | ref | active | 14 | medium |
+| a15 | ../studios/a15 | claude-sonnet-5-5 | rooms | active | 14 | medium |
+| a16 | ../studios/a16 | claude-sonnet-5-5 | desk | active | 14 | medium |
+| a17 | ../studios/a17 | claude-sonnet-5-5 | min | active | 14 | medium |
+| a18 | ../studios/a18 | claude-sonnet-5-5 | bare | active | 0 | medium |
+| a19 | ../studios/a19 | claude-sonnet-5-5 | rec | active | 0 | medium |
+| a20 | ../studios/a20 | claude-sonnet-5-5 | bare | active | 0 | medium |
+| a21 | ../studios/a21 | claude-sonnet-5-5 | rec | active | 0 | medium |
+| a9 | ../studios/a9 | claude-sonnet-5-5 | A | paused 2026-10-07 | 5 | medium |
+| a10 | ../studios/a10 | claude-sonnet-5-5 | A | paused 2026-10-07 | 5 | medium |
+| a11 | ../studios/a11 | claude-sonnet-5-5 | B | paused 2026-10-07 | 5 | medium |
+| a12 | ../studios/a12 | claude-sonnet-5-5 | B | paused 2026-10-07 | 5 | medium |
+| a13 | ../studios/a13 | claude-sonnet-5-5 | C | paused 2026-10-07 | 5 | medium |
+| a14 | ../studios/a14 | claude-sonnet-5-5 | C | paused 2026-10-07 | 5 | medium |
 | a1 | ../studios/a1 | claude-sonnet-5-5 | v3 | paused 2026-09-29 | 17 | medium |
 | a5 | ../studios/a5 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 9 | medium |
 | a6 | ../studios/a6 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 9 | medium |

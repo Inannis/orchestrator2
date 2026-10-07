@@ -22,10 +22,13 @@ def live(status, **kw):
 k = int(opt("--k") or random.randint(1, 6))
 resume = opt("--resume")  # continue an interrupted day: --resume <session id> --k <continuations left>
 cond = row.group(3) if row else None
-crow = re.search(rf"^\| {cond} \| \w+ \| \w+ \| (\w+) \|", (root / "template" / "conditions.md").read_text(encoding="utf-8"), re.M) if cond else None
+crow = re.search(rf"^\| {cond} \| \w+ \| [\w-]+ \| (\w+) \| (\w+) \|", (root / "template" / "conditions.md").read_text(encoding="utf-8"), re.M) if cond else None
 shape = opt("--shape") or (crow.group(1) if crow else "plain")
+memory = crow.group(2) if crow else "own"
+FLOOR = 20 * 60 if shape == "minimum" else 0  # minimum: the day goes on until it has lasted this long, never said
 today = datetime.date.today().isoformat()
 prompt = (root / "template" / "SESSION-PROMPT.md").read_text(encoding="utf-8").replace("{STUDIO}", studio.as_posix()).replace("{DATE}", today).replace("{N}", str(n))
+if memory == "rooms" and n % 5 == 0: prompt += "\n\nToday is a studio day."
 handed = set()  # files already handed back today: no repeats within a day
 
 def own_file():
@@ -88,12 +91,17 @@ def wait_for_reset(msg):
     print(f"{aid}: usage limit, waiting {secs / 60:.0f} min", file=sys.stderr, flush=True)
     time.sleep(secs); return True
 
+if not resume and memory in ("rooms", "desk") and (studio / "NOW.md").exists():
+    (studio / "days").mkdir(exist_ok=True)
+    (studio / "NOW.md").replace(studio / "days" / f"{n - 1:03d}.md")
+if not resume and memory == "desk":
+    subprocess.run([sys.executable, str(root / "tools" / "desk.py"), str(studio)])
 t0 = time.time(); turns = 0; cost = 0.0; tok = 0; enc = "none"; err = None; waits = 0
 msgs = [prompt] if not resume else [more(False)]
 sid = resume
 with log.open("w", encoding="utf-8") as f:
     f.write(f"# {aid} session {n} · {today} · {model} · effort {effort} · K={k}\n\n")
-    total = k + 1 if not resume else k
+    total = (k + 1 if not resume else k) + (40 if FLOOR else 0)
     for i in range(total):
         live("running", turn=i + 1, turns=total, resumed=bool(resume), since=datetime.datetime.fromtimestamp(t0).isoformat(timespec="seconds"))
         d = turn(msgs[-1], sid)
@@ -127,7 +135,7 @@ with log.open("w", encoding="utf-8") as f:
             if turns == 1 and not resume:
                 fresh = (root / "registry.md").read_text(encoding="utf-8")
                 (root / "registry.md").write_text(re.sub(rf"^(\| {aid} \|(?:[^|]*\|){{4}}) \d+ \|", lambda m: f"{m.group(1)} {n} |", fresh, flags=re.M), encoding="utf-8")
-        if i == k: break
+        if i >= (k if not resume else k - 1) and time.time() - t0 >= FLOOR: break
         if i == 0 and not resume:
             e = subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", opt("--enc-p", "0.5")], capture_output=True, text=True).stdout
             m = re.search(r"delivered \S+ \S+ (\w+)", e)

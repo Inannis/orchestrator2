@@ -17,8 +17,8 @@ def read(p): return (root / p).read_text(encoding="utf-8")
 
 def conditions():
     out = {}
-    for m in re.finditer(r"^\| (\w+) \| (\w+) \| (\w+) \| (\w+) \| (.*) \|$", read("template/conditions.md"), re.M):
-        if m.group(1) != "name": out[m.group(1)] = dict(charter=m.group(2), feed=m.group(3), shape=m.group(4), notes=m.group(5))
+    for m in re.finditer(r"^\| (\w+) \| ([\w-]+) \| ([\w-]+) \| (\w+) \| (\w+) \| (.*) \|$", read("template/conditions.md"), re.M):
+        if m.group(1) != "name": out[m.group(1)] = dict(charter=m.group(2), feed=m.group(3), shape=m.group(4), memory=m.group(5), notes=m.group(6))
     return out
 
 def runs():
@@ -213,7 +213,7 @@ async function load(){
       <span class="tag c">${esc(a.condition)}</span><span class="tag" title="${esc(a.model)}">${esc(a.model_label)} · ${esc(a.effort)}</span><span class="tag">${esc(a.status)}</span>
       ${a.running?`<span class="tag run">working since ${a.running.since} · ${a.running.minutes} min · K ${a.running.k}</span>`:''}</div>
       ${a.live?`<div class="livebar">${a.live.status==='running'?`<span class="tag run">day ${a.live.n}: turn ${a.live.turn}/${a.live.turns}${a.live.resumed?' (resumed)':''} · since ${esc((a.live.since||'').slice(11,16))}</span>`:a.live.status==='stopped'?`<span class="tag" style="color:var(--acc2);border-color:var(--acc2)">day ${a.live.n} stopped after ${a.live.turns_done} turns: ${esc(a.live.limit?'usage limit'+(a.live.reset?' · resets '+a.live.reset:''):(a.live.error||'').slice(0,80))}</span>`:`<span class="sub">last day ${a.live.n} done · ${esc((a.live.updated||'').replace('T',' ').slice(0,16))}</span>`}</div>`:''}
-      <dl><dt>charter · feed · shape</dt><dd>${esc(c.charter||'?')} · ${esc(c.feed||'?')} · ${esc(c.shape||'?')}</dd>
+      <dl><dt>charter · feed · shape · memory</dt><dd>${esc(c.charter||'?')} · ${esc(c.feed||'?')} · ${esc(c.shape||'?')} · ${esc(c.memory||'?')}</dd>
       <dt>seeded</dt><dd>${esc(a.seeded)}</dd><dt>sessions</dt><dd>${a.sessions} (ledger: ${a.runs} runs, ${a.minutes} min, last ${esc(a.last||'–')})</dd>
       <dt>handoff</dt><dd>${a.entry?`${esc(a.entry)} · ${a.entry_words} words`:'–'}</dd><dt>works · public</dt><dd>${a.works??'–'} · ${a.public} files · <a href="${a.url}" target="_blank">site</a></dd>
       <dt>last commit</dt><dd>${esc(a.head)}</dd></dl>
@@ -226,7 +226,7 @@ async function load(){
       <label class="sub">model <select id="m-${a.id}">${Object.entries(s.models).filter(([id])=>!['sonnet','haiku'].includes(id)).map(([id,l])=>`<option value="${id===a.model?'':id}" ${id===a.model?'selected':''}>${esc(l)} · ${esc(id)}${id===a.model?' (registry)':''}</option>`).join('')}</select></label>
       <label class="sub">effort <select id="e-${a.id}">${s.efforts.map(e=>`<option value="${e===a.effort?'':e}" ${e===a.effort?'selected':''}>${e}${e===a.effort?' (registry)':''}</option>`).join('')}</select></label></div></div>`}).join('');
   document.querySelectorAll('details').forEach(d=>{d.ontoggle=()=>{open[d.dataset.k]=d.open; if(d.open&&d.dataset.fetch) fill(d)}; if(d.open&&d.dataset.fetch) fill(d)});
-  $('#conds').innerHTML='<tr><th>name</th><th>charter</th><th>feed</th><th>shape</th><th>notes</th></tr>'+Object.entries(s.conditions).map(([n,c])=>`<tr><td>${esc(n)}</td><td>${esc(c.charter)}</td><td>${esc(c.feed)}</td><td>${esc(c.shape)}</td><td>${esc(c.notes)}</td></tr>`).join('');
+  $('#conds').innerHTML='<tr><th>name</th><th>charter</th><th>feed</th><th>shape</th><th>memory</th><th>notes</th></tr>'+Object.entries(s.conditions).map(([n,c])=>`<tr><td>${esc(n)}</td><td>${esc(c.charter)}</td><td>${esc(c.feed)}</td><td>${esc(c.shape)}</td><td>${esc(c.memory)}</td><td>${esc(c.notes)}</td></tr>`).join('');
   $('#recent').innerHTML='<tr><th>run</th><th>date</th><th>model · effort</th><th>min</th><th>turns</th><th>note</th></tr>'+s.recent.map(r=>`<tr><td>${esc(r.run)}</td><td>${esc(r.date)}</td><td>${esc(r.model)}${r.effort?' · '+esc(r.effort):''}</td><td>${esc(r.minutes)}</td><td>${esc(r.turns)}</td><td>${esc((r.note||r.error||'').slice(0,200))}</td></tr>`).join('');
 }
 async function round(mode){const r=await fetch('/api/round',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({mode})});
