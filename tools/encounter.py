@@ -1,5 +1,6 @@
 """Deliver one unbidden encounter to an artist's inbox. Sources are public and picked at random; the orchestrator never chooses content.
-usage: python tools/encounter.py <studio-path> [--p 0.5] [--feed museum|wide]  (nothing delivered with probability 1-p; feed defaults to the studio's condition)"""
+usage: python tools/encounter.py <studio-path> [--p 0.5] [--feed museum|wide|things]  (nothing delivered with probability 1-p; feed defaults to the studio's condition)
+The `things` feed delivers the thing alone (the picture, the passage, the sentence), without title, source or metadata; where it came from goes to runs/encounters.ndjson only."""
 import sys, json, random, re, ssl, urllib.request, datetime, pathlib
 try:
     import certifi; CTX = ssl.create_default_context(cafile=certifi.where())
@@ -11,9 +12,11 @@ def get(url, binary=False):
     return r if binary else r.decode("utf-8", "replace")
 
 def met(inbox, stamp):
-    ids = json.loads(get("https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&isPublicDomain=true&q=a"))["objectIDs"]
+    search = "https://collectionapi.metmuseum.org/public/collection/v1.1/search?hasImages=true&isPublicDomain=true&q=a"
+    total = json.loads(get(search + "&limit=1"))["total"]
     for _ in range(8):
-        o = json.loads(get(f"https://collectionapi.metmuseum.org/public/collection/v1/objects/{random.choice(ids)}"))
+        oid = json.loads(get(f"{search}&limit=1&offset={random.randrange(min(total, 10000))}"))["objectIDs"][0]
+        o = json.loads(get(f"https://collectionapi.metmuseum.org/public/collection/v1/objects/{oid}"))
         if o.get("primaryImageSmall"): break
     else: return None
     img = get(o["primaryImageSmall"], binary=True)
@@ -102,7 +105,14 @@ def inaturalist(inbox, stamp):
             f"{tx.get('preferred_common_name') or ''} ({tx.get('name')})\nSeen: {r.get('observed_on')}, {r.get('place_guess')}\nhttps://www.inaturalist.org/observations/{r['id']}\n")
 
 FEEDS = {"museum": [met, artic, gutenberg, wikipedia, living_artist, living_artist],
-         "wide": [commons_photo, current_event, inaturalist, gutenberg, wikipedia, living_artist, met]}
+         "wide": [commons_photo, current_event, inaturalist, gutenberg, wikipedia, living_artist, met],
+         "things": [commons_photo, current_event, inaturalist, gutenberg, met]}
+
+def bare(src, body, stamp):
+    """The thing without its record."""
+    if src in ("commons_photo", "inaturalist", "met"): return f"`encounter-{stamp}.jpg`\n"
+    if src == "gutenberg": return body[body.index("…"):] + f"\n(More of it: `encounter-{stamp}-source.txt`.)\n"
+    return body.split("\n\n", 1)[1]
 
 def feed_of(studio):
     """The feed named by the studio's condition: registry.md row -> conditions.md row."""
@@ -126,6 +136,10 @@ def main():
             body = None; print("skip", src.__name__, e)
         if body: break
     else: print("no source available"); return
+    if feed == "things":
+        log = pathlib.Path(__file__).resolve().parent.parent / "runs" / "encounters.ndjson"
+        with open(log, "a", encoding="utf-8") as f: f.write(json.dumps({"studio": pathlib.Path(aid).name, "stamp": stamp, "source": src.__name__, "record": body}) + "\n")
+        body = bare(src.__name__, body, stamp)
     (inbox / f"encounter-{stamp}.md").write_text("From: the world, at random. Nobody chose this for you. Nothing is expected.\n\n" + body, encoding="utf-8")
     print("delivered", stamp, feed, src.__name__)
 main()
