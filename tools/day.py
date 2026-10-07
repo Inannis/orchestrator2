@@ -11,7 +11,7 @@ def opt(name, default=None):
 reg = (root / "registry.md").read_text(encoding="utf-8")
 row = re.search(rf"^\| {aid} \| ([^|]+) \| ([\w.-]+) \| (\w+) \| [^|]+ \| (\d+) \|(?: (\w+) \|)?", reg, re.M)
 studio = pathlib.Path(opt("--studio") or (root / row.group(1).strip())).resolve()
-model = opt("--model") or (row.group(2) if row else "claude-sonnet-5")
+model = opt("--model") or (row.group(2) if row else "claude-sonnet-5-5")
 effort = opt("--effort") or (row.group(5) if row and row.group(5) else "medium")
 n = int(opt("--n") or ((int(row.group(4)) + (0 if "--resume" in args else 1)) if row else 1))
 state_file = root / "runs" / "days" / f"{aid}.state.json"  # exists only while a day is unfinished; round.py resumes it

@@ -9,7 +9,7 @@ PORT = int(sys.argv[sys.argv.index("--port") + 1]) if "--port" in sys.argv else 
 MAX = 3
 running = {}  # id -> {"proc", "started", "k", "model"}
 lock = threading.Lock()
-MODELS = {"claude-sonnet-5": "Sonnet 5", "claude-opus-5-5": "Opus 5.5", "claude-opus-5": "Opus 5", "claude-haiku-4-5": "Haiku 4.5", "sonnet": "Sonnet (alias)", "haiku": "Haiku (alias)"}
+MODELS = {"claude-sonnet-5-5": "Sonnet 5.5", "claude-sonnet-5": "Sonnet 5", "claude-opus-5-5": "Opus 5.5", "claude-opus-5": "Opus 5", "claude-haiku-4-5": "Haiku 4.5", "sonnet": "Sonnet (alias)", "haiku": "Haiku (alias)"}
 EFFORTS = ["low", "medium", "high", "xhigh", "max"]
 ENTRY = ["NOW.md", "STATE.md", "MEMORY.md", "STATUS.md", "journal.md", "notes.md", "memory/notes.md", "memory/journal.md", "memory/MEMORY.md"]
 

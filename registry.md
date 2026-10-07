@@ -1,21 +1,21 @@
 # Registry
 
-Operational only. Model is the exact id and effort the headless dispatcher (`tools/day.py`) passes to the CLI; set 2026-09-29 to Sonnet 5 at medium for every running artist. Identity lives in the studio. Active artists are capped by reason, not number: each is a unique experiment arm or a control (user, 2026-09-30). Three running at a time. Conditions are in `template/conditions.md`. Paused studios are intact and resumable; they do not count toward six.
+Operational only. Model is the exact id and effort the headless dispatcher (`tools/day.py`) passes to the CLI; set 2026-10-07 to Sonnet 5.5 at medium for every artist (Sonnet 5 from 2026-09-29). Identity lives in the studio. Active artists are capped by reason, not number: each is a unique experiment arm or a control (user, 2026-09-30). Three running at a time. Conditions are in `template/conditions.md`. Paused studios are intact and resumable; they do not count toward six.
 
 | id | path | model | condition | status | sessions | effort |
 |---|---|---|---|---|---|---|
-| a3 | ../studios/a3 | claude-sonnet-5 | ref | active | 18 | medium |
-| a7 | ../studios/a7 | claude-sonnet-5 | ref | active | 13 | medium |
-| a9 | ../studios/a9 | claude-sonnet-5 | A | active | 4 | medium |
-| a10 | ../studios/a10 | claude-sonnet-5 | A | active | 4 | medium |
-| a11 | ../studios/a11 | claude-sonnet-5 | B | active | 5 | medium |
-| a12 | ../studios/a12 | claude-sonnet-5 | B | active | 5 | medium |
-| a13 | ../studios/a13 | claude-sonnet-5 | C | active | 4 | medium |
-| a14 | ../studios/a14 | claude-sonnet-5 | C | active | 3 | medium |
-| a1 | ../studios/a1 | claude-sonnet-5 | v3 | paused 2026-09-29 | 17 | medium |
-| a5 | ../studios/a5 | claude-sonnet-5 | ref | paused 2026-09-29 | 9 | medium |
-| a6 | ../studios/a6 | claude-sonnet-5 | ref | paused 2026-09-29 | 9 | medium |
-| a8 | ../studios/a8 | claude-sonnet-5 | ref | paused 2026-09-29 | 7 | medium |
+| a3 | ../studios/a3 | claude-sonnet-5-5 | ref | active | 18 | medium |
+| a7 | ../studios/a7 | claude-sonnet-5-5 | ref | active | 13 | medium |
+| a9 | ../studios/a9 | claude-sonnet-5-5 | A | active | 4 | medium |
+| a10 | ../studios/a10 | claude-sonnet-5-5 | A | active | 5 | medium |
+| a11 | ../studios/a11 | claude-sonnet-5-5 | B | active | 5 | medium |
+| a12 | ../studios/a12 | claude-sonnet-5-5 | B | active | 5 | medium |
+| a13 | ../studios/a13 | claude-sonnet-5-5 | C | active | 4 | medium |
+| a14 | ../studios/a14 | claude-sonnet-5-5 | C | active | 3 | medium |
+| a1 | ../studios/a1 | claude-sonnet-5-5 | v3 | paused 2026-09-29 | 17 | medium |
+| a5 | ../studios/a5 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 9 | medium |
+| a6 | ../studios/a6 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 9 | medium |
+| a8 | ../studios/a8 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 7 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
