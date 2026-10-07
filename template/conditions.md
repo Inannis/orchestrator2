@@ -7,7 +7,7 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 | ref | v5 | museum | plain | own | R1, the current reference system (a3, a7). |
 | rooms | rooms | museum | plain | rooms | H20, fork of a7. |
 | desk | desk | museum | plain | desk | H20, fork of a7. |
-| min | v5 | museum | minimum | own | H21, fork of a7. |
+| min | v5 | museum | minimum | own | Closed 2026-10-07: padding (paused a17). |
 | bare | v5 | objects-bare | plain | own | H19, fresh, matched with `rec`. |
 | rec | v5 | objects | plain | own | H19, fresh, the record twin of `bare`. |
 | A | v5 | wide | plain | own | Closed 2026-10-07 (paused a9, a10). |

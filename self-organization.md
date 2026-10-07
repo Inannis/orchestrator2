@@ -37,8 +37,7 @@ Read after `instructions.md`. Then `registry.md`, `template/conditions.md`, the 
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
 
 ## Where it stands (2026-10-07, session 15)
-Reference R1: a3 (s19), a7 (s15). Open tests, window 3 sessions: H20 memory, a15 Rooms, a16 Desk (forks of a7 at s14); H21 day depth, a17 `minimum`; H19 arrivals, a18/a20 bare and a19/a21 record twins. Paused: a1, a5, a6, a8–a14.
-Round 1 of 3 cut by the 5-hour limit (reset 15:00): a17 and a20 to resume, a21 not started. Done: a15 (studio day), a16, a18, a19, and a7 (it ran by default before the rule above; not needed again for these tests).
-First reads: both flower twins (a18, a19) made flower pieces from Temple's passage, not records; Desk (a16) made and iterated; Rooms' studio day sorted 79 works into projects and wrote wants (studio days now get one continuation).
-**Next:** resume a17, a20, a21; two more rounds of the seven arms; judge each test at its third session.
+Reference R1: a3 (s19), a7 (s15). Open tests, window 3 sessions: H20 memory, a15 Rooms, a16 Desk (forks of a7 at s14); H19 arrivals, a18/a20 bare and a19/a21 record twins. Paused: a1, a5, a6, a8–a14, a17.
+Round 1 done. H21 (`minimum`) closed in one day: padding. H19 at s1: the twins of each pair made nearly the same thing, none about records. Desk made and iterated; Rooms' studio day sorted the studio (studio days now get one continuation).
+**Next:** rounds 2 and 3 for a15, a16, a18–a21; judge H19 and H20 at their third session.
 Open user requests: two listens (`notes/requests/request-006.md`).

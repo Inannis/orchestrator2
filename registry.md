@@ -8,7 +8,7 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a7 | ../studios/a7 | claude-sonnet-5-5 | ref | reference | 15 | medium |
 | a15 | ../studios/a15 | claude-sonnet-5-5 | rooms | active | 15 | medium |
 | a16 | ../studios/a16 | claude-sonnet-5-5 | desk | active | 15 | medium |
-| a17 | ../studios/a17 | claude-sonnet-5-5 | min | active | 15 | medium |
+| a17 | ../studios/a17 | claude-sonnet-5-5 | min | paused 2026-10-07 | 15 | medium |
 | a18 | ../studios/a18 | claude-sonnet-5-5 | bare | active | 1 | medium |
 | a19 | ../studios/a19 | claude-sonnet-5-5 | rec | active | 1 | medium |
 | a20 | ../studios/a20 | claude-sonnet-5-5 | bare | active | 1 | medium |
