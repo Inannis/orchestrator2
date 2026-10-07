@@ -1,5 +1,5 @@
 """Run one artist's working day headless, end to end: first turn, one encounter draw, K private continuations, a ledger line.
-usage: python tools/day.py <id> [--k K] [--model M] [--effort E] [--shape S] [--resume SESSION_ID] [--studio PATH] [--n N]
+usage: python tools/day.py <id> [--k K] [--model M] [--effort E] [--shape S] [--resume SESSION_ID] [--studio PATH] [--n N] [--enc-p P]
 Shapes (how the day is kept going; see template/conditions.md): "plain" says only that the day is not over;
 "return" also hands back one of the artist's own earlier files, drawn at random.
 Needs the claude CLI logged in (`claude auth login` or CLAUDE_CODE_OAUTH_TOKEN). Handbacks go to runs/days/, not to anyone's context."""
@@ -129,7 +129,7 @@ with log.open("w", encoding="utf-8") as f:
                 (root / "registry.md").write_text(re.sub(rf"^(\| {aid} \|(?:[^|]*\|){{4}}) \d+ \|", lambda m: f"{m.group(1)} {n} |", fresh, flags=re.M), encoding="utf-8")
         if i == k: break
         if i == 0 and not resume:
-            e = subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", "0.5"], capture_output=True, text=True).stdout
+            e = subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", opt("--enc-p", "0.5")], capture_output=True, text=True).stdout
             m = re.search(r"delivered \S+ \S+ (\w+)", e)
             enc = m.group(1) if m else "none"
             msgs.append(more(bool(m)))
