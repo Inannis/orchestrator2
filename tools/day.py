@@ -28,7 +28,8 @@ memory = crow.group(2) if crow else "own"
 FLOOR = 20 * 60 if shape == "minimum" else 0  # minimum: the day goes on until it has lasted this long, never said
 today = datetime.date.today().isoformat()
 prompt = (root / "template" / "SESSION-PROMPT.md").read_text(encoding="utf-8").replace("{STUDIO}", studio.as_posix()).replace("{DATE}", today).replace("{N}", str(n))
-if memory == "rooms" and n % 5 == 0: prompt += "\n\nToday is a studio day."
+if memory == "rooms" and n % 5 == 0:  # a studio day is for sorting, not making, so it is short
+    prompt += "\n\nToday is a studio day."; k = min(k, 1)
 handed = set()  # files already handed back today: no repeats within a day
 
 def own_file():

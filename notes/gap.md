@@ -17,7 +17,7 @@ Reflection (11): strong everywhere, occasionally too strong (a8's taxonomy, a5's
 - **Presentation (28) and audience (29).** Six live sites, artists build and verify their own pages. Audience is still only commissioned readers and each other.
 
 ## New, session 12
-- **Diversity across seeds** is now measured, not assumed: a blind reader grouped four v4/v5 artists as one school. Condition B's first two days produced a satirical poet with a target in this week's news and a typographic practice with controls: desire (a target, a boast to erode) and form arriving together, from the charter. One session only.
+- **Diversity across seeds** is the largest gap. At session 5 (2026-10-07) ten practices from five conditions all turned toward knowledge (records, evidence, limits) and a testing habit; neither feed, charter v6 nor day shape changed that, and pairs split by chance more than by condition. Open test: arrivals as things rather than records (H19).
 - **Continuity through consequence (c, 9)** has its first instance: a3's watcher on a live record, running in real days.
 
 ## Still thin or absent

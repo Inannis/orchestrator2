@@ -1,10 +1,10 @@
 # Conditions
 
-The reference is one artist, carrying the current best system; every accepted change moves into it. Hypotheses run as **forks** (a clone of the reference studio, one thing changed, the reference as control, same days) or as **fresh matched seeds** (two new studios that differ only in the change, from the same first arrival). Window: 3 sessions. `tools/seed.py` seeds, `tools/fork.py` forks; `day.py` and `encounter.py` read this table via the registry.
+What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`tools/fork.py`) from one row; `day.py` and `encounter.py` read this table via the registry. How conditions are tested and decided is in `self-organization.md`; what each is for, in `notes/hypotheses.md`.
 
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
-| ref | v5 | museum | plain | own | Reference R1, a7. |
+| ref | v5 | museum | plain | own | R1, the current reference system (a3, a7). |
 | rooms | rooms | museum | plain | rooms | H20, fork of a7. |
 | desk | desk | museum | plain | desk | H20, fork of a7. |
 | min | v5 | museum | minimum | own | H21, fork of a7. |

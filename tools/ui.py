@@ -208,7 +208,7 @@ async function load(){
     <button class="ghost" ${R.alive||!(R.resumable||[]).length?'disabled':''} onclick="round('resume')">Resume unfinished${(R.resumable||[]).length?' ('+R.resumable.join(', ')+')':''}</button>
     <span class="sub">${R.alive?'a round is running; it stops by itself on a usage limit':'nothing runs unless started here or by tools/round.py'}</span></div>
     ${(R.log||[]).length?`<details data-k="rlog" ${open['rlog']?'open':''}><summary>Round log</summary><pre>${esc(R.log.join('\n'))}</pre></details>`:''}`;
-  $('#grid').innerHTML=s.artists.map(a=>{const c=a.cond||{}; const paused=!a.status.startsWith('active');
+  $('#grid').innerHTML=s.artists.map(a=>{const c=a.cond||{}; const paused=!(a.status.startsWith('active')||a.status.startsWith('reference'));
     return `<div class="card ${paused?'paused':''}"><div class="top"><span class="id">${a.id}</span>
       <span class="tag c">${esc(a.condition)}</span><span class="tag" title="${esc(a.model)}">${esc(a.model_label)} · ${esc(a.effort)}</span><span class="tag">${esc(a.status)}</span>
       ${a.running?`<span class="tag run">working since ${a.running.since} · ${a.running.minutes} min · K ${a.running.k}</span>`:''}</div>

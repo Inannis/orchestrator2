@@ -1,5 +1,5 @@
 """Run tools/between.py once, finish any unfinished day, then a working day for each remaining artist, three at a time.
-usage: python tools/round.py [ids...] [--detach] [--resume-only]   (no ids: every active artist in registry.md)
+usage: python tools/round.py [ids...] [--detach] [--resume-only]   (no ids: every active test arm in registry.md; references run only when named)
 A day cut short (usage limit, crash, closed session) keeps runs/days/<id>.state.json and is resumed by the next round.
 On a usage limit the round starts nothing new and says so in runs/round.json; continue by hand (control room or this script) after the reset.
 --detach starts the round as its own process so it outlives the session or UI that launched it; output in runs/round-<time>.log."""
