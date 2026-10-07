@@ -6,12 +6,12 @@ Operational only: who exists, under which condition, in what state. Model and ef
 |---|---|---|---|---|---|---|
 | a3 | ../studios/a3 | claude-sonnet-5-5 | ref | reference | 19 | medium |
 | a7 | ../studios/a7 | claude-sonnet-5-5 | ref | reference | 15 | medium |
-| a15 | ../studios/a15 | claude-sonnet-5-5 | rooms | active | 17 | medium |
-| a16 | ../studios/a16 | claude-sonnet-5-5 | desk | active | 17 | medium |
+| a15 | ../studios/a15 | claude-sonnet-5-5 | rooms | active | 18 | medium |
+| a16 | ../studios/a16 | claude-sonnet-5-5 | desk | active | 18 | medium |
 | a17 | ../studios/a17 | claude-sonnet-5-5 | min | paused 2026-10-07 | 15 | medium |
 | a18 | ../studios/a18 | claude-sonnet-5-5 | bare | paused 2026-10-07 | 3 | medium |
-| a19 | ../studios/a19 | claude-sonnet-5-5 | rec | active | 3 | medium |
-| a20 | ../studios/a20 | claude-sonnet-5-5 | bare | active | 3 | medium |
+| a19 | ../studios/a19 | claude-sonnet-5-5 | rec | active | 4 | medium |
+| a20 | ../studios/a20 | claude-sonnet-5-5 | bare | active | 4 | medium |
 | a21 | ../studios/a21 | claude-sonnet-5-5 | rec | paused 2026-10-07 | 3 | medium |
 | a9 | ../studios/a9 | claude-sonnet-5-5 | A | paused 2026-10-07 | 5 | medium |
 | a10 | ../studios/a10 | claude-sonnet-5-5 | A | paused 2026-10-07 | 5 | medium |
