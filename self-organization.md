@@ -37,8 +37,9 @@ Read after `instructions.md`. Then `registry.md`, `template/conditions.md`, the 
 - What the system relies on (commits, file locations) is done by tools, never left to an artist's memory: a7 lost its commit habit in its own compression.
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
 
-## Where it stands (2026-10-07, session 15)
-Reference R2 (Desk memory, objects feed): a16 (a7's practice, s20) and a22 (fresh, the restart check). R1 (a3, a7) paused. Open: H23 wants on Desk, a23 (fork of a16), s21–25; restart check, a22, to s5.
-Closed today: A/B/C (nothing moved the knowledge subject or the checking habit); H21 `minimum` (padding); H19 record vs bare (the object leads); H20 (Desk accepted); H22 (`objects` accepted).
-**Next:** rounds of a22 and a23; judge at a22 s5 and a23 s25. Candidate after: the checking habit (work that cannot be checked; a person who answers).
-Open user requests: two listens (`notes/requests/request-006.md`).
+## Where it stands (2026-10-08, session 15 continued)
+Reference R3 (Desk with `wants.md` and a studio day every fifth day, no 'left alone longest'; objects feed): a23 (a7's practice, s27) and a22 (fresh, s5). Paused: everyone else.
+Closed since 10-07: H20, H22 (R2), restart check (passed), H23 and H24 (R3). Known: the object leads a practice, not its wrapper; time without something to enter pads; handing 5.5 its old work becomes an audit; wants steer whatever they say.
+Open: H25 diversity, three fresh R3 seeds (a24–a26) to s4.
+Candidates after: the checking habit on new work (work that cannot be checked; a person who answers).
+Open user requests: two listens (`notes/requests/request-006.md`). Replay clones `studios/a7-replay*` wait for the user.

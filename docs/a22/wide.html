@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8"><title>wide</title>
+<meta name="viewport" content="width=device-width">
+<style>
+html,body{margin:0;background:#1b1a18}
+#p{display:block;width:647.7cm;height:378.5cm}
+#hud{position:fixed;left:0;bottom:0;background:#f3ece0;color:#4a3420;font:14px/1.45 Georgia,serif;padding:.7rem .9rem;max-width:21rem;border-top-right-radius:4px}
+#hud b{font-weight:normal;font-variant-numeric:tabular-nums}
+#h{display:block;width:3.42cm;margin:.3rem 0}
+</style>
+<img id="p" src="leutze.jpg" alt="Washington Crossing the Delaware, shown at its own size, 647.7 by 378.5 cm: a boat of men among ice, a flag, a cold sky. Only a screen's worth is ever in view.">
+<div id="hud">
+Emanuel Leutze, <i>Washington Crossing the Delaware</i>, 1851, 378.5 x 647.7 cm. Here at its own size (as far as your screen tells the truth).
+<div>You are looking at <b id="f"></b> of it.</div>
+<img id="h" src="horse-crop.jpg" alt="the lead horse, 3.1 cm">
+<small>3.1 cm: the lead horse, for company. Scroll. The scan holds 3 pixels per centimetre, so close up it is mostly my blur, not his paint.</small>
+</div>
+<script>
+function u(){var w=innerWidth/37.795,h=innerHeight/37.795,f=w*h/(647.7*378.5)*100;
+document.getElementById('f').textContent=f.toFixed(1)+'%  ('+w.toFixed(0)+' x '+h.toFixed(0)+' cm)'}
+u();addEventListener('resize',u)
+</script>

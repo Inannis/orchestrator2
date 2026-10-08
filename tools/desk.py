@@ -1,4 +1,5 @@
-"""Lay out DESK.md in a studio with `desk` memory: yesterday's letter, works touched lately, works returned to most, the one left alone longest, what waits.
+"""Lay out DESK.md in a studio with `desk` memory: yesterday's letter, works touched lately, works returned to most, what waits.
+No "left alone longest": on Sonnet 5.5, handing back old work turns into an audit of it (H24).
 usage: python tools/desk.py <studio>   (run by day.py before each new day; the artist never writes the desk)
 A work is a folder in works/ or, for loose files, everything sharing one name stem. Touches come from the studio's git history, counted in sessions (day.py ends each with an \"End of session\" commit)."""
 import sys, re, subprocess, pathlib, collections
@@ -39,9 +40,6 @@ lately = sorted((k for k, v in touched.items() if min(v) <= 3), key=lambda k: mi
 if lately: out += ["## Touched lately", ""] + [item(k) for k in lately] + [""]
 most = [k for k in sorted(touched, key=lambda k: len(touched[k]), reverse=True) if len(touched[k]) > 1][:4]
 if most: out += ["## Returned to most", ""] + [item(k) + f" ({len(touched[k])} sessions)" for k in most] + [""]
-if touched:
-    old = max(touched, key=lambda k: min(touched[k]))
-    out += ["## Left alone longest", "", item(old) + f" (untouched for {min(touched[old])} sessions)", ""]
 wait = [f"- `inbox/{p.name}`" for p in sorted((studio / "inbox").glob("*")) if p.is_file() and p.name != ".keep"]
 wait += [f"- `requests/{p.name}`" for p in sorted((studio / "requests").glob("*")) if p.is_file() and p.name != ".keep"]
 if wait: out += ["## Waiting", ""] + wait + [""]
