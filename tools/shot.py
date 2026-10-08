@@ -1,9 +1,13 @@
-"""Screenshot a live URL (or save an image URL) with a real headless browser.
-usage: python tools/shot.py <url> <out.png> [--width 1200] [--full]
-For an image URL, the image itself is saved."""
+"""Screenshot a live URL, or a page in the studio by its file path (a folder means its index.html), with a real headless browser.
+usage: python tools/shot.py <url-or-path> <out.png> [--width 1200] [--full]
+For an image URL, the image itself is saved. A local path needs no server."""
 import sys
 from playwright.sync_api import sync_playwright
 url, out = sys.argv[1], sys.argv[2]
+import pathlib
+if not url.startswith(("http://", "https://", "file:")) and pathlib.Path(url).exists():
+    f = pathlib.Path(url).resolve()
+    url = (f / "index.html" if f.is_dir() else f).as_uri()
 width = int(sys.argv[sys.argv.index("--width")+1]) if "--width" in sys.argv else 1200
 full = "--full" in sys.argv
 with sync_playwright() as p:
