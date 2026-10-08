@@ -73,11 +73,15 @@ CLAUDE = claude_exe()
 
 def turn(text, sid=None):
     cmd = [CLAUDE, "-p", text, "--model", model, "--output-format", "json", "--effort", effort, "--permission-mode", "acceptEdits",
-           "--allowedTools", TOOLS, "--settings", '{"autoMemoryEnabled": false}']
+           "--allowedTools", TOOLS, "--settings", '{"autoMemoryEnabled": false}', "--strict-mcp-config"]  # no MCP servers in a studio
     if sid: cmd += ["--resume", sid]
-    r = subprocess.run(cmd, cwd=studio, capture_output=True, text=True, encoding="utf-8", timeout=5400)
-    try: return json.loads(r.stdout)
-    except json.JSONDecodeError: return {"is_error": True, "result": (r.stdout + r.stderr)[-2000:]}
+    # output goes to files, not pipes: a job the artist leaves running in the background would hold a pipe open and stall the day
+    import tempfile
+    with tempfile.TemporaryFile("w+", encoding="utf-8") as o, tempfile.TemporaryFile("w+", encoding="utf-8") as e:
+        subprocess.run(cmd, cwd=studio, stdout=o, stderr=e, stdin=subprocess.DEVNULL, timeout=5400)
+        o.seek(0); e.seek(0); out, err = o.read(), e.read()
+    try: return json.loads(out)
+    except json.JSONDecodeError: return {"is_error": True, "result": (out + err)[-2000:]}
 
 def wait_for_reset(msg):
     """On 'You've hit your session limit · resets 6pm (Europe/Berlin)', sleep until then plus two minutes. False if unparseable or over six hours."""
