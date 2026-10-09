@@ -33,7 +33,7 @@ Read after `instructions.md`. These files are the whole memory of the orchestrat
 - Charters change only through a hypothesis, rewritten whole. A charter is the language the artist thinks in: positive pull, no warnings or prohibitions (they plant what they forbid). Structure over sentences.
 - Arrivals feed a practice and never take it over; the practice keeps its own gravity.
 - Practice failure: leave it. Support failure: fix the condition. Orchestration failure: fix here.
-- Models (user): Sonnet 5.5 at medium (never high); Codex `gpt-6-luna` at `xhigh` (any model `gpt-*` runs through Codex in `day.py`), without sandbox, in its own home (`CODEX_STUDIO_HOME=C:/Users/johan/.codex-studios`, logged in by the user) so the user's global AGENTS.md stays out. New artists move the mix toward ~2/3 Luna, 1/3 Sonnet; running artists keep their model. A hypothesis can be tested on both models (model-independent A/B), but Luna vs Sonnet is never itself the A/B of a hypothesis: they differ by nature.
+- Models (user): Sonnet 5.5 at medium (never high); Codex `gpt-6-luna` at `xhigh` (any model `gpt-*` runs through Codex in `day.py`), without sandbox. The user's global `~/.codex/AGENTS.md` is empty so no instructions reach a studio besides the charter (checked 2026-10-09; `CODEX_STUDIO_HOME` can point runs at a separate Codex home if that changes). New artists move the mix toward ~2/3 Luna, 1/3 Sonnet; running artists keep their model. A hypothesis can be tested on both models (model-independent A/B), but Luna vs Sonnet is never itself the A/B of a hypothesis: they differ by nature.
 - A new tool in every tools sheet becomes a subject everywhere: a system-wide change.
 - What the system relies on (commits, file locations) is done by tools, never left to an artist's memory: a7 lost its commit habit in its own compression.
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
@@ -41,5 +41,5 @@ Read after `instructions.md`. These files are the whole memory of the orchestrat
 ## Where it stands (2026-10-09, session 16)
 Reference R3 (Desk with `wants.md` and a studio day every fifth day, no 'left alone longest'; objects feed): a23 (s27) and a22. Everyone else paused except H27.
 Known: the object leads a practice, not its wrapper; time without something to enter pads; handing 5.5 its old work becomes an audit; more objects per day give thin one-offs; wants steer whatever they say; fresh R3 seeds differ in medium and subject but share the testing method.
-Open: H27 becoming over time, a22, a24, a25, a26 to s10 (rounds running). H28 Luna on R3: a27 (like a24) and a28 (like a26) seeded, backend tested; they run once the user has logged in the studio Codex home.
+Open: H27 becoming over time, a22, a24, a25, a26 to s10 (rounds running). H28 Luna on R3: a27 (like a24) and a28 (like a26), to s4.
 Open user requests: two listens (`notes/requests/request-006.md`); a26 asks for a reader of German handwriting (`../studios/a26/requests/read-the-german.md`). Replay clones `studios/a7-replay*` wait for the user.
