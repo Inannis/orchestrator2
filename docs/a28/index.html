@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Little Pillars</title>
+  <style>
+    :root {
+      --paper: #eee7d6;
+      --ink: #2b251b;
+      --muted: #756a58;
+      --rust: #713b28;
+      --gold: #e4ae55;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "Arial Narrow", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: clamp(14px, 3.2vw, 46px);
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    .sheet {
+      width: min(100%, 1420px);
+      margin: 0 auto;
+    }
+
+    .masthead, .colophon {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font: 10px/1.4 var(--sans);
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .masthead { padding: 0 0 13px; }
+    .colophon {
+      align-items: baseline;
+      padding-top: 13px;
+      color: var(--muted);
+      letter-spacing: .08em;
+      text-transform: none;
+    }
+
+    .view {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      min-height: min(69vw, 760px);
+      background: var(--gold);
+    }
+
+    .landscape {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .question {
+      position: absolute;
+      z-index: 1;
+      top: 8%;
+      left: 5.2%;
+      width: min-content;
+      margin: 0;
+      font: clamp(43px, 7.2vw, 105px)/.81 var(--serif);
+      letter-spacing: -.065em;
+      text-transform: uppercase;
+    }
+
+    .question span {
+      display: block;
+      margin: .19em 0 0 .43em;
+      font-size: .43em;
+      font-style: italic;
+      letter-spacing: -.025em;
+      text-transform: none;
+      white-space: nowrap;
+    }
+
+    .occlusion {
+      position: absolute;
+      z-index: 2;
+      top: 55%;
+      left: -2%;
+      width: 104%;
+      padding: clamp(17px, 3.3vw, 44px) 3vw clamp(18px, 3.5vw, 46px);
+      color: var(--paper);
+      background: rgba(48, 38, 27, .96);
+      transform: rotate(-1.35deg);
+      text-align: center;
+      font: clamp(12px, 2.03vw, 29px)/1.2 var(--sans);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .occlusion em {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: .015em;
+      text-transform: none;
+    }
+
+    .lower-line {
+      position: absolute;
+      z-index: 1;
+      right: 4.5%;
+      bottom: 5%;
+      max-width: 36%;
+      margin: 0;
+      color: #332719;
+      font: italic clamp(14px, 1.8vw, 24px)/1.1 var(--serif);
+      text-align: right;
+    }
+
+    .colophon .credit { text-align: right; }
+
+    .next-study {
+      margin-top: 20px;
+      font: 10px/1.5 var(--sans);
+      letter-spacing: .08em;
+      text-align: right;
+    }
+    .next-study a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+    @media (max-width: 620px) {
+      body { padding: 12px; }
+      .masthead, .colophon { font-size: 8px; }
+      .view { min-height: 112vw; }
+      .question { top: 7%; left: 6%; font-size: clamp(40px, 12vw, 68px); }
+      .question span { font-size: .42em; }
+      .occlusion {
+        top: 55%;
+        padding: 18px 8px 20px;
+        font-size: clamp(12px, 3.2vw, 17px);
+        letter-spacing: .07em;
+      }
+      .lower-line { right: 5%; bottom: 4%; max-width: 48%; font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header class="masthead">
+      <span>Deir el-Bahari</span>
+      <span>A view, interrupted</span>
+    </header>
+
+    <figure class="view" aria-labelledby="work-title" aria-describedby="source-note">
+      <svg class="landscape" viewBox="0 0 1440 880" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A small temple beneath high ochre cliffs at sunset">
+        <defs>
+          <linearGradient id="sky" x2="0" y2="1">
+            <stop stop-color="#e8b760"/>
+            <stop offset=".72" stop-color="#d98c43"/>
+            <stop offset="1" stop-color="#bd6739"/>
+          </linearGradient>
+          <linearGradient id="cliff" x2=".92" y2="1">
+            <stop stop-color="#f2cd7c"/>
+            <stop offset=".38" stop-color="#c6763f"/>
+            <stop offset="1" stop-color="#713e2b"/>
+          </linearGradient>
+          <linearGradient id="shadow" x2="0" y2="1">
+            <stop stop-color="#864b31"/>
+            <stop offset="1" stop-color="#4a3428"/>
+          </linearGradient>
+          <filter id="grain" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="2" seed="8"/>
+            <feColorMatrix values=".55 0 0 0 .2 .45 0 0 0 .13 .35 0 0 0 .08 0 0 0 .15 0"/>
+            <feBlend in="SourceGraphic" mode="multiply"/>
+          </filter>
+        </defs>
+        <rect width="1440" height="880" fill="url(#sky)"/>
+        <circle cx="1085" cy="192" r="83" fill="#f4d58e" opacity=".77"/>
+        <path d="M0 594 63 532 104 467 155 451 203 355 244 338 289 254 330 281 372 193 411 214 460 148 496 188 535 169 579 252 619 238 663 300 714 282 767 359 814 347 869 403 912 373 969 432 1006 401 1053 458 1107 433 1163 492 1210 459 1278 526 1320 510 1378 561 1440 536V739H0Z" fill="url(#cliff)"/>
+        <path d="m0 594 63-62 41-65 51-16 48-96 41-17 45-84 41 27 42-88 39 21 49-66 36 40 39-19 44 83 40-14 44 62 51-18 53 77 47-12 55 56 43-30 57 59 37-31 47 57 54-25 56 59 47-33 68 67 42-16 58 51 62-25" fill="none" stroke="#ffe0a0" stroke-opacity=".43" stroke-width="8"/>
+        <path d="M0 637 122 586 187 540 244 527 312 454 359 465 421 387 474 403 539 340 600 372 659 346 713 404 770 397 824 459 892 432 957 482 1014 464 1084 512 1144 501 1220 548 1283 536 1352 581 1440 566V738H0Z" fill="#9b5734" opacity=".69"/>
+        <path d="M0 695Q264 649 484 689T923 682T1440 670V880H0Z" fill="#c57943"/>
+        <path d="M0 752Q327 725 568 766T1016 748T1440 771V880H0Z" fill="#8b5537" opacity=".75"/>
+
+        <g aria-hidden="true" transform="translate(825 545)">
+          <path d="M-40 175H405V199H-40Z" fill="#45352a"/>
+          <path d="M-14 150H380V175H-14Z" fill="#f0d196"/>
+          <path d="M6 110H361L380 150H-14Z" fill="#eed39e"/>
+          <path d="M-2 101 18 77H346L368 101Z" fill="#f3dcae"/>
+          <path d="M7 72H354V81H7Z" fill="#684832"/>
+          <path d="M20 79H39V150H20ZM75 79H94V150H75ZM130 79H149V150H130ZM185 79H204V150H185ZM240 79H259V150H240ZM295 79H314V150H295ZM343 79H356V150H343Z" fill="#f5dfb3"/>
+          <path d="M20 84H39M75 84H94M130 84H149M185 84H204M240 84H259M295 84H314M343 84H356" stroke="#8b6040" stroke-width="3"/>
+          <path d="M172 149V112Q194 83 216 112V149Z" fill="#59402e"/>
+          <path d="M-32 199H401V207H-32Z" fill="#4c392b"/>
+          <path d="M-52 207H425V214H-52Z" fill="#d9bb83"/>
+        </g>
+        <rect width="1440" height="880" filter="url(#grain)" opacity=".3"/>
+      </svg>
+
+      <h1 class="question" id="work-title">What are those<span>little pillars?</span></h1>
+      <div class="occlusion">A woman's wile has <em>blotted</em> them out.</div>
+      <p class="lower-line">The precipices<br>are as nothing.</p>
+    </figure>
+
+    <figcaption class="colophon" id="source-note">
+      <span>Little Pillars</span>
+      <span class="credit">Words by Robert Hichens, <i>The Spell of Egypt</i>, 1911.</span>
+    </figcaption>
+    <nav class="next-study" aria-label="More work"><a href="02-enough.html">Next study: Enough to encourage him →</a></nav>
+  </main>
+</body>
+</html>

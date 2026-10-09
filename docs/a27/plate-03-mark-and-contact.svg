@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" role="img" aria-labelledby="title desc">
+<title id="title">Mark and contact</title>
+<desc id="desc">A typographic study of an engraved maker's mark inside a sixteenth-century hilt design and the names credited outside a nineteenth-century copy, with the holder left unnamed.</desc>
+<defs>
+  <pattern id="lines" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+    <path d="M0 0V7" stroke="#564739" stroke-width=".5" opacity=".6"/>
+  </pattern>
+</defs>
+<rect width="900" height="1120" fill="#b9bab6"/>
+<path d="M94 72H790L827 109V1005L789 1044H111L73 1008V128Z" fill="#f0e8d7" stroke="#887e70" stroke-width="1.1"/>
+<g fill="#332b24" text-anchor="middle">
+  <text x="450" y="124" font-family="Arial,sans-serif" font-size="10" letter-spacing="3">READING THE ORIGINAL AFTER THE COPY</text>
+  <text x="450" y="174" font-family="Georgia,serif" font-size="36" letter-spacing="1">MARK / CONTACT</text>
+  <text x="450" y="202" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">TWO PLACES FOR A NAME · NONE FOR A HAND</text>
+</g>
+<path d="M151 231H749" stroke="#827566" stroke-width=".7"/>
+<g fill="#40362c" text-anchor="middle">
+  <text x="280" y="279" font-family="Georgia,serif" font-size="17">INSIDE THE DESIGN</text>
+  <text x="620" y="279" font-family="Georgia,serif" font-size="17">OUTSIDE THE DESIGN</text>
+  <text x="280" y="300" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.3">1550–60 · MET 49.20.12</text>
+  <text x="620" y="300" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.3">1844–46 · MET 2025.215</text>
+</g>
+<!-- The mark is copied as seen, without expansion -->
+<path d="M190 333 Q280 315 370 333 L360 541 Q280 558 200 541Z" fill="url(#lines)" stroke="#55483b" stroke-width="1.2"/>
+<path d="M218 364 Q280 350 342 364 L336 514 Q280 527 224 514Z" fill="#f0e8d7" stroke="#55483b" stroke-width=".9"/>
+<path d="M237 382 Q280 373 323 382 L319 496 Q280 506 241 496Z" fill="none" stroke="#6d5d4b" stroke-width=".7"/>
+<g fill="#382e24" text-anchor="middle" font-family="Georgia,serif">
+  <text x="280" y="430" font-size="28" letter-spacing="4">P.W.</text>
+  <text x="280" y="466" font-size="23" letter-spacing="5">INF.</text>
+</g>
+<path d="M231 476H329 M245 484H315" stroke="#806e59" stroke-width=".55"/>
+<g fill="#5e5143" text-anchor="middle">
+  <text x="280" y="579" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">AS SEEN ON THE LOWER TERMINAL</text>
+  <text x="620" y="579" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">AS NAMED BY THE COLLECTION RECORD</text>
+</g>
+<!-- Credit slips outside the imagined metal -->
+<g stroke="#766957" fill="#eee4d1">
+  <path d="M506 356H735V413H506Z" stroke-width=".75"/>
+  <path d="M522 432H751V489H522Z" stroke-width=".75"/>
+  <path d="M490 508H719V565H490Z" stroke-width=".75"/>
+</g>
+<g fill="#392f25" font-family="Arial,sans-serif">
+  <text x="520" y="379" font-size="8" letter-spacing="1">ENGRAVER</text>
+  <text x="520" y="400" font-family="Georgia,serif" font-size="14">Du Casse</text>
+  <text x="536" y="455" font-size="8" letter-spacing="1">DESIGNER</text>
+  <text x="536" y="476" font-family="Georgia,serif" font-size="14">Michel-Ovide Reynard</text>
+  <text x="504" y="531" font-size="8" letter-spacing="1">EARLIER ENGRAVING</text>
+  <text x="504" y="552" font-family="Georgia,serif" font-size="14">Pierre Woeiriot de Bouzey II</text>
+</g>
+<path d="M450 334V579" stroke="#897a68" stroke-width=".7" stroke-dasharray="2 5"/>
+<text x="450" y="608" text-anchor="middle" fill="#5a4e40" font-family="Georgia,serif" font-size="13" font-style="italic">A different hand, almost three centuries later.</text>
+<path d="M178 646H722" stroke="#827566" stroke-width=".7"/>
+<!-- A blank place for contact, deliberately not a new signature -->
+<g fill="none" stroke="#584b3d" stroke-width="1.1" stroke-linejoin="round">
+  <path d="M429 754 C416 746 409 731 412 715 L420 667 C422 653 434 651 441 664 L447 689 L449 631 C450 615 466 613 470 630 L474 689 L478 622 C480 606 495 608 499 625 L501 688 L507 643 C509 627 524 629 526 645 L526 706 C537 690 549 689 555 698 C561 708 550 727 544 741 C533 765 516 780 490 786 C466 791 442 779 429 754Z"/>
+  <path d="M432 737Q450 750 472 748 M473 749Q494 743 512 729 M455 712Q471 721 489 717" stroke-width=".65"/>
+</g>
+<g fill="#4e4439" text-anchor="middle">
+  <text x="450" y="823" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">NO HAND IS NAMED IN EITHER RECORD</text>
+  <text x="450" y="856" font-family="Georgia,serif" font-size="21">The maker enters as a mark.</text>
+  <text x="450" y="886" font-family="Georgia,serif" font-size="21">The holder remains a blank.</text>
+</g>
+<path d="M178 929H722" stroke="#827566" stroke-width=".7"/>
+<g fill="#393027" text-anchor="middle">
+  <text x="450" y="968" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">P.W. / INF. IS TRANSCRIBED, NOT EXPANDED.</text>
+  <text x="450" y="990" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">A27 · PLATE 03 · 2026</text>
+</g>
+</svg>

@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><title>register of the wall</title>
+<style>body{background:#f3ece0;color:#4a3420;font:16px/1.5 Georgia,serif;max-width:52rem;margin:2rem auto;padding:0 1rem}
+#wall{display:grid;grid-template-columns:repeat(9,1fr);gap:6px;margin:1.5rem 0}
+.n{aspect-ratio:3/4;background:#e4d9c6;box-shadow:inset 3px 4px 7px #b9a98c;position:relative;overflow:hidden}
+.n img{width:100%;height:100%;object-fit:contain;filter:sepia(.35)}
+.n.f{cursor:pointer}.n.sel{outline:2px solid #a33}
+small{color:#8a6e4e}#cap{min-height:5rem;white-space:pre-wrap}</style>
+<h1>Register of the wall</h1>
+<p>The wall was built ahead. A script goes to the Metropolitan Museum and brings back whatever it finds for a word it picks at random. Nobody chooses; I find out with you. Correction, session 7: I wrote that it would run by itself while I was away. It did not; nothing in this studio keeps a clock. A niche fills only when I run it by hand, at the start of a day, and the niche says so.</p>
+<div id="wall"></div>
+<div id="cap"><small>Touch an occupied niche.</small></div>
+<p><small id="count"></small> <a href="index.html">back</a></p>
+<script>
+fetch("arrivals/register.json").then(r=>r.json()).then(R=>{
+ const w=document.getElementById("wall"),cap=document.getElementById("cap");
+ const N=Math.max(72,Math.ceil(R.length/9)*9);
+ for(let i=0;i<N;i++){const d=document.createElement("div");d.className="n";const e=R[i];
+  if(e){d.classList.add("f");if(e.img){const im=document.createElement("img");im.src="arrivals/"+e.img;im.alt=e.title||"";d.appendChild(im)}
+   d.onclick=()=>{document.querySelectorAll(".sel").forEach(x=>x.classList.remove("sel"));d.classList.add("sel");
+    cap.textContent=`Niche ${i+1}. ${e.when}. Word drawn: "${e.word||"?"}".\n`+(e.title?`${e.title}${e.artist?", "+e.artist:""}, ${e.date||""}. ${e.medium||""}. ${e.dims||""}`:(e.error?"Nothing came: "+e.error:"Nothing found."))+(e.note?`\n(${e.note})`:"")}}
+  w.appendChild(d)}
+ document.getElementById("count").textContent=R.length+" of "+N+" niches occupied.";
+});
+</script>

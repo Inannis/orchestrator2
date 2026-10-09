@@ -1,0 +1,28 @@
+THE DECIMAL (second reading)
+
+Hamblin, British Medical Journal, 1981:
+German chemists in the 1930s found
+that the original workers had put the decimal point
+in the wrong place. A tenfold overestimate.
+
+Sutton, 2016, one page:
+there was no point to move.
+Von Wolff, 1871, measured too much iron.
+Sherman, 1907: the iron came off the heated dishes,
+and the rest was bad method.
+Bunge had it right in 1892.
+In 1920 a German textbook still printed Wolff.
+
+So the tenfold was real, in the pan.
+The slip of the pen came afterwards,
+to explain the number,
+the way a man is made afterwards to explain a sum.
+
+Who said it first? Sutton: Bender, a lecture, 1972.
+Bender: a Dutchman, Cornelius den Hartog,
+now many years deceased.
+Sutton: "Maybe another story-within-a-story
+will have passed away with him."
+
+          Seen: Sutton, HealthWatch Newsletter 101 (2016), p. 7, in full, including Hamblin's sentence quoted there. Copy in src/.
+          Not seen: Hamblin's article itself, Bender's lecture, Wolff, Sherman, Bunge. Everything above about them is Sutton's word, and Sutton is one man.

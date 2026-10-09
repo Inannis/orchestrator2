@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>A Private Cast</title>
+  <style>
+    :root {
+      --paper: #f1ede1;
+      --ink: #302a20;
+      --soft: #736b5d;
+      --line: #bcb4a3;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: clamp(16px, 4vw, 56px);
+      color: var(--ink);
+      background: var(--paper);
+    }
+    main { width: min(100%, 1160px); margin: 0 auto; }
+    header, .meta, footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font: 10px/1.5 var(--sans);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    header { padding: 0 0 13px; border-bottom: 1px solid var(--line); }
+    .title-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(230px, .72fr);
+      gap: clamp(24px, 7vw, 92px);
+      align-items: end;
+      padding: clamp(46px, 9vw, 112px) 0 clamp(28px, 5vw, 60px);
+    }
+    h1 {
+      max-width: 7ch;
+      margin: 0;
+      font: clamp(48px, 9vw, 112px)/.83 var(--serif);
+      letter-spacing: -.07em;
+      font-weight: 400;
+    }
+    .intro {
+      max-width: 30em;
+      margin: 0 0 4px;
+      color: var(--soft);
+      font: 15px/1.55 var(--serif);
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, .92fr) minmax(300px, 1.08fr);
+      gap: clamp(30px, 7vw, 94px);
+      align-items: stretch;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 26px 0;
+    }
+    ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      counter-reset: step;
+    }
+    li {
+      counter-increment: step;
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 9px;
+      padding: 13px 0 15px;
+      border-bottom: 1px solid #d5cebf;
+      font: 16px/1.45 var(--serif);
+    }
+    li::before {
+      content: "0" counter(step);
+      padding-top: 3px;
+      color: var(--soft);
+      font: 9px/1.4 var(--sans);
+      letter-spacing: .08em;
+    }
+    li:last-child { border-bottom: 0; }
+    .field-wrap { display: flex; flex-direction: column; }
+    .field-label {
+      margin: 0 0 9px;
+      color: var(--soft);
+      font: 9px/1.4 var(--sans);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .field {
+      position: relative;
+      flex: 1;
+      min-height: 320px;
+      border: 1px solid var(--line);
+      background-image: linear-gradient(to right, transparent 49.9%, #ddd6c8 50%, transparent 50.1%), linear-gradient(to bottom, transparent 49.9%, #ddd6c8 50%, transparent 50.1%);
+      background-size: 100% 100%;
+    }
+    .dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--ink);
+      transform: translate(-50%, -50%);
+    }
+    .field-note {
+      margin: 8px 0 0;
+      color: var(--soft);
+      font: 10px/1.45 var(--sans);
+    }
+    .source {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding-top: 16px;
+      font: 12px/1.5 var(--serif);
+    }
+    .source .note { max-width: 45em; color: var(--soft); }
+    footer { padding-top: 40px; color: var(--soft); letter-spacing: .06em; text-transform: none; }
+    a { color: inherit; text-underline-offset: 3px; }
+    @media (max-width: 680px) {
+      header, footer { font-size: 8px; }
+      .title-row { grid-template-columns: 1fr; gap: 21px; padding-top: 55px; }
+      .layout { grid-template-columns: 1fr; }
+      .field { min-height: 72vw; }
+      .source { flex-direction: column; }
+      footer { padding-top: 25px; }
+    }
+    @media print {
+      @page { size: A4; margin: 17mm; }
+      body { padding: 0; background: #fff; }
+      main { width: 100%; }
+      .title-row { padding: 17mm 0 10mm; }
+      h1 { font-size: 62pt; }
+      .layout { grid-template-columns: 1fr 1fr; gap: 12mm; }
+      .field { min-height: 92mm; }
+      footer { display: none; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span>Score 03</span>
+      <span>One day between looking</span>
+    </header>
+
+    <section class="title-row" aria-labelledby="title">
+      <h1 id="title">A private cast</h1>
+      <p class="intro">A small exercise in making a mark, choosing it, and meeting it again after the judgment has had a night to cool.</p>
+    </section>
+
+    <section class="layout" aria-label="Instructions and practice field">
+      <ol>
+        <li>On paper, put one dot near the middle. If you print this page, use the dot in the square.</li>
+        <li>Draw five loops, one at a time, trying to pass around the dot. Stop at five.</li>
+        <li>Before studying the lines, mark the one you would try again.</li>
+        <li>Fold the paper so your mark is hidden. Leave it until tomorrow.</li>
+        <li>Open it. Draw nothing. Is it still the one you would return to?</li>
+      </ol>
+      <div class="field-wrap">
+        <p class="field-label">A place for the attempts</p>
+        <div class="field" role="img" aria-label="Blank square with one dot at its center">
+          <span class="dot"></span>
+        </div>
+        <p class="field-note">The lines are not here yet.</p>
+      </div>
+    </section>
+
+    <section class="source">
+      <span>Keep the paper. Return tomorrow.</span>
+      <span class="note">Prompted by W. C. Tuttle, <i>The Buckaroo of Blue Wells</i>, where a few good casts are enough to encourage a beginner.</span>
+    </section>
+
+    <footer>
+      <a href="02-enough.html">← Back to the loops</a>
+      <span>Print this page to use its field.</span>
+    </footer>
+  </main>
+</body>
+</html>

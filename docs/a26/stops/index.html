@@ -1,0 +1,15 @@
+<!doctype html><meta charset=utf-8><title>where it stops</title>
+<body style="background:#e9e3d6;color:#333;font-family:Georgia,serif;max-width:1000px;margin:1.5em auto;padding:0 1em">
+<p>Where does the temple stop? Count a difference as a line only if it is bigger than: <b id=v></b></p>
+<input id=s type=range min=1 max=19 step=0.25 value=3 style="width:100%">
+<canvas id=c style="width:100%;display:block;background:#eee"></canvas>
+<p style="font-size:.85em">Photograph of Deir el-Bahari (Wikimedia Commons), reduced to gradient strength. Drag slowly.</p>
+<script>
+const img=new Image();img.src='strength.png';
+img.onload=()=>{const c=document.getElementById('c'),x=c.getContext('2d');c.width=img.width;c.height=img.height;
+x.drawImage(img,0,0);const src=x.getImageData(0,0,c.width,c.height),out=x.createImageData(c.width,c.height);
+function draw(){const t=+s.value/20*255;v.textContent=(+s.value).toFixed(2);
+for(let i=0;i<src.data.length;i+=4){const on=src.data[i]>t;const k=on?40:236;out.data[i]=k;out.data[i+1]=k-(on?0:3);out.data[i+2]=k-(on?0:10);out.data[i+3]=255}
+x.putImageData(out,0,0)}
+s.oninput=draw;draw()};
+</script>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1120" role="img" aria-labelledby="title desc">
+<title id="title">Two objects, one image</title>
+<desc id="desc">A two-column register separates facts about an 1840s engraving from questions the record does not answer about the sword hilt pictured in it.</desc>
+<defs>
+  <pattern id="grain" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+    <path d="M0 0V9" stroke="#6b5a46" stroke-width=".45" opacity=".42"/>
+  </pattern>
+</defs>
+<rect width="1000" height="1120" fill="#b9bab6"/>
+<path d="M87 70H913L930 89V1034L911 1051H88L70 1034V89Z" fill="#f0e8d7" stroke="#887e70" stroke-width="1"/>
+<g fill="#332b24" text-anchor="middle">
+  <text x="500" y="128" font-family="Arial,sans-serif" font-size="10" letter-spacing="3">REGISTER / 02</text>
+  <text x="500" y="180" font-family="Georgia,serif" font-size="34" letter-spacing=".8">TWO OBJECTS, ONE IMAGE</text>
+  <text x="500" y="210" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">WHERE DOES A DIMENSION BELONG?</text>
+</g>
+<path d="M146 246H854" stroke="#827566" stroke-width=".75"/>
+<path d="M500 265V948" stroke="#837767" stroke-width=".7" stroke-dasharray="2 6"/>
+<g fill="#3d3329">
+  <text x="280" y="278" text-anchor="middle" font-family="Georgia,serif" font-size="17">THE SHEET</text>
+  <text x="720" y="278" text-anchor="middle" font-family="Georgia,serif" font-size="17">THE PICTURED HILT</text>
+  <text x="280" y="299" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.1">THE OBJECT CATALOGUED</text>
+  <text x="720" y="299" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.1">THE SUBJECT OF THE DESIGN</text>
+</g>
+<!-- Two fields kept apart by a narrow, unfilled gutter -->
+<path d="M110 319H470V930H110Z" fill="#eee4d1" stroke="#8f8270" stroke-width=".75"/>
+<path d="M530 319H890V930H530Z" fill="#eee4d1" stroke="#8f8270" stroke-width=".75"/>
+<!-- The sheet is drawn to its recorded portrait ratio -->
+<path d="M217 341 L343 341 L350 352 L348 500 L339 509 L221 509 L211 500 L212 351Z" fill="#f7f0e3" stroke="#615447" stroke-width=".8"/>
+<path d="M220 344H341L346 351L345 497L338 505H224L215 498V352Z" fill="url(#grain)" opacity=".35"/>
+<g stroke="#55483b" fill="none" stroke-width=".8">
+  <path d="M282 366V435 M273 377Q282 366 291 377 L289 402 Q282 409 275 402Z"/>
+  <path d="M263 425Q273 420 282 425Q291 420 301 425L311 440L299 445L288 438H276L265 445L253 440Z"/>
+  <path d="M282 408V436 M257 440H307"/>
+  <path d="M247 460H317 M251 466H313 M256 472H308"/>
+</g>
+<text x="280" y="526" text-anchor="middle" fill="#685b4c" font-family="Arial,sans-serif" font-size="7" letter-spacing="1">SCHEMATIC / NOT TO SCALE</text>
+<!-- The imagined object is a contour with no assigned material or size -->
+<g stroke="#665747" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M720 352V455" stroke-dasharray="2 4" stroke-width=".7"/>
+  <path d="M720 359 C705 354 697 364 698 376 C698 388 708 396 720 394 C732 396 742 388 742 376 C743 364 735 354 720 359Z" stroke-width="1.1"/>
+  <path d="M703 401 Q720 395 737 401 L740 478 Q720 486 700 478Z" stroke-width="1.1"/>
+  <path d="M720 483 C699 485 690 499 671 504 C652 509 637 501 625 490 C617 482 608 482 604 490 C600 499 608 507 619 508 C635 510 647 522 662 526 C681 532 701 516 712 506 M720 483 C741 485 750 499 769 504 C788 509 803 501 815 490 C823 482 832 482 836 490 C840 499 832 507 821 508 C805 510 793 522 778 526 C759 532 739 516 728 506" stroke-width="1.15"/>
+  <path d="M720 359V486 M706 407V475 M734 407V475" stroke-width=".55" stroke-dasharray="2 3"/>
+</g>
+<text x="720" y="550" text-anchor="middle" fill="#685b4c" font-family="Arial,sans-serif" font-size="7" letter-spacing="1">DESIGN IMAGE / NO SCALE GIVEN</text>
+<path d="M126 567H454 M546 567H874" stroke="#998a76" stroke-width=".65"/>
+<g font-family="Arial,sans-serif" fill="#42382e">
+  <g font-size="8" letter-spacing="1.2" fill="#796b59">
+    <text x="132" y="591">TITLE</text><text x="132" y="647">CREDITS</text><text x="132" y="724">DATE</text><text x="132" y="771">MEDIUM</text><text x="132" y="818">PAPER</text><text x="132" y="865">COLLECTION</text>
+    <text x="552" y="591">TYPE</text><text x="552" y="647">MATERIAL</text><text x="552" y="704">DIMENSIONS</text><text x="552" y="761">REALIZED OBJECT</text><text x="552" y="818">HOLDER</text><text x="552" y="875">USE</text>
+  </g>
+  <g font-size="12">
+    <text x="132" y="613" font-family="Georgia,serif" font-size="13">Engraving of a Design for a Sword Hilt</text>
+    <text x="132" y="670">Du Casse · engraver</text><text x="132" y="689">Michel-Ovide Reynard · designer</text><text x="132" y="708">after Pierre Woeiriot de Bouzey II</text>
+    <text x="132" y="746">1844–46</text>
+    <text x="132" y="793">Ink, paper</text>
+    <text x="132" y="840">19.8 × 17.3 cm</text>
+    <text x="132" y="887">The Met · 2025.215</text>
+    <text x="552" y="613">Sword hilt design</text>
+    <text x="552" y="670">Not specified for the hilt</text>
+    <text x="552" y="727">Not given for the hilt</text>
+    <text x="552" y="784">Not established by this record</text>
+    <text x="552" y="841">Not named</text>
+    <text x="552" y="898">Suggested by its type, not described here</text>
+  </g>
+</g>
+<path d="M500 953V986" stroke="#54483a" stroke-width=".8"/>
+<circle cx="500" cy="969" r="3.2" fill="#f0e8d7" stroke="#54483a" stroke-width=".8"/>
+<g fill="#393027" text-anchor="middle">
+  <text x="500" y="1011" font-family="Georgia,serif" font-size="15">THE PAPER HAS DIMENSIONS. THE PICTURE HAS A HILT.</text>
+  <text x="500" y="1033" font-family="Georgia,serif" font-size="13">THE HILT DOES NOT INHERIT THE PAPER'S DIMENSIONS.</text>
+</g>
+</svg>

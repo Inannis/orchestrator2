@@ -1,8 +1,8 @@
-"""Run each active studio's between/run.py once, if it has one. Output goes to the studio's between/log.
+"""Run each active or reference studio's between/run.py once, if it has one. Output goes to the studio's between/log.
 usage: python tools/between.py"""
 import pathlib, re, subprocess, sys, datetime
 root = pathlib.Path(__file__).resolve().parent.parent
-ids = re.findall(r"^\| (a\d+) \| \.\./studios/\1 \|.*\| active \|", (root / "registry.md").read_text(encoding="utf-8"), re.M)
+ids = re.findall(r"^\| (a\d+) \| \.\./studios/\1 \|.*\| (?:active|reference) \|", (root / "registry.md").read_text(encoding="utf-8"), re.M)
 for i in ids:
     studio = root.parent / "studios" / i
     script = studio / "between" / "run.py"

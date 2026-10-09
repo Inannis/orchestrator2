@@ -24,12 +24,12 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a6 | ../studios/a6 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 9 | medium |
 | a8 | ../studios/a8 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 7 | medium |
 | a23 | ../studios/a23 | claude-sonnet-5-5 | ref | reference | 27 | medium |
-| a22 | ../studios/a22 | claude-sonnet-5-5 | ref | reference | 9 | medium |
-| a24 | ../studios/a24 | claude-sonnet-5-5 | ref | active | 8 | medium |
-| a25 | ../studios/a25 | claude-sonnet-5-5 | ref | active | 8 | medium |
-| a26 | ../studios/a26 | claude-sonnet-5-5 | ref | active | 8 | medium |
-| a27 | ../studios/a27 | gpt-6-luna | ref | active | 0 | xhigh |
-| a28 | ../studios/a28 | gpt-6-luna | ref | active | 0 | xhigh |
+| a22 | ../studios/a22 | claude-sonnet-5-5 | ref | reference | 10 | medium |
+| a24 | ../studios/a24 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
+| a25 | ../studios/a25 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
+| a26 | ../studios/a26 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
+| a27 | ../studios/a27 | gpt-6-luna | ref | active | 1 | xhigh |
+| a28 | ../studios/a28 | gpt-6-luna | ref | active | 1 | xhigh |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

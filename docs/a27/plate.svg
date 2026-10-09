@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" role="img" aria-labelledby="title desc">
+<title id="title">A hand is not a fitting</title>
+<desc id="desc">An engraved study of a sword hilt built around a pale, empty hand-shaped space. A dashed blade axis falls away below the crossguard.</desc>
+<defs>
+  <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+    <path d="M0 0V8" stroke="#3a3026" stroke-width=".75" opacity=".67"/>
+  </pattern>
+  <pattern id="fine" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+    <path d="M0 0V5" stroke="#57483b" stroke-width=".48" opacity=".62"/>
+  </pattern>
+  <clipPath id="gripClip">
+    <path d="M393 383 Q450 365 507 383 L526 716 Q450 746 374 716Z"/>
+  </clipPath>
+  <clipPath id="paperClip">
+    <path d="M94 77 L789 75 L828 111 L821 997 L788 1034 L115 1032 L72 990 L73 141Z"/>
+  </clipPath>
+</defs>
+<rect width="900" height="1120" fill="#b9bab6"/>
+<path d="M94 77 L789 75 L828 111 L821 997 L788 1034 L115 1032 L72 990 L73 141Z" fill="#f0e8d7" stroke="#887e70" stroke-width="1.2"/>
+<g clip-path="url(#paperClip)" fill="#726657" opacity=".13">
+  <circle cx="128" cy="220" r="1.1"/><circle cx="740" cy="163" r=".9"/><circle cx="263" cy="1000" r="1.1"/><circle cx="780" cy="910" r="1.2"/>
+  <circle cx="165" cy="744" r=".8"/><circle cx="683" cy="704" r="1.1"/><circle cx="289" cy="319" r=".8"/><circle cx="548" cy="948" r=".9"/>
+  <circle cx="752" cy="516" r=".7"/><circle cx="181" cy="876" r="1.1"/><circle cx="590" cy="206" r=".9"/><circle cx="342" cy="919" r=".7"/>
+</g>
+<g fill="#332b24" text-anchor="middle">
+  <text x="450" y="128" font-family="Georgia,serif" font-size="11" letter-spacing="3.2">STUDY FOR AN UNOWNED HAND</text>
+  <text x="450" y="174" font-family="Georgia,serif" font-size="31" letter-spacing="1.2">A HAND IS NOT A FITTING</text>
+  <text x="450" y="201" font-family="Arial,sans-serif" font-size="9" letter-spacing="2.1">AFTER A DESIGN FOR A SWORD HILT · PARIS · 1844–46</text>
+</g>
+<path d="M170 226H730" stroke="#827566" stroke-width=".7"/>
+<path d="M450 240V897" stroke="#796e60" stroke-width=".65" stroke-dasharray="2 5" opacity=".7"/>
+<!-- Pommel: an ornamental cap with an unoccupied centre -->
+<g stroke="#392e24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M450 259 C421 255 405 271 405 291 C405 312 424 327 450 326 C476 327 495 312 495 291 C495 271 479 255 450 259Z" fill="url(#fine)" stroke-width="1.5"/>
+  <path d="M450 268 C432 268 420 278 420 292 C420 306 433 315 450 315 C467 315 480 306 480 292 C480 278 468 268 450 268Z" fill="#f0e8d7" stroke-width="1.15"/>
+  <circle cx="450" cy="291" r="12" stroke-width=".9"/>
+  <circle cx="450" cy="291" r="4" fill="#392e24" stroke-width=".6"/>
+  <path d="M450 251V239 M450 326V341 M400 292H388 M512 292H500" stroke-width=".8"/>
+  <path d="M413 270l-9-8 M487 270l9-8 M413 313l-9 8 M487 313l9 8" stroke-width="1.2"/>
+  <path d="M438 251q12-13 24 0 M438 333q12 12 24 0" stroke-width=".85"/>
+  <path d="M431 339 Q450 348 469 339 L475 360 Q450 370 425 360Z" fill="url(#hatch)" stroke-width="1.3"/>
+</g>
+<!-- grip with its centre removed by the outline of a grasp -->
+<path d="M393 383 Q450 365 507 383 L526 716 Q450 746 374 716Z" fill="url(#hatch)" stroke="#392e24" stroke-width="1.7"/>
+<g clip-path="url(#gripClip)" stroke="#4d4033" fill="none" opacity=".8">
+  <path d="M390 398 Q450 416 510 398 M387 408 Q450 426 513 408 M384 694 Q450 677 516 694 M382 705 Q450 688 518 705" stroke-width=".8"/>
+  <path d="M403 380V735 M414 378V738 M486 378V738 M497 380V735" stroke-width=".5" opacity=".75"/>
+  <path d="M378 435 Q450 452 522 435 M377 452 Q450 469 523 452 M376 665 Q450 648 524 665 M376 679 Q450 662 524 679" stroke-width=".55"/>
+</g>
+<!-- an uninked hand-shaped reserve, neither portrait nor measurement -->
+<path d="M420 680 C407 669 400 650 403 632 L414 550 C416 535 430 531 438 544 L447 579 L449 467 C450 447 469 444 474 465 L478 575 L483 453 C484 433 503 435 507 456 L510 576 L518 482 C520 462 539 464 541 485 L540 610 C552 587 566 583 573 594 C581 606 567 631 559 650 C547 680 527 696 493 703 C463 709 435 698 420 680Z" fill="#f0e8d7" stroke="#392e24" stroke-width="1.45" stroke-linejoin="round"/>
+<path d="M422 642 Q444 659 469 657 M470 659 Q496 654 519 637 M450 608 Q469 620 491 613" fill="none" stroke="#756657" stroke-width=".85"/>
+<path d="M450 467 Q456 478 456 510 M485 456 Q492 476 491 510 M522 486 Q528 501 526 527" fill="none" stroke="#756657" stroke-width=".65"/>
+<!-- narrow ferrule -->
+<path d="M382 716 Q450 739 518 716 L514 737 Q450 760 386 737Z" fill="url(#fine)" stroke="#392e24" stroke-width="1.4"/>
+<path d="M386 727 Q450 750 514 727" fill="none" stroke="#392e24" stroke-width=".7"/>
+<!-- guard: linework opens outward, without blade or theatrical point -->
+<g stroke="#392e24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M450 744 C421 746 402 761 379 773 C349 789 321 791 296 780 C274 771 263 750 247 750 C230 750 222 768 229 782 C236 797 257 800 275 791 C299 779 317 805 341 814 C368 825 399 806 418 787 C432 773 440 767 450 766 C460 767 468 773 482 787 C501 806 532 825 559 814 C583 805 601 779 625 791 C643 800 664 797 671 782 C678 768 670 750 653 750 C637 750 626 771 604 780 C579 791 551 789 521 773 C498 761 479 746 450 744Z" fill="url(#fine)" stroke-width="1.6"/>
+  <path d="M450 753 C419 761 398 785 373 796 C346 809 321 795 300 787 M450 753 C481 761 502 785 527 796 C554 809 579 795 600 787" stroke-width=".9"/>
+  <path d="M248 752 C263 762 274 775 263 785 C254 792 240 787 239 778 M652 752 C637 762 626 775 637 785 C646 792 660 787 661 778" stroke-width="1.1"/>
+  <path d="M382 764 C363 755 348 739 343 724 M518 764 C537 755 552 739 557 724" stroke-width="1.5"/>
+  <path d="M377 760 C360 747 354 736 354 725 M523 760 C540 747 546 736 546 725" stroke-width=".6"/>
+  <path d="M410 768 Q450 790 490 768 L483 816 Q450 842 417 816Z" fill="url(#hatch)" stroke-width="1.5"/>
+  <path d="M423 779 Q450 791 477 779 L472 810 Q450 828 428 810Z" fill="#f0e8d7" stroke-width="1"/>
+  <circle cx="450" cy="800" r="9" stroke-width=".8"/>
+  <circle cx="450" cy="800" r="2.1" fill="#392e24" stroke-width=".5"/>
+  <path d="M450 841V889" stroke-width=".85" stroke-dasharray="3 5"/>
+</g>
+<!-- detached view, retained from the grammar of a design sheet -->
+<g stroke="#4a3d30" fill="none" stroke-linejoin="round">
+  <path d="M661 267 Q699 251 734 269 L732 385 Q698 401 663 384Z" stroke-width="1.2"/>
+  <path d="M672 278 Q698 269 723 279 L721 373 Q698 382 674 373Z" fill="url(#fine)" stroke-width=".8"/>
+  <path d="M682 291 Q697 283 712 291 L710 359 Q697 366 684 359Z" fill="#f0e8d7" stroke-width=".85"/>
+  <circle cx="697" cy="307" r="8" stroke-width=".8"/><circle cx="697" cy="307" r="2" fill="#4a3d30" stroke-width=".5"/>
+  <path d="M690 326 C683 329 686 341 692 345 L697 352 L702 345 C708 341 711 329 704 326 C701 324 699 327 697 330 C695 327 693 324 690 326Z" stroke-width=".7"/>
+  <path d="M673 391h48 M697 400v21" stroke-width=".6" stroke-dasharray="2 3"/>
+</g>
+<g fill="#4e4439" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.1">
+  <text x="647" y="436">PLAN / DETACHED</text>
+  <text x="161" y="566" transform="rotate(-90 161 566)">CONTACT — UNRECORDED</text>
+  <text x="739" y="585" transform="rotate(90 739 585)">PRESSURE — UNMEASURED</text>
+  <text x="450" y="914" text-anchor="middle">BLADE AXIS · CONTINUES BEYOND THE SHEET</text>
+</g>
+<path d="M170 945H730" stroke="#827566" stroke-width=".7"/>
+<g fill="#393027" text-anchor="middle">
+  <text x="450" y="971" font-family="Georgia,serif" font-size="11" letter-spacing="1.1">THE CATALOGUE NAMES THREE HANDS BEHIND THE PRINT.</text>
+  <text x="450" y="991" font-family="Georgia,serif" font-size="11" letter-spacing="1.1">IT CANNOT SAY WHO HELD THE HILT.</text>
+  <text x="450" y="1015" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.5">A27 · PLATE 01 · INK STUDY / DIGITAL</text>
+</g>
+<g stroke="#736858" stroke-width=".65">
+  <path d="M154 222v8 M746 222v8 M154 226h16 M730 226h16"/>
+  <path d="M154 940v10 M746 940v10 M154 945h16 M730 945h16"/>
+</g>
+</svg>

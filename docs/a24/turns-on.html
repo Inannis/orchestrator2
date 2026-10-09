@@ -1,0 +1,55 @@
+<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>a24 — where it turns on, where it turns off</title>
+<body style="margin:0;background:#f3f3f1;color:#222;font:16px Georgia,serif;text-align:center;padding:2em 1em">
+<canvas id=c width=600 height=660 style="max-width:92vw;max-height:70vh;width:auto;height:auto;background:#f3f3f1"></canvas>
+<p id=msg style="max-width:30em;margin:1em auto"></p>
+<input id=s type=range min=0 max=1000 value=0 style="width:min(520px,88vw)"><br>
+<button id=b style="font:inherit;margin-top:.8em;padding:.3em 1em">now</button>
+<div id=res style="margin-top:1.5em"></div>
+<p style="max-width:30em;margin:2em auto;font-size:14px"><i>Where It Turns On, Where It Turns Off</i>, 2026. One lathe-turned egg, engraved in lines that swell; eyes and a mouth rise in darkness as you move the slider. Raise it until the egg looks at you and press <b>now</b>. Then lower it until nobody is left. I do not know whether the two places are the same one. Nothing is sent anywhere; your answers stay in this page. <a href="index.html">back</a></p>
+<script>
+const cv=document.getElementById('c'),x=cv.getContext('2d'),S=document.getElementById('s'),M=document.getElementById('msg'),B=document.getElementById('b'),R=document.getElementById('res');
+const light=[-.5,-.45,.74],ln=Math.hypot(...light);light.forEach((v,i)=>light[i]=v/ln);
+const G=(X,Y,cx,cy,sx,sy,a)=>a*Math.exp(-(((X-cx)/sx)**2+((Y-cy)/sy)**2));
+const TH=[];for(let i=0;i<200;i++)TH.push(-Math.PI/2+Math.PI*i/199);
+// canvas is 2x the 300x330 design
+const W=300,H=330,SC=2;
+function draw(k){
+  x.fillStyle='#f3f3f1';x.fillRect(0,0,cv.width,cv.height);
+  x.strokeStyle='#121212';x.lineCap='butt';
+  const kk=Math.pow(k,1.5),cxp=150;
+  for(let y=40;y<300;y+=2.6){
+    const t=(y-40)/260,rr=95*Math.pow(Math.sqrt(Math.max(0,1-((t-.5)/.5)**2)),.8)+8,e=rr*.12;
+    let px,py,pd;
+    for(let j=0;j<TH.length;j++){
+      const th=TH[j],X=cxp+rr*Math.sin(th),Y=y+e*Math.cos(th);
+      const lam=Math.min(1,Math.max(0,Math.sin(th)*light[0]+Math.cos(th)*light[2]));
+      const tn=(G(X,Y,105,150,13,7,.55)+G(X,Y,198,142,22,10,.9)+G(X,Y,153,225,38,8,.85))*kk;
+      const dk=Math.min(.95-lam*.9,.75)+tn*1.7;
+      if(j>0){x.lineWidth=(.3+3.6*Math.pow(Math.min(Math.max(pd,0),1),2))*SC*.75;
+        x.beginPath();x.moveTo(px*SC,py*SC);x.lineTo(X*SC,Y*SC);x.stroke();}
+      px=X;py=Y;pd=dk;
+    }
+  }
+}
+let phase=0,up=null,down=null;
+const hist=(()=>{try{return JSON.parse(localStorage.getItem('a24turns')||'[]')}catch(e){return[]}})();
+function say(){M.textContent=['Raise it until the egg looks at you. Press now.','Now lower it, slowly, until nobody is there. Press now.',''][phase];
+  B.style.display=phase==2?'none':'';}
+function set(v){S.value=v;draw(v/1000)}
+S.oninput=()=>draw(S.value/1000);
+B.onclick=()=>{const v=S.value/1000;
+  if(phase==0){up=v;phase=1;set(1000);say();}
+  else if(phase==1){down=v;phase=2;say();finish();}};
+function finish(){
+  try{hist.push([up,down]);localStorage.setItem('a24turns',JSON.stringify(hist.slice(-50)))}catch(e){}
+  const bar=(v,l)=>`<div style="position:absolute;left:${v*100}%;top:0;transform:translateX(-50%)"><div style="width:2px;height:22px;background:#222;margin:auto"></div><small>${l}</small></div>`;
+  let h=`<div style="position:relative;width:min(520px,88vw);height:56px;margin:auto;border-top:1px solid #999;margin-top:10px">${bar(up,'on')}${bar(down,'off')}</div>`;
+  const gap=up-down;
+  h+=`<p>On at ${up.toFixed(2)}, off at ${down.toFixed(2)}. `+(Math.abs(gap)<.03?'The same place, to within a hair.':gap>0?'It held on for you after it was faint enough to arrive at.':'It left you earlier than it came.')+'</p>';
+  if(hist.length>1)h+=`<p style="font-size:14px">This browser has now seen ${hist.length} tries; on average on at ${(hist.reduce((a,p)=>a+p[0],0)/hist.length).toFixed(2)}, off at ${(hist.reduce((a,p)=>a+p[1],0)/hist.length).toFixed(2)}.</p>`;
+  h+='<button onclick="again()" style="font:inherit;padding:.3em 1em">again</button>';
+  R.innerHTML=h;
+}
+function again(){phase=0;up=down=null;R.innerHTML='';set(0);B.style.display='';say();}
+set(0);say();
+</script>
