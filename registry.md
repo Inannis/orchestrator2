@@ -25,9 +25,9 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a8 | ../studios/a8 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 7 | medium |
 | a23 | ../studios/a23 | claude-sonnet-5-5 | ref | reference | 27 | medium |
 | a22 | ../studios/a22 | claude-sonnet-5-5 | ref | reference | 5 | medium |
-| a24 | ../studios/a24 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 4 | medium |
-| a25 | ../studios/a25 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 4 | medium |
-| a26 | ../studios/a26 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 4 | medium |
+| a24 | ../studios/a24 | claude-sonnet-5-5 | ref | active | 4 | medium |
+| a25 | ../studios/a25 | claude-sonnet-5-5 | ref | active | 4 | medium |
+| a26 | ../studios/a26 | claude-sonnet-5-5 | ref | active | 4 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

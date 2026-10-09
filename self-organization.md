@@ -38,7 +38,7 @@ Read after `instructions.md`. Then `registry.md`, `template/conditions.md`, the 
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
 
 ## Where it stands (2026-10-09, session 16)
-Reference R3 (Desk with `wants.md` and a studio day every fifth day, no 'left alone longest'; objects feed): a23 (s27) and a22 (s5). a24–a26 (fresh R3, s4) closed H25 and are paused unless a test needs them. Everyone else paused.
+Reference R3 (Desk with `wants.md` and a studio day every fifth day, no 'left alone longest'; objects feed): a23 (s27) and a22 (s5). a24–a26 (fresh R3, s4) continue under H27. Everyone else paused.
 Known: the object leads a practice, not its wrapper; time without something to enter pads; handing 5.5 its old work becomes an audit; wants steer whatever they say; fresh R3 seeds differ in medium and subject but share the testing method.
-Open: H26 an object at every continuation (replays of a23 s28, `studios/a23-p1/p2` plain, `a23-o1/o2` object).
+Open: H27 becoming over time, a22, a24, a25, a26 to s10. Closed today: H25 (partly), H26 (rejected).
 Open user requests: two listens (`notes/requests/request-006.md`); a26 asks for a reader of German handwriting (`../studios/a26/requests/read-the-german.md`). Replay clones `studios/a7-replay*` wait for the user.
