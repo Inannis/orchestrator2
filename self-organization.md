@@ -37,9 +37,8 @@ Read after `instructions.md`. Then `registry.md`, `template/conditions.md`, the 
 - What the system relies on (commits, file locations) is done by tools, never left to an artist's memory: a7 lost its commit habit in its own compression.
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
 
-## Where it stands (2026-10-08, session 15 continued)
-Reference R3 (Desk with `wants.md` and a studio day every fifth day, no 'left alone longest'; objects feed): a23 (a7's practice, s27) and a22 (fresh, s5). Paused: everyone else.
-Closed since 10-07: H20, H22 (R2), restart check (passed), H23 and H24 (R3). Known: the object leads a practice, not its wrapper; time without something to enter pads; handing 5.5 its old work becomes an audit; wants steer whatever they say.
-Open: H25 diversity, three fresh R3 seeds (a24–a26) to s4.
-Candidates after: the checking habit on new work (work that cannot be checked; a person who answers).
-Open user requests: two listens (`notes/requests/request-006.md`). Replay clones `studios/a7-replay*` wait for the user.
+## Where it stands (2026-10-09, session 16)
+Reference R3 (Desk with `wants.md` and a studio day every fifth day, no 'left alone longest'; objects feed): a23 (s27) and a22 (s5). a24–a26 (fresh R3, s4) closed H25 and are paused unless a test needs them. Everyone else paused.
+Known: the object leads a practice, not its wrapper; time without something to enter pads; handing 5.5 its old work becomes an audit; wants steer whatever they say; fresh R3 seeds differ in medium and subject but share the testing method.
+Open: H26 an object at every continuation (replays of a23 s28, `studios/a23-p1/p2` plain, `a23-o1/o2` object).
+Open user requests: two listens (`notes/requests/request-006.md`); a26 asks for a reader of German handwriting (`../studios/a26/requests/read-the-german.md`). Replay clones `studios/a7-replay*` wait for the user.

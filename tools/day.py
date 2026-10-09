@@ -1,7 +1,7 @@
 """Run one artist's working day headless, end to end: first turn, one encounter draw, K private continuations, a ledger line.
-usage: python tools/day.py <id> [--k K] [--model M] [--effort E] [--shape S] [--resume SESSION_ID] [--studio PATH] [--n N] [--enc-p P]
+usage: python tools/day.py <id> [--k K] [--model M] [--effort E] [--shape S] [--resume SESSION_ID] [--studio PATH] [--n N] [--enc-p P] [--feed F]
 Shapes (how the day is kept going; see template/conditions.md): "plain" says only that the day is not over;
-"return" also hands back one of the artist's own earlier files, drawn at random.
+"return" also hands back one of the artist's own earlier files, drawn at random; "object" brings a new random object with every continuation.
 Needs the claude CLI logged in (`claude auth login` or CLAUDE_CODE_OAUTH_TOKEN). Handbacks go to runs/days/, not to anyone's context."""
 import sys, json, re, random, subprocess, pathlib, datetime, time, shutil, os
 root = pathlib.Path(__file__).resolve().parent.parent
@@ -52,6 +52,9 @@ def own_file():
     return pick
 
 def more(first_arrival):
+    if shape == "object" and not first_arrival:  # every continuation brings a new object (the first draw already did)
+        feed = ["--feed", opt("--feed")] if opt("--feed") else []
+        first_arrival = "delivered" in subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", "1"] + feed, capture_output=True, text=True).stdout
     base = "The day is not over." + (" Something arrived in inbox/." if first_arrival else "")
     if shape == "return":
         f = own_file()
@@ -142,7 +145,7 @@ with log.open("w", encoding="utf-8") as f:
                 (root / "registry.md").write_text(re.sub(rf"^(\| {aid} \|(?:[^|]*\|){{4}}) \d+ \|", lambda m: f"{m.group(1)} {n} |", fresh, flags=re.M), encoding="utf-8")
         if i >= (k if not resume else k - 1) and time.time() - t0 >= FLOOR: break
         if i == 0 and not resume:
-            e = subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", opt("--enc-p", "0.5")], capture_output=True, text=True).stdout
+            e = subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", opt("--enc-p", "0.5")] + (["--feed", opt("--feed")] if opt("--feed") else []), capture_output=True, text=True).stdout
             m = re.search(r"delivered \S+ \S+ (\w+)", e)
             enc = m.group(1) if m else "none"
             msgs.append(more(bool(m)))
