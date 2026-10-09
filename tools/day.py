@@ -74,7 +74,43 @@ def claude_exe():
     return w or "claude"
 CLAUDE = claude_exe()
 
+def codex_exe():
+    """The native Codex binary under the npm shim (Windows), else `codex`."""
+    w = shutil.which("codex")
+    if w:
+        for exe in (pathlib.Path(w).parent / "node_modules" / "@openai").rglob("codex.exe"):
+            if exe.parent.name == "bin": return str(exe)
+    return w or "codex"
+
+def codex_turn(text, sid=None):
+    """One Codex turn (models named gpt-*): no sandbox (user), its own CODEX_HOME if CODEX_STUDIO_HOME is set, so the user's global AGENTS.md stays out.
+    Returns the same shape as a claude -p result: result, session_id, usage, is_error."""
+    import tempfile
+    env = dict(os.environ)
+    if os.environ.get("CODEX_STUDIO_HOME"): env["CODEX_HOME"] = os.environ["CODEX_STUDIO_HOME"]
+    with tempfile.TemporaryDirectory() as tmp:
+        last = pathlib.Path(tmp) / "last.txt"
+        common = ["--json", "-m", model, "-c", f"model_reasoning_effort={effort}", "--skip-git-repo-check",
+                  "--dangerously-bypass-approvals-and-sandbox", "-o", str(last)]
+        cmd = [codex_exe(), "exec", "resume", sid] + common + [text] if sid else [codex_exe(), "exec", "-C", str(studio)] + common + [text]
+        with open(pathlib.Path(tmp) / "o", "w+", encoding="utf-8") as o, open(pathlib.Path(tmp) / "e", "w+", encoding="utf-8") as e:
+            subprocess.run(cmd, cwd=studio, stdout=o, stderr=e, stdin=subprocess.DEVNULL, timeout=5400, env=env)
+            o.seek(0); e.seek(0); out, err = o.read(), e.read()
+        result = last.read_text(encoding="utf-8", errors="replace").strip() if last.exists() else ""
+    d = {"session_id": sid, "usage": {}, "total_cost_usd": 0, "result": result}
+    for line in out.splitlines():
+        try: ev = json.loads(line)
+        except json.JSONDecodeError: continue
+        if ev.get("type") == "thread.started": d["session_id"] = ev.get("thread_id")
+        elif ev.get("type") == "turn.completed":
+            u = ev.get("usage") or {}; d["usage"] = {"input_tokens": u.get("input_tokens", 0), "output_tokens": u.get("output_tokens", 0)}
+        elif ev.get("type") in ("turn.failed", "error"):
+            d["is_error"] = True; d["result"] = json.dumps(ev)[:1500]
+    if not result and not d.get("is_error"): d["is_error"] = True; d["result"] = (out + err)[-2000:]
+    return d
+
 def turn(text, sid=None):
+    if model.startswith("gpt-"): return codex_turn(text, sid)
     cmd = [CLAUDE, "-p", text, "--model", model, "--output-format", "json", "--effort", effort, "--permission-mode", "acceptEdits",
            "--allowedTools", TOOLS, "--settings", '{"autoMemoryEnabled": false}', "--strict-mcp-config"]  # no MCP servers in a studio
     if sid: cmd += ["--resume", sid]

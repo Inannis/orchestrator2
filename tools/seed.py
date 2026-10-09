@@ -1,10 +1,12 @@
 """Seed a new artist from a condition in template/conditions.md, and add it to the registry.
-usage: python tools/seed.py <id> <condition> [--like <other-id>]
+usage: python tools/seed.py <id> <condition> [--like <other-id>] [--model M --effort E]  (default claude-sonnet-5-5 medium)
 --like gives the new studio the same first arrival as <other-id>, as its full record (the matched twin of a bare seed)."""
 import sys, re, json, shutil, subprocess, pathlib
 root = pathlib.Path(__file__).resolve().parent.parent
 aid, cond = sys.argv[1], sys.argv[2]
 like = sys.argv[sys.argv.index("--like") + 1] if "--like" in sys.argv else None
+model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "claude-sonnet-5-5"
+effort = sys.argv[sys.argv.index("--effort") + 1] if "--effort" in sys.argv else "medium"
 row = re.search(rf"^\| {cond} \| ([\w-]+) \| ([\w-]+) \|", (root / "template" / "conditions.md").read_text(encoding="utf-8"), re.M)
 if not row: sys.exit(f"no condition {cond}")
 charter = row.group(1)
@@ -17,7 +19,7 @@ c = studio / "CHARTER.md"; c.write_text(c.read_text(encoding="utf-8").replace("{
 for d in ["inbox", "requests"]:
     (studio / d).mkdir(exist_ok=True)
 if like:
-    rec = [json.loads(l) for l in (root / "runs" / "encounters.ndjson").open(encoding="utf-8") if json.loads(l)["studio"] == like][0]
+    rec = [json.loads(l) for l in (root / "runs" / "encounters.ndjson").open(encoding="utf-8") if json.loads(l)["studio"] == like][0]  # its first arrival
     for f in (root.parent / "studios" / like / "inbox").glob(f"encounter-{rec['stamp']}*"):
         if f.suffix != ".md": shutil.copy(f, studio / "inbox" / f.name)
     (studio / "inbox" / f"encounter-{rec['stamp']}.md").write_text("From: the world, at random. Nobody chose this for you. Nothing is expected.\n\n" + rec["record"], encoding="utf-8")
@@ -28,6 +30,6 @@ subprocess.run(["git", "add", "-A"], cwd=studio, check=True)
 subprocess.run(["git", "commit", "-qm", "The studio as found"], cwd=studio, check=True)
 reg = root / "registry.md"; lines = reg.read_text(encoding="utf-8").split("\n")
 last = max(i for i, l in enumerate(lines) if re.match(r"\| a\d+ \| \.\./studios/", l))
-lines.insert(last + 1, f"| {aid} | ../studios/{aid} | claude-sonnet-5-5 | {cond} | active | 0 | medium |")
+lines.insert(last + 1, f"| {aid} | ../studios/{aid} | {model} | {cond} | active | 0 | {effort} |")
 reg.write_text("\n".join(lines), encoding="utf-8")
 print("seeded", aid, cond, charter, row.group(2), f"like {like}" if like else "")
