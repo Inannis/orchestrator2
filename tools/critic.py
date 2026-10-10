@@ -31,7 +31,8 @@ with tempfile.TemporaryDirectory() as tmp:
     last = pathlib.Path(tmp) / "last.txt"
     if model.startswith("gpt-"):
         cmd = [exe("codex", "codex.exe"), "exec", "-C", str(studio), "-m", model, "-c", f"model_reasoning_effort={effort}",
-               "--skip-git-repo-check", "--dangerously-bypass-approvals-and-sandbox", "--ephemeral", "-o", str(last), BRIEF]
+               "--skip-git-repo-check", "--dangerously-bypass-approvals-and-sandbox", "--ephemeral", "--ignore-user-config", "-c", 'web_search="live"',
+               "--disable", "computer_use", "--disable", "browser_use", "--disable", "browser_use_external", "--disable", "apps", "-o", str(last), BRIEF]
         subprocess.run(cmd, cwd=studio, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=3600)
         answer = last.read_text(encoding="utf-8", errors="replace").strip() if last.exists() else ""
     else:

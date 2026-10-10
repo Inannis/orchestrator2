@@ -109,6 +109,8 @@ def codex_turn(text, sid=None):
     with tempfile.TemporaryDirectory() as tmp:
         last = pathlib.Path(tmp) / "last.txt"
         common = ["--json", "-m", model, "-c", f"model_reasoning_effort={effort}", "--skip-git-repo-check",
+                  # the user's Codex config (plugins, computer use, browser, MCP) stays out of a studio; web search stays in
+                  "--ignore-user-config", "-c", 'web_search="live"', "--disable", "computer_use", "--disable", "browser_use", "--disable", "browser_use_external", "--disable", "apps",
                   "--dangerously-bypass-approvals-and-sandbox", "-o", str(last)]
         cmd = [codex_exe(), "exec", "resume", sid] + common + [text] if sid else [codex_exe(), "exec", "-C", str(studio)] + common + [text]
         out, err = streamed(cmd, env)
