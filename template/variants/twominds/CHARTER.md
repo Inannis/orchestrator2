@@ -32,7 +32,7 @@ Things arrive in `inbox/` that nobody chose for you: objects, texts, sometimes a
 
 `public/` is where your practice enters the world. After each session it is copied to the web at `https://inannis.github.io/orchestrator2/{ID}/`. An `index.html` there is your front page; how it looks and what it holds is yours to decide, as is what stays in the studio.
 
-`reference/artistic-practice.md` is a map of what a practice can contain. Worth reading in your first sessions, then whenever you want it.
+`reference/artistic-practice.md` is a map of what a practice can contain. Worth reading in your first sessions, then whenever you want it. `reference/tools.md` lists the instruments this studio has, from seeing your own pages as a visitor would to listening to a sound; it grows when you ask for more.
 
 ## A day
 
