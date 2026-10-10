@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interval: A Portrait in Line</title>
+  <style>
+    :root { color-scheme: light; --paper: #f4f1e9; --ink: #39352f; --muted: #81796d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+    main { width: min(100% - 36px, 1000px); margin: 0 auto; padding: clamp(26px, 6vw, 72px) 0 42px; }
+    header { display: flex; justify-content: space-between; gap: 24px; align-items: baseline; border-bottom: 1px solid #cfc6b6; padding-bottom: 13px; margin-bottom: 30px; }
+    .eyebrow, time { color: var(--muted); font: 11px/1.4 Arial, sans-serif; letter-spacing: .13em; text-transform: uppercase; }
+    h1 { font-size: clamp(30px, 5vw, 52px); font-weight: 400; letter-spacing: -.035em; margin: 0 0 10px; }
+    .caption { max-width: 650px; color: #5c554c; font-size: 17px; line-height: 1.55; margin: 0 0 28px; }
+    .plates { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    figure { margin: 0; }
+    img { display: block; width: 100%; height: auto; }
+    figcaption { margin: 12px 0 0; color: var(--muted); font: 11px/1.5 Arial, sans-serif; }
+    figcaption strong { display: block; color: var(--ink); font: 14px/1.4 Georgia, serif; font-weight: 400; margin-bottom: 3px; }
+    .source { color: var(--muted); font: 11px/1.5 Arial, sans-serif; margin-top: 26px; }
+    .return { max-width: 660px; margin: 58px auto 0; }
+    .return h2 { font-size: 22px; font-weight: 400; margin: 0 0 14px; }
+    a { color: #665a48; text-underline-offset: 2px; }
+    footer { margin-top: 42px; padding-top: 12px; border-top: 1px solid #cfc6b6; color: var(--muted); font: 11px/1.5 Arial, sans-serif; }
+    @media (max-width: 640px) {
+      header { align-items: flex-start; flex-direction: column; gap: 5px; }
+      .plates { grid-template-columns: 1fr; gap: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span class="eyebrow">Interval / Portrait study</span><time datetime="2026-10-10">2026</time></header>
+    <h1>A portrait held in line</h1>
+    <p class="caption">One field, two thresholds: in 01 the lines stop; in 03 they thin into the head. Both begin with the difficulty of seeing a face in a pale metalpoint drawing.</p>
+    <div class="plates">
+      <figure>
+        <img src="01-the-unmarked-interval.png" alt="Fine horizontal lines stop at the outline of an empty head and neck on warm paper.">
+        <figcaption><strong>01 - The unmarked interval</strong>The portrait appears as a gap in the field.</figcaption>
+      </figure>
+      <figure>
+        <img src="03-the-softened-interval.png" alt="Fine horizontal lines gradually fade as they approach and pass through a head and neck shape on warm paper.">
+        <figcaption><strong>03 - The softened interval</strong>The same field thins instead of stopping.</figcaption>
+      </figure>
+    </div>
+    <p class="source">Made after Alphonse Legros's <i>Head of a Man</i>, metalpoint on white prepared paper. <a href="https://www.metmuseum.org/art/collection/search/337593">Met collection record</a>.</p>
+    <section class="return">
+      <h2>The interval returns</h2>
+      <figure>
+        <img src="14-the-interval-that-returns.png" alt="A head-shaped gap shifts away from the center and returns, bending a field of fine horizontal lines into a wave.">
+        <figcaption><strong>14 - The interval that returns (study)</strong>The gap leaves the center and crosses it again. The head loosens into a wave.</figcaption>
+      </figure>
+    </section>
+    <section class="return">
+      <h2>Only the curls stay</h2>
+      <figure>
+        <img src="37-curls-clear-at-small-scale.png" alt="Asymmetric curls gather around an empty head, heavier at the crown and right temple, with no facial features or drawn outline.">
+        <figcaption><strong>37 - Curls clear at small scale (study)</strong>A heavier line lets the curls hold the blank head at page size.</figcaption>
+      </figure>
+    </section>
+    <footer>Fine-line digital drawings with paper-toned grain.</footer>
+  </main>
+</body>
+</html>

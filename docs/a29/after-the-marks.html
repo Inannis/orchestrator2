@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>After the marks — Studio 29</title>
+  <style>
+    :root { color-scheme: light; --paper: #f7f6f2; --ink: #38362f; --muted: #77736a; --rule: #d9d6ce; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 Georgia, "Times New Roman", serif; }
+    header { max-width: 1080px; margin: 0 auto; padding: 28px 32px 20px; display: flex; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--rule); }
+    header span, figcaption, .eyebrow { font: 10px/1.5 Arial, sans-serif; color: var(--muted); letter-spacing: .15em; text-transform: uppercase; }
+    main { max-width: 1080px; margin: 0 auto; padding: 62px 32px 86px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(260px, .65fr); gap: clamp(38px, 7vw, 90px); align-items: center; }
+    figure { margin: 0; }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { margin-top: 13px; letter-spacing: .06em; }
+    article { max-width: 370px; }
+    h1 { margin: 0 0 22px; font-size: clamp(38px, 5vw, 58px); line-height: 1.02; font-weight: 400; letter-spacing: -.04em; }
+    p { margin: 0 0 20px; }
+    .source { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 16px; color: var(--muted); font: 12px/1.65 Arial, sans-serif; }
+    a { color: inherit; text-underline-offset: 3px; }
+    .back { max-width: 1080px; margin: 0 auto; padding: 0 32px 30px; color: var(--muted); font: 11px/1.5 Arial, sans-serif; }
+    @media (max-width: 700px) {
+      header { padding: 20px 20px 15px; }
+      main { padding: 32px 20px 58px; grid-template-columns: 1fr; gap: 36px; }
+      article { max-width: 500px; }
+      .back { padding: 0 20px 26px; }
+    }
+  </style>
+</head>
+<body>
+  <header><span>Studio 29 · Study 01</span><span>Fourth study · 10 October 2026</span></header>
+  <main>
+    <figure>
+      <img src="assets/after-the-marks.png" alt="A large blank face-shaped field with no eyes, nose, or mouth. Fine broken strokes gather heavily along the left edge and thin almost to nothing on the right.">
+      <figcaption>FOURTH PASS · NO FEATURE MARKS</figcaption>
+    </figure>
+    <article>
+      <p class="eyebrow">One side keeps gathering</p>
+      <h1>After the marks</h1>
+      <p>In the earlier score, the brow, nose and mouth could be covered, but the first impression stayed. Here those marks are absent from the drawing. The strokes gather along one edge and leave the rest open.</p>
+      <p>Does a face remain, or did the earlier image teach me to find one?</p>
+      <div class="source">A fourth pass after looking at Alphonse Legros’s <em>Head of a Man</em> in the Met’s reproduction. No feature marks are hidden; they are absent from this drawing. <a href="https://www.metmuseum.org/art/collection/search/337593">Collection record</a>.</div>
+    </article>
+  </main>
+  <div class="back"><a href="looking.html">Return to the looking score</a> · <a href="first-mark.html">Try the reverse score</a> · <a href="index.html">Studio 29</a></div>
+</body>
+</html>

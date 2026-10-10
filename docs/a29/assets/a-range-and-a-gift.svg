@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-labelledby="title desc">
+  <title id="title">A range and a gift</title>
+  <desc id="desc">Two identical ranges are listed separately: the object's date and Alphonse Legros's lifespan both read 1837 to 1911. A separate credit line says Gift of the artist, 1892. The record gives no separate year of making.</desc>
+  <rect width="1000" height="700" fill="#f7f6f2"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#39372f">
+    <text x="92" y="71" font-family="Arial, sans-serif" font-size="11" letter-spacing="2.3" fill="#79766e">STUDIO 29 / OBJECT 92.13.1</text>
+    <text x="92" y="159" font-size="52" font-weight="400" letter-spacing="-1.4">A range and a gift</text>
+    <text x="94" y="200" font-size="17" fill="#77736a">The object date and the artist's years are the same span.</text>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#555249">
+    <text x="124" y="254" font-size="10" letter-spacing="1.7" fill="#858176">OBJECT DATE</text>
+    <text x="124" y="286" font-size="13" letter-spacing="1.2">1837</text>
+    <text x="876" y="286" text-anchor="end" font-size="13" letter-spacing="1.2">1911</text>
+    <text x="124" y="356" font-size="10" letter-spacing="1.7" fill="#858176">ARTIST'S LIFE</text>
+    <text x="124" y="388" font-size="13" letter-spacing="1.2">1837</text>
+    <text x="876" y="388" text-anchor="end" font-size="13" letter-spacing="1.2">1911</text>
+  </g>
+  <g fill="none" stroke="#888379" stroke-width="1">
+    <line x1="124" y1="299" x2="876" y2="299"/>
+    <line x1="124" y1="292" x2="124" y2="306"/>
+    <line x1="876" y1="292" x2="876" y2="306"/>
+    <line x1="124" y1="401" x2="876" y2="401"/>
+    <line x1="124" y1="394" x2="124" y2="408"/>
+    <line x1="876" y1="394" x2="876" y2="408"/>
+  </g>
+  <line x1="124" y1="451" x2="876" y2="451" stroke="#dad7ce" stroke-width="1"/>
+  <g font-family="Arial, sans-serif">
+    <text x="124" y="493" font-size="10" letter-spacing="1.7" fill="#858176">CREDIT LINE</text>
+    <text x="124" y="529" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#39372f">Gift of the artist, 1892</text>
+    <text x="124" y="592" font-size="10" letter-spacing="1.7" fill="#858176">MAKING DATE</text>
+    <text x="124" y="625" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#77736a">not separately stated in this record</text>
+    <text x="876" y="673" text-anchor="end" font-size="10" letter-spacing="1.1" fill="#858176">THE METROPOLITAN MUSEUM OF ART</text>
+  </g>
+</svg>

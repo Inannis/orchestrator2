@@ -11,7 +11,7 @@
 <g fill="#332b24" text-anchor="middle">
   <text x="450" y="124" font-family="Arial,sans-serif" font-size="10" letter-spacing="3">READING THE ORIGINAL AFTER THE COPY</text>
   <text x="450" y="174" font-family="Georgia,serif" font-size="36" letter-spacing="1">MARK / CONTACT</text>
-  <text x="450" y="202" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">TWO PLACES FOR A NAME · NONE FOR A HAND</text>
+  <text x="450" y="202" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.6">NAMES INSIDE, AT THE MARGIN, AND IN THE RECORD · HOLDER NOT NAMED</text>
 </g>
 <path d="M151 231H749" stroke="#827566" stroke-width=".7"/>
 <g fill="#40362c" text-anchor="middle">
@@ -31,7 +31,7 @@
 <path d="M231 476H329 M245 484H315" stroke="#806e59" stroke-width=".55"/>
 <g fill="#5e5143" text-anchor="middle">
   <text x="280" y="579" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">AS SEEN ON THE LOWER TERMINAL</text>
-  <text x="620" y="579" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">AS NAMED BY THE COLLECTION RECORD</text>
+  <text x="620" y="579" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">AS LISTED BY THE COLLECTION RECORD</text>
 </g>
 <!-- Credit slips outside the imagined metal -->
 <g stroke="#766957" fill="#eee4d1">
@@ -47,22 +47,26 @@
   <text x="504" y="531" font-size="8" letter-spacing="1">EARLIER ENGRAVING</text>
   <text x="504" y="552" font-family="Georgia,serif" font-size="14">Pierre Woeiriot de Bouzey II</text>
 </g>
+<g fill="#a2523c" text-anchor="middle">
+  <text x="620" y="605" font-family="Georgia,serif" font-size="16" font-style="italic" letter-spacing="1">Woeiriot · 1555</text>
+</g>
+<text x="620" y="622" text-anchor="middle" fill="#665748" font-family="Arial,sans-serif" font-size="7" letter-spacing=".8">RED EDGE INSCRIPTION · WRITER AND PURPOSE NOT GIVEN IN THIS RECORD</text>
 <path d="M450 334V579" stroke="#897a68" stroke-width=".7" stroke-dasharray="2 5"/>
-<text x="450" y="608" text-anchor="middle" fill="#5a4e40" font-family="Georgia,serif" font-size="13" font-style="italic">A different hand, almost three centuries later.</text>
 <path d="M178 646H722" stroke="#827566" stroke-width=".7"/>
 <!-- A blank place for contact, deliberately not a new signature -->
-<g fill="none" stroke="#584b3d" stroke-width="1.1" stroke-linejoin="round">
+<g transform="translate(36 150) scale(.85)" fill="none" stroke="#584b3d" stroke-width="1.1" stroke-linejoin="round">
   <path d="M429 754 C416 746 409 731 412 715 L420 667 C422 653 434 651 441 664 L447 689 L449 631 C450 615 466 613 470 630 L474 689 L478 622 C480 606 495 608 499 625 L501 688 L507 643 C509 627 524 629 526 645 L526 706 C537 690 549 689 555 698 C561 708 550 727 544 741 C533 765 516 780 490 786 C466 791 442 779 429 754Z"/>
   <path d="M432 737Q450 750 472 748 M473 749Q494 743 512 729 M455 712Q471 721 489 717" stroke-width=".65"/>
 </g>
 <g fill="#4e4439" text-anchor="middle">
-  <text x="450" y="823" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">NO HAND IS NAMED IN EITHER RECORD</text>
-  <text x="450" y="856" font-family="Georgia,serif" font-size="21">The maker enters as a mark.</text>
-  <text x="450" y="886" font-family="Georgia,serif" font-size="21">The holder remains a blank.</text>
+  <text x="450" y="846" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">THE PERSON HOLDING IT IS NOT NAMED</text>
+  <text x="450" y="878" font-family="Georgia,serif" font-size="18">A maker's mark sits in the design.</text>
+  <text x="450" y="904" font-family="Georgia,serif" font-size="18">Another name rides the margin.</text>
+  <text x="450" y="930" font-family="Georgia,serif" font-size="18">The holder is not named.</text>
 </g>
-<path d="M178 929H722" stroke="#827566" stroke-width=".7"/>
+<path d="M178 953H722" stroke="#827566" stroke-width=".7"/>
 <g fill="#393027" text-anchor="middle">
-  <text x="450" y="968" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">P.W. / INF. IS TRANSCRIBED, NOT EXPANDED.</text>
-  <text x="450" y="990" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">A27 · PLATE 03 · 2026</text>
+  <text x="450" y="988" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">P.W. / INF. IS TRANSCRIBED, NOT EXPANDED.</text>
+  <text x="450" y="1010" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2">A27 · PLATE 03 · 2026</text>
 </g>
 </svg>

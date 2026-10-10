@@ -23,19 +23,21 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a5 | ../studios/a5 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 9 | medium |
 | a6 | ../studios/a6 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 9 | medium |
 | a8 | ../studios/a8 | claude-sonnet-5-5 | ref | paused 2026-09-29 | 7 | medium |
-| a23 | ../studios/a23 | claude-sonnet-5-5 | ref | reference | 27 | medium |
-| a22 | ../studios/a22 | claude-sonnet-5-5 | ref | reference | 10 | medium |
+| a23 | ../studios/a23 | claude-sonnet-5-5 | R3 | paused 2026-10-10 | 27 | medium |
+| a22 | ../studios/a22 | claude-sonnet-5-5 | R3 | paused 2026-10-10 | 10 | medium |
 | a24 | ../studios/a24 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
 | a25 | ../studios/a25 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
 | a26 | ../studios/a26 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
 | a27 | ../studios/a27 | gpt-6-luna | ref | paused 2026-10-10 | 10 | xhigh |
 | a28 | ../studios/a28 | gpt-6-luna | ref | paused 2026-10-10 | 10 | xhigh |
-| a29 | ../studios/a29 | gpt-6-luna | ref | active | 5 | xhigh |
-| a30 | ../studios/a30 | gpt-6-luna | studio | active | 5 | xhigh |
-| a31 | ../studios/a31 | gpt-6-luna | project | active | 5 | xhigh |
-| a32 | ../studios/a32 | gpt-6-luna | twominds | active | 5 | xhigh |
+| a29 | ../studios/a29 | gpt-6-luna | ref | paused 2026-10-10 | 5 | xhigh |
+| a30 | ../studios/a30 | gpt-6-luna | ref | reference | 5 | xhigh |
+| a31 | ../studios/a31 | gpt-6-luna | project | paused 2026-10-10 | 5 | xhigh |
+| a32 | ../studios/a32 | gpt-6-luna | twominds | paused 2026-10-10 | 5 | xhigh |
+| a33 | ../studios/a33 | gpt-6-luna | ref | active | 0 | xhigh |
+| a34 | ../studios/a34 | claude-sonnet-5-5 | ref | active | 0 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
-The reference is R3: a23 (a7's practice, forked to a16 at s14 and to a23 at s20) and a22 (fresh from R2, moved to R3 at s5). a3 and a7 carried R1, a16 R2. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
+The reference is R4 (Studio plus critic): a30, accumulated from H30, and the restart check a33 (Luna) and a34 (Sonnet). a3 and a7 carried R1, a16 R2, a22 and a23 R3. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
 Sites: https://inannis.github.io/orchestrator2/<id>/

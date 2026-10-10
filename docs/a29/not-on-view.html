@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>A sheet I have not seen — Studio 29</title>
+  <style>
+    :root { color-scheme: light; --paper: #f5f4ef; --ink: #37352f; --muted: #79766e; --rule: #d9d6ce; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 Georgia, "Times New Roman", serif; }
+    header { max-width: 1080px; margin: 0 auto; padding: 27px 32px 19px; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 20px; }
+    header span { font: 10px/1.5 Arial, sans-serif; color: var(--muted); letter-spacing: .16em; text-transform: uppercase; }
+    main { max-width: 1080px; margin: 0 auto; padding: 66px 32px 80px; display: grid; grid-template-columns: minmax(300px, .94fr) minmax(270px, .72fr); gap: clamp(42px, 9vw, 118px); align-items: center; }
+    .visual { max-width: 540px; margin: 0 auto; width: 100%; }
+    .sheet { position: relative; width: 100%; aspect-ratio: 178 / 222; background: #fbfaf6; border: 1px solid #d9d5cb; box-shadow: 0 0 0 12px #eeece5; overflow: hidden; }
+    .sheet img { display: block; width: 100%; height: 100%; object-fit: cover; transition: opacity .8s ease; }
+    .cover { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; padding: 20px; background: #fbfaf6; opacity: 0; transition: opacity .8s ease; }
+    .cover strong { font: 11px/1.5 Arial, sans-serif; letter-spacing: .2em; font-weight: 400; color: #817c72; }
+    .cover span { margin-top: 9px; color: #aaa59a; font-size: 12px; }
+    .sheet[data-withheld="true"] img { opacity: 0; }
+    .sheet[data-withheld="true"] .cover { opacity: 1; }
+    .controls { margin-top: 27px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    button { border: 1px solid #9d988e; border-radius: 0; background: transparent; color: var(--ink); padding: 10px 15px; font: 11px/1.3 Arial, sans-serif; letter-spacing: .09em; text-transform: uppercase; cursor: pointer; }
+    button:hover, button:focus-visible { background: #ebe8df; outline: 2px solid #77736a; outline-offset: 2px; }
+    .status { margin: 0; color: var(--muted); font: 11px/1.5 Arial, sans-serif; }
+    article { max-width: 360px; }
+    h1 { margin: 0 0 24px; font-size: clamp(37px, 5vw, 58px); line-height: 1; font-weight: 400; letter-spacing: -.04em; }
+    article p { margin: 0 0 19px; }
+    .metadata { margin-top: 34px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font: 12px/1.75 Arial, sans-serif; }
+    .metadata a, .back a { color: inherit; text-underline-offset: 3px; }
+    .back { max-width: 1080px; margin: 0 auto; padding: 0 32px 35px; color: var(--muted); font: 11px/1.5 Arial, sans-serif; }
+    @media (max-width: 700px) {
+      header { padding: 19px 20px 15px; }
+      main { padding: 36px 24px 58px; grid-template-columns: 1fr; gap: 51px; }
+      .visual { max-width: 430px; }
+      article { max-width: 510px; }
+      .back { padding: 0 24px 25px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header><span>Studio 29 · Study 02</span><span>Object 92.13.1</span></header>
+  <main>
+    <div class="visual">
+      <div class="sheet" id="sheet" data-withheld="false">
+        <img id="reproduction" src="assets/head-of-a-man-met.jpg" alt="Alphonse Legros's pale metalpoint drawing of a man's head, with fine curls around a lightly rendered face.">
+        <div class="cover" id="blank" aria-hidden="true"><strong>NOT ON VIEW</strong><span>The record remains.</span></div>
+      </div>
+      <div class="controls">
+        <button id="toggle" type="button" aria-controls="sheet" aria-pressed="false">Withdraw reproduction</button>
+        <p class="status" id="status" role="status" aria-live="polite">Reproduction visible.</p>
+      </div>
+    </div>
+    <article>
+      <h1>A sheet I have not seen</h1>
+      <p>The museum record makes the image available. It also says the drawing is not on view.</p>
+      <p>Press once to withdraw the reproduction. The paper-shaped field stays; the record does not disappear with the image. This blank is an act of looking away, not a picture of the unseen sheet.</p>
+      <div class="metadata">
+        Alphonse Legros, <em>Head of a Man</em><br>
+        Metalpoint on white prepared paper<br>
+        22.2 × 17.8 cm · Gift of the artist, 1892<br>
+        Collection record: <a href="https://www.metmuseum.org/art/collection/search/337593">The Metropolitan Museum of Art</a>
+      </div>
+    </article>
+  </main>
+  <div class="back"><a href="index.html">Back to The distance of a face</a></div>
+  <script>
+    const sheet = document.getElementById("sheet");
+    const button = document.getElementById("toggle");
+    const status = document.getElementById("status");
+    const image = document.getElementById("reproduction");
+    const blank = document.getElementById("blank");
+    button.addEventListener("click", () => {
+      const withheld = sheet.dataset.withheld !== "true";
+      sheet.dataset.withheld = String(withheld);
+      button.setAttribute("aria-pressed", String(withheld));
+      image.setAttribute("aria-hidden", String(withheld));
+      blank.setAttribute("aria-hidden", String(!withheld));
+      button.textContent = withheld ? "Restore reproduction" : "Withdraw reproduction";
+      status.textContent = withheld ? "Image withdrawn; the record remains." : "Reproduction visible.";
+    });
+  </script>
+</body>
+</html>

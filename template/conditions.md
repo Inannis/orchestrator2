@@ -4,10 +4,11 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
-| ref | deskw | objects | plain | deskw | R3 from 2026-10-08, the current reference system (a23 accumulated, a22 fresh). |
-| studio | studio | objects | plain | studio | H30: rooms for positions, threads, drawer, projects by state, after-judgements, practice.md, a review day every fifth. |
-| project | project | objects | plain | project | H30: one project at a time, phases, a showing that closes it. |
-| twominds | twominds | objects | plain | deskw | H30: R3 plus a critic and curator with its own memory (`tools/critic.py`). |
+| ref | r4 | objects | plain | studio | R4 from 2026-10-10: Studio (rooms, practice.md, review day) plus the critic (a30 accumulated; restart check a33 Luna, a34 Sonnet). |
+| R3 | deskw | objects | plain | deskw | 2026-10-08 to 10-10 (a22, a23, paused). |
+| studio | studio | objects | plain | studio | H30, accepted into R4: rooms for positions, threads, drawer, projects by state, after-judgements, practice.md, a review day every fifth. |
+| project | project | objects | plain | project | H30, rejected as built (no project closed in five sessions): one project at a time, phases, a showing that closes it. |
+| twominds | twominds | objects | plain | deskw | H30, critic accepted into R4: R3 plus a critic and curator with its own memory (`tools/critic.py`). |
 | R2 | desk | objects | plain | desk | 2026-10-07 to 10-08 (a16, paused). |
 | R1 | v5 | museum | plain | own | The reference until 2026-10-07 (a3, a7, paused). |
 | deskw | deskw | objects | plain | deskw | H23 accepted into R3. |

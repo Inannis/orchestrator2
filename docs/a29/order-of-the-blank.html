@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>The order of the blank — Studio 29</title>
+  <style>
+    :root { color-scheme: light; --paper: #f7f6f2; --ink: #39372f; --muted: #77736a; --rule: #d9d6ce; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 Georgia, "Times New Roman", serif; }
+    header { max-width: 1000px; margin: 0 auto; padding: 26px 30px 18px; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 20px; }
+    header span, .eyebrow { font: 10px/1.5 Arial, sans-serif; color: var(--muted); letter-spacing: .15em; text-transform: uppercase; }
+    main { max-width: 1000px; margin: 0 auto; padding: 58px 30px 76px; display: grid; grid-template-columns: minmax(280px, .9fr) minmax(260px, .7fr); gap: clamp(42px, 8vw, 100px); align-items: center; }
+    .stage { position: relative; width: 100%; aspect-ratio: 720 / 900; border: 1px solid #d7d2c8; background: #fbfaf6; box-shadow: 0 0 0 10px #eeece5; overflow: hidden; }
+    .stage::before { content: ""; position: absolute; z-index: 0; inset: 2%; border: 1px solid #d9d5cb; background: #fbfaf6; }
+    .layer, .layer img, .layer svg { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+    .layer { z-index: 1; opacity: 0; visibility: hidden; transition: opacity .9s ease, visibility 0s linear .9s; }
+    .layer.visible { opacity: 1; visibility: visible; transition: opacity .9s ease; }
+    .layer img { object-fit: contain; }
+    article { max-width: 390px; }
+    h1 { margin: 0 0 20px; font-size: clamp(40px, 5.5vw, 62px); line-height: 1; font-weight: 400; letter-spacing: -.045em; }
+    article p { margin: 0 0 18px; }
+    .controls, .choices { margin: 22px 0 18px; display: flex; gap: 9px; flex-wrap: wrap; }
+    button { border: 1px solid #aaa59b; border-radius: 0; background: transparent; color: var(--ink); padding: 10px 12px; font: 10px/1.3 Arial, sans-serif; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; }
+    button:hover, button:focus-visible { background: #e9e6de; outline: 1px solid #827d73; outline-offset: 2px; }
+    button:disabled { color: #99948a; cursor: default; }
+    .status { min-height: 1.5em; color: var(--muted); font: 11px/1.5 Arial, sans-serif; }
+    .source { margin-top: 28px; padding-top: 15px; border-top: 1px solid var(--rule); color: var(--muted); font: 11px/1.65 Arial, sans-serif; }
+    .source[hidden], .choices[hidden] { display: none; }
+    a { color: inherit; text-underline-offset: 3px; }
+    .back { max-width: 1000px; margin: 0 auto; padding: 0 30px 28px; color: var(--muted); font: 11px/1.5 Arial, sans-serif; }
+    @media (max-width: 700px) {
+      header { padding: 19px 22px 15px; }
+      main { padding: 34px 24px 55px; grid-template-columns: 1fr; gap: 46px; }
+      .stage { max-width: 430px; margin: 0 auto; }
+      article { max-width: 510px; }
+      .back { padding: 0 24px 25px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header><span>Studio 29 · Looking score</span><span>Study 06</span></header>
+  <main>
+    <div>
+      <div class="stage" id="stage" role="img" aria-label="Blank paper; no marks shown.">
+        <div class="layer" id="field" aria-hidden="true">
+          <img src="assets/open-field-ground.png" alt="">
+          <svg viewBox="0 0 720 900">
+            <g fill="none" stroke="#625e57" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M294 344 Q306 337 317 343" opacity=".74"/><path d="M320 345 L324 348" opacity=".48"/>
+              <path d="M357 342 Q354 362 350 379" opacity=".68"/><path d="M349 385 L346 392" opacity=".48"/>
+              <path d="M330 454 Q343 449 355 453" opacity=".72"/><path d="M360 453 L367 456" opacity=".50"/>
+            </g>
+          </svg>
+        </div>
+        <div class="layer" id="portrait" aria-hidden="true">
+          <img src="assets/head-of-a-man-met.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <article>
+      <p class="eyebrow">One frame, two orders</p>
+      <h1>The order<br>of the blank</h1>
+      <p>Choose a sequence. Each image will appear for the same time, with the same blank interval after it. After the second disappearance, notice what you can still place.</p>
+      <div class="controls" id="sequences" aria-label="Choose the order">
+        <button type="button" data-order="field">Open field first</button>
+        <button type="button" data-order="portrait">Portrait first</button>
+      </div>
+      <p class="status" id="status" role="status" aria-live="polite" aria-atomic="true">The paper is clear.</p>
+      <div class="choices" id="choices" hidden aria-label="Choose what stayed">
+        <button type="button" data-answer="The field">The field</button>
+        <button type="button" data-answer="The portrait">The portrait</button>
+        <button type="button" data-answer="Both">Both</button>
+        <button type="button" data-answer="Neither">Neither</button>
+        <button type="button" data-answer="I can't separate them">I can't separate them</button>
+      </div>
+      <div class="source">The blank interval is 3.9 seconds each time. Each image appears for 1.8 seconds. The page does not store or send a choice. Running both directions makes the second run familiar.<br><span id="attribution" hidden></span></div>
+    </article>
+  </main>
+  <div class="back"><a href="two-passes.html">The open field, then the portrait</a> · <a href="index.html">Back to Studio 29</a></div>
+  <script>
+    const sequences = document.getElementById("sequences");
+    const field = document.getElementById("field");
+    const portrait = document.getElementById("portrait");
+    const stage = document.getElementById("stage");
+    const status = document.getElementById("status");
+    const choices = document.getElementById("choices");
+    const attribution = document.getElementById("attribution");
+    let running = false;
+
+    function show(layer, description, label, next) {
+      layer.classList.add("visible");
+      stage.setAttribute("aria-label", description);
+      status.textContent = label;
+      window.setTimeout(() => {
+        layer.classList.remove("visible");
+        stage.setAttribute("aria-label", "Blank paper; the image has left.");
+        status.textContent = "The image has left.";
+        window.setTimeout(next, 3900);
+      }, 1800);
+    }
+
+    function finish() {
+      running = false;
+      status.textContent = "What stayed?";
+      choices.hidden = false;
+      sequences.querySelectorAll("button").forEach(button => button.disabled = false);
+    }
+
+    sequences.querySelectorAll("[data-order]").forEach(button => button.addEventListener("click", () => {
+      if (running) return;
+      running = true;
+      sequences.querySelectorAll("button").forEach(item => item.disabled = true);
+      choices.hidden = true;
+      choices.querySelectorAll("button").forEach(item => item.disabled = false);
+      attribution.hidden = true;
+      const order = button.dataset.order === "field" ? [field, portrait] : [portrait, field];
+      const labels = button.dataset.order === "field"
+        ? ["The open field", "The reproduced portrait"]
+        : ["The reproduced portrait", "The open field"];
+      show(
+        order[0],
+        button.dataset.order === "field"
+          ? "A pale field with faint strokes and three separated marks."
+          : "A lightly drawn head, with curls around features that nearly disappear.",
+        "First appearance.",
+        () => show(
+          order[1],
+          button.dataset.order === "field"
+            ? "A lightly drawn head, with curls around features that nearly disappear."
+            : "A pale field with faint strokes and three separated marks.",
+          "Second appearance.",
+          finish
+        )
+      );
+      attribution.dataset.first = labels[0];
+      attribution.dataset.second = labels[1];
+    }));
+
+    choices.querySelectorAll("[data-answer]").forEach(choice => choice.addEventListener("click", () => {
+      choices.querySelectorAll("button").forEach(item => item.disabled = true);
+      status.textContent = `You chose: ${choice.dataset.answer}.`;
+      attribution.textContent = `First: ${attribution.dataset.first}. Second: ${attribution.dataset.second}. The portrait is Alphonse Legros, Head of a Man, metalpoint on white prepared paper. The Met lists the object date as 1837–1911, the credit line as “Gift of the artist, 1892,” and the work as not on view. The image here is its published reproduction. `;
+      const link = document.createElement("a");
+      link.href = "https://www.metmuseum.org/art/collection/search/337593";
+      link.textContent = "Collection record";
+      attribution.append(link);
+      attribution.hidden = false;
+    }));
+  </script>
+</body>
+</html>

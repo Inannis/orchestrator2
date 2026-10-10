@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1520" viewBox="0 0 1480 1520">
+<title>A Cabinet for a Record</title>
+<desc>A proposed front and side elevation, holding a sheet to its recorded dimensions.</desc>
+<rect width="1480" height="1520" fill="#efede6"/>
+<text x="100" y="70" fill="#70776f" font-family="Arial, sans-serif" font-size="14" letter-spacing="2.8">STUDIO DRAWING 03 / 10 OCT 2026</text>
+<text x="100" y="138" fill="#454945" font-family="Georgia, serif" font-size="49">A Cabinet for a Record</text>
+<text x="100" y="175" fill="#70776f" font-family="Arial, sans-serif" font-size="16">a proposed piece of furniture for a sheet by an unnamed hand</text>
+<path d="M100 207H1380" stroke="#c5c6be" stroke-width="1"/>
+
+<!-- Front elevation: a large unfilled field, smaller drawers for the known particulars. -->
+<g fill="none" stroke="#554e46" stroke-linecap="round" stroke-linejoin="round">
+  <!-- shaped crown -->
+  <path d="M260 324 C330 317 399 294 474 298 C554 302 615 319 708 318 C785 317 827 313 872 324 L863 340 H270 Z" stroke-width="3"/>
+  <path d="M271 348 H862 M284 356 H849" stroke-width="1.2"/>
+  <!-- upright case and feet -->
+  <path d="M290 358 V1124 L270 1150 H859 L839 1124 V358" stroke-width="2.2"/>
+  <path d="M308 365 V1106 M821 365 V1106 M290 1124 H839" stroke-width="1.2"/>
+  <path d="M270 1150 C315 1155 356 1145 405 1150 C477 1157 542 1144 606 1150 C695 1157 773 1145 859 1150 L852 1170 H278 Z" stroke-width="2.2"/>
+  <path d="M295 1178 L303 1205 H368 L377 1178 M750 1178 L758 1205 H824 L833 1178" stroke-width="2"/>
+  <!-- upper broad field / blank name -->
+  <path d="M332 389 H797 V567 H332 Z" stroke-width="1.7"/>
+  <path d="M349 405 H780 V551 H349 Z" stroke-width=".9"/>
+  <rect x="446" y="462" width="236" height="44" rx="1" fill="#e2e0d8" stroke-width=".8"/>
+  <!-- date field: shallow long drawer -->
+  <path d="M332 589 H797 V686 H332 Z" stroke-width="1.7"/>
+  <path d="M349 603 H780 V671 H349 Z" stroke-width=".9"/>
+  <path d="M754 627 H776 V648 H754 Z" fill="#dedbd3" stroke-width=".8"/>
+  <!-- two media drawers -->
+  <path d="M332 708 H562 V817 H332 Z M568 708 H797 V817 H568 Z" stroke-width="1.5"/>
+  <path d="M346 722 H548 V803 H346 Z M582 722 H783 V803 H582 Z" stroke-width=".8"/>
+  <path d="M520 752 H540 V772 H520 Z M759 752 H779 V772 H759 Z" fill="#dedbd3" stroke-width=".8"/>
+  <!-- small, exact sheet drawer -->
+  <path d="M332 840 H797 V918 H332 Z" stroke-width="1.5"/>
+  <path d="M349 852 H780 V907 H349 Z" stroke-width=".8"/>
+  <path d="M754 868 H776 V889 H754 Z" fill="#dedbd3" stroke-width=".8"/>
+  <!-- foot-level cupboard doors, deliberately not given a catalogue field -->
+  <path d="M332 941 H797 V1090 H332 Z M565 941 V1090" stroke-width="1.5"/>
+  <path d="M350 959 H548 V1072 H350 Z M582 959 H779 V1072 H582 Z" stroke-width=".8"/>
+  <circle cx="535" cy="1017" r="3" fill="#554e46" stroke-width=".7"/><circle cx="582" cy="1017" r="3" fill="#554e46" stroke-width=".7"/>
+  <!-- fine wood-like scoring, not copied from the historical sheet -->
+  <path d="M312 385 V1096 M317 385 V1096 M812 385 V1096 M817 385 V1096" stroke="#8c8173" stroke-width=".55" opacity=".65"/>
+</g>
+<g fill="#5f5a52" font-family="Arial, sans-serif" text-anchor="middle">
+  <text x="564" y="438" font-size="13" letter-spacing="2">MAKER</text>
+  <text x="564" y="491" font-family="Georgia, serif" font-size="16">—</text>
+  <text x="564" y="631" font-size="13" letter-spacing="1.7">18TH CENTURY</text>
+  <text x="447" y="774" font-size="11" letter-spacing="1.1">PEN · BROWN INK</text>
+  <text x="682" y="774" font-size="11" letter-spacing="1.1">BRUSH · GRAY WASH</text>
+  <text x="564" y="886" font-size="12" letter-spacing="1.2">SHEET / 43 × 32.2 CM</text>
+</g>
+
+<!-- Separate side elevation; its interior is a shallow, empty cavity around the sheet. -->
+<g fill="none" stroke="#706b62" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M1020 324 C1051 320 1085 313 1116 315 C1150 317 1182 323 1204 324 L1195 341 H1029 Z" stroke-width="2.3"/>
+  <path d="M1037 356 V1124 L1020 1150 H1200 L1185 1124 V356 Z" stroke-width="1.8"/>
+  <path d="M1050 369 V1105 M1171 369 V1105" stroke-width="1"/>
+  <path d="M1037 585 H1185 M1037 704 H1185 M1037 831 H1185 M1037 930 H1185" stroke-width="1.2"/>
+  <path d="M1020 1150 H1200 L1194 1170 H1027 Z" stroke-width="2"/>
+  <path d="M1041 1178 L1047 1205 H1071 L1077 1178 M1142 1178 L1148 1205 H1172 L1178 1178" stroke-width="1.7"/>
+  <!-- the sheet sits inside the case, traced twice to distinguish it from a drawer -->
+  <path d="M1065 600 H1158 V724 H1065 Z" stroke="#a17f59" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <path d="M1070 606 H1153 V718 H1070 Z" stroke="#a17f59" stroke-width=".65"/>
+  <!-- open side cavity -->
+  <path d="M1060 387 H1160 V560 H1060 Z M1060 743 H1160 V809 H1060 Z" stroke-width=".7"/>
+</g>
+<text x="1111" y="664" fill="#8b704f" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" letter-spacing="1">SHEET</text>
+
+<!-- The gap is left measurable only as a question; the record describes a sheet, not a cabinet depth. -->
+<g fill="#70776f" font-family="Arial, sans-serif">
+  <text x="1260" y="350" font-size="12" letter-spacing="1.4">SIDE</text>
+  <text x="390" y="1250" font-size="12" letter-spacing="1.3">FRONT</text>
+  <text x="922" y="430" text-anchor="middle" font-size="11" letter-spacing="1.3">CLEARANCE</text>
+  <text x="922" y="449" text-anchor="middle" font-size="11" letter-spacing="1.3">UNRECORDED</text>
+</g>
+<path d="M876 452 H965" stroke="#a6a69e" stroke-width=".9" stroke-dasharray="4 4"/>
+<path d="M876 681 H965" stroke="#a6a69e" stroke-width=".9" stroke-dasharray="4 4"/>
+
+<!-- Dimensions belong to the sheet, not to this imagined cabinet. -->
+<g fill="none" stroke="#8b704f" stroke-width="1">
+  <path d="M1058 1270 H1166 M1058 1264 V1277 M1166 1264 V1277"/>
+  <path d="M1233 599 V726 M1227 599 H1239 M1227 726 H1239"/>
+</g>
+<g fill="#8b704f" font-family="Arial, sans-serif" font-size="12" letter-spacing="1">
+  <text x="1112" y="1294" text-anchor="middle">32.2 CM</text>
+  <text x="1252" y="670" transform="rotate(90 1252 670)" text-anchor="middle">43 CM</text>
+</g>
+
+<path d="M100 1360 H1380" stroke="#c5c6be" stroke-width="1"/>
+<text x="100" y="1403" fill="#454945" font-family="Arial, sans-serif" font-size="15" letter-spacing="1.4">ANONYMOUS / 18TH CENTURY / 43 × 32.2 CM</text>
+<text x="100" y="1434" fill="#70776f" font-family="Arial, sans-serif" font-size="14">after the record for the Met's Design for a cabinet · proposed, 2026</text>
+<text x="1380" y="1403" text-anchor="end" fill="#70776f" font-family="Arial, sans-serif" font-size="13" letter-spacing="1.3">OBJECT 62.662.2</text>
+<text x="1380" y="1434" text-anchor="end" fill="#70776f" font-family="Arial, sans-serif" font-size="13" letter-spacing="1.3">NOT A RECONSTRUCTION</text>
+</svg>

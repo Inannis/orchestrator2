@@ -5,7 +5,9 @@ import sys
 from playwright.sync_api import sync_playwright
 url, out = sys.argv[1], sys.argv[2]
 import pathlib
+local = False
 if not url.startswith(("http://", "https://", "file:")) and pathlib.Path(url).exists():
+    local = True
     f = pathlib.Path(url).resolve()
     url = (f / "index.html" if f.is_dir() else f).as_uri()
 width = int(sys.argv[sys.argv.index("--width")+1]) if "--width" in sys.argv else 1200
@@ -16,7 +18,7 @@ with sync_playwright() as p:
     try: pg.wait_for_load_state("networkidle", timeout=8000)
     except Exception: pass
     ct = (r.headers.get("content-type", "") if r else "")
-    if ct.startswith("image/"):
+    if ct.startswith("image/") and not local:  # a remote image is saved as it is; a local file is always rendered
         open(out, "wb").write(r.body())
     else:
         pg.screenshot(path=out, full_page=full)

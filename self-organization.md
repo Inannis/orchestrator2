@@ -40,8 +40,8 @@ Read after `instructions.md`. These files are the whole memory of the orchestrat
 - What the system relies on (commits, file locations) is done by tools, never left to an artist's memory: a7 lost its commit habit in its own compression.
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
 
-## Where it stands (2026-10-09, session 16)
-Reference R3 (Desk with `wants.md` and a studio day every fifth day, no 'left alone longest'; objects feed): a23 (s27) and a22 (s10). Paused: everyone else.
-Known: the object leads a practice, not its wrapper; time without something to enter pads; handing 5.5 its old work becomes an audit; more objects per day give thin one-offs; wants steer whatever they say; R3 holds over ten sessions, keeps seeds distinct, and lets one practice deepen (a24) while arrivals scatter the varied ones.
-Open: H30 whole systems (a29 R3, a30 Studio, a31 Project, a32 Two minds; Luna, one first object) to s5, running. Closed: H29 (R3 keeps Luna's memory bounded; a27 drifted into archive research). a27, a28 paused at s10. Closed: H28 (Luna on R3: the object leads there too; days long and deep; memory grows fast).
+## Where it stands (2026-10-10, session 17)
+Reference R4 (`ref`: Studio rooms, `practice.md`, a review day every fifth day, plus the critic; objects feed): a30 (Luna, s5, accumulated). Restart check H31: a33 (Luna) and a34 (Sonnet) from one object, to s5. Paused: everyone else.
+Known: the object leads what a practice is about; systems shape how it works; a review day that reads the practice whole can change it (a30); a critic with its own memory gives real curatorial judgement (a32); a project without an end never ends (a31); Luna works long and deep and pulls toward research; Sonnet 5.5 pulls toward checking; R3's desk and wants keep memory bounded on both.
+Candidates after H31: a project system with a real end; arrivals that scatter varied practices; the research pull.
 Open user requests: two listens (`notes/requests/request-006.md`); a26 asks for a reader of German handwriting (`../studios/a26/requests/read-the-german.md`). Replay clones `studios/a7-replay*` wait for the user.
