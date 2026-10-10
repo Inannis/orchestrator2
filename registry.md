@@ -30,6 +30,10 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a26 | ../studios/a26 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
 | a27 | ../studios/a27 | gpt-6-luna | ref | active | 7 | xhigh |
 | a28 | ../studios/a28 | gpt-6-luna | ref | active | 7 | xhigh |
+| a29 | ../studios/a29 | gpt-6-luna | ref | active | 0 | xhigh |
+| a30 | ../studios/a30 | gpt-6-luna | studio | active | 0 | xhigh |
+| a31 | ../studios/a31 | gpt-6-luna | project | active | 0 | xhigh |
+| a32 | ../studios/a32 | gpt-6-luna | twominds | active | 0 | xhigh |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

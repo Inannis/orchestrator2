@@ -5,6 +5,9 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
 | ref | deskw | objects | plain | deskw | R3 from 2026-10-08, the current reference system (a23 accumulated, a22 fresh). |
+| studio | studio | objects | plain | studio | H30: rooms for positions, threads, drawer, projects by state, after-judgements, practice.md, a review day every fifth. |
+| project | project | objects | plain | project | H30: one project at a time, phases, a showing that closes it. |
+| twominds | twominds | objects | plain | deskw | H30: R3 plus a critic and curator with its own memory (`tools/critic.py`). |
 | R2 | desk | objects | plain | desk | 2026-10-07 to 10-08 (a16, paused). |
 | R1 | v5 | museum | plain | own | The reference until 2026-10-07 (a3, a7, paused). |
 | deskw | deskw | objects | plain | deskw | H23 accepted into R3. |
@@ -20,5 +23,5 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 - **charter** `v5` is `template/studio/CHARTER.md`; anything else overlays `template/variants/<charter>/`.
 - **feed** `museum`: Met, Art Institute, Gutenberg, Wikipedia, living artists. `wide`: Commons photograph, current events, iNaturalist, Gutenberg, Wikipedia, living artist, Met. `objects`: Met objects with their image (twice as likely), Gutenberg passages: things, not texts about things. A `-bare` feed delivers the thing alone (picture, passage, text) without title, source or metadata; the record goes to `runs/encounters.ndjson` only.
 - **shape** `plain`: "The day is not over." K times (K private, 1–6), plus "Something arrived in inbox/." when the first draw delivers. `return`: also one of the artist's earlier files. `minimum`: as plain, and the day goes on until it has lasted 20 minutes (never said).
-- **memory** `own`: the artist organizes it, with the charter's one paragraph on the first file. `rooms`: furnished rooms, a letter moved to `days/` each morning, every fifth day a studio day. `desk`: notes live beside works, a letter moved to `days/` each morning, `DESK.md` laid out by `tools/desk.py`. `deskw`: desk plus `wants.md` and a studio day every fifth day (one continuation). The desk has no 'left alone longest' (H24).
+- **memory** `own`: the artist organizes it, with the charter's one paragraph on the first file. `rooms`: furnished rooms, a letter moved to `days/` each morning, every fifth day a studio day. `desk`: notes live beside works, a letter moved to `days/` each morning, `DESK.md` laid out by `tools/desk.py`. `deskw`: desk plus `wants.md` and a studio day every fifth day (one continuation). The desk has no 'left alone longest' (H24). `studio`: letter moved each morning, a review day every fifth day (two continuations). `project`: letter moved each morning; the rest is the charter.
 - **model** is per artist in `registry.md`. **seeding**: one encounter at p=1 before session one (`--like <id>` gives the same object).

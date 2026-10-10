@@ -30,6 +30,8 @@ today = datetime.date.today().isoformat()
 prompt = (root / "template" / "SESSION-PROMPT.md").read_text(encoding="utf-8").replace("{STUDIO}", studio.as_posix()).replace("{DATE}", today).replace("{N}", str(n))
 if memory in ("rooms", "deskw") and n % 5 == 0:  # a studio day is for sorting, not making, so it is short
     prompt += "\n\nToday is a studio day."; k = min(k, 1)
+if memory == "studio" and n % 5 == 0:  # the `studio` system's review day: reading the practice whole takes a day of its own
+    prompt += "\n\nToday is a review day."; k = min(k, 2)
 handed = set()  # files already handed back today: no repeats within a day
 
 def own_file():
@@ -148,7 +150,7 @@ def wait_for_reset(msg):
     print(f"{aid}: usage limit, waiting {secs / 60:.0f} min", file=sys.stderr, flush=True)
     time.sleep(secs); return True
 
-if not resume and memory in ("rooms", "desk", "deskw") and (studio / "NOW.md").exists():
+if not resume and memory in ("rooms", "desk", "deskw", "studio", "project") and (studio / "NOW.md").exists():
     (studio / "days").mkdir(exist_ok=True)
     (studio / "NOW.md").replace(studio / "days" / f"{n - 1:03d}.md")
 if not resume and memory in ("desk", "deskw"):
