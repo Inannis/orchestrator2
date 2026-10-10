@@ -41,5 +41,5 @@ Read after `instructions.md`. These files are the whole memory of the orchestrat
 ## Where it stands (2026-10-09, session 16)
 Reference R3 (Desk with `wants.md` and a studio day every fifth day, no 'left alone longest'; objects feed): a23 (s27) and a22 (s10). Paused: everyone else.
 Known: the object leads a practice, not its wrapper; time without something to enter pads; handing 5.5 its old work becomes an audit; more objects per day give thin one-offs; wants steer whatever they say; R3 holds over ten sessions, keeps seeds distinct, and lets one practice deepen (a24) while arrivals scatter the varied ones.
-Open: H28 Luna on R3, a27 (like a24) and a28 (like a26), to s4 (running).
+Open: H29 R3 on Luna over time, a27 and a28 to s10. Closed: H28 (Luna on R3: the object leads there too; days long and deep; memory grows fast).
 Open user requests: two listens (`notes/requests/request-006.md`); a26 asks for a reader of German handwriting (`../studios/a26/requests/read-the-german.md`). Replay clones `studios/a7-replay*` wait for the user.
