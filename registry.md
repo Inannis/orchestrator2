@@ -28,8 +28,8 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a24 | ../studios/a24 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
 | a25 | ../studios/a25 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
 | a26 | ../studios/a26 | claude-sonnet-5-5 | ref | paused 2026-10-09 | 10 | medium |
-| a27 | ../studios/a27 | gpt-6-luna | ref | active | 4 | xhigh |
-| a28 | ../studios/a28 | gpt-6-luna | ref | active | 4 | xhigh |
+| a27 | ../studios/a27 | gpt-6-luna | ref | active | 7 | xhigh |
+| a28 | ../studios/a28 | gpt-6-luna | ref | active | 7 | xhigh |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

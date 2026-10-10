@@ -1,5 +1,5 @@
 """Run one artist's working day headless, end to end: first turn, one encounter draw, K private continuations, a ledger line.
-usage: python tools/day.py <id> [--k K] [--model M] [--effort E] [--shape S] [--resume SESSION_ID] [--studio PATH] [--n N] [--enc-p P] [--feed F]
+usage: python tools/day.py <id> [--k K] [--model M] [--effort E] [--shape S] [--resume SESSION_ID] [--studio PATH] [--n N] [--enc-p P] [--feed F] [--no-window]
 Shapes (how the day is kept going; see template/conditions.md): "plain" says only that the day is not over;
 "return" also hands back one of the artist's own earlier files, drawn at random; "object" brings a new random object with every continuation.
 Needs the claude CLI logged in (`claude auth login` or CLAUDE_CODE_OAUTH_TOKEN). Handbacks go to runs/days/, not to anyone's context."""
@@ -82,8 +82,24 @@ def codex_exe():
             if exe.parent.name == "bin": return str(exe)
     return w or "codex"
 
+STREAM = root / "runs" / "days" / f"{aid}.stream.jsonl"  # the day's events as they happen; tools/watch.py shows them in a window
+
+def streamed(cmd, env=None):
+    """Run one CLI turn with its events appended to STREAM (a file, not a pipe: a job the artist leaves running
+    in the background would hold a pipe open and stall the day). Returns (events written by this turn, stderr)."""
+    import tempfile
+    start = STREAM.stat().st_size if STREAM.exists() else 0
+    with open(STREAM, "a", encoding="utf-8") as o, tempfile.TemporaryFile("w+", encoding="utf-8") as e:
+        subprocess.run(cmd, cwd=studio, stdout=o, stderr=e, stdin=subprocess.DEVNULL, timeout=5400, env=env)
+        e.seek(0); err = e.read()
+    with open(STREAM, encoding="utf-8", errors="replace") as f:
+        f.seek(start); return f.read(), err
+
+def mark(**ev):
+    with open(STREAM, "a", encoding="utf-8") as f: f.write(json.dumps(ev) + "\n")
+
 def codex_turn(text, sid=None):
-    """One Codex turn (models named gpt-*): no sandbox (user), its own CODEX_HOME if CODEX_STUDIO_HOME is set, so the user's global AGENTS.md stays out.
+    """One Codex turn (models named gpt-*): no sandbox (user), its own CODEX_HOME if CODEX_STUDIO_HOME is set.
     Returns the same shape as a claude -p result: result, session_id, usage, is_error."""
     import tempfile
     env = dict(os.environ)
@@ -93,9 +109,7 @@ def codex_turn(text, sid=None):
         common = ["--json", "-m", model, "-c", f"model_reasoning_effort={effort}", "--skip-git-repo-check",
                   "--dangerously-bypass-approvals-and-sandbox", "-o", str(last)]
         cmd = [codex_exe(), "exec", "resume", sid] + common + [text] if sid else [codex_exe(), "exec", "-C", str(studio)] + common + [text]
-        with open(pathlib.Path(tmp) / "o", "w+", encoding="utf-8") as o, open(pathlib.Path(tmp) / "e", "w+", encoding="utf-8") as e:
-            subprocess.run(cmd, cwd=studio, stdout=o, stderr=e, stdin=subprocess.DEVNULL, timeout=5400, env=env)
-            o.seek(0); e.seek(0); out, err = o.read(), e.read()
+        out, err = streamed(cmd, env)
         result = last.read_text(encoding="utf-8", errors="replace").strip() if last.exists() else ""
     d = {"session_id": sid, "usage": {}, "total_cost_usd": 0, "result": result}
     for line in out.splitlines():
@@ -111,16 +125,15 @@ def codex_turn(text, sid=None):
 
 def turn(text, sid=None):
     if model.startswith("gpt-"): return codex_turn(text, sid)
-    cmd = [CLAUDE, "-p", text, "--model", model, "--output-format", "json", "--effort", effort, "--permission-mode", "acceptEdits",
+    cmd = [CLAUDE, "-p", text, "--model", model, "--output-format", "stream-json", "--verbose", "--effort", effort, "--permission-mode", "acceptEdits",
            "--allowedTools", TOOLS, "--settings", '{"autoMemoryEnabled": false}', "--strict-mcp-config"]  # no MCP servers in a studio
     if sid: cmd += ["--resume", sid]
-    # output goes to files, not pipes: a job the artist leaves running in the background would hold a pipe open and stall the day
-    import tempfile
-    with tempfile.TemporaryFile("w+", encoding="utf-8") as o, tempfile.TemporaryFile("w+", encoding="utf-8") as e:
-        subprocess.run(cmd, cwd=studio, stdout=o, stderr=e, stdin=subprocess.DEVNULL, timeout=5400)
-        o.seek(0); e.seek(0); out, err = o.read(), e.read()
-    try: return json.loads(out)
-    except json.JSONDecodeError: return {"is_error": True, "result": (out + err)[-2000:]}
+    out, err = streamed(cmd)
+    for line in reversed(out.splitlines()):
+        try: ev = json.loads(line)
+        except json.JSONDecodeError: continue
+        if ev.get("type") == "result": return ev
+    return {"is_error": True, "result": (out + err)[-2000:]}
 
 def wait_for_reset(msg):
     """On 'You've hit your session limit · resets 6pm (Europe/Berlin)', sleep until then plus two minutes. False if unparseable or over six hours."""
@@ -141,6 +154,9 @@ if not resume and memory in ("rooms", "desk", "deskw") and (studio / "NOW.md").e
 if not resume and memory in ("desk", "deskw"):
     subprocess.run([sys.executable, str(root / "tools" / "desk.py"), str(studio)])
 t0 = time.time(); turns = 0; cost = 0.0; tok = 0; enc = "none"; err = None; waits = 0
+STREAM.write_text("", encoding="utf-8"); mark(type="day", id=aid, n=n, model=model, effort=effort, k=k, resumed=bool(resume))
+if os.name == "nt" and "--no-window" not in args:  # a console window that shows the day as it happens; it closes when the day ends
+    subprocess.Popen([sys.executable, str(root / "tools" / "watch.py"), str(STREAM)], creationflags=subprocess.CREATE_NEW_CONSOLE)
 msgs = [prompt] if not resume else [more(False)]
 sid = resume
 with log.open("w", encoding="utf-8") as f:
@@ -157,6 +173,7 @@ with log.open("w", encoding="utf-8") as f:
         u = d.get("usage") or {}; tok += sum(u.get(x, 0) or 0 for x in ["input_tokens", "output_tokens", "cache_creation_input_tokens", "cache_read_input_tokens"])
         sent = "(session prompt)" if (i == 0 and not resume) else msgs[-1]
         f.write(f"## turn {i + 1}\n\n> {sent}\n\n{d.get('result', '')}\n\n"); f.flush()
+        mark(type="turn_end", turn=i + 1, of=total, prompt=sent)
         retries = 0
         while d.get("is_error") and "limit" not in str(d.get("result", "")) and retries < 2:
             retries += 1; time.sleep(60); sid = d.get("session_id") or sid
@@ -198,6 +215,7 @@ if row and not opt("--studio") and turns:
     with (root / "runs" / "runs.ndjson").open("a", encoding="utf-8") as f: f.write(json.dumps(line) + "\n")
 if not err and state_file.exists(): state_file.unlink()
 limit = bool(err and "limit" in err)
+mark(type="end", error=err)
 live("stopped" if err else "done", turns_done=turns, error=err, limit=limit, reset=(re.search(r"resets ([^·]+?\))", err or "") or [None, None])[1] if limit else None,
      resumable=state_file.exists())
 print(json.dumps(line))
