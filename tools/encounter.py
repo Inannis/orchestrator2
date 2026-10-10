@@ -13,12 +13,12 @@ def get(url, binary=False):
     return r if binary else r.decode("utf-8", "replace")
 
 def met(inbox, stamp):
-    search = "https://collectionapi.metmuseum.org/public/collection/v1.1/search?hasImages=true&isPublicDomain=true&q=a"
-    total = json.loads(get(search + "&limit=1"))["total"]
-    for _ in range(8):
-        oid = json.loads(get(f"{search}&limit=1&offset={random.randrange(min(total, 10000))}"))["objectIDs"][0]
-        o = json.loads(get(f"https://collectionapi.metmuseum.org/public/collection/v1/objects/{oid}"))
-        if o.get("primaryImageSmall"): break
+    # any object in the whole collection, every department alike; tried until one is public domain with an image
+    ids = json.loads(get("https://collectionapi.metmuseum.org/public/collection/v1/objects"))["objectIDs"]
+    for _ in range(25):
+        try: o = json.loads(get(f"https://collectionapi.metmuseum.org/public/collection/v1/objects/{random.choice(ids)}"))
+        except Exception: continue
+        if o.get("isPublicDomain") and o.get("primaryImageSmall"): break
     else: return None
     img = get(o["primaryImageSmall"], binary=True)
     (inbox / f"encounter-{stamp}.jpg").write_bytes(img)
