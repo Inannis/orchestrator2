@@ -23,7 +23,7 @@ if like:
     for f in (root.parent / "studios" / like / "inbox").glob(f"encounter-{rec['stamp']}*"):
         if f.suffix != ".md": shutil.copy(f, studio / "inbox" / f.name)
     (studio / "inbox" / f"encounter-{rec['stamp']}.md").write_text("From: the world, at random. Nobody chose this for you. Nothing is expected.\n\n" + rec["record"], encoding="utf-8")
-else:
+elif not (studio / "GENESIS.md").exists():  # a genesis studio starts empty: the genesis day brings its own wild input
     subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", "1", "--feed", row.group(2)], check=True)
 subprocess.run(["git", "init", "-q"], cwd=studio, check=True)
 subprocess.run(["git", "add", "-A"], cwd=studio, check=True)

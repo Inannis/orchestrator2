@@ -32,6 +32,9 @@ if memory in ("rooms", "deskw") and n % 5 == 0:  # a studio day is for sorting, 
     prompt += "\n\nToday is a studio day."; k = min(k, 1)
 if memory == "studio" and n % 5 == 0:  # the `studio` system's review day: reading the practice whole takes a day of its own
     prompt += "\n\nToday is a review day."; k = min(k, 2)
+GENESIS = shape == "genesis" and n == 1 and (studio / "GENESIS.md").exists()  # session 1 is the genesis day: seven movements, one per turn
+if GENESIS:
+    prompt += "\n\nToday is your genesis day. After the charter, read `GENESIS.md` and begin with its first movement."; k = 6
 handed = set()  # files already handed back today: no repeats within a day
 
 def own_file():
@@ -54,6 +57,7 @@ def own_file():
     return pick
 
 def more(first_arrival):
+    if GENESIS: return "The day is not over. Go on to the next movement in `GENESIS.md`."
     if shape == "object" and not first_arrival:  # every continuation brings a new object (the first draw already did)
         feed = ["--feed", opt("--feed")] if opt("--feed") else []
         first_arrival = "delivered" in subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", "1"] + feed, capture_output=True, text=True).stdout
@@ -201,7 +205,7 @@ with log.open("w", encoding="utf-8") as f:
                 fresh = (root / "registry.md").read_text(encoding="utf-8")
                 (root / "registry.md").write_text(re.sub(rf"^(\| {aid} \|(?:[^|]*\|){{4}}) \d+ \|", lambda m: f"{m.group(1)} {n} |", fresh, flags=re.M), encoding="utf-8")
         if i >= (k if not resume else k - 1) and time.time() - t0 >= FLOOR: break
-        if i == 0 and not resume:
+        if i == 0 and not resume and not GENESIS:
             e = subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", opt("--enc-p", "0.5")] + (["--feed", opt("--feed")] if opt("--feed") else []), capture_output=True, text=True).stdout
             m = re.search(r"delivered \S+ \S+ (\w+)", e)
             enc = m.group(1) if m else "none"
