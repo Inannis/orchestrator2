@@ -5,7 +5,8 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
 | ref | world | world | plain | studio | R5 from 2026-10-11: R4 with a world beyond the museum and no default form (a30, a34; fresh a41–a43). |
-| genesis2 | genesis2 | world | genesis | studio | H36: the genesis turned outward (`GENESIS.md`, eight movements): the world first by chance procedures and met on its own terms, apprenticeship, what the artist carries only third, four possible artists and the least expected chosen, a field of threads. |
+| genesis3 | genesis3 | world | genesis | studio | H37: genesis2 plus the thing itself (not its record), copying a great work, Appetite (beauty, desire, invention), threads named by their subjects; nine movements. |
+| genesis2 | genesis2 | world | genesis | studio | H36, rejected (forms apart, one subject): the genesis turned outward (`GENESIS.md`, eight movements): the world first by chance procedures and met on its own terms, apprenticeship, what the artist carries only third, four possible artists and the least expected chosen, a field of threads. |
 | genesis | genesis | world | genesis | studio | H35: R5 that begins with a genesis day (`GENESIS.md`, seven movements, one per turn; wild input found by the artist on the web; no seed object). |
 | wall | wall | world | plain | studio | H34, rejected (the look moved into the works): R5 with a wall instead of a front page to design (`public/wall.md`, hung by `tools/hang.py`). |
 | R4 | r4 | objects | plain | studio | 2026-10-10 to 10-11: Studio plus critic (a30, a34 until moved to R5; a33, a35–a40 paused). |
