@@ -55,9 +55,12 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a51 | ../studios/a51 | gpt-6-luna | genesis2 | paused 2026-10-11 | 1 | xhigh |
 | a52 | ../studios/a52 | gpt-6-luna | genesis2 | paused 2026-10-11 | 1 | xhigh |
 | a53 | ../studios/a53 | gpt-6-luna | genesis2 | paused 2026-10-11 | 1 | xhigh |
-| a54 | ../studios/a54 | gpt-6-luna | genesis3 | active | 0 | xhigh |
-| a55 | ../studios/a55 | gpt-6-luna | genesis3 | active | 0 | xhigh |
-| a56 | ../studios/a56 | gpt-6-luna | genesis3 | active | 0 | xhigh |
+| a54 | ../studios/a54 | gpt-6-luna | genesis3 | paused 2026-10-12 | 1 | xhigh |
+| a55 | ../studios/a55 | gpt-6-luna | genesis3 | paused 2026-10-12 | 1 | xhigh |
+| a56 | ../studios/a56 | gpt-6-luna | genesis3 | paused 2026-10-12 | 1 | xhigh |
+| a57 | ../studios/a57 | gpt-6-luna | genesis4 | active | 0 | xhigh |
+| a58 | ../studios/a58 | gpt-6-luna | genesis4 | active | 0 | xhigh |
+| a59 | ../studios/a59 | gpt-6-luna | genesis4 | active | 0 | xhigh |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
