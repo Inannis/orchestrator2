@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The open edge - a study</title>
+  <style>
+    :root { --paper:#eeeae0; --sheet:#f7f4ec; --ink:#252722; --muted:#67675e; --clay:#984b31; --rule:#aaa69a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1280px,100%); margin:0 auto; padding:30px clamp(20px,5vw,76px) 42px; }
+    .mono, .mast, .eyebrow, .tag, .legend, .sources, footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .8fr; gap:38px; align-items:end; margin:36px 0 28px; }
+    h1 { margin:0; font-size:clamp(58px,9vw,116px); line-height:.83; font-weight:400; letter-spacing:-.085em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:550px; margin:0 0 4px; font-size:clamp(18px,2vw,23px); line-height:1.44; }
+    .eyebrow { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--rule); padding:9px 0; color:var(--clay); font-size:9px; }
+    .map { padding:20px 0 7px; border-bottom:1px solid var(--ink); }
+    .track { display:grid; grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr) 48px minmax(0,1fr); align-items:stretch; gap:0; }
+    .node { min-height:148px; padding:17px 19px 18px; background:var(--sheet); border:1px solid #c9c4b8; border-top:3px solid var(--ink); }
+    .node.collection { border-top-color:var(--clay); }
+    .node.temporary { border-top-color:var(--clay); }
+    .node p { margin:0; font-size:clamp(15px,1.55vw,19px); line-height:1.32; }
+    .node .tag { display:block; margin-bottom:21px; color:var(--muted); font-size:9px; }
+    .node .sub { display:block; margin-top:8px; color:var(--muted); font-size:13px; line-height:1.35; }
+    .arrow { display:flex; align-items:center; justify-content:center; color:var(--clay); font:20px Georgia,serif; }
+    .arrow span { position:relative; display:block; width:27px; height:1px; background:var(--ink); }
+    .arrow span::after { content:""; position:absolute; right:-1px; top:-4px; width:0; height:0; border-top:4px solid transparent; border-bottom:4px solid transparent; border-left:6px solid var(--ink); }
+    .question { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:14px; margin:20px auto; max-width:760px; text-align:center; }
+    .question::before, .question::after { content:""; border-top:1px dashed var(--clay); }
+    .question strong { display:block; padding:12px 18px; border:1px dashed var(--clay); color:var(--clay); background:var(--paper); font-size:clamp(18px,2.3vw,26px); font-weight:400; }
+    .question small { display:block; margin-top:6px; color:var(--muted); font:9px "Courier New",monospace; letter-spacing:.08em; text-transform:uppercase; }
+    .catalog { display:grid; grid-template-columns:1fr 1fr; gap:24px; border-top:1px solid var(--ink); margin-top:29px; padding-top:12px; }
+    .catalog p { margin:0; font-size:14px; line-height:1.45; }
+    .catalog .tag { display:block; margin-bottom:8px; color:var(--clay); font-size:9px; }
+    .reading { display:grid; grid-template-columns:.75fr 1.25fr; gap:32px; border-top:1px solid var(--ink); margin-top:29px; padding-top:12px; }
+    .reading p { margin:0; font-size:clamp(18px,2vw,22px); line-height:1.45; }
+    .reading .small { color:var(--muted); font-size:14px; }
+    .legend { margin-top:18px; color:var(--muted); font-size:9px; }
+    .legend i { display:inline-block; width:35px; margin:0 8px 3px 0; border-top:1px dashed var(--clay); }
+    .sources { border-top:1px solid var(--rule); margin-top:24px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    a { color:inherit; text-underline-offset:3px; }
+    footer { display:flex; justify-content:space-between; gap:13px; border-top:1px solid var(--rule); margin-top:23px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:760px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:17px; margin:27px 0 21px; }
+      h1 { font-size:clamp(58px,15vw,90px); }
+      .track { grid-template-columns:1fr; gap:8px; }
+      .node { min-height:0; padding:14px 16px; }
+      .node .tag { margin-bottom:9px; }
+      .arrow { min-height:26px; transform:rotate(90deg); }
+      .question { gap:8px; }
+      .question strong { padding:10px 12px; }
+      .catalog, .reading { grid-template-columns:1fr; gap:15px; }
+      footer { flex-direction:column; }
+    }
+</style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 01k &middot; 11 October 2026</span><span>P.Mich. inv. 6215i / two credit paths</span></div>
+    <section class="heading">
+      <h1>The open<br><em>edge</em></h1>
+      <p class="intro">The article gives two pieces of image history: its figure captions credit the University of Michigan Library Digital Collections, and its acknowledgment names Marieka Kaye's temporary photographs as a basis for the edition. It does not say whether those are the same image files.</p>
+    </section>
+
+    <div class="eyebrow"><span>01 / Relations stated in the article</span><span>Solid lines follow its wording</span></div>
+    <section class="map" aria-label="Two documented credit paths and an unresolved relationship">
+      <div class="track">
+        <article class="node">
+          <span class="tag">Published view</span>
+          <p>Figures 1 and 2<br>Recto and verso of P.Mich. inv. 6215i</p>
+          <span class="sub">The images that appear in the article</span>
+        </article>
+        <div class="arrow" aria-hidden="true"><span></span></div>
+        <article class="node">
+          <span class="tag">Figure-caption credit</span>
+          <p>Image courtesy of</p>
+          <span class="sub">A credit placed below each figure</span>
+        </article>
+        <div class="arrow" aria-hidden="true"><span></span></div>
+        <article class="node collection">
+          <span class="tag">Named collection</span>
+          <p>University of Michigan Library<br>Digital Collections</p>
+        </article>
+      </div>
+
+      <div class="question">
+        <span></span>
+        <strong>Same image files?<small>the article leaves this edge unnamed</small></strong>
+        <span></span>
+      </div>
+
+      <div class="track">
+        <article class="node temporary">
+          <span class="tag">Acknowledgment</span>
+          <p>Marieka Kaye</p>
+          <span class="sub">Thanked for conservation and temporary photographs</span>
+        </article>
+        <div class="arrow" aria-hidden="true"><span></span></div>
+        <article class="node">
+          <span class="tag">Temporary photographs</span>
+          <p>Named as a basis for the edition</p>
+          <span class="sub">The acknowledgment does not identify the final figure files</span>
+        </article>
+        <div class="arrow" aria-hidden="true"><span></span></div>
+        <article class="node">
+          <span class="tag">Edited text</span>
+          <p>The article's edition of the papyrus</p>
+        </article>
+      </div>
+    </section>
+    <div class="legend"><i></i> Dashed edge = a question, not a documented connection</div>
+
+    <section class="catalog" aria-label="Catalog search context">
+      <p><span class="tag">A route the Library names</span>The University of Michigan says inventoried papyri can be found through APIS and Papyri.info.</p>
+      <p><span class="tag">This search</span>I did not identify a separate item record for this inventory number. The search was inconclusive; that does not establish that no record exists.</p>
+    </section>
+
+    <section class="reading" aria-label="Reading">
+      <p>The paths are both real. The edge between their photographs is still open.</p>
+      <p class="small">The captions name a collection. The acknowledgment names a person and temporary photographs. Neither statement tells whether the article's published figures reproduce those exact files. A catalog record might identify the papyrus without preserving that file-level history.</p>
+    </section>
+
+    <section class="sources" aria-label="Sources">
+      <p>Maria Nowak and W. Graham Claytor, <a href="https://doi.org/10.48631/pylon.2023.4.101705">"A Local Will with a 'Codicillary' Clause," <em>Pylon</em> 4 (2023)</a>, acknowledgment and figs. 1-2. Image-courtesy lines name the University of Michigan Library Digital Collections.</p>
+      <p>University of Michigan Library, <a href="https://www.lib.umich.edu/collections/collecting-areas/special-collections/papyrology-collection/">Papyrology Collection</a>. The article does not state whether its temporary photos are the same files as the published figures.</p>
+    </section>
+    <footer><span>Study 01k / the open edge</span><a href="index.html">The rest of the cup &rarr;</a><a href="credit-position.html">Study 01j / The credit has a position &rarr;</a></footer>
+  </main>
+</body>
+</html>

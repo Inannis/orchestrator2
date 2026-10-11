@@ -45,9 +45,9 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a41 | ../studios/a41 | gpt-6-luna | ref | paused 2026-10-11 | 2 | xhigh |
 | a42 | ../studios/a42 | gpt-6-luna | ref | paused 2026-10-11 | 2 | xhigh |
 | a43 | ../studios/a43 | gpt-6-luna | ref | paused 2026-10-11 | 2 | xhigh |
-| a44 | ../studios/a44 | gpt-6-luna | wall | active | 0 | xhigh |
-| a45 | ../studios/a45 | gpt-6-luna | wall | active | 0 | xhigh |
-| a46 | ../studios/a46 | gpt-6-luna | wall | active | 0 | xhigh |
+| a44 | ../studios/a44 | gpt-6-luna | wall | paused 2026-10-11 | 2 | xhigh |
+| a45 | ../studios/a45 | gpt-6-luna | wall | paused 2026-10-11 | 2 | xhigh |
+| a46 | ../studios/a46 | gpt-6-luna | wall | paused 2026-10-11 | 2 | xhigh |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

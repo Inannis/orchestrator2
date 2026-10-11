@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Leave the image room — a study</title>
+  <style>
+    :root { --paper:#eeeae0; --sheet:#f7f4ec; --ink:#252722; --muted:#67675e; --clay:#984b31; --rule:#aaa69a; --gray:#aaa9a2; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1380px,100%); margin:0 auto; padding:30px clamp(20px,5vw,76px) 42px; }
+    .mast,.eyebrow,.legend,.caption,.sources,footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .8fr; gap:40px; align-items:end; margin:37px 0 30px; }
+    h1 { margin:0; font-size:clamp(58px,9.5vw,118px); font-weight:400; letter-spacing:-.082em; line-height:.82; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:490px; margin:0 0 3px; font-size:clamp(18px,2vw,23px); line-height:1.42; }
+    figure { margin:0; }
+    .hero { position:relative; overflow:hidden; border:1px solid #c9c4b8; background:var(--sheet); }
+    .hero svg { display:block; width:100%; height:auto; }
+    .hero figcaption { display:flex; justify-content:space-between; gap:15px; border-top:1px solid var(--rule); padding:9px 12px; color:var(--muted); font-size:9px; }
+    .eyebrow { display:flex; justify-content:space-between; gap:14px; color:var(--clay); border-top:1px solid var(--rule); padding:9px 0; font-size:10px; }
+    .history { display:grid; grid-template-columns:.9fr 1.12fr .83fr 1.1fr; gap:clamp(16px,2vw,29px); margin-top:38px; }
+    .moment { min-width:0; border-top:1px solid var(--ink); padding-top:9px; }
+    .moment h2 { display:flex; justify-content:space-between; gap:8px; margin:0 0 9px; font:10px "Courier New",monospace; text-transform:uppercase; letter-spacing:.07em; }
+    .moment h2 span:first-child { color:var(--clay); }
+    .mini { display:grid; place-items:center; min-height:126px; background:var(--sheet); border:1px solid #d0cbbf; padding:13px; }
+    .mini svg { display:block; width:100%; height:auto; max-height:110px; }
+    .mini img { display:block; width:100%; height:auto; }
+    .moment p { margin:9px 0 0; font-size:15px; line-height:1.38; }
+    .moment p small { display:block; margin-top:5px; color:var(--muted); font-size:12px; line-height:1.4; }
+    .strip { border-top:1px solid var(--ink); margin-top:34px; padding-top:12px; }
+    .strip-head { display:flex; justify-content:space-between; align-items:baseline; gap:16px; margin-bottom:10px; }
+    .strip h2 { margin:0; font-size:clamp(23px,3vw,35px); font-weight:400; letter-spacing:-.04em; }
+    .strip-head span { color:var(--muted); font:9px "Courier New",monospace; text-transform:uppercase; letter-spacing:.07em; }
+    .observations { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .observations img { display:block; width:100%; height:auto; background:var(--sheet); }
+    .observations figcaption { display:flex; justify-content:space-between; gap:10px; border-top:1px solid var(--rule); padding:7px 0; color:var(--muted); font:9px "Courier New",monospace; text-transform:uppercase; letter-spacing:.06em; }
+    .reading { display:grid; grid-template-columns:1.12fr .88fr; gap:38px; border-top:1px solid var(--ink); margin-top:29px; padding-top:13px; }
+    .reading p { margin:0; font-size:clamp(17px,1.8vw,21px); line-height:1.44; }
+    .reading .small { color:var(--muted); font-size:14px; }
+    .sources { border-top:1px solid var(--rule); margin-top:26px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    a { color:inherit; text-underline-offset:3px; }
+    footer { display:flex; justify-content:space-between; gap:14px; border-top:1px solid var(--rule); margin-top:23px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:800px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:17px; margin:27px 0 22px; }
+      h1 { font-size:clamp(60px,16vw,94px); }
+      .history { grid-template-columns:1fr 1fr; gap:24px 15px; margin-top:28px; }
+      .observations { grid-template-columns:1fr; gap:13px; }
+      .reading { grid-template-columns:1fr; gap:13px; }
+      footer { flex-direction:column; }
+    }
+    @media(max-width:420px) { .hero figcaption { flex-direction:column; gap:3px; } .history { grid-template-columns:1fr; } .mini { min-height:116px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 01d · 11 October 2026</span><span>Photographic reference plates / before and after 2011</span></div>
+    <section class="heading">
+      <h1>Leave the<br>image <em>room</em></h1>
+      <p class="intro">The calibration strip at the edge of the papyrus is not an interruption. Its narrowness was part of the design brief.</p>
+    </section>
+
+    <figure class="hero">
+      <svg viewBox="0 0 1200 440" role="img" aria-labelledby="hero-title hero-desc" xmlns="http://www.w3.org/2000/svg">
+        <title id="hero-title">A reference plate uses a narrow edge of an open photographic field</title>
+        <desc id="hero-desc">A large empty photographic field occupies most of the drawing. Along its lower edge sits a slim schematic strip of gray and colored patches, a light indicator, a ruler, and a space for a handwritten label. The proportions are illustrative, not measured.</desc>
+        <rect width="1200" height="440" fill="#f7f4ec"/>
+        <rect x="36" y="26" width="1128" height="342" fill="#f4f1e8" stroke="#aaa69a" stroke-width="1.5"/>
+        <path d="M53 44h24M53 44v24M1147 44h-24M1147 44v24M53 350h24M53 350v-24M1147 350h-24M1147 350v-24" fill="none" stroke="#c4beb2" stroke-width="1.5"/>
+        <text x="67" y="82" fill="#77766d" font-family="Courier New,monospace" font-size="12" letter-spacing="1.3">FIELD OF VIEW</text>
+        <text x="600" y="199" text-anchor="middle" fill="#c7c1b6" font-family="Georgia,serif" font-size="42" font-style="italic">room for the subject</text>
+        <text x="600" y="342" text-anchor="middle" fill="#77766d" font-family="Courier New,monospace" font-size="11" letter-spacing="1.2">SCHEMATIC / OPEN AREA AND STRIP ARE NOT TO SCALE</text>
+        <g transform="translate(176 376)">
+          <rect width="848" height="37" fill="#252722"/>
+          <g transform="translate(17 8)">
+            <rect width="16" height="21" fill="#efede6"/><rect x="18" width="16" height="21" fill="#c9c8c1"/><rect x="36" width="16" height="21" fill="#9f9e97"/><rect x="54" width="16" height="21" fill="#77766f"/><rect x="72" width="16" height="21" fill="#4f504b"/><rect x="90" width="16" height="21" fill="#252722"/>
+            <rect x="120" width="16" height="21" fill="#b64a41"/><rect x="138" width="16" height="21" fill="#e0b742"/><rect x="156" width="16" height="21" fill="#3e7957"/><rect x="174" width="16" height="21" fill="#435b98"/><rect x="192" width="16" height="21" fill="#8b5485"/><rect x="210" width="16" height="21" fill="#d6783f"/>
+            <circle cx="289" cy="10" r="10" fill="none" stroke="#f1eee5" stroke-width="1.5"/><path d="M289 0v20M279 10h20M282 3l14 14M296 3l-14 14" stroke="#f1eee5" stroke-width=".7"/><circle cx="289" cy="10" r="2" fill="#984b31"/>
+            <path d="M328 19h141M328 14v5M342 16v3M356 14v5M370 16v3M384 14v5M398 16v3M412 14v5M426 16v3M440 14v5M454 16v3M468 14v5" stroke="#eeeae0" stroke-width="1"/>
+            <rect x="497" y="2" width="331" height="17" fill="none" stroke="#aaa69a" stroke-width=".8"/><path d="M511 11q17-9 31 0t30 0" fill="none" stroke="#aaa69a" stroke-width=".8"/>
+          </g>
+        </g>
+      </svg>
+      <figcaption><span>REFERENCE TOOL / PATCHES · LIGHT · SCALE · IDENTIFICATION</span><span>The field stays open</span></figcaption>
+    </figure>
+
+    <section class="history" aria-label="Design history of compact photographic reference plates">
+      <article class="moment">
+        <h2><span>01 / 2005</span><span>Small scale</span></h2>
+        <div class="mini" aria-label="Schematic of two compact reference plates">
+          <svg viewBox="0 0 400 190" role="img" aria-label="Two short schematic reference plates, drawn to the proportions of their published dimensions">
+            <g transform="translate(14 5)">
+              <rect width="355" height="80" fill="#252722"/><g fill="#d4d2ca"><rect x="9" y="13" width="21" height="21"/><rect x="33" y="13" width="21" height="21"/><rect x="57" y="13" width="21" height="21"/><rect x="81" y="13" width="21" height="21"/><rect x="105" y="13" width="21" height="21"/></g><g fill="#984b31"><rect x="137" y="13" width="18" height="21"/><rect x="158" y="13" width="18" height="21"/><rect x="179" y="13" width="18" height="21"/></g><circle cx="258" cy="40" r="24" fill="none" stroke="#e9e5dc" stroke-width="2"/><circle cx="258" cy="40" r="3" fill="#984b31"/><rect x="294" y="16" width="48" height="48" fill="none" stroke="#b5b2a9" stroke-width="1"/>
+            </g>
+            <g transform="translate(14 110)"><rect width="255" height="60" fill="#252722"/><g fill="#d4d2ca"><rect x="8" y="9" width="19" height="19"/><rect x="30" y="9" width="19" height="19"/><rect x="52" y="9" width="19" height="19"/><rect x="74" y="9" width="19" height="19"/><rect x="96" y="9" width="19" height="19"/></g><g fill="#984b31"><rect x="122" y="9" width="17" height="17"/><rect x="142" y="9" width="17" height="17"/><rect x="162" y="9" width="17" height="17"/></g><circle cx="213" cy="30" r="17" fill="none" stroke="#e9e5dc" stroke-width="2"/></g>
+          </svg>
+        </div>
+        <p>Kushel and Chen publish two compact plates for 35 mm photographs of small daguerreotypes.<small>Their dimensions: 71 × 16 mm and 51 × 12 mm. The stated purpose: preserve image area. Inner marks are my schematic.</small></p>
+      </article>
+
+      <article class="moment">
+        <h2><span>02 / 2008</span><span>Linear family</span></h2>
+        <div class="mini" aria-label="Schematic of the long plate's measured reference area and identification zone">
+          <svg viewBox="0 0 550 118" role="img" aria-label="Schematic showing a 26 by 3 centimeter reference portion, followed by an 18 centimeter identification zone">
+            <g transform="translate(9 26)">
+              <rect width="312" height="36" fill="#252722"/><g fill="#d4d2ca"><rect x="10" y="8" width="23" height="20"/><rect x="36" y="8" width="23" height="20"/><rect x="62" y="8" width="23" height="20"/><rect x="88" y="8" width="23" height="20"/><rect x="114" y="8" width="23" height="20"/><rect x="140" y="8" width="23" height="20"/></g><g fill="#984b31"><rect x="171" y="8" width="20" height="20"/><rect x="194" y="8" width="20" height="20"/><rect x="217" y="8" width="20" height="20"/><rect x="240" y="8" width="20" height="20"/><rect x="263" y="8" width="20" height="20"/><rect x="286" y="8" width="18" height="20"/></g>
+              <rect x="312" width="216" height="36" fill="#252722"/><rect x="330" y="6" width="180" height="24" fill="none" stroke="#aaa69a" stroke-width="1"/><path d="M344 18q20-12 39 0t39 0" fill="none" stroke="#aaa69a" stroke-width="1"/>
+              <path d="M0 44v6h312v-6M312 44v6h216v-6" fill="none" stroke="#984b31" stroke-width="1"/>
+            </g>
+            <text x="9" y="97" fill="#67675e" font-family="Courier New,monospace" font-size="9">26 × 3 cm / REFERENCES</text>
+            <text x="327" y="97" fill="#67675e" font-family="Courier New,monospace" font-size="9">18 cm / TYPICAL ID AREA</text>
+          </svg>
+        </div>
+        <p>Kushel, Chen, and Casella describe a four-size family, three formats for very small subjects and one for larger works.<small>On the large format, the reference section is 26 × 3 cm; a typical 18 cm more holds date and ID.</small></p>
+      </article>
+
+      <article class="moment">
+        <h2><span>03 / 2011</span><span>Product</span></h2>
+        <div class="mini" aria-label="The names credited with designing and producing the AIC target">
+          <svg viewBox="0 0 340 118" role="img" aria-label="The printed abbreviation AIC PhD Target, set as a maker's mark">
+            <path d="M16 18H324M16 99H324" stroke="#aaa69a" stroke-width="1"/>
+            <text x="170" y="68" text-anchor="middle" fill="#252722" font-family="Georgia,serif" font-size="31" letter-spacing="-1">AIC PhD</text>
+            <text x="170" y="88" text-anchor="middle" fill="#984b31" font-family="Courier New,monospace" font-size="9" letter-spacing="1.4">TARGET / ASSEMBLED</text>
+          </svg>
+        </div>
+        <p>AIC announces the targets for sale, designed by Kushel, Chen, and Casella; Robin Myers Imaging produced them.<small>This establishes the named design and a production event, not the manufacture date of every photographed target.</small></p>
+      </article>
+
+      <article class="moment">
+        <h2><span>04 / 2023</span><span>At the edge</span></h2>
+        <div class="mini">
+          <img src="edge-recto.jpg" alt="The AIC target strip beside the recto of P.Mich. inv. 6215i, shown as a narrow equipment margin.">
+        </div>
+        <p>Published with the recto and verso photographs of P.Mich. inv. 6215i.<small>The dates describe publications and image use; they do not trace this plate back to a specific 2005 or 2008 template.</small></p>
+      </article>
+    </section>
+
+    <section class="strip" aria-label="The two photographed papyrus edges">
+      <div class="strip-head"><h2>The tools travel along the edge</h2><span>Published photographs / 2023</span></div>
+      <div class="observations">
+        <figure><img src="edge-recto.jpg" alt="The recto margin with the target strip and handwritten papyrus card, cropped into a long band."><figcaption><span>Recto / beneath the sheet</span><span>Fig. 1</span></figcaption></figure>
+        <figure><img src="edge-verso.jpg" alt="The verso margin turned horizontally for reading, with target strip and papyrus card repeated along its edge."><figcaption><span>Verso / side edge turned to read</span><span>Fig. 2</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="reading">
+      <p>The earlier instructions make the strip read differently. In 2005, two of the later designers already describe the problem of fitting photographic references around small objects while leaving the photograph large. In 2008, three authors explain the linear format and its parts: gray and color patches, a light indicator, a size scale, and space for date and identification. The 2011 AIC announcement marks the fully assembled target as a product.</p>
+      <p class="small">I drew the diagrams from descriptions and dimensions; they are not facsimiles. Their widths are independently enlarged, except that each outlined plate keeps its stated proportions. The documents show related design intentions and overlapping authorship. They do not establish that the target beside this papyrus descends from either earlier plate, or that it is the same physical target seen with the kylix.</p>
+    </section>
+
+    <section class="sources" aria-label="Sources and image credits">
+      <p>Dan Kushel and Jiuan-jiuan Chen, “Small Scale Reference Plates for Photodocumentation,” instructions reprinted in <em>WAAC Newsletter</em> 27, no. 2 (May 2005), pp. 11–12. <a href="https://cool.culturalheritage.org/waac/wn/wn27/wn27-2/wn27-2.pdf">Newsletter PDF ↗</a></p>
+      <p>Dan Kushel, Jiuan-jiuan Chen, and Luisa Casella, “A Photographic Reference Plate for Conservation Documentation” (2008), pp. 1–3. <a href="https://photographwebsite.wordpress.com/wp-content/uploads/2010/05/photoreference_plate_instructions.pdf">Authors’ instructions ↗</a> · American Institute for Conservation, “AIC PhotoDocumentation Targets … on Sale!” (31 August 2011). <a href="https://resources.culturalheritage.org/conservators-converse/2011/08/31/aic-photodocumentation-targets-aic-phd-targets-on-sale/">Announcement ↗</a></p>
+      <p>Papyrus photographs: Maria Nowak and W. Graham Claytor, “A Local Will with a ‘Codicillary’ Clause,” <em>Pylon</em> 4 (2023), figs. 1–2; University of Michigan Library Digital Collections, CC BY-NC-SA 4.0. Crops rotated and resized for this work, not color-corrected. <a href="https://doi.org/10.48631/pylon.2023.4.101705">Article ↗</a></p>
+    </section>
+    <footer><span>Study 01d / leave the image room</span><a href="index.html">The rest of the cup ↗</a><a href="margin-record.html">Study 01e / The number is elsewhere ↗</a><a href="verso-reused.html">Study 01f / The verso is not the after ↗</a><a href="edge.html">Study 01c / The apparatus turns ↗</a><a href="target.html">Study 01b / Same mark ↗</a><a href="margin-suggests.html">Study 01g / The margin suggests ?</a><a href="cause-open.html">Study 01h / The photograph cannot choose ?</a><a href="crop-edges.html">Study 01i / The crop leaves the edges out ?</a><a href="credit-position.html">Study 01j / The credit has a position ↗</a></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Figurine or Amulet</title>
+  <style>
+    :root { color-scheme: light; --paper: #f1eee7; --ink: #23231f; --quiet: #77766f; --rule: #c9c5ba; --image-ground: #bab4ad; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); }
+    main { width: min(100% - 3rem, 1080px); margin: auto; padding: clamp(1.5rem, 5vw, 4rem) 0 2rem; }
+    header, footer { display: flex; justify-content: space-between; gap: 1rem; font: .68rem/1.4 "Courier New", monospace; letter-spacing: .11em; text-transform: uppercase; color: var(--quiet); }
+    header { border-bottom: 1px solid var(--rule); padding-bottom: .8rem; }
+    h1 { max-width: 900px; margin: 2.5rem 0 2rem; font: 400 clamp(3.2rem, 8.4vw, 7.8rem)/.88 Georgia, serif; letter-spacing: -.055em; }
+    h1 em { color: var(--quiet); font-weight: 400; }
+    figure { width: min(100%, 680px); margin: 0 auto; }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { display: flex; justify-content: space-between; gap: 1rem; margin-top: .55rem; font: .62rem/1.4 "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--quiet); }
+    .measure { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: end; margin: 2.8rem 0 2rem; border-bottom: 1px solid var(--rule); padding-bottom: 1.4rem; }
+    .dimension { margin: 0; font: 400 clamp(2.8rem, 7vw, 6rem)/.9 Georgia, serif; letter-spacing: -.045em; }
+    .dimension-label, .date-label { display: block; margin-top: .65rem; font: .62rem/1.5 "Courier New", monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--quiet); }
+    .date { justify-self: end; text-align: right; font: 1rem/1.5 Georgia, serif; }
+    .note { max-width: 40rem; margin: 2rem 0 2.5rem; font: italic clamp(1.1rem, 2vw, 1.4rem)/1.5 Georgia, serif; }
+    .record { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 3rem; max-width: 700px; border-top: 1px solid var(--rule); padding-top: 1rem; }
+    .record div { min-width: 0; }
+    dt { color: var(--quiet); font: .62rem/1.4 "Courier New", monospace; letter-spacing: .1em; text-transform: uppercase; }
+    dd { margin: .35rem 0 0; font: .98rem/1.45 Georgia, serif; }
+    .source { margin-top: 1.5rem; font: .68rem/1.7 "Courier New", monospace; }
+    .source a { color: inherit; text-underline-offset: .2em; }
+    footer { margin-top: 2.5rem; border-top: 1px solid var(--rule); padding-top: .8rem; }
+    @media (max-width: 600px) {
+      main { width: min(100% - 2rem, 480px); }
+      h1 { margin-top: 2rem; }
+      .measure { grid-template-columns: 1fr; gap: 1.3rem; }
+      .date { justify-self: start; text-align: left; }
+      .record { grid-template-columns: 1fr; gap: .9rem; }
+      figcaption span:last-child { text-align: right; }
+      footer span:last-child { text-align: right; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>Collection object / 01</span><span>11 October 2026</span></header>
+    <h1>Figurine <em>or</em> amulet</h1>
+    <figure>
+      <img src="images/met-569190.jpg" alt="A small carved animal standing above a low, elongated base, photographed against a gray ground.">
+    </figure>
+    <section class="measure" aria-label="Recorded dimensions and date">
+      <div>
+        <p class="dimension">2.5 cm</p>
+        <span class="dimension-label">Dimension recorded by the museum · 1 in.</span>
+      </div>
+      <div class="date">
+        <span>ca. 2960–2649 B.C.</span>
+        <span class="date-label">Early Dynastic Period</span>
+      </div>
+    </section>
+    <p class="note">The base is visible; “sled” is the collection’s word.</p>
+    <dl class="record">
+      <div><dt>Title in the collection</dt><dd>Figurine or amulet of a hippo on a sled</dd></div>
+      <div><dt>Object number</dt><dd>26.7.1299</dd></div>
+      <div><dt>Geography</dt><dd>Egypt</dd></div>
+      <div><dt>Medium in the collection record</dt><dd>Hippopotomus ivory</dd></div>
+    </dl>
+    <p class="source">Image: The Metropolitan Museum of Art, object 26.7.1299, Public Domain.<br>
+      <a href="https://www.metmuseum.org/art/collection/search/569190">Open the collection record ↗</a>
+    </p>
+    <footer><span>One object</span><span>Two nouns remain</span></footer>
+  </main>
+</body>
+</html>

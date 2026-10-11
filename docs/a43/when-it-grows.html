@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>When It Grows</title>
+  <style>
+    :root { color-scheme: light; --paper: #efede7; --ink: #262723; --quiet: #77796f; --line: #b8b8ad; --cloth: #d2d0c8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); }
+    main { width: min(100% - 3rem, 1180px); margin: 0 auto; padding: 2rem 0 2.5rem; }
+    header, footer { display: flex; justify-content: space-between; gap: 1rem; font: .68rem/1.4 "Courier New", monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--quiet); }
+    header { border-bottom: 1px solid var(--line); padding-bottom: .8rem; }
+    h1 { margin: 2.3rem 0 1.8rem; font: 400 clamp(2.5rem, 7vw, 6rem)/.95 Georgia, serif; letter-spacing: -.05em; }
+    .views { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.8rem, 2vw, 1.5rem); align-items: start; }
+    figure { margin: 0; min-width: 0; }
+    .frame { width: 100%; aspect-ratio: 2403 / 2882; overflow: hidden; background: var(--cloth); }
+    .frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .focus { width: 100%; aspect-ratio: 2403 / 2882; overflow: hidden; background: var(--cloth); background-repeat: no-repeat; }
+    figcaption { display: flex; justify-content: space-between; gap: .5rem; padding-top: .65rem; border-top: 1px solid var(--line); font: .64rem/1.4 "Courier New", monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--quiet); }
+    .control { display: grid; grid-template-columns: auto minmax(5rem, 1fr) 4rem; align-items: center; gap: .8rem; margin-top: 1.2rem; font: .68rem/1.4 "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase; }
+    .control label { color: var(--quiet); }
+    input[type="range"] { width: 100%; accent-color: var(--ink); }
+    output { text-align: right; font-variant-numeric: tabular-nums; }
+    .note { max-width: 44rem; margin: 2rem 0 0; font: italic 1.05rem/1.5 Georgia, serif; }
+    .record { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); font: .72rem/1.6 "Courier New", monospace; }
+    .record p { margin: 0; }
+    .credit { grid-column: 1 / -1; max-width: 54rem; }
+    .return { margin: 1.5rem 0 0; text-align: right; font: .68rem/1.5 "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase; }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+    footer { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: .8rem; }
+    @media (max-width: 640px) {
+      main { width: min(100% - 2rem, 480px); }
+      .views { grid-template-columns: 1fr; gap: 1.5rem; }
+      .control { grid-template-columns: auto minmax(3rem, 1fr) 3rem; gap: .5rem; }
+      .record { grid-template-columns: 1fr; gap: .8rem; }
+      .credit { grid-column: auto; }
+      figcaption span:last-child, footer span:last-child { text-align: right; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>The Second Shape / Study</span><span>11 October 2026</span></header>
+    <h1>When it grows</h1>
+    <section class="views" aria-label="The curtain photograph and an adjustable enlargement of one dark form">
+      <figure class="source">
+        <div class="frame"><img src="images/cat-shadow-jennifer-c-2011.jpg" alt="A cat-shaped shadow and a smaller dark form on a curtain."></div>
+        <figcaption><span>Source</span><span>01</span></figcaption>
+      </figure>
+      <figure>
+        <div class="focus" id="focus" role="img" aria-label="An enlarged detail centered on the smaller dark form."></div>
+        <figcaption><span>Focus</span><span>01 / same image</span></figcaption>
+        <div class="control">
+          <label for="zoom">Magnification</label>
+          <input id="zoom" type="range" min="1" max="8" step="0.1" value="3" aria-describedby="scale-note">
+          <output id="level" for="zoom" aria-live="polite">3.0×</output>
+        </div>
+      </figure>
+    </section>
+    <p class="note" id="scale-note">The photograph stays the same. The detail grows softer as it enlarges.</p>
+    <section class="record" aria-label="Image source and credit">
+      <p>Source title: <i>Cat Shadow</i><br>Photographed 16 January 2011</p>
+      <p>Photograph by Jennifer C.</p>
+      <p class="credit">Shared as <a href="https://commons.wikimedia.org/wiki/File:Cat_Shadow_(5314824150).jpg">Cat Shadow (5314824150)</a> under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>. The enlarged view is a crop of the unchanged source image.</p>
+    </section>
+    <p class="return"><a href="a-cat-twice.html">Return to A Cat, Twice ↗</a> · <a href="a-second-shape-at-the-seam.html">Return to the seam ↗</a></p>
+    <footer><span>One photograph</span><span>A changing view</span></footer>
+  </main>
+  <script>
+    const image = new Image();
+    const focus = document.getElementById('focus');
+    const zoom = document.getElementById('zoom');
+    const level = document.getElementById('level');
+    const focusX = 0.60;
+    const focusY = 0.16;
+
+    function placeFocus() {
+      if (!image.naturalWidth) return;
+      const magnification = Number(zoom.value);
+      const width = focus.clientWidth * magnification;
+      const height = focus.clientHeight * magnification;
+      const progress = (magnification - 1) / 7;
+      const targetX = focus.clientWidth * (focusX + (0.5 - focusX) * progress);
+      const targetY = focus.clientHeight * (focusY + (0.5 - focusY) * progress);
+      focus.style.backgroundImage = `url("${image.src}")`;
+      focus.style.backgroundSize = `${width}px ${height}px`;
+      focus.style.backgroundPosition = `${targetX - width * focusX}px ${targetY - height * focusY}px`;
+      level.value = `${magnification.toFixed(1)}×`;
+      level.textContent = level.value;
+    }
+
+    image.addEventListener('load', placeFocus);
+    zoom.addEventListener('input', placeFocus);
+    window.addEventListener('resize', placeFocus);
+    image.src = 'images/cat-shadow-jennifer-c-2011.jpg';
+  </script>
+</body>
+</html>

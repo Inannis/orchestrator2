@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The crop leaves the edges out — a study</title>
+  <style>
+    :root { --paper:#eeeae0; --sheet:#f7f4ec; --ink:#252722; --muted:#67675e; --clay:#984b31; --rule:#aaa69a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1360px,100%); margin:0 auto; padding:30px clamp(20px,5vw,76px) 42px; }
+    .mast,.eyebrow,.method,.field-label,.sources,footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .8fr; gap:38px; align-items:end; margin:36px 0 26px; }
+    h1 { margin:0; font-size:clamp(58px,8.6vw,110px); line-height:.83; font-weight:400; letter-spacing:-.085em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:540px; margin:0 0 4px; font-size:clamp(18px,2vw,23px); line-height:1.44; }
+    .method { border-top:1px solid var(--ink); margin:0 0 15px; padding-top:9px; color:var(--muted); font-size:10px; line-height:1.55; }
+    .views { display:grid; grid-template-columns:.78fr 1fr; gap:clamp(26px,4vw,55px); align-items:start; }
+    figure { min-width:0; margin:0; }
+    .eyebrow { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--rule); padding:9px 0; color:var(--clay); font-size:9px; }
+    .whole,.detail { display:flex; align-items:center; justify-content:center; overflow:hidden; border:1px solid #c9c4b8; background:var(--sheet); }
+    .whole svg { display:block; width:auto; height:clamp(450px,52vw,660px); max-width:100%; }
+    .detail img { display:block; width:auto; height:clamp(450px,52vw,660px); max-width:100%; object-fit:contain; }
+    figcaption { margin-top:8px; color:var(--muted); font-size:13px; line-height:1.4; }
+    .reading { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(18px,3vw,40px); margin-top:33px; }
+    .field { border-top:1px solid var(--ink); padding-top:10px; }
+    .field-label { display:flex; justify-content:space-between; gap:10px; margin-bottom:8px; color:var(--clay); font-size:9px; }
+    h2 { margin:0 0 7px; font-size:clamp(24px,3vw,37px); line-height:1; font-weight:400; letter-spacing:-.05em; }
+    .field p { margin:0; font-size:15px; line-height:1.45; }
+    .hinge { display:grid; grid-template-columns:.8fr 1.2fr; gap:33px; border-top:1px solid var(--ink); margin-top:27px; padding-top:13px; }
+    .hinge p { margin:0; font-size:clamp(18px,2vw,22px); line-height:1.44; }
+    .hinge .small { color:var(--muted); font-size:14px; }
+    .sources { border-top:1px solid var(--rule); margin-top:25px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    a { color:inherit; text-underline-offset:3px; }
+    footer { display:flex; justify-content:space-between; gap:13px; border-top:1px solid var(--rule); margin-top:23px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:780px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:17px; margin:27px 0 21px; }
+      h1 { font-size:clamp(57px,15vw,88px); }
+      .views { grid-template-columns:1fr; gap:23px; }
+      .whole svg,.detail img { width:100%; height:auto; }
+      .reading { grid-template-columns:1fr; gap:18px; }
+      .hinge { grid-template-columns:1fr; gap:12px; }
+      footer { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 01i · 11 October 2026</span><span>P.Mich. inv. 6215i / whole and detail</span></div>
+    <section class="heading">
+      <h1>The crop leaves<br><em>the edges out</em></h1>
+      <p class="intro">At close range, fibers and losses fill the view. In the whole photograph, the papyrus's margins and the card stay in relation. The crop gives detail, then takes away its place on the sheet.</p>
+    </section>
+
+    <p class="method">The outline uses the published figure's pixel coordinates: x 115–505, y 170–700 in a 714 × 1000 image. The detail is that unchanged crop, shown larger for inspection; display size is not a physical measurement.</p>
+    <section class="views" aria-label="Whole verso photograph and the crop taken from it">
+      <figure>
+        <div class="eyebrow"><span>01 / Whole verso</span><span>Fig. 2</span></div>
+        <div class="whole">
+          <svg viewBox="0 0 714 1000" role="img" aria-labelledby="frame-title frame-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="frame-title">The full published verso photograph with crop location</title>
+            <desc id="frame-desc">A clay colored rectangle marks the exact detail shown beside the whole photograph, away from the paper's left and right edges, the card, and the scale.</desc>
+            <image href="pmich-6215i-verso.jpeg" x="0" y="0" width="714" height="1000" />
+            <rect x="115" y="170" width="390" height="530" fill="#984b31" fill-opacity=".08" stroke="#984b31" stroke-width="5" stroke-dasharray="14 9" />
+          </svg>
+        </div>
+        <figcaption>The outline marks what the crop keeps. The paper's full silhouette, side margins, card, and reference target remain outside it.</figcaption>
+      </figure>
+      <figure>
+        <div class="eyebrow"><span>02 / Detail</span><span>Unchanged crop</span></div>
+        <div class="detail"><img src="verso-text-detail.jpg" alt="The crop marked in the whole photograph, enlarged: fibers, ink traces, holes, and losses, without the outer sheet edges or label."></div>
+        <figcaption>Fibers, ink traces, and losses come forward. The crop does not show where those marks sit between the margins.</figcaption>
+      </figure>
+    </section>
+
+    <section class="reading" aria-label="What changes with the crop">
+      <article class="field">
+        <div class="field-label"><span>Closer</span><span>Visible</span></div>
+        <h2>Fiber and loss</h2>
+        <p>The enlarged detail gives the worn surface more room: crossing fibers, dark marks, and the holes between them.</p>
+      </article>
+      <article class="field">
+        <div class="field-label"><span>Removed</span><span>Context</span></div>
+        <h2>Margins and label</h2>
+        <p>The full photograph locates this passage on the sheet and keeps the dated card and photographic scale nearby. The crop has neither.</p>
+      </article>
+      <article class="field">
+        <div class="field-label"><span>Still open</span><span>Cause</span></div>
+        <h2>No diagnosis</h2>
+        <p>Magnification does not choose between the article's “smudging or purposeful erasure,” or say whether the whole surface shares one cause.</p>
+      </article>
+    </section>
+
+    <section class="hinge" aria-label="Reading the whole and the detail together">
+      <p>A crop makes one passage legible by removing its neighbors.</p>
+      <p class="small">Here I show the extraction frame beside the detail so that the gain and the loss stay visible together. The frame locates the crop in the photograph; neither view decides what happened to the papyrus before it was photographed.</p>
+    </section>
+
+    <section class="sources" aria-label="Sources and image credits">
+      <p>Fig. 2: Maria Nowak and W. Graham Claytor, “A Local Will with a ‘Codicillary’ Clause,” <em>Pylon</em> 4 (2023). Image courtesy of the University of Michigan Library Digital Collections; CC BY-NC-SA 4.0. <a href="https://doi.org/10.48631/pylon.2023.4.101705">Article ↗</a> · <a href="https://journals.ub.uni-heidelberg.de/index.php/pylon/article/download/101705/96790/262117">Full text PDF ↗</a></p>
+      <p>The full image is retained in its published orientation and without color correction. Crop coordinates refer to the local figure image; the frame is a viewing aid, not a reconstruction of a physical boundary.</p>
+    </section>
+    <footer><span>Study 01i / the crop leaves the edges out</span><a href="index.html">The rest of the cup ↗</a><a href="cause-open.html">Study 01h / The photograph cannot choose ↗</a><a href="margin-suggests.html">Study 01g / The margin suggests ↗</a><a href="credit-position.html">Study 01j / The credit has a position ↗</a></footer>
+  </main>
+</body>
+</html>

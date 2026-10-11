@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The word after — comparison study</title>
+  <style>
+    :root { --paper:#e9e7e0; --ink:#262924; --muted:#696b63; --line:#a8aaa1; --clay:#8b4a37; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1500px,100%); margin:0 auto; padding:30px clamp(20px,4.5vw,68px) 38px; }
+    .mast, .eyebrow, .catalogue, footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:14px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .7fr; gap:28px; align-items:end; margin:30px 0 28px; }
+    h1 { margin:0; font-size:clamp(62px,9vw,112px); line-height:.82; font-weight:400; letter-spacing:-.08em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:470px; justify-self:end; margin:0 0 3px; font-size:clamp(16px,1.8vw,21px); line-height:1.4; }
+    .trio { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(12px,2vw,28px); align-items:start; }
+    figure { margin:0; min-width:0; }
+    .eyebrow { display:flex; justify-content:space-between; gap:8px; border-top:1px solid var(--line); padding:9px 0 8px; color:var(--clay); font-size:9px; }
+    .image { display:flex; align-items:center; justify-content:center; min-height:330px; aspect-ratio: .78; background:#d0d0ce; border:1px solid #a4a49e; overflow:hidden; }
+    .image img { width:100%; height:100%; object-fit:contain; display:block; }
+    .catalogue { min-height:114px; margin:11px 0 0; font-size:10px; line-height:1.55; }
+    .catalogue strong { display:block; margin-bottom:8px; color:var(--ink); font-size:11px; font-weight:400; }
+    .catalogue a, .eyebrow a { color:inherit; text-decoration-thickness:1px; text-underline-offset:3px; }
+    .material { color:var(--muted); }
+    .closing { max-width:780px; border-top:1px solid var(--ink); margin:29px 0 0; padding-top:12px; font-size:clamp(17px,1.9vw,22px); line-height:1.42; }
+    footer { display:flex; justify-content:space-between; gap:14px; border-top:1px solid var(--line); margin-top:26px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:760px) {
+      .heading { grid-template-columns:1fr; gap:16px; margin-top:24px; }
+      .intro { justify-self:start; }
+      .trio { grid-template-columns:1fr; gap:25px; }
+      .image { max-height:620px; min-height:280px; }
+      .catalogue { min-height:0; }
+      footer { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 02b · three related records</span><span>Image family / not a mold map</span></div>
+    <div class="heading">
+      <h1>The word<br><em>after</em></h1>
+      <p class="intro">The Met links three Madonna and Child reliefs through a note about a composition made for reproduction. Each record places the attribution a little differently.</p>
+    </div>
+
+    <section class="trio" aria-label="Three related Madonna and Child reliefs">
+      <figure>
+        <div class="eyebrow"><span>Probably after</span><a href="https://www.metmuseum.org/art/collection/search/194520">18.70.19 ↗</a></div>
+        <div class="image"><img src="variants/194520.jpg" alt="Polychromed stucco relief of Madonna and Child with a low frieze base."></div>
+        <figcaption class="catalogue"><strong>Probably after Lorenzo Ghiberti</strong><span class="material">Stucco, polychromed · ca. 1425–40 · 87.6 × 72.4 cm</span></figcaption>
+      </figure>
+      <figure>
+        <div class="eyebrow"><span>After a composition</span><a href="https://www.metmuseum.org/art/collection/search/190587">08.22.3 ↗</a></div>
+        <div class="image"><img src="variants/190587.jpg" alt="Painted and gilded stucco Madonna and Child on a base inscribed Ave Maria."></div>
+        <figcaption class="catalogue"><strong>Sometimes attributed to Lorenzo Ghiberti</strong><span class="material">Stucco, painted and gilded · 15th century · 71.1 cm high</span></figcaption>
+      </figure>
+      <figure>
+        <div class="eyebrow"><span>After a composition</span><a href="https://www.metmuseum.org/art/collection/search/189245">07.120.3 ↗</a></div>
+        <div class="image"><img src="variants/189245.jpg" alt="Monochrome photograph of a terracotta Madonna and Child relief in an arched frame."></div>
+        <figcaption class="catalogue"><strong>Sometimes attributed to Lorenzo Ghiberti</strong><span class="material">Terracotta · 15th century · 68.6 cm high</span></figcaption>
+      </figure>
+    </section>
+
+    <p class="closing">The records point toward a designed composition and its variants. The surfaces change; the photographs do too. I cannot tell from these views whether any two came from the same mold.</p>
+    <footer><span>Three Metropolitan Museum collection photographs</span><span>07.120.3 · 08.22.3 · 18.70.19</span><a href="noun-changes.html">Study 02d / The noun changes &rarr;</a><a href="before-by-itself.html">Study 02e / Before, by itself &rarr;</a></footer>
+  </main>
+</body>
+</html>

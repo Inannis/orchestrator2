@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Two constructed citation forms and one received copy, each missing a different part.">
+  <title>What a Citation Leaves</title>
+  <style>
+    :root { color-scheme: light; --paper:#eeece4; --ink:#25241f; --muted:#77736a; --rule:#cbc6b9; --red:#a33f2e; --serif:Georgia,"Times New Roman",serif; --mono:Consolas,"Liberation Mono",monospace; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--serif); }
+    main { width:min(100%,1120px); min-height:100vh; margin:auto; padding:clamp(28px,6vw,72px) clamp(25px,8vw,96px) 42px; }
+    header, footer, .number, .source { font:10px/1.6 var(--mono); letter-spacing:.12em; text-transform:uppercase; }
+    header { display:flex; justify-content:space-between; gap:20px; color:var(--muted); border-bottom:1px solid var(--rule); padding-bottom:14px; }
+    header span:last-child { text-align:right; }
+    h1 { margin:clamp(44px,9vh,88px) 0 12px; font-size:clamp(48px,8vw,86px); font-weight:400; line-height:.98; letter-spacing:-.045em; }
+    .intro { margin:0 0 clamp(48px,8vh,82px); color:var(--muted); font-size:16px; }
+    article { display:grid; grid-template-columns:100px minmax(0,1fr); gap:clamp(22px,5vw,58px); border-top:1px solid var(--rule); padding:28px 0 clamp(48px,8vh,78px); }
+    .number { color:var(--red); font-size:12px; }
+    blockquote { margin:0; max-width:780px; font-size:clamp(25px,4vw,44px); line-height:1.2; letter-spacing:-.02em; }
+    .citation { margin-top:24px; font-size:17px; line-height:1.5; }
+    .speaker { display:flex; align-items:baseline; gap:10px; }
+    .gap { display:inline-block; width:min(32vw,210px); height:.85em; border-bottom:1px solid var(--red); vertical-align:baseline; }
+    .from { margin-top:8px; }
+    .source { margin-top:5px; color:var(--muted); font-size:9px; }
+    .missing-source { display:inline-block; width:min(50vw,360px); height:1em; border-bottom:1px solid var(--red); vertical-align:baseline; }
+    .quote-field { height:clamp(180px,31vw,290px); border-bottom:1px solid var(--rule); display:flex; align-items:center; justify-content:center; color:var(--red); font-size:clamp(100px,19vw,196px); line-height:.6; user-select:none; }
+    .quote-field span:first-child { align-self:flex-start; margin-right:16px; }
+    .quote-field span:last-child { align-self:flex-end; margin-left:16px; }
+    .received-copy { margin:14px 0 0; color:var(--muted); font-style:italic; font-size:16px; }
+    .final-credit { display:grid; grid-template-columns:minmax(140px,.8fr) minmax(180px,1.2fr); gap:20px 34px; margin-top:24px; align-items:end; }
+    .attribution { font-size:18px; line-height:1.4; }
+    .attribution em { color:var(--muted); }
+    footer { display:flex; justify-content:space-between; gap:20px; border-top:1px solid var(--rule); padding-top:16px; color:var(--muted); }
+    @media(max-width:620px) {
+      article { grid-template-columns:52px minmax(0,1fr); gap:14px; }
+      .number { font-size:10px; }
+      .final-credit { grid-template-columns:1fr; gap:16px; }
+      footer { display:block; }
+      footer span { display:block; }
+      footer span + span { margin-top:6px; }
+    }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="title">
+    <header><span>Three citation forms</span><span>11 October 2026</span></header>
+    <h1 id="title">What a citation leaves</h1>
+    <p class="intro">Two constructed forms; one received copy.</p>
+
+    <article>
+      <div class="number">01</div>
+      <div>
+        <blockquote>“The blank keeps the shape of what should follow.”</blockquote>
+        <div class="citation">
+          <div class="speaker">— <span class="gap" aria-label="No speaker carried"></span></div>
+          <div class="from">from A sentence composed for this study</div>
+          <div class="source">Studio / 11 October 2026</div>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="number">02</div>
+      <div>
+        <blockquote>“The blank keeps the shape of what should follow.”</blockquote>
+        <div class="citation">
+          <div class="speaker">— Studio</div>
+          <div class="from">from <span class="missing-source" aria-label="No source carried"></span></div>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="number">03</div>
+      <div>
+        <div class="quote-field" role="img" aria-label="Empty quotation field"><span aria-hidden="true">“</span><span aria-hidden="true">”</span></div>
+        <p class="received-copy">The sentence did not arrive with this copy.</p>
+        <div class="final-credit">
+          <div class="attribution">Keanu Reeves<br><em>as John Wick / Jardani Jovonovich</em></div>
+          <div class="attribution"><em>John Wick: Chapter 3 — Parabellum</em><div class="source">The gap belongs to the received copy, not the film.</div></div>
+        </div>
+      </div>
+    </article>
+
+    <footer><span>Constructed / received</span><span>A gap has an address.</span></footer>
+  </main>
+</body>
+</html>

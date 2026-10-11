@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Two Distances, One Seat</title>
+  <desc id="desc">A graphic field drawing of two bush stone-curlews among the shadows, shore and pale outdoor cushions of a Queensland beach scene.</desc>
+  <defs>
+    <pattern id="water" width="62" height="38" patternUnits="userSpaceOnUse">
+      <path d="M4 12h23 M34 29h20 M-8 34h11" stroke="#d2d8d2" stroke-width="2" opacity=".7"/>
+      <circle cx="47" cy="7" r="1.5" fill="#e3e4db" opacity=".8"/>
+    </pattern>
+    <pattern id="feather" width="26" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(-17)">
+      <path d="M3 3l15 8M0 17l13 5" stroke="#d1c5a9" stroke-width="3" opacity=".85"/>
+      <path d="M14 1l8 4" stroke="#f0e6cc" stroke-width="2" opacity=".9"/>
+    </pattern>
+    <pattern id="shade" width="34" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(31)">
+      <path d="M0 0v28" stroke="#39423d" stroke-width="10" opacity=".22"/>
+    </pattern>
+    <clipPath id="near-feathers"><path d="M338 1125c-41 4-72 42-78 92-5 42 16 66 44 66 55 0 102-41 109-89 5-37-26-72-75-69Z"/></clipPath>
+  </defs>
+
+  <rect width="900" height="1600" fill="#eeece1"/>
+  <text x="62" y="72" fill="#555e57" font-family="Arial, sans-serif" font-size="15" letter-spacing="3">FIELD DRAWING  /  01</text>
+  <text x="838" y="72" text-anchor="end" fill="#555e57" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">QLD  /  13:59  /  11 OCT 2026</text>
+  <text x="62" y="139" fill="#252e2b" font-family="Georgia, serif" font-size="42">Two distances, one seat</text>
+
+  <!-- The washed-out open water is kept nearly empty. -->
+  <path d="M0 195H900V695c-133-17-261 24-400 2S226 681 0 711Z" fill="#d7d9d1"/>
+  <path d="M0 445c149-12 269 25 432 9 168-17 313-20 468 3v271c-133-17-261 24-400 2S226 681 0 711Z" fill="#aab8b5"/>
+  <path d="M0 445c149-12 269 25 432 9 168-17 313-20 468 3v271c-133-17-261 24-400 2S226 681 0 711Z" fill="url(#water)" opacity=".82"/>
+  <circle cx="261" cy="573" r="3" fill="#55635f"/>
+  <path d="M0 724c195-31 282 21 438-3 171-26 300-20 462 13v141c-178-11-294 7-466 24-171 17-271-27-434 11Z" fill="#d7c7a7"/>
+  <path d="M0 837c173-38 263 12 434-5 172-17 288-35 466-24v792H0Z" fill="#777b69"/>
+  <path d="M0 837c173-38 263 12 434-5 172-17 288-35 466-24v792H0Z" fill="url(#shade)" opacity=".72"/>
+
+  <!-- A canopy is present as weight and interruption, not a complete tree. -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M-24 197C158 217 292 193 423 207s281 5 493-22" stroke="#4b5144" stroke-width="29"/>
+    <path d="M46 198c83 15 173 23 284 12M503 204c115 3 210-8 333-29" stroke="#68705d" stroke-width="9"/>
+    <path d="M94 202c-3 77 7 139 33 201M176 209c23 79 41 125 83 181M286 207c-6 63-4 113 18 171M539 204c36 53 54 98 65 151M673 198c-11 49-2 94 17 151M804 187c-28 67-29 117-15 169" stroke="#666b55" stroke-width="7"/>
+    <path d="M69 204l-31 94m70-87 27 102m47-96 48 80m49-85-23 88m87-86 31 79m262-88 44 72m63-79-13 94m85-106-49 92" stroke="#85876d" stroke-width="5"/>
+  </g>
+  <g fill="#727760" opacity=".94">
+    <path d="M0 205l65-35 39 28-45 16 82-9 44 20-101 4 83 17-41 13-90-32-50 3Z"/>
+    <path d="M139 203l56-39 39 10-31 28 83-7 29 19-106 3 65 20-47 10-71-24-39 11Z"/>
+    <path d="M350 207l47-35 39 5-25 26 83 1 30 20-110-5 73 27-41 8-75-29-49 3Z"/>
+    <path d="M592 198l43-37 43 7-25 28 90-7 31 17-105 4 71 19-46 12-76-24-39 8Z"/>
+    <path d="M780 187l42-41 39 12-26 27 65-8v28l-70 1 47 22-42 11-45-29-50 8Z"/>
+  </g>
+
+  <!-- Broken scrub marks the boundary where the open ground becomes a room. -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M322 1015l-5-111 18-47m-19 87-38-56m39 28 28-42m-29 7-24-35" stroke="#454b40" stroke-width="8"/>
+    <path d="M557 1040l14-126-25-55m22 107 43-66m-45 31-31-38m32-1 28-45" stroke="#41473d" stroke-width="9"/>
+    <path d="M117 1032l20-67-8-39m8 40 29-37m-29 19-20-32" stroke="#545a48" stroke-width="6"/>
+    <path d="M286 995l-38-38m38 12 29-40m-29 17-9-47m287 74 40-42m-34 28 7-55m-5 48 36-17" stroke="#777a61" stroke-width="5"/>
+  </g>
+  <g fill="#a9a386">
+    <path d="M52 919l62-18 42 32-28 27-66 5-30-19Z"/>
+    <path d="M728 884l45-24 58 30-17 34-63 7-35-21Z"/>
+    <path d="M630 928l34-18 42 23-14 24-50 3-24-15Z"/>
+    <path d="M190 1042l46-16 30 19-18 21-46 3-23-14Z"/>
+  </g>
+
+  <!-- The furniture enters as large, calm planes and a little repeated geometry. -->
+  <g>
+    <path d="M331 1174h569v142H331l-32-18v-101Z" fill="#faf7e9"/>
+    <path d="M352 1203h548v109H352l-27-15v-78Z" fill="#d8d2c0"/>
+    <path d="M352 1203h548v109H352l-27-15v-78Z" fill="none" stroke="#b4ae9c" stroke-width="3"/>
+    <path d="M352 1203c119 14 247 9 548 0" fill="none" stroke="#e9e4d5" stroke-width="5"/>
+    <g fill="#eeeade">
+      <path d="M341 1316h26v39h-26zM384 1316h26v39h-26zM427 1316h26v39h-26zM470 1316h26v39h-26zM513 1316h26v39h-26zM556 1316h26v39h-26zM599 1316h26v39h-26zM642 1316h26v39h-26zM685 1316h26v39h-26zM728 1316h26v39h-26zM771 1316h26v39h-26zM814 1316h26v39h-26zM857 1316h26v39h-26z"/>
+    </g>
+  </g>
+  <!-- The far bird almost belongs to the tree's shadow. -->
+  <g transform="translate(0 0)">
+    <path d="M616 939c-31 4-53 30-59 68-5 31 11 47 31 45 39-3 66-37 66-68 0-28-13-49-38-45Z" fill="#424b46"/>
+    <path d="M630 944c-20 4-34 25-40 52-4 19 2 36 14 42 21-10 39-32 44-54 5-20-1-37-18-40Z" fill="url(#feather)" opacity=".67"/>
+    <path d="M601 950c-12-31-4-70 17-87 14-12 31-6 34 10 4 20-6 50-20 65l-10 25Z" fill="#48514b"/>
+    <path d="M626 867c9-17 27-20 39-9 8 8 8 20 0 28-9 10-27 13-42 5Z" fill="#5e655b"/>
+    <path d="M662 881l39 5-37 8Z" fill="#453f36"/>
+    <circle cx="650" cy="875" r="3" fill="#e2d8bf"/>
+    <path d="M582 1047l-4 36m22-33 1 31" stroke="#8b775c" stroke-width="4"/>
+  </g>
+
+  <!-- A second bird, in a different light but the same pause. -->
+  <g>
+    <path d="M338 1125c-41 4-72 42-78 92-5 42 16 66 44 66 55 0 102-41 109-89 5-37-26-72-75-69Z" fill="#514e43"/>
+    <g clip-path="url(#near-feathers)">
+      <path d="M250 1112h244v181H250Z" fill="url(#feather)" opacity=".94"/>
+      <path d="M273 1175l112-42m-125 81 151-50m-139 93 148-50m-110 81 114-39" stroke="#f0e7ce" stroke-width="4" opacity=".72"/>
+    </g>
+    <path d="M300 1164c-11-44-5-94 24-121 19-18 44-9 46 13 2 26-12 63-34 84l-11 29Z" fill="#5c594e"/>
+    <path d="M322 1056c9-21 31-27 47-13 12 10 12 24 1 35-12 12-33 16-51 6Z" fill="#686454"/>
+    <path d="M364 1075l49 5-46 10Z" fill="#403d36"/>
+    <circle cx="351" cy="1066" r="4" fill="#eee2c0"/>
+    <path d="M328 1250l-5 48m25-47 5 47" stroke="#8a7557" stroke-width="5"/>
+  </g>
+
+  <g transform="translate(0 -55)">
+    <path d="M0 1320h778c44 0 77 22 99 57l23 37v126c-26 39-68 60-125 60H0Z" fill="#f7f3e6"/>
+    <path d="M0 1360h785c35 0 60 14 80 43l35 51v67c-26 28-65 43-119 43H0Z" fill="#d3cebf"/>
+    <path d="M0 1360h785c35 0 60 14 80 43l35 51" fill="none" stroke="#b3ad9d" stroke-width="3"/>
+    <path d="M16 1370c236 0 467 8 705 1" fill="none" stroke="#e8e2d4" stroke-width="6"/>
+    <path d="M0 1559h781c52 0 96-16 119-48" fill="none" stroke="#b9b29f" stroke-width="3"/>
+  </g>
+
+  <path d="M62 1490h185" stroke="#586259" stroke-width="1"/>
+  <text x="62" y="1521" fill="#414b44" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">BURHINUS GRALLARIUS</text>
+  <a href="https://www.inaturalist.org/observations/407446446" aria-label="Source photograph and observation by Roc Doherty, iNaturalist observation 407446446">
+    <text x="838" y="1521" text-anchor="end" fill="#414b44" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">407446446</text>
+  </a>
+  <rect x="0" y="1535" width="900" height="65" fill="#eeece1"/>
+  <text x="62" y="1560" fill="#586056" font-family="Arial, sans-serif" font-size="11" letter-spacing="1.3">PHOTO COPYRIGHT ROC DOHERTY / REDRAWN</text>
+  <a href="https://creativecommons.org/licenses/by/4.0/">
+    <text x="838" y="1560" text-anchor="end" fill="#586056" font-family="Arial, sans-serif" font-size="11" letter-spacing="1.3">CC BY 4.0</text>
+  </a>
+</svg>

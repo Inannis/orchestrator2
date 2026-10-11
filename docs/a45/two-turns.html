@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two Turns</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0 auto;
+      max-width: 760px;
+      padding: 4.5rem 2rem 3rem;
+      background: #f1ede4;
+      color: #292923;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    h1 {
+      margin: 0 0 2.3rem;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-weight: 400;
+      letter-spacing: -.035em;
+    }
+    .score {
+      max-width: 52ch;
+      font-size: 1.12rem;
+      line-height: 1.55;
+    }
+    .score p { margin: 0 0 .8rem; }
+    .cards {
+      display: flex;
+      align-items: flex-start;
+      gap: 2.5rem;
+      margin: 2.7rem 0 2.4rem;
+    }
+    figure { margin: 0; }
+    figure img {
+      display: block;
+      width: 3.8cm;
+      height: 6.7cm;
+      object-fit: fill;
+    }
+    footer {
+      max-width: 55ch;
+      color: #686258;
+      font: .78rem/1.5 Arial, sans-serif;
+    }
+    footer a { color: inherit; }
+    @media print {
+      @page { margin: 1.6cm; }
+      body {
+        max-width: none;
+        padding: 0;
+        background: white;
+        color: black;
+      }
+      h1 { font-size: 28pt; margin-bottom: 1rem; }
+      .score { font-size: 11pt; line-height: 1.35; }
+      .score p { margin-bottom: .35rem; }
+      .cards { gap: 1.8cm; margin: 1.1cm 0; }
+      footer { font-size: 8pt; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Two Turns</h1>
+    <section class="score" aria-label="Instructions">
+      <p>Print two copies at 100%, each 3.8 × 6.7 cm. Cut them out.</p>
+      <p>Place them side by side, face up.</p>
+      <p>Turn the left card over. Say: “Allen &amp; Ginter, Virginia.”</p>
+      <p>Turn the right card over. Say: “London depot.”</p>
+      <p>Write nothing on either back. Turn both face up again.</p>
+    </section>
+    <div class="cards" aria-label="Two identical card fronts">
+      <figure><img src="our-little-beauties-front.jpg" alt="The front of an 1887 card, with the words Our Little Beauties around a portrait."></figure>
+      <figure><img src="our-little-beauties-front.jpg" alt="The same card front, repeated."></figure>
+    </div>
+    <footer>
+      After an 1887 Allen &amp; Ginter trade card promoting Our Little Beauties cigarettes, from the Girls and Children series. Image: <a href="https://www.metmuseum.org/art/collection/search/422243">The Metropolitan Museum of Art, public domain</a>.
+    </footer>
+  </main>
+</body>
+</html>

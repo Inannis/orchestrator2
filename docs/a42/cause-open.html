@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The photograph cannot choose — a study</title>
+  <style>
+    :root { --paper:#eeeae0; --sheet:#f7f4ec; --ink:#252722; --muted:#67675e; --clay:#984b31; --rule:#aaa69a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1360px,100%); margin:0 auto; padding:30px clamp(20px,5vw,76px) 42px; }
+    .mast,.eyebrow,.method,.field-label,.sources,footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .82fr; gap:38px; align-items:end; margin:36px 0 26px; }
+    h1 { margin:0; font-size:clamp(58px,8.4vw,108px); line-height:.84; font-weight:400; letter-spacing:-.085em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:550px; margin:0 0 4px; font-size:clamp(18px,2vw,23px); line-height:1.45; }
+    .method { border-top:1px solid var(--ink); margin:0 0 15px; padding-top:9px; color:var(--muted); font-size:10px; line-height:1.55; }
+    .evidence { display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(28px,5vw,68px); align-items:stretch; }
+    figure { min-width:0; margin:0; }
+    .eyebrow { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--rule); padding:9px 0; color:var(--clay); font-size:9px; }
+    .photo { display:flex; align-items:center; justify-content:center; overflow:hidden; border:1px solid #c9c4b8; background:var(--sheet); }
+    .photo img { display:block; width:auto; height:clamp(390px,48vw,610px); max-width:100%; object-fit:contain; }
+    figcaption { margin-top:8px; color:var(--muted); font-size:13px; line-height:1.4; }
+    .alternatives { display:flex; flex-direction:column; justify-content:center; }
+    .field-label { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--ink); padding:9px 0; color:var(--clay); font-size:9px; }
+    .term { border-top:1px solid var(--rule); padding:17px 0 20px; font-size:clamp(29px,4.2vw,56px); line-height:.98; letter-spacing:-.055em; }
+    .or { padding:6px 0 8px; color:var(--clay); font-size:clamp(17px,2.4vw,28px); font-style:italic; }
+    .alternatives .small { max-width:370px; margin:18px 0 0; color:var(--muted); font-size:15px; line-height:1.45; }
+    .reading { display:grid; grid-template-columns:.8fr 1.2fr; gap:35px; border-top:1px solid var(--ink); margin-top:31px; padding-top:13px; }
+    .reading p { margin:0; font-size:clamp(18px,2vw,23px); line-height:1.44; }
+    .reading .small { color:var(--muted); font-size:15px; }
+    .sources { border-top:1px solid var(--rule); margin-top:26px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    a { color:inherit; text-underline-offset:3px; }
+    footer { display:flex; justify-content:space-between; gap:13px; border-top:1px solid var(--rule); margin-top:23px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:760px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:17px; margin:27px 0 21px; }
+      h1 { font-size:clamp(58px,15vw,90px); }
+      .evidence { grid-template-columns:1fr; gap:22px; }
+      .photo img { width:100%; height:auto; }
+      .term { font-size:clamp(32px,10vw,47px); }
+      .reading { grid-template-columns:1fr; gap:12px; }
+      footer { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 01h · 11 October 2026</span><span>P.Mich. inv. 6215i / one surface, two causes</span></div>
+    <section class="heading">
+      <h1>The photograph<br><em>cannot choose</em></h1>
+      <p class="intro">The edition describes the reused writing as badly preserved through “smudging or purposeful erasure.” The same detail can sit beneath both explanations; the image does not select one.</p>
+    </section>
+
+    <p class="method">One crop from Fig. 2, kept unchanged. The article applies both terms to the badly preserved verso text; this detail is not isolated as a mark belonging to either cause.</p>
+    <section class="evidence" aria-label="One photograph beside the article's two possible causes">
+      <figure>
+        <div class="eyebrow"><span>01 / Verso</span><span>Fig. 2 · published orientation</span></div>
+        <div class="photo"><img src="verso-text-detail.jpg" alt="An unchanged detail crop from the verso photograph: dark traces of writing, papyrus fibers, and multiple white losses. The crop is not attributed to either cause."></div>
+        <figcaption>One detail from the photographed surface. The crop does not separate a particular trace as smudging or erasure.</figcaption>
+      </figure>
+      <section class="alternatives" aria-label="Alternatives named in the edition">
+        <div class="field-label"><span>Authors' alternatives</span><span>§1</span></div>
+        <div class="term">Smudging</div>
+        <div class="or">or</div>
+        <div class="term">Purposeful erasure</div>
+        <p class="small">The terms describe possible causes for the poor preservation of the verso writing. I keep them at equal scale and leave the photograph as one common field.</p>
+      </section>
+    </section>
+
+    <section class="reading" aria-label="What this image cannot decide">
+      <p>The “or” stays in the text.</p>
+      <p class="small">This published photograph offers no basis here for deciding which explanation applies, or whether different areas have different causes. Repeating or altering the crop to illustrate either word would add a visual claim that the edition does not make.</p>
+    </section>
+
+    <section class="sources" aria-label="Sources and image credits">
+      <p>Text and fig. 2: Maria Nowak and W. Graham Claytor, “A Local Will with a ‘Codicillary’ Clause,” <em>Pylon</em> 4 (2023), §1. Image courtesy of the University of Michigan Library Digital Collections; CC BY-NC-SA 4.0. <a href="https://doi.org/10.48631/pylon.2023.4.101705">Article ↗</a> · <a href="https://journals.ub.uni-heidelberg.de/index.php/pylon/article/download/101705/96790/262117">Full text PDF ↗</a></p>
+      <p>The detail is a crop from the published photograph, in its original orientation and without color correction.</p>
+    </section>
+    <footer><span>Study 01h / the photograph cannot choose</span><a href="index.html">The rest of the cup ↗</a><a href="margin-suggests.html">Study 01g / The margin suggests ↗</a><a href="verso-reused.html">Study 01f / The verso is not the after ↗</a><a href="crop-edges.html">Study 01i / The crop leaves the edges out ?</a><a href="credit-position.html">Study 01j / The credit has a position ↗</a></footer>
+  </main>
+</body>
+</html>

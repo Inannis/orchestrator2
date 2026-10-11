@@ -1,0 +1,3 @@
+- [The Sentence Did Not Arrive](the-sentence-did-not-arrive.html) A quotation shaped only by its surviving attribution.
+- [Clear Is Not Empty](clear-is-not-empty.html) A received night reading: no reported cloud, but 80% relative humidity.
+- [What a Citation Leaves](what-a-citation-leaves.html) Two constructed fragments and one received copy, each holding a different empty place.

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Before, by itself - a study</title>
+  <style>
+    :root { --paper:#e9e7e0; --sheet:#f7f5ef; --ink:#262924; --muted:#696b63; --line:#aaa99f; --clay:#8b4a37; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1320px,100%); margin:0 auto; padding:30px clamp(20px,5vw,74px) 42px; }
+    .mast,.eyebrow,.data,.sources,footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .8fr; gap:38px; align-items:end; margin:35px 0 28px; }
+    h1 { margin:0; font-size:clamp(58px,8.5vw,108px); line-height:.82; font-weight:400; letter-spacing:-.08em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:560px; margin:0 0 4px; font-size:clamp(18px,2vw,23px); line-height:1.44; }
+    .eyebrow { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--line); padding:9px 0; color:var(--clay); font-size:9px; }
+    .pair { display:grid; grid-template-columns:1fr 1fr; gap:clamp(18px,3vw,40px); }
+    figure { margin:0; min-width:0; }
+    .frame { width:100%; aspect-ratio:.75; background:#d1d1ce; border:1px solid #aaa99f; overflow:hidden; }
+    .frame img { display:block; width:100%; height:100%; object-fit:contain; }
+    .empty { display:grid; place-items:center; padding:clamp(18px,4vw,48px); border:1px dashed var(--clay); background:var(--sheet); text-align:center; }
+    .empty .zero { display:block; color:var(--clay); font-size:clamp(68px,11vw,138px); line-height:.8; font-weight:400; }
+    .empty strong { display:block; margin-top:19px; font:10px/1.6 "Courier New",monospace; letter-spacing:.08em; text-transform:uppercase; }
+    figcaption { margin-top:10px; font-size:14px; line-height:1.45; }
+    .data { display:grid; grid-template-columns:1fr 1fr; gap:20px; border-top:1px solid var(--ink); margin-top:30px; padding-top:11px; color:var(--muted); font-size:9px; line-height:1.65; }
+    .reading { display:grid; grid-template-columns:.75fr 1.25fr; gap:30px; border-top:1px solid var(--ink); margin-top:30px; padding-top:13px; }
+    .reading p { margin:0; font-size:clamp(18px,2vw,23px); line-height:1.43; }
+    .reading .small { color:var(--muted); font-size:14px; }
+    .sources { border-top:1px solid var(--line); margin-top:23px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    a { color:inherit; text-underline-offset:3px; }
+    footer { display:flex; justify-content:space-between; gap:13px; border-top:1px solid var(--line); margin-top:22px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:760px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:17px; margin:27px 0 21px; }
+      h1 { font-size:clamp(58px,15vw,90px); }
+      .pair { grid-template-columns:1fr; gap:23px; }
+      .frame { max-width:470px; margin:0 auto; }
+      .data,.reading { grid-template-columns:1fr; gap:13px; }
+      footer { flex-direction:column; }
+    }
+</style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 02e &middot; 11 October 2026</span><span>08.22.3 / one listed image</span></div>
+    <section class="heading">
+      <h1>Before,<br><em>by itself</em></h1>
+      <p class="intro">The Met labels the photograph of 08.22.3 as pre-conservation treatment photography. The object API returns one primary image and an empty list of additional images. The open frame records that response; it is not an after-treatment view.</p>
+    </section>
+
+    <section class="pair" aria-label="The pre-conservation photograph and an empty additional-image field">
+      <figure>
+        <div class="eyebrow"><span>Primary image</span><span>01 / shown</span></div>
+        <div class="frame"><img src="variants/190587.jpg" alt="Painted and gilded stucco Madonna and Child on a base inscribed Ave Maria, shown in the Met's pre-conservation treatment photograph."></div>
+        <figcaption>The collection page labels this view <em>pre-conservation treatment photography</em>.</figcaption>
+      </figure>
+      <figure>
+        <div class="eyebrow"><span>Additional images</span><span>00 / listed</span></div>
+        <div class="frame empty" role="img" aria-label="The Met object API lists zero additional image URLs for object 08.22.3.">
+          <div><span class="zero">0</span><strong>Additional image URLs<br>in this API response</strong></div>
+        </div>
+        <figcaption>No second image is listed in the object's additional-images field, as checked 11 October 2026.</figcaption>
+      </figure>
+    </section>
+
+    <section class="data" aria-label="Object metadata">
+      <div>Object 08.22.3<br>Madonna and Child<br>Stucco, painted and gilded<br>15th century</div>
+      <div>Primary image: one URL<br>Additional images: empty array<br>API checked: 11 October 2026</div>
+    </section>
+
+    <section class="reading" aria-label="Reading">
+      <p>The blank is a property of this response.</p>
+      <p class="small">It cannot stand in for an after photograph or show what conservation changed. It records only that the Met API, on the date checked, returned no additional image URL for this object. Another record or image history could exist elsewhere.</p>
+    </section>
+
+    <section class="sources" aria-label="Sources">
+      <p>The Metropolitan Museum of Art, <a href="https://www.metmuseum.org/art/collection/search/190587">Madonna and Child, 08.22.3</a>, image note and object details.</p>
+      <p><a href="https://collectionapi.metmuseum.org/public/collection/v1/objects/190587">Met Collection API record for object 190587</a>, checked 2026-10-11. A selected-field snapshot is kept in the studio references.</p>
+    </section>
+    <footer><span>Study 02e / before, by itself</span><a href="after.html">Probably after &rarr;</a><a href="versions.html">Study 02b / The word after &rarr;</a></footer>
+  </main>
+</body>
+</html>

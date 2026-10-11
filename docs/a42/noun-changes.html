@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The noun changes - a study</title>
+  <style>
+    :root { --paper:#e9e7e0; --sheet:#f7f5ef; --ink:#262924; --muted:#696b63; --line:#aaa99f; --clay:#8b4a37; --green:#3f625d; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1320px,100%); margin:0 auto; padding:30px clamp(20px,5vw,74px) 42px; }
+    .mast,.eyebrow,.tag,.legend,.sources,footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .82fr; gap:38px; align-items:end; margin:35px 0 28px; }
+    h1 { margin:0; font-size:clamp(58px,8.5vw,108px); line-height:.82; font-weight:400; letter-spacing:-.08em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:570px; margin:0 0 4px; font-size:clamp(18px,2vw,23px); line-height:1.44; }
+    .eyebrow { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--line); padding:9px 0; color:var(--clay); font-size:9px; }
+    .reading-grid { display:grid; grid-template-columns:minmax(270px,.78fr) minmax(0,1.22fr); gap:clamp(24px,4vw,54px); align-items:start; }
+    figure { margin:0; }
+    .marked { position:relative; background:#d2d2d0; border:1px solid #a6a7a1; }
+    .marked img { display:block; width:100%; height:auto; }
+    .marked svg { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+    .marked .figure-box { fill:none; stroke:var(--clay); stroke-width:3; vector-effect:non-scaling-stroke; }
+    .marked .base-box { fill:none; stroke:var(--green); stroke-width:3; vector-effect:non-scaling-stroke; }
+    .marked .letter { font:700 12px "Courier New",monospace; text-anchor:middle; dominant-baseline:middle; fill:var(--sheet); }
+    .marked .badge-a { fill:var(--clay); }
+    .marked .badge-b { fill:var(--green); }
+    .legend { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:9px; color:var(--muted); font-size:9px; line-height:1.5; }
+    .legend span::before { content:""; display:inline-block; width:11px; height:11px; margin:0 7px -2px 0; border:2px solid currentColor; }
+    .legend .a { color:var(--clay); }
+    .legend .b { color:var(--green); }
+    .legend .a span,.legend .b span { color:var(--muted); }
+    .cards { display:grid; gap:18px; }
+    .card { display:grid; grid-template-columns:92px 1fr; gap:17px; border-top:1px solid var(--ink); padding-top:11px; }
+    .tag { font-size:9px; line-height:1.55; color:var(--muted); }
+    .tag b { display:block; font-size:27px; font-weight:400; }
+    .card.composition .tag b { color:var(--clay); }
+    .card.base .tag b { color:var(--green); }
+    h2 { margin:0 0 8px; font-size:clamp(27px,3.4vw,43px); line-height:1; font-weight:400; letter-spacing:-.04em; }
+    .card p { max-width:600px; margin:0; font-size:15px; line-height:1.48; }
+    .card .small { margin-top:10px; font-size:12px; color:var(--muted); }
+    a { color:inherit; text-underline-offset:3px; }
+    .conclusion { display:grid; grid-template-columns:.75fr 1.25fr; gap:30px; border-top:1px solid var(--ink); margin-top:31px; padding-top:12px; }
+    .conclusion p { margin:0; font-size:clamp(18px,2vw,23px); line-height:1.43; }
+    .conclusion .small { color:var(--muted); font-size:14px; }
+    .sources { border-top:1px solid var(--line); margin-top:23px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    footer { display:flex; justify-content:space-between; gap:13px; border-top:1px solid var(--line); margin-top:22px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:760px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:17px; margin:27px 0 21px; }
+      h1 { font-size:clamp(58px,15vw,90px); }
+      .reading-grid { grid-template-columns:1fr; gap:27px; }
+      .marked { max-width:460px; margin:0 auto; }
+      .cards { gap:22px; }
+      .card { grid-template-columns:72px 1fr; gap:12px; }
+      .conclusion { grid-template-columns:1fr; gap:13px; }
+      footer { flex-direction:column; }
+    }
+</style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 02d &middot; 11 October 2026</span><span>18.70.19 / composition and base</span></div>
+    <section class="heading">
+      <h1>The noun<br><em>changes</em></h1>
+      <p class="intro">The Met's description follows two different relations in one relief. It links the Madonna composition to related works, then names an architectural source for the type of base. The photograph holds them together; the record gives them separate sentences.</p>
+    </section>
+
+    <section class="reading-grid" aria-label="The two areas and two relations named in the collection record">
+      <figure>
+        <div class="eyebrow"><span>18.70.19 / one photograph</span><span>Areas keyed below</span></div>
+        <div class="marked">
+          <img src="madonna.jpg" alt="Polychromed stucco relief of Madonna and Child above a low base decorated with winged figures and a central medallion.">
+          <svg viewBox="0 0 536 624" preserveAspectRatio="none" role="img" aria-labelledby="mark-title mark-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="mark-title">Two marked areas on one relief</title>
+            <desc id="mark-desc">A rust outline marks the Madonna and Child composition; a green outline marks the low supporting base.</desc>
+            <rect class="figure-box" x="49" y="42" width="438" height="419" rx="3"/>
+            <rect class="base-box" x="39" y="462" width="458" height="120" rx="3"/>
+            <circle class="badge-a" cx="61" cy="58" r="13"/><text class="letter" x="61" y="58">A</text>
+            <circle class="badge-b" cx="51" cy="478" r="13"/><text class="letter" x="51" y="478">B</text>
+          </svg>
+        </div>
+        <div class="legend"><div class="a"><span>A / Composition</span></div><div class="b"><span>B / Base type</span></div></div>
+      </figure>
+
+      <div class="cards">
+        <article class="card composition">
+          <div class="tag"><b>A</b>Figural group</div>
+          <div>
+            <h2>Composition</h2>
+            <p>The Met describes 18.70.19 as an apparent variant of a Madonna relief designed by Ghiberti for molded reproduction in painted stucco. It points to <a href="https://www.metmuseum.org/art/collection/search/190587">08.22.3</a> as a painted-and-gilded stucco version, and to <a href="https://www.metmuseum.org/art/collection/search/189245">07.120.3</a> for a terracotta version of this composition.</p>
+            <p class="small">The related records describe other objects and materials; the photographs do not establish a shared mold.</p>
+          </div>
+        </article>
+        <article class="card base">
+          <div class="tag"><b>B</b>Supporting form</div>
+          <div>
+            <h2>Type of base</h2>
+            <p>The same record says the base type derives from the niche of the Parte Guelfa on Or San Michele by Donatello, finished in 1423.</p>
+            <p class="small">That niche remains a textual source here. I have not placed an image of it beside the relief.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="conclusion" aria-label="Reading">
+      <p>The relief makes one object out of two differently sourced forms.</p>
+      <p class="small">The colored outlines point to regions in the supplied photograph; they are reading marks, not a reconstruction of manufacture. The museum's words attach the Madonna composition and the base type to distinct references, without turning the whole object into one simple line of descent.</p>
+    </section>
+
+    <section class="sources" aria-label="Collection records and image source">
+      <p>Primary description and photograph: The Metropolitan Museum of Art, <a href="https://www.metmuseum.org/art/collection/search/194520">Madonna and Child, 18.70.19</a>. Related records named in its description: <a href="https://www.metmuseum.org/art/collection/search/190587">08.22.3</a> and <a href="https://www.metmuseum.org/art/collection/search/189245">07.120.3</a>.</p>
+      <p>The supplied image is shown whole. The two outlined areas are approximate visual guides and do not assert where a mold, joint, or separate piece begins.</p>
+    </section>
+    <footer><span>Study 02d / the noun changes</span><a href="after.html">Probably after &rarr;</a><a href="versions.html">Study 02b / The word after &rarr;</a><a href="before-by-itself.html">Study 02e / Before, by itself &rarr;</a></footer>
+  </main>
+</body>
+</html>

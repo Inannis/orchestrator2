@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The rest of the cup — a study</title>
+  <style>
+    :root {
+      --paper: #eeeae0;
+      --ink: #252722;
+      --muted: #67675e;
+      --clay: #984b31;
+      --rule: #aaa69a;
+      --sheet: #f7f4ec;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main { width: min(1420px, 100%); margin: 0 auto; padding: 34px clamp(22px, 5.6vw, 82px) 42px; }
+    .masthead, .eyebrow, .caption, .legend, footer, .meta {
+      font-family: "Courier New", monospace;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .masthead { display: flex; justify-content: space-between; gap: 18px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 10px 0 9px; font-size: 11px; }
+    h1 { margin: 35px 0 11px; font-size: clamp(54px, 8.7vw, 112px); font-weight: 400; letter-spacing: -.075em; line-height: .88; }
+    .intro { max-width: 680px; margin: 22px 0 36px; font-size: clamp(17px, 2vw, 23px); line-height: 1.42; }
+    .pair { display: grid; grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: clamp(24px, 4.5vw, 68px); align-items: start; }
+    figure { margin: 0; min-width: 0; }
+    .eyebrow { display: flex; justify-content: space-between; color: var(--clay); border-top: 1px solid var(--rule); padding: 9px 0 11px; font-size: 10px; }
+    .record-image { display: block; width: 100%; height: auto; border: 1px solid #b9b5aa; }
+    .diagram-wrap { background: var(--sheet); border: 1px solid #c9c4b8; }
+    .diagram { display: block; width: 100%; height: auto; }
+    .caption { display: flex; justify-content: space-between; gap: 16px; margin-top: 11px; font-size: 10px; line-height: 1.55; color: var(--muted); }
+    .caption span:last-child { text-align: right; }
+    .reading { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: end; border-top: 1px solid var(--ink); margin-top: 37px; padding-top: 14px; }
+    .reading p { max-width: 720px; margin: 0; font-size: clamp(17px, 2vw, 22px); line-height: 1.4; }
+    .legend { display: grid; gap: 8px; min-width: 210px; font-size: 10px; color: var(--muted); }
+    .legend-row { display: flex; gap: 10px; align-items: center; }
+    .sample { display: inline-block; width: 36px; height: 0; border-top: 2px solid var(--clay); }
+    .sample.dashed { border-top: 2px dashed #55574f; }
+    footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--rule); margin-top: 32px; padding-top: 10px; font-size: 10px; color: var(--muted); }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    @media (max-width: 760px) {
+      main { padding-top: 20px; }
+      .masthead { font-size: 9px; }
+      h1 { margin-top: 29px; font-size: clamp(52px, 16vw, 92px); }
+      .intro { margin-bottom: 28px; }
+      .pair { grid-template-columns: 1fr; gap: 34px; }
+      .reading { grid-template-columns: 1fr; gap: 20px; }
+      .legend { min-width: 0; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 01 · 11 October 2026</span><span>Attic vessel · record 671161</span></div>
+    <h1>The rest of<br>the cup</h1>
+    <p class="intro">The linked record names a whole vessel. In the frame, a calibration target says AIC; the paper label carries the number the Met lists as its object number. Between those catalog traces sits a shard. Beside it, the cup begins again as dotted guesses.</p>
+
+    <section class="pair" aria-label="Photographic record and imagined vessel">
+      <figure>
+        <div class="eyebrow"><span>01 / Seen</span><span>Record image</span></div>
+        <img class="record-image" src="record.jpg" alt="A small Attic terracotta kylix fragment photographed against a measured grid, with ruler, color target, and accession label visible.">
+        <figcaption class="caption"><span>PHOTOGRAPH / AIC target and accession label retained</span><span>What is here</span></figcaption>
+      </figure>
+
+      <figure>
+        <div class="eyebrow"><span>02 / Guessed</span><span>Diagram, not restoration</span></div>
+        <div class="diagram-wrap">
+          <svg class="diagram" viewBox="0 0 700 600" role="img" aria-labelledby="diagram-title diagram-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="diagram-title">A kylix suggested by one fragment</title>
+            <desc id="diagram-desc">The photographed shard sits over a dotted outline of a shallow cup, handles, stem, foot, and possible continuation of its ornament. The outline is imagined.</desc>
+            <defs>
+              <pattern id="registration" width="35" height="35" patternUnits="userSpaceOnUse">
+                <path d="M35 0H0V35" fill="none" stroke="#e7e2d7" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="700" height="600" fill="#f7f4ec"/>
+            <rect width="700" height="600" fill="url(#registration)"/>
+            <text x="28" y="34" fill="#77766d" font-family="Courier New, monospace" font-size="11" letter-spacing="1.2">POSSIBLE FORM / NOT OBSERVED</text>
+
+            <g fill="none" stroke="#55574f" stroke-width="2.2" stroke-dasharray="7 8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M126 142 C69 119 40 154 56 202 C67 235 99 249 143 245"/>
+              <path d="M574 142 C631 119 660 154 644 202 C633 235 601 249 557 245"/>
+              <path d="M125 150 Q350 127 575 150"/>
+              <path d="M125 150 C145 261 228 346 350 370 C472 346 555 261 575 150"/>
+              <path d="M335 369 L335 453 Q350 461 365 453 L365 369"/>
+              <path d="M273 462 Q350 443 427 462 L449 485 Q350 507 251 485 Z"/>
+              <path d="M251 485 Q350 507 449 485"/>
+              <path d="M143 202 L192 202 L192 222 L171 222 L171 213 L183 213 M143 239 L202 239"/>
+              <path d="M557 202 L508 202 L508 222 L529 222 L529 213 L517 213 M557 239 L498 239"/>
+            </g>
+
+            <image href="shard.png" x="193" y="147" width="314" height="223" preserveAspectRatio="none"/>
+
+            <g fill="#77766d" font-family="Courier New, monospace" font-size="10" letter-spacing="1">
+              <text x="28" y="548">SOLID IMAGE / ONE SURVIVING PIECE</text>
+              <text x="672" y="548" text-anchor="end">DOTTED LINES / MY PROJECTION</text>
+            </g>
+            <path d="M28 562H672" stroke="#c9c4b8" stroke-width="1"/>
+            <text x="28" y="582" fill="#984b31" font-family="Courier New, monospace" font-size="10" letter-spacing="1">THE JOIN IS THE SUBJECT</text>
+          </svg>
+        </div>
+        <figcaption class="caption"><span>DIAGRAM / handles, stem, foot, and pattern continued by me</span><span>What is not here</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="reading" aria-label="Reading key">
+      <p>The shard does not contain the cup. The label does. Its number appears in the photograph and again as the Met object number. I leave that overlap in view, beside a dotted cup.</p>
+      <div class="legend" aria-label="Line key">
+        <div class="legend-row"><i class="sample"></i><span>photograph / given</span></div>
+        <div class="legend-row"><i class="sample dashed"></i><span>outline / proposed</span></div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Terracotta fragment of a kylix · Attic · 2nd quarter of the 5th c. BCE · image mark: AIC ©2011</span>
+      <a href="https://www.metmuseum.org/art/collection/search/671161">Metropolitan Museum record ↗</a>
+      <a href="target.html">Study 01b / Same mark, three frames ↗</a>
+      <a href="edge.html">Study 01c / The apparatus turns ↗</a>
+      <a href="lineage.html">Study 01d / Leave the image room ↗</a>
+      <a href="margin-record.html">Study 01e / The number is elsewhere ↗</a>
+      <a href="verso-reused.html">Study 01f / The verso is not the after ↗</a>
+      <a href="after.html">Study 02 / Probably after ↗</a>
+    <a href="margin-suggests.html">Study 01g / The margin suggests ?</a><a href="cause-open.html">Study 01h / The photograph cannot choose ?</a><a href="crop-edges.html">Study 01i / The crop leaves the edges out ?</a><a href="credit-position.html">Study 01j / The credit has a position ↗</a><a href="open-edge.html">Study 01k / The open edge &rarr;</a></footer>
+  </main>
+</body>
+</html>

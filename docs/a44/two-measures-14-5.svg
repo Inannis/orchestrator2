@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="1060" viewBox="0 0 820 1060" role="img" aria-labelledby="title description">
+  <title id="title">Two measures of 14.5</title>
+  <desc id="description">A field note on weather at Potash, Alabama: the temperature is 14.5 degrees Celsius and wind speed is 14.5 kilometres per hour, with different units and no shared scale.</desc>
+  <defs>
+    <pattern id="grain" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="3" r=".55" fill="#c6c0b2" opacity=".45"/>
+      <circle cx="9" cy="8" r=".45" fill="#c6c0b2" opacity=".35"/>
+    </pattern>
+    <pattern id="ticks" width="12" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 12v6" stroke="#d0d0c6" stroke-width=".7" opacity=".7"/>
+    </pattern>
+  </defs>
+  <rect width="820" height="1060" fill="#eee9dd"/>
+  <rect width="820" height="1060" fill="url(#grain)"/>
+  <text x="72" y="62" font-family="Georgia,serif" font-size="13" letter-spacing="3" fill="#4e5148">FIELD NOTE 02  /  WEATHER</text>
+  <path d="M72 78H748" stroke="#9f9b8d" stroke-width=".8"/>
+
+  <text x="72" y="132" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#62645c">POTASH, ALABAMA</text>
+  <text x="748" y="132" text-anchor="end" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.5" fill="#62645c">33.277 N  /  85.353 W</text>
+  <text x="72" y="166" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5" fill="#858276">11 OCTOBER 2026  ·  04:00  ·  IS DAY 0</text>
+
+  <rect x="72" y="205" width="676" height="380" fill="#17252d"/>
+  <path d="M72 205H748V585H72Z" fill="none" stroke="#17252d" stroke-width="1"/>
+  <text x="100" y="246" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#a6b1ad">SAME NUMBER, DIFFERENT MEASURES</text>
+  <path d="M410 270V545" stroke="#56646a" stroke-width="1"/>
+
+  <text x="104" y="390" font-family="Georgia,serif" font-size="94" fill="#f1ecdf">14.5</text>
+  <text x="108" y="430" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#a6b1ad">TEMPERATURE</text>
+  <text x="108" y="482" font-family="Georgia,serif" font-size="29" fill="#e0b66e">°C</text>
+  <path d="M108 516H370" stroke="#78858a" stroke-width=".8"/>
+
+  <text x="448" y="390" font-family="Georgia,serif" font-size="94" fill="#f1ecdf">14.5</text>
+  <text x="452" y="430" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#a6b1ad">WIND SPEED</text>
+  <text x="452" y="482" font-family="Georgia,serif" font-size="29" fill="#e0b66e">km/h</text>
+  <path d="M452 516H714" stroke="#78858a" stroke-width=".8"/>
+  <text x="108" y="554" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.2" fill="#8e9a9b">AIR</text>
+  <text x="714" y="554" text-anchor="end" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.2" fill="#8e9a9b">MOVEMENT</text>
+
+  <text x="72" y="643" font-family="Georgia,serif" font-size="20" fill="#343b35">Sky, air, ground</text>
+  <text x="748" y="643" text-anchor="end" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.2" fill="#737267">THREE OTHER READINGS</text>
+
+  <text x="72" y="700" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.3" fill="#52584f">CLOUD COVER</text>
+  <text x="748" y="700" text-anchor="end" font-family="Georgia,serif" font-size="20" fill="#343b35">100%</text>
+  <rect x="72" y="715" width="676" height="19" fill="#d6d1c3"/>
+  <rect x="72" y="715" width="676" height="19" fill="#56646a"/>
+  <rect x="72" y="715" width="676" height="19" fill="url(#ticks)"/>
+
+  <text x="72" y="783" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.3" fill="#52584f">RELATIVE HUMIDITY</text>
+  <text x="748" y="783" text-anchor="end" font-family="Georgia,serif" font-size="20" fill="#343b35">99%</text>
+  <rect x="72" y="798" width="676" height="19" fill="#d6d1c3"/>
+  <rect x="72" y="798" width="669.24" height="19" fill="#9c8062"/>
+  <rect x="72" y="798" width="676" height="19" fill="url(#ticks)"/>
+
+  <text x="72" y="866" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.3" fill="#52584f">PRECIPITATION</text>
+  <text x="748" y="866" text-anchor="end" font-family="Georgia,serif" font-size="20" fill="#343b35">0.0 mm</text>
+  <path d="M72 890H748" stroke="#aaa596" stroke-width=".8"/>
+
+  <path d="M72 944H748" stroke="#aaa596" stroke-width=".8"/>
+  <text x="72" y="978" font-family="Georgia,serif" font-size="27" fill="#30372f">Two measures of 14.5</text>
+  <text x="72" y="1007" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4" fill="#66675d">POTASH, ALABAMA  /  11 OCTOBER 2026  /  WEATHER AT 04:00</text>
+</svg>

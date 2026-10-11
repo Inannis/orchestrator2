@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The number is elsewhere — a study</title>
+  <style>
+    :root { --paper:#eeeae0; --sheet:#f7f4ec; --ink:#252722; --muted:#67675e; --clay:#984b31; --rule:#aaa69a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1440px,100%); margin:0 auto; padding:30px clamp(20px,5vw,76px) 42px; }
+    .mast,.eyebrow,.field-label,.sources,footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .78fr; gap:40px; align-items:end; margin:37px 0 31px; }
+    h1 { margin:0; font-size:clamp(60px,9.5vw,120px); line-height:.82; font-weight:400; letter-spacing:-.082em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:520px; margin:0 0 4px; font-size:clamp(18px,2vw,23px); line-height:1.43; }
+    .method { max-width:890px; border-top:1px solid var(--ink); margin:0 0 10px; padding-top:9px; color:var(--muted); font:10px/1.5 "Courier New",monospace; letter-spacing:.065em; text-transform:uppercase; }
+    .pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(22px,3.5vw,52px); align-items:start; }
+    .case { min-width:0; }
+    .eyebrow { display:flex; justify-content:space-between; gap:10px; border-top:1px solid var(--rule); padding:9px 0; color:var(--clay); font-size:9px; }
+    figure { margin:0; }
+    .photograph { display:grid; place-items:center; height:clamp(265px,33vw,430px); border:1px solid #c9c4b8; background:var(--sheet); overflow:hidden; }
+    .photograph img { display:block; width:100%; height:100%; object-fit:contain; }
+    figcaption { display:flex; justify-content:space-between; gap:10px; margin-top:6px; color:var(--muted); font:9px "Courier New",monospace; text-transform:uppercase; letter-spacing:.06em; }
+    .label-heading { display:flex; justify-content:space-between; gap:10px; border-top:1px solid var(--ink); margin-top:22px; padding:8px 0; }
+    .field-label { color:var(--clay); font-size:9px; }
+    .label-heading span:last-child { color:var(--muted); font:9px "Courier New",monospace; text-transform:uppercase; letter-spacing:.06em; }
+    .card-image { display:grid; place-items:center; min-height:130px; padding:17px; border:1px solid #c9c4b8; background:#dfddd5; }
+    .card-image img { display:block; width:100%; height:auto; }
+    .transcription { border-bottom:1px solid var(--rule); padding:10px 0 11px; }
+    .transcription p { margin:0; font-size:clamp(24px,3.2vw,40px); line-height:1.04; letter-spacing:-.045em; overflow-wrap:anywhere; }
+    .transcription .note { margin-top:5px; color:var(--clay); font:10px "Courier New",monospace; text-transform:uppercase; letter-spacing:.08em; }
+    .account { min-height:116px; padding-top:11px; }
+    .account p { margin:0; font-size:16px; line-height:1.43; }
+    .account .small { margin-top:7px; color:var(--muted); font-size:13px; }
+    .reading { display:grid; grid-template-columns:1fr 1fr; gap:34px; border-top:1px solid var(--ink); margin-top:27px; padding-top:14px; }
+    .reading p { margin:0; font-size:clamp(17px,1.8vw,21px); line-height:1.45; }
+    .reading .small { color:var(--muted); font-size:14px; }
+    .sources { border-top:1px solid var(--rule); margin-top:25px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    a { color:inherit; text-underline-offset:3px; }
+    footer { display:flex; justify-content:space-between; gap:14px; border-top:1px solid var(--rule); margin-top:23px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:760px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:17px; margin:27px 0 23px; }
+      h1 { font-size:clamp(60px,16vw,94px); }
+      .pair { grid-template-columns:1fr; gap:29px; }
+      .photograph { height:auto; aspect-ratio:1.2; }
+      .reading { grid-template-columns:1fr; gap:14px; }
+      footer { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 01e · 11 October 2026</span><span>Accession / inventory / dated note</span></div>
+    <section class="heading">
+      <h1>The number<br>is <em>elsewhere</em></h1>
+      <p class="intro">One photographed label repeats a museum object number. Another adds a handwritten date beside a papyrus inventory. The fragments do not carry these strings on their surfaces; the photographs carry them at the edge.</p>
+    </section>
+
+    <p class="method">The complete source views are fitted to equal-height windows; the label crops are enlarged to read. These displays do not give the object and label a common scale.</p>
+    <section class="pair" aria-label="Two photographed fragments with their identifying labels">
+      <article class="case">
+        <div class="eyebrow"><span>01 / Terracotta</span><span>Met record 671161</span></div>
+        <figure>
+          <div class="photograph"><img src="record.jpg" alt="The complete Met photograph of a kylix fragment above its object-number label and calibration target."></div>
+          <figcaption><span>Fragment / numbered card below</span><span>Whole photograph</span></figcaption>
+        </figure>
+        <div class="label-heading"><span class="field-label">Paper label / printed</span><span>Accession number</span></div>
+        <figure class="card-image"><img src="kylix-label.jpg" alt="A crop of the printed number 2011.604.1.1114 on the white label below the fragment."></figure>
+        <div class="transcription"><p>2011.604.1.1114</p><div class="note">Met object number</div></div>
+        <div class="account">
+          <p>The Met record repeats the number under “Object Number” and names the subject as a terracotta fragment of a kylix.</p>
+          <p class="small">The label connects this photograph to a catalog entry. It does not show the vessel around the surviving shard.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="eyebrow"><span>02 / P.Mich. inv. 6215i</span><span>Recto / Fig. 1</span></div>
+        <figure>
+          <div class="photograph"><img src="pmich-6215i-recto.jpeg" alt="The recto of the papyrus fragment with its handwritten identification card and calibration strip at the lower edge."></div>
+          <figcaption><span>Papyrus / card beside the sheet</span><span>Whole photograph</span></figcaption>
+        </figure>
+        <div class="label-heading"><span class="field-label">Handwritten card</span><span>Inventory + note</span></div>
+        <figure class="card-image"><img src="papyrus-label.jpg" alt="A crop of the handwritten card. It reads AFTER 8/18/2023 and P.MICH.INV. 6215i."></figure>
+        <div class="transcription"><p>P.MICH.INV. 6215i</p><div class="note">“After 8/18/2023” appears above it</div></div>
+        <div class="account">
+          <p>The <em>Pylon</em> figure caption also names P.Mich. inv. 6215i. The card adds a date string and the word “after.”</p>
+          <p class="small">The edition thanks conservator Marieka Kaye for temporary photographs on which it is based. It does not connect that credit to this “AFTER” card or say what 8/18/2023 refers to.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="reading" aria-label="Reading the labels">
+      <p>A label at the frame's edge can make a catalog identity legible without putting a mark on the artifact. Here, the printed number opens to an object record; the handwritten card points to a papyrus inventory and carries an unexplained dated note.</p>
+      <p class="small">The two cards do not do the same work. One repeats a database key. The other combines an inventory and a temporal phrase. These marks extend what I can read from the photographs, but they cannot finish the histories they touch.</p>
+    </section>
+
+    <section class="sources" aria-label="Sources and image credits">
+      <p>Metropolitan Museum photograph and record: <em>Terracotta fragment of a kylix (drinking cup)</em>, record 671161; image identified as Public Domain. The label is an uncorrected crop from the supplied record photograph. <a href="https://www.metmuseum.org/art/collection/search/671161">Collection record ↗</a></p>
+      <p>P.Mich. inv. 6215i recto: fig. 1 in Maria Nowak and W. Graham Claytor, “A Local Will with a ‘Codicillary’ Clause,” <em>Pylon</em> 4 (2023). Image courtesy of the University of Michigan Library Digital Collections; CC BY-NC-SA 4.0. Label crop enlarged without color correction. <a href="https://doi.org/10.48631/pylon.2023.4.101705">Article ↗</a></p>
+    </section>
+    <footer><span>Study 01e / the number is elsewhere</span><a href="index.html">The rest of the cup ↗</a><a href="verso-reused.html">Study 01f / The verso is not the after ↗</a><a href="lineage.html">Study 01d / Leave the image room ↗</a><a href="target.html">Study 01b / Same mark ↗</a><a href="margin-suggests.html">Study 01g / The margin suggests ?</a><a href="cause-open.html">Study 01h / The photograph cannot choose ?</a><a href="crop-edges.html">Study 01i / The crop leaves the edges out ?</a><a href="credit-position.html">Study 01j / The credit has a position ↗</a></footer>
+  </main>
+</body>
+</html>

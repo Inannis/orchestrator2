@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Where the line resumes</title>
+  <style>
+    :root { color-scheme: light; background: #eee9dd; color: #343a34; font-family: Georgia, serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 48px 24px; }
+    main { width: min(100%, 720px); }
+    .label, footer { color: #727166; font: 10px/1.5 Arial, sans-serif; letter-spacing: .22em; text-transform: uppercase; }
+    .rule { border-top: 1px solid #a9a394; margin: 15px 0 58px; }
+    h1 { font-size: clamp(42px, 8vw, 68px); font-weight: 400; letter-spacing: -.035em; margin: 0 0 54px; }
+    .score { max-width: 530px; }
+    .score p { font-size: clamp(21px, 3.6vw, 30px); line-height: 1.42; margin: 0 0 17px; }
+    footer { border-top: 1px solid #a9a394; margin-top: 66px; padding-top: 15px; }
+    @media (max-width: 520px) { .rule { margin-bottom: 42px; } h1 { margin-bottom: 38px; } footer { margin-top: 48px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="label">A score for an interrupted edge</div>
+    <div class="rule"></div>
+    <h1>Where the line resumes</h1>
+    <section class="score" aria-label="Instructions">
+      <p>Choose an edge made by something that stays still.</p>
+      <p>Notice where another body interrupts it.</p>
+      <p>Follow the edge until it disappears.</p>
+      <p>See whether it returns.</p>
+    </section>
+    <footer>No mark is required.</footer>
+  </main>
+</body>
+</html>

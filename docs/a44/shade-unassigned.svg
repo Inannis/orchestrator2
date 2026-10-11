@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="1060" viewBox="0 0 820 1060" role="img" aria-labelledby="title description">
+  <title id="title">Shade, unassigned</title>
+  <desc id="description">A loose field of shade crosses a partial bird form, a pale cushion and the ground, without settling on any one of them.</desc>
+  <defs>
+    <linearGradient id="air" x2="0" y2="1"><stop stop-color="#bac9c4"/><stop offset="1" stop-color="#d4d4c7"/></linearGradient>
+    <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#8b8b75"/><stop offset="1" stop-color="#777765"/></linearGradient>
+    <linearGradient id="cushion" x2="0" y2="1"><stop stop-color="#f0e8d5"/><stop offset="1" stop-color="#d5cbb7"/></linearGradient>
+    <filter id="soft-edge" x="-8%" y="-8%" width="116%" height="116%"><feGaussianBlur stdDeviation="3.2"/></filter>
+    <clipPath id="view"><rect x="72" y="104" width="676" height="782"/></clipPath>
+    <pattern id="cloth" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(-3)">
+      <path d="M0 3h13M0 10h13" stroke="#bfb49f" stroke-width=".65" opacity=".52"/>
+    </pattern>
+  </defs>
+  <rect width="820" height="1060" fill="#eee9dd"/>
+  <text x="72" y="62" font-family="Georgia,serif" font-size="13" letter-spacing="3" fill="#4e5148">FIELD NOTE  /  DRIFT</text>
+  <path d="M72 78H748" stroke="#9f9b8d" stroke-width=".8"/>
+
+  <g clip-path="url(#view)">
+    <rect x="72" y="104" width="676" height="782" fill="url(#air)"/>
+    <path d="M72 342Q210 329 366 345T748 338V440H72Z" fill="#ded8c6"/>
+    <path d="M72 411Q236 399 392 414T748 407V886H72Z" fill="url(#ground)"/>
+    <path d="M72 433Q247 420 402 435T748 428" fill="none" stroke="#eee5cf" stroke-width="2" opacity=".56"/>
+
+    <path d="M385 559Q379 528 398 497Q402 470 419 460Q439 455 448 474L454 499Q478 506 490 529L500 586L473 616L381 611Z" fill="#565e55" stroke="#3e4740" stroke-width="2"/>
+    <path d="M419 462Q438 465 441 482L426 491L411 480Z" fill="#6b705f"/>
+    <path d="M441 478L472 486L444 492" fill="#464b43"/>
+    <path d="M408 525Q423 536 438 538M402 542Q422 550 443 551M397 560Q419 568 447 567M393 578Q416 584 449 582" fill="none" stroke="#9c9b82" stroke-width="2" opacity=".7"/>
+
+    <path d="M166 591L654 570L720 632L185 660Z" fill="url(#cushion)" stroke="#68685e" stroke-width="2"/>
+    <path d="M185 660L720 632L720 741L185 767Z" fill="#d0c6b2" stroke="#68685e" stroke-width="2"/>
+    <path d="M185 660L720 632L720 741L185 767Z" fill="url(#cloth)" opacity=".7"/>
+    <path d="M206 674L698 648M206 705L698 679M206 736L698 710" stroke="#a79e8e" stroke-width="1" opacity=".48"/>
+    <path d="M117 769L684 743L748 783L175 812Z" fill="#ece3d1" stroke="#68685e" stroke-width="2"/>
+    <path d="M175 812L748 783V858H175Z" fill="#c8beab" stroke="#68685e" stroke-width="2"/>
+
+    <path d="M72 266Q134 279 186 311Q223 328 254 364Q294 347 331 373Q367 395 396 428Q433 411 468 440Q512 471 531 510Q573 494 604 526Q646 558 656 601Q705 612 748 647V735Q710 707 677 700Q644 693 617 661Q580 630 543 647Q512 655 488 620Q464 589 427 602Q391 613 364 581Q334 548 299 564Q257 579 235 544Q209 508 180 517Q143 526 123 490Q105 459 72 454Z" fill="#303d36" opacity=".62" filter="url(#soft-edge)"/>
+    <path d="M72 266Q134 279 186 311Q223 328 254 364Q294 347 331 373Q367 395 396 428Q433 411 468 440Q512 471 531 510Q573 494 604 526Q646 558 656 601Q705 612 748 647V735Q710 707 677 700Q644 693 617 661Q580 630 543 647Q512 655 488 620Q464 589 427 602Q391 613 364 581Q334 548 299 564Q257 579 235 544Q209 508 180 517Q143 526 123 490Q105 459 72 454Z" fill="#303d36" opacity=".42"/>
+    <path d="M72 266Q134 279 186 311Q223 328 254 364Q294 347 331 373Q367 395 396 428Q433 411 468 440Q512 471 531 510Q573 494 604 526Q646 558 656 601Q705 612 748 647V735Q710 707 677 700Q644 693 617 661Q580 630 543 647Q512 655 488 620Q464 589 427 602Q391 613 364 581Q334 548 299 564Q257 579 235 544Q209 508 180 517Q143 526 123 490Q105 459 72 454Z" fill="none" stroke="#26342e" stroke-width="1.2" opacity=".22"/>
+
+    <path d="M72 104H748V886H72Z" fill="none" stroke="#f5f0e4" stroke-width="2" opacity=".55"/>
+  </g>
+
+  <text x="72" y="930" font-family="Georgia,serif" font-size="31" fill="#343a34">Shade, unassigned</text>
+  <text x="72" y="960" font-family="Georgia,serif" font-size="13" fill="#67685f">The dark crosses feather, cushion and ground without keeping any of them.</text>
+  <path d="M72 986H748" stroke="#9f9b8d" stroke-width=".8"/>
+  <text x="72" y="1017" font-family="Arial,sans-serif" font-size="9" letter-spacing="2" fill="#77766c">THE EDGE CHANGES HANDS</text>
+</svg>

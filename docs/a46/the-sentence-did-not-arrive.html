@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A quotation shaped only by its surviving attribution.">
+  <title>The Sentence Did Not Arrive</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #eeece4;
+      --ink: #25241f;
+      --muted: #77736a;
+      --rule: #cbc6b9;
+      --red: #a33f2e;
+      --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--paper); }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--serif);
+      min-height: 100vh;
+    }
+    main {
+      width: min(100%, 1120px);
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: clamp(28px, 6vw, 76px) clamp(26px, 8vw, 98px) 48px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+    .topline, .label, .credit-label, .film {
+      font-family: var(--mono);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 14px;
+    }
+    .topline span:last-child { text-align: right; }
+    .field {
+      min-height: 540px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr auto;
+      align-items: start;
+      padding: clamp(40px, 9vh, 100px) 0 clamp(42px, 8vh, 88px);
+      position: relative;
+    }
+    .quote {
+      color: var(--red);
+      font-size: clamp(150px, 26vw, 290px);
+      font-weight: 400;
+      line-height: .65;
+      height: 1em;
+      user-select: none;
+    }
+    .quote.open { justify-self: start; }
+    .quote.close { justify-self: end; align-self: end; }
+    .absence {
+      grid-column: 1 / -1;
+      justify-self: center;
+      text-align: center;
+      margin: 26px 0 0;
+      color: var(--muted);
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(17px, 2.2vw, 23px);
+      line-height: 1.45;
+    }
+    footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 22px;
+      display: grid;
+      grid-template-columns: minmax(150px, .7fr) 1.3fr;
+      gap: 28px;
+      align-items: end;
+    }
+    .credit-label { color: var(--muted); margin: 0 0 11px; }
+    .credit {
+      margin: 0;
+      font-size: clamp(20px, 2.8vw, 29px);
+      line-height: 1.25;
+    }
+    .credit span { color: var(--muted); font-style: italic; }
+    .film { color: var(--muted); margin: 0; text-align: right; }
+    @media (max-width: 600px) {
+      main { min-height: 100svh; padding-bottom: 30px; }
+      .field { min-height: 55vh; padding: 11vh 0 9vh; }
+      footer { grid-template-columns: 1fr; gap: 16px; }
+      .film { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="work-title">
+    <header class="topline">
+      <span>Something someone said</span>
+      <span>Incoming · 11 October 2026</span>
+    </header>
+    <section class="field" aria-label="An empty quotation field">
+      <span class="quote open" aria-hidden="true">“</span>
+      <span class="quote close" aria-hidden="true">”</span>
+      <h1 class="absence" id="work-title">The sentence did not arrive with this copy.</h1>
+    </section>
+    <footer>
+      <div>
+        <p class="credit-label">Attributed to</p>
+        <p class="credit">Keanu Reeves<br><span>as John Wick /<br>Jardani Jovonovich</span></p>
+      </div>
+      <p class="film">John Wick: Chapter 3 – Parabellum</p>
+    </footer>
+  </main>
+</body>
+</html>

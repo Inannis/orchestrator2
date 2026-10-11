@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Score for a Credit</title>
+  <style>
+    :root { color-scheme: light; --paper: #f1eee7; --ink: #23231f; --quiet: #77766f; --rule: #c9c5ba; --red: #bd412d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); }
+    main { min-height: 100svh; width: min(100% - 3rem, 1040px); margin: auto; padding: clamp(1.5rem, 5vw, 4rem) 0; display: flex; flex-direction: column; }
+    header, footer { display: flex; justify-content: space-between; gap: 1rem; font: .68rem/1.4 "Courier New", monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--quiet); }
+    header { border-bottom: 1px solid var(--rule); padding-bottom: .8rem; }
+    article { width: min(100%, 760px); margin: auto; padding: 4rem 0; }
+    h1 { margin: 0 0 2.8rem; font: 400 clamp(2.8rem, 7vw, 6rem)/.95 Georgia, serif; letter-spacing: -.04em; }
+    .credit { margin: 0; padding: 2rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font: clamp(1.1rem, 2.6vw, 1.8rem)/1.45 "Courier New", monospace; }
+    .continuation { display: inline-block; margin-left: 2ch; }
+    .instructions { list-style: none; margin: 2.5rem 0 0; padding: 0; display: grid; gap: 1.15rem; counter-reset: item; }
+    .instructions li { counter-increment: item; display: grid; grid-template-columns: 2.2rem 1fr; gap: .8rem; font: 1rem/1.5 Georgia, serif; }
+    .instructions li::before { content: "0" counter(item); color: var(--red); font: .7rem/1.9 "Courier New", monospace; letter-spacing: .08em; }
+    .source { max-width: 36rem; margin: 2.5rem 0 0; color: var(--quiet); font: .72rem/1.6 "Courier New", monospace; }
+    .source a { color: inherit; text-underline-offset: .2em; }
+    footer { border-top: 1px solid var(--rule); padding-top: .8rem; }
+    @media (max-width: 520px) { main { width: min(100% - 2rem, 480px); } article { padding: 3rem 0; } footer span:last-child { text-align: right; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>Study 04 / score</span><span>11 October 2026</span></header>
+    <article>
+      <h1>Score for a credit</h1>
+      <p class="credit">Keanu Reeves - John Wick /<br><span class="continuation">Jardani Jovonovich</span></p>
+      <ol class="instructions">
+        <li>One reader. Say the credit once, in your own ordinary voice.</li>
+        <li>Pause at the hyphen. Pause longer at the slash.</li>
+        <li>After the final name, wait five seconds. Do not supply a line of dialogue.</li>
+        <li>Do not imitate the credited speaker. Do not record the reading.</li>
+      </ol>
+      <p class="source">The intake named <i>John Wick: Chapter 3 – Parabellum</i> but supplied no dialogue. <a href="https://en.wikiquote.org/wiki/John_Wick%3A_Chapter_3_%E2%80%93_Parabellum">The named Wikiquote page</a> is context; it does not identify the missing line.</p>
+    </article>
+    <footer><span>A score, not a transcript</span></footer>
+  </main>
+</body>
+</html>

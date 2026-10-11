@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The verso is not the after — a study</title>
+  <style>
+    :root { --paper:#eeeae0; --sheet:#f7f4ec; --ink:#252722; --muted:#67675e; --clay:#984b31; --rule:#aaa69a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1400px,100%); margin:0 auto; padding:30px clamp(20px,5vw,76px) 42px; }
+    .mast,.eyebrow,.caption,.term-label,.sources,footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .77fr; gap:38px; align-items:end; margin:37px 0 27px; }
+    h1 { margin:0; font-size:clamp(58px,8.8vw,112px); line-height:.83; font-weight:400; letter-spacing:-.083em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:510px; margin:0 0 3px; font-size:clamp(18px,2vw,23px); line-height:1.44; }
+    .method { max-width:940px; border-top:1px solid var(--ink); margin:0 0 11px; padding-top:9px; color:var(--muted); font:10px/1.5 "Courier New",monospace; letter-spacing:.06em; text-transform:uppercase; }
+    .pair { display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,4vw,56px); align-items:start; }
+    figure { min-width:0; margin:0; }
+    .eyebrow { display:flex; justify-content:space-between; gap:9px; border-top:1px solid var(--rule); padding:9px 0; color:var(--clay); font-size:9px; }
+    .photo { display:grid; place-items:center; height:clamp(315px,38vw,470px); overflow:hidden; border:1px solid #c9c4b8; background:var(--sheet); }
+    .photo img { display:block; width:100%; height:100%; object-fit:contain; }
+    .caption { display:flex; justify-content:space-between; gap:10px; margin-top:7px; color:var(--muted); font-size:9px; line-height:1.45; }
+    .caption span:last-child { text-align:right; }
+    .interpretations { display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,4vw,56px); margin-top:27px; }
+    .interpretation { border-top:1px solid var(--ink); padding-top:10px; }
+    .term-label { display:flex; justify-content:space-between; gap:8px; margin-bottom:8px; color:var(--clay); font-size:9px; }
+    h2 { margin:0 0 7px; font-size:clamp(25px,3.4vw,43px); line-height:1; font-weight:400; letter-spacing:-.05em; }
+    .interpretation p { max-width:570px; margin:0; font-size:16px; line-height:1.42; }
+    .interpretation .small { margin-top:7px; color:var(--muted); font-size:13px; }
+    .modern { display:grid; grid-template-columns:.82fr 1.18fr; gap:25px; align-items:center; border-top:1px solid var(--ink); margin-top:30px; padding-top:13px; }
+    .modern h2 { font-size:clamp(27px,4vw,50px); }
+    .modern p { max-width:650px; margin:0; color:var(--muted); font-size:16px; line-height:1.45; }
+    .modern strong { color:var(--clay); font-weight:400; }
+    .reading { display:grid; grid-template-columns:1.05fr .95fr; gap:34px; border-top:1px solid var(--ink); margin-top:25px; padding-top:13px; }
+    .reading p { margin:0; font-size:clamp(17px,1.8vw,21px); line-height:1.44; }
+    .reading .small { color:var(--muted); font-size:14px; }
+    .sources { border-top:1px solid var(--rule); margin-top:25px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    a { color:inherit; text-underline-offset:3px; }
+    footer { display:flex; justify-content:space-between; gap:13px; border-top:1px solid var(--rule); margin-top:23px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:760px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:17px; margin:27px 0 21px; }
+      h1 { font-size:clamp(58px,15vw,90px); }
+      .pair,.interpretations { grid-template-columns:1fr; gap:23px; }
+      .photo { height:auto; aspect-ratio:1.2; }
+      .modern,.reading { grid-template-columns:1fr; gap:12px; }
+      footer { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 01f · 11 October 2026</span><span>P.Mich. inv. 6215i / two forms of sequence</span></div>
+    <section class="heading">
+      <h1>The verso is<br><em>not the after</em></h1>
+      <p class="intro">The edition describes a reused side of this papyrus. The card in its photograph says “AFTER 8/18/2023.” The first is a historical reading of the sheet; the second is a modern note whose reference is unstated.</p>
+    </section>
+
+    <p class="method">The recto and verso are shown in the article's orientations, independently fitted. The turned view is evidence about the published photograph and written surface, not a measured rotation between frames.</p>
+    <section class="pair" aria-label="Recto and verso photographs of P.Mich. inv. 6215i">
+      <figure>
+        <div class="eyebrow"><span>01 / Recto</span><span>Fig. 1</span></div>
+        <div class="photo"><img src="pmich-6215i-recto.jpeg" alt="The papyrus recto, published horizontally with the scale and dated label below it."></div>
+        <figcaption class="caption"><span>Whole published photograph</span><span>Will / primary writing</span></figcaption>
+      </figure>
+      <figure>
+        <div class="eyebrow"><span>02 / Verso</span><span>Fig. 2</span></div>
+        <div class="photo"><img src="pmich-6215i-verso.jpeg" alt="The papyrus verso, published in portrait orientation with its label and scale along the right edge."></div>
+        <figcaption class="caption"><span>Same sheet / other side</span><span>Account / reused writing</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="interpretations" aria-label="What the article says about each side">
+      <article class="interpretation">
+        <div class="term-label"><span>Article's reading</span><span>Recto</span></div>
+        <h2>A local Greek will</h2>
+        <p>The date is lost. The authors place it in the second half of the second century CE by paleography.</p>
+        <p class="small">The lower blank space contains two lines in a different hand, which the authors say seems to match the verso.</p>
+      </article>
+      <article class="interpretation">
+        <div class="term-label"><span>Article's reading</span><span>Verso</span></div>
+        <h2>Turned and reused</h2>
+        <p>The verso was turned 90 degrees and reused for another document written against the fibers. From the surviving traces, the authors describe it as a day-to-day account with amounts in drachmas.</p>
+        <p class="small">Its margins suggest that the sheet was cut for reuse. The hand does not look later than the second century.</p>
+      </article>
+    </section>
+
+    <section class="modern" aria-label="The modern card's separate date">
+      <div><div class="term-label"><span>Photograph label</span><span>Modern note</span></div><h2>“After 8/18/2023”</h2></div>
+      <p>The edition thanks conservator Marieka Kaye for conservation and temporary photographs on which it is based. It does not define this card's “AFTER” relative to that acknowledgment or say what its date marks. The ancient reuse and the modern note occupy the same frame, but the sources do not join their timelines.</p>
+    </section>
+
+    <section class="reading" aria-label="Reading the two sequences">
+      <p>The sheet has two written uses that the authors can read from its sides, scripts, and margins. In the photograph, a newer card adds a date and a word but no named event. I can show both records together without making them tell one story.</p>
+      <p class="small">The 2023 date string is not the date of the papyrus. The ancient reuse is not an explanation for the modern “after.” That separation is the work's hinge.</p>
+    </section>
+
+    <section class="sources" aria-label="Sources and image credits">
+      <p>Text and fig. 1–2: Maria Nowak and W. Graham Claytor, “A Local Will with a ‘Codicillary’ Clause,” <em>Pylon</em> 4 (2023), especially §1 and §2. Images courtesy of the University of Michigan Library Digital Collections; CC BY-NC-SA 4.0. <a href="https://doi.org/10.48631/pylon.2023.4.101705">Article ↗</a> · <a href="https://journals.ub.uni-heidelberg.de/index.php/pylon/article/download/101705/96790/262117">Full text PDF ↗</a></p>
+      <p>Images retained in their published orientations and independently fitted; no image color-corrected. Interpretive language follows the article; margin-based cutting remains a suggestion in the source.</p>
+    </section>
+    <footer><span>Study 01f / the verso is not the after</span><a href="index.html">The rest of the cup ↗</a><a href="margin-record.html">Study 01e / The number is elsewhere ↗</a><a href="lineage.html">Study 01d / Leave the image room ↗</a><a href="margin-suggests.html">Study 01g / The margin suggests ?</a><a href="cause-open.html">Study 01h / The photograph cannot choose ?</a><a href="crop-edges.html">Study 01i / The crop leaves the edges out ?</a><a href="credit-position.html">Study 01j / The credit has a position ↗</a></footer>
+  </main>
+</body>
+</html>

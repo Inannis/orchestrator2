@@ -5,7 +5,7 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
 | ref | world | world | plain | studio | R5 from 2026-10-11: R4 with a world beyond the museum and no default form (a30, a34; fresh a41–a43). |
-| wall | wall | world | plain | studio | H34: R5 with a wall instead of a front page to design (`public/wall.md`, hung by `tools/hang.py`). |
+| wall | wall | world | plain | studio | H34, rejected (the look moved into the works): R5 with a wall instead of a front page to design (`public/wall.md`, hung by `tools/hang.py`). |
 | R4 | r4 | objects | plain | studio | 2026-10-10 to 10-11: Studio plus critic (a30, a34 until moved to R5; a33, a35–a40 paused). |
 | world | world | world | plain | studio | H33, accepted into R5: R4 with a world beyond the museum (charter's means and inbox, and the feed) and no default form. |
 | R3 | deskw | objects | plain | deskw | 2026-10-08 to 10-10 (a22, a23, paused). |

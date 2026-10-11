@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>A Cat, Twice</title>
+  <style>
+    :root { color-scheme: light; --paper: #efede7; --ink: #262723; --quiet: #77796f; --line: #b8b8ad; --green: #555d49; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); }
+    main { width: min(100% - 3rem, 1100px); margin: 0 auto; padding: 2rem 0 2.5rem; }
+    header { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line); padding-bottom: .8rem; font: .68rem/1.4 "Courier New", monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--quiet); }
+    h1 { margin: 2.3rem 0 1.7rem; max-width: 760px; font: 400 clamp(2.3rem, 6vw, 5.25rem)/.98 Georgia, serif; letter-spacing: -.045em; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(.75rem, 2vw, 1.5rem); align-items: start; }
+    figure { margin: 0; min-width: 0; }
+    .frame { width: 100%; aspect-ratio: 2403 / 2882; overflow: hidden; background: #d2d0c8; position: relative; }
+    .frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .detail img { position: absolute; width: 220%; height: auto; max-width: none; left: -91.5%; top: 0; }
+    figcaption { display: flex; justify-content: space-between; gap: 1rem; padding-top: .7rem; border-top: 1px solid var(--line); font: .68rem/1.4 "Courier New", monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--quiet); }
+    .record { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 2rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); font: .78rem/1.6 "Courier New", monospace; }
+    .record p { margin: 0; }
+    .record .credit { grid-column: 1 / -1; max-width: 54rem; }
+    .return { margin: 1.5rem 0 0; text-align: right; font: .7rem/1.5 "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase; }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+    @media (max-width: 620px) { main { width: min(100% - 2rem, 480px); } .pair { grid-template-columns: 1fr; gap: 1.5rem; } .record { grid-template-columns: 1fr; gap: .8rem; } .record .credit { grid-column: auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>Return / the second shape</span><span>11 October 2026</span></header>
+    <h1>A cat, twice</h1>
+    <section class="pair" aria-label="The full photograph and an enlarged crop of the meeting between two forms">
+      <figure>
+        <div class="frame"><img src="images/cat-shadow-jennifer-c-2011.jpg" alt="A large, cat-shaped shadow fills much of a light curtain; a smaller dark form sits near its upper edge."></div>
+        <figcaption><span>Full frame</span><span>01</span></figcaption>
+      </figure>
+      <figure>
+        <div class="frame detail"><img src="images/cat-shadow-jennifer-c-2011.jpg" alt="An enlarged crop where the smaller dark form meets the larger cat-shaped silhouette on the curtain."></div>
+        <figcaption><span>At the meeting</span><span>01 / crop</span></figcaption>
+      </figure>
+    </section>
+    <section class="record" aria-label="Image source and credit">
+      <p>Two dark forms cross the curtain: one small, one much larger. The second view enlarges their meeting without retouching the image.</p>
+      <p>Source title: <i>Cat Shadow</i><br>Photographed 16 January 2011</p>
+      <p class="credit">Photograph by <a href="https://www.flickr.com/photos/29638108@N06/5314824150">Jennifer C.</a>, shared as <a href="https://commons.wikimedia.org/wiki/File:Cat_Shadow_(5314824150).jpg">Cat Shadow (5314824150)</a> under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>. The second panel is a crop of the unchanged source image.</p>
+    </section>
+    <p class="return"><a href="when-it-grows.html">When It Grows ↗</a> · <a href="a-second-shape-at-the-seam.html">Back to the seam ↗</a></p>
+  </main>
+</body>
+</html>

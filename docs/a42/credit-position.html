@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The credit has a position — a study</title>
+  <style>
+    :root { --paper:#eeeae0; --sheet:#f7f4ec; --ink:#252722; --muted:#67675e; --clay:#984b31; --rule:#aaa69a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1360px,100%); margin:0 auto; padding:30px clamp(20px,5vw,76px) 42px; }
+    .mast,.eyebrow,.method,.field-label,.sources,footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .8fr; gap:38px; align-items:end; margin:36px 0 26px; }
+    h1 { margin:0; font-size:clamp(58px,8.8vw,112px); line-height:.83; font-weight:400; letter-spacing:-.085em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:550px; margin:0 0 4px; font-size:clamp(18px,2vw,23px); line-height:1.44; }
+    .method { border-top:1px solid var(--ink); margin:0 0 15px; padding-top:9px; color:var(--muted); font-size:10px; line-height:1.55; }
+    figure { margin:0; }
+    .eyebrow { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--rule); padding:9px 0; color:var(--clay); font-size:9px; }
+    .strip { display:block; width:100%; height:auto; border:1px solid #c9c4b8; background:var(--sheet); }
+    figcaption { margin-top:8px; color:var(--muted); font-size:13px; line-height:1.4; }
+    .layers { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(18px,3vw,40px); margin-top:33px; }
+    .layer { border-top:1px solid var(--ink); padding-top:10px; }
+    .field-label { display:flex; justify-content:space-between; gap:10px; margin-bottom:13px; color:var(--clay); font-size:9px; }
+    h2 { margin:0 0 8px; font-size:clamp(25px,3.5vw,42px); line-height:1; font-weight:400; letter-spacing:-.05em; }
+    .quote { min-height:88px; font-size:clamp(17px,2vw,22px); line-height:1.35; }
+    .layer p { margin:0; font-size:14px; line-height:1.45; }
+    .layer .small { margin-top:8px; color:var(--muted); font-size:12px; }
+    .reading { display:grid; grid-template-columns:.8fr 1.2fr; gap:34px; border-top:1px solid var(--ink); margin-top:31px; padding-top:13px; }
+    .reading p { margin:0; font-size:clamp(18px,2vw,22px); line-height:1.44; }
+    .reading .small { color:var(--muted); font-size:14px; }
+    .sources { border-top:1px solid var(--rule); margin-top:25px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    a { color:inherit; text-underline-offset:3px; }
+    footer { display:flex; justify-content:space-between; gap:13px; border-top:1px solid var(--rule); margin-top:23px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:760px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:17px; margin:27px 0 21px; }
+      h1 { font-size:clamp(58px,15vw,90px); }
+      .layers { grid-template-columns:1fr; gap:20px; }
+      .quote { min-height:0; }
+      .reading { grid-template-columns:1fr; gap:12px; }
+      footer { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 01j · 11 October 2026</span><span>P.Mich. inv. 6215i / three credit positions</span></div>
+    <section class="heading">
+      <h1>The credit<br><em>has a position</em></h1>
+      <p class="intro">The AIC mark is printed inside the photographed target. A figure caption credits the University of Michigan Library Digital Collections. Elsewhere, the article thanks Marieka Kaye for conservation and temporary photos. These statements sit at different distances from the papyrus.</p>
+    </section>
+
+    <p class="method">One photographed margin, one figure caption, one acknowledgment. The page keeps their locations visible without joining them into a single image route.</p>
+    <figure>
+      <div class="eyebrow"><span>01 / Inside the photograph</span><span>Recto margin · Fig. 1</span></div>
+      <img class="strip" src="edge-recto.jpg" alt="A crop along the bottom of the recto photograph: color and gray patches, a circular guide, ruler, printed AIC PhD Target credit, and a handwritten P.Mich. inventory card with an AFTER date.">
+      <figcaption>The printed target credit and handwritten papyrus card sit together inside the camera's frame; they identify different things.</figcaption>
+    </figure>
+
+    <section class="layers" aria-label="Three locations where credit appears">
+      <article class="layer">
+        <div class="field-label"><span>Inside the photograph</span><span>01</span></div>
+        <h2>Target</h2>
+        <div class="quote">“AIC PhD Target ©2011 AIC”</div>
+        <p>This printed line is part of the reference instrument in the image. AIC's announcement gives the target's design and production context.</p>
+        <p class="small">The mark credits a repeatable design, not a named photographer or one physical target.</p>
+      </article>
+      <article class="layer">
+        <div class="field-label"><span>Below the photograph</span><span>02</span></div>
+        <h2>Figure caption</h2>
+        <div class="quote">“Image courtesy of the University of Michigan Library Digital Collections.”</div>
+        <p>The same sentence appears below both published papyrus figures. It gives a courtesy credit outside the photographic frame.</p>
+        <p class="small">It does not name the person who made the final figure photographs.</p>
+      </article>
+      <article class="layer">
+        <div class="field-label"><span>In the acknowledgments</span><span>03</span></div>
+        <h2>Temporary photos</h2>
+        <div class="quote">“for conservation and providing temporary photos”</div>
+        <p>The article thanks Marieka Kaye for conservation and for temporary photos on which its edition is based.</p>
+        <p class="small">It does not say whether those temporary images are the exact files reproduced as Figs. 1–2.</p>
+      </article>
+    </section>
+
+    <section class="reading" aria-label="What the credits establish and leave open">
+      <p>Three positions, three kinds of credit.</p>
+      <p class="small">The photograph carries a target-design credit and a handwritten object label. The caption attributes image courtesy to a collection. The acknowledgment names conservation and temporary photographs. Together they locate distinct contributions; they do not tell one complete route from papyrus to published image.</p>
+    </section>
+
+    <section class="sources" aria-label="Sources and image credits">
+      <p>Text and figs. 1–2: Maria Nowak and W. Graham Claytor, “A Local Will with a ‘Codicillary’ Clause,” <em>Pylon</em> 4 (2023), acknowledgment and §1. Images courtesy of the University of Michigan Library Digital Collections; CC BY-NC-SA 4.0. <a href="https://doi.org/10.48631/pylon.2023.4.101705">Article ↗</a> · <a href="https://journals.ub.uni-heidelberg.de/index.php/pylon/article/download/101705/96790/262117">Full text PDF ↗</a></p>
+      <p>Target background: American Institute for Conservation, <a href="https://resources.culturalheritage.org/conservators-converse/2011/08/31/aic-photodocumentation-targets-aic-phd-targets-on-sale/">2011 announcement ↗</a>. The photographed strip is a crop from Fig. 1; no color correction.</p>
+    </section>
+    <footer><span>Study 01j / the credit has a position</span><a href="index.html">The rest of the cup ↗</a><a href="crop-edges.html">Study 01i / The crop leaves the edges out ↗</a><a href="margin-record.html">Study 01e / The number is elsewhere ↗</a><a href="open-edge.html">Study 01k / The open edge &rarr;</a></footer>
+  </main>
+</body>
+</html>

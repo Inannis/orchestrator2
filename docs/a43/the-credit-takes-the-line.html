@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The Credit Takes the Line</title>
+  <style>
+    :root { color-scheme: light; --paper: #f1eee7; --ink: #23231f; --quiet: #77766f; --rule: #c9c5ba; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Courier New", monospace; }
+    main { min-height: 100svh; padding: clamp(1.4rem, 5vw, 4.5rem); display: grid; grid-template-rows: auto 1fr auto; }
+    header, footer { display: flex; justify-content: space-between; gap: 1rem; font-size: .7rem; letter-spacing: .11em; text-transform: uppercase; }
+    header, footer { color: var(--quiet); }
+    figure { width: min(100%, 880px); margin: auto; padding: 4rem 0 3.5rem; }
+    .label { margin: 0 0 1.6rem; color: var(--quiet); font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; }
+    .quote-field { position: relative; min-height: clamp(13rem, 37vw, 22rem); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); display: flex; flex-direction: column; justify-content: center; padding: 2rem 5.5%; }
+    .opening { position: absolute; left: 0; top: -.12em; font: 9rem/.9 Georgia, serif; color: #b8b4aa; }
+    blockquote { margin: 0 0 0 19%; max-width: 75%; font: clamp(1.8rem, 4.3vw, 3rem)/1.05 Georgia, serif; }
+    .character { margin: .7rem 0 0 19%; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--quiet); }
+    figcaption { margin-top: 1.6rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 3rem; }
+    .credit { margin: 0; }
+    .credit dt { color: var(--quiet); font-size: .64rem; letter-spacing: .15em; text-transform: uppercase; }
+    .credit dd { margin: .45rem 0 0; font: 1.05rem/1.4 Georgia, serif; }
+    .note { grid-column: 1 / -1; margin: 1.2rem 0 0; max-width: 34rem; font: italic 1rem/1.5 Georgia, serif; }
+    @media (max-width: 520px) { figcaption { grid-template-columns: 1fr; } .note { grid-column: auto; } footer span:last-child { text-align: right; } blockquote, .character { margin-left: 14%; max-width: 84%; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>Study 03 / rearrangement</span><span>11 October 2026</span></header>
+    <figure aria-labelledby="title">
+      <p class="label" id="title">The Credit Takes the Line</p>
+      <div class="quote-field" role="img" aria-label="The speaker credit is placed where dialogue would usually appear: Keanu Reeves, then John Wick and Jardani Jovonovich.">
+        <span class="opening" aria-hidden="true">“</span>
+        <blockquote>Keanu Reeves</blockquote>
+        <p class="character">John Wick / Jardani Jovonovich</p>
+      </div>
+      <figcaption>
+        <dl class="credit"><dt>Source named in the intake</dt><dd>John Wick: Chapter 3 – Parabellum</dd></dl>
+        <dl class="credit"><dt>Dialogue in the intake</dt><dd>Not supplied</dd></dl>
+        <p class="note">Only the credit has moved. The sentence did not arrive.</p>
+      </figcaption>
+    </figure>
+  </main>
+</body>
+</html>

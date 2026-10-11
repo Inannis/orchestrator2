@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Attribution for the Missing Line</title>
+  <style>
+    :root { color-scheme: light; --paper: #f1eee7; --ink: #23231f; --quiet: #77766f; --rule: #c9c5ba; --signal: #bd412d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Courier New", monospace; }
+    main { min-height: 100svh; padding: clamp(1.4rem, 5vw, 4.5rem); display: grid; grid-template-rows: auto 1fr auto; }
+    header, footer { display: flex; justify-content: space-between; gap: 1rem; font-size: .7rem; letter-spacing: .11em; text-transform: uppercase; }
+    header { color: var(--quiet); }
+    figure { width: min(100%, 880px); margin: auto; padding: 4rem 0 3.5rem; }
+    .label { margin: 0 0 1.6rem; color: var(--quiet); font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; }
+    .absence { position: relative; min-height: clamp(13rem, 37vw, 22rem); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); display: flex; align-items: center; padding: 0 5.5%; }
+    .opening { position: absolute; left: 0; top: -.12em; font: 9rem/.9 Georgia, serif; color: #b8b4aa; }
+    .mark { width: 1.15rem; height: 2px; margin-left: 58%; background: var(--signal); }
+    figcaption { margin-top: 1.6rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 3rem; }
+    .credit { margin: 0; }
+    .credit dt { color: var(--quiet); font-size: .64rem; letter-spacing: .15em; text-transform: uppercase; }
+    .credit dd { margin: .45rem 0 0; font: 1.05rem/1.4 Georgia, serif; }
+    .note { grid-column: 1 / -1; margin: 1.2rem 0 0; max-width: 34rem; font: italic 1rem/1.5 Georgia, serif; }
+    footer { color: var(--quiet); }
+    .archive { margin-top: 1.5rem; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: .65rem 1.5rem; font: .7rem "Courier New", monospace; letter-spacing: .08em; text-align: right; text-transform: uppercase; }
+    .archive a { color: inherit; }
+    @media (max-width: 520px) { figcaption { grid-template-columns: 1fr; } .note { grid-column: auto; } footer span:last-child { text-align: right; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>Study 01</span><span>11 October 2026</span></header>
+    <figure aria-labelledby="title">
+      <p class="label" id="title">Attribution for the Missing Line</p>
+      <div class="absence" role="img" aria-label="An empty quotation field; a small red dash marks the space where no dialogue was supplied.">
+        <span class="opening" aria-hidden="true">“</span>
+        <span class="mark" aria-hidden="true"></span>
+      </div>
+      <figcaption>
+        <dl class="credit"><dt>Voice</dt><dd>Keanu Reeves</dd></dl>
+        <dl class="credit"><dt>Character</dt><dd>John Wick<br>Jardani Jovonovich</dd></dl>
+        <dl class="credit"><dt>Source named in the intake</dt><dd>John Wick: Chapter 3 – Parabellum</dd></dl>
+        <dl class="credit"><dt>Dialogue</dt><dd>Not supplied</dd></dl>
+        <p class="note">The intake note ended at the speaker.</p>
+      </figcaption>
+    </figure>
+    <footer><span>One received credit</span><span>No line to repeat</span></footer>
+    <nav class="archive" aria-label="Other works">
+      <a href="a-second-shape-at-the-seam.html">A Second Shape at the Seam →</a>
+      <a href="the-credit-takes-the-line.html">The Credit Takes the Line →</a>
+      <a href="score-for-a-credit.html">Score for a Credit →</a>
+      <a href="three-fields-no-captions.html">Three Fields, No Captions →</a>
+      <a href="the-closing-mark.html">The Closing Mark →</a>
+      <a href="figurine-or-amulet.html">Figurine or Amulet →</a>
+    </nav>
+  </main>
+</body>
+</html>

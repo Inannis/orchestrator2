@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" role="img" aria-labelledby="title description">
+  <title id="title">A Border Held in Place</title>
+  <desc id="description">A painted terracotta shard floats over a faint measuring grid. A black geometric border repeats across its orange surface and breaks off with the shard.</desc>
+  <defs>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#c8c4bc" stroke-width="1"/>
+    </pattern>
+    <clipPath id="shard">
+      <path d="M257 535 281 511 312 488 331 451 367 432 397 405 403 326 424 311 465 315 493 305 548 309 577 303 650 309 675 305 752 311 779 323 780 441 794 455 781 474 785 497 754 514 718 521 684 539 649 533 605 551 569 542 522 559 478 543 439 557 405 544 370 553 346 540 318 555 296 547 278 551Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="850" fill="#eeeae1"/>
+  <path d="M96 130H1104" stroke="#292a27" stroke-width="1.5"/>
+  <text x="98" y="82" fill="#292a27" font-family="Arial, sans-serif" font-size="15" letter-spacing="3">OBJECT STUDY   /   01</text>
+  <text x="1098" y="82" text-anchor="end" fill="#57564f" font-family="Arial, sans-serif" font-size="15" letter-spacing="1.5">ATTIC TERRACOTTA · 5TH C. BCE</text>
+  <text x="98" y="204" fill="#252622" font-family="Georgia, 'Times New Roman', serif" font-size="48">A Border Held in Place</text>
+
+  <rect x="150" y="260" width="900" height="370" fill="url(#grid)" opacity=".55"/>
+  <path d="M150 260H1050M150 630H1050M150 260V630M1050 260V630" fill="none" stroke="#9b978d" stroke-width="1" opacity=".55"/>
+  <g clip-path="url(#shard)">
+    <rect x="245" y="300" width="565" height="275" fill="#b9603c"/>
+    <path d="M245 299H810V337L779 330 752 320 674 316 649 320 577 314 548 320 493 316 465 326 424 322 401 339 398 405 366 433 331 452 313 489 282 512 245 540Z" fill="#20211e"/>
+    <path d="M246 339 278 518 318 515 345 486 374 466 406 444 409 340Z" fill="#aa5738" opacity=".4"/>
+    <path d="M245 439 330 432 362 410 397 390 401 429 369 452 336 475 311 511 279 539 245 546Z" fill="#d17a50"/>
+    <path d="M245 446 328 439 359 417 395 398" fill="none" stroke="#f0b17d" stroke-width="4" opacity=".75"/>
+    <path d="M270 432V361H337V413H299V380H320V393H307" fill="none" stroke="#20211e" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M365 423V363H427V414H388V382H408V395H396" fill="none" stroke="#20211e" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M455 421V364H516V414H478V383H497V395H486" fill="none" stroke="#20211e" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M544 423V365H605V414H567V384H586V395H575" fill="none" stroke="#20211e" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M632 421V366H693V414H655V384H675V395H663" fill="none" stroke="#20211e" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M720 416V368H779V411H743V385H760" fill="none" stroke="#20211e" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M245 443 325 438 361 414 397 391M405 446 438 439M610 447 645 440 679 442 715 434 762 438 810 430" fill="none" stroke="#e59a68" stroke-width="3" opacity=".75"/>
+    <path d="M245 447 325 443 360 420 397 398M405 451 435 445M610 453 644 446 680 448 716 440 763 444 810 436" fill="none" stroke="#20211e" stroke-width="2" opacity=".5"/>
+    <path d="M245 456H810V575H245Z" fill="#20211e"/>
+    <path d="M278 500 302 481 324 477M353 476 382 455 405 451M440 465 468 458M523 472 550 462M606 470 629 459M700 469 722 455 779 450" fill="none" stroke="#141512" stroke-width="8" opacity=".45"/>
+    <path d="M296 535 327 521 343 516M371 520 397 499M458 521 484 508M538 524 558 512M651 514 674 503M731 507 754 494" fill="none" stroke="#a2a097" stroke-width="2" opacity=".6"/>
+    <g fill="#e5a177" opacity=".9">
+      <path d="M440 326q9-8 16 0l-4 5h-11Z"/><circle cx="527" cy="316" r="3"/><path d="M684 325q8-4 12 2l-4 4-10-1Z"/>
+      <circle cx="344" cy="467" r="3"/><path d="M390 482l9-4 2 5-8 4Z"/><circle cx="462" cy="489" r="2.5"/>
+      <path d="M587 485l8-4 3 3-7 5Z"/><circle cx="681" cy="476" r="2"/><path d="M747 483l9-3 2 4-9 4Z"/>
+      <circle cx="421" cy="515" r="2.5"/><path d="M500 533l11-5 2 4-10 5Z"/><circle cx="617" cy="520" r="3"/>
+      <path d="M707 528l10-5 3 4-9 6Z"/><circle cx="764" cy="463" r="2.5"/><circle cx="332" cy="530" r="2"/>
+    </g>
+    <g fill="#d1c9b7" opacity=".75">
+      <path d="M431 342q8-3 11 3l-6 3-6-2Z"/><circle cx="552" cy="337" r="2"/><path d="M712 339l8-2 3 4-9 2Z"/>
+      <path d="M465 503l6-3 4 2-6 4Z"/><circle cx="574" cy="508" r="2"/><path d="M693 491l7-3 2 3-7 4Z"/>
+    </g>
+  </g>
+  <path d="M257 535 281 511 312 488 331 451 367 432 397 405 403 326 424 311 465 315 493 305 548 309 577 303 650 309 675 305 752 311 779 323 780 441 794 455 781 474 785 497 754 514 718 521 684 539 649 533 605 551 569 542 522 559 478 543 439 557 405 544 370 553 346 540 318 555 296 547 278 551Z" fill="none" stroke="#332c27" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M264 539 282 557 298 552M782 502 796 511 806 502" fill="none" stroke="#8e6a54" stroke-width="2" opacity=".8"/>
+
+  <text x="150" y="653" fill="#77736b" font-family="Arial, sans-serif" font-size="11" letter-spacing="1">SOURCE GRID RETAINED AS REFERENCE; DRAWING NOT TO SCALE</text>
+  <path d="M98 682H1102" stroke="#292a27" stroke-width="1.5"/>
+  <text x="100" y="786" fill="#68665e" font-family="Arial, sans-serif" font-size="13" letter-spacing="1.2">TERRACOTTA FRAGMENT OF A KYLIX</text>
+  <text x="600" y="786" text-anchor="middle" fill="#68665e" font-family="Arial, sans-serif" font-size="13" letter-spacing="1.2">METROPOLITAN MUSEUM OF ART</text>
+  <text x="1100" y="786" text-anchor="end" fill="#68665e" font-family="Arial, sans-serif" font-size="13" letter-spacing="1.2">2011.604.1.1114</text>
+</svg>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The margin suggests — a study</title>
+  <style>
+    :root { --paper:#eeeae0; --sheet:#f7f4ec; --ink:#252722; --muted:#67675e; --clay:#984b31; --rule:#aaa69a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+    main { width:min(1360px,100%); margin:0 auto; padding:30px clamp(20px,5vw,76px) 42px; }
+    .mast,.eyebrow,.field-label,.method,.sources,footer { font-family:"Courier New",monospace; text-transform:uppercase; letter-spacing:.075em; }
+    .mast { display:flex; justify-content:space-between; gap:16px; border-block:1px solid var(--ink); padding:9px 0; font-size:10px; }
+    .heading { display:grid; grid-template-columns:1fr .85fr; gap:38px; align-items:end; margin:36px 0 27px; }
+    h1 { margin:0; font-size:clamp(62px,9vw,116px); line-height:.82; font-weight:400; letter-spacing:-.085em; }
+    h1 em { color:var(--clay); font-weight:400; }
+    .intro { max-width:560px; margin:0 0 4px; font-size:clamp(18px,2vw,23px); line-height:1.43; }
+    .method { border-top:1px solid var(--ink); margin:0 0 16px; padding-top:9px; color:var(--muted); font-size:10px; line-height:1.55; }
+    figure { margin:0; min-width:0; }
+    .evidence { display:grid; grid-template-columns:1.14fr .86fr; gap:clamp(25px,4vw,55px); align-items:stretch; }
+    .recto { display:flex; flex-direction:column; }
+    .eyebrow { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--rule); padding:9px 0; color:var(--clay); font-size:9px; }
+    .recto img { display:block; width:100%; height:auto; aspect-ratio:2.96; object-fit:contain; background:var(--sheet); border:1px solid #c9c4b8; }
+    figcaption { margin-top:7px; color:var(--muted); font-size:13px; line-height:1.4; }
+    .verso { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .edge-detail { display:flex; flex-direction:column; min-width:0; }
+    .edge-detail img { display:block; width:100%; height:clamp(250px,31vw,380px); object-fit:contain; background:var(--sheet); border:1px solid #c9c4b8; }
+    .edge-detail figcaption { font-size:12px; }
+    .readings { display:grid; grid-template-columns:1fr 1fr; gap:clamp(25px,4vw,55px); margin-top:35px; }
+    .reading { border-top:1px solid var(--ink); padding-top:11px; }
+    .field-label { display:flex; justify-content:space-between; gap:12px; margin-bottom:8px; color:var(--clay); font-size:9px; }
+    h2 { margin:0 0 8px; font-size:clamp(28px,3.6vw,46px); line-height:1; font-weight:400; letter-spacing:-.055em; }
+    .reading p { max-width:650px; margin:0; font-size:16px; line-height:1.48; }
+    .reading .small { margin-top:9px; color:var(--muted); font-size:13px; }
+    .hinge { display:grid; grid-template-columns:.85fr 1.15fr; gap:35px; border-top:1px solid var(--ink); margin-top:30px; padding-top:13px; }
+    .hinge p { margin:0; font-size:clamp(18px,2vw,23px); line-height:1.43; }
+    .hinge .small { color:var(--muted); font-size:15px; }
+    .sources { border-top:1px solid var(--rule); margin-top:25px; padding-top:10px; color:var(--muted); font-size:9px; line-height:1.7; }
+    .sources p { margin:0 0 6px; }
+    a { color:inherit; text-underline-offset:3px; }
+    footer { display:flex; justify-content:space-between; gap:13px; border-top:1px solid var(--rule); margin-top:23px; padding-top:9px; color:var(--muted); font-size:9px; }
+    @media(max-width:800px) {
+      main { padding-top:20px; }
+      .mast { font-size:8px; }
+      .heading { grid-template-columns:1fr; gap:18px; margin:28px 0 22px; }
+      h1 { font-size:clamp(62px,16vw,94px); }
+      .evidence { grid-template-columns:1fr; gap:24px; }
+      .recto img { height:auto; aspect-ratio:2.96; }
+      .edge-detail img { height:clamp(340px,105vw,490px); }
+      .readings,.hinge { grid-template-columns:1fr; gap:17px; }
+      footer { flex-direction:column; }
+    }
+    @media(max-width:430px) {
+      .verso { gap:11px; }
+      .eyebrow { font-size:8px; }
+      .edge-detail img { height:350px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mast"><span>Study 01g · 11 October 2026</span><span>P.Mich. inv. 6215i / margins and inference</span></div>
+    <section class="heading">
+      <h1>The margin<br><em>suggests</em></h1>
+      <p class="intro">The recto's lower blank band may be a lower margin or a space between sections. On the verso, the left and right margins suggest to the authors that the sheet was cut for reuse.</p>
+    </section>
+
+    <p class="method">Crops from the article's published figures, kept in their original orientations. Display size is not a measurement. No missing edge or earlier sheet shape is reconstructed.</p>
+    <section class="evidence" aria-label="Three photographed margins discussed in the edition">
+      <figure class="recto">
+        <div class="eyebrow"><span>01 / Recto</span><span>Lower band</span></div>
+        <img src="recto-lower-band.jpg" alt="Close crop of the lower recto: the will's last lines, two lines in another hand in the blank band, ragged openings, and the papyrus's bottom edge.">
+        <figcaption>The authors leave this space between two readings: lower margin, or a space between sections. Two upside-down lines in a different hand sit within it.</figcaption>
+      </figure>
+      <div class="verso" aria-label="Verso left and right margins">
+        <figure class="edge-detail">
+          <div class="eyebrow"><span>02 / Verso</span><span>Left margin</span></div>
+          <img src="verso-left-margin.jpg" alt="A vertical crop from the verso photograph showing the left papyrus edge, a broad margin, fibers, writing, and losses.">
+          <figcaption>One of the two margins used in the article's suggestion.</figcaption>
+        </figure>
+        <figure class="edge-detail">
+          <div class="eyebrow"><span>03 / Verso</span><span>Right margin</span></div>
+          <img src="verso-right-margin.jpg" alt="A vertical crop from the verso photograph showing the right papyrus margin, a notation near the top, a large loss, and the ragged outer edge.">
+          <figcaption>The right margin is partly filled at the top with a notation.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="readings" aria-label="Two different kinds of evidence at the margins">
+      <article class="reading">
+        <div class="field-label"><span>Recto / open reading</span><span>§1</span></div>
+        <h2>A blank with two names</h2>
+        <p>The edition says the will is incomplete at the top and both sides. At the bottom, the blank area could be its lower margin or a gap between sections. The two inverted lines are in another hand, which the authors think resembles the verso.</p>
+        <p class="small">The image shows the remaining lines and ragged paper. It cannot decide which reading of the blank is right.</p>
+      </article>
+      <article class="reading">
+        <div class="field-label"><span>Verso / material suggestion</span><span>§1</span></div>
+        <h2>Two margins suggest a cut</h2>
+        <p>The article points to the left and right margins, including the notation at the upper right, as evidence that the papyrus was cut for reuse. It describes the reused writing as badly preserved through smudging or purposeful erasure.</p>
+        <p class="small">The source calls cutting a suggestion. It does not date the act or reconstruct what the lost boundary looked like before it.</p>
+      </article>
+    </section>
+
+    <section class="hinge" aria-label="What the photographed edges can establish">
+      <p>The recto's blank stays undecided. The verso's margins carry an argument.</p>
+      <p class="small">A torn or incomplete edge is visible in the photograph; “cut for reuse” is the authors' interpretation of those margins. I can put the surface and the reading together, but the edge cannot name who changed it, when, or by what tool.</p>
+    </section>
+
+    <section class="sources" aria-label="Sources and image credits">
+      <p>Text and figures 1–2: Maria Nowak and W. Graham Claytor, “A Local Will with a ‘Codicillary’ Clause,” <em>Pylon</em> 4 (2023), §1. Images courtesy of the University of Michigan Library Digital Collections; CC BY-NC-SA 4.0. <a href="https://doi.org/10.48631/pylon.2023.4.101705">Article ↗</a> · <a href="https://journals.ub.uni-heidelberg.de/index.php/pylon/article/download/101705/96790/262117">Full text PDF ↗</a></p>
+      <p>The source photographs are reproduced without color correction. Each detail is cropped from a published figure; the crop boundaries and display widths do not assert scale or a reconstructed outline.</p>
+    </section>
+    <footer><span>Study 01g / the margin suggests</span><a href="index.html">The rest of the cup ↗</a><a href="verso-reused.html">Study 01f / The verso is not the after ↗</a><a href="margin-record.html">Study 01e / The number is elsewhere ↗</a><a href="cause-open.html">Study 01h / The photograph cannot choose ?</a><a href="crop-edges.html">Study 01i / The crop leaves the edges out ?</a><a href="credit-position.html">Study 01j / The credit has a position ↗</a></footer>
+  </main>
+</body>
+</html>
