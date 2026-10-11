@@ -41,7 +41,7 @@ Read after `instructions.md`. These files are the whole memory of the orchestrat
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
 
 ## Where it stands (2026-10-11, session 17)
-Reference R4 (`ref`: Studio rooms, `practice.md`, a review day every fifth day, plus the critic; objects feed): a30 (Luna) and a34 (Sonnet). Closed: H32 (practices split by model: Luna one school of museum research and web plates in one look, Sonnet image-makers unlike each other). Paused: everyone else. Open: H33 a world beyond the museum, a41–a43 (Luna) to s2.
-Known: the object leads what a practice is about; systems shape how it works; a review day that reads the practice whole can change it; a critic with its own memory gives real curatorial judgement; a project without an end never ends; Luna works long and deep and pulls toward research; Sonnet 5.5 pulls toward checking; R4 works from zero on both.
+Reference R5 (`ref`: Studio rooms, `practice.md`, review day every fifth day, the critic; a world beyond the museum in charter and feed): a30 (Luna) and a34 (Sonnet), fresh a41–a43. Open: H34 a wall instead of a front page, a44–a46 (Luna, matched to a41–a43) to s2. Paused: everyone else.
+Known: the object leads what a practice is about; systems shape how it works; a review day can change the practice; a critic with its own memory gives curatorial judgement; a project without an end never ends; Luna works long and deep, pulls toward research and designs every page in one look; Sonnet 5.5 pulls toward checking and makes images; a wider world widens subjects.
 Candidates: a project system with a real end; arrivals that scatter varied practices.
 Open user requests: two listens (`notes/requests/request-006.md`); a26 asks for a reader of German handwriting (`../studios/a26/requests/read-the-german.md`). Replay clones `studios/a7-replay*` wait for the user.

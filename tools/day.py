@@ -209,6 +209,8 @@ with log.open("w", encoding="utf-8") as f:
         else:
             msgs.append(more(False))
 
+if turns and (studio / "public" / "wall.md").exists():  # a `wall` studio: the front page is hung from the wall, the same plain frame for all
+    subprocess.run([sys.executable, str(root / "tools" / "hang.py"), str(studio)], capture_output=True)
 if turns and (studio / ".git").exists():  # whatever the artist left uncommitted is kept; git is the studio's history (desk.py reads it)
     excl = studio / ".git" / "info" / "exclude"; excl.parent.mkdir(exist_ok=True)  # browser profiles and caches a tool left behind are not history
     pats = ["*-profile/", ".*-profile/", "*profile*/Default/", "__pycache__/", "*.tmp", ".cache/"]

@@ -4,8 +4,10 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
-| ref | r4 | objects | plain | studio | R4 from 2026-10-10: Studio (rooms, practice.md, review day) plus the critic (a30 accumulated; restart check a33 Luna, a34 Sonnet). |
-| world | world | world | plain | studio | H33: R4 with a world beyond the museum (charter's means and inbox, and the feed) and no default form. |
+| ref | world | world | plain | studio | R5 from 2026-10-11: R4 with a world beyond the museum and no default form (a30, a34; fresh a41–a43). |
+| wall | wall | world | plain | studio | H34: R5 with a wall instead of a front page to design (`public/wall.md`, hung by `tools/hang.py`). |
+| R4 | r4 | objects | plain | studio | 2026-10-10 to 10-11: Studio plus critic (a30, a34 until moved to R5; a33, a35–a40 paused). |
+| world | world | world | plain | studio | H33, accepted into R5: R4 with a world beyond the museum (charter's means and inbox, and the feed) and no default form. |
 | R3 | deskw | objects | plain | deskw | 2026-10-08 to 10-10 (a22, a23, paused). |
 | studio | studio | objects | plain | studio | H30, accepted into R4: rooms for positions, threads, drawer, projects by state, after-judgements, practice.md, a review day every fifth. |
 | project | project | objects | plain | project | H30, rejected as built (no project closed in five sessions): one project at a time, phases, a showing that closes it. |

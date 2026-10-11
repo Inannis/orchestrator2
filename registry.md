@@ -42,11 +42,14 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a38 | ../studios/a38 | gpt-6-luna | ref | paused 2026-10-11 | 5 | xhigh |
 | a39 | ../studios/a39 | claude-sonnet-5-5 | ref | paused 2026-10-11 | 5 | medium |
 | a40 | ../studios/a40 | claude-sonnet-5-5 | ref | paused 2026-10-11 | 5 | medium |
-| a41 | ../studios/a41 | gpt-6-luna | world | active | 0 | xhigh |
-| a42 | ../studios/a42 | gpt-6-luna | world | active | 0 | xhigh |
-| a43 | ../studios/a43 | gpt-6-luna | world | active | 0 | xhigh |
+| a41 | ../studios/a41 | gpt-6-luna | ref | paused 2026-10-11 | 2 | xhigh |
+| a42 | ../studios/a42 | gpt-6-luna | ref | paused 2026-10-11 | 2 | xhigh |
+| a43 | ../studios/a43 | gpt-6-luna | ref | paused 2026-10-11 | 2 | xhigh |
+| a44 | ../studios/a44 | gpt-6-luna | wall | active | 0 | xhigh |
+| a45 | ../studios/a45 | gpt-6-luna | wall | active | 0 | xhigh |
+| a46 | ../studios/a46 | gpt-6-luna | wall | active | 0 | xhigh |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
-The reference is R4 (Studio plus critic): a30 (Luna, from H30) and a34 (Sonnet, the H31 restart check). a3 and a7 carried R1, a16 R2, a22 and a23 R3. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
+The reference is R5 (R4 with a world beyond the museum): a30 (Luna, from H30) and a34 (Sonnet, the H31 restart check), moved to R5 on 2026-10-11; a41–a43 are fresh R5. a3 and a7 carried R1, a16 R2, a22 and a23 R3. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
 Sites: https://inannis.github.io/orchestrator2/<id>/
