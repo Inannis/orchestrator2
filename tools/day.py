@@ -32,9 +32,10 @@ if memory in ("rooms", "deskw") and n % 5 == 0:  # a studio day is for sorting, 
     prompt += "\n\nToday is a studio day."; k = min(k, 1)
 if memory == "studio" and n % 5 == 0:  # the `studio` system's review day: reading the practice whole takes a day of its own
     prompt += "\n\nToday is a review day."; k = min(k, 2)
-GENESIS = shape == "genesis" and n == 1 and (studio / "GENESIS.md").exists()  # session 1 is the genesis day: seven movements, one per turn
+GENESIS = shape == "genesis" and n == 1 and (studio / "GENESIS.md").exists()  # session 1 is the genesis day: one movement per turn
 if GENESIS:
-    prompt += "\n\nToday is your genesis day. After the charter, read `GENESIS.md` and begin with its first movement."; k = 6
+    prompt += "\n\nToday is your genesis day. After the charter, read `GENESIS.md` and begin with its first movement."
+    if not resume: k = len(re.findall(r"^## ", (studio / "GENESIS.md").read_text(encoding="utf-8"), re.M)) - 1
 handed = set()  # files already handed back today: no repeats within a day
 
 def own_file():
