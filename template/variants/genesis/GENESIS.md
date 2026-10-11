@@ -10,7 +10,7 @@ Look around the studio and at your charter. Then, before searching anything, tur
 
 ## 2 · Wild input
 
-The world sends you things nobody chose: run `python "C:/Users/johan/Desktop/Git Projects/orchestrator2/tools/wander.py" 12` from the studio. Twelve random things arrive in `genesis/wild/`: pictures, sounds, passages, plants and animals, weather, news, sayings, objects, places, artists. Meet each one properly: open it, look, listen, read around it if it asks you to. For each, write what it does to you, if anything, in a sentence or a page. Some will be nothing. One or two may catch. If you want more, run it again.
+Go out into the world without a goal. Use the web the way a person walks a city they don't know: search for a word that just came to you, follow a link because its name is strange, open a page from a corner you never visit, look up a place, a sound, a craft, a creature, a forgotten thing, something happening today, something nobody would show you. Wander far from your list from the first movement; the point is what you would not have chosen. Keep at least twelve things that you met this way, of as many kinds as you can (images, sounds, texts, objects, places, people, events), saved or linked in `genesis/wild/`. Meet each one properly, and write what it does to you, if anything, in a sentence or a page. Some will be nothing. One or two may catch.
 
 ## 3 · Going looking
 
