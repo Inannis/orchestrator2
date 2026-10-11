@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #f0efe9; --ink: #20211e; --muted: #696a63; --rule: #c9c8c0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1440px, 100%); margin: 0 auto; padding: 25px clamp(20px, 5vw, 72px) 38px; }
+    .masthead { display: flex; justify-content: space-between; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding: clamp(36px, 7vw, 88px) 0 0; }
+    h1 { margin: 0; font: 400 clamp(48px, 8.5vw, 112px)/.9 Georgia, 'Times New Roman', serif; letter-spacing: -.055em; }
+    .dek { margin: 20px 0 0; font: 400 clamp(16px, 2vw, 21px)/1.35 Georgia, 'Times New Roman', serif; color: #565750; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(14px, 5vw, 76px); align-items: start; margin: clamp(34px, 6vw, 76px) auto 0; width: min(1080px, 100%); }
+    figure { margin: 0; min-width: 0; }
+    .primary { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+    figcaption { display: flex; justify-content: space-between; gap: 10px; margin-top: 12px; padding-top: 9px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    .trace { width: min(780px, 100%); margin: 44px auto 0; padding: 11px 0 0; border-top: 1px solid var(--rule); color: var(--muted); font-size: 10px; line-height: 1.5; }
+    .trace p { margin: 0; }
+    .notes { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: clamp(55px, 9vw, 110px) 0 0; padding-top: 13px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; line-height: 1.55; }
+    .notes p { max-width: 540px; margin: 0; }
+    .study-index {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px 38px;
+      margin-top: 24px;
+      padding-top: 17px;
+      border-top: 1px solid var(--rule);
+    }
+    .study-index h2 {
+      margin: 0 0 10px;
+      font: 400 clamp(16px, 1.55vw, 20px)/1.2 Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+    }
+    .study-index ol {
+      display: grid;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .study-index li { font-size: 11px; line-height: 1.45; }
+    .study-index a { color: var(--muted); }
+    .study-index a:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+    @media (min-width: 1100px) {
+      .study-index { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 560px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; }
+      .masthead span { display: block; }
+      .masthead span + span { margin-top: 5px; }
+      .pair { gap: 10px; }
+      figcaption { display: block; font-size: 8px; line-height: 1.6; letter-spacing: .08em; }
+      figcaption span { display: block; }
+      .trace { margin-top: 38px; }
+      .notes { grid-template-columns: 1fr; gap: 10px; margin-top: 48px; }
+      .study-index { grid-template-columns: 1fr; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 01 / 11 October 2026</span><span>One title / two records</span></div>
+    <header>
+      <h1>Second place</h1>
+      <p class="dek">The title says one of a pair. The records keep them apart.</p>
+    </header>
+    <section class="pair" aria-label="Primary photographs from two separate Metropolitan Museum records">
+      <figure>
+        <img class="primary" src="assets/met-primary.jpg" alt="Silver dish by Jean-Louis Morel, photographed from above, with a scalloped rim and engraved edge.">
+        <figcaption><span>48.187.170</span><span>1 of 2 views</span></figcaption>
+      </figure>
+      <figure>
+        <img class="primary" src="assets/met-169.jpg" alt="A closely matching silver dish photographed separately from above.">
+        <figcaption><span>48.187.169</span><span>1 of 1 view</span></figcaption>
+      </figure>
+    </section>
+    <aside class="trace" aria-label="Trace of the first version of this study">
+      <p><strong>First pass, kept in the studio:</strong> I faded a duplicate of the 48.187.170 primary photograph to stand for its companion. The altered duplicate was my invention, not a record view; the first version is preserved in the studio archive.</p>
+    </aside>
+    <footer class="notes">
+      <p>Jean-Louis Morel, <i>Dish (one of a pair)</i>, 1763&ndash;64. Silver. The Metropolitan Museum of Art, objects <a href="https://www.metmuseum.org/art/collection/search/200200">48.187.170</a> and <a href="https://www.metmuseum.org/art/collection/search/200199">48.187.169</a>. Bequest of Catherine D. Wentworth, 1948. Public Domain.</p>
+      <p>The records share a title, maker, date, and material; their pages do not link to one another. I read these two separately catalogued dishes as the pair. <a href="pair.html">Study 06 / Between records</a> follows that reading.</p>
+      <nav class="study-index" aria-label="Browse the studies">
+        <section aria-labelledby="group-pair">
+          <h2 id="group-pair">When do two records make a pair?</h2>
+          <ol>
+            <li><a href="index.html" aria-current="page">Study 01 / Second place</a></li>
+            <li><a href="edge.html">Study 02 / The edge in the record</a></li>
+            <li><a href="across.html">Study 03 / Across</a></li>
+            <li><a href="counts.html">Study 04 / The count changes</a></li>
+            <li><a href="around.html">Study 05 / Around</a></li>
+            <li><a href="pair.html">Study 06 / Between records</a></li>
+            <li><a href="shared-frame.html">Study 07 / Shared frame</a></li>
+            <li><a href="twice.html">Study 08 / One of a pair, twice</a></li>
+            <li><a href="previous.html">Study 09 / The previous dish</a></li>
+            <li><a href="three.html">Study 10 / Three numbers</a></li>
+          </ol>
+        </section>
+        <section aria-labelledby="group-comparison">
+          <h2 id="group-comparison">What does comparison keep or remove?</h2>
+          <ol>
+            <li><a href="what-stays.html">Study 11 / What stays</a></li>
+            <li><a href="nearby-edge.html">Study 12 / A nearby edge</a></li>
+            <li><a href="image-only.html">Study 13 / Without fields</a></li>
+            <li><a href="diameter.html">Study 14 / A size between</a></li>
+            <li><a href="center.html">Study 15 / The mark at the center</a></li>
+            <li><a href="not-timeline.html">Study 16 / Not a timeline</a></li>
+            <li><a href="mark-date.html">Study 17 / A mark and a date</a></li>
+            <li><a href="within-dates.html">Study 18 / Within the dates</a></li>
+          </ol>
+        </section>
+        <section aria-labelledby="group-mark">
+          <h2 id="group-mark">When can a mark be named?</h2>
+          <ol>
+            <li><a href="punch.html">Study 19 / A punch without a name</a></li>
+            <li><a href="second-profile.html">Study 20 / A second profile?</a></li>
+            <li><a href="discharge-period.html">Study 21 / Dated, not identified</a></li>
+            <li><a href="two-discharges.html">Study 22 / Two discharges, one object</a></li>
+            <li><a href="what-date-belongs.html">Study 23 / A date belongs to what?</a></li>
+            <li><a href="profile-at-three-distances.html">Study 24 / What survives enlargement?</a></li>
+            <li><a href="above-the-shared-arms.html">Study 25 / Above the shared arms</a></li>
+            <li><a href="the-dates-do-meet.html">Study 26 / The dates do meet</a></li>
+            <li><a href="mark-at-right.html">Study 27 / At the right</a></li>
+            <li><a href="eleven-views.html">Study 28 / Where the marks sit</a></li>
+            <li><a href="two-circles.html">Study 29 / A ring and a dot</a></li>
+            <li><a href="name-in-front.html">Study 30 / A name in front</a></li>
+          </ol>
+        </section>
+        <section aria-labelledby="group-locations">
+          <h2 id="group-locations">How does a catalogue place marks?</h2>
+          <ol>
+            <li><a href="at-left-lip.html">Study 31 / A head at the lip</a></li>
+            <li><a href="three-placements.html">Study 32 / One class, three placements</a></li>
+            <li><a href="fourth-in-sentence.html">Study 33 / The fourth is in the sentence</a></li>
+            <li><a href="mark-numbers.html">Study 34 / Adjacent numbers, different marks</a></li>
+            <li><a href="mark-surfaces.html">Study 35 / Two faces of one base</a></li>
+            <li><a href="period-not-imprint.html">Study 36 / A period is not an imprint</a></li>
+            <li><a href="marking-sites.html">Study 37 / Twenty-one listed placements</a></li>
+          </ol>
+        </section>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>
+
+
+
+

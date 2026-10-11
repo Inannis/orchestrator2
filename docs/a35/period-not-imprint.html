@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A period is not an imprint</title>
+  <style>
+    :root { color-scheme: light; --paper:#eeece5; --panel:#f7f6f1; --ink:#222522; --muted:#676b63; --rule:#cbc9c0; --oxide:#a54936; --green:#3d5b52; --gold:#a47b31; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; }
+    main { width:min(1260px,100%); margin:0 auto; padding:24px clamp(18px,4.8vw,68px) 42px; }
+    .masthead { display:flex; justify-content:space-between; gap:20px; border-bottom:1px solid var(--rule); padding-bottom:11px; color:var(--muted); font-size:10px; letter-spacing:.14em; text-transform:uppercase; }
+    header { padding:clamp(38px,7vw,82px) 0 34px; }
+    h1 { max-width:850px; margin:0; font:400 clamp(50px,8vw,104px)/.9 Georgia,'Times New Roman',serif; letter-spacing:-.055em; }
+    .dek { max-width:700px; margin:22px 0 0; font:400 clamp(17px,2vw,22px)/1.4 Georgia,'Times New Roman',serif; color:#555951; }
+    .object-date { display:grid; grid-template-columns:1fr auto; align-items:end; gap:20px; margin:0 0 22px; padding:18px 0; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
+    .object-date .label,.kicker { margin:0; color:var(--muted); font-size:10px; letter-spacing:.15em; text-transform:uppercase; }
+    .object-date strong { grid-column:2; grid-row:1 / span 2; font:400 clamp(30px,5vw,52px)/1 Georgia,'Times New Roman',serif; letter-spacing:-.04em; }
+    .object-date p:last-child { max-width:620px; margin:0; font-size:13px; line-height:1.5; }
+    .key { display:flex; flex-wrap:wrap; gap:10px 24px; margin:0 0 38px; color:var(--muted); font-size:11px; }
+    .key span { display:inline-flex; align-items:center; gap:8px; }
+    .swatch { width:22px; height:5px; display:inline-block; background:var(--green); border-radius:5px; }
+    .swatch.object { background:var(--oxide); }
+    .swatch.late { background:var(--gold); }
+    .panel { margin-top:30px; padding:24px clamp(15px,2.8vw,34px) 20px; background:var(--panel); border-top:3px solid var(--ink); }
+    .panel-head { display:flex; justify-content:space-between; align-items:baseline; gap:18px; padding-bottom:18px; }
+    .panel-head h2 { margin:0; font:400 clamp(23px,3vw,34px)/1 Georgia,'Times New Roman',serif; letter-spacing:-.03em; }
+    .panel-head p { margin:0; color:var(--muted); font-size:11px; text-align:right; }
+    .axis { display:grid; grid-template-columns:180px minmax(0,1fr) 200px; gap:14px; margin:0 0 2px; color:var(--muted); font:10px Arial,Helvetica,sans-serif; }
+    .ticks { position:relative; height:25px; }
+    .ticks span { position:absolute; top:0; transform:translateX(-50%); white-space:nowrap; }
+    .ticks span:first-child { transform:none; }
+    .ticks span:last-child { transform:translateX(-100%); }
+    .interval { display:grid; grid-template-columns:180px minmax(120px,1fr) 200px; gap:14px; align-items:center; min-height:52px; border-top:1px solid #dedcd4; }
+    .meta strong { display:block; font-size:12px; font-weight:600; }
+    .meta span { display:block; margin-top:4px; color:var(--muted); font-size:10px; line-height:1.3; }
+    .track { position:relative; height:20px; border-left:1px solid rgba(91,94,85,.25); border-right:1px solid rgba(91,94,85,.25); }
+    .early .track { background-image:linear-gradient(90deg,transparent calc(31.58% - .5px),rgba(91,94,85,.19) calc(31.58% - .5px),rgba(91,94,85,.19) calc(31.58% + .5px),transparent calc(31.58% + .5px)),linear-gradient(90deg,transparent calc(63.16% - .5px),rgba(91,94,85,.19) calc(63.16% - .5px),rgba(91,94,85,.19) calc(63.16% + .5px),transparent calc(63.16% + .5px));}
+    .late-window .track { background-image:linear-gradient(90deg,transparent calc(41.20% - .5px),rgba(91,94,85,.19) calc(41.20% - .5px),rgba(91,94,85,.19) calc(41.20% + .5px),transparent calc(41.20% + .5px));}
+    .bar { position:absolute; top:8px; height:4px; min-width:3px; border-radius:4px; background:var(--green); }
+    .bar::before,.bar::after { position:absolute; top:50%; width:7px; height:7px; content:""; background:inherit; border-radius:50%; transform:translateY(-50%); }
+    .bar::before { left:0; }
+    .bar::after { right:0; }
+    .bar.object { background:var(--oxide); }
+    .bar.late { background:var(--gold); }
+    .bar.open { height:0; top:10px; border-top:2px dashed var(--gold); border-radius:0; background:none; }
+    .bar.open::before { width:7px; height:7px; background:var(--gold); }
+    .bar.open::after { content:""; right:-1px; width:0; height:0; background:none; border-radius:0; border-top:5px solid transparent; border-bottom:5px solid transparent; border-left:7px solid var(--gold); transform:translateY(-50%); }
+    .exact { color:#454941; font-size:11px; line-height:1.4; }
+    .undated { display:grid; grid-template-columns:180px 1fr; gap:14px; align-items:center; margin-top:9px; padding:12px 0 0; border-top:1px dashed var(--rule); font-size:11px; }
+    .undated strong { font-weight:600; }
+    .undated span { color:var(--muted); }
+    .panel-note { margin:18px 0 0; color:var(--muted); font:italic 14px/1.45 Georgia,'Times New Roman',serif; }
+    .break-note { display:flex; gap:14px; align-items:center; margin:28px 0; color:var(--muted); font-size:11px; }
+    .break-note::before,.break-note::after { content:""; flex:1; border-top:1px dashed var(--rule); }
+    .reading { display:grid; grid-template-columns:1fr 1.15fr; gap:24px; margin-top:40px; padding-top:16px; border-top:1px solid var(--ink); }
+    .reading h2 { margin:0; font:400 clamp(22px,3vw,32px)/1.05 Georgia,'Times New Roman',serif; }
+    .reading p { margin:0; max-width:650px; color:#4f534c; font-size:13px; line-height:1.55; }
+    .source { max-width:850px; margin:36px auto 0; color:var(--muted); font-size:10px; line-height:1.55; }
+    a { color:inherit; text-underline-offset:2px; }
+    nav { margin-top:22px; padding-top:12px; border-top:1px solid var(--rule); color:var(--muted); font-size:11px; line-height:1.8; }
+    @media(max-width:700px) {
+      main { padding-top:17px; }
+      .masthead { display:block; }
+      .masthead span { display:block; }
+      .masthead span+span { margin-top:5px; }
+      .object-date { gap:8px; }
+      .object-date p:last-child { grid-column:1; }
+      .panel { padding:20px 14px 18px; }
+      .panel-head { display:block; }
+      .panel-head p { margin-top:8px; text-align:left; }
+      .axis { grid-template-columns:1fr; }
+      .axis .blank { display:none; }
+      .axis .ticks { grid-row:1; }
+      .interval { grid-template-columns:1fr; gap:8px; padding:10px 0; }
+      .meta { display:flex; flex-wrap:wrap; align-items:baseline; column-gap:8px; row-gap:3px; }
+      .meta strong,.meta span { display:inline; margin:0; }
+      .meta strong { font-size:12px; }
+      .exact { grid-row:3; font-size:10px; }
+      .track { width:100%; }
+      .undated { grid-template-columns:1fr; gap:5px; }
+      .reading { grid-template-columns:1fr; gap:12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 36 / 11 October 2026</span><span>Getty / periods and impressions</span></div>
+    <header>
+      <h1>A period is<br>not an imprint.</h1>
+      <p class="dek">The catalogue dates when marks were in use. It does not date each strike on this base.</p>
+    </header>
+
+    <section class="object-date" aria-label="Object date">
+      <p class="label">Sauceboat and stand / object date</p>
+      <strong>1762&ndash;63</strong>
+      <p>The red interval dates the object in the record. The green and gold intervals below belong to named marks.</p>
+    </section>
+    <div class="key" aria-label="Timeline key"><span><i class="swatch object"></i>Object date</span><span><i class="swatch"></i>Mark period, earlier group</span><span><i class="swatch late"></i>Mark period, later group</span></div>
+
+    <section class="panel early" aria-labelledby="early-heading">
+      <div class="panel-head"><h2 id="early-heading">Under and on the base / early window</h2><p>One annual scale / 1762 to 1781</p></div>
+      <div class="axis" aria-hidden="true"><div class="blank"></div><div class="ticks"><span style="left:0%">1762</span><span style="left:31.58%">1768</span><span style="left:63.16%">1774</span><span style="left:100%">1781</span></div><div></div></div>
+      <div class="interval">
+        <div class="meta"><strong>Object</strong><span>sauceboat and stand</span></div>
+        <div class="track" role="img" aria-label="Object date, 1762 through 1763"><span class="bar object" style="left:0%;width:10.519%"></span></div>
+        <div class="exact">1762&ndash;63 / catalogue date</div>
+      </div>
+      <div class="interval">
+        <div class="meta"><strong>Warden / crowned Y</strong><span>base, underneath</span></div>
+        <div class="track" role="img" aria-label="Mark period from July 21, 1762 to July 13, 1763"><span class="bar" style="left:2.896%;width:5.144%"></span></div>
+        <div class="exact">July 21, 1762 &mdash; July 13, 1763</div>
+      </div>
+      <div class="interval">
+        <div class="meta"><strong>Charge / crossed laurel</strong><span>base, underneath</span></div>
+        <div class="track" role="img" aria-label="Mark period from October 1, 1762 to October 1, 1768"><span class="bar" style="left:3.934%;width:31.585%"></span></div>
+        <div class="exact">October 1, 1762 &mdash; October 1, 1768</div>
+      </div>
+      <div class="interval">
+        <div class="meta"><strong>Discharge / pointer head</strong><span>base, underneath</span></div>
+        <div class="track" role="img" aria-label="Mark period from October 1, 1762 to October 1, 1768"><span class="bar" style="left:3.934%;width:31.585%"></span></div>
+        <div class="exact">October 1, 1762 &mdash; October 1, 1768</div>
+      </div>
+      <div class="interval">
+        <div class="meta"><strong>Countermark / hunting horn</strong><span>base, on the surface</span></div>
+        <div class="track" role="img" aria-label="Mark period from October 1, 1768 to November 18, 1774"><span class="bar" style="left:35.519%;width:32.262%"></span></div>
+        <div class="exact">October 1, 1768 &mdash; November 18, 1774</div>
+      </div>
+      <div class="interval">
+        <div class="meta"><strong>Countermark / man's slipper</strong><span>base, on the surface</span></div>
+        <div class="track" role="img" aria-label="Mark period from November 18, 1774 to July 13, 1780"><span class="bar" style="left:67.781%;width:29.741%"></span></div>
+        <div class="exact">November 18, 1774 &mdash; July 13, 1780</div>
+      </div>
+      <div class="undated"><strong>Maker's mark / base, underneath</strong><span>No period is given for this mark in the entry, so it has no interval here.</span></div>
+      <p class="panel-note">The first window places the object's date beside the validity periods of the warden, charge, discharge, and two countermarks. The rows identify faces; they do not locate the strikes within them.</p>
+    </section>
+
+    <div class="break-note">The later window uses a separate scale; the intervening years are omitted.</div>
+
+    <section class="panel late-window" aria-labelledby="late-heading">
+      <div class="panel-head"><h2 id="late-heading">On the base / later marks</h2><p>A second annual scale / May 1838 to 1971</p></div>
+      <div class="axis" aria-hidden="true"><div class="blank"></div><div class="ticks"><span style="left:0%">1838</span><span style="left:41.20%">1893</span><span style="left:100%">1971</span></div><div></div></div>
+      <div class="interval">
+        <div class="meta"><strong>Restricted warranty / boar head</strong><span>base, on the surface</span></div>
+        <div class="track" role="img" aria-label="Used from May 10, 1838; the catalogue gives no end date"><span class="bar late open" style="left:0%;width:100%"></span></div>
+        <div class="exact">From May 10, 1838 / no end stated</div>
+      </div>
+      <div class="interval">
+        <div class="meta"><strong>Standard / swan in oval</strong><span>base, on the surface</span></div>
+        <div class="track" role="img" aria-label="Mark period from July 1, 1893 through 1970"><span class="bar late" style="left:41.572%;width:58.428%"></span></div>
+        <div class="exact">July 1, 1893 &mdash; 1970</div>
+      </div>
+      <p class="panel-note">The open arrow means the Getty entry names a start date but no end. Its edge is not a date.</p>
+    </section>
+
+    <section class="reading">
+      <h2>Two clocks, no strike dates</h2>
+      <p>The Getty assigns periods of use to the warden, charge, discharge, countermarks, restricted warranty, and auction standard. Those periods are not dates when each impression was made. The catalogue lists later marks on the base, but does not say when or why they were applied. The split scales preserve the long gap without claiming the base was unmarked during it.</p>
+    </section>
+
+    <p class="source">Source and mark locations: <a href="https://www.getty.edu/publications/french-silver/catalogue/9/">Getty, <i>French Silver</i>, catalogue 9</a>, especially the sauceboat and stand mark entries. The ranges plotted are mark-use periods stated by the catalogue, not observed application dates. Getty's close-up photographs are linked on Studies 34 and 35, not reproduced here.</p>
+    <nav><a href="index.html">Second place</a> / <a href="mark-surfaces.html">Study 35 / Two faces of one base</a> / <a href="mark-numbers.html">Study 34 / Adjacent numbers, different marks</a> / <a href="fourth-in-sentence.html">Study 33 / The fourth is in the sentence</a> / <a href="marking-sites.html">Study 37 / Twenty-one listed placements</a></nav>
+  </main>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Twenty-one listed placements</title>
+  <style>
+    :root { color-scheme:light; --paper:#efede7; --panel:#f8f7f2; --ink:#242622; --muted:#686b64; --rule:#cbc9c0; --green:#405c52; --red:#a54837; --gold:#9d7732; --blue:#65717a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; }
+    main { width:min(1320px,100%); margin:0 auto; padding:24px clamp(18px,4.8vw,68px) 42px; }
+    .masthead { display:flex; justify-content:space-between; gap:20px; border-bottom:1px solid var(--rule); padding-bottom:11px; color:var(--muted); font-size:10px; letter-spacing:.14em; text-transform:uppercase; }
+    header { padding:clamp(42px,8vw,92px) 0 36px; }
+    h1 { max-width:920px; margin:0; font:400 clamp(50px,8.4vw,108px)/.88 Georgia,'Times New Roman',serif; letter-spacing:-.06em; }
+    .dek { max-width:760px; margin:23px 0 0; color:#555951; font:400 clamp(17px,2vw,22px)/1.4 Georgia,'Times New Roman',serif; }
+    .count { display:grid; grid-template-columns:auto 1fr; align-items:center; gap:22px; margin:0 0 28px; padding:16px 0; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
+    .count strong { color:var(--red); font:400 clamp(48px,7vw,78px)/.85 Georgia,'Times New Roman',serif; letter-spacing:-.06em; }
+    .count p { margin:0; font-size:12px; line-height:1.5; }
+    .count p span { color:var(--muted); }
+    .matrix-head { display:flex; justify-content:space-between; align-items:baseline; gap:20px; margin-bottom:12px; }
+    .matrix-head h2 { margin:0; font:400 clamp(25px,3vw,36px)/1 Georgia,'Times New Roman',serif; letter-spacing:-.03em; }
+    .matrix-head p { margin:0; color:var(--muted); font-size:11px; }
+    .matrix-wrap { background:var(--panel); border-top:3px solid var(--ink); }
+    table { width:100%; border-collapse:collapse; table-layout:fixed; }
+    col.mark { width:19%; }
+    col.site { width:20.25%; }
+    thead th { padding:16px 14px 13px; border-bottom:1px solid var(--ink); color:var(--muted); font-size:10px; font-weight:500; line-height:1.35; letter-spacing:.09em; text-align:left; text-transform:uppercase; vertical-align:bottom; }
+    thead th:first-child { color:var(--ink); }
+    tbody tr { border-bottom:1px solid #dedcd4; }
+    tbody th { padding:15px 14px; font-size:12px; font-weight:600; line-height:1.4; text-align:left; vertical-align:top; }
+    tbody th span { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:400; }
+    td { padding:14px; border-left:1px solid #e5e3dc; color:#42463f; font-size:11px; line-height:1.45; vertical-align:top; }
+    td.not-listed { color:#8b8d85; font-style:italic; }
+    .legend { display:flex; gap:10px; align-items:flex-start; margin:16px 0 0; color:var(--muted); font-size:11px; line-height:1.45; }
+    .legend b { display:inline-block; width:8px; height:8px; flex:0 0 8px; margin:3px 2px 0 0; border:1px solid var(--muted); border-radius:50%; }
+    .limits { display:grid; grid-template-columns:1fr 1.25fr; gap:24px; margin-top:38px; padding-top:15px; border-top:1px solid var(--ink); }
+    .limits h2 { margin:0; font:400 clamp(22px,3vw,32px)/1.05 Georgia,'Times New Roman',serif; }
+    .limits p { margin:0; max-width:660px; color:#4e524b; font-size:13px; line-height:1.55; }
+    .source { max-width:920px; margin:34px auto 0; color:var(--muted); font-size:10px; line-height:1.55; }
+    a { color:inherit; text-underline-offset:2px; }
+    nav { margin-top:22px; padding-top:12px; border-top:1px solid var(--rule); color:var(--muted); font-size:11px; line-height:1.8; }
+    @media(max-width:700px) {
+      main { padding-top:17px; }
+      .masthead { display:block; }
+      .masthead span { display:block; }
+      .masthead span+span { margin-top:5px; }
+      .count { gap:15px; }
+      .matrix-head { display:block; }
+      .matrix-head p { margin-top:7px; }
+      .matrix-wrap { padding:5px 12px 8px; }
+      thead { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+      table,tbody { display:block; width:100%; }
+      colgroup { display:none; }
+      tbody tr { display:grid; grid-template-columns:1fr 1fr; gap:0 10px; padding:11px 0 3px; }
+      tbody th { grid-column:1 / -1; padding:3px 0 8px; }
+      td { display:flex; flex-direction:column; min-width:0; padding:8px 2px 10px; border:0; border-top:1px solid #e5e3dc; font-size:10px; }
+      td::before { content:attr(data-site); margin-bottom:5px; color:var(--muted); font-size:9px; letter-spacing:.08em; text-transform:uppercase; }
+      .limits { grid-template-columns:1fr; gap:12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 37 / 11 October 2026</span><span>Getty / marks across components</span></div>
+    <header>
+      <h1>Twenty-one<br>listed placements.</h1>
+      <p class="dek">The Getty gives separate mark lists for the sauceboat, the cradle, and both faces of the stand base. I set each named location in its own cell.</p>
+    </header>
+
+    <section class="count" aria-label="Count of catalogue-listed stamp placements">
+      <strong>21</strong>
+      <p>Listed stamp placements, counted from the catalogue: <span>9 on the sauceboat (including two boar heads), 4 on the cradle rim, 4 underneath the base, and 4 on its surface. This is a count of catalogue statements, not of marks visible in one photograph.</span></p>
+    </section>
+
+    <div class="matrix-head"><h2>One mark name / four sites</h2><p>71.DG.76.a sauceboat / 71.DG.76.b stand</p></div>
+    <div class="matrix-wrap">
+      <table aria-label="Getty catalogue mark locations across the sauceboat, cradle, and base">
+        <colgroup><col class="mark"><col class="site"><col class="site"><col class="site"><col class="site"></colgroup>
+        <thead><tr><th scope="col">Mark group</th><th scope="col">Sauceboat<br>71.DG.76.a</th><th scope="col">Cradle<br>exterior rim</th><th scope="col">Base<br>underneath</th><th scope="col">Base<br>surface</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Maker's mark<span>J.B.C. / key / grains / crowned fleur-de-lys</span></th><td data-site="Sauceboat">Underneath</td><td class="not-listed" data-site="Cradle">Not listed</td><td data-site="Base / underneath">J.B.C. mark / underneath</td><td class="not-listed" data-site="Base / surface">Not listed</td></tr>
+          <tr><th scope="row">Warden<span>Crowned Y</span></th><td data-site="Sauceboat">Underneath</td><td class="not-listed" data-site="Cradle">Not listed</td><td data-site="Base / underneath">Crowned Y / underneath</td><td class="not-listed" data-site="Base / surface">Not listed</td></tr>
+          <tr><th scope="row">Charge<span>Large works on boat / small works on base</span></th><td data-site="Sauceboat">Crowned A with laurel / underneath</td><td class="not-listed" data-site="Cradle">Not listed</td><td data-site="Base / underneath">Crossed laurel branches / underneath</td><td class="not-listed" data-site="Base / surface">Not listed</td></tr>
+          <tr><th scope="row">Discharge<span>Pointer head</span></th><td data-site="Sauceboat">Proper left pouring lip</td><td data-site="Cradle">Exterior rim</td><td data-site="Base / underneath">Underneath</td><td class="not-listed" data-site="Base / surface">Not listed</td></tr>
+          <tr><th scope="row">Countermark<span>Hunting horn</span></th><td data-site="Sauceboat">Proper right pouring lip</td><td data-site="Cradle">Exterior rim</td><td class="not-listed" data-site="Base / underneath">Not listed</td><td data-site="Base / surface">On the surface</td></tr>
+          <tr><th scope="row">Countermark<span>Man's slipper</span></th><td data-site="Sauceboat">Underneath</td><td data-site="Cradle">Exterior rim</td><td class="not-listed" data-site="Base / underneath">Not listed</td><td data-site="Base / surface">On the surface</td></tr>
+          <tr><th scope="row">Restricted warranty<span>Boar head</span></th><td data-site="Sauceboat">Twice: exterior below the proper left lip; exterior rim near handle</td><td data-site="Cradle">Exterior rim</td><td class="not-listed" data-site="Base / underneath">Not listed</td><td data-site="Base / surface">On the surface</td></tr>
+          <tr><th scope="row">Standard<span>Swan in an oval</span></th><td data-site="Sauceboat">Proper right pouring lip</td><td class="not-listed" data-site="Cradle">Not listed</td><td class="not-listed" data-site="Base / underneath">Not listed</td><td data-site="Base / surface">On the surface</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="legend"><b aria-hidden="true"></b><span>"Not listed" means the Getty entry does not name that mark at that location. It is not a claim that a photograph proves absence.</span></p>
+
+    <section class="limits">
+      <h2>Same catalogue names<br>do not prove one punch.</h2>
+      <p>The sauceboat and the two-part stand are individually marked. The matrix keeps their locations distinct, including the base's two faces. The catalogue uses the same mark name in several places; it does not say one physical punch made each impression. The boat's boar head is explicitly listed twice, so both locations count.</p>
+    </section>
+
+    <p class="source">Source: <a href="https://www.getty.edu/publications/french-silver/catalogue/9/">Getty, <i>French Silver</i>, catalogue 9</a>, component details for sauceboat 71.DG.76.a and stand 71.DG.76.b. The table indexes written placements; it does not map stamp coordinates or imply that all marks appear in one view. Compare <a href="three-placements.html">Study 32</a> on the pointer head across three locations, <a href="mark-surfaces.html">Study 35</a> on the two base faces, and <a href="period-not-imprint.html">Study 36</a> on mark periods and object dates.</p>
+    <nav><a href="index.html">Second place</a> / <a href="period-not-imprint.html">Study 36 / A period is not an imprint</a> / <a href="mark-surfaces.html">Study 35 / Two faces of one base</a> / <a href="mark-numbers.html">Study 34 / Adjacent numbers, different marks</a> / <a href="three-placements.html">Study 32 / One class, three placements</a></nav>
+  </main>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The seam I added</title>
+<style>
+  :root { --paper:#f1ecdf; --ink:#29231e; --muted:#766e62; --red:#a6402c; --rule:#bcb3a3; --field:#e6dece; }
+  * { box-sizing:border-box; }
+  html { background:#d9d2c5; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+  main { width:min(100%,1400px); margin:0 auto; padding:30px clamp(22px,5.6vw,80px) 48px; }
+  header, footer { display:flex; justify-content:space-between; align-items:baseline; gap:16px; border-top:1px solid var(--ink); padding:10px 0; font:10px/1.45 Arial,sans-serif; letter-spacing:.13em; text-transform:uppercase; }
+  header { border-bottom:1px solid var(--rule); }
+  a { color:inherit; text-underline-offset:3px; }
+  .intro { display:grid; grid-template-columns:minmax(0,1fr) 245px; align-items:end; gap:35px; padding:clamp(52px,9vh,95px) 0 34px; }
+  .eyebrow, .label { color:var(--red); font:10px/1.4 Arial,sans-serif; letter-spacing:.17em; text-transform:uppercase; }
+  h1 { max-width:900px; margin:14px 0 0; font-size:clamp(58px,10vw,130px); font-weight:400; letter-spacing:-.075em; line-height:.82; }
+  .dek { max-width:730px; margin:24px 0 0; font-size:clamp(17px,1.65vw,21px); line-height:1.43; }
+  .object { border-left:1px solid var(--red); padding:3px 0 3px 15px; color:var(--muted); font:11px/1.65 Arial,sans-serif; }
+  .object strong { display:block; color:var(--ink); font-size:12px; font-weight:600; }
+  .triptych { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(12px,2.1vw,28px); align-items:start; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding:18px 0 20px; }
+  figure { margin:0; min-width:0; }
+  .image { position:relative; background:var(--field); }
+  .image img { display:block; width:100%; height:auto; border:1px solid #b4aa99; }
+  .mirror .image::after { content:""; position:absolute; top:0; bottom:0; left:50%; border-left:1px solid var(--red); opacity:.78; pointer-events:none; }
+  figcaption { display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 10px; padding-top:9px; color:var(--muted); font:10px/1.5 Arial,sans-serif; }
+  figcaption b { color:var(--ink); font-weight:500; }
+  .caption-note { flex-basis:100%; }
+  .reading { display:grid; grid-template-columns:minmax(200px,.8fr) minmax(0,1.2fr); gap:clamp(24px,5vw,68px); padding:29px 0 27px; border-bottom:1px solid var(--rule); }
+  h2 { max-width:370px; margin:10px 0 0; font-size:clamp(31px,4vw,48px); font-weight:400; line-height:.98; letter-spacing:-.05em; }
+  .reading p { max-width:700px; margin:0 0 12px; font-size:16px; line-height:1.56; }
+  .reading p:last-child { margin-bottom:0; color:var(--muted); font:11px/1.6 Arial,sans-serif; }
+  .sources { display:flex; flex-wrap:wrap; gap:8px 24px; padding:14px 0 22px; border-bottom:1px solid var(--rule); color:var(--muted); font:10px/1.5 Arial,sans-serif; }
+  footer { border-top:0; border-bottom:1px solid var(--rule); color:var(--muted); letter-spacing:.06em; text-transform:none; }
+  @media(max-width:760px) {
+    main { padding:20px; }
+    header,footer { font-size:8px; }
+    .intro { grid-template-columns:1fr; gap:22px; padding:43px 0 28px; }
+    .object { max-width:340px; }
+    .triptych { grid-template-columns:1fr 1fr; gap:18px; }
+    .triptych figure:first-child { grid-column:1; }
+    .triptych figure:nth-child(2) { grid-column:2; }
+    .triptych figure:nth-child(3) { grid-column:1; }
+    .reading { grid-template-columns:1fr; gap:18px; }
+    footer { flex-direction:column; align-items:flex-start; gap:5px; }
+  }
+  @media(max-width:480px) {
+    .triptych { grid-template-columns:1fr; gap:18px; }
+    .triptych figure:first-child,.triptych figure:nth-child(2),.triptych figure:nth-child(3) { grid-column:1; }
+    figcaption { font-size:9px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header><span>Chance / study 04</span><a href="index.html">Studio index</a></header>
+  <section class="intro">
+    <div>
+      <div class="eyebrow">A center, made into an axis</div>
+      <h1>The seam<br>I added.</h1>
+      <p class="dek">Flowers and birds gather around the chasuble's middle. I reflected each side across it. The two doubled versions look related, but their centers grow from different halves.</p>
+    </div>
+    <div class="object"><strong>Chasuble</strong>Silk and metal thread on silk<br>18th century<br>Met object 227812</div>
+  </section>
+  <section class="triptych" aria-label="Two mirrored versions of a chasuble photograph beside the cropped photograph">
+    <figure class="mirror">
+      <div class="image"><img src="assets/chasuble-left-reflected.png" alt="The left half of an embroidered chasuble photograph reflected across a vertical center line"></div>
+      <figcaption><b>Left half / reflected</b><span>01</span><span class="caption-note">The red line marks my join.</span></figcaption>
+    </figure>
+    <figure>
+      <div class="image"><img src="assets/chasuble-photo-crop.png" alt="Cropped photograph of an eighteenth-century embroidered chasuble with flowers, scrolling stems, and birds"></div>
+      <figcaption><b>Photograph / cropped</b><span>02</span><span class="caption-note">The middle remains as photographed.</span></figcaption>
+    </figure>
+    <figure class="mirror">
+      <div class="image"><img src="assets/chasuble-right-reflected.png" alt="The right half of an embroidered chasuble photograph reflected across a vertical center line"></div>
+      <figcaption><b>Right half / reflected</b><span>03</span><span class="caption-note">The red line marks my join.</span></figcaption>
+    </figure>
+  </section>
+  <section class="reading">
+    <div><div class="label">One axis / two choices</div><h2>Which half gets to multiply?</h2></div>
+    <div>
+      <p>The left version carries a flower into the center; the right brings a narrow spray and small loops. Each makes a different ornamental body. Their exact balance is an edit, not evidence that the original was stitched from matching halves.</p>
+      <p>I used the vertical line at pixel 214 in the supplied photograph as my axis. The red hairline shows where the two copies meet. I trimmed the photograph to the textile for all three panels; the uncropped source remains linked below.</p>
+    </div>
+  </section>
+  <nav class="sources" aria-label="Sources"><a href="https://www.metmuseum.org/art/collection/search/227812">Metropolitan Museum of Art / Chasuble, object 227812</a><a href="assets/chasuble-met-227812.jpg">Uncropped encounter photograph</a></nav>
+  <footer><span>Study / 2026.10.11</span><a href="index.html">Return to the studio index</a></footer>
+</main>
+</body>
+</html>

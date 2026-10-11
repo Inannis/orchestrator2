@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two faces of one base — Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #24251f; --muted: #66675f; --rule: #c9c8bf; --rust: #985643; --field: #e5e3db; --light: #f7f6f1; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1440px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 50px; }
+    .masthead { display: flex; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding: clamp(42px, 8vw, 88px) 0 clamp(37px, 6vw, 66px); }
+    h1 { max-width: 1100px; margin: 0; font: 400 clamp(56px, 10vw, 128px)/.86 Georgia, 'Times New Roman', serif; letter-spacing: -.07em; }
+    .dek { max-width: 820px; margin: 24px 0 0; color: #53544e; font: 400 clamp(18px, 2.1vw, 23px)/1.45 Georgia, 'Times New Roman', serif; }
+    .object-date { display: grid; grid-template-columns: 180px 1fr auto; gap: 20px; align-items: center; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); padding: 16px 0; }
+    .object-date .label, .face-head p, .inscription .label { margin: 0; color: var(--muted); font-size: 9px; letter-spacing: .13em; line-height: 1.6; text-transform: uppercase; }
+    .object-date strong { color: var(--rust); font: 400 clamp(25px, 4vw, 42px)/1 Georgia, 'Times New Roman', serif; }
+    .object-date .note { color: var(--muted); font-size: 9px; letter-spacing: .1em; text-align: right; text-transform: uppercase; }
+    .faces { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 3vw, 38px); margin: clamp(32px, 5vw, 56px) 0 0; }
+    .face { min-width: 0; background: var(--field); padding: clamp(19px, 3vw, 31px); }
+    .face-head { display: flex; justify-content: space-between; align-items: end; gap: 15px; border-bottom: 1px solid var(--ink); padding-bottom: 15px; }
+    .face-head h2 { margin: 0; font: 400 clamp(29px, 4.5vw, 52px)/.95 Georgia, 'Times New Roman', serif; letter-spacing: -.045em; }
+    .face-head p { max-width: 145px; text-align: right; }
+    .mark { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; gap: 11px; align-items: start; border-bottom: 1px solid #c5c3ba; padding: 15px 0; }
+    .mark:last-child { border-bottom: 0; padding-bottom: 3px; }
+    .number { color: var(--rust); font: 400 17px/1 Georgia, 'Times New Roman', serif; }
+    .mark h3 { margin: 0; font: 400 clamp(18px, 2.3vw, 25px)/1.05 Georgia, 'Times New Roman', serif; letter-spacing: -.025em; }
+    .mark .function, .mark .date { margin: 5px 0 0; color: var(--muted); font-size: 9px; letter-spacing: .08em; line-height: 1.55; text-transform: uppercase; }
+    .mark .date { color: var(--rust); text-align: right; }
+    .mark a { grid-column: 2 / 4; justify-self: start; border: 1px solid #bdbbb1; padding: 6px 8px; font-size: 8px; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+    .mark a:hover, .mark a:focus-visible { background: var(--ink); color: var(--light); outline: none; }
+    .surface .mark { grid-template-columns: 28px minmax(0, 1fr) 108px; }
+    .under-note { margin: 14px 0 0; color: var(--muted); font-size: 9px; letter-spacing: .08em; line-height: 1.6; text-transform: uppercase; }
+    .inscription { display: grid; grid-template-columns: .7fr 1fr 1.3fr; gap: 22px; align-items: start; margin: clamp(38px, 6vw, 65px) 0 0; border-top: 1px solid var(--rule); padding-top: 14px; }
+    .inscription h2 { margin: 0; color: var(--rust); font-size: 9px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase; }
+    .scratch { display: flex; flex-wrap: wrap; gap: 7px; }
+    .scratch span { background: var(--light); padding: 8px 10px; font: 16px/1 Georgia, 'Times New Roman', serif; }
+    .inscription p { max-width: 480px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .reading { display: grid; grid-template-columns: .7fr 1.3fr; gap: 38px; margin: 48px 0 0; border-top: 1px solid var(--rule); padding-top: 13px; }
+    .reading h2 { margin: 0; color: var(--rust); font-size: 9px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase; }
+    .reading p { max-width: 800px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+    .source { margin: 39px 0 0; border-top: 1px solid var(--rule); padding-top: 12px; color: var(--muted); font-size: 10px; line-height: 1.8; }
+    nav { margin-top: 25px; border-top: 1px solid var(--rule); padding-top: 11px; font-size: 10px; letter-spacing: .1em; line-height: 1.9; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 760px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.8; }
+      .masthead span { display: block; }
+      header { padding-top: 48px; }
+      .object-date { grid-template-columns: 1fr auto; gap: 7px 15px; }
+      .object-date .label { grid-column: 1 / -1; }
+      .object-date .note { max-width: 120px; }
+      .faces { grid-template-columns: 1fr; }
+      .face-head h2 { font-size: 39px; }
+      .mark { grid-template-columns: 25px minmax(0, 1fr) 92px; gap: 8px; }
+      .surface .mark { grid-template-columns: 25px minmax(0, 1fr) 92px; }
+      .mark h3 { font-size: 20px; }
+      .inscription { grid-template-columns: 1fr; gap: 10px; }
+      .reading { grid-template-columns: 1fr; gap: 10px; }
+    }
+    @media (max-width: 390px) {
+      .mark, .surface .mark { grid-template-columns: 23px minmax(0, 1fr); }
+      .mark .date { grid-column: 2; text-align: left; }
+      .mark a { grid-column: 2; }
+      .face { padding: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 35 / 11 October 2026</span><span>Getty / one base, two faces</span></div>
+    <header>
+      <h1>Under / on.</h1>
+      <p class="dek">The Getty catalogue separates four stamp groups underneath the stand base from four more on its surface. Turning the base changes the list, the functions, and the dates.</p>
+    </header>
+
+    <section class="object-date" aria-label="Object date, separate from mark dates">
+      <p class="label">Sauceboat and stand / object date</p>
+      <strong>1762–63</strong>
+      <p class="note">One date for the object</p>
+    </section>
+
+    <section class="faces" aria-label="Two catalogue lists for the stand base">
+      <article class="face underside">
+        <div class="face-head"><h2>Underneath</h2><p>Stand base<br>Four groups listed</p></div>
+        <div class="mark"><span class="number">01</span><div><h3>Maker's mark</h3><p class="function">J.B.C. / key / grains / crowned fleur-de-lys</p></div><p class="date">No period<br>given</p><a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-4">Mark 9.4 / detail</a></div>
+        <div class="mark"><span class="number">02</span><div><h3>Crowned Y</h3><p class="function">Warden's mark</p></div><p class="date">1762–63</p></div>
+        <div class="mark"><span class="number">03</span><div><h3>Crossed laurel</h3><p class="function">Charge mark</p></div><p class="date">1762–68</p></div>
+        <div class="mark"><span class="number">04</span><div><h3>Pointer head</h3><p class="function">Discharge mark</p></div><p class="date">1762–68</p></div>
+        <p class="under-note">Cat. 9.4 is an underside overview. I distinguish three forms; the pointer head remains unresolved there. Mark 9.4 enlarges the maker's stamp.</p>
+      </article>
+
+      <article class="face surface">
+        <div class="face-head"><h2>On the surface</h2><p>Stand base<br>Four groups listed</p></div>
+        <div class="mark"><span class="number">01</span><div><h3>Hunting horn</h3><p class="function">Countermark</p></div><p class="date">1768–74</p><a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-5">Mark 9.5 / detail</a></div>
+        <div class="mark"><span class="number">02</span><div><h3>Man's slipper</h3><p class="function">Countermark</p></div><p class="date">1774–80</p><a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-6">Mark 9.6 / detail</a></div>
+        <div class="mark"><span class="number">03</span><div><h3>Boar head</h3><p class="function">Restricted warranty / 800‰</p></div><p class="date">From 1838</p><a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-7">Mark 9.7 / detail</a></div>
+        <div class="mark"><span class="number">04</span><div><h3>Swan in an oval</h3><p class="function">Silver of unknown origin / auction standard</p></div><p class="date">1893–1970</p><a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-8">Mark 9.8 / detail</a></div>
+      </article>
+    </section>
+
+    <section class="inscription" aria-label="Separate scratched inscription underneath the stand">
+      <h2>Also underneath / inscription, not stamp</h2>
+      <div class="scratch"><span>B3772</span><span>2902</span><span>fr (?)</span></div>
+      <p>The catalogue reads 2902 as a weight of 29 troy ounces, 2 pennyweights; it leaves “fr” uncertain. These scratched characters are indexed separately from the four stamp groups. <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#inscription-9-1">Inscription 9.1</a></p>
+    </section>
+
+    <section class="reading">
+      <h2>Dates belong to different things</h2>
+      <p>The sauceboat and stand are dated 1762–63. The other ranges describe periods assigned to particular marks: warden, charge, discharge, countermarks, and later silver marks. The maker's mark has no period given here; the boar-head warranty is dated from May 10, 1838, with no end date stated in this entry. These ranges do not turn into a second object date, and the entries do not say why or when each later stamp was applied.</p>
+    </section>
+
+    <p class="source">Jean-Baptiste François Chéret, <i>Sauceboat on Stand</i>, 1762–63, Getty Museum, 71.DG.76. Placement, mark names, periods, and inscription: <a href="https://www.getty.edu/publications/french-silver/catalogue/9/">Getty, <i>French Silver</i>, catalogue 9</a>. See <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#cat-9-4">Cat. 9.4</a> and <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-4">Mark 9.4</a>–<a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-8">Mark 9.8</a>, plus <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#inscription-9-1">Inscription 9.1</a>. Getty publication figures are CC BY-NC 4.0; linked, not reproduced. The row order indexes the text and does not map the stamps' positions on the base.</p>
+    <nav><a href="index.html">Second place</a> / <a href="mark-numbers.html">Study 34 / Adjacent numbers, different marks</a> / <a href="fourth-in-sentence.html">Study 33 / The fourth is in the sentence</a> / <a href="period-not-imprint.html">Study 36 / A period is not an imprint</a> / <a href="marking-sites.html">Study 37 / Twenty-one listed placements</a></nav>
+  </main>
+</body>
+</html>

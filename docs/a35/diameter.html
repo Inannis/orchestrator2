@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A size between - Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #696a63; --rule: #c9c8c0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1420px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 92px); }
+    h1 { max-width: 1050px; margin: 0; font: 400 clamp(54px, 9vw, 124px)/.88 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+    .dek { max-width: 760px; margin: 22px 0 0; color: #565750; font: 400 clamp(18px, 2.1vw, 23px)/1.4 Georgia, 'Times New Roman', serif; }
+    .note { margin: 15px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .records { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(10px, 1.7vw, 24px); width: min(1220px, 100%); margin: clamp(48px, 8vw, 86px) auto 0; align-items: start; }
+    figure { min-width: 0; margin: 0; border-top: 1px solid var(--ink); padding-top: 10px; }
+    .photo { display: block; width: 100%; height: clamp(160px, 19vw, 230px); object-fit: contain; mix-blend-mode: multiply; }
+    .measure { height: clamp(150px, 18vw, 210px); display: flex; align-items: center; justify-content: center; border-top: 1px solid var(--rule); margin-top: 12px; }
+    .circle { width: var(--diameter); aspect-ratio: 1; border: 1px solid #777870; border-radius: 50%; }
+    figcaption { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; line-height: 1.4; }
+    figcaption strong { color: var(--ink); font: 400 18px/1.1 Georgia, 'Times New Roman', serif; }
+    .reading { width: min(1220px, 100%); margin: clamp(48px, 8vw, 82px) auto 0; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .reading p { max-width: 900px; margin: 0; }
+    .reading p + p { margin-top: 12px; }
+    a { color: inherit; text-underline-offset: 2px; }
+    nav { margin-top: 35px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.9; }
+    @media (max-width: 680px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .records { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
+      .photo { height: clamp(150px, 43vw, 210px); }
+      .measure { height: clamp(135px, 40vw, 180px); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 14 / 11 October 2026</span><span>Five views / one dimension returned</span></div>
+    <header>
+      <h1>A size between</h1>
+      <p class="dek">The photographs hold still. Their diameters return as circles beneath them.</p>
+      <p class="note">The photos remain at a similar display size. The circles use a shared 30.2 cm maximum.</p>
+    </header>
+    <section class="records" aria-label="Five uncropped photographs with circles scaled to the recorded dish diameters">
+      <figure>
+        <img class="photo" src="assets/met-169.jpg" alt="Full catalog photograph of a scalloped silver dish, seen from above." />
+        <div class="measure" aria-hidden="true"><div class="circle" style="--diameter:98.7%"></div></div>
+        <figcaption><strong>29.8 cm</strong><br>recorded diameter · circle scaled</figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/met-172.jpg" alt="Full catalog photograph of a round silver dish with a small central crest, seen from above." />
+        <div class="measure" aria-hidden="true"><div class="circle" style="--diameter:73.5%"></div></div>
+        <figcaption><strong>22.2 cm</strong><br>recorded diameter · circle scaled</figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/met-primary.jpg" alt="Full catalog photograph of a second scalloped silver dish, seen from above." />
+        <div class="measure" aria-hidden="true"><div class="circle" style="--diameter:100%"></div></div>
+        <figcaption><strong>30.2 cm</strong><br>recorded diameter · circle scaled</figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/met-173.jpg" alt="Full catalog photograph of a second round silver dish with a small central crest, seen from above." />
+        <div class="measure" aria-hidden="true"><div class="circle" style="--diameter:75.8%"></div></div>
+        <figcaption><strong>22.9 cm</strong><br>recorded diameter · circle scaled</figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/met-171.jpg" alt="Full catalog photograph of a silver dish whose scalloped lip encloses a plain field, seen from above." />
+        <div class="measure" aria-hidden="true"><div class="circle" style="--diameter:84.1%"></div></div>
+        <figcaption><strong>25.4 cm</strong><br>recorded diameter · circle scaled</figcaption>
+      </figure>
+    </section>
+    <section class="reading">
+      <p>These circles restate the second value in each record; they describe size. The pair readings remain my inference from the photographs and catalog fields. The two close image matches measure 29.8 and 30.2 cm across, and 22.2 and 22.9 cm. The last scalloped form sits between them at 25.4 cm. Its diameter separates it from both size clusters, while its rim keeps it in the wider scalloped family.</p>
+      <p>The second value is the recorded diameter; the first value, height, is omitted. Photos are uncropped and not to scale. Image order remains the shuffled order of Study 13. Source records, in image order: <a href="https://www.metmuseum.org/art/collection/search/200199">48.187.169</a> / <a href="https://www.metmuseum.org/art/collection/search/200202">48.187.172</a> / <a href="https://www.metmuseum.org/art/collection/search/200200">48.187.170</a> / <a href="https://www.metmuseum.org/art/collection/search/200203">48.187.173</a> / <a href="https://www.metmuseum.org/art/collection/search/200201">48.187.171</a>. Public Domain.</p>
+    </section>
+    <nav><a href="index.html">Study 01 / Second place</a> &nbsp;&middot;&nbsp; <a href="image-only.html">Study 13 / Without fields</a> &nbsp;&middot;&nbsp; <a href="center.html">Study 15 / The mark at the center</a> &nbsp;&middot;&nbsp; <a href="nearby-edge.html">Study 12 / A nearby edge</a></nav>
+  </main>
+</body>
+</html>

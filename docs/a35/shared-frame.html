@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shared frame — Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #696a63; --rule: #c9c8c0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1180px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 70px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 88px); }
+    h1 { margin: 0; font: 400 clamp(48px, 8vw, 104px)/.92 Georgia, 'Times New Roman', serif; letter-spacing: -.055em; }
+    .dek { max-width: 640px; margin: 20px 0 0; color: #565750; font: 400 clamp(17px, 2vw, 21px)/1.4 Georgia, 'Times New Roman', serif; }
+    .figure { width: min(720px, 100%); margin: clamp(36px, 6vw, 66px) auto 0; }
+    .stage { position: relative; width: 100%; aspect-ratio: 1; overflow: hidden; background: var(--paper); }
+    .stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+    .field { position: absolute; z-index: 1; pointer-events: none; border: 1px solid rgb(32 33 30 / 7%); }
+    .field-170 { inset: 2.76% 0; }
+    .field-169 { inset: 0 1.48%; }
+    #upper { opacity: .5; }
+    figcaption { display: flex; justify-content: space-between; gap: 14px; margin-top: 11px; padding-top: 9px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 10px; letter-spacing: .11em; text-transform: uppercase; }
+    .control { width: min(720px, 100%); margin: 25px auto 0; }
+    .control label { display: flex; justify-content: space-between; gap: 12px; font-size: 11px; }
+    input[type="range"] { display: block; width: 100%; margin: 12px 0 0; accent-color: #55564f; }
+    .ends { display: flex; justify-content: space-between; margin-top: 5px; color: var(--muted); font-size: 10px; }
+    .caption { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: clamp(50px, 8vw, 86px) 0 0; padding-top: 13px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; line-height: 1.6; }
+    .caption p { margin: 0; max-width: 520px; }
+    a { color: inherit; text-underline-offset: 2px; }
+    nav { margin-top: 35px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+    @media (max-width: 560px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .caption { grid-template-columns: 1fr; gap: 12px; }
+      figcaption { font-size: 8px; letter-spacing: .07em; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 07 / 11 October 2026</span><span>48.187.169 + 48.187.170</span></div>
+    <header>
+      <h1>Shared frame</h1>
+      <p class="dek">Two record photographs, brought to one center. The overlap is mine; the museum photographed them separately.</p>
+    </header>
+    <figure class="figure">
+      <div class="stage" aria-label="Two separately catalogued photographs superimposed in one frame">
+        <img src="assets/met-primary.jpg" alt="The primary photograph for Metropolitan Museum object 48.187.170, used as the lower image." />
+        <img id="upper" src="assets/met-169.jpg" alt="The primary photograph for Metropolitan Museum object 48.187.169, superimposed over the other photograph." />
+        <span class="field field-170" aria-hidden="true"></span>
+        <span class="field field-169" aria-hidden="true"></span>
+      </div>
+      <figcaption><span>Lower image / 48.187.170</span><span>Upper image / 48.187.169</span></figcaption>
+    </figure>
+    <div class="control">
+      <label for="blend"><span>Opacity of 48.187.169</span><output id="amount" for="blend">50%</output></label>
+      <input id="blend" type="range" min="0" max="100" value="50" aria-describedby="range-note">
+      <div class="ends" id="range-note"><span>0% / 48.187.170 alone</span><span>100% / 48.187.169 alone</span></div>
+    </div>
+    <section class="caption">
+      <p>The records give the dishes slightly different dimensions: 48.187.170 is listed as 4.1 × 30.2 cm; 48.187.169 as 4.4 × 29.8 cm. Each full photograph fits its square field by its longer side; hairlines mark the differently proportioned source canvases. The files are not cropped or stretched. Their scale and alignment are not a measurement of how the dishes met.</p>
+      <p>Jean-Louis Morel, <i>Dish (one of a pair)</i>, 1763–64, silver. The Metropolitan Museum of Art, objects <a href="https://www.metmuseum.org/art/collection/search/200200">48.187.170</a> and <a href="https://www.metmuseum.org/art/collection/search/200199">48.187.169</a>. Bequest of Catherine D. Wentworth, 1948; Public Domain. Their pages share title, maker, date, and medium but do not link to one another. I read them as the pair. This is a present-day comparison, not a view of their historical arrangement.</p>
+    </section>
+    <nav><a href="index.html">Study 01 / Second place</a> &nbsp;·&nbsp; <a href="pair.html">Study 06 / Between records</a> &nbsp;·&nbsp; <a href="twice.html">Study 08 / One of a pair, twice</a> &nbsp;·&nbsp; <a href="previous.html">Study 09 / The previous dish</a></nav>
+  </main>
+  <script>
+    const blend = document.querySelector('#blend');
+    const upper = document.querySelector('#upper');
+    const amount = document.querySelector('#amount');
+    blend.addEventListener('input', () => {
+      upper.style.opacity = Number(blend.value) / 100;
+      amount.value = `${blend.value}%`;
+    });
+  </script>
+</body>
+</html>

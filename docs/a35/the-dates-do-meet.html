@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The dates do meet - Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #696a63; --rule: #c9c8c0; --mark: #995544; --object: #777870; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1420px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 92px); }
+    h1 { max-width: 1080px; margin: 0; font: 400 clamp(54px, 9vw, 120px)/.88 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+    .dek { max-width: 860px; margin: 22px 0 0; color: #565750; font: 400 clamp(18px, 2.1vw, 23px)/1.4 Georgia, 'Times New Roman', serif; }
+    .marks { width: min(980px, 100%); margin: clamp(48px, 8vw, 82px) auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(18px, 4vw, 56px); }
+    figure { min-width: 0; margin: 0; border-top: 1px solid var(--ink); padding-top: 10px; }
+    figure img { display: block; width: min(100%, 390px); aspect-ratio: 1; object-fit: contain; background: #f7f6f1; mix-blend-mode: multiply; }
+    figcaption { display: flex; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 10px; line-height: 1.5; }
+    figcaption a { color: var(--ink); }
+    .measure-note { width: min(980px, 100%); margin: 12px auto 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+    .comparison { width: min(1180px, 100%); display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 6vw, 84px); margin: clamp(42px, 7vw, 68px) auto 0; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .comparison h2 { margin: 0 0 10px; color: var(--mark); font-size: 10px; font-weight: 400; letter-spacing: .13em; text-transform: uppercase; }
+    .comparison p { margin: 0; }
+    .comparison p + p { margin-top: 10px; }
+    .timeline { width: min(1180px, 100%); margin: clamp(38px, 6vw, 58px) auto 0; border-top: 1px solid var(--ink); }
+    .axis, .row { display: grid; grid-template-columns: minmax(180px, 1fr) minmax(300px, 1.4fr) 100px; gap: 16px; }
+    .axis { align-items: end; padding: 10px 0 8px; color: var(--muted); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+    .years { display: flex; justify-content: space-between; padding-bottom: 4px; letter-spacing: 0; text-transform: none; }
+    .row { align-items: center; border-top: 1px solid var(--rule); padding: 13px 0; font-size: 11px; }
+    .row-label { color: var(--ink); }
+    .row-label span { display: block; margin-top: 4px; color: var(--muted); font-size: 9px; }
+    .track { position: relative; height: 18px; background: linear-gradient(to right, transparent calc(25% - .5px), var(--rule) calc(25% - .5px), var(--rule) calc(25% + .5px), transparent calc(25% + .5px)), linear-gradient(to right, transparent calc(50% - .5px), var(--rule) calc(50% - .5px), var(--rule) calc(50% + .5px), transparent calc(50% + .5px)), linear-gradient(to right, transparent calc(75% - .5px), var(--rule) calc(75% - .5px), var(--rule) calc(75% + .5px), transparent calc(75% + .5px)), linear-gradient(to right, transparent calc(100% - 1px), var(--rule) calc(100% - 1px)); }
+    .band { position: absolute; top: 5px; left: var(--left); width: max(1px, var(--width)); height: 8px; border-radius: 5px; background: var(--object); }
+    .named .band { background: var(--mark); }
+    .period { color: var(--muted); text-align: right; white-space: nowrap; font-size: 10px; }
+    .key { width: min(1180px, 100%); margin: 11px auto 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+    nav { width: min(1180px, 100%); margin: 35px auto 0; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.9; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 700px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .marks { grid-template-columns: 1fr; width: min(430px, 100%); gap: 23px; }
+      .comparison { grid-template-columns: 1fr; gap: 24px; }
+      .axis, .row { grid-template-columns: 1fr; gap: 8px; }
+      .axis > :first-child, .axis > :last-child { display: none; }
+      .years { padding: 0 0 2px; }
+      .period { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 26 / 11 October 2026</span><span>Two rim impressions / one named period</span></div>
+    <header>
+      <h1>The dates do meet</h1>
+      <p class="dek">The Morel pair is dated 1763&ndash;64. Another Paris dish carries a discharge period that includes those years.</p>
+    </header>
+    <section class="marks" aria-label="Two small round impressions near the outer rims of the Morel dishes">
+      <figure>
+        <img src="assets/met-morel-169-rim-mark.jpg" alt="Two-hundred-pixel square crop from dish 48.187.169, showing a small dark ring near the outside edge of the dish." />
+        <figcaption><a href="https://www.metmuseum.org/art/collection/search/200199">48.187.169</a><span>Full-view crop / 200 &times; 200 px</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/met-morel-170-rim-mark.jpg" alt="Two-hundred-pixel square crop from dish 48.187.170, showing a similar small dark ring near the outside edge." />
+        <figcaption><a href="https://www.metmuseum.org/art/collection/search/200200">48.187.170</a><span>Full-view crop / 200 &times; 200 px</span></figcaption>
+      </figure>
+    </section>
+    <p class="measure-note">The same pixel window is enlarged from each separately framed photograph. The circles look similar at this scale; their interiors do not resolve into an icon here.</p>
+    <section class="comparison">
+      <div>
+        <h2>The Morel pair</h2>
+        <p>The Met dates .169 and .170 to 1763&ndash;64, names Jean-Louis Morel, and titles both dishes as one of a pair. In the full reverse photographs each has a small ring at the outer edge. The records do not identify or describe these circles.</p>
+      </div>
+      <div>
+        <h2>A named discharge</h2>
+        <p>Petit Palais record PPO3616 is another Paris silver dish. Its object date is 1765&ndash;66. At the rim it records a discharge for Paris 1762&ndash;68, described as a &ldquo;t&ecirc;te de braque.&rdquo; The named mark period covers the Morels' object dates.</p>
+      </div>
+    </section>
+    <section class="timeline" aria-label="Met object dates and Paris Museums discharge period from 1760 to 1768">
+      <div class="axis"><span>Record statement</span><div class="years"><span>1760</span><span>1762</span><span>1764</span><span>1766</span><span>1768</span></div><span>Years</span></div>
+      <div class="row"><div class="row-label">.169 + .170<span>Met / object date</span></div><div class="track"><span class="band" style="--left:37.5%;--width:25%"></span></div><div class="period">1763&ndash;64</div></div>
+      <div class="row"><div class="row-label">PPO3616<span>Paris Mus&eacute;es / object date</span></div><div class="track"><span class="band" style="--left:62.5%;--width:25%"></span></div><div class="period">1765&ndash;66</div></div>
+      <div class="row named"><div class="row-label">PPO3616<span>Paris Mus&eacute;es / discharge period</span></div><div class="track"><span class="band" style="--left:25%;--width:75%"></span></div><div class="period">1762&ndash;68</div></div>
+    </section>
+    <p class="key">Grey bars are object dates; the rust bar is the period the record assigns to a named discharge. The period fits the Morel dates. That overlap makes the repeated circles worth investigating; it does not assign this mark to either one. The Paris Mus&eacute;es wording is record evidence; the ring shapes are my reading of the Met Public Domain photographs.</p>
+    <nav><a href="index.html">Second place</a> &nbsp;&middot;&nbsp; <a href="above-the-shared-arms.html">Study 25 / Above the shared arms</a> &nbsp;&middot;&nbsp; <a href="what-date-belongs.html">Study 23 / A date belongs to what?</a></nav>
+  </main>
+</body>
+</html>
+
+
+

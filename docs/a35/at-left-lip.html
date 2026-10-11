@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A head at the lip — Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #eeede6; --ink: #24251f; --muted: #66675f; --rule: #c9c8bf; --rust: #985643; --field: #e5e3db; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1440px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding: clamp(42px, 8vw, 90px) 0 clamp(34px, 6vw, 68px); }
+    h1 { max-width: 1000px; margin: 0; font: 400 clamp(60px, 11vw, 138px)/.84 Georgia, 'Times New Roman', serif; letter-spacing: -.07em; }
+    .dek { max-width: 740px; margin: 25px 0 0; color: #53544e; font: 400 clamp(18px, 2.1vw, 23px)/1.45 Georgia, 'Times New Roman', serif; }
+    .stage { display: grid; grid-template-columns: minmax(0, 1.06fr) minmax(330px, .94fr); gap: clamp(20px, 4vw, 56px); align-items: start; }
+    figure { margin: 0; min-width: 0; }
+    .photo { display: grid; place-items: center; min-height: 430px; background: #e9e7df; }
+    .photo img { display: block; width: 100%; max-height: 760px; object-fit: contain; mix-blend-mode: multiply; }
+    figcaption { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 11px; color: var(--muted); font-size: 9px; letter-spacing: .12em; line-height: 1.6; text-transform: uppercase; }
+    .map { background: var(--field); padding: clamp(19px, 3vw, 32px); }
+    .eyebrow { margin: 0; color: var(--rust); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; }
+    .map h2 { margin: 8px 0 0; font: 400 clamp(26px, 3.4vw, 39px)/1 Georgia, 'Times New Roman', serif; letter-spacing: -.035em; }
+    .diagram { display: block; width: 100%; height: auto; margin: 24px 0 8px; }
+    .location { display: grid; grid-template-columns: 112px 1fr; gap: 13px; border-top: 1px solid #c5c3ba; padding: 15px 0; }
+    .location:last-of-type { border-bottom: 1px solid #c5c3ba; }
+    .location h3 { margin: 0; color: var(--muted); font-size: 9px; font-weight: 400; letter-spacing: .12em; line-height: 1.55; text-transform: uppercase; }
+    .location p { margin: 0; color: #42433d; font: 13px/1.6 Georgia, 'Times New Roman', serif; }
+    .location p + p { margin-top: 7px; }
+    .invisible { color: var(--rust); }
+    .diagram-note { margin: 12px 0 0; color: var(--muted); font-size: 9px; letter-spacing: .1em; line-height: 1.6; text-transform: uppercase; }
+    .readings { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 6vw, 78px); margin: clamp(52px, 8vw, 82px) 0 0; border-top: 1px solid var(--rule); padding-top: 14px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .readings h2 { margin: 0 0 9px; color: var(--rust); font-size: 10px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase; }
+    .readings p { max-width: 600px; margin: 0; }
+    .readings p + p { margin-top: 9px; }
+    .source { margin: 34px 0 0; border-top: 1px solid var(--rule); padding-top: 12px; color: var(--muted); font-size: 10px; line-height: 1.75; }
+    nav { margin-top: 25px; border-top: 1px solid var(--rule); padding-top: 11px; font-size: 10px; letter-spacing: .1em; line-height: 1.9; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 760px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.8; }
+      .masthead span { display: block; }
+      header { padding-top: 48px; }
+      .stage { grid-template-columns: 1fr; }
+      .photo { min-height: 0; }
+      .photo img { max-height: 650px; }
+      .map { padding: 21px; }
+      .location { grid-template-columns: 94px 1fr; }
+      .readings { grid-template-columns: 1fr; gap: 18px; }
+      figcaption { display: block; font-size: 8px; }
+      figcaption span { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 31 / 11 October 2026</span><span>A readable stamp / a named edge</span></div>
+    <header>
+      <h1>A head<br>at the lip</h1>
+      <p class="dek">The Getty's Paris sauceboat gives the stamp a readable profile and a place: the proper left pouring lip.</p>
+    </header>
+
+    <section class="stage" aria-label="Getty collection photograph and catalogue locations">
+      <figure>
+        <div class="photo"><img src="assets/getty-sauceboat-71-DG-76.jpg" alt="Silver sauceboat on an openwork stand, with a pouring lip at each end of the long oval vessel. The whole-object photograph does not resolve the discharge mark."></div>
+        <figcaption><span>Getty Museum / 71.DG.76</span><span>Whole-object view / CC0</span></figcaption>
+      </figure>
+
+      <section class="map" aria-labelledby="map-title">
+        <p class="eyebrow">The catalogue's map</p>
+        <h2>Two lips, two later histories</h2>
+        <svg class="diagram" viewBox="0 0 500 230" role="img" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">Schematic of the Getty sauceboat's two pouring lips</title>
+          <desc id="diagram-desc">An elongated sauceboat with two ends. A rust point marks the proper left pouring lip named in the Getty record. No stamp shape is drawn.</desc>
+          <path d="M111 86 C143 53 357 53 389 86 L445 113 L400 122 C360 160 140 160 100 122 L55 113 Z" fill="none" stroke="#77776e" stroke-width="1.6"/>
+          <path d="M110 86 C148 116 352 116 390 86 M100 122 C150 92 350 92 400 122" fill="none" stroke="#aaa99f" stroke-width="1.1"/>
+          <path d="M54 113 L101 122 M445 113 L399 122" fill="none" stroke="#77776e" stroke-width="1.6"/>
+          <circle cx="420" cy="115" r="5" fill="#985643"/>
+          <path d="M422 110 C443 83 455 65 472 48" fill="none" stroke="#985643" stroke-width="1.3" stroke-dasharray="4 5"/>
+          <text x="476" y="33" text-anchor="end" fill="#985643" font-family="Arial, sans-serif" font-size="10" letter-spacing="1">PROPER LEFT</text>
+          <text x="476" y="47" text-anchor="end" fill="#77776e" font-family="Arial, sans-serif" font-size="9" letter-spacing=".5">POINTER-HEAD DISCHARGE</text>
+          <text x="25" y="159" fill="#77776e" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">PROPER RIGHT / HUNTING HORN</text>
+          <text x="250" y="205" text-anchor="middle" fill="#77776e" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">SCHEMATIC / NO PUNCH SHAPE DRAWN</text>
+        </svg>
+        <div class="location">
+          <h3>Proper left lip</h3>
+          <div>
+            <p><span class="invisible">Discharge:</span> pointer head, Paris, 1762&ndash;1768.</p>
+            <p><a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-3">Mark 9.3</a> is the close-up; the Getty labels it a discharge mark and maps it here.</p>
+          </div>
+        </div>
+        <div class="location">
+          <h3>Proper right lip</h3>
+          <div>
+            <p><span class="invisible">Countermark:</span> hunting horn, Paris, 1768&ndash;1774.</p>
+            <p>The two lips carry distinct marks; the close-up is not a view of the whole arrangement.</p>
+          </div>
+        </div>
+        <p class="diagram-note">Left and right repeat the Getty catalogue's terms; the schematic has no photographic orientation. It locates the mark but does not copy its punch.</p>
+      </section>
+    </section>
+
+    <section class="readings">
+      <div>
+        <h2>What Mark 9.3 resolves</h2>
+        <p>The detail shows an oval impression with a clear, left-facing head profile. The Getty calls it a pointer head, the Paris discharge for gold and small silver works from 1762 to 1768.</p>
+      </div>
+      <div>
+        <h2>What the record joins</h2>
+        <p>Jean-Baptiste François Chéret made this sauceboat in Paris in 1762&ndash;63. The catalogue places the photographed discharge on its proper left pouring lip. The main collection image is CC0; the detail is linked as Getty publication figure 9.3 under CC BY-NC 4.0.</p>
+      </div>
+    </section>
+
+    <p class="source">Jean-Baptiste François Chéret, <i>Sauceboat on Stand</i>, 1762&ndash;63, silver and gilded silver, Getty Museum, 71.DG.76. Whole-object photograph: <a href="https://www.getty.edu/art/collection/object/103SCW">Getty collection record</a> (CC0). Detailed source: <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-3">French Silver in the J. Paul Getty Museum, catalogue 9, Mark 9.3</a>; the text specifies the proper left pouring lip. Getty publication text and detail image are licensed CC BY-NC 4.0; the source image is linked, not reproduced here.</p>
+    <nav><a href="index.html">Second place</a> / <a href="mark-numbers.html">Study 34 / Adjacent numbers, different marks</a> / <a href="name-in-front.html">Study 30 / A name in front</a> / <a href="eleven-views.html">Study 28 / Eleven views</a> / <a href="mark-at-right.html">Study 27 / At the right</a> / <a href="period-not-imprint.html">Study 36 / A period is not an imprint</a> / <a href="marking-sites.html">Study 37 / Twenty-one listed placements</a></nav>
+  </main>
+</body>
+</html>

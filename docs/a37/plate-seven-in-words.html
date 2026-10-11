@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The plate not pictured - Cruycen, no. 7</title>
+<style>
+  :root { --paper:#f1ecdf; --ink:#29231e; --muted:#766e62; --red:#a6402c; --rule:#bcb3a3; --field:#e6dece; }
+  * { box-sizing:border-box; }
+  html { background:#d9d2c5; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+  main { width:min(100%,1360px); margin:0 auto; padding:30px clamp(22px,5.6vw,78px) 46px; }
+  header, footer { display:flex; justify-content:space-between; align-items:baseline; gap:18px; border-top:1px solid var(--ink); padding:10px 0; font:10px/1.45 Arial,sans-serif; letter-spacing:.13em; text-transform:uppercase; }
+  header { border-bottom:1px solid var(--rule); }
+  a { color:inherit; text-underline-offset:3px; }
+  .intro { display:grid; grid-template-columns:minmax(0,1fr) 250px; align-items:end; gap:35px; padding:clamp(55px,9vh,100px) 0 35px; }
+  .eyebrow, .label { color:var(--red); font:10px/1.4 Arial,sans-serif; letter-spacing:.17em; text-transform:uppercase; }
+  h1 { max-width:890px; margin:14px 0 0; font-size:clamp(58px,10vw,126px); font-weight:400; letter-spacing:-.075em; line-height:.82; }
+  .dek { max-width:730px; margin:23px 0 0; font-size:clamp(16px,1.55vw,20px); line-height:1.45; }
+  .object { border-left:1px solid var(--red); padding:3px 0 3px 15px; color:var(--muted); font:11px/1.6 Arial,sans-serif; }
+  .object strong { display:block; color:var(--ink); font-size:12px; font-weight:600; }
+  .pair { display:grid; grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr); gap:clamp(20px,4vw,54px); align-items:stretch; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding:18px 0; }
+  figure { margin:0; }
+  figure img { display:block; width:100%; height:auto; border:1px solid #b4aa99; }
+  figcaption { display:flex; justify-content:space-between; gap:12px; padding-top:8px; color:var(--muted); font:10px/1.5 Arial,sans-serif; }
+  .absent { display:flex; min-height:100%; flex-direction:column; justify-content:space-between; padding:16px 0 8px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+  .absent .number { color:var(--red); font-size:clamp(90px,17vw,205px); line-height:.76; letter-spacing:-.09em; }
+  .absent .status { max-width:390px; padding:22px 0 18px; font-size:clamp(23px,3vw,38px); line-height:1.05; letter-spacing:-.035em; }
+  .absent .caption { max-width:460px; color:var(--muted); font:11px/1.55 Arial,sans-serif; }
+  .inventory { padding:28px 0 31px; border-bottom:1px solid var(--ink); }
+  .inventory-head { display:grid; grid-template-columns:minmax(180px,.7fr) minmax(0,1.3fr); gap:30px; align-items:end; margin-bottom:18px; }
+  h2 { max-width:440px; margin:9px 0 0; font-size:clamp(32px,4vw,51px); font-weight:400; line-height:.98; letter-spacing:-.05em; }
+  .inventory-head p { max-width:600px; margin:0; color:var(--muted); font-size:14px; line-height:1.55; }
+  .entries { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); border-top:1px solid var(--rule); }
+  .entry { min-height:190px; padding:13px 14px 12px 0; border-bottom:1px solid var(--rule); }
+  .entry + .entry { padding-left:14px; border-left:1px solid var(--rule); }
+  .entry b { display:block; color:var(--red); font:10px/1.4 Arial,sans-serif; letter-spacing:.14em; text-transform:uppercase; }
+  .entry h3 { margin:22px 0 9px; font-size:clamp(19px,2.2vw,27px); font-weight:400; line-height:1; letter-spacing:-.03em; }
+  .entry p { margin:0; color:var(--muted); font-size:13px; line-height:1.5; }
+  .after { display:grid; grid-template-columns:minmax(200px,.72fr) minmax(0,1.28fr); gap:clamp(22px,4vw,54px); align-items:start; padding:28px 0; border-bottom:1px solid var(--rule); }
+  .after img { max-height:500px; object-fit:contain; object-position:left top; background:var(--field); }
+  .after p { max-width:700px; margin:0 0 13px; font-size:16px; line-height:1.55; }
+  .after p:last-child { color:var(--muted); font:12px/1.55 Arial,sans-serif; }
+  .sources { display:flex; flex-wrap:wrap; gap:8px 20px; padding:14px 0 22px; border-bottom:1px solid var(--rule); color:var(--muted); font:10px/1.5 Arial,sans-serif; }
+  footer { margin-top:0; border-top:0; border-bottom:1px solid var(--rule); color:var(--muted); letter-spacing:.06em; text-transform:none; }
+  @media(max-width:760px) {
+    main { padding:20px; }
+    header,footer { font-size:8px; }
+    .intro { grid-template-columns:1fr; gap:22px; padding:45px 0 28px; }
+    .object { max-width:360px; }
+    .pair { grid-template-columns:1fr; gap:22px; }
+    .absent { min-height:300px; }
+    .inventory-head,.after { grid-template-columns:1fr; gap:16px; }
+    .entries { grid-template-columns:1fr 1fr; }
+    .entry { min-height:155px; padding-right:12px; }
+    .entry + .entry { padding-left:12px; }
+    .entry:nth-child(odd) { padding-left:0; border-left:0; }
+    .entry h3 { margin-top:15px; }
+    footer { flex-direction:column; gap:5px; }
+  }
+  @media(max-width:420px) {
+    .entries { grid-template-columns:1fr; }
+    .entry,.entry + .entry,.entry:nth-child(odd) { min-height:0; padding:13px 0 16px; border-left:0; }
+    .entry h3 { margin:12px 0 7px; }
+    .absent { min-height:250px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header><span>Study / source plate 07</span><a href="after-6-7.html">Album page 03</a></header>
+  <section class="intro">
+    <div>
+      <div class="eyebrow">A source read from its record</div>
+      <h1>The plate<br>not pictured.</h1>
+      <p class="dek">The Met assigns the album's right drawing to plate 7. Its record describes the engraving, but offers no image to compare.</p>
+    </div>
+    <div class="object"><strong>Nouveau Livre de Desseins / No. 7</strong>L. van der Cruycen<br>Paris, 1770 · engraving<br>Met object 22.84.4(7)</div>
+  </section>
+  <section class="pair" aria-label="Album page 3 and the unavailable image of plate 7">
+    <figure><img src="assets/page-3.jpg" alt="Whole album page 3, with two jewelry drawings inside a ruled rectangle"><figcaption><span>Album page 3 / whole leaf</span><span>The Met maps right to 7</span></figcaption></figure>
+    <div class="absent" aria-label="No image available for source plate 7">
+      <div class="number" aria-hidden="true">07</div>
+      <div class="status">No source image<br>in the online record.</div>
+      <div class="caption">This open field marks the limit of this comparison. It is not a facsimile, a reconstruction, or a claim about the plate's layout.</div>
+    </div>
+  </section>
+  <section class="inventory">
+    <div class="inventory-head">
+      <div><div class="label">The Met's description / in its order</div><h2>Five designs.<br>No arrangement.</h2></div>
+      <p>The record names three aigrettes, a diademe, and a brooch. These notes follow the order of its description; they do not place the designs on the missing sheet.</p>
+    </div>
+    <div class="entries">
+      <article class="entry"><b>Aigrette / 01</b><h3>Palmette</h3><p>Pearl strings and a small bow sit within a looping garland of flowers and leaves.</p></article>
+      <article class="entry"><b>Aigrette / 02</b><h3>Flower</h3><p>A large flower is gathered with stems and smaller blooms, with a palmette and thin pearl strips.</p></article>
+      <article class="entry"><b>Aigrette / 03</b><h3>Bundle</h3><p>Flowers, leaves, and a palmette are tied by a patterned ribbon bow.</p></article>
+      <article class="entry"><b>Diademe</b><h3>Two waves</h3><p>A garland of flowers and leaves crosses a wavy line of pearl-like forms and knots at the right.</p></article>
+      <article class="entry"><b>Brooch</b><h3>Open arch</h3><p>An inverted U of crossed ribbons carries small flowers and leaves.</p></article>
+    </div>
+  </section>
+  <section class="after">
+    <figure><img src="assets/right-design-inspection.png" alt="Album page 3 right drawing: a rising fan above flowers and ribbon, with pale strokes nearby"><figcaption><span>Album page 3 / right design</span><span>Copied after plate 7, per the Met</span></figcaption></figure>
+    <div><div class="label">What the record lets me say</div><p>The right drawing sits beside a claim about a source: “after plate 7.” The catalogue gives that source five kinds of design, and the drawing offers its own plume, flowers, and ribbon. Without the print, I cannot tell which forms the copy retains or changes.</p><p>The inventory can be read beside the copied drawing. Its list is not a substitute for seeing the engraving, and it does not tell me where any design sat on the source sheet.</p></div>
+  </section>
+  <nav class="sources" aria-label="Sources"><a href="https://www.metmuseum.org/art/collection/search/712812">Met / source plate 7, 22.84.4(7)</a><a href="https://www.metmuseum.org/art/collection/search/712877">Met / album page 3</a><a href="https://www.erfgoed-kbs.be/sites/www.erfgoed-kbs.be/files/artpiece/attachments/boekje_uitmuntend_elegant_juwelen_van_l._vander_crycen.pdf#page=10">DIVA / *Uitmuntend elegant*, p. 17</a></nav>
+  <footer><span>Study / 2026.10.11</span><a href="after-6-7.html">Return to “I can't find the drops”</a><a href="plate-six.html">One plate, twice over</a></footer>
+</main>
+</body>
+</html>

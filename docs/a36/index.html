@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1791 (?) — A36</title>
+<style>
+:root { color-scheme: light; --paper: #e7e4dd; --ink: #252624; --quiet: #79786f; --gold: #9b8050; --rule: #bdb9ae; }
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: Arial, Helvetica, sans-serif; }
+.page { width: min(1440px, 100%); margin: 0 auto; padding: 34px clamp(22px, 5vw, 76px) 38px; }
+.topline { display: flex; justify-content: space-between; border-bottom: 1px solid var(--rule); padding: 0 0 13px; color: var(--quiet); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
+.plate { display: grid; grid-template-columns: minmax(230px, .62fr) minmax(0, 1.7fr); gap: clamp(22px, 4vw, 62px); align-items: center; min-height: 690px; padding: 42px 0 34px; }
+.left { align-self: stretch; display: flex; flex-direction: column; justify-content: center; position: relative; }
+.kicker { margin: 0 0 24px; color: var(--quiet); font-size: 10px; letter-spacing: .19em; text-transform: uppercase; }
+h1 { margin: 0; font: 400 clamp(86px, 11vw, 160px)/.78 Georgia, 'Times New Roman', serif; letter-spacing: -.075em; }
+.question { display: block; margin: 15px 0 40px 6px; color: var(--gold); font: italic 400 clamp(44px, 6vw, 78px)/1 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+.left-rule { width: 46px; border-top: 1px solid var(--gold); margin: 0 0 19px; }
+.possibility { max-width: 160px; margin: 0; font-size: 11px; line-height: 1.65; letter-spacing: .14em; text-transform: uppercase; }
+.image-wrap { position: relative; background: #4b4b4b; box-shadow: 0 18px 48px rgba(26, 25, 22, .13); }
+.image-wrap::after { content: '?'; position: absolute; z-index: 0; right: -32px; top: -92px; color: rgba(155,128,80,.14); font: italic 400 260px/.8 Georgia, serif; pointer-events: none; }
+.image-wrap img { position: relative; z-index: 1; display: block; width: 100%; height: auto; }
+.caption { border-top: 1px solid var(--rule); display: grid; grid-template-columns: 1.3fr 1fr .65fr; gap: 24px; align-items: start; padding: 18px 0 0; }
+.object-title { margin: 0; font: 400 23px/1.18 Georgia, 'Times New Roman', serif; }
+.material { margin: 3px 0 0; color: var(--quiet); font-size: 10px; line-height: 1.7; letter-spacing: .11em; text-transform: uppercase; }
+.status { justify-self: end; margin: 1px 0 0; border: 1px solid var(--gold); padding: 8px 10px 7px; color: #6e5833; font-size: 9px; letter-spacing: .16em; text-align: center; text-transform: uppercase; white-space: nowrap; }
+.source { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--rule); margin-top: 25px; padding-top: 12px; color: var(--quiet); font-size: 10px; line-height: 1.6; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+@media (max-width: 720px) {
+ .page { padding-top: 22px; }
+ .plate { grid-template-columns: 1fr; gap: 28px; min-height: auto; padding: 42px 0 28px; }
+ .left { min-height: 300px; }
+ h1 { font-size: clamp(100px, 25vw, 150px); }
+ .question { margin: 10px 0 19px 6px; }
+ .possibility { max-width: none; }
+ .image-wrap::after { right: -5px; top: -47px; font-size: 150px; }
+ .caption { grid-template-columns: 1fr 1fr; }
+ .status { grid-column: 2; grid-row: 1; }
+ .source { display: block; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="topline"><span>Encounter / 01</span><span>11 October 2026</span></header>
+  <section class="plate" aria-labelledby="work-title">
+    <div class="left">
+      <p class="kicker">The date in the record</p>
+      <h1 id="work-title">1791</h1>
+      <span class="question">(?)</span>
+      <div class="left-rule"></div>
+      <p class="possibility">Possibly<br>Hungarian</p>
+    </div>
+    <figure class="image-wrap" style="margin:0">
+      <img src="peacock.jpg" alt="A partly gilded silver peacock cup, its long tail extending to the left, photographed against a gray field.">
+    </figure>
+  </section>
+  <section class="caption" aria-label="Object record">
+    <div>
+      <p class="object-title">Cup in the form of a peacock</p>
+      <p class="material">Silver, partly gilded</p>
+    </div>
+    <p class="material">The Metropolitan Museum of Art<br>17.190.574a, b</p>
+    <p class="status">Not on view</p>
+  </section>
+  <footer class="source">
+    <span>Record dated 1791 (?) · culture listed as possibly Hungarian.</span>
+    <span><a href="https://www.metmuseum.org/art/collection/search/193554">The Met collection record</a> · Public Domain image.</span>
+  </footer>
+</main>
+</body>
+</html>

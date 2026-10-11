@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8e7e2">
+  <title>Ten seconds — A38</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #e8e7e2;
+      --ink: #242522;
+      --muted: #686963;
+      --rule: #b8b8b0;
+      --field: #c8c9cc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: min(100% - 64px, 1120px); margin: 0 auto; padding: 28px 0 38px; }
+    header, .caption, footer, .record { font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
+    header { display: flex; justify-content: space-between; border-bottom: 1px solid var(--rule); padding-bottom: 13px; color: var(--muted); }
+    h1 { margin: clamp(46px, 8vw, 100px) 0 34px; font: 400 clamp(54px, 9vw, 108px)/.88 Georgia, 'Times New Roman', serif; letter-spacing: -.065em; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    figure { margin: 0; min-width: 0; }
+    .image, .duration { display: block; width: 100%; aspect-ratio: 3 / 2; }
+    .image { height: auto; object-fit: cover; }
+    .duration { position: relative; display: grid; place-items: center; background: var(--field); }
+    .clock-face { display: grid; justify-items: center; gap: 17px; }
+    output { font: 400 clamp(40px, 6vw, 68px)/1 Georgia, 'Times New Roman', serif; font-variant-numeric: tabular-nums; letter-spacing: -.04em; }
+    button { border: 0; border-bottom: 1px solid var(--muted); padding: 0 0 4px; background: transparent; color: var(--ink); cursor: pointer; font: inherit; font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
+    button:disabled { color: var(--muted); cursor: default; }
+    button:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+    .track { position: absolute; right: 24px; bottom: 22px; left: 24px; height: 1px; background: rgba(36, 37, 34, .24); }
+    .fill { width: 0; height: 100%; background: var(--ink); transition: width 100ms linear; }
+    .caption { display: flex; justify-content: space-between; padding-top: 10px; color: var(--muted); }
+    .record a { color: var(--muted); text-decoration-color: var(--rule); text-underline-offset: 3px; }
+    footer { display: grid; grid-template-columns: 1fr auto; gap: 24px; border-top: 1px solid var(--rule); margin-top: clamp(42px, 7vw, 78px); padding-top: 14px; color: var(--muted); line-height: 1.8; }
+    .record { text-align: right; }
+    @media (max-width: 620px) {
+      main { width: min(100% - 36px, 460px); padding-top: 18px; }
+      h1 { margin-top: 62px; }
+      .pair { grid-template-columns: 1fr; gap: 23px; }
+      footer { grid-template-columns: 1fr; gap: 8px; }
+      .record { text-align: left; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .fill { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>A38 / Study 003</span><span>11 October 2026</span></header>
+    <h1>Ten seconds</h1>
+    <section class="pair" aria-label="A pictured candlestick beside a ten-second duration">
+      <figure>
+        <img class="image" src="image.jpg" alt="A silver chamber candlestick on a shallow tray, its raised handle curling upward at the right, photographed against grey." width="600" height="400">
+        <figcaption class="caption"><span>01</span></figcaption>
+      </figure>
+      <figure>
+        <div class="duration" role="group" aria-label="A ten-second interval">
+          <div class="clock-face">
+            <output id="clock" aria-live="off">00:10</output>
+            <button id="begin" type="button">Begin</button>
+          </div>
+          <div class="track" aria-hidden="true"><div class="fill" id="fill"></div></div>
+        </div>
+        <figcaption class="caption"><span>02</span></figcaption>
+      </figure>
+    </section>
+    <footer>
+      <div>Pehr Zethelius · silver · 1774<br>Chamber candlestick (one of a pair)</div>
+      <div class="record">The Metropolitan Museum of Art<br>Object 194990<br><a href="one-of-a-pair.html">Study 001 · One of a pair</a><br><a href="covered-toilet-box.html">Study 002 · A Room in the Word</a></div>
+    </footer>
+  </main>
+  <script>
+    const duration = 10000;
+    const clock = document.getElementById('clock');
+    const begin = document.getElementById('begin');
+    const fill = document.getElementById('fill');
+    let interval;
+
+    function start() {
+      const started = Date.now();
+      begin.disabled = true;
+      begin.textContent = 'Wait';
+      clearInterval(interval);
+      interval = setInterval(() => {
+        const elapsed = Math.min(Date.now() - started, duration);
+        const remaining = Math.ceil((duration - elapsed) / 1000);
+        clock.textContent = `00:${String(remaining).padStart(2, '0')}`;
+        fill.style.width = `${(elapsed / duration) * 100}%`;
+        if (elapsed >= duration) {
+          clearInterval(interval);
+          begin.disabled = false;
+          begin.textContent = 'Again';
+        }
+      }, 80);
+    }
+
+    begin.addEventListener('click', () => {
+      if (begin.textContent === 'Again') {
+        clock.textContent = '00:10';
+        fill.style.width = '0';
+      }
+      start();
+    });
+  </script>
+</body>
+</html>

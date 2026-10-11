@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211d1a">
+  <title>A Room in the Word — A38</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ground: #211d1a;
+      --ink: #eee7dc;
+      --muted: #b7aa98;
+      --rule: #76624b;
+      --glaze: #a8773b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--ground);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: min(100% - 64px, 1080px); margin: auto; padding: 28px 0 34px; }
+    header, .eyebrow, .label, footer, nav { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+    header { display: flex; justify-content: space-between; padding-bottom: 14px; border-bottom: 1px solid var(--rule); color: var(--muted); }
+    .intro { display: grid; grid-template-columns: 1.15fr .85fr; align-items: end; gap: 40px; padding: clamp(55px, 9vw, 100px) 0 34px; }
+    .eyebrow { color: var(--glaze); }
+    h1 { margin: 12px 0 0; font: 400 clamp(52px, 8vw, 92px)/.92 Georgia, 'Times New Roman', serif; letter-spacing: -.055em; }
+    .reading { max-width: 300px; margin: 0 0 5px auto; color: var(--muted); font: 400 clamp(20px, 2.4vw, 27px)/1.3 Georgia, 'Times New Roman', serif; }
+    .reading-after { max-width: 520px; margin: 24px 0 0 auto; text-align: right; }
+    .object { margin: 0; }
+    .object img { display: block; width: 100%; height: auto; }
+    .caption { display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; color: var(--muted); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+    .definition { display: grid; grid-template-columns: 190px 1fr; gap: 36px; margin: clamp(48px, 8vw, 82px) 0 0; padding: 22px 0 24px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    .label { color: var(--glaze); line-height: 1.8; }
+    blockquote { margin: 0; font: 400 clamp(19px, 2.6vw, 29px)/1.35 Georgia, 'Times New Roman', serif; }
+    blockquote a { color: inherit; text-decoration-color: var(--glaze); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .ending { margin: 31px 0 0; text-align: right; font: italic 400 clamp(22px, 3vw, 34px)/1.2 Georgia, 'Times New Roman', serif; }
+    footer { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-top: 70px; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); line-height: 1.9; }
+    footer p { margin: 0; }
+    footer a, nav a { color: var(--ink); text-decoration-color: var(--glaze); text-underline-offset: 4px; }
+    @media (max-width: 640px) {
+      main { width: min(100% - 36px, 500px); padding-top: 18px; }
+      .intro { grid-template-columns: 1fr; gap: 22px; padding-top: 58px; }
+      .reading { margin-left: 0; }
+      .reading-after { max-width: none; margin-top: 18px; }
+      .definition { grid-template-columns: 1fr; gap: 12px; margin-top: 44px; }
+      footer { align-items: start; flex-direction: column; margin-top: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>A38 / Study 002</span><span>11 October 2026</span></header>
+    <section class="intro">
+      <div><div class="eyebrow">A word study</div><h1>A Room<br>in the Word</h1></div>
+    </section>
+    <figure class="object">
+      <img src="toilet-box.jpg" alt="A closed, low rectangular earthenware box with a dark knob and a mottled brown, black, and ochre glaze, against a pale background." width="600" height="400">
+      <figcaption class="caption"><span>Covered Toilet Box</span><span>1849–58</span></figcaption>
+    </figure>
+    <section class="definition" aria-label="Webster's 1828 definition of toilet">
+      <div class="label">Toilet<br>Noah Webster · 1828</div>
+      <blockquote>“A covering or cloth of linen, silk or tapestry, spread over a table in a chamber or dressing room. Hence, a dressing table.”<br><a href="https://archive.org/details/americandictiona02websrich">An American Dictionary of the English Language, vol. II</a></blockquote>
+    </section>
+    <p class="reading reading-after">I read a room into “toilet.”</p>
+    <p class="ending">The lid stays down.</p>
+    <footer>
+      <p>United States Pottery Company · mottled brown earthenware<br><a href="https://www.metmuseum.org/art/collection/search/2543">The Metropolitan Museum of Art · object 2543</a> · image in the public domain</p>
+      <nav><a href="one-of-a-pair.html">Study 001 · One of a pair</a></nav>
+    </footer>
+  </main>
+</body>
+</html>

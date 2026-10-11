@@ -1,0 +1,86 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Across</title>
+  <style>
+    :root { color-scheme: light; --paper: #f0efe9; --ink: #20211e; --muted: #696a63; --rule: #c9c8c0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1440px, 100%); margin: 0 auto; padding: 25px clamp(20px, 5vw, 72px) 38px; }
+    .masthead { display: flex; justify-content: space-between; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding: clamp(36px, 7vw, 88px) 0 0; }
+    h1 { margin: 0; font: 400 clamp(52px, 9vw, 116px)/.9 Georgia, 'Times New Roman', serif; letter-spacing: -.055em; }
+    .dek { margin: 20px 0 0; font: 400 clamp(16px, 2vw, 21px)/1.4 Georgia, 'Times New Roman', serif; color: #565750; }
+    figure { width: min(760px, 100%); margin: clamp(32px, 5vw, 62px) auto 0; }
+    svg { display: block; width: 100%; height: auto; }
+    .table { fill: #cdcdcd; stroke: #bdbbb2; stroke-width: 1.4; }
+    .chair { fill: none; stroke: #73756e; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    figcaption { display: flex; justify-content: space-between; gap: 15px; margin-top: 12px; padding-top: 9px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    .view-control { display: flex; justify-content: space-between; align-items: center; gap: 12px; width: min(760px, 100%); margin: 15px auto 0; color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    button { border: 1px solid var(--rule); border-radius: 0; padding: 9px 12px; background: transparent; color: var(--ink); font: inherit; letter-spacing: inherit; text-transform: inherit; cursor: pointer; }
+    button:hover, button:focus-visible { background: #e5e2d9; outline: 1px solid var(--ink); outline-offset: 2px; }
+    output { color: var(--ink); font-variant-numeric: tabular-nums; }
+    footer { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: clamp(44px, 7vw, 80px) 0 0; padding-top: 13px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; line-height: 1.55; }
+    footer p { max-width: 540px; margin: 0; }
+    nav { display: flex; justify-content: space-between; gap: 15px; margin-top: 34px; color: var(--muted); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 560px) { main { padding-top: 17px; } footer { grid-template-columns: 1fr; gap: 10px; margin-top: 42px; } figcaption { font-size: 8px; } .view-control { font-size: 8px; } nav { flex-direction: column; align-items: flex-start; gap: 10px; font-size: 8px; } button { padding: 8px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 03 · 11 October 2026</span><span>Place / interval</span></div>
+    <header>
+      <h1>Across</h1>
+      <p class="dek">Two record images at one place; the chair opposite stays empty.</p>
+    </header>
+    <figure>
+      <svg viewBox="0 0 800 760" role="img" aria-labelledby="table-title table-desc">
+        <title id="table-title">Two images at one place and an empty chair across a round table</title>
+        <desc id="table-desc">At the upper edge of a circular table, a silver dish changes between two images in the Metropolitan Museum record. An empty outlined chair sits opposite it.</desc>
+        <defs><clipPath id="photo-trim"><ellipse cx="400" cy="230" rx="86" ry="81" /></clipPath></defs>
+        <circle class="table" cx="400" cy="380" r="235" />
+        <g class="chair" transform="translate(368 85)">
+          <path d="M0 48V16Q0 0 16 0H48Q64 0 64 16V48 M10 37H54" />
+        </g>
+        <g class="chair" transform="translate(432 675) rotate(180)">
+          <path d="M0 48V16Q0 0 16 0H48Q64 0 64 16V48 M10 37H54" />
+        </g>
+        <image id="catalog-image" clip-path="url(#photo-trim)" href="assets/met-primary.jpg" x="313" y="148" width="174" height="164" aria-label="Met object record image 1 of 2: face-on photograph of the dish" />
+      </svg>
+      <figcaption><span>one seat / two record images</span><span>opposite seat / unpictured</span></figcaption>
+    </figure>
+    <div class="view-control">
+      <span><output id="image-count" aria-live="polite">Image 1 of 2</output> · same position</span>
+      <button id="view-toggle" type="button">Next image →</button>
+    </div>
+    <footer>
+      <p>After Jean-Louis Morel, <i>Dish (one of a pair)</i>, 1763–64. Silver. The Metropolitan Museum of Art, object 48.187.170. Public Domain.</p>
+      <p>The record groups two images; this switch keeps them at the same seat. Neither shows the pair together. The table and empty opposite chair are my arrangement, prompted by the museum's account of plates set around the table edge. <a href="https://www.metmuseum.org/art/collection/search/200200">Source record</a>.</p>
+    </footer>
+    <nav><a href="index.html">← Study 01 / Second place</a><a href="edge.html">Study 02 / The edge in the record</a><a href="counts.html">Study 04 / The count changes →</a></nav>
+  </main>
+  <script>
+    const images = ['assets/met-primary.jpg', 'assets/met-additional.jpg'];
+    const labels = [
+      'Met object record image 1 of 2: face-on photograph of the dish',
+      'Met object record image 2 of 2: oblique photograph of the dish'
+    ];
+    let currentImage = 0;
+    const image = document.getElementById('catalog-image');
+    const count = document.getElementById('image-count');
+    const button = document.getElementById('view-toggle');
+    button.addEventListener('click', function () {
+      currentImage = (currentImage + 1) % images.length;
+      image.setAttribute('href', images[currentImage]);
+      image.setAttribute('aria-label', labels[currentImage]);
+      count.value = 'Image ' + (currentImage + 1) + ' of 2';
+      button.textContent = currentImage === 0 ? 'Next image →' : 'Return to image 1 →';
+    });
+  </script>
+</body>
+</html>
+
+

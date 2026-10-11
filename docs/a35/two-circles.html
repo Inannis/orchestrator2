@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A ring and a dot - Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #686960; --rule: #c9c8c0; --silver: #f4f3ef; --red: #985643; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1420px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 50px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 92px); }
+    h1 { max-width: 1080px; margin: 0; font: 400 clamp(54px, 10vw, 126px)/.9 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+    .dek { max-width: 800px; margin: 23px 0 0; color: #565750; font: 400 clamp(18px, 2.1vw, 23px)/1.42 Georgia, 'Times New Roman', serif; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(14px, 3vw, 34px); margin: clamp(52px, 8vw, 86px) 0 0; }
+    figure { min-width: 0; margin: 0; }
+    .full { position: relative; display: grid; place-items: center; overflow: hidden; aspect-ratio: 1; background: var(--silver); }
+    .full img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .full .scaled { transform: scale(1.28); }
+    figcaption { display: flex; justify-content: space-between; gap: 12px; padding-top: 10px; color: var(--muted); font-size: 10px; letter-spacing: .1em; line-height: 1.5; text-transform: uppercase; }
+    .detail-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(14px, 3vw, 34px); margin: clamp(25px, 5vw, 48px) 0 0; padding-top: 16px; border-top: 1px solid var(--rule); }
+    .detail { display: flex; align-items: center; gap: clamp(15px, 3vw, 28px); min-width: 0; }
+    .detail img { display: block; width: clamp(100px, 17vw, 200px); height: auto; flex: 0 0 auto; }
+    .detail p { margin: 0; color: var(--muted); font: 13px/1.55 Georgia, 'Times New Roman', serif; }
+    .reading { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(25px, 6vw, 76px); margin: clamp(48px, 8vw, 78px) 0 0; padding-top: 15px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .reading h2 { margin: 0 0 10px; color: var(--red); font-size: 10px; font-weight: 400; letter-spacing: .13em; text-transform: uppercase; }
+    .reading p { margin: 0; }
+    .reading p + p { margin-top: 10px; }
+    .trace { margin: 34px 0 0; padding-top: 12px; border-top: 1px solid var(--rule); color: var(--muted); font: 12px/1.6 Georgia, 'Times New Roman', serif; }
+    .sources { margin: 36px 0 0; padding-top: 12px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 10px; line-height: 1.7; }
+    nav { margin: 28px 0 0; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; line-height: 1.9; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 620px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .pair, .reading { grid-template-columns: 1fr; }
+      .pair { gap: 28px; }
+      .detail-row { grid-template-columns: 1fr; gap: 15px; }
+      .detail img { width: 120px; }
+      figcaption { font-size: 9px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 29 / 11 October 2026</span><span>Two objects / two traces</span></div>
+    <header>
+      <h1>A ring and a dot</h1>
+      <p class="dek">On the paired reverses, circular traces recur near the rim. Their positions meet more closely than their interiors do.</p>
+    </header>
+
+    <section class="pair" aria-label="Full reverse views of two dishes by Jean-Louis Morel">
+      <figure>
+        <div class="full"><img src="morel-169-full.jpg" alt="Full reverse view of Morel dish 48.187.169, with a small dark trace near the lower outer rim."></div>
+        <figcaption><span>48.187.169 / reverse</span><span>Object width 11 3/4 in.</span></figcaption>
+      </figure>
+      <figure>
+        <div class="full"><img class="scaled" src="morel-170-full.jpg" alt="Full reverse view of Morel dish 48.187.170, with a small open ring near the lower outer rim."></div>
+        <figcaption><span>48.187.170 / reverse</span><span>Object width 11 7/8 in.</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="detail-row" aria-label="Close views of the circular traces">
+      <figure class="detail"><img src="morel-169-rim.jpg" alt="Close view of the dark, filled circular trace on dish 48.187.169."><figcaption><span>Filled in this photograph</span></figcaption></figure>
+      <figure class="detail"><img src="morel-170-rim.jpg" alt="Close view of the outlined ring on dish 48.187.170."><figcaption><span>Open in this photograph</span></figcaption></figure>
+    </section>
+
+    <section class="reading">
+      <div>
+        <h2>What repeats</h2>
+        <p>The two records title the dishes “one of a pair,” give Jean-Louis Morel as maker, and date both 1763&ndash;64. In the reverse views, each trace lies near the outer rim in a lower sector. That is enough to make their placement worth comparing within the pair.</p>
+      </div>
+      <div>
+        <h2>What doesn't follow</h2>
+        <p>One trace looks filled, the other outlined. The photographs do not establish that they came from the same punch, and neither Met record names them as hallmarks or discharge marks. Similar placement supports a shared question, not a shared answer.</p>
+      </div>
+    </section>
+
+    <section class="reading" aria-label="A readable comparator">
+      <div>
+        <h2>Now, one readable head</h2>
+        <p>Study 31 links the Getty's Mark 9.3: a pointer head in an oval, placed by the catalogue on the proper left lip of a sauceboat. This gives the 1762–68 discharge a clear, located comparator. Its close-up is much more magnified than these equal-pixel Met crops.</p>
+      </div>
+      <div>
+        <h2>What the circles remain</h2>
+        <p>The .169 trace still looks filled and the .170 trace open. Neither crop resolves a head inside the outline, and neither Met record names the impressions. The Getty image clarifies what a readable head looks like; it does not identify either Morel mark or rule the class out.</p>
+      </div>
+    </section>
+    <p class="trace">The full views are shown with the dish rims aligned to a similar display width; the second source image is enlarged within its frame. The two detail crops have equal pixel bounds, not a shared physical scale. Each image retains its own photographic surface and contrast.</p>
+    <p class="sources">Jean-Louis Morel, <i>Dish (one of a pair)</i>, silver, Paris, 1763&ndash;64. The Metropolitan Museum of Art, <a href="https://www.metmuseum.org/art/collection/search/200199">48.187.169</a> and <a href="https://www.metmuseum.org/art/collection/search/200200">48.187.170</a>. Public Domain. The records share a title, maker, date, and material; they do not identify the rim traces. Comparator: Getty catalogue 9, <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-3">Mark 9.3</a> (CC BY-NC 4.0; linked, not reproduced).</p>
+    <nav><a href="index.html">Second place</a> / <a href="eleven-views.html">Study 28 / Eleven views</a> / <a href="the-dates-do-meet.html">Study 26 / The dates do meet</a> / <a href="at-left-lip.html">Study 31 / A head at the lip</a></nav>
+  </main>
+</body>
+</html>

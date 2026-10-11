@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eleven views - Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #686960; --rule: #c9c8c0; --metal: #d5d1c5; --red: #985643; --blue: #59676b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1420px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 52px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 92px); }
+    h1 { max-width: 1050px; margin: 0; font: 400 clamp(54px, 10vw, 126px)/.9 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+    .dek { max-width: 790px; margin: 23px 0 0; color: #565750; font: 400 clamp(18px, 2.1vw, 23px)/1.42 Georgia, 'Times New Roman', serif; }
+    h2 { margin: 0; font: 400 25px/1.15 Georgia, 'Times New Roman', serif; }
+    .section-label { margin: 0 0 13px; color: var(--muted); font-size: 10px; letter-spacing: .14em; line-height: 1.5; text-transform: uppercase; }
+    .key { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 7vw, 98px); margin: clamp(58px, 10vw, 112px) 0 0; padding: 17px 0 23px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    .entries { margin: 0; padding: 0; list-style: none; }
+    .entries li { display: grid; grid-template-columns: 125px 1fr; gap: 15px; padding: 13px 0; border-top: 1px solid var(--rule); font-size: 12px; line-height: 1.55; }
+    .entries li:first-child { border-top: 0; }
+    .entries b { color: var(--blue); font-weight: 400; }
+    .groove-map { margin-top: 13px; padding: 16px 15px 12px; background: #e7e5de; }
+    .groove-head { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+    .track { display: flex; align-items: center; gap: clamp(13px, 4vw, 43px); min-height: 70px; margin-top: 9px; padding: 7px 14px; border-top: 1px solid #aaa99f; border-bottom: 1px solid #aaa99f; background: linear-gradient(to bottom, #d7d4ca, #c9c5b8 43%, #d6d2c7); }
+    .group { display: flex; align-items: center; gap: clamp(8px, 2vw, 20px); }
+    .impression { display: block; width: 22px; height: 18px; border: 1px solid #77766f; border-radius: 50% 43% 48% 45%; transform: rotate(-9deg); opacity: .76; }
+    .impression:nth-child(2) { width: 17px; height: 22px; transform: rotate(11deg); }
+    .impression:nth-child(3) { width: 20px; height: 15px; transform: rotate(3deg); }
+    .isolated { display: block; width: 11px; height: 8px; margin-left: auto; border: 1px solid var(--red); border-radius: 55%; }
+    .track-note { display: flex; justify-content: space-between; gap: 15px; margin-top: 8px; color: var(--muted); font: 11px/1.45 Georgia, 'Times New Roman', serif; }
+    .track-note span:last-child { color: var(--red); text-align: right; }
+    .caption { margin: 11px 0 0; color: var(--muted); font-size: 10px; line-height: 1.55; }
+    .sequence { margin: clamp(58px, 9vw, 96px) 0 0; }
+    .sequence-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding-bottom: 13px; border-bottom: 1px solid var(--rule); }
+    .sequence-head p:last-child { max-width: 400px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+    .views { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 22px; }
+    .view { display: grid; grid-template-columns: 37px 1fr; gap: 10px; min-height: 103px; padding: 15px 0 13px; border-bottom: 1px solid var(--rule); }
+    .number { color: var(--muted); font: 400 22px/1 Georgia, 'Times New Roman', serif; }
+    .view h3 { margin: 0 0 5px; font: 400 15px/1.2 Georgia, 'Times New Roman', serif; }
+    .view p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+    .view.key-view h3 { color: var(--red); }
+    .closing { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(25px, 6vw, 78px); margin: clamp(45px, 8vw, 80px) 0 0; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .closing p { margin: 0; }
+    .closing p + p { margin-top: 11px; }
+    .sources { margin: 38px 0 0; padding-top: 12px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 10px; line-height: 1.7; }
+    nav { margin: 28px 0 0; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; line-height: 1.9; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 760px) { .views { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .key, .closing { grid-template-columns: 1fr; gap: 28px; }
+      .entries li { grid-template-columns: 105px 1fr; }
+      .sequence-head { display: block; }
+      .sequence-head p:last-child { margin-top: 10px; }
+      .views { grid-template-columns: 1fr; }
+      .view { min-height: 75px; }
+      .track-note { font-size: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 28 / 11 October 2026</span><span>One box / eleven views</span></div>
+    <header>
+      <h1>Where the marks sit</h1>
+      <p class="dek">The catalogue names several surfaces. Three photographs begin to locate them; only one brings the groove's four strikes into the same frame.</p>
+    </header>
+
+    <section class="key" aria-labelledby="key-title">
+      <div>
+        <p class="section-label">OA 7636 / the record's placement language</p>
+        <h2 id="key-title">One object, repeated punches</h2>
+        <ul class="entries">
+          <li><b>Box bottom</b><span>Herse, X, Y, and the maker's mark.</span></li>
+          <li><b>Lid reverse</b><span>Herse, X, Y, and the maker's mark.</span></li>
+          <li><b>Groove, left</b><span>Herse, X, and the maker's mark.</span></li>
+          <li><b>Groove, right</b><span>1762&ndash;68 <i>tête de braque</i> discharge.</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="section-label">Image 9/11 / a positional reading</p>
+        <div class="groove-map" role="img" aria-label="Abstract locator for four impressions: three grouped at the left and one small oval at the right. It shows count and position only, not the stamp shapes or object orientation.">
+          <div class="groove-head"><span>Left, as described</span><span>Right, as described</span></div>
+          <div class="track" aria-hidden="true"><span class="group"><i class="impression"></i><i class="impression"></i><i class="impression"></i></span><i class="isolated"></i></div>
+          <div class="track-note"><span>Three grouped impressions</span><span>One small oval in the photograph</span></div>
+        </div>
+        <p class="caption">The four-to-three-plus-one arrangement fits the record's locations. The small strike does not resolve as a dog's head here, and the camera's left/right is not independently fixed to the object.</p>
+      </div>
+    </section>
+
+    <section class="sequence" aria-labelledby="sequence-title">
+      <div class="sequence-head">
+        <div><p class="section-label">The Louvre carousel / 1&ndash;11</p><h2 id="sequence-title">The views do different work</h2></div>
+        <p>Numbers follow the order in the Louvre record. No museum photograph is reproduced here; the marked views link to the collection source.</p>
+      </div>
+      <div class="views">
+        <article class="view"><span class="number">01</span><div><h3>Closed, oblique</h3><p>Overall form and several decorated faces. Punches do not read.</p></div></article>
+        <article class="view key-view"><span class="number">02</span><div><h3>Bird panel, close</h3><p>One punch appears on a gold edge. Its mark name and precise surface remain open. <a href="https://collections.louvre.fr/media/cache/small/0000000021/0000117301/0000246711_OG.JPG">View 2/11</a>.</p></div></article>
+        <article class="view"><span class="number">03</span><div><h3>Grouse panel</h3><p>The Louvre describes a grouse on the underside. No punch is legible in this view.</p></div></article>
+        <article class="view"><span class="number">04</span><div><h3>Birds in a landscape</h3><p>A full decorated face; no punch is legible.</p></div></article>
+        <article class="view"><span class="number">05</span><div><h3>Long floral face</h3><p>Exterior side panel and lid seam; no punch is legible.</p></div></article>
+        <article class="view key-view"><span class="number">06</span><div><h3>Open, in context</h3><p>The reverse of the raised lid and the box interior meet in one view; small punches sit near the lid's edge. <a href="https://collections.louvre.fr/media/cache/small/0000000021/0000117301/0000246707_OG.JPG">View 6/11</a>.</p></div></article>
+        <article class="view"><span class="number">07</span><div><h3>Decorated side</h3><p>A second exterior face. The marks are not visible.</p></div></article>
+        <article class="view"><span class="number">08</span><div><h3>Short face</h3><p>Birds in an oval panel; no punch is legible.</p></div></article>
+        <article class="view key-view"><span class="number">09</span><div><h3>Groove, close</h3><p>Three larger impressions and a small oval lie along the gold strip. <a href="https://collections.louvre.fr/media/cache/large/0000000021/0000117301/0000246710_OG.JPG">View 9/11</a>.</p></div></article>
+        <article class="view"><span class="number">10</span><div><h3>Opposite long face</h3><p>Decorated exterior panel; no punch is legible.</p></div></article>
+        <article class="view"><span class="number">11</span><div><h3>Earlier black-and-white view</h3><p>An overall record photograph, too distant for the marks.</p></div></article>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div>
+        <p class="section-label">What the sequence lets me say</p>
+        <p>View 6 places marks on the lid reverse within the open box. View 9 gives the groove its close view: three strikes at the left of the frame, one small oval at the right. View 2 shows another isolated punch by a bird panel, but does not name it. The wider and underside views give the object its orientation without making the punch shapes clearer.</p>
+      </div>
+      <div>
+        <p class="section-label">What remains unassigned</p>
+        <p>The record maps types to surfaces; it does not label each photographed strike. The groove's 3:1 distribution is a useful correspondence by position, not a visual reading of the discharge. Nothing here assigns either Morel dish circle to this class.</p>
+        <p><a href="mark-at-right.html">Study 27 / At the right &rarr;</a></p>
+      </div>
+    </section>
+
+    <p class="sources">Jean-Marie Tiron, <i>Tabatière octogonale</i>, 1761&ndash;62, Louvre, OA 7636. <a href="https://collections.louvre.fr/ark:/53355/cl010117301">Collection record</a>; image sequence and mark locations follow the record. Photograph credit: GrandPalaisRmn / Musée du Louvre.</p>
+    <nav><a href="index.html">Second place</a> / <a href="mark-at-right.html">Study 27 / At the right</a> / <a href="two-circles.html">Study 29 / A ring and a dot</a> / <a href="https://collections.louvre.fr/ark:/53355/cl010117301">Louvre OA 7636</a></nav>
+  </main>
+</body>
+</html>

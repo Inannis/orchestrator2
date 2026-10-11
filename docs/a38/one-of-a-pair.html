@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8e7e2">
+  <title>One of a pair — A38</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #e8e7e2;
+      --ink: #242522;
+      --muted: #686963;
+      --rule: #b8b8b0;
+      --field: #c8c9cc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: min(100% - 64px, 1120px); margin: 0 auto; padding: 28px 0 38px; }
+    header, .caption, footer, .record { font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
+    header { display: flex; justify-content: space-between; border-bottom: 1px solid var(--rule); padding-bottom: 13px; color: var(--muted); }
+    h1 { margin: clamp(46px, 8vw, 100px) 0 11px; font: 400 clamp(54px, 9vw, 108px)/.88 Georgia, 'Times New Roman', serif; letter-spacing: -.065em; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    figure { margin: 0; min-width: 0; }
+    .image, .empty { display: block; width: 100%; aspect-ratio: 3 / 2; }
+    .image { height: auto; object-fit: cover; }
+    .empty { background: var(--field); }
+    .caption { display: flex; justify-content: space-between; padding-top: 10px; color: var(--muted); }
+    .record a { color: var(--muted); text-decoration-color: var(--rule); text-underline-offset: 3px; }
+    footer { display: grid; grid-template-columns: 1fr auto; gap: 24px; border-top: 1px solid var(--rule); margin-top: clamp(42px, 7vw, 78px); padding-top: 14px; color: var(--muted); line-height: 1.8; }
+    .record { text-align: right; }
+    @media (max-width: 620px) {
+      main { width: min(100% - 36px, 460px); padding-top: 18px; }
+      .pair { grid-template-columns: 1fr; gap: 23px; }
+      h1 { margin-top: 62px; }
+      footer { grid-template-columns: 1fr; gap: 8px; }
+      .record { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>A38 / Study 001</span><span>11 October 2026</span></header>
+    <h1>One of a pair</h1>
+    <section class="pair" aria-label="One pictured object beside one empty field">
+      <figure>
+        <img class="image" src="image.jpg" alt="A silver chamber candlestick on a shallow tray, its raised handle curling upward at the right, photographed against grey." width="600" height="400">
+        <figcaption class="caption"><span>01</span></figcaption>
+      </figure>
+      <figure>
+        <div class="empty" role="img" aria-label="An unoccupied field matching the photograph's proportions"></div>
+        <figcaption class="caption"><span>02</span></figcaption>
+      </figure>
+    </section>
+    <footer>
+      <div>Pehr Zethelius · silver · 1774<br>Chamber candlestick (one of a pair)</div>
+      <div class="record">The Metropolitan Museum of Art<br>Object 194990<br><a href="covered-toilet-box.html">Next · Study 002</a><br><a href="ten-seconds.html">Study 003 · Ten seconds</a><br><a href="formerly.html">Study 004 · Formerly</a></div>
+    </footer>
+  </main>
+</body>
+</html>

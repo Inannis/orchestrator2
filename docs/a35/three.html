@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three numbers — Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #696a63; --rule: #c9c8c0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1240px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 70px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 88px); }
+    h1 { margin: 0; font: 400 clamp(48px, 8vw, 100px)/.92 Georgia, 'Times New Roman', serif; letter-spacing: -.055em; }
+    .dek { max-width: 650px; margin: 20px 0 0; color: #565750; font: 400 clamp(17px, 2vw, 21px)/1.4 Georgia, 'Times New Roman', serif; }
+    .composition { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: clamp(20px, 4vw, 48px); width: min(1100px, 100%); margin: clamp(48px, 8vw, 88px) auto 0; align-items: start; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(12px, 2vw, 24px); border-left: 1px solid var(--rule); padding-left: clamp(15px, 2.5vw, 30px); }
+    figure { min-width: 0; margin: 0; }
+    figure img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+    figcaption { margin-top: 11px; padding-top: 9px; border-top: 1px solid var(--rule); }
+    .number { display: flex; justify-content: space-between; gap: 8px; color: var(--ink); font: 400 clamp(17px, 2vw, 25px)/1.1 Georgia, 'Times New Roman', serif; letter-spacing: -.03em; }
+    .title { margin: 8px 0 0; font: 400 clamp(15px, 1.7vw, 19px)/1.2 Georgia, 'Times New Roman', serif; }
+    .maker, .date { margin: 5px 0 0; color: var(--muted); font-size: 10px; line-height: 1.4; }
+    .reading { width: min(1100px, 100%); margin: clamp(48px, 8vw, 80px) auto 0; padding-top: 13px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .reading p { max-width: 850px; margin: 0; }
+    a { color: inherit; text-underline-offset: 2px; }
+    nav { margin-top: 35px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+    @media (max-width: 650px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .composition { grid-template-columns: 1fr; gap: 32px; }
+      .pair { grid-template-columns: 1fr; gap: 28px; border-left: 0; border-top: 1px solid var(--rule); padding: 28px 0 0; }
+      .number { font-size: 25px; }
+      .title { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 10 / 11 October 2026</span><span>48.187.168 → 48.187.169 → 48.187.170</span></div>
+    <header>
+      <h1>Three numbers</h1>
+      <p class="dek">A square Spriman dish, then two scalloped dishes by Morel.</p>
+    </header>
+    <section class="composition" aria-label="Three Metropolitan Museum dish photographs in accession order">
+      <figure>
+        <img src="assets/met-168.jpg" alt="A square silver dish by Charles-Louis-Auguste Spriman, with a small engraved crest at its center." />
+        <figcaption>
+          <div class="number"><span>48.187.168</span><span>01</span></div>
+          <p class="title"><i>Dish</i></p>
+          <p class="maker">Charles-Louis-Auguste Spriman (or Spriment)</p>
+          <p class="date">1781–82 / Silver</p>
+        </figcaption>
+      </figure>
+      <div class="pair">
+        <figure>
+          <img src="assets/met-169.jpg" alt="A scalloped silver dish by Jean-Louis Morel, photographed from above." />
+          <figcaption>
+            <div class="number"><span>48.187.169</span><span>02</span></div>
+            <p class="title"><i>Dish (one of a pair)</i></p>
+            <p class="maker">Jean-Louis Morel</p>
+            <p class="date">1763–64 / Silver</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="assets/met-primary.jpg" alt="A second scalloped silver dish by Jean-Louis Morel, separately photographed from above." />
+          <figcaption>
+            <div class="number"><span>48.187.170</span><span>03</span></div>
+            <p class="title"><i>Dish (one of a pair)</i></p>
+            <p class="maker">Jean-Louis Morel</p>
+            <p class="date">1763–64 / Silver</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="reading">
+      <p>48.187.168 is another silver dish from the same bequest, one number before the Morels, but its title, maker, and date differ. The next two entries repeat title, maker, date, and material; their photographs show matching scalloped forms. Accession order led me here; it does not make the pair. I read 48.187.169 and 48.187.170 together, though their Met records do not link. <a href="https://www.metmuseum.org/art/collection/search/200198">48.187.168</a> / <a href="https://www.metmuseum.org/art/collection/search/200199">48.187.169</a> / <a href="https://www.metmuseum.org/art/collection/search/200200">48.187.170</a>.</p>
+    </section>
+    <nav><a href="index.html">Study 01 / Second place</a> &nbsp;·&nbsp; <a href="previous.html">Study 09 / The previous dish</a> &nbsp;&middot;&nbsp; <a href="nearby-edge.html">Study 12 / A nearby edge</a> &nbsp;&middot;&nbsp; <a href="image-only.html">Study 13 / Without fields</a> &nbsp;·&nbsp; <a href="pair.html">Study 06 / Between records</a> &nbsp;&middot;&nbsp; <a href="what-stays.html">Study 11 / What stays</a></nav>
+  </main>
+</body>
+</html>

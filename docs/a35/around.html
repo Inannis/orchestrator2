@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Around</title>
+  <style>
+    :root { color-scheme: light; --paper: #f0efe9; --ink: #20211e; --muted: #696a63; --rule: #c9c8c0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1440px, 100%); margin: 0 auto; padding: 25px clamp(20px, 5vw, 72px) 38px; }
+    .masthead { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding: clamp(38px, 8vw, 96px) 0 0; }
+    h1 { margin: 0; font: 400 clamp(54px, 10vw, 124px)/.9 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+    .dek { margin: 20px 0 0; color: #565750; font: 400 clamp(16px, 2vw, 21px)/1.4 Georgia, 'Times New Roman', serif; }
+    figure { width: min(760px, 100%); margin: clamp(28px, 5vw, 58px) auto 0; }
+    svg { display: block; width: 100%; height: auto; }
+    .table { fill: #cdcdcd; stroke: #bdbbb2; stroke-width: 1.4; }
+    .chair { fill: var(--paper); stroke: #73756e; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .source-image { opacity: .92; }
+    figcaption { display: flex; justify-content: space-between; gap: 15px; margin-top: 12px; padding-top: 9px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    .control { display: grid; grid-template-columns: auto minmax(110px, 250px) auto; align-items: center; gap: 16px; width: min(760px, 100%); margin: 18px auto 0; color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    input[type="range"] { width: 100%; accent-color: #575951; cursor: pointer; }
+    output { min-width: 72px; color: var(--ink); font-variant-numeric: tabular-nums; text-align: right; }
+    footer { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: clamp(44px, 7vw, 80px) 0 0; padding-top: 13px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; line-height: 1.55; }
+    footer p { max-width: 540px; margin: 0; }
+    nav { display: flex; justify-content: space-between; gap: 15px; margin-top: 34px; color: var(--muted); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 560px) {
+      main { padding-top: 17px; }
+      header { padding-top: 48px; }
+      .control { grid-template-columns: 1fr auto; gap: 8px 12px; }
+      .control label { grid-column: 1 / -1; }
+      footer { grid-template-columns: 1fr; gap: 10px; margin-top: 42px; }
+      figcaption { font-size: 8px; }
+      nav { flex-direction: column; align-items: flex-start; gap: 10px; font-size: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 05 · 11 October 2026</span><span>Table / rehearsal</span></div>
+    <header>
+      <h1>Around</h1>
+      <p class="dek">One view stays. The places around it multiply.</p>
+    </header>
+    <figure>
+      <svg viewBox="0 0 800 760" role="img" aria-labelledby="table-title table-desc">
+        <title id="table-title">One photographed dish among a changeable number of imagined places</title>
+        <desc id="table-desc">A face-on photograph of a silver dish stays at the upper edge of a round table. Empty outlined chairs appear around the table according to the rehearsal control below.</desc>
+        <defs><clipPath id="dish-crop"><circle cx="400" cy="210" r="50" /></clipPath></defs>
+        <circle class="table" cx="400" cy="380" r="220" />
+        <g id="place-ring"></g>
+        <image class="source-image" clip-path="url(#dish-crop)" href="assets/met-primary.jpg" x="347" y="160" width="106" height="100" aria-label="The face-on record image of the dish, kept at one place" />
+      </svg>
+      <figcaption><span>one record image / one fixed place</span><span>all chairs / invented</span></figcaption>
+    </figure>
+    <div class="control">
+      <label for="place-count">Imagined chairs</label>
+      <input id="place-count" type="range" min="2" max="8" step="1" value="4" aria-describedby="rehearsal-note">
+      <output id="place-count-output" for="place-count" aria-live="polite">4 places</output>
+    </div>
+    <footer>
+      <p id="rehearsal-note">The museum describes identical plates arranged around a table edge. I set these chairs and their count; the page is a rehearsal, not a reconstruction.</p>
+      <p>Jean-Louis Morel, <i>Dish (one of a pair)</i>, 1763–64. The Metropolitan Museum of Art, object 48.187.170. <a href="https://www.metmuseum.org/art/collection/search/200200">Source record</a>.</p>
+    </footer>
+    <nav><a href="counts.html">← Study 04 / The count changes</a><a href="pair.html">Study 06 / Between records →</a></nav>
+  </main>
+  <script>
+    const countControl = document.getElementById('place-count');
+    const countOutput = document.getElementById('place-count-output');
+    const placeRing = document.getElementById('place-ring');
+    const svgNamespace = 'http://www.w3.org/2000/svg';
+
+    function drawPlaces() {
+      const count = Number(countControl.value);
+      placeRing.replaceChildren();
+      for (let index = 0; index < count; index += 1) {
+        const angle = (-90 + (360 * index / count)) * Math.PI / 180;
+        const x = 400 + Math.cos(angle) * 285;
+        const y = 380 + Math.sin(angle) * 285;
+        const rotation = 360 * index / count;
+        const chair = document.createElementNS(svgNamespace, 'g');
+        chair.setAttribute('class', 'chair');
+        chair.setAttribute('transform', 'translate(' + x.toFixed(2) + ' ' + y.toFixed(2) + ') rotate(' + rotation.toFixed(2) + ')');
+        chair.innerHTML = '<path d="M-20 11V-9Q-20 -20 -9 -20H9Q20 -20 20 -9V11 M-14 3H14" />';
+        placeRing.appendChild(chair);
+      }
+      countOutput.value = count + (count === 1 ? ' chair' : ' chairs');
+      countControl.setAttribute('aria-valuetext', count + ' imagined chairs in this rehearsal');
+    }
+
+    countControl.addEventListener('input', drawPlaces);
+    drawPlaces();
+  </script>
+</body>
+</html>

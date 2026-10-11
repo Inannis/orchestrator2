@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A second profile? - Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #696a63; --rule: #c9c8c0; --mark: #995544; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1420px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 92px); }
+    h1 { max-width: 1050px; margin: 0; font: 400 clamp(54px, 9vw, 124px)/.88 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+    .dek { max-width: 800px; margin: 22px 0 0; color: #565750; font: 400 clamp(18px, 2.1vw, 23px)/1.4 Georgia, 'Times New Roman', serif; }
+    .key { width: min(1220px, 100%); margin: clamp(48px, 8vw, 86px) auto 12px; color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .marks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2.5vw, 34px); width: min(1220px, 100%); margin: 0 auto; align-items: start; }
+    figure { min-width: 0; margin: 0; border-top: 1px solid var(--ink); padding-top: 10px; }
+    figure img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; mix-blend-mode: multiply; background: #f7f6f1; }
+    figcaption { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--rule); font-size: 10px; line-height: 1.5; }
+    figcaption a { display: block; color: var(--ink); text-underline-offset: 2px; }
+    figcaption span { display: block; color: var(--muted); }
+    .timeline { width: min(1220px, 100%); margin: clamp(42px, 7vw, 68px) auto 0; padding-top: 12px; border-top: 1px solid var(--rule); }
+    .axis, .range-row { display: grid; grid-template-columns: 82px minmax(0, 1fr) 78px; gap: 10px; align-items: center; }
+    .axis { color: var(--muted); font-size: 9px; margin-bottom: 6px; }
+    .axis-track { position: relative; height: 17px; }
+    .axis-track span { position: absolute; bottom: 0; white-space: nowrap; }
+    .axis-track span:first-child { left: 0; }
+    .axis-track span:nth-child(2) { left: 50%; transform: translateX(-50%); }
+    .axis-track span:last-child { right: 0; }
+    .range-row { min-height: 30px; font-size: 10px; }
+    .range-row + .range-row { margin-top: 2px; }
+    .record-label, .date-label { color: var(--muted); white-space: nowrap; }
+    .date-label { text-align: right; }
+    .track { position: relative; height: 16px; background: linear-gradient(to right, transparent calc(50% - .5px), var(--rule) calc(50% - .5px), var(--rule) calc(50% + .5px), transparent calc(50% + .5px)), linear-gradient(to right, transparent calc(100% - 1px), var(--rule) calc(100% - 1px)); }
+    .band { position: absolute; top: 4px; left: var(--left); width: max(1px, var(--width)); height: 8px; border-radius: 5px; background: #777870; }
+    .dish-range .band { background: var(--mark); }
+    .reading { width: min(1220px, 100%); margin: clamp(46px, 7vw, 72px) auto 0; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .reading p { max-width: 940px; margin: 0; }
+    .reading p + p { margin-top: 12px; }
+    .reading a, nav a { color: inherit; text-underline-offset: 2px; }
+    nav { margin-top: 35px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.9; }
+    @media (max-width: 680px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .marks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 14px; }
+      .marks figure:last-child { grid-column: 1 / -1; width: calc(50% - 7px); justify-self: center; }
+      figcaption { font-size: 9px; }
+      .axis, .range-row { grid-template-columns: 65px minmax(0, 1fr) 67px; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 20 / 11 October 2026</span><span>One clear profile / one uncertain echo</span></div>
+    <header>
+      <h1>A second profile?</h1>
+      <p class="dek">The dish shows a profile. A teapot has another circle, too worn to compare.</p>
+    </header>
+    <p class="key">Three separate Met detail photographs share a display width; their source magnifications and physical scales differ. The shapes describe what I see, not a mark classification.</p>
+    <section class="marks" aria-label="Three separate stamp details on Paris silver dated 1697 to 1704">
+      <figure>
+        <img src="assets/met-173-punch.jpg" alt="A worn circular impression containing a head in profile on dish 48.187.173." />
+        <figcaption><a href="https://www.metmuseum.org/art/collection/search/200203">48.187.173 / dish</a><span>1697&ndash;1704 / maker not named</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/met-ewers-mark-details.jpg" alt="A separate close-up of several worn stamps on the ewer." />
+        <figcaption><a href="https://www.metmuseum.org/art/collection/search/200075">48.187.19 / ewer</a><span>1698&ndash;99 / attributed to Jean Villeclair</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/met-teapot-stamp.jpg" alt="Separate close-up of a crowned letter and adjacent impression on a silver teapot." />
+        <figcaption><a href="https://www.metmuseum.org/art/collection/search/200114">48.187.78 / teapot</a><span>1699&ndash;1700 / maker I. C.</span></figcaption>
+      </figure>
+    </section>
+    <section class="timeline" aria-label="Met date ranges on a shared scale from 1690 to 1710">
+      <div class="axis" aria-hidden="true"><span></span><div class="axis-track"><span>1690</span><span>1700</span><span>1710</span></div><span></span></div>
+      <div class="range-row dish-range"><span class="record-label">48.187.173</span><div class="track" aria-hidden="true"><span class="band" style="--left:35%;--width:35%"></span></div><span class="date-label">1697&ndash;1704</span></div>
+      <div class="range-row"><span class="record-label">48.187.19</span><div class="track" aria-hidden="true"><span class="band" style="--left:40%;--width:5%"></span></div><span class="date-label">1698&ndash;99</span></div>
+      <div class="range-row"><span class="record-label">48.187.78</span><div class="track" aria-hidden="true"><span class="band" style="--left:45%;--width:5%"></span></div><span class="date-label">1699&ndash;1700</span></div>
+    </section>
+    <section class="reading">
+      <p>The Met's Paris / silver / 1697&ndash;1704 search returns seven records, including the dishes .172 and .173. On .173, a worn circular impression contains a visible head in profile. The teapot .78 shows another dark, round impression beside a crowned mark, but its interior is too indistinct to tell whether it repeats that profile. In the other published views I checked, I found no other clearly legible profile; one candlestick pair has no separate mark view.</p>
+      <p>The ewer and teapot supply neighbors in date and place, not names for the dish stamp. The ewer detail shows a separate group of marks; neither that view nor the teapot resolves the faint circle. The search opens a possible city-mark comparison, bounded by the available photographs, rather than a mark attribution. The three source images are Public Domain. <a href="https://collectionapi.metmuseum.org/public/collection/v1.1/search?q=Paris&amp;departmentId=12&amp;medium=Silver&amp;dateBegin=1697&amp;dateEnd=1704&amp;limit=500">Met search result</a>.</p>
+    </section>
+    <nav><a href="index.html">Study 01 / Second place</a> &nbsp;&middot;&nbsp; <a href="punch.html">Study 19 / A punch without a name</a></nav>
+  </main>
+</body>
+</html>

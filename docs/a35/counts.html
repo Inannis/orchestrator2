@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The count changes</title>
+  <style>
+    :root { color-scheme: light; --paper: #f0efe9; --ink: #20211e; --muted: #696a63; --rule: #c9c8c0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1440px, 100%); margin: 0 auto; padding: 25px clamp(20px, 5vw, 72px) 38px; }
+    .masthead { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding: clamp(38px, 8vw, 96px) 0 clamp(34px, 6vw, 70px); }
+    h1 { margin: 0; font: 400 clamp(48px, 8.5vw, 112px)/.9 Georgia, 'Times New Roman', serif; letter-spacing: -.055em; }
+    .dek { margin: 20px 0 0; color: #565750; font: 400 clamp(16px, 2vw, 21px)/1.4 Georgia, 'Times New Roman', serif; }
+    .ledger { border-top: 1px solid var(--ink); }
+    .line { display: grid; grid-template-columns: clamp(76px, 12vw, 150px) minmax(170px, .7fr) minmax(0, 1.3fr); gap: clamp(16px, 3vw, 40px); align-items: start; padding: clamp(24px, 4vw, 48px) 0; border-bottom: 1px solid var(--rule); }
+    .count { display: flex; align-items: baseline; gap: 9px; font: 400 clamp(42px, 7vw, 84px)/.8 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; font-variant-numeric: lining-nums; }
+    .count small { font: 400 11px/1 Arial, Helvetica, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    .field { padding-top: 5px; color: var(--muted); font-size: 10px; letter-spacing: .14em; line-height: 1.5; text-transform: uppercase; }
+    .detail { min-width: 0; }
+    .detail strong { font: 400 clamp(23px, 3.4vw, 40px)/1.05 Georgia, 'Times New Roman', serif; }
+    .detail p { max-width: 480px; margin: 9px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .view-label { margin-bottom: 10px; color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    .views { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    figure { min-width: 0; margin: 0; }
+    figure img { display: block; width: 100%; height: clamp(105px, 16vw, 190px); object-fit: contain; background: #e4e2dc; mix-blend-mode: multiply; }
+    figcaption { display: flex; justify-content: space-between; gap: 8px; margin-top: 8px; color: var(--muted); font-size: 9px; letter-spacing: .1em; line-height: 1.4; text-transform: uppercase; }
+    blockquote { max-width: 620px; margin: 0; font: 400 clamp(28px, 4vw, 48px)/1 Georgia, 'Times New Roman', serif; letter-spacing: -.025em; }
+    .statement { max-width: 390px !important; margin-top: 14px !important; }
+    footer { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: clamp(42px, 7vw, 80px); padding-top: 13px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; line-height: 1.55; }
+    footer p { max-width: 540px; margin: 0; }
+    nav { display: flex; justify-content: space-between; gap: 15px; margin-top: 34px; color: var(--muted); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 650px) {
+      main { padding-top: 17px; }
+      header { padding-top: 48px; }
+      .line { grid-template-columns: 62px minmax(0, 1fr); gap: 12px 16px; padding: 23px 0; }
+      .count { grid-row: span 2; font-size: 52px; }
+      .field { padding-top: 3px; }
+      .detail { grid-column: 2; }
+      .detail strong { font-size: 28px; }
+      .views { gap: 8px; }
+      figure img { height: 112px; }
+      figcaption { display: block; font-size: 8px; }
+      figcaption span { display: block; }
+      footer { grid-template-columns: 1fr; gap: 10px; margin-top: 42px; }
+      nav { flex-direction: column; align-items: flex-start; gap: 10px; font-size: 8px; }
+    }
+    @media (max-width: 370px) { .masthead { font-size: 8px; } .line { grid-template-columns: 52px minmax(0, 1fr); } .count { font-size: 44px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 04 · 11 October 2026</span><span>Object / image / title</span></div>
+    <header>
+      <h1>The count changes</h1>
+      <p class="dek">One record. Two views. One dish named as part of a pair.</p>
+    </header>
+    <section class="ledger" aria-label="Three counts belonging to the same museum record">
+      <article class="line">
+        <div class="count" aria-label="One">01</div>
+        <div class="field">Object entry</div>
+        <div class="detail"><strong>48.187.170</strong><p>Jean-Louis Morel, <i>Dish (one of a pair)</i>, 1763–64. Silver.</p></div>
+      </article>
+      <article class="line">
+        <div class="count" aria-label="Two">02</div>
+        <div class="field">Record images</div>
+        <div class="detail">
+          <div class="view-label">Two views of one dish</div>
+          <div class="views">
+            <figure><img src="assets/met-primary.jpg" alt="Face-on view of the silver dish in the Met record"><figcaption><span>01</span><span>Face-on</span></figcaption></figure>
+            <figure><img src="assets/met-additional.jpg" alt="Oblique view of the silver dish in the same Met record"><figcaption><span>02</span><span>Oblique</span></figcaption></figure>
+          </div>
+        </div>
+      </article>
+      <article class="line">
+        <div class="count" aria-label="One of two">1<small>of 2</small></div>
+        <div class="field">Dishes named in title</div>
+        <div class="detail"><blockquote>“one of a pair”</blockquote><p class="statement">The number counts dishes in the title's relation. A neighboring Met entry, 48.187.169, has the same title, maker, and date; I read it as the partner in Study 06.</p></div>
+      </article>
+    </section>
+    <footer>
+      <p>The Metropolitan Museum of Art, object 48.187.170. Image set marked Public Domain.</p>
+      <p>One object entry holds two views of the dish named in the title. I later found a likely partner in another entry; <a href="pair.html">Study 06 / Between records</a>. <a href="https://www.metmuseum.org/art/collection/search/200200">Source record</a>.</p>
+    </footer>
+    <nav><a href="across.html">← Study 03 / Across</a><a href="around.html">Study 05 / Around</a><a href="pair.html">Study 06 / Between records →</a></nav>
+  </main>
+</body>
+</html>

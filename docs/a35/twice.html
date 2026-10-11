@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One of a pair, twice — Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #696a63; --rule: #c9c8c0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1180px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 70px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 88px); }
+    h1 { max-width: 820px; margin: 0; font: 400 clamp(46px, 8vw, 100px)/.92 Georgia, 'Times New Roman', serif; letter-spacing: -.055em; }
+    .dek { max-width: 640px; margin: 20px 0 0; color: #565750; font: 400 clamp(17px, 2vw, 21px)/1.4 Georgia, 'Times New Roman', serif; }
+    .records { display: grid; grid-template-columns: 1fr 1fr; margin: clamp(48px, 9vw, 100px) auto 0; width: min(1000px, 100%); }
+    .record { min-width: 0; padding: 0 clamp(16px, 3vw, 42px) 0 0; }
+    .record + .record { padding: 0 0 0 clamp(16px, 3vw, 42px); border-left: 1px solid var(--rule); }
+    .accession { display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 25px; padding-bottom: 9px; border-bottom: 1px solid var(--rule); color: var(--muted); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
+    .accession strong { color: var(--ink); font: 400 clamp(23px, 3vw, 37px)/1 Georgia, 'Times New Roman', serif; letter-spacing: -.03em; }
+    h2 { min-height: 2.25em; margin: 0 0 30px; font: 400 clamp(27px, 4vw, 48px)/1.02 Georgia, 'Times New Roman', serif; letter-spacing: -.035em; }
+    h2 span { display: block; color: #62635d; font-size: .67em; letter-spacing: -.02em; }
+    dl { margin: 0; }
+    dl div { display: grid; grid-template-columns: minmax(66px, 1fr) 2fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--rule); font-size: 11px; line-height: 1.4; }
+    dt { color: var(--muted); }
+    dd { margin: 0; }
+    .reading { width: min(1000px, 100%); margin: clamp(54px, 9vw, 100px) auto 0; padding-top: 13px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .reading p { max-width: 700px; margin: 0; }
+    .reading p + p { margin-top: 12px; }
+    a { color: inherit; text-underline-offset: 2px; }
+    nav { margin-top: 35px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+    @media (max-width: 600px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .records { grid-template-columns: 1fr; gap: 40px; }
+      .record { padding: 0 !important; }
+      .record + .record { padding-top: 32px !important; border-top: 1px solid var(--rule); border-left: 0; }
+      .accession { margin-bottom: 20px; }
+      h2 { min-height: 0; margin-bottom: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 08 / 11 October 2026</span><span>Two records / no photographs</span></div>
+    <header>
+      <h1>One of a pair, twice</h1>
+      <p class="dek">Each entry repeats the same claim: one dish of a pair.</p>
+    </header>
+    <section class="records" aria-label="Textual comparison of two Metropolitan Museum records">
+      <article class="record">
+        <p class="accession"><span>Record</span><strong>48.187.169</strong></p>
+        <h2>Dish <span>(one of a pair)</span></h2>
+        <dl>
+          <div><dt>Maker</dt><dd>Jean-Louis Morel</dd></div>
+          <div><dt>Date</dt><dd>1763–64</dd></div>
+          <div><dt>Material</dt><dd>Silver</dd></div>
+          <div><dt>Dimensions</dt><dd>4.4 × 29.8 cm</dd></div>
+        </dl>
+      </article>
+      <article class="record">
+        <p class="accession"><span>Record</span><strong>48.187.170</strong></p>
+        <h2>Dish <span>(one of a pair)</span></h2>
+        <dl>
+          <div><dt>Maker</dt><dd>Jean-Louis Morel</dd></div>
+          <div><dt>Date</dt><dd>1763–64</dd></div>
+          <div><dt>Material</dt><dd>Silver</dd></div>
+          <div><dt>Dimensions</dt><dd>4.1 × 30.2 cm</dd></div>
+        </dl>
+      </article>
+    </section>
+    <section class="reading">
+      <p>The pages do not cross-link. I read these entries as the pair. With the photographs withheld, can their repeated title and shared maker, date, and material carry that reading?</p>
+      <p>The Metropolitan Museum of Art: <a href="https://www.metmuseum.org/art/collection/search/200199">48.187.169</a> and <a href="https://www.metmuseum.org/art/collection/search/200200">48.187.170</a>. Public Domain.</p>
+    </section>
+    <nav><a href="index.html">Study 01 / Second place</a> &nbsp;·&nbsp; <a href="pair.html">Study 06 / Between records</a> &nbsp;·&nbsp; <a href="shared-frame.html">Study 07 / Shared frame</a> &nbsp;·&nbsp; <a href="previous.html">Study 09 / The previous dish</a> &nbsp;&middot;&nbsp; <a href="what-stays.html">Study 11 / What stays</a></nav>
+  </main>
+</body>
+</html>

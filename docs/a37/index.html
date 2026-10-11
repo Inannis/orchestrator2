@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Small Stage — a study after a Kinney Brothers trade card</title>
+<style>
+  :root { color-scheme: light; --paper:#f1ecdf; --ink:#29231e; --muted:#766e62; --red:#a6402c; --rule:#bcb3a3; --blue:#233a42; }
+  * { box-sizing:border-box; }
+  html { background:#d9d2c5; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; }
+  .sheet { width:min(100%,1440px); margin:0 auto; padding:34px clamp(22px,5.6vw,82px) 54px; overflow:hidden; }
+  .masthead { display:flex; justify-content:space-between; gap:20px; border-top:1px solid var(--ink); border-bottom:1px solid var(--rule); padding:10px 0 11px; font:10px/1.2 Arial,sans-serif; letter-spacing:.15em; text-transform:uppercase; }
+  .masthead span:last-child { text-align:right; }
+  .intro { display:grid; grid-template-columns:minmax(0,1fr) 250px; align-items:end; gap:36px; padding:52px 0 35px; }
+  h1 { margin:0 0 14px; font-size:clamp(68px,10vw,142px); font-weight:400; letter-spacing:-.075em; line-height:.77; }
+  h1 span { display:block; }
+  .dek { max-width:690px; margin:24px 0 0; font-size:clamp(16px,1.6vw,21px); line-height:1.42; }
+  .object-label { border-left:1px solid var(--red); padding:4px 0 5px 15px; color:var(--muted); font:11px/1.6 Arial,sans-serif; letter-spacing:.04em; }
+  .object-label strong { display:block; color:var(--ink); font-size:12px; font-weight:600; }
+  .plate { position:relative; display:grid; grid-template-columns:minmax(200px,1fr) minmax(280px,455px) minmax(220px,.88fr); align-items:start; gap:clamp(22px,4vw,58px); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding:25px 0 29px; }
+  .side-note { padding-top:3px; }
+  .eyebrow { color:var(--red); font:10px/1.3 Arial,sans-serif; letter-spacing:.18em; text-transform:uppercase; }
+  .side-note p { max-width:250px; margin:16px 0 0; font-size:19px; line-height:1.3; }
+  .side-note .fine { margin-top:28px; color:var(--muted); font:11px/1.6 Arial,sans-serif; }
+  .card-wrap { position:relative; width:100%; max-width:455px; margin:0 auto; }
+  .card-wrap > img { display:block; width:100%; height:auto; border:1px solid #a79d8d; box-shadow:0 8px 20px #2c21151c; }
+  .mark { position:absolute; width:8.7%; aspect-ratio:1; border:1px solid var(--red); border-radius:50%; transform:translate(-50%,-50%); pointer-events:none; }
+  .mark.one { left:35%; top:82%; }
+  .mark.two { left:60%; top:82%; }
+  .mark::after { content:""; position:absolute; width:3px; height:3px; top:50%; left:50%; border-radius:50%; background:var(--red); transform:translate(-50%,-50%); }
+  .card-caption { display:flex; justify-content:space-between; gap:10px; padding-top:9px; color:var(--muted); font:10px/1.4 Arial,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .details { display:grid; gap:25px; }
+  figure { margin:0; }
+  .crop { width:min(100%,280px); aspect-ratio:1; overflow:hidden; border:1px solid #a79d8d; background-image:url("assets/violin-card.jpg"); background-repeat:no-repeat; background-size:500% auto; background-color:#d4c8b4; }
+  .crop.left { background-position:25% 86%; }
+  .crop.right { background-position:60% 86%; }
+  figcaption { display:flex; justify-content:space-between; gap:10px; padding-top:8px; color:var(--muted); font:10px/1.4 Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  figcaption b { color:var(--ink); font-weight:500; }
+  .scale-row { display:flex; justify-content:space-between; align-items:center; gap:24px; padding-top:29px; }
+  .scale-copy { max-width:330px; }
+  .scale-copy p { margin:13px 0 0; color:var(--muted); font:12px/1.55 Arial,sans-serif; }
+  .actual { flex:none; width:4cm; max-width:42vw; }
+  .actual img { display:block; width:100%; height:auto; border:1px solid var(--rule); }
+  .actual-label { padding-top:7px; color:var(--muted); font:9px/1.35 Arial,sans-serif; letter-spacing:.11em; text-transform:uppercase; }
+  footer { display:flex; justify-content:space-between; gap:24px; border-bottom:1px solid var(--rule); padding:13px 0; color:var(--muted); font:10px/1.5 Arial,sans-serif; }
+  footer a { color:inherit; text-underline-offset:3px; }
+  @media (max-width:760px) {
+    .sheet { padding-top:22px; }
+    .intro { grid-template-columns:1fr; gap:22px; padding:42px 0 27px; }
+    .object-label { max-width:320px; }
+    .plate { grid-template-columns:minmax(0,1fr) minmax(120px,.7fr); gap:18px; }
+    .side-note { grid-column:1/-1; display:flex; gap:22px; align-items:start; }
+    .side-note p { margin:0; max-width:360px; font-size:17px; }
+    .side-note .fine { display:none; }
+    .card-wrap { grid-column:1; }
+    .details { grid-column:2; }
+    .crop { width:100%; }
+    .scale-row { align-items:start; }
+    footer { flex-direction:column; gap:4px; }
+  }
+  @media (max-width:420px) {
+    .masthead { font-size:8px; }
+    .plate { gap:12px; }
+    .side-note { display:block; }
+    .side-note p { margin-top:10px; }
+    .details { gap:16px; }
+    .crop { aspect-ratio: .92; }
+    .card-caption,figcaption { font-size:8px; letter-spacing:.06em; }
+    .scale-row { gap:12px; }
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+  <div class="masthead"><span>Field plate 01 &nbsp; / &nbsp; Printed matter</span><span>Novelties series &nbsp; · &nbsp; 1889</span></div>
+  <header class="intro">
+    <div>
+      <h1><span>A small</span><span>stage.</span></h1>
+      <p class="dek">Two tiny figures appear on the violin body. The card gives them little room; enlargement gives them a little more.</p>
+    </div>
+    <div class="object-label"><strong>Violin</strong>Kinney Bros. Tobacco Company<br>Series N228, Type 5<br>Commercial color lithograph</div>
+  </header>
+  <section class="plate" aria-label="An enlarged trade card and two details">
+    <div class="side-note">
+      <div class="eyebrow">Look closer / 01</div>
+      <p>The strings pass between the figures. The varnished body becomes their ground.</p>
+      <p class="fine">The red rings mark where the details were taken from the full sheet.</p>
+    </div>
+    <figure class="card-wrap" id="full-sheet">
+      <img src="assets/violin-card.jpg" alt="A small color lithograph of a violin, with two tiny figures on its body">
+      <span class="mark one" aria-hidden="true"></span><span class="mark two" aria-hidden="true"></span>
+      <figcaption class="card-caption"><span>Full sheet / enlarged</span><span>01</span></figcaption>
+    </figure>
+    <div class="details">
+      <figure id="detail-left"><div class="crop left" role="img" aria-label="Enlarged detail of the blue-clad figure on the violin"></div><figcaption><b>Figure, left</b><span>02 / detail</span></figcaption></figure>
+      <figure id="detail-right"><div class="crop right" role="img" aria-label="Enlarged detail of the green-clad figure on the violin"></div><figcaption><b>Figure, right</b><span>03 / detail</span></figcaption></figure>
+    </div>
+  </section>
+  <section class="scale-row" id="actual-size" aria-label="Sheet dimensions">
+    <div class="scale-copy"><div class="eyebrow">Measure / 04</div><p>The museum records the sheet as 2⅞ × 1 9/16 inches (7.3 × 4 cm). This small copy uses the stated four-centimetre width.</p></div>
+    <figure class="actual"><img src="assets/violin-card.jpg" alt="The whole card shown at four centimetres wide"><figcaption class="actual-label">Sheet at stated width / 4 cm</figcaption></figure>
+  </section>
+  <footer><span>From the Novelties series (N228, Type 5), issued by Kinney Bros., 1889.</span><a href="read.html">Reading score </a><a href="placement.html">Five cards </a><a href="for-kinney.html">A violin for Kinney </a><a href="after-6-7.html">I can't find the drops </a><a href="a-line-continues.html">A line continues </a><a href="seam-i-added.html">The seam I added </a><a href="https://www.metmuseum.org/art/collection/search/727397">Metropolitan Museum of Art · object 727397</a></footer>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+

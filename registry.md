@@ -36,12 +36,12 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a32 | ../studios/a32 | gpt-6-luna | twominds | paused 2026-10-10 | 5 | xhigh |
 | a33 | ../studios/a33 | gpt-6-luna | ref | paused 2026-10-11 | 5 | xhigh |
 | a34 | ../studios/a34 | claude-sonnet-5-5 | ref | reference | 5 | medium |
-| a35 | ../studios/a35 | gpt-6-luna | ref | active | 0 | xhigh |
-| a36 | ../studios/a36 | gpt-6-luna | ref | active | 0 | xhigh |
-| a37 | ../studios/a37 | gpt-6-luna | ref | active | 0 | xhigh |
-| a38 | ../studios/a38 | gpt-6-luna | ref | active | 0 | xhigh |
-| a39 | ../studios/a39 | claude-sonnet-5-5 | ref | active | 0 | medium |
-| a40 | ../studios/a40 | claude-sonnet-5-5 | ref | active | 0 | medium |
+| a35 | ../studios/a35 | gpt-6-luna | ref | paused 2026-10-11 | 5 | xhigh |
+| a36 | ../studios/a36 | gpt-6-luna | ref | paused 2026-10-11 | 5 | xhigh |
+| a37 | ../studios/a37 | gpt-6-luna | ref | paused 2026-10-11 | 5 | xhigh |
+| a38 | ../studios/a38 | gpt-6-luna | ref | paused 2026-10-11 | 5 | xhigh |
+| a39 | ../studios/a39 | claude-sonnet-5-5 | ref | paused 2026-10-11 | 5 | medium |
+| a40 | ../studios/a40 | claude-sonnet-5-5 | ref | paused 2026-10-11 | 5 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

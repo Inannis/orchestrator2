@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dated, not identified - Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #696a63; --rule: #c9c8c0; --mark: #995544; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1420px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 92px); }
+    h1 { max-width: 1050px; margin: 0; font: 400 clamp(54px, 9vw, 124px)/.88 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+    .dek { max-width: 850px; margin: 22px 0 0; color: #565750; font: 400 clamp(18px, 2.1vw, 23px)/1.4 Georgia, 'Times New Roman', serif; }
+    .key { width: min(1220px, 100%); margin: clamp(48px, 8vw, 86px) auto 12px; color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .evidence { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2.5vw, 34px); width: min(1220px, 100%); margin: 0 auto; align-items: start; }
+    figure { min-width: 0; margin: 0; border-top: 1px solid var(--ink); padding-top: 10px; }
+    figure img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; mix-blend-mode: multiply; background: #f7f6f1; }
+    .object img { object-fit: contain; }
+    figcaption { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--rule); font-size: 10px; line-height: 1.5; }
+    figcaption a { display: block; color: var(--ink); text-underline-offset: 2px; }
+    figcaption span { display: block; color: var(--muted); }
+    .reading { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(220px, .7fr); gap: clamp(24px, 6vw, 82px); width: min(1220px, 100%); margin: clamp(46px, 7vw, 72px) auto 0; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .reading p { max-width: 760px; margin: 0; }
+    .reading p + p { margin-top: 12px; }
+    .reference { border-left: 2px solid var(--mark); padding-left: 16px; color: var(--ink); }
+    .reference strong { display: block; margin-bottom: 8px; color: var(--mark); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    .reading a, nav a { color: inherit; text-underline-offset: 2px; }
+    nav { width: min(1220px, 100%); margin: 35px auto 0; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.9; }
+    @media (max-width: 680px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .evidence { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 14px; }
+      .object { grid-column: 1 / -1; width: min(55%, 260px); justify-self: center; }
+      figcaption { font-size: 9px; }
+      .reading { grid-template-columns: 1fr; gap: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 21 / 11 October 2026</span><span>One dated discharge / two unresolved circles</span></div>
+    <header>
+      <h1>Dated, not identified</h1>
+      <p class="dek">A Paris discharge mark can fix a period. These two circles still do not tell me what they are.</p>
+    </header>
+    <p class="key">The three photographs have different magnifications and functions. The Petit Palais photograph shows the vessel; its record, rather than this image, describes the rim mark.</p>
+    <section class="evidence" aria-label="Two unresolved circular impressions beside one dated Paris discharge reference">
+      <figure>
+        <img src="assets/met-173-punch.jpg" alt="A worn circular impression containing a head in profile on dish 48.187.173." />
+        <figcaption><a href="https://www.metmuseum.org/art/collection/search/200203">48.187.173 / dish</a><span>1697&ndash;1704 / impression unassigned</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/met-teapot-stamp.jpg" alt="A dark, indistinct round impression beside a crowned mark on teapot 48.187.78." />
+        <figcaption><a href="https://www.metmuseum.org/art/collection/search/200114">48.187.78 / teapot</a><span>1699&ndash;1700 / possible echo too worn to identify</span></figcaption>
+      </figure>
+      <figure class="object">
+        <img src="assets/paris-musees-goute-vin.jpg" alt="A silver tastevin photographed whole, its shell-shaped thumb rest behind the bowl." />
+        <figcaption><a href="https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/goute-vin-16">Petit Palais / Go&#251;te-vin (PPO2284)</a><span>1702&ndash;03 object / 1697&ndash;1704 rim discharge</span><span>The photograph does not resolve the mark.</span><span>CC0 Paris Mus&#233;es</span></figcaption>
+      </figure>
+    </section>
+    <section class="reading">
+      <div>
+        <p>The circle on .173 contains a head; the teapot has a dark circle beside its crowned stamp. Beside a dated Paris example, the date ranges overlap, but the photographs do not make the circles more alike. The Paris Mus&#233;es record identifies the tastevin's discharge as a ducal crown with a lizard passing through. A <a href="https://collections.louvre.fr/ark:/53355/cl010104349">Louvre spice box from 1702&ndash;03</a> records the same 1697&ndash;1704 discharge, separately from its charge and maker's mark. Those catalog descriptions supply a period reference, not a visual match to either circle.</p>
+        <p>The Met dates .173 to 1697&ndash;1704 and .78 to 1699&ndash;1700; it names no maker for .173. A discharge is a tax mark applied to finished work after duty, according to the <a href="https://www.getty.edu/publications/french-silver/reader-note-1/">Getty guide</a>. The head on the dish remains unclassified, and the teapot circle remains too worn to compare. Neither becomes a maker's signature here.</p>
+      </div>
+      <aside class="reference">
+        <strong>Paris / discharge / 1697&ndash;1704</strong>
+        Ducal crown with a lizard passing through, according to the Petit Palais record. The period is documented; these circles are not identified by it.
+      </aside>
+    </section>
+    <nav><a href="index.html">Second place</a> &nbsp;&middot;&nbsp; <a href="second-profile.html">Study 20 / A second profile?</a> &nbsp;&middot;&nbsp; <a href="punch.html">Study 19 / A punch without a name</a></nav>
+  </main>
+</body>
+</html>

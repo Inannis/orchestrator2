@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The fourth is in the sentence — Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #eeede6; --ink: #24251f; --muted: #66675f; --rule: #c9c8bf; --rust: #985643; --field: #e5e3db; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1360px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { display: grid; grid-template-columns: minmax(0, 1fr) 190px; gap: 36px; align-items: end; padding: clamp(44px, 8vw, 90px) 0 clamp(38px, 7vw, 76px); }
+    h1 { max-width: 920px; margin: 0; font: 400 clamp(58px, 9.4vw, 120px)/.86 Georgia, 'Times New Roman', serif; letter-spacing: -.07em; }
+    .dek { max-width: 740px; margin: 24px 0 0; color: #53544e; font: 400 clamp(18px, 2.1vw, 23px)/1.45 Georgia, 'Times New Roman', serif; }
+    .count { border-left: 1px solid var(--rule); padding-left: 20px; }
+    .count p { margin: 0; }
+    .count .figure { color: var(--rust); font: 400 52px/.9 Georgia, 'Times New Roman', serif; }
+    .count .label { max-width: 125px; margin: 7px 0 18px; color: var(--muted); font-size: 9px; letter-spacing: .12em; line-height: 1.5; text-transform: uppercase; }
+    .count .cut { height: 1px; margin: 3px 0 15px; background: var(--rule); }
+    .list-head { display: grid; grid-template-columns: 65px minmax(200px, 1.05fr) minmax(220px, 1fr) minmax(180px, .85fr); gap: 18px; border-bottom: 1px solid var(--ink); padding: 0 0 11px; color: var(--muted); font-size: 9px; letter-spacing: .13em; text-transform: uppercase; }
+    .entry { display: grid; grid-template-columns: 65px minmax(200px, 1.05fr) minmax(220px, 1fr) minmax(180px, .85fr); gap: 18px; min-height: 118px; align-items: start; border-bottom: 1px solid var(--rule); padding: 20px 0 22px; }
+    .num { color: var(--rust); font: 400 22px/1 Georgia, 'Times New Roman', serif; }
+    h2 { margin: -5px 0 0; font: 400 clamp(25px, 3vw, 37px)/1.05 Georgia, 'Times New Roman', serif; letter-spacing: -.035em; }
+    .entry p { max-width: 390px; margin: 0; color: #42433d; font: 14px/1.65 Georgia, 'Times New Roman', serif; }
+    .entry .status { color: var(--muted); font: 10px/1.65 Arial, Helvetica, sans-serif; letter-spacing: .09em; text-transform: uppercase; }
+    .entry.last { min-height: 148px; background: linear-gradient(90deg, transparent 0, transparent 65px, rgba(152,86,67,.06) 65px, rgba(152,86,67,.06) 100%); }
+    .entry.last h2 { color: var(--rust); }
+    .entry.last .status { color: var(--rust); }
+    .reading { display: grid; grid-template-columns: .65fr 1.35fr; gap: 40px; margin: 62px 0 0; padding-top: 14px; border-top: 1px solid var(--rule); }
+    .reading h2 { margin: 0; color: var(--rust); font: 400 10px/1.5 Arial, Helvetica, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+    .reading p { max-width: 760px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+    .source { margin: 44px 0 0; border-top: 1px solid var(--rule); padding-top: 12px; color: var(--muted); font-size: 10px; line-height: 1.8; }
+    nav { margin-top: 25px; border-top: 1px solid var(--rule); padding-top: 11px; font-size: 10px; letter-spacing: .1em; line-height: 1.9; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 760px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.8; }
+      .masthead span { display: block; }
+      header { grid-template-columns: 1fr; gap: 27px; padding-top: 48px; }
+      .count { display: grid; grid-template-columns: 54px 1fr; column-gap: 13px; border-left: 0; border-top: 1px solid var(--rule); padding: 15px 0 0; }
+      .count .figure { grid-row: span 2; }
+      .count .label { max-width: none; margin: 0 0 11px; }
+      .count .cut { grid-column: 1 / -1; margin: 1px 0 13px; }
+      .list-head { display: none; }
+      .entry { grid-template-columns: 33px 1fr; gap: 10px 14px; min-height: 0; padding: 18px 0 20px; }
+      .num { grid-row: span 3; }
+      .entry h2 { margin: -4px 0 0; }
+      .entry p, .entry .status { grid-column: 2; }
+      .entry.last { background: linear-gradient(90deg, transparent 0, transparent 33px, rgba(152,86,67,.06) 33px, rgba(152,86,67,.06) 100%); }
+      .reading { grid-template-columns: 1fr; gap: 12px; margin-top: 44px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 33 / 11 October 2026</span><span>Under the stand / one overview</span></div>
+    <header>
+      <div>
+        <h1>The fourth is<br>in the sentence.</h1>
+        <p class="dek">The Getty catalogue lists four stamp groups beneath the stand's base. In Cat. 9.4, I can distinguish three forms. The pointer head remains named, but I cannot read it in this view.</p>
+      </div>
+      <aside class="count" aria-label="Three forms distinguished from four catalogue entries">
+        <p class="figure">04</p><p class="label">stamp groups listed beneath the base</p>
+        <div class="cut"></div>
+        <p class="figure">03</p><p class="label">forms I distinguish across the overview and detail</p>
+      </aside>
+    </header>
+
+    <div class="list-head" aria-hidden="true"><span>No.</span><span>Catalogued stamp</span><span>What I can see</span><span>Evidence</span></div>
+    <section aria-label="Four stamp groups listed on the underside of the base">
+      <article class="entry">
+        <span class="num">01</span><h2>Maker</h2>
+        <p>The maker's mark combines initials, a key, grains, and a crowned fleur-de-lys.</p>
+        <p class="status">Distinguished in Cat. 9.4<br>Enlarged in Mark 9.4</p>
+      </article>
+      <article class="entry">
+        <span class="num">02</span><h2>Crowned Y</h2>
+        <p>A small crowned form sits to the right of the maker's stamp in the underside view.</p>
+        <p class="status">My reading of Cat. 9.4</p>
+      </article>
+      <article class="entry">
+        <span class="num">03</span><h2>Crossed laurel</h2>
+        <p>A leafy form sits to the left. The catalogue names crossed laurel branches.</p>
+        <p class="status">My reading of Cat. 9.4</p>
+      </article>
+      <article class="entry last">
+        <span class="num">04</span><h2>Pointer head</h2>
+        <p>The entry lists this discharge beneath the base, alongside the other marks.</p>
+        <p class="status">Named in the text<br>Not isolated in Cat. 9.4</p>
+      </article>
+    </section>
+
+    <section class="reading">
+      <h2>Read beside the image</h2>
+      <p>Cat. 9.4 is an underside overview, not a detail of each punch. Mark 9.4 isolates the maker's stamp, so its number does not make the pointer head visible. I leave that fourth row without a drawn symbol. The three forms above are my readings of the published photographs; the Getty text supplies the names and functions.</p>
+    </section>
+
+    <p class="source">Jean-Baptiste François Chéret, <i>Sauceboat on Stand</i>, 1762&ndash;63, Getty Museum, 71.DG.76. <a href="https://www.getty.edu/publications/french-silver/catalogue/9/">Catalogue 9</a> names four stamp groups underneath the stand base. <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#cat-9-4">Cat. 9.4</a> shows the underside; <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-4">Mark 9.4</a> details the maker's mark. Getty publication images are licensed CC BY-NC 4.0; linked here, not reproduced. The whole-object collection image is CC0 and is not used on this page.</p>
+    <nav><a href="index.html">Second place</a> / <a href="mark-numbers.html">Study 34 / Adjacent numbers, different marks</a> / <a href="mark-surfaces.html">Study 35 / Two faces of one base</a> / <a href="three-placements.html">Study 32 / One class, three placements</a> / <a href="at-left-lip.html">Study 31 / A head at the lip</a> / <a href="period-not-imprint.html">Study 36 / A period is not an imprint</a> / <a href="marking-sites.html">Study 37 / Twenty-one listed placements</a></nav>
+  </main>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One class, three placements — Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #eeede6; --ink: #24251f; --muted: #66675f; --rule: #c9c8bf; --rust: #985643; --field: #e5e3db; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1440px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding: clamp(42px, 8vw, 90px) 0 clamp(34px, 6vw, 68px); }
+    h1 { max-width: 1050px; margin: 0; font: 400 clamp(56px, 10vw, 128px)/.86 Georgia, 'Times New Roman', serif; letter-spacing: -.07em; }
+    .dek { max-width: 800px; margin: 25px 0 0; color: #53544e; font: 400 clamp(18px, 2.1vw, 23px)/1.45 Georgia, 'Times New Roman', serif; }
+    .stage { display: grid; grid-template-columns: minmax(0, 1.06fr) minmax(350px, .94fr); gap: clamp(20px, 4vw, 56px); align-items: start; }
+    figure { margin: 0; min-width: 0; }
+    .photo { display: grid; place-items: center; min-height: 430px; background: #e9e7df; }
+    .photo img { display: block; width: 100%; max-height: 760px; object-fit: contain; mix-blend-mode: multiply; }
+    figcaption { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 11px; color: var(--muted); font-size: 9px; letter-spacing: .12em; line-height: 1.6; text-transform: uppercase; }
+    .map { background: var(--field); padding: clamp(19px, 3vw, 32px); }
+    .eyebrow { margin: 0; color: var(--rust); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; }
+    .map h2 { margin: 8px 0 0; font: 400 clamp(26px, 3.4vw, 39px)/1 Georgia, 'Times New Roman', serif; letter-spacing: -.035em; }
+    .diagram { display: block; width: 100%; height: auto; margin: 24px 0 8px; }
+    .placement { display: grid; grid-template-columns: 27px 112px 1fr; gap: 10px; border-top: 1px solid #c5c3ba; padding: 14px 0; }
+    .placement:last-of-type { border-bottom: 1px solid #c5c3ba; }
+    .number { color: var(--rust); font: 18px/1 Georgia, 'Times New Roman', serif; }
+    .placement h3 { margin: 0; color: var(--muted); font-size: 9px; font-weight: 400; letter-spacing: .12em; line-height: 1.55; text-transform: uppercase; }
+    .placement p { margin: 0; color: #42433d; font: 13px/1.6 Georgia, 'Times New Roman', serif; }
+    .placement p + p { margin-top: 6px; }
+    .visible { color: var(--rust); }
+    .diagram-note { margin: 12px 0 0; color: var(--muted); font-size: 9px; letter-spacing: .1em; line-height: 1.6; text-transform: uppercase; }
+    .readings { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 6vw, 78px); margin: clamp(52px, 8vw, 82px) 0 0; border-top: 1px solid var(--rule); padding-top: 14px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .readings h2 { margin: 0 0 9px; color: var(--rust); font-size: 10px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase; }
+    .readings p { max-width: 600px; margin: 0; }
+    .readings p + p { margin-top: 9px; }
+    .source { margin: 34px 0 0; border-top: 1px solid var(--rule); padding-top: 12px; color: var(--muted); font-size: 10px; line-height: 1.75; }
+    nav { margin-top: 25px; border-top: 1px solid var(--rule); padding-top: 11px; font-size: 10px; letter-spacing: .1em; line-height: 1.9; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 760px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.8; }
+      .masthead span { display: block; }
+      header { padding-top: 48px; }
+      .stage { grid-template-columns: 1fr; }
+      .photo { min-height: 0; }
+      .photo img { max-height: 650px; }
+      .map { padding: 21px; }
+      .placement { grid-template-columns: 23px 94px 1fr; }
+      .readings { grid-template-columns: 1fr; gap: 18px; }
+      figcaption { display: block; font-size: 8px; }
+      figcaption span { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 32 / 11 October 2026</span><span>One assembly / three placements</span></div>
+    <header>
+      <h1>One class,<br>three placements</h1>
+      <p class="dek">The Getty catalogue names a pointer-head discharge on the sauceboat, on its stand's cradle, and beneath the stand's base. Only the boat lip has a numbered close-up of the head.</p>
+    </header>
+
+    <section class="stage" aria-label="Getty assembly photograph and component locator">
+      <figure>
+        <div class="photo"><img src="assets/getty-sauceboat-71-DG-76.jpg" alt="A silver sauceboat rests on a pierced cradle above an oval stand. The catalogue photograph shows the assembled object but does not resolve its marks."></div>
+        <figcaption><span>Getty Museum / 71.DG.76</span><span>Assembled view / CC0</span></figcaption>
+      </figure>
+
+      <section class="map" aria-labelledby="map-title">
+        <p class="eyebrow">The catalogue's components</p>
+        <h2>Boat, cradle, base</h2>
+        <svg class="diagram" viewBox="0 0 500 292" role="img" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">Schematic of three Getty pointer-head locations</title>
+          <desc id="diagram-desc">An exploded schematic separates the sauceboat from the cradle and base. A point marks the proper-left pouring lip; a rust arc indicates the cradle's exterior rim; a rust line below the base indicates its underside.</desc>
+          <path d="M106 37 C143 11 357 11 394 37 L445 61 L400 70 C359 99 141 99 100 70 L55 61 Z" fill="none" stroke="#77776e" stroke-width="1.6"/>
+          <path d="M55 61 L101 70 M445 61 L399 70" fill="none" stroke="#77776e" stroke-width="1.6"/>
+          <circle cx="421" cy="66" r="5" fill="#985643"/>
+          <path d="M105 137 C150 119 350 119 395 137 M130 149 C170 166 330 166 370 149" fill="none" stroke="#77776e" stroke-width="1.4"/>
+          <path d="M109 137 C150 119 350 119 391 137" fill="none" stroke="#985643" stroke-width="2.2"/>
+          <path d="M123 151 L377 151 M150 172 L350 172" fill="none" stroke="#77776e" stroke-width="1.4"/>
+          <path d="M157 182 L343 182" fill="none" stroke="#985643" stroke-width="2.2"/>
+          <path d="M90 109 L410 109 M90 199 L410 199" stroke="#c5c3ba" stroke-width="1" stroke-dasharray="3 6"/>
+          <text x="25" y="132" fill="#77776e" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">CRADLE</text>
+          <text x="25" y="194" fill="#77776e" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">BASE</text>
+          <text x="478" y="31" text-anchor="end" fill="#985643" font-family="Arial, sans-serif" font-size="10" letter-spacing="1">1 / MARK 9.3</text>
+          <text x="478" y="125" text-anchor="end" fill="#985643" font-family="Arial, sans-serif" font-size="10" letter-spacing="1">2 / RIM</text>
+          <text x="478" y="220" text-anchor="end" fill="#985643" font-family="Arial, sans-serif" font-size="10" letter-spacing="1">3 / CAT. 9.4</text>
+          <text x="250" y="265" text-anchor="middle" fill="#77776e" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">EXPLODED SCHEMATIC / NOT TO SCALE</text>
+        </svg>
+        <div class="placement">
+          <span class="number">1</span><h3>Sauceboat</h3>
+          <div><p><span class="visible">Proper left pouring lip.</span> The catalogue links this location to <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-3">Mark 9.3</a>, the readable pointer head.</p></div>
+        </div>
+        <div class="placement">
+          <span class="number">2</span><h3>Cradle</h3>
+          <div><p>Pointer head on the exterior of the rim.</p><p><a href="https://www.getty.edu/publications/french-silver/catalogue/9/#cat-9-2">Cat. 9.2</a> and <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#cat-9-3">Cat. 9.3</a> show the stand, but neither resolves the rim mark.</p></div>
+        </div>
+        <div class="placement">
+          <span class="number">3</span><h3>Stand base</h3>
+          <div><p>Pointer head listed underneath, with the base marks.</p><p><a href="https://www.getty.edu/publications/french-silver/catalogue/9/#cat-9-4">Cat. 9.4</a> shows the underside; <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-4">Mark 9.4</a> details its maker's stamp. The pointer head is not legible in the overview.</p></div>
+        </div>
+        <p class="diagram-note">Rust lines mark described surfaces, not individual punches. The schematic has no photographic orientation.</p>
+      </section>
+    </section>
+
+    <section class="readings">
+      <div>
+        <h2>One class in the record</h2>
+        <p>The sauceboat is component 71.DG.76.a. The stand is 71.DG.76.b, built from a cradle and a base. The Getty names the 1762&ndash;1768 Paris pointer-head discharge at all three locations.</p>
+      </div>
+      <div>
+        <h2>One detail in the catalogue</h2>
+        <p>The lip alone has a numbered close-up of the pointer head. Cat. 9.4 shows the base underside; Mark 9.4 details the maker's stamp there, while the pointer head remains unreadable in the overview. The shared class does not establish use of one physical punch.</p>
+      </div>
+    </section>
+
+    <p class="source">Jean-Baptiste François Chéret, <i>Sauceboat on Stand</i>, 1762&ndash;63, Getty Museum, 71.DG.76. The main collection image is CC0. Placement and component descriptions: <a href="https://www.getty.edu/publications/french-silver/catalogue/9/">Getty, <i>French Silver</i>, catalogue 9</a>. Publication details are licensed CC BY-NC 4.0; <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-3">Mark 9.3</a>, <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#cat-9-4">Cat. 9.4</a>, and <a href="https://www.getty.edu/publications/french-silver/catalogue/9/#mark-9-4">Mark 9.4</a> are linked here, not reproduced.</p>
+    <nav><a href="index.html">Second place</a> / <a href="mark-numbers.html">Study 34 / Adjacent numbers, different marks</a> / <a href="mark-surfaces.html">Study 35 / Two faces of one base</a> / <a href="fourth-in-sentence.html">Study 33 / The fourth is in the sentence</a> / <a href="at-left-lip.html">Study 31 / A head at the lip</a> / <a href="two-circles.html">Study 29 / A ring and a dot</a> / <a href="period-not-imprint.html">Study 36 / A period is not an imprint</a> / <a href="marking-sites.html">Study 37 / Twenty-one listed placements</a></nav>
+  </main>
+</body>
+</html>

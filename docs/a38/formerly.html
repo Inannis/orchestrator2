@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e7e6e2">
+  <title>[Unknown Company, 30th Pennsylvania Infantry] — A38</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #e7e6e2;
+      --ink: #20211f;
+      --muted: #686963;
+      --rule: #b8b8b0;
+      --accent: #72594d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: min(100% - 64px, 1120px); margin: 0 auto; padding: 28px 0 38px; }
+    header, .label, figcaption, footer, .links { font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
+    header { display: flex; justify-content: space-between; border-bottom: 1px solid var(--rule); padding-bottom: 13px; color: var(--muted); }
+    h1 { margin: clamp(48px, 8vw, 92px) 0 28px; font: 400 clamp(58px, 10vw, 118px)/.9 Georgia, 'Times New Roman', serif; letter-spacing: -.065em; }
+    h1.work-title { font-size: clamp(29px, 4.1vw, 49px); line-height: 1.04; letter-spacing: -.05em; }
+    figure { margin: 0; }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { display: flex; justify-content: space-between; gap: 18px; margin-top: 10px; color: var(--muted); }
+    .record { display: grid; grid-template-columns: 1fr 1fr; gap: 38px; margin-top: clamp(48px, 8vw, 84px); padding: 20px 0 22px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    .entry + .entry { margin-top: 25px; }
+    .label { display: block; margin-bottom: 8px; color: var(--accent); }
+    .value { margin: 0; font: 400 clamp(22px, 3vw, 34px)/1.2 Georgia, 'Times New Roman', serif; }
+    .history { margin: 12px 0 0; color: var(--muted); font-size: 15px; line-height: 1.45; }
+    footer { display: grid; grid-template-columns: 1fr auto; gap: 24px; margin-top: 32px; color: var(--muted); line-height: 1.9; }
+    footer p { margin: 0; }
+    footer a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 4px; }
+    .links { text-align: right; }
+    .links a { display: inline-block; margin-left: 12px; }
+    @media (max-width: 620px) {
+      main { width: min(100% - 36px, 500px); padding-top: 18px; }
+      h1 { margin-top: 58px; }
+      h1.work-title { font-size: 29px; }
+      .record { grid-template-columns: 1fr; gap: 26px; margin-top: 48px; }
+      footer { grid-template-columns: 1fr; gap: 14px; }
+      .links { text-align: left; }
+      .links a { margin: 0 12px 0 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span>A38 / Study 004</span><span>11 October 2026</span></header>
+    <h1 class="work-title">[Unknown Company, 30th Pennsylvania Infantry]</h1>
+    <figure>
+      <img src="infantry.jpg" alt="A large formation of infantrymen standing in a line at camp, with trees, tents, and a broad open sky behind them." width="600" height="481">
+      <figcaption><span>1861–65</span><span>Object 33.65.238</span></figcaption>
+    </figure>
+    <section class="record" aria-label="Catalog fields">
+      <div>
+        <div class="entry">
+          <span class="label">Medium</span>
+          <p class="value">Albumen silver print from glass negative</p>
+        </div>
+      </div>
+      <div>
+        <span class="label">Artist</span>
+        <p class="value">Unknown (American)</p>
+        <p class="history">The Met record notes a former attribution to Mathew B. Brady.</p>
+      </div>
+    </section>
+    <footer>
+      <p>The Metropolitan Museum of Art · image in the public domain<br><a href="https://www.metmuseum.org/art/collection/search/268032">Object 268032</a></p>
+      <nav class="links" aria-label="Other studies"><a href="one-of-a-pair.html">Study 001 · One of a pair</a><br><a href="covered-toilet-box.html">Study 002 · A Room in the Word</a><br><a href="ten-seconds.html">Study 003 · Ten seconds</a></nav>
+    </footer>
+  </main>
+</body>
+</html>

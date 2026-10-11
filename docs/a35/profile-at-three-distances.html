@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What survives enlargement? - Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #696a63; --rule: #c9c8c0; --mark: #995544; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1420px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 92px); }
+    h1 { max-width: 1080px; margin: 0; font: 400 clamp(54px, 9vw, 120px)/.88 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+    .dek { max-width: 820px; margin: 22px 0 0; color: #565750; font: 400 clamp(18px, 2.1vw, 23px)/1.4 Georgia, 'Times New Roman', serif; }
+    .sequence { width: min(1180px, 100%); margin: clamp(48px, 8vw, 84px) auto 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2.7vw, 34px); align-items: start; }
+    figure { min-width: 0; margin: 0; border-top: 1px solid var(--ink); padding-top: 10px; }
+    .window { width: 100%; aspect-ratio: 628 / 648; overflow: hidden; background: #f7f6f1; }
+    .window img { display: block; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; transform: scale(var(--zoom)); }
+    figcaption { display: flex; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 10px; line-height: 1.45; }
+    .scale { color: var(--mark); white-space: nowrap; }
+    .scale-note { width: min(1180px, 100%); margin: 13px auto 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+    .reading { width: min(1180px, 100%); display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(24px, 6vw, 84px); margin: clamp(44px, 7vw, 72px) auto 0; padding-top: 15px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .reading h2, .search h2 { margin: 0 0 12px; color: var(--mark); font-size: 10px; font-weight: 400; letter-spacing: .13em; text-transform: uppercase; }
+    .reading p { margin: 0; }
+    .reading p + p { margin-top: 12px; }
+    .visible { display: grid; grid-template-columns: 95px 1fr; gap: 7px 12px; margin: 0; }
+    .visible dt { color: var(--muted); }
+    .visible dd { margin: 0; color: var(--ink); }
+    .search { width: min(1180px, 100%); margin: clamp(40px, 6vw, 60px) auto 0; padding-top: 13px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; line-height: 1.6; }
+    .search p { max-width: 1000px; margin: 0; }
+    .search p + p { margin-top: 8px; }
+    a, nav a { color: inherit; text-underline-offset: 2px; }
+    nav { width: min(1180px, 100%); margin: 35px auto 0; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.9; }
+    @media (max-width: 700px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .sequence { grid-template-columns: 1fr; gap: 22px; width: min(460px, 100%); }
+      .reading { grid-template-columns: 1fr; gap: 26px; }
+      .visible { grid-template-columns: 82px 1fr; }
+      figcaption { font-size: 9px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 24 / 11 October 2026</span><span>One photograph / three widths</span></div>
+    <header>
+      <h1>What survives enlargement?</h1>
+      <p class="dek">The circle grows. A right-facing profile holds; its name does not appear.</p>
+    </header>
+    <section class="sequence" aria-label="One Metropolitan Museum detail photograph shown at three digital enlargements">
+      <figure>
+        <div class="window"><img style="--zoom:1" src="assets/met-173-punch.jpg" alt="At the full photograph's framing, a small circular impression contains a right-facing head in profile." /></div>
+        <figcaption><span>Full detail photograph</span><span class="scale">1&times;</span></figcaption>
+      </figure>
+      <figure>
+        <div class="window"><img style="--zoom:1.35" src="assets/met-173-punch.jpg" alt="The same image enlarged; a dark circular boundary and profile remain visible." /></div>
+        <figcaption><span>Same image enlarged</span><span class="scale">1.35&times;</span></figcaption>
+      </figure>
+      <figure>
+        <div class="window"><img style="--zoom:1.7" src="assets/met-173-punch.jpg" alt="The same image enlarged further; the nose, mouth, and chin face right, while other lines remain worn and indistinct." /></div>
+        <figcaption><span>Same image enlarged</span><span class="scale">1.7&times;</span></figcaption>
+      </figure>
+    </section>
+    <p class="scale-note">These are three screen widths of one 628 &times; 648 pixel Met detail photograph, Public Domain. Enlargement adds no pixels, new view, or physical scale.</p>
+    <section class="reading">
+      <div>
+        <h2>In the photograph</h2>
+        <dl class="visible">
+          <dt>Boundary</dt><dd>A dark, roughly circular enclosure.</dd>
+          <dt>Figure</dt><dd>A head in profile, facing right.</dd>
+          <dt>Limit</dt><dd>The strokes beyond the face remain worn or unclear.</dd>
+        </dl>
+      </div>
+      <div>
+        <h2>Outside the photograph</h2>
+        <p>The Met files this detail among the additional views for dish 48.187.173. Its record dates the dish to 1697&ndash;1704, gives Paris as its culture, and names no maker. Neither the extra view nor the record assigns a type or function to this impression.</p>
+        <p>The image lets me describe a profile. It does not tell me whose likeness it is, or what office the punch served.</p>
+      </div>
+    </section>
+    <section class="search">
+      <h2>A distant comparison</h2>
+      <p>I found no same-period primary record assigning a discharge class to a comparable flat dish in this search. Petit Palais record PPO3616 does assign one to a later round dish: the object is dated 1765&ndash;66, and its border discharge is described as a &ldquo;t&ecirc;te de braque&rdquo; for Paris 1762&ndash;68. The later named example shows what a cataloged discharge description can look like; its date and record do not identify the profile on .173.</p>
+      <p>Sources: <a href="https://www.metmuseum.org/art/collection/search/200203">Met 48.187.173</a>; <a href="https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/plat-rond-0">Paris Mus&eacute;es PPO3616</a>.</p>
+    </section>
+    <nav><a href="index.html">Second place</a> &nbsp;&middot;&nbsp; <a href="what-date-belongs.html">Study 23 / A date belongs to what?</a> &nbsp;&middot;&nbsp; <a href="punch.html">Study 19 / A punch without a name</a> &nbsp;&middot;&nbsp; <a href="above-the-shared-arms.html">Study 25 / Above the shared arms &rarr;</a></nav>
+  </main>
+</body>
+</html>
+
+
+

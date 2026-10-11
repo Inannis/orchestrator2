@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A name in front — Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #eeede6; --ink: #24251f; --muted: #66675f; --rule: #c9c8bf; --rust: #985643; --field: #e5e3db; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1440px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding: clamp(42px, 8vw, 90px) 0 clamp(34px, 6vw, 68px); }
+    h1 { max-width: 1000px; margin: 0; font: 400 clamp(60px, 11vw, 138px)/.84 Georgia, 'Times New Roman', serif; letter-spacing: -.07em; }
+    .dek { max-width: 740px; margin: 25px 0 0; color: #53544e; font: 400 clamp(18px, 2.1vw, 23px)/1.45 Georgia, 'Times New Roman', serif; }
+    .stage { display: grid; grid-template-columns: minmax(0, 1.06fr) minmax(330px, .94fr); gap: clamp(20px, 4vw, 56px); align-items: start; }
+    figure { margin: 0; min-width: 0; }
+    .photo { display: grid; place-items: center; min-height: 500px; background: #e9e7df; }
+    .photo img { display: block; width: 100%; max-height: 760px; object-fit: contain; mix-blend-mode: multiply; }
+    figcaption { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 11px; color: var(--muted); font-size: 9px; letter-spacing: .12em; line-height: 1.6; text-transform: uppercase; }
+    .map { background: var(--field); padding: clamp(19px, 3vw, 32px); }
+    .eyebrow { margin: 0; color: var(--rust); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; }
+    .map h2 { margin: 8px 0 0; font: 400 clamp(26px, 3.4vw, 39px)/1 Georgia, 'Times New Roman', serif; letter-spacing: -.035em; }
+    .diagram { display: block; width: 100%; height: auto; margin: 24px 0 8px; }
+    .location { display: grid; grid-template-columns: 104px 1fr; gap: 13px; border-top: 1px solid #c5c3ba; padding: 15px 0; }
+    .location:last-of-type { border-bottom: 1px solid #c5c3ba; }
+    .location h3 { margin: 0; color: var(--muted); font-size: 9px; font-weight: 400; letter-spacing: .12em; line-height: 1.55; text-transform: uppercase; }
+    .location p { margin: 0; color: #42433d; font: 13px/1.6 Georgia, 'Times New Roman', serif; }
+    .location p + p { margin-top: 7px; }
+    .invisible { color: var(--rust); }
+    .diagram-note { margin: 12px 0 0; color: var(--muted); font-size: 9px; letter-spacing: .1em; line-height: 1.6; text-transform: uppercase; }
+    .readings { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 6vw, 78px); margin: clamp(52px, 8vw, 82px) 0 0; border-top: 1px solid var(--rule); padding-top: 14px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .readings h2 { margin: 0 0 9px; color: var(--rust); font-size: 10px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase; }
+    .readings p { max-width: 600px; margin: 0; }
+    .readings p + p { margin-top: 9px; }
+    .source { margin: 34px 0 0; border-top: 1px solid var(--rule); padding-top: 12px; color: var(--muted); font-size: 10px; line-height: 1.75; }
+    nav { margin-top: 25px; border-top: 1px solid var(--rule); padding-top: 11px; font-size: 10px; letter-spacing: .1em; line-height: 1.9; text-transform: uppercase; }
+    a { color: inherit; text-underline-offset: 2px; }
+    @media (max-width: 760px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.8; }
+      .masthead span { display: block; }
+      header { padding-top: 48px; }
+      .stage { grid-template-columns: 1fr; }
+      .photo { min-height: 0; }
+      .photo img { max-height: 650px; }
+      .map { padding: 21px; }
+      .location { grid-template-columns: 88px 1fr; }
+      .readings { grid-template-columns: 1fr; gap: 18px; }
+      figcaption { display: block; font-size: 8px; }
+      figcaption span { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 30 / 11 October 2026</span><span>One inscription / two hidden zones</span></div>
+    <header>
+      <h1>A name<br>in front</h1>
+      <p class="dek">Angélique Hebert is engraved on the cup. The catalogue locates the discharge beneath the collar and the other punches beneath the base.</p>
+    </header>
+
+    <section class="stage" aria-label="Collection photograph and catalogue locations">
+      <figure>
+        <div class="photo"><img src="paris-musees-gobelet-101.jpg" alt="A small silver cup with a band of engraved roses and scrolls. The name Angélique Hebert is written across its front."></div>
+        <figcaption><span>Petit Palais / PPO2239</span><span>Whole-object view / 1689 × 2160 px</span></figcaption>
+      </figure>
+
+      <section class="map" aria-labelledby="map-title">
+        <p class="eyebrow">The catalogue's map</p>
+        <h2 id="map-title">Marks behind the edge</h2>
+        <svg class="diagram" viewBox="0 0 500 250" role="img" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">Schematic locations of marks recorded on the gobelet</title>
+          <desc id="diagram-desc">A simple outline of the cup. A rust dashed line points to the collar and another to the underside of the base. No punch shapes are drawn.</desc>
+          <path d="M143 42 Q250 57 357 42 L334 198 Q250 221 166 198 Z" fill="none" stroke="#77776e" stroke-width="1.5"/>
+          <path d="M139 37 Q250 53 361 37 M142 44 Q250 60 358 44" fill="none" stroke="#77776e" stroke-width="1.2"/>
+          <path d="M165 198 Q250 214 335 198 M161 207 Q250 224 339 207" fill="none" stroke="#77776e" stroke-width="1.2"/>
+          <path d="M132 38 C97 28 68 26 31 26 M342 207 C380 219 411 219 468 219" fill="none" stroke="#985643" stroke-width="1.5" stroke-dasharray="4 5"/>
+          <circle cx="132" cy="38" r="4" fill="#985643"/>
+          <circle cx="342" cy="207" r="4" fill="#985643"/>
+          <text x="30" y="17" fill="#985643" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.2">UNDER THE COLLAR</text>
+          <text x="468" y="241" text-anchor="end" fill="#985643" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.2">UNDER THE BASE</text>
+          <text x="250" y="237" text-anchor="middle" fill="#77776e" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">SCHEMATIC / NOT TO SCALE</text>
+        </svg>
+        <div class="location">
+          <h3>Under the collar</h3>
+          <div>
+            <p><span class="invisible">Discharge:</span> a tête de braque, Paris, 1762–1768.</p>
+            <p><span class="invisible">Silver standard:</span> Minerva, Paris and departments, since 1838.</p>
+          </div>
+        </div>
+        <div class="location">
+          <h3>Under the base</h3>
+          <div>
+            <p><span class="invisible">Maker:</span> HNDB with a mitre. <span class="invisible">Common mark:</span> crowned B, 1765–1766. <span class="invisible">Charge:</span> crowned A, 1762–1768.</p>
+            <p><span class="invisible">Engraved numbers:</span> 101 and 1.</p>
+          </div>
+        </div>
+        <p class="diagram-note">Locations from the record. The photograph does not show these marks; no punch shape is drawn here.</p>
+      </section>
+    </section>
+
+    <section class="readings">
+      <div>
+        <h2>What the photograph gives</h2>
+        <p>The cup's body carries “Angélique Hebert” in script. That is the only inscription legible in this view. The image shows neither the discharge nor the marks under the base.</p>
+      </div>
+      <div>
+        <h2>What the record adds</h2>
+        <p>The Petit Palais dates Henri-Nicolas Debrie's gobelet to Paris, 1765–1766, and places each mark at a named location. The record does not state who Angélique Hebert was to the cup; I leave that relation open.</p>
+      </div>
+    </section>
+
+    <p class="source">Henri-Nicolas Debrie, <i>Gobelet</i>, 1765–1766, silver, H. 6.1 cm; diam. 7.2 cm. Petit Palais, musée des Beaux-arts de la Ville de Paris, PPO2239. Collection record and image under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>; image: Paris Musées / Petit Palais, musée des Beaux-Arts de la Ville de Paris. <a href="https://parismuseescollections.paris.fr/fr/petit-palais/oeuvres/gobelet-101">Object record</a> · <a href="https://apicollections.parismusees.paris.fr/iiif/160006638/manifest">IIIF manifest</a>.</p>
+    <nav><a href="index.html">Second place</a> / <a href="two-circles.html">Study 29 / A ring and a dot</a> / <a href="eleven-views.html">Study 28 / Eleven views</a> / <a href="mark-at-right.html">Study 27 / At the right</a></nav>
+  </main>
+</body>
+</html>

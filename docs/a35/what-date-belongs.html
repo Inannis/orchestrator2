@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A date belongs to what? - Second place</title>
+  <style>
+    :root { color-scheme: light; --paper: #efeee8; --ink: #252621; --muted: #696a63; --rule: #c9c8c0; --mark: #995544; --object: #777870; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(1420px, 100%); margin: 0 auto; padding: 24px clamp(20px, 5vw, 72px) 48px; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 11px; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding-top: clamp(42px, 8vw, 92px); }
+    h1 { max-width: 1100px; margin: 0; font: 400 clamp(54px, 8.8vw, 118px)/.88 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; }
+    .dek { max-width: 850px; margin: 22px 0 0; color: #565750; font: 400 clamp(18px, 2.1vw, 23px)/1.4 Georgia, 'Times New Roman', serif; }
+    .key { width: min(1220px, 100%); margin: clamp(48px, 8vw, 82px) auto 14px; display: flex; gap: 22px; flex-wrap: wrap; color: var(--muted); font-size: 10px; line-height: 1.5; }
+    .key span { display: inline-flex; gap: 7px; align-items: center; }
+    .swatch { width: 28px; height: 6px; border-radius: 4px; background: var(--object); }
+    .swatch.mark { background: var(--mark); }
+    .chart { width: min(1220px, 100%); margin: 0 auto; border-top: 1px solid var(--ink); }
+    .axis, .row { display: grid; grid-template-columns: minmax(170px, 1.05fr) minmax(310px, 1.5fr) minmax(220px, 1fr); gap: 20px; }
+    .axis { align-items: end; padding: 10px 0 8px; color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .1em; }
+    .years { display: flex; justify-content: space-between; padding-bottom: 4px; font-size: 9px; letter-spacing: 0; text-transform: none; }
+    .row { border-top: 1px solid var(--rule); padding: 17px 0 19px; align-items: start; }
+    .identity a { color: var(--ink); font: 400 clamp(17px, 2vw, 22px)/1.15 Georgia, 'Times New Roman', serif; text-decoration: none; text-underline-offset: 3px; }
+    .identity a:hover { text-decoration: underline; }
+    .identity span { display: block; margin-top: 5px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+    .bars { display: grid; gap: 8px; }
+    .bar-row { display: grid; grid-template-columns: 63px minmax(0, 1fr) 86px; gap: 9px; align-items: center; min-height: 17px; font-size: 9px; }
+    .bar-name, .bar-date { color: var(--muted); }
+    .bar-date { text-align: right; white-space: nowrap; }
+    .track { position: relative; height: 14px; background: linear-gradient(to right, transparent calc(14.285% - .5px), var(--rule) calc(14.285% - .5px), var(--rule) calc(14.285% + .5px), transparent calc(14.285% + .5px)), linear-gradient(to right, transparent calc(28.57% - .5px), var(--rule) calc(28.57% - .5px), var(--rule) calc(28.57% + .5px), transparent calc(28.57% + .5px)), linear-gradient(to right, transparent calc(42.855% - .5px), var(--rule) calc(42.855% - .5px), var(--rule) calc(42.855% + .5px), transparent calc(42.855% + .5px)), linear-gradient(to right, transparent calc(57.14% - .5px), var(--rule) calc(57.14% - .5px), var(--rule) calc(57.14% + .5px), transparent calc(57.14% + .5px)), linear-gradient(to right, transparent calc(71.425% - .5px), var(--rule) calc(71.425% - .5px), var(--rule) calc(71.425% + .5px), transparent calc(71.425% + .5px)), linear-gradient(to right, transparent calc(85.71% - .5px), var(--rule) calc(85.71% - .5px), var(--rule) calc(85.71% + .5px), transparent calc(85.71% + .5px)), linear-gradient(to right, transparent calc(100% - 1px), var(--rule) calc(100% - 1px)); }
+    .band { position: absolute; top: 3px; left: var(--left); width: max(1px, var(--width)); height: 8px; border-radius: 5px; background: var(--object); }
+    .named .band { background: var(--mark); }
+    .not-recorded { height: 14px; border-bottom: 1px dotted var(--rule); }
+    .reading { width: min(1220px, 100%); display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(220px, .7fr); gap: clamp(24px, 6vw, 82px); margin: clamp(42px, 7vw, 68px) auto 0; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .reading p { max-width: 800px; margin: 0; }
+    .reading p + p { margin-top: 12px; }
+    .note { border-left: 2px solid var(--mark); padding-left: 16px; color: var(--ink); }
+    .note strong { display: block; margin-bottom: 8px; color: var(--mark); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    .reading a, nav a { color: inherit; text-underline-offset: 2px; }
+    nav { width: min(1220px, 100%); margin: 35px auto 0; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.9; }
+    @media (max-width: 760px) {
+      main { padding-top: 17px; }
+      .masthead { display: block; line-height: 1.7; }
+      .masthead span { display: block; }
+      .axis, .row { grid-template-columns: 1fr; gap: 10px; }
+      .axis > :first-child, .axis > :last-child { display: none; }
+      .axis { display: block; padding-bottom: 3px; }
+      .years { padding: 0 69px 2px 72px; }
+      .bars { gap: 5px; }
+      .reading { grid-template-columns: 1fr; gap: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="masthead"><span>Study 23 / 11 October 2026</span><span>Object date / named mark period</span></div>
+    <header>
+      <h1>A date belongs to what?</h1>
+      <p class="dek">An object's date range and a punch's use period can overlap without being the same statement.</p>
+    </header>
+    <div class="key" aria-label="Chart legend"><span><i class="swatch"></i>Object date in the record</span><span><i class="swatch mark"></i>Period attached to a named mark</span><span>The dotted mark row means this record does not separately date that punch.</span></div>
+    <section class="chart" aria-label="Four museum records plotted against the years 1697 to 1704">
+      <div class="axis"><span>Record</span><div class="years"><span>1697</span><span>1698</span><span>1699</span><span>1700</span><span>1701</span><span>1702</span><span>1703</span><span>1704</span></div><span>Record field</span></div>
+      <div class="row">
+        <div class="identity"><a href="https://www.metmuseum.org/art/collection/search/200203">48.187.173 / dish</a><span>French, Paris / Wentworth bequest</span></div>
+        <div class="bars">
+          <div class="bar-row"><span class="bar-name">Object</span><div class="track"><span class="band" style="--left:0%;--width:100%"></span></div><span class="bar-date">1697&ndash;1704</span></div>
+          <div class="bar-row"><span class="bar-name">Punch</span><div class="not-recorded"></div><span class="bar-date">not named</span></div>
+        </div>
+        <div class="identity"><span>Profile visible in an extra view; function and maker unassigned.</span></div>
+      </div>
+      <div class="row">
+        <div class="identity"><a href="https://www.metmuseum.org/art/collection/search/200114">48.187.78 / teapot</a><span>French, Paris / Wentworth bequest</span></div>
+        <div class="bars">
+          <div class="bar-row"><span class="bar-name">Object</span><div class="track"><span class="band" style="--left:28.57%;--width:14.29%"></span></div><span class="bar-date">1699&ndash;1700</span></div>
+          <div class="bar-row"><span class="bar-name">Circle</span><div class="not-recorded"></div><span class="bar-date">unread</span></div>
+        </div>
+        <div class="identity"><span>Maker I. C. is named; the dark round impression remains too worn to compare.</span></div>
+      </div>
+      <div class="row">
+        <div class="identity"><a href="https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/goute-vin-16">Petit Palais / PPO2284</a><span>Paris Mus&eacute;es / silver tastevin</span></div>
+        <div class="bars">
+          <div class="bar-row"><span class="bar-name">Object</span><div class="track"><span class="band" style="--left:71.43%;--width:14.29%"></span></div><span class="bar-date">1702&ndash;1703</span></div>
+          <div class="bar-row named"><span class="bar-name">Discharge</span><div class="track"><span class="band" style="--left:0%;--width:100%"></span></div><span class="bar-date">1697&ndash;1704</span></div>
+        </div>
+        <div class="identity"><span>Ducal crown with lizard; the full-object photo does not resolve the rim.</span></div>
+      </div>
+      <div class="row">
+        <div class="identity"><a href="https://pop.culture.gouv.fr/notice/palissy/IM89002362">IM89002362 / incense boat</a><span>French Ministry of Culture / POP</span></div>
+        <div class="bars">
+          <div class="bar-row"><span class="bar-name">Object</span><div class="track"><span class="band" style="--left:0%;--width:100%"></span></div><span class="bar-date">1697&ndash;1704</span></div>
+          <div class="bar-row named"><span class="bar-name">Discharges</span><div class="track"><span class="band" style="--left:0%;--width:100%"></span></div><span class="bar-date">1697&ndash;1704</span></div>
+        </div>
+        <div class="identity"><span>Two component-specific classes and a separate maker's mark.</span></div>
+      </div>
+    </section>
+    <section class="reading">
+      <div>
+        <p>The grey bars report when the museum dates the object. Rust bars appear only when a record gives a period for a named discharge mark. The overlap is real, but the record fields answer different questions.</p>
+        <p>The Met dates .173 to 1697&ndash;1704; it does not call its profile a discharge, charge, or maker's mark. The teapot's circle is also unclassified. Nearby Paris objects give examples of dated discharges, including more than one category within a single multi-part object, but those records do not assign a class to the dish.</p>
+      </div>
+      <aside class="note"><strong>Not one clock</strong>The same date span can describe an object, a stamp's use, or both. The chart keeps those statements on separate lines.</aside>
+    </section>
+    <nav><a href="index.html">Second place</a> &nbsp;&middot;&nbsp; <a href="two-discharges.html">Study 22 / Two discharges, one object</a> &nbsp;&middot;&nbsp; <a href="discharge-period.html">Study 21 / Dated, not identified</a> &nbsp;&middot;&nbsp; <a href="profile-at-three-distances.html">Study 24 / What survives enlargement? &rarr;</a></nav>
+  </main>
+</body>
+</html>
+
