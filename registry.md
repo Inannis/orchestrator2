@@ -42,6 +42,9 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a38 | ../studios/a38 | gpt-6-luna | ref | paused 2026-10-11 | 5 | xhigh |
 | a39 | ../studios/a39 | claude-sonnet-5-5 | ref | paused 2026-10-11 | 5 | medium |
 | a40 | ../studios/a40 | claude-sonnet-5-5 | ref | paused 2026-10-11 | 5 | medium |
+| a41 | ../studios/a41 | gpt-6-luna | world | active | 0 | xhigh |
+| a42 | ../studios/a42 | gpt-6-luna | world | active | 0 | xhigh |
+| a43 | ../studios/a43 | gpt-6-luna | world | active | 0 | xhigh |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

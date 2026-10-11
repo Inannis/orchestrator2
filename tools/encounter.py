@@ -6,7 +6,7 @@ try:
     import certifi; CTX = ssl.create_default_context(cafile=certifi.where())
 except ImportError:
     CTX = ssl.create_default_context()
-UA = {"User-Agent": "orchestrator2/0.1 (art project)"}
+UA = {"User-Agent": "orchestrator2/0.2 (art project; https://inannis.github.io/orchestrator2/)"}
 def get(url, binary=False):
     url = urllib.request.quote(url, safe=":/?=&%#+,;@")
     r = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30, context=CTX).read()
@@ -105,7 +105,42 @@ def inaturalist(inbox, stamp):
     return (f"A living thing, seen by someone this week and posted to iNaturalist, picked at random. Image: `encounter-{stamp}.jpg`.\n\n"
             f"{tx.get('preferred_common_name') or ''} ({tx.get('name')})\nSeen: {r.get('observed_on')}, {r.get('place_guess')}\nhttps://www.inaturalist.org/observations/{r['id']}\n")
 
+def commons_audio(inbox, stamp):
+    d = json.loads(get("https://commons.wikimedia.org/w/api.php?action=query&generator=random&grnnamespace=6&grnlimit=50&prop=imageinfo&iiprop=url|mime|extmetadata&format=json"))
+    for p in d["query"]["pages"].values():
+        ii = p["imageinfo"][0]
+        if ii["mime"] in ("audio/ogg", "audio/mpeg", "audio/wav", "audio/x-wav", "audio/flac", "application/ogg"): break
+    else: return None
+    ext = pathlib.Path(ii["url"].split("?")[0]).suffix or ".ogg"
+    (inbox / f"encounter-{stamp}{ext}").write_bytes(get(ii["url"], binary=True))
+    desc = re.sub(r"<[^>]+>", "", ii.get("extmetadata", {}).get("ImageDescription", {}).get("value", "")).strip()[:500]
+    return f"A sound, picked at random from Wikimedia Commons. File: `encounter-{stamp}{ext}`.\n\n{p['title'][5:]}\n{desc}\n{ii['descriptionurl']}\n"
+
+def weather(inbox, stamp):
+    places = json.loads(get("https://en.wikipedia.org/w/api.php?action=query&list=random&rnnamespace=0&rnlimit=20&format=json"))["query"]["random"]
+    for pl in places:
+        c = json.loads(get("https://en.wikipedia.org/w/api.php?action=query&prop=coordinates&format=json&titles=" + urllib.request.quote(pl["title"])))
+        co = next(iter(c["query"]["pages"].values())).get("coordinates")
+        if co: break
+    else: return None
+    lat, lon = co[0]["lat"], co[0]["lon"]
+    w = json.loads(get(f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,relative_humidity_2m,precipitation,cloud_cover,wind_speed_10m,is_day&timezone=auto"))
+    cur = w.get("current", {}); u = w.get("current_units", {})
+    body = "\n".join(f"{k}: {v}{u.get(k, '')}" for k, v in cur.items() if k != "interval")
+    return f"The weather right now somewhere, at a place picked at random from Wikipedia: {pl['title']} ({lat:.3f}, {lon:.3f}).\n\n{body}\n"
+
+def wikiquote(inbox, stamp):
+    for _ in range(6):
+        t = json.loads(get("https://en.wikiquote.org/w/api.php?action=query&list=random&rnnamespace=0&rnlimit=1&format=json"))["query"]["random"][0]["title"]
+        w = json.loads(get("https://en.wikiquote.org/w/api.php?action=parse&prop=wikitext&format=json&page=" + urllib.request.quote(t)))
+        lines = [re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", l[1:].strip()).replace("'''", "").replace("''", "")
+                 for l in w.get("parse", {}).get("wikitext", {}).get("*", "").splitlines() if re.match(r"\*[^*:]", l)]
+        lines = [l for l in lines if 40 < len(l) < 600 and not l.startswith(("{", "<"))]
+        if lines: return f"Something someone said, picked at random from Wikiquote ({t}).\n\n{random.choice(lines)}\n"
+    return None
+
 FEEDS = {"museum": [met, artic, gutenberg, wikipedia, living_artist, living_artist],
+         "world": [commons_photo, current_event, inaturalist, gutenberg, met, commons_audio, weather, wikiquote],
          "wide": [commons_photo, current_event, inaturalist, gutenberg, wikipedia, living_artist, met],
          "objects": [met, met, gutenberg]}
 
