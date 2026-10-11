@@ -48,8 +48,8 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a44 | ../studios/a44 | gpt-6-luna | wall | paused 2026-10-11 | 2 | xhigh |
 | a45 | ../studios/a45 | gpt-6-luna | wall | paused 2026-10-11 | 2 | xhigh |
 | a46 | ../studios/a46 | gpt-6-luna | wall | paused 2026-10-11 | 2 | xhigh |
-| a47 | ../studios/a47 | gpt-6-luna | genesis | active | 0 | xhigh |
-| a48 | ../studios/a48 | gpt-6-luna | genesis | active | 0 | xhigh |
+| a47 | ../studios/a47 | gpt-6-luna | genesis | active | 1 | xhigh |
+| a48 | ../studios/a48 | gpt-6-luna | genesis | active | 1 | xhigh |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

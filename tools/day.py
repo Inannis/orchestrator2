@@ -57,7 +57,7 @@ def own_file():
     return pick
 
 def more(first_arrival):
-    if GENESIS: return "The day is not over. Go on to the next movement in `GENESIS.md`."
+    if GENESIS: return "The day is not over. Read the next movement in `GENESIS.md` and go on."
     if shape == "object" and not first_arrival:  # every continuation brings a new object (the first draw already did)
         feed = ["--feed", opt("--feed")] if opt("--feed") else []
         first_arrival = "delivered" in subprocess.run([sys.executable, str(root / "tools" / "encounter.py"), str(studio), "--p", "1"] + feed, capture_output=True, text=True).stdout
