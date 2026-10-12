@@ -15,6 +15,11 @@ if studio.exists(): sys.exit(f"{studio} exists")
 shutil.copytree(root / "template" / "studio", studio)
 if charter != "v5":
     shutil.copytree(root / "template" / "variants" / charter, studio, dirs_exist_ok=True)
+    omit = studio / "OMIT"  # template files this variant leaves out, one path per line
+    if omit.exists():
+        for rel in omit.read_text(encoding="utf-8").split():
+            (studio / rel).unlink(missing_ok=True)
+        omit.unlink()
 c = studio / "CHARTER.md"; c.write_text(c.read_text(encoding="utf-8").replace("{ID}", aid), encoding="utf-8")
 for d in ["inbox", "requests"]:
     (studio / d).mkdir(exist_ok=True)
