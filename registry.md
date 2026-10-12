@@ -31,11 +31,11 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a27 | ../studios/a27 | gpt-6-luna | R5 | paused 2026-10-10 | 10 | xhigh |
 | a28 | ../studios/a28 | gpt-6-luna | R5 | paused 2026-10-10 | 10 | xhigh |
 | a29 | ../studios/a29 | gpt-6-luna | R5 | paused 2026-10-10 | 5 | xhigh |
-| a30 | ../studios/a30 | gpt-6-luna | R5 | reference | 5 | xhigh |
+| a30 | ../studios/a30 | gpt-6-luna | R5 | paused 2026-10-12 | 5 | xhigh |
 | a31 | ../studios/a31 | gpt-6-luna | project | paused 2026-10-10 | 5 | xhigh |
 | a32 | ../studios/a32 | gpt-6-luna | twominds | paused 2026-10-10 | 5 | xhigh |
 | a33 | ../studios/a33 | gpt-6-luna | R5 | paused 2026-10-11 | 5 | xhigh |
-| a34 | ../studios/a34 | claude-sonnet-5-5 | R5 | reference | 5 | medium |
+| a34 | ../studios/a34 | claude-sonnet-5-5 | R5 | paused 2026-10-12 | 5 | medium |
 | a35 | ../studios/a35 | gpt-6-luna | R5 | paused 2026-10-11 | 5 | xhigh |
 | a36 | ../studios/a36 | gpt-6-luna | R5 | paused 2026-10-11 | 5 | xhigh |
 | a37 | ../studios/a37 | gpt-6-luna | R5 | paused 2026-10-11 | 5 | xhigh |
@@ -74,15 +74,15 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a70 | ../studios/a70 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a71 | ../studios/a71 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a72 | ../studios/a72 | gpt-6-luna | genesis8 | paused 2026-10-12 | 3 | medium |
-| a73 | ../studios/a73 | gpt-6-luna | genesis8 | paused 2026-10-12 | 3 | medium |
+| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 3 | medium |
 | a74 | ../studios/a74 | gpt-6-luna | genesis8 | paused 2026-10-12 | 3 | medium |
-| a75 | ../studios/a75 | claude-sonnet-5-5 | ref | active | 0 | medium |
-| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | active | 0 | medium |
-| a77 | ../studios/a77 | claude-sonnet-5-5 | ref | active | 0 | medium |
-| a78 | ../studios/a78 | gpt-6-luna | ref | active | 5 | xhigh |
-| a79 | ../studios/a79 | claude-sonnet-5-5 | ref | active | 5 | medium |
+| a75 | ../studios/a75 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 3 | medium |
+| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 3 | medium |
+| a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 3 | medium |
+| a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
+| a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
-The reference system is R6 from 2026-10-12 (the genesis, `ref`); its live pair waits on H43. R5 (a world beyond the museum): a30 (Luna, from H30) and a34 (Sonnet, the H31 restart check); a41–a43 fresh R5; a78, a79 their forks onto R6. a3 and a7 carried R1, a16 R2, a22 and a23 R3. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
+The reference is R6 from 2026-10-12 (the genesis, `ref`): a73 (Luna, Vyt Aitken) and a76 (Sonnet, Sakia). R5 (a world beyond the museum): a30 (Luna, from H30) and a34 (Sonnet, the H31 restart check); a41–a43 fresh R5; a78, a79 their forks onto R6. a3 and a7 carried R1, a16 R2, a22 and a23 R3. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
 Sites: https://inannis.github.io/orchestrator2/<id>/
