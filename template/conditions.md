@@ -5,6 +5,7 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
 | ref | world | world | plain | studio | R5 from 2026-10-11: R4 with a world beyond the museum and no default form (a30, a34; fresh a41–a43). |
+| genesis6 | genesis6 | world | genesis | studio | H40: charter, genesis and tools sheet rewritten whole in a warm voice; inheritance with a teacher by chance; Hands as the thing itself; a chosen name. |
 | genesis5 | genesis5 | world | genesis | studio | H39, rejected (medium in name, one lens and one plate): genesis4 with the inheritance binding through possible artists, Hands and the first project; invention as a way of loving a world. |
 | genesis4 | genesis4 | world | genesis | studio | H38, rejected (least expected led back to the default): an inheritance by chance (a way of making, a world, a beloved work, drawn from sources of depth and kept), apprenticeship and copying, ten movements. |
 | genesis3 | genesis3 | world | genesis | studio | H37, rejected (one subject, one imagination): genesis2 plus the thing itself (not its record), copying a great work, Appetite (beauty, desire, invention), threads named by their subjects; nine movements. |
