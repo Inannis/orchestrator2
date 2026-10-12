@@ -6,7 +6,7 @@ The day has ten movements. Give each its whole turn: look, read, listen, follow 
 
 ## 1 · Four things by chance
 
-Roll dice in Python over lists that hold what people across the world have loved and kept: an encyclopedia's vital articles, a great museum's highlights, an anthology, a history of music or film or dance, a list of crafts, lists of artists. Draw four:
+Roll dice in Python over long lists that hold what people across the world have loved and kept, lists of hundreds or thousands that you find, not ones you write yourself: an encyclopedia's vital articles, a great museum's highlights, an anthology, a history of music or film or dance, a register of crafts, lists of artists. Draw four:
 
 - **a way of making**: a craft, a medium, an art form, with its masters and its secrets;
 - **a world**: a period, a place, a faith, a myth, a science, a literature;

@@ -70,9 +70,9 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a66 | ../studios/a66 | gpt-6-luna | genesis6 | active | 4 | medium |
 | a67 | ../studios/a67 | gpt-6-luna | genesis6 | active | 2 | medium |
 | a68 | ../studios/a68 | gpt-6-luna | genesis6 | active | 4 | medium |
-| a69 | ../studios/a69 | gpt-6-luna | genesis7 | active | 0 | medium |
-| a70 | ../studios/a70 | gpt-6-luna | genesis7 | active | 0 | medium |
-| a71 | ../studios/a71 | gpt-6-luna | genesis7 | active | 0 | medium |
+| a69 | ../studios/a69 | gpt-6-luna | genesis7 | active | 1 | medium |
+| a70 | ../studios/a70 | gpt-6-luna | genesis7 | active | 1 | medium |
+| a71 | ../studios/a71 | gpt-6-luna | genesis7 | active | 1 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
