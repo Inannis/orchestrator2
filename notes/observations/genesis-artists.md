@@ -10,3 +10,4 @@
 - a54–a56 (genesis3): edges, gaps, crossings, a chair offered; the Appetite texts are one text (tide-climbing harbor, domestic dragon, solemn machines).
 - a57, a58 (genesis4): real inheritances (aquatint/Iron Age; glass/Crusader states/Woolf) left at the least-expected step for an installation and a sound score in a room.
 - a59 (genesis4): soumak weaving, ancient Anatolia, Van Gogh; cut at movement 6, resumed.
+- a60–a62 (genesis5): perspective / a craft / stone relief kept in name; all three Hands works are the same annotated plate about what is not recorded.
