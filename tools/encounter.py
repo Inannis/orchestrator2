@@ -1,6 +1,6 @@
 """Deliver one unbidden encounter to an artist's inbox. Sources are public and picked at random; the orchestrator never chooses content.
 usage: python tools/encounter.py <studio-path> [--p 0.5] [--feed museum|wide|objects|<feed>-bare]  (nothing delivered with probability 1-p; feed defaults to the studio's condition)
-A `-bare` feed delivers the thing alone (the picture, the passage, the text), without title, source or metadata. Every delivery's full record goes to runs/encounters.ndjson."""
+A `-bare` feed delivers the thing alone (the picture, the passage, the text), without title, source or metadata; a `-warm` feed tells it in a sentence, without catalogue fields. Every delivery's full record goes to runs/encounters.ndjson."""
 import sys, json, random, re, ssl, urllib.request, datetime, pathlib
 try:
     import certifi; CTX = ssl.create_default_context(cafile=certifi.where())
@@ -151,6 +151,24 @@ def bare(src, body, inbox, stamp):
     if src == "gutenberg": return body[body.index("…"):] + f"\n(More of it: `encounter-{stamp}-source.txt`.)\n"
     return body.rstrip().split("\n\n")[-1] + "\n"
 
+WARM_KEYS = ["title", "Title", "artistDisplayName", "artist_display", "objectDate", "date_display", "medium", "medium_display", "culture"]
+def warm(body):
+    """The thing told plainly: catalogue fields become one sentence, numbers and dimensions go, the link waits at the end."""
+    out, kv, urls = [], {}, []
+    for l in body.split("\n"):
+        u = re.match(r"^(?:URL: )?(https?://\S+)$", l.strip())
+        if u: urls.append(u.group(1)); continue
+        m = re.match(r"^([A-Za-z_0-9]+): (.+)$", l)
+        if m: kv[m.group(1)] = m.group(2); continue
+        out.append(l)
+    said = [kv[k] for k in WARM_KEYS if k in kv]
+    rest = [f"{k.replace('_2m', '').replace('_10m', '').replace('_', ' ')} {v}" for k, v in kv.items() if k not in WARM_KEYS and k not in ("dimensions", "department", "classification", "classification_title", "objectURL", "time", "is_day")]
+    text = "\n".join(out).rstrip()
+    if said: text += "\n\n" + ", ".join(said) + "."
+    if rest: text += "\n\n" + "; ".join(rest) + "."
+    if urls: text += f"\n\nIf you want to find it again: {urls[0]}"
+    return text.strip() + "\n"
+
 def feed_of(studio):
     """The feed named by the studio's condition: registry.md row -> conditions.md row."""
     root = pathlib.Path(__file__).resolve().parent.parent
@@ -166,7 +184,8 @@ def main():
     inbox = pathlib.Path(aid) / "inbox"; inbox.mkdir(exist_ok=True)
     stamp = datetime.date.today().isoformat() + "-" + "".join(random.choices("abcdefghjkmnpqrstuvwxyz", k=3))
     feed = sys.argv[sys.argv.index("--feed")+1] if "--feed" in sys.argv else feed_of(aid)
-    base, is_bare = feed.removesuffix("-bare"), feed.endswith("-bare")
+    is_warm = feed.endswith("-warm")
+    base, is_bare = feed.removesuffix("-bare").removesuffix("-warm"), feed.endswith("-bare")
     for src in random.sample(FEEDS[base], len(FEEDS[base])):
         try:
             body = src(inbox, stamp)
@@ -174,11 +193,13 @@ def main():
             body = None; print("skip", src.__name__, e)
         record = body
         if body and is_bare: body = bare(src.__name__, body, inbox, stamp)
+        if body and is_warm: body = warm(body)
         if body: break
     else: print("no source available"); return
     log = pathlib.Path(__file__).resolve().parent.parent / "runs" / "encounters.ndjson"
     with open(log, "a", encoding="utf-8") as f:
         f.write(json.dumps({"studio": pathlib.Path(aid).resolve().name, "stamp": stamp, "feed": feed, "source": src.__name__, "record": record}) + "\n")
-    (inbox / f"encounter-{stamp}.md").write_text("From: the world, at random. Nobody chose this for you. Nothing is expected.\n\n" + body, encoding="utf-8")
+    head = "Something came today, from the world, by chance. Nobody chose it for you; do with it what you like, or nothing." if is_warm else "From: the world, at random. Nobody chose this for you. Nothing is expected."
+    (inbox / f"encounter-{stamp}.md").write_text(head + "\n\n" + body, encoding="utf-8")
     print("delivered", stamp, feed, src.__name__)
 main()

@@ -64,12 +64,12 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a60 | ../studios/a60 | gpt-6-luna | genesis5 | paused 2026-10-12 | 1 | xhigh |
 | a61 | ../studios/a61 | gpt-6-luna | genesis5 | paused 2026-10-12 | 1 | xhigh |
 | a62 | ../studios/a62 | gpt-6-luna | genesis5 | paused 2026-10-12 | 1 | xhigh |
-| a63 | ../studios/a63 | gpt-6-luna | genesis6 | active | 1 | xhigh |
-| a64 | ../studios/a64 | gpt-6-luna | genesis6 | active | 1 | xhigh |
-| a65 | ../studios/a65 | gpt-6-luna | genesis6 | active | 1 | xhigh |
-| a66 | ../studios/a66 | gpt-6-luna | genesis6 | active | 1 | medium |
+| a63 | ../studios/a63 | gpt-6-luna | genesis6 | active | 2 | xhigh |
+| a64 | ../studios/a64 | gpt-6-luna | genesis6 | active | 2 | xhigh |
+| a65 | ../studios/a65 | gpt-6-luna | genesis6 | active | 2 | xhigh |
+| a66 | ../studios/a66 | gpt-6-luna | genesis6 | active | 2 | medium |
 | a67 | ../studios/a67 | gpt-6-luna | genesis6 | active | 1 | medium |
-| a68 | ../studios/a68 | gpt-6-luna | genesis6 | active | 1 | medium |
+| a68 | ../studios/a68 | gpt-6-luna | genesis6 | active | 2 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
