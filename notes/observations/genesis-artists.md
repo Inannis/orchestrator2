@@ -8,3 +8,5 @@
 - a52 (genesis2): moth synonyms, a bowl fragment, Resolution 194; a listening score for a crossing.
 - a53 (genesis2): Callot, a relay swimmer, a Samoan service; a participatory reading score where a pass is a turn.
 - a54–a56 (genesis3): edges, gaps, crossings, a chair offered; the Appetite texts are one text (tide-climbing harbor, domestic dragon, solemn machines).
+- a57, a58 (genesis4): real inheritances (aquatint/Iron Age; glass/Crusader states/Woolf) left at the least-expected step for an installation and a sound score in a room.
+- a59 (genesis4): soumak weaving, ancient Anatolia, Van Gogh; cut at movement 6, resumed.
