@@ -5,6 +5,7 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
 | ref | world | world | plain | studio | R5 from 2026-10-11: R4 with a world beyond the museum and no default form (a30, a34; fresh a41–a43). |
+| genesis8 | genesis8 | world-warm | genesis | studio | H42: genesis7 with light, sound, words and code as the artist's materials and works finished in them. |
 | genesis7 | genesis7 | world-warm | genesis | studio | H41: genesis6 with the artist as judge (charter) and a name grown from the inheritances. |
 | genesis6 | genesis6 | world-warm | genesis | studio | H40: charter, genesis and tools sheet rewritten whole in a warm voice; inheritance with a teacher by chance; Hands as the thing itself; a chosen name; from 2026-10-12 the inbox tells each arrival in a sentence (`world-warm`). |
 | genesis5 | genesis5 | world | genesis | studio | H39, rejected (medium in name, one lens and one plate): genesis4 with the inheritance binding through possible artists, Hands and the first project; invention as a way of loving a world. |
