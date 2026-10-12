@@ -1,0 +1,44 @@
+{
+ "pid": 18992,
+ "started": "2026-10-12T11:29:18",
+ "state": "done",
+ "reason": null,
+ "jobs": {
+  "a63": {
+   "status": "done",
+   "resume": false,
+   "turns": 5,
+   "k": 4,
+   "error": null
+  },
+  "a64": {
+   "status": "done",
+   "resume": false,
+   "turns": 5,
+   "k": 4,
+   "error": null
+  },
+  "a65": {
+   "status": "done",
+   "resume": false,
+   "turns": 2,
+   "k": 1,
+   "error": null
+  },
+  "a66": {
+   "status": "done",
+   "resume": false,
+   "turns": 6,
+   "k": 5,
+   "error": null
+  },
+  "a68": {
+   "status": "done",
+   "resume": false,
+   "turns": 4,
+   "k": 3,
+   "error": null
+  }
+ },
+ "updated": "2026-10-12T11:57:42"
+}
