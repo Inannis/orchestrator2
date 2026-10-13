@@ -73,14 +73,18 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a69 | ../studios/a69 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a70 | ../studios/a70 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a71 | ../studios/a71 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
-| a72 | ../studios/a72 | gpt-6-luna | genesis8 | active | 3 | medium |
-| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 3 | medium |
-| a74 | ../studios/a74 | gpt-6-luna | genesis8 | active | 3 | medium |
-| a75 | ../studios/a75 | claude-sonnet-5-5 | ref | active | 3 | medium |
-| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 3 | medium |
-| a77 | ../studios/a77 | claude-sonnet-5-5 | ref | active | 3 | medium |
+| a72 | ../studios/a72 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
+| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 8 | medium |
+| a74 | ../studios/a74 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
+| a75 | ../studios/a75 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
+| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 4 | medium |
+| a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
 | a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
 | a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
+| a80 | ../studios/a80 | gpt-6-luna | renew | active | 8 | medium |
+| a81 | ../studios/a81 | gpt-6-luna | renew | active | 3 | medium |
+| a82 | ../studios/a82 | gpt-6-luna | period | active | 8 | medium |
+| a83 | ../studios/a83 | gpt-6-luna | period | active | 3 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

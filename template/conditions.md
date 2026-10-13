@@ -5,6 +5,8 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
 | ref | genesis8 | world-warm | genesis | studio | R6 from 2026-10-12: the genesis (`genesis8`: a warm whole text, an inheritance of four by chance from long found lists, the artist as judge, light, sound, words and code as finished materials), warm inbox, a warm critic; R5's rooms, review day and critic. |
+| renew | renew | world-warm | plain | studio | H45: R6 where each review day ends with one new inheritance drawn by chance. |
+| period | period | world-warm | plain | studio | H46: R6 where the review day closes a period (finish and show what is ready, let go of what has gone quiet, name what the next period risks). |
 | R5 | world | world | plain | studio | 2026-10-11 to 10-12: R4 with a world beyond the museum and no default form (a30, a34; fresh a41–a43). |
 | genesis8 | genesis8 | world-warm | genesis | studio | H42, accepted as the genesis (2026-10-12): genesis7 with light, sound, words and code as the artist's materials and works finished in them. |
 | genesis7 | genesis7 | world-warm | genesis | studio | H41: genesis6 with the artist as judge (charter) and a name grown from the inheritances. |
