@@ -4,8 +4,8 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
-| ref | genesis8 | world-warm | genesis | studio | R6 from 2026-10-12: the genesis (`genesis8`: a warm whole text, an inheritance of four by chance from long found lists, the artist as judge, light, sound, words and code as finished materials), warm inbox, a warm critic; R5's rooms, review day and critic. |
-| review | review | world-warm | plain | studio | H47: R6 with the review day rewritten whole (`REVIEW.md`, five movements, one per turn: the period, finishing and letting go, something new by chance, the next period and its risk, rewriting the studio). |
+| ref | genesis8 | world-warm | genesis | studio | R7 from 2026-10-13: R6 with the review day as `REVIEW.md` (H47). R6 from 2026-10-12: the genesis (`genesis8`: a warm whole text, an inheritance of four by chance from long found lists, the artist as judge, light, sound, words and code as finished materials), warm inbox, a warm critic; R5's rooms, review day and critic. |
+| review | review | world-warm | plain | studio | H47, accepted into R7: R6 with the review day rewritten whole (`REVIEW.md`, five movements, one per turn: the period, finishing and letting go, something new by chance, the next period and its risk, rewriting the studio). |
 | renew | renew | world-warm | plain | studio | H45, replaced by H47 before its review (user: whole texts, not sentences): R6 where each review day ends with one new inheritance drawn by chance. |
 | period | period | world-warm | plain | studio | H46, replaced by H47 before its review: R6 where the review day closes a period (finish and show what is ready, let go of what has gone quiet, name what the next period risks). |
 | R5 | world | world | plain | studio | 2026-10-11 to 10-12: R4 with a world beyond the museum and no default form (a30, a34; fresh a41–a43). |
