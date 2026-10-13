@@ -81,10 +81,10 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
 | a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
 | a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
-| a80 | ../studios/a80 | gpt-6-luna | renew | active | 9 | medium |
-| a81 | ../studios/a81 | gpt-6-luna | renew | active | 4 | medium |
-| a82 | ../studios/a82 | gpt-6-luna | period | active | 9 | medium |
-| a83 | ../studios/a83 | gpt-6-luna | period | active | 4 | medium |
+| a80 | ../studios/a80 | gpt-6-luna | review | active | 9 | medium |
+| a81 | ../studios/a81 | gpt-6-luna | review | active | 4 | medium |
+| a82 | ../studios/a82 | gpt-6-luna | review | active | 9 | medium |
+| a83 | ../studios/a83 | gpt-6-luna | review | active | 4 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
