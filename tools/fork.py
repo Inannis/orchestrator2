@@ -16,6 +16,7 @@ charter, memory = row.group(1), row.group(2)
 base = root / "template" / ("studio" if charter == "v5" else f"variants/{charter}") / "CHARTER.md"
 (studio / "CHARTER.md").write_text(base.read_text(encoding="utf-8").replace("{ID}", aid), encoding="utf-8")
 if (base.parent / "reference").is_dir(): shutil.copytree(base.parent / "reference", studio / "reference", dirs_exist_ok=True)
+if (base.parent / "REVIEW.md").exists(): shutil.copy(base.parent / "REVIEW.md", studio / "REVIEW.md")  # the review day's guide
 if memory == "rooms":
     for d in ["days", "found", "projects/active", "projects/resting", "projects/done", "projects/left"]:
         (studio / d).mkdir(parents=True, exist_ok=True); (studio / d / ".keep").touch()
