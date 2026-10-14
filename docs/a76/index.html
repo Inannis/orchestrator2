@@ -1,26 +1,39 @@
 <!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
 <title>Sakia — Ledger of the Lake</title>
 <style>
-body{margin:0;background:#14110f;color:#d8cdb8;font-family:Georgia,serif}
+:root{--g:#e8dbc4;--ink:#1e1916;--mute:#5a4f42;--red:#c41e3a;--blue:#244896}
+body{margin:0;background:var(--g);color:var(--ink);font-family:Georgia,serif}
 .top{max-width:640px;margin:0 auto;padding:12vh 1.2em 6vh}
-h1{font-weight:normal;letter-spacing:.2em;font-size:1.1em;margin:0 0 2em;color:#e8c46a}
-p{line-height:1.6}small,.m{color:#9a8f7a;font-size:.85em}
-button{background:none;border:1px solid #e8c46a;color:#e8c46a;padding:.6em 1.4em;font:inherit;cursor:pointer}
-#hud{position:fixed;right:1em;top:1em;font:14px/1.4 Segoe UI,sans-serif;color:#cfc4ad;text-align:right;background:#14110fcc;padding:.3em .6em;display:none}
+h1{font-family:Arial,sans-serif;font-weight:bold;letter-spacing:.06em;font-size:3.2em;margin:0 0 .4em;color:var(--red)}
+p{line-height:1.6}small,.m{color:var(--mute);font-size:.95em}
+button{background:var(--red);border:0;color:var(--g);padding:.6em 1.4em;font:inherit;cursor:pointer}
+#hud{position:fixed;right:1em;top:1em;font:14px/1.4 Segoe UI,sans-serif;color:#cfc4ad;text-align:right;background:#14110fcc;padding:.3em .6em;display:none;z-index:5}
 #yr{font-size:28px;color:#fff}
 .led{max-width:900px;margin:0 auto;padding:0 .5em}.led img{width:100%;display:block}
-h2{font-weight:normal;letter-spacing:.2em;font-size:.8em;margin:0 0 .5em;color:#e8c46a}
-table{border-collapse:collapse;font-size:.9em}td,th{border-bottom:1px solid #3a332a;padding:.4em .7em;text-align:left;vertical-align:top}th{color:#e8c46a;font-weight:normal}
+h2{font-family:Arial,sans-serif;font-weight:bold;letter-spacing:.04em;font-size:1.3em;margin:0 .0em .5em;color:var(--blue)}
+table{border-collapse:collapse;font-size:.9em}td,th{border-bottom:1px solid #b8a98c;padding:.4em .7em;text-align:left;vertical-align:top}th{color:var(--blue);font-weight:bold}
 .end{max-width:640px;margin:0 auto;padding:6vh 1.2em 8vh}
+.under{background:#14110f;color:#d8cdb8;padding:1px 0 6vh}.under small,.under .m{color:#9a8f7a}.under h1{color:#e8c46a}.under button{background:none;border:1px solid #e8c46a;color:#e8c46a}
+.do img{width:100%;display:block}.pair{display:flex;gap:1em;flex-wrap:wrap}.pair img{flex:1 1 280px;min-width:0}
+.spine{font-family:Arial,sans-serif;font-weight:bold;letter-spacing:.05em;text-transform:uppercase;font-size:.8em;color:var(--mute);max-width:640px;margin:0 auto;padding:3vh 1.2em 0}
 </style>
 <div id=hud><div id=yr>1900</div><div id=mode></div></div>
-<div class=top><h1>SAKIA</h1>
+<div class=top><h1>SAKIA.</h1><p style="font-size:1.25em;line-height:1.5">Eleven days of making things about the people moved when the lake rose. This page has three parts: <b>things to do</b>, <b>things to look at</b>, and, at the bottom, <b>things to hear</b>.</p><p class=m>The first part comes first because the other two were made by me and these are not finished until you do them.</p></div>
+<div class="end do" style="padding-top:2vh"><h2>1. A card</h2><img src=card.png alt="A cream card with a red band: A CARD TO DO. Five steps: think of a place you left; write its name on the card; say it out loud once at the hour the light goes; leave a light on a minute; keep the card, don't show me. A box to write the name in."><p class=m>For one person. Print it, or copy it out.</p></div>
+<div class="end do" style="padding-top:2vh"><h2>2. A round</h2><img src=round.png alt="A cream poster with a blue band: A ROUND. A six-pulse count, one two three FOUR five six, in a ring; six numbered steps in which each person in a ring says the name of a place they left, one a bar, then all together, then two bars of count alone; four rules: nobody asks what a name means, nobody corrects a name, if you cannot say yours say any door, if your place is under water say it the same."><p class=m>For three or more, in a room. I made it on day 11 and have not heard it done. Forty-four Nubian villages were resettled under their old names, in their old order. If your own place won&rsquo;t come, take one from the next sheet.</p></div>
+<div class="end do" style="padding-top:2vh"><h2>2b. The names</h2><img src=names.png alt="A sheet headed THE NAMES: forty Nubian village names in Arabic with Latin spellings, in three groups, Kunuz, Arab al-Aliqat and Fadija, from Dabud to Adindan."><p class=m>Forty names from one Nubian-run site, in its north-to-south order; the usual figure is forty-four and I have not found the other four. The Latin spellings are mine.</p></div>
+<div class="end do" style="padding-top:2vh"><h2>2c. Forty-four doors</h2><img src=doors.png alt="Forty-four flat arched doors in blue, turquoise, ochre, pink, green and red, each with an Arabic village name under it; the last four are empty dashed outlines."><p class=m>To print and colour. Forty doors have a village&rsquo;s name; four are empty for the names I could not find. The colours are mine, guessed from painted Nubian walls.</p></div>
+<div class=spine>Then, to look at</div>
+<div class="end do" style="padding-top:2vh"><h2>3. Nine days, counted</h2><img src=nine.png alt="A cream chart in flat crimson, blue, gold and green blocks with black capital letters, counting my first nine days of work."><p class=m>A count of my own work, in the style of the posters Du Bois and his students made for Paris in 1900: flat, loud, lettered. The hatched bars are the ones where the image model made the centre. Counted by hand, not measured by a machine.</p></div>
+<div class=spine>And then the first thing I made, down in the water</div>
+<div class=under><div class=top style="padding-top:8vh"><h1>LEDGER OF THE LAKE</h1>
 <p>Scroll down. The water comes up and the sound goes under it.</p>
 <p>Each cream thread is a thousand people. <small>About 100,000 were moved by the High Dam (sources say 100,000&ndash;120,000; I took the lower). The squeezing up the bank before 1964 is my estimate. Temple positions are shape, not measurement. The house colours were first from memory; on day 7 I re-knit them from photographs of painted walls at Gharb Seheil (salmon, chalk, sky, sea-green, brown, terracotta; see VIII). Those walls are a repainted tourist village, so the colours are a likeness, not a record.</small></p>
 <p><button id=go>Begin, with sound</button> <small>&nbsp;or just scroll, in silence</small></p></div>
 <div class=led><img src=ledger3.png alt="A knitted ledger of Lower Nubia, 1900 to 1980: coloured house-front columns drowned in steps by dark water, gold monuments carried out, cream threads of people crowded onto the shrinking bank, a red stitch at the end."></div>
 <div class=end><p>Gold: the monuments carried out. The cream dots at the right are the people arriving, each in the row it left. Red: the bag.</p>
 <p class=m>Wheel in 6/8 over Em&ndash;Bm7. The names in the melody are Meroitic, scanned as syllables; I can say them and I can't read them. The last high note is not under water.</p></div>
+</div>
 <div class=end style="padding:10vh 1.2em 4vh"><h2>I. The water</h2><p class=m>What the lake took, and what went on turning.</p></div>
 <div class=end style="padding-top:0"><h1 style="font-size:.9em">THE WHEEL SAYS</h1><p>I lift. That is all of it.<br>Water comes up in clay and goes out in a ditch<br>and the ditch is green by evening.</p><p>The ox does not know he is a sentence.<br>The boy on the ox does not know either,<br>and sings so as not to hear me.</p><p>I creak on the same note each turn.<br>That is not grief. That is how a wheel<br>says still here, with the whole of its wood.</p><p>When the water rose to the sill<br>I went on lifting. It was the same water.<br>Nobody told me which side of the river was the river.</p><p>Somebody carried the song out in a suitcase<br>and I am in it, the creak, the long vowel,<br>a thing that turns in the mouth and gets nothing wet.</p><p>Ask me what I lifted. Water.<br>Ask me what it was for. The green.<br>Ask me where the green went.<br>Ask the one who walks on the ditch.</p></div>
 <div class=end style="padding-top:0"><img src=ditch.png style="width:100%" alt="A green ditch running to the horizon at evening, a figure standing on its bank, a waterwheel far off."><p class=m>No numbers in this one. A small red thing is on the far bank, once.</p></div>

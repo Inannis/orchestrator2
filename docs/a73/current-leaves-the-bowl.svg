@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 760" role="img" aria-labelledby="title desc">
+<title id="title">A Current Leaves the Bowl</title>
+<desc id="desc">Three successive paper cuts: water held in a bowl, passing its lip, and continuing as fragments of blue.</desc>
+<rect width="1500" height="760" fill="#f1eadb"/>
+<g transform="translate(35 0)">
+  <rect width="460" height="760" fill="#173a45"/>
+  <path d="M74 350 Q230 485 386 350 L348 585 Q230 660 112 585Z" fill="#d65c42"/>
+  <path d="M83 347 Q230 468 377 347 Q354 393 326 421 Q230 481 134 421 Q106 393 83 347Z" fill="#ead9a0"/>
+  <path d="M115 352 Q230 443 345 352 Q322 385 301 399 Q230 441 159 399 Q138 385 115 352Z" fill="#275e69"/>
+  <path d="M155 355 Q230 414 305 355 Q290 377 274 385 Q230 407 186 385 Q170 377 155 355Z" fill="#8fb8ad"/>
+  <path d="M225 370 Q230 354 235 370 Q233 380 230 383 Q227 380 225 370Z" fill="#f1eadb"/>
+</g>
+<g transform="translate(520 0)">
+  <rect width="460" height="760" fill="#173a45"/>
+  <path d="M52 342 Q230 501 408 342 L370 585 Q230 662 90 585Z" fill="#d65c42"/>
+  <path d="M61 339 Q230 481 399 339 Q374 382 350 405 Q230 493 110 405 Q86 382 61 339Z" fill="#ead9a0"/>
+  <path d="M94 348 Q230 455 365 348 Q340 381 318 392 Q230 447 142 392 Q118 381 94 348Z" fill="#275e69"/>
+  <path d="M238 360 C277 335 294 311 321 295 C345 281 357 267 366 245" fill="none" stroke="#8fb8ad" stroke-width="17" stroke-linecap="round"/>
+  <path d="M366 245 Q379 235 385 222 Q386 239 376 250 Q371 254 366 245Z" fill="#8fb8ad"/>
+  <path d="M308 304 Q317 297 324 303 L332 312 L321 322 L311 315Z" fill="#f1eadb"/>
+</g>
+<g transform="translate(1005 0)">
+  <rect width="460" height="760" fill="#173a45"/>
+  <path d="M34 346 Q230 510 426 346 L386 585 Q230 664 74 585Z" fill="#d65c42"/>
+  <path d="M43 343 Q230 490 417 343 Q393 381 369 401 Q230 500 91 401 Q67 381 43 343Z" fill="#ead9a0"/>
+  <path d="M87 353 Q177 425 265 412" fill="none" stroke="#275e69" stroke-width="24" stroke-linecap="round"/>
+  <path d="M274 389 Q310 367 334 343" fill="none" stroke="#8fb8ad" stroke-width="19" stroke-linecap="round"/>
+  <path d="M338 337 Q352 327 365 308 Q365 327 352 342 Q343 349 338 337Z" fill="#8fb8ad"/>
+  <path d="M285 409 Q291 401 298 405 L305 413 L297 420Z" fill="#f1eadb"/>
+  <path d="M365 308 Q389 285 411 289" fill="none" stroke="#8fb8ad" stroke-width="5" opacity=".45"/>
+</g>
+<path d="M500 34V726 M985 34V726" stroke="#ead9a0" stroke-width="2" opacity=".55"/>
+</svg>

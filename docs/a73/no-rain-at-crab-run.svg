@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
+<title id="title">No Rain at Crab Run</title>
+<desc id="desc">A broad dark cloud hangs above a narrow winding stream. A pale opening is held between them; no rain falls.</desc>
+<rect width="900" height="640" fill="#e8dfc7"/>
+<path d="M0 425 Q120 387 230 415 Q370 447 486 411 Q634 365 900 420 L900 640 0 640Z" fill="#bd704d"/>
+<path d="M0 510 Q142 470 276 509 Q410 548 555 501 Q709 451 900 496 L900 640 0 640Z" fill="#69877c"/>
+<path d="M-20 563 C116 526 208 581 328 557 C449 533 513 499 606 516 C699 533 776 565 930 520" fill="none" stroke="#264c5a" stroke-width="44"/>
+<path d="M-20 563 C116 526 208 581 328 557 C449 533 513 499 606 516 C699 533 776 565 930 520" fill="none" stroke="#a6c4b3" stroke-width="5" opacity=".8"/>
+<path d="M0 0H900V231 Q846 239 807 219 Q755 205 709 239 Q650 267 594 239 Q529 215 468 247 Q400 278 342 243 Q287 220 231 244 Q162 270 112 235 Q53 213 0 239Z" fill="#294851"/>
+<path d="M0 239 Q53 213 112 235 Q162 270 231 244 Q287 220 342 243 Q400 278 468 247 Q529 215 594 239 Q650 267 709 239 Q755 205 807 219 Q846 239 900 231" fill="none" stroke="#e5cf8d" stroke-width="12"/>
+<path d="M439 260 Q452 272 455 290 Q453 308 443 312 Q433 307 433 292 Q434 275 439 260Z" fill="#264c5a"/>
+<path d="M104 300 Q188 282 266 301 M626 315 Q702 294 787 308" fill="none" stroke="#527179" stroke-width="3" opacity=".55"/>
+</svg>

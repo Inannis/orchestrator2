@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+<title id="title">Inside, Still White</title>
+<desc id="desc">A red porcelain bowl with a pale interior rests in a field of quiet gray light.</desc>
+<defs>
+  <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#e6e2db"/><stop offset=".68" stop-color="#cfcbc4"/><stop offset="1" stop-color="#aaa7a1"/></linearGradient>
+  <radialGradient id="light"><stop stop-color="#f4f0e9" stop-opacity=".72"/><stop offset="1" stop-color="#e6e1d8" stop-opacity="0"/></radialGradient>
+  <linearGradient id="red" x1="0" x2="1" y2=".2"><stop stop-color="#762d32"/><stop offset=".1" stop-color="#a13a3f"/><stop offset=".22" stop-color="#8a2d33"/><stop offset=".34" stop-color="#ad4447"/><stop offset=".47" stop-color="#79272d"/><stop offset=".6" stop-color="#a23b40"/><stop offset=".73" stop-color="#79282e"/><stop offset=".86" stop-color="#a03a3f"/><stop offset="1" stop-color="#63282c"/></linearGradient>
+  <linearGradient id="foot" x2="1"><stop stop-color="#68262b"/><stop offset=".42" stop-color="#a13d41"/><stop offset=".72" stop-color="#76272d"/><stop offset="1" stop-color="#4f2427"/></linearGradient>
+  <radialGradient id="well" cx=".42" cy=".2" r=".85"><stop stop-color="#fffef8"/><stop offset=".62" stop-color="#f2eee5"/><stop offset=".9" stop-color="#dedbd3"/><stop offset="1" stop-color="#b6b2a9"/></radialGradient>
+  <linearGradient id="rim" x2="0" y2="1"><stop stop-color="#fffdf7"/><stop offset=".48" stop-color="#e9e5dc"/><stop offset="1" stop-color="#c8c4bc"/></linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="sheen"><feGaussianBlur stdDeviation="10"/></filter>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="2" seed="8"/><feColorMatrix values=".55 0 0 0 .25 .55 0 0 0 .2 .55 0 0 0 .17 0 0 0 .08 0"/><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+</defs>
+<rect width="1000" height="700" fill="url(#wall)"/>
+<ellipse cx="495" cy="305" rx="405" ry="300" fill="url(#light)"/>
+<path d="M0 537 Q250 520 500 535 T1000 525 V700 H0Z" fill="#a9a6a0" opacity=".22"/>
+<ellipse cx="502" cy="527" rx="270" ry="35" fill="#4d4140" opacity=".25" filter="url(#soft)"/>
+<!-- The foot carries a little of the red glaze below the bowl. -->
+<path d="M410 485 Q500 476 591 485 L581 525 Q574 542 500 545 Q426 542 419 525Z" fill="url(#foot)" stroke="#712b31" stroke-width="3"/>
+<ellipse cx="500" cy="487" rx="91" ry="13" fill="#c14c4c" opacity=".8"/>
+<path d="M262 192 C276 276 294 374 345 434 Q377 470 438 486 Q500 502 562 486 Q623 470 655 434 C706 374 724 276 738 192Z" fill="url(#red)" stroke="#63282d" stroke-width="4"/>
+<!-- Glaze blooms sit in the color; the light does not outline the form. -->
+<ellipse cx="348" cy="313" rx="27" ry="91" fill="#e47c70" opacity=".24" filter="url(#sheen)"/>
+<ellipse cx="653" cy="337" rx="20" ry="72" fill="#f18b78" opacity=".2" filter="url(#sheen)"/>
+<ellipse cx="500" cy="473" rx="95" ry="12" fill="#d75753" opacity=".23" filter="url(#sheen)"/>
+<!-- The white lip is slightly irregular; the dark red edge remains visible beneath it. -->
+<ellipse cx="500" cy="192" rx="239" ry="70" fill="#8b3035" stroke="#69272b" stroke-width="4"/>
+<path d="M263 187 C277 150 379 123 501 124 C624 124 724 151 737 188 C742 211 636 241 500 242 C365 241 258 211 263 187Z" fill="url(#rim)" stroke="#f7f2e8" stroke-width="3"/>
+<path d="M278 188 C300 160 394 143 501 144 C610 144 700 162 721 188 C711 211 617 229 500 229 C383 229 290 211 278 188Z" fill="url(#well)"/>
+<!-- Glaze reflections do not become marks inside the bowl. -->
+<ellipse cx="391" cy="169" rx="26" ry="8" fill="#fff" opacity=".78" transform="rotate(-8 391 169)"/>
+<ellipse cx="600" cy="164" rx="21" ry="7" fill="#fff" opacity=".62" transform="rotate(7 600 164)"/>
+<path d="M280 188 Q300 216 378 227" fill="none" stroke="#fffaf0" stroke-width="5" opacity=".68" stroke-linecap="round"/>
+<rect width="1000" height="700" fill="transparent" filter="url(#grain)" opacity=".26"/>
+</svg>
