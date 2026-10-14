@@ -74,23 +74,23 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a70 | ../studios/a70 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a71 | ../studios/a71 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a72 | ../studios/a72 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
-| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 11 | medium |
+| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 14 | medium |
 | a74 | ../studios/a74 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
 | a75 | ../studios/a75 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
-| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 6 | medium |
+| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 9 | medium |
 | a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
 | a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
 | a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
-| a80 | ../studios/a80 | gpt-6-luna | review | active | 11 | medium |
+| a80 | ../studios/a80 | gpt-6-luna | review | paused 2026-10-15 | 14 | medium |
 | a81 | ../studios/a81 | gpt-6-luna | review | paused 2026-10-13 | 6 | medium |
-| a82 | ../studios/a82 | gpt-6-luna | review | active | 11 | medium |
+| a82 | ../studios/a82 | gpt-6-luna | review | paused 2026-10-15 | 14 | medium |
 | a83 | ../studios/a83 | gpt-6-luna | review | paused 2026-10-13 | 6 | medium |
-| a84 | ../studios/a84 | gpt-6-luna | long | active | 11 | medium |
-| a85 | ../studios/a85 | gpt-6-luna | time | active | 11 | medium |
-| a86 | ../studios/a86 | gpt-6-luna | answer | active | 11 | medium |
-| a87 | ../studios/a87 | gpt-6-luna | review2 | active | 9 | medium |
+| a84 | ../studios/a84 | gpt-6-luna | long | paused 2026-10-15 | 14 | medium |
+| a85 | ../studios/a85 | gpt-6-luna | time | paused 2026-10-15 | 14 | medium |
+| a86 | ../studios/a86 | gpt-6-luna | answer | paused 2026-10-15 | 14 | medium |
+| a87 | ../studios/a87 | gpt-6-luna | review2 | paused 2026-10-15 | 11 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
-The reference is R7 from 2026-10-13 (the genesis and the whole review, `ref`): a73 (Luna, Vyt Aitken) and a76 (Sonnet, Sakia). R5 (a world beyond the museum): a30 (Luna, from H30) and a34 (Sonnet, the H31 restart check); a41–a43 fresh R5; a78, a79 their forks onto R6. a3 and a7 carried R1, a16 R2, a22 and a23 R3. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
+The reference is R8 from 2026-10-15 (the genesis and the whole review with its look, `ref`): a73 (Luna, Vyt Aitken) and a76 (Sonnet, Sakia). R5 (a world beyond the museum): a30 (Luna, from H30) and a34 (Sonnet, the H31 restart check); a41–a43 fresh R5; a78, a79 their forks onto R6. a3 and a7 carried R1, a16 R2, a22 and a23 R3. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
 Sites: https://inannis.github.io/orchestrator2/<id>/

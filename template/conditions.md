@@ -4,11 +4,11 @@ What each condition is. Every studio is seeded (`tools/seed.py`) or forked (`too
 
 | name | charter | feed | shape | memory | notes |
 |---|---|---|---|---|---|
-| ref | genesis8 | world-warm | genesis | studio | R7 from 2026-10-13: R6 with the review day as `REVIEW.md` (H47). R6 from 2026-10-12: the genesis (`genesis8`: a warm whole text, an inheritance of four by chance from long found lists, the artist as judge, light, sound, words and code as finished materials), warm inbox, a warm critic; R5's rooms, review day and critic. |
-| long | review | world-warm | long | studio | H48 B: R7 with 6–9 continuations a day instead of 1–6. |
-| time | time | world-warm | plain | studio | H48 C: R7 with time as a material (charter's means and day rewritten: `between/run.py` as works that go on while the artist is away). |
-| answer | answer | world-warm | plain | studio | H49: R7 with the world answering (charter's world rewritten: neighbours' public pages in `reference/neighbours.md`, a stranger's reading after public/ changes via `tools/stranger.py`). |
-| review2 | review2 | world-warm | plain | studio | H50: R7 with the review rewritten whole around the look (six movements: a movement on what in the look was never chosen). |
+| ref | genesis8 | world-warm | genesis | studio | R8 from 2026-10-15: R7 with the review's movement on the look (H50). R7 from 2026-10-13: R6 with the review day as `REVIEW.md` (H47). R6 from 2026-10-12: the genesis (`genesis8`: a warm whole text, an inheritance of four by chance from long found lists, the artist as judge, light, sound, words and code as finished materials), warm inbox, a warm critic; R5's rooms, review day and critic. |
+| long | review | world-warm | long | studio | H48 B, rejected (more, not deeper): R7 with 6–9 continuations a day instead of 1–6. |
+| time | time | world-warm | plain | studio | H48 C, rejected (a formed practice ignored it): R7 with time as a material (charter's means and day rewritten: `between/run.py` as works that go on while the artist is away). |
+| answer | answer | world-warm | plain | studio | H49, inconclusive (readings arrive, uptake implicit): R7 with the world answering (charter's world rewritten: neighbours' public pages in `reference/neighbours.md`, a stranger's reading after public/ changes via `tools/stranger.py`). |
+| review2 | review2 | world-warm | plain | studio | H50, accepted into R8: R7 with the review rewritten whole around the look (six movements: a movement on what in the look was never chosen). |
 | review | review | world-warm | plain | studio | H47, accepted into R7: R6 with the review day rewritten whole (`REVIEW.md`, five movements, one per turn: the period, finishing and letting go, something new by chance, the next period and its risk, rewriting the studio). |
 | renew | renew | world-warm | plain | studio | H45, replaced by H47 before its review (user: whole texts, not sentences): R6 where each review day ends with one new inheritance drawn by chance. |
 | period | period | world-warm | plain | studio | H46, replaced by H47 before its review: R6 where the review day closes a period (finish and show what is ready, let go of what has gone quiet, name what the next period risks). |
