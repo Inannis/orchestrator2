@@ -94,6 +94,9 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a90 | ../studios/a90 | gpt-6-luna | genesis9 | paused 2026-10-15 | 2 | medium |
 | a91 | ../studios/a91 | gpt-6-luna | genesis9 | paused 2026-10-15 | 2 | medium |
 | a92 | ../studios/a92 | gpt-6-luna | genesis9 | paused 2026-10-15 | 2 | medium |
+| a93 | ../studios/a93 | gpt-6-luna | genesis10 | active | 0 | medium |
+| a94 | ../studios/a94 | gpt-6-luna | genesis10 | active | 0 | medium |
+| a95 | ../studios/a95 | gpt-6-luna | genesis10 | active | 0 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
