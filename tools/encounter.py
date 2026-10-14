@@ -139,10 +139,29 @@ def wikiquote(inbox, stamp):
         if lines: return f"Something someone said, picked at random from Wikiquote ({t}).\n\n{random.choice(lines)}\n"
     return None
 
+def neighbour(inbox, stamp):
+    # another artist's public work: a studio of the genesis era with a front page, never the artist's own
+    root = pathlib.Path(__file__).resolve().parent.parent
+    me = inbox.parent.name
+    ids = [d.name for d in (root / "docs").iterdir() if d.is_dir() and d.name[1:].isdigit() and int(d.name[1:]) >= 63 and d.name != me and (d / "index.html").exists() and (d / "index.html").stat().st_size > 2000]
+    def name(i):  # forks share a name; pick by artist, never the artist's own lineage
+        p = root.parent / "studios" / i / "positions.md"
+        return p.read_text(encoding="utf-8-sig").split("\n")[0].strip("# ").split("·")[0].strip() if p.exists() else i
+    by = {}
+    for i in ids: by.setdefault(name(i), []).append(i)
+    by.pop(name(me), None)
+    if not by: return None
+    aid = random.choice(random.choice(list(by.values()))); url = f"https://inannis.github.io/orchestrator2/{aid}/"
+    import subprocess, sys
+    subprocess.run([sys.executable, str(root / "tools" / "shot.py"), url, str(inbox / f"encounter-{stamp}.png")], capture_output=True, timeout=180)
+    pic = f" A picture of their front page: `encounter-{stamp}.png`." if (inbox / f"encounter-{stamp}.png").exists() else ""
+    return f"Another artist's work, from a studio like yours.{pic}\n\nTheir public pages: {url}\n"
+
 FEEDS = {"museum": [met, artic, gutenberg, wikipedia, living_artist, living_artist],
          "world": [commons_photo, current_event, inaturalist, gutenberg, met, commons_audio, weather, wikiquote],
          "wide": [commons_photo, current_event, inaturalist, gutenberg, wikipedia, living_artist, met],
-         "objects": [met, met, gutenberg]}
+         "objects": [met, met, gutenberg],
+         "neighbours": [neighbour, neighbour, neighbour, neighbour, commons_photo, current_event, inaturalist, gutenberg, met, commons_audio, weather, wikiquote]}
 
 def bare(src, body, inbox, stamp):
     """The thing without its record: the picture, the passage, or the text alone. None if there is no thing."""

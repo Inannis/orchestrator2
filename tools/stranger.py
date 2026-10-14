@@ -3,7 +3,7 @@ one fresh reader sees only that folder (READER-PROMPT.md) and writes a letter in
 usage: python tools/stranger.py"""
 import pathlib, re, json, hashlib, shutil, subprocess, tempfile, datetime, os
 root = pathlib.Path(__file__).resolve().parent.parent
-READ = {"answer"}  # conditions whose studios get readings
+READ = {"answer", "neighbours"}  # conditions whose studios get readings
 MODEL, EFFORT = "claude-sonnet-5-5", "medium"  # subagent policy: Sonnet medium
 seen_file = root / "runs" / "strangers.json"
 seen = json.loads(seen_file.read_text(encoding="utf-8")) if seen_file.exists() else {}

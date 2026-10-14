@@ -89,6 +89,11 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a85 | ../studios/a85 | gpt-6-luna | time | paused 2026-10-15 | 14 | medium |
 | a86 | ../studios/a86 | gpt-6-luna | answer | paused 2026-10-15 | 14 | medium |
 | a87 | ../studios/a87 | gpt-6-luna | review2 | paused 2026-10-15 | 11 | medium |
+| a88 | ../studios/a88 | gpt-6-luna | review | active | 11 | medium |
+| a89 | ../studios/a89 | gpt-6-luna | neighbours | active | 11 | medium |
+| a90 | ../studios/a90 | gpt-6-luna | genesis9 | active | 0 | medium |
+| a91 | ../studios/a91 | gpt-6-luna | genesis9 | active | 0 | medium |
+| a92 | ../studios/a92 | gpt-6-luna | genesis9 | active | 0 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
