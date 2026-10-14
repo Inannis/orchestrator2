@@ -4,44 +4,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Tide's Afterimage — Vyt Aitken</title>
 <style>
-  :root { color-scheme: light; --paper: #efe2c6; --ink: #443a31; }
+  :root { color-scheme: light; --paper: #efe2c6; --ink: #443a31; --rule: #c6b899; }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.5 Georgia, serif; }
   main { max-width: 1000px; margin: 0 auto; padding: 6vw 5vw 9vw; }
   .byline { font: 12px/1.4 sans-serif; letter-spacing: .16em; text-transform: uppercase; }
   h1 { font-size: clamp(2.5rem, 8vw, 6rem); font-weight: 400; line-height: .95; margin: .3em 0; }
+  h2 { font: 12px/1.4 sans-serif; letter-spacing: .16em; text-transform: uppercase; }
   figure { margin: 3rem 0 1.3rem; }
   img { display: block; width: 100%; height: auto; }
   figcaption { margin-top: .8rem; max-width: 42rem; }
-  .poem { border-top: 1px solid #c6b899; margin-top: 4rem; padding-top: 1.2rem; max-width: 30rem; font-size: 1.2rem; }
-  .poem h2 { font: 12px/1.4 sans-serif; letter-spacing: .16em; text-transform: uppercase; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; border-top: 1px solid var(--rule); margin-top: 4rem; padding-top: 1rem; }
+  .pair figure { margin: 0; }
+  details { border-top: 1px solid var(--rule); margin-top: 4rem; padding-top: 1rem; }
+  summary { cursor: pointer; }
+  .archive figure { margin: 2rem 0; }
+  .poem { border-top: 1px solid var(--rule); margin-top: 4rem; padding-top: 1.2rem; max-width: 30rem; font-size: 1.2rem; }
   .poem p { white-space: pre-line; }
   a { color: #345d77; }
+  @media (max-width: 650px) { .pair { grid-template-columns: 1fr; } }
 </style>
 <main>
-  <p class="byline">Vyt Aitken · a paper-cut vessel · 12 October 2026</p>
+  <p class="byline">Vyt Aitken · a paper-cut vessel · 14 October 2026</p>
   <h1>The Tide's<br>Afterimage</h1>
   <figure>
-    <img src="the-tides-afterimage.png" alt="An open red bowl on a narrow stem. A blue tide rises from it and curls around a circle of untouched paper.">
-    <figcaption>A vessel for what has not arrived.</figcaption>
+    <img src="tides-afterimage-open-current.png" alt="A red paper bowl on a narrow stem. A broad blue current rises from it and ends in a flat open cut against the paper-colored air.">
+    <figcaption><i>Open Current</i>, fifth cut. The water stops before its curl can close. At the cut end, the empty paper is part of the vessel.</figcaption>
   </figure>
-  <figure>
-    <img src="the-tides-afterimage-loose.png" alt="A red bowl tilts on its stem as a blue wave crests upward and opens toward the left.">
-    <figcaption>Loose Water, second cut.</figcaption>
-  </figure>
-  <figure>
-    <img src="the-tides-afterimage-tall.png" alt="A tall cut-paper vessel with a narrow stem. Blue water rises from its bowl and curls around a held opening.">
-    <figcaption>Narrow Sheet, third cut.</figcaption>
-  </figure>
-  <figure>
-    <img src="tides-afterimage-leaving.png" alt="A blue tide curls above a level red bowl, with a single drop between the current and the vessel.">
-    <figcaption>Leaving Vessel, fourth cut. The curl is interrupted, but still carries something of the earlier ornament.</figcaption>
-  </figure>
-  <figure>
-    <img src="tides-afterimage-open-current.png" alt="A blue current rises from a level red bowl and stops at a flat open edge before turning back inward.">
-    <figcaption>Open Current, fifth cut. The water ends at a clean cut; the curve remains a question.</figcaption>
-  </figure>
-  <p>Made after looking at a Metropolitan Museum design for a cup or reliquary attributed to Giovanni Battista Foggini. Its source sheet is narrow and vertical; these are invented paper-cut responses, not reconstructions of the historical design. <a href="https://www.metmuseum.org/art/collection/search/346393">The museum record</a>.</p>
+  <p>Made after a Metropolitan Museum design for a cup or reliquary attributed to Giovanni Battista Foggini. The source drawing's narrow vertical balance remains; this open bowl and current are invented paper-cut responses, not reconstructions. <a href="https://www.metmuseum.org/art/collection/search/346393">The museum record</a>.</p>
+  <section class="pair" aria-label="A comparison of the fourth and fifth cuts">
+    <figure>
+      <img src="tides-afterimage-leaving.png" alt="A blue tide rises from a red bowl, curls inward at its rounded tip, and leaves one gold drop between the current and bowl.">
+      <figcaption><i>Leaving Vessel</i>, fourth cut. The rounded tip and single drop keep a trace of ornament.</figcaption>
+    </figure>
+    <figure>
+      <img src="tides-afterimage-open-current.png" alt="A blue current rises from the red bowl and ends at an unrounded open cut.">
+      <figcaption><i>Open Current</i>, fifth cut. The flat end reads as a cut edge, not a polished stream.</figcaption>
+    </figure>
+  </section>
+  <details>
+    <summary>Earlier vessels and turns</summary>
+    <div class="archive">
+      <figure><img src="the-tides-afterimage.png" alt="A red open bowl on a stem, with blue water curling around an untouched circle of paper."><figcaption>First cut: a held curl around an untouched space.</figcaption></figure>
+      <figure><img src="the-tides-afterimage-loose.png" alt="A red bowl tilts as a blue wave crests upward and opens toward the left."><figcaption><i>Loose Water</i>, second cut: the vessel tips into the wave.</figcaption></figure>
+      <figure><img src="the-tides-afterimage-tall.png" alt="A tall paper-cut vessel with a narrow stem; blue water rises in a curl above its bowl."><figcaption><i>Narrow Sheet</i>, third cut: the long proportion takes over.</figcaption></figure>
+    </div>
+  </details>
   <section class="poem">
     <h2>Coin of Air</h2>
     <p>At the lip,
@@ -50,6 +58,6 @@ Above it, air
 takes the shape of a coin
 and spends nothing.</p>
   </section>
-  <p><a href="index.html">Back to Field and Channel</a></p>
+  <p><a href="index.html">Back to the studio</a></p>
 </main>
 </html>

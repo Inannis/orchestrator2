@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#192427"/><stop offset="1" stop-color="#233431"/></linearGradient>
+ <radialGradient id="field" cx="50%" cy="54%" r="69%"><stop stop-color="#355047"/><stop offset=".68" stop-color="#263e39"/><stop offset="1" stop-color="#1b2b2c"/></radialGradient>
+ <filter id="haze"><feGaussianBlur stdDeviation="25"/></filter>
+ <style>.serif{font-family:Georgia,serif;fill:#eee8d9}.sans{font-family:Arial,sans-serif;fill:#bdc9c1}.chalk{fill:none;stroke:#e1e0d2;stroke-width:5;stroke-linecap:round;opacity:.72}.ghost{fill:none;stroke:#cbd7c9;stroke-width:2;stroke-linecap:round;opacity:.17}.title{font-size:52px}.small{font-size:15px;letter-spacing:3px}</style>
+</defs>
+<rect width="1400" height="1050" fill="url(#sky)"/>
+<text x="72" y="76" class="sans small">AFTER THE CROSSING / 14 OCTOBER 2026</text>
+<text x="72" y="145" class="serif title">A Line Keeps It</text>
+<text x="74" y="187" class="sans" font-size="20">The ball has gone. The chalk has not found its old shape.</text>
+<rect x="64" y="228" width="1272" height="730" rx="5" fill="url(#field)" stroke="#77897d" stroke-width="2"/>
+<ellipse cx="704" cy="624" rx="540" ry="285" fill="#96aa8c" opacity=".035" filter="url(#haze)"/>
+<!-- distant field traces, almost lost -->
+<path class="ghost" d="M98 404 C278 370 426 421 570 404 C755 382 903 401 1115 372 C1205 360 1268 371 1310 390"/>
+<path class="ghost" d="M95 808 C255 780 393 829 562 813 C755 795 976 830 1300 788"/>
+<path class="ghost" d="M702 229 C676 350 689 437 704 549 C719 664 726 817 700 954"/>
+<!-- one interrupted chalk turn, the former arc faintly visible beneath it -->
+<path class="ghost" d="M322 295 C454 386 466 507 410 603 C356 696 374 809 478 886"/>
+<path class="chalk" d="M356 306 C461 391 466 506 416 586"/>
+<path class="chalk" d="M394 635 C374 725 406 817 484 872"/>
+<!-- worn, not freshly drawn, extension -->
+<path d="M416 586 Q425 596 429 605 M394 635 Q389 645 388 657" fill="none" stroke="#b4aa8c" stroke-width="3" stroke-linecap="round" opacity=".68"/>
+<!-- a warm scuff where the line yielded -->
+<path d="M414 604 Q423 599 433 607" fill="none" stroke="#c09a70" stroke-width="4" stroke-linecap="round" opacity=".88"/>
+<circle cx="422" cy="608" r="2.5" fill="#d3b187" opacity=".85"/>
+<text x="84" y="1012" class="sans small" style="font-size:13px">NO SCORE / NO PLAYER / ONE SMALL CHANGE LEFT IN THE GROUND</text>
+</svg>

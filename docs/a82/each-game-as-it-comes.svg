@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+ <linearGradient id="night" x2="0" y2="1"><stop stop-color="#172226"/><stop offset="1" stop-color="#24312e"/></linearGradient>
+ <linearGradient id="grass" x2="0" y2="1"><stop stop-color="#324b43"/><stop offset="1" stop-color="#233b37"/></linearGradient>
+ <radialGradient id="ball"><stop stop-color="#f4eddb"/><stop offset=".82" stop-color="#d8d0bc"/><stop offset="1" stop-color="#89978a"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+ <style>
+ .title{font:52px Georgia,serif;fill:#eee8d9}.small{font:16px Arial,sans-serif;fill:#bdc9c1;letter-spacing:3px}.sub{font:21px Georgia,serif;fill:#cad2c7}.label{font:15px Arial,sans-serif;fill:#d8dfd2;letter-spacing:2px}.chalk{fill:none;stroke:#e7e4d4;stroke-width:4;stroke-linecap:round;opacity:.82}.ghost{fill:none;stroke:#d9dfd0;stroke-width:2;stroke-linecap:round;opacity:.22}.ball{fill:url(#ball);stroke:#8c998c;stroke-width:2}.shade{fill:#b2b6a8}
+ </style>
+</defs>
+<rect width="1600" height="1000" fill="url(#night)"/>
+<text x="78" y="78" class="small">A CHANCE ARRIVAL / 14 OCTOBER 2026</text>
+<text x="78" y="151" class="title">Each Game as It Comes</text>
+<text x="80" y="194" class="sub">One ball approaches a line that does not yet know what to do with it.</text>
+<!-- shared dark field -->
+<g transform="translate(64 252)">
+ <rect width="470" height="560" rx="5" fill="url(#grass)" stroke="#7b8e7d" stroke-width="2"/>
+ <path class="ghost" d="M30 83 C168 107 295 36 442 91 M24 388 C158 337 305 441 454 376 M47 488 C180 452 296 505 421 458"/>
+ <text x="30" y="48" class="label">01 / APPROACH</text>
+ <path class="chalk" d="M107 110 C151 177 154 256 119 322 C93 371 99 436 151 472"/>
+ <path class="ghost" d="M75 104 C124 175 127 260 94 327 C70 375 76 442 127 481"/>
+ <ellipse cx="333" cy="305" rx="63" ry="24" fill="#111a18" opacity=".3" filter="url(#soft)"/>
+ <circle class="ball" cx="338" cy="283" r="28"/><path d="M338 268 L350 276 L346 290 L331 295 L323 282Z" class="shade"/><path d="M338 268 L336 255 M350 276 L363 273 M346 290 L356 301 M331 295 L324 308 M323 282 L311 279" fill="none" stroke="#879486" stroke-width="2"/>
+ <text x="30" y="520" class="label">THE LINE HOLDS</text>
+</g>
+<g transform="translate(565 252)">
+ <rect width="470" height="560" rx="5" fill="url(#grass)" stroke="#7b8e7d" stroke-width="2"/>
+ <path class="ghost" d="M30 83 C168 107 295 36 442 91 M24 388 C158 337 305 441 454 376 M47 488 C180 452 296 505 421 458"/>
+ <text x="30" y="48" class="label">02 / CROSSING</text>
+ <path class="chalk" d="M107 110 C151 177 154 256 119 322 M117 354 C99 397 113 446 151 472"/>
+ <path class="ghost" d="M75 104 C124 175 127 260 94 327 C70 375 76 442 127 481"/>
+ <ellipse cx="237" cy="335" rx="64" ry="24" fill="#111a18" opacity=".3" filter="url(#soft)"/>
+ <circle class="ball" cx="237" cy="310" r="28"/><path d="M237 295 L249 303 L245 317 L230 322 L222 309Z" class="shade"/><path d="M237 295 L235 282 M249 303 L262 300 M245 317 L255 328 M230 322 L223 335 M222 309 L210 306" fill="none" stroke="#879486" stroke-width="2"/>
+ <path d="M117 344 Q135 343 152 352" fill="none" stroke="#c6a278" stroke-width="3" stroke-linecap="round"/>
+ <text x="30" y="520" class="label">A SMALL BREAK IN THE CHALK</text>
+</g>
+<g transform="translate(1066 252)">
+ <rect width="470" height="560" rx="5" fill="url(#grass)" stroke="#7b8e7d" stroke-width="2"/>
+ <path class="ghost" d="M30 83 C168 107 295 36 442 91 M24 388 C158 337 305 441 454 376 M47 488 C180 452 296 505 421 458"/>
+ <text x="30" y="48" class="label">03 / AFTER</text>
+ <path class="chalk" d="M107 110 C151 177 154 256 119 322 C112 338 111 349 117 360"/>
+ <path class="chalk" d="M142 368 C161 397 160 443 151 472"/>
+ <path d="M117 360 C127 356 136 359 142 368" fill="none" stroke="#c6a278" stroke-width="4" stroke-linecap="round"/>
+ <path class="ghost" d="M75 104 C124 175 127 260 94 327 C70 375 76 442 127 481"/>
+ <ellipse cx="177" cy="384" rx="61" ry="23" fill="#111a18" opacity=".3" filter="url(#soft)"/>
+ <circle class="ball" cx="177" cy="359" r="28"/><path d="M177 344 L189 352 L185 366 L170 371 L162 358Z" class="shade"/><path d="M177 344 L175 331 M189 352 L202 349 M185 366 L195 377 M170 371 L163 384 M162 358 L150 355" fill="none" stroke="#879486" stroke-width="2"/>
+ <text x="30" y="520" class="label">THE EDGE REMEMBERS</text>
+</g>
+<text x="80" y="888" class="sub" font-style="italic">“We have to face the reality and look at each game as it comes.”</text>
+<text x="80" y="928" class="small" style="font-size:13px">PATSON DAKA / A LINE RECEIVED IN PASSING</text>
+</svg>

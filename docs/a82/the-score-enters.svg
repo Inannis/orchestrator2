@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000">
+<defs>
+ <linearGradient id="night" x2="0" y2="1"><stop stop-color="#192326"/><stop offset="1" stop-color="#202f2d"/></linearGradient>
+ <radialGradient id="ground"><stop stop-color="#365048"/><stop offset="1" stop-color="#1e302e"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="32"/></filter>
+ <style>.serif{font-family:Georgia,serif;fill:#eee8d9}.sans{font-family:Arial,sans-serif;fill:#b8c5bb}.tiny{font-size:15px;letter-spacing:3px}.chalk{fill:none;stroke:#e5e0d1;stroke-width:4;stroke-linecap:round;opacity:.76}.ghost{fill:none;stroke:#cad5c8;stroke-width:2;opacity:.18}.score{font-family:Georgia,serif;fill:#eee8d9;font-size:230px;font-weight:400}.label{font:16px Arial,sans-serif;letter-spacing:4px;fill:#bfc9bd}</style>
+</defs>
+<rect width="1500" height="1000" fill="url(#night)"/>
+<text x="72" y="76" class="sans tiny">A LATER RESULT / 14 DECEMBER 2024</text>
+<text x="72" y="148" class="serif" font-size="52">The Score Enters</text>
+<text x="74" y="193" class="sans" font-size="20">The sentence was spoken before the next game. The result came after.</text>
+<rect x="64" y="235" width="1372" height="690" rx="5" fill="url(#ground)" stroke="#687d72" stroke-width="2"/>
+<ellipse cx="750" cy="598" rx="610" ry="265" fill="#b4b19a" opacity=".035" filter="url(#blur)"/>
+<!-- field geometry dissolves as it reaches the score -->
+<path class="ghost" d="M92 363 C270 401 399 334 578 370 C711 396 804 366 923 351 C1102 328 1233 383 1405 342"/>
+<path class="ghost" d="M92 817 C267 778 437 826 588 798 C737 771 900 805 1041 824 C1165 841 1291 793 1406 808"/>
+<path class="ghost" d="M748 238 C721 366 728 472 752 593 C775 715 778 819 748 924"/>
+<path class="chalk" d="M142 690 C266 609 368 601 487 612 C554 618 591 623 630 621"/>
+<path class="chalk" d="M687 621 C725 617 767 618 813 620 C929 626 1041 643 1177 712"/>
+<path d="M630 621 Q646 606 662 622 M672 622 Q680 630 687 621" fill="none" stroke="#c39d73" stroke-width="4" stroke-linecap="round"/>
+<!-- four marks, one open zero: the score as a changed field rather than a board -->
+<text x="462" y="581" class="score">4</text>
+<text x="708" y="581" class="serif" font-size="74" fill="#aabbad">:</text>
+<ellipse cx="948" cy="499" rx="82" ry="113" fill="none" stroke="#d7d7c8" stroke-width="10" opacity=".8"/>
+<ellipse cx="948" cy="499" rx="65" ry="94" fill="none" stroke="#81938a" stroke-width="2" opacity=".5"/>
+<!-- four small chalk deposits along the curve -->
+<g fill="#e1dfd0" opacity=".82"><circle cx="540" cy="614" r="5"/><circle cx="560" cy="615" r="4"/><circle cx="578" cy="617" r="3.5"/><circle cx="596" cy="619" r="3"/></g>
+<text x="448" y="735" class="label">NEWCASTLE</text><text x="854" y="735" class="label">LEICESTER</text>
+<text x="72" y="967" class="sans tiny" style="font-size:13px">THE NEXT GAME CAME WITH ITS OWN FACT / NO PLAYER, NO GOALS, ONLY THE RESULT</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1980" viewBox="0 0 1400 1980">
+<rect width="1400" height="1980" fill="#fffdf8"/>
+<g fill="#25383b" font-family="Georgia,serif"><text x="110" y="125" font-size="22" letter-spacing="4">ORLA / A PAINTING HANDOFF</text><text x="110" y="215" font-size="62">The Boundary Is Still Wet</text></g>
+<g fill="#485d5b" font-family="Arial,sans-serif" font-size="25"><text x="110" y="275">Fill the numbered bands from the key. The bowl's mouth has no complete edge.</text><text x="110" y="314">Continue its line, cross it, or let the color leave the vessel. Decide where it ends.</text></g>
+<text x="700" y="405" text-anchor="middle" fill="#52696a" font-family="Arial,sans-serif" font-size="23" letter-spacing="2">NUMBERED WALL / THE OPEN REGION MAY CHANGE ITS BORDER</text>
+<!-- low bowl body, with numbered regions -->
+<path d="M300 690 Q340 1110 700 1220 Q1060 1110 1100 690 Z" fill="#fffdf8" stroke="#526c70" stroke-width="6"/>
+<path d="M329 835 Q500 895 700 900 Q900 895 1071 835 L1035 1010 Q875 1085 700 1095 Q525 1085 365 1010 Z" fill="#e9dfcc" stroke="#526c70" stroke-width="4"/>
+<path d="M365 1010 Q520 1080 700 1095 Q880 1080 1035 1010 L1000 1145 Q840 1200 700 1220 Q560 1200 400 1145 Z" fill="#d8c6a6" stroke="#526c70" stroke-width="4"/>
+<path d="M470 1180 L500 1290 L900 1290 L930 1180" fill="#fffdf8" stroke="#526c70" stroke-width="5"/><ellipse cx="700" cy="1290" rx="200" ry="30" fill="#fffdf8" stroke="#526c70" stroke-width="4"/>
+<g fill="#405b5f" font-family="Arial,sans-serif" font-size="36" font-weight="bold" text-anchor="middle"><text x="700" y="805">1</text><text x="700" y="985">2</text><text x="700" y="1150">3</text><text x="700" y="1270">4</text></g>
+<!-- open mouth: broken contour, with small floating guide arcs -->
+<path d="M324 690 C350 592 510 540 650 538" fill="none" stroke="#526c70" stroke-width="6"/>
+<path d="M830 542 C960 552 1055 600 1080 690" fill="none" stroke="#526c70" stroke-width="6"/>
+<path d="M650 538 C708 525 770 527 830 542" fill="none" stroke="#b8aaa0" stroke-width="3" stroke-dasharray="3 13" stroke-linecap="round"/>
+<path d="M324 690 Q700 805 1080 690" fill="none" stroke="#526c70" stroke-width="4"/>
+<text x="700" y="675" text-anchor="middle" fill="#89918a" font-family="Georgia,serif" font-size="25" font-style="italic">open region</text>
+<path d="M1040 550 L1172 480" fill="none" stroke="#9a725f" stroke-width="3"/><text x="1182" y="465" fill="#8a594e" font-family="Arial,sans-serif" font-size="20">guide ends</text><text x="1182" y="493" fill="#657875" font-family="Arial,sans-serif" font-size="18">are not walls</text>
+<text x="110" y="1435" fill="#25383b" font-family="Georgia,serif" font-size="28">THE KEY / FOLLOW THESE COLORS</text>
+<g font-family="Arial,sans-serif" font-size="24" fill="#30484a"><rect x="110" y="1475" width="44" height="44" fill="#C65B62"/><text x="176" y="1506">1 / upper wall</text><rect x="430" y="1475" width="44" height="44" fill="#A94B55"/><text x="496" y="1506">2 / middle wall</text><rect x="790" y="1475" width="44" height="44" fill="#873B49"/><text x="856" y="1506">3 / lower wall</text><rect x="1100" y="1475" width="44" height="44" fill="#A8474B"/><text x="1166" y="1506">4 / foot</text></g>
+<text x="110" y="1615" fill="#485d5b" font-family="Arial,sans-serif" font-size="24">In the open region, may your mark alter the line that contains it.</text><text x="110" y="1660" fill="#485d5b" font-family="Arial,sans-serif" font-size="24">A sentence about what happened is welcome. Name optional.</text>
+<path d="M110 1740 H1290" stroke="#c8c9be" stroke-width="2"/><text x="110" y="1800" fill="#71817b" font-family="Arial,sans-serif" font-size="19">A DIGITAL STUDY / THE MAP IS AN INVITATION, NOT A HISTORICAL RECONSTRUCTION</text>
+</svg>

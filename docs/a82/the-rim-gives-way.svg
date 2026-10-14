@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+ <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#c95d5d"/><stop offset=".5" stop-color="#9b4049"/><stop offset="1" stop-color="#642f3b"/></linearGradient>
+ <linearGradient id="mouth" x2="0" y2="1"><stop stop-color="#f4ecda"/><stop offset="1" stop-color="#d9cdb8"/></linearGradient>
+ <linearGradient id="wash" x2="1" y2="1"><stop stop-color="#a4b6b0"/><stop offset="1" stop-color="#687f80"/></linearGradient>
+ <style>
+ .sans{font-family:Arial,sans-serif;fill:#b9c6bc}.serif{font-family:Georgia,serif;fill:#eee8d9}.tiny{font-size:17px;letter-spacing:3px}.caption{font-size:17px;letter-spacing:1px}.dish{fill:url(#wall);stroke:#dec8a9;stroke-width:3}.rim{fill:url(#mouth);stroke:#b39d83;stroke-width:3}.inner{fill:#ebe4d5;stroke:#987e69;stroke-width:2}.line{fill:none;stroke:#a85e4d;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.fine{fill:none;stroke:#c48568;stroke-width:3;stroke-linecap:round}.cut{fill:none;stroke:#263538;stroke-width:8;stroke-linecap:round}.shine{fill:none;stroke:#f1d8b5;stroke-width:4;stroke-linecap:round;opacity:.8}
+ </style>
+</defs>
+<rect width="1600" height="1000" fill="#182226"/>
+<text x="76" y="78" class="sans tiny">ORLA / THE UNNUMBERED PATCH / SESSION 12</text>
+<text x="76" y="150" class="serif" font-size="54">The Rim Gives Way</text>
+<text x="78" y="190" class="sans" font-size="21">A prepared line can hold a choice. Can it also be changed by one?</text>
+<g transform="translate(64 248)">
+ <rect width="470" height="610" rx="4" fill="#eee8d9"/>
+ <text x="28" y="48" fill="#52696a" font-family="Arial" font-size="16" letter-spacing="2">01 / HELD</text>
+ <path class="dish" d="M85 240 C98 345 137 420 235 439 C333 420 372 345 385 240Z"/>
+ <path d="M112 338 C160 366 308 366 358 338" fill="none" stroke="#d38a76" stroke-width="3" opacity=".65"/>
+ <ellipse class="rim" cx="235" cy="240" rx="150" ry="62"/>
+ <ellipse class="inner" cx="235" cy="240" rx="119" ry="39"/>
+ <path class="line" d="M231 249 C219 237 224 219 237 216 C249 214 253 230 243 238 C234 245 228 252 236 260"/>
+ <circle cx="253" cy="255" r="5" fill="#a85e4d"/><circle cx="261" cy="260" r="3" fill="#a85e4d"/>
+ <path class="shine" d="M104 284 Q112 354 154 385"/>
+ <text x="30" y="520" fill="#405557" font-family="Georgia" font-size="24">The sign stays inside.</text>
+ <text x="30" y="555" fill="#687773" font-family="Arial" font-size="16">The map keeps its border.</text>
+</g>
+<g transform="translate(565 248)">
+ <rect width="470" height="610" rx="4" fill="#eee8d9"/>
+ <text x="28" y="48" fill="#52696a" font-family="Arial" font-size="16" letter-spacing="2">02 / PRESSED</text>
+ <path class="dish" d="M85 240 C98 345 137 420 235 439 C333 420 372 345 385 240Z"/>
+ <path d="M112 338 C160 366 308 366 358 338" fill="none" stroke="#d38a76" stroke-width="3" opacity=".65"/>
+ <ellipse class="rim" cx="235" cy="240" rx="150" ry="62"/>
+ <ellipse class="inner" cx="235" cy="240" rx="119" ry="39"/>
+ <path class="line" d="M232 264 C216 246 221 225 236 220 C249 216 255 231 245 241 C236 250 228 253 229 239 C231 225 245 216 257 218"/>
+ <path class="fine" d="M257 218 C265 219 272 224 280 230"/><circle cx="283" cy="233" r="4" fill="#a85e4d"/>
+ <path class="shine" d="M104 284 Q112 354 154 385"/>
+ <text x="30" y="520" fill="#405557" font-family="Georgia" font-size="24">The sign leans on it.</text>
+ <text x="30" y="555" fill="#687773" font-family="Arial" font-size="16">A touch can read as damage.</text>
+</g>
+<g transform="translate(1066 248)">
+ <rect width="470" height="610" rx="4" fill="#eee8d9"/>
+ <text x="28" y="48" fill="#52696a" font-family="Arial" font-size="16" letter-spacing="2">03 / OPENED</text>
+ <!-- rim interrupted at upper right; a narrow washed opening connects interior and outside -->
+ <path class="dish" d="M85 240 C98 345 137 420 235 439 C333 420 372 345 385 240Z"/>
+ <path d="M112 338 C160 366 308 366 358 338" fill="none" stroke="#d38a76" stroke-width="3" opacity=".65"/>
+ <path d="M85 240 A150 62 0 1 0 350 204" fill="none" stroke="#b39d83" stroke-width="3"/>
+ <path d="M350 204 A150 62 0 0 0 85 240" fill="none" stroke="#b39d83" stroke-width="3"/>
+ <path d="M350 204 Q375 193 399 180 Q411 177 416 190 Q408 205 391 212 L366 224" fill="none" stroke="#687f80" stroke-width="13" stroke-linecap="round"/>
+ <path d="M344 207 Q372 199 394 184" fill="none" stroke="#b8c9bd" stroke-width="3" stroke-linecap="round"/>
+ <ellipse class="inner" cx="235" cy="240" rx="119" ry="39"/>
+ <path class="line" d="M230 265 C218 250 220 232 232 226 C246 219 259 230 250 243 C243 254 231 260 236 270 C243 281 263 279 278 267 C298 251 308 230 325 218 C340 207 358 205 380 197"/>
+ <path class="fine" d="M279 267 C294 277 309 280 322 277"/>
+ <circle cx="274" cy="280" r="4" fill="#a85e4d"/><circle cx="284" cy="285" r="3" fill="#a85e4d"/>
+ <path class="shine" d="M104 284 Q112 354 154 385"/>
+ <text x="30" y="520" fill="#405557" font-family="Georgia" font-size="24">The edge takes a stroke.</text>
+ <text x="30" y="555" fill="#687773" font-family="Arial" font-size="16">Inside and outside both change.</text>
+</g>
+<text x="78" y="925" class="sans" font-size="16">The third mouth is not a hole in the map: its outline bends outward and carries the painter's mark with it.</text>
+</svg>

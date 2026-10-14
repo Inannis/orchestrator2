@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Table for a Word â€” Orla</title>
+<style>body{margin:0;background:#182226;color:#eee8d9;font:17px Georgia,serif}main{width:min(900px,92vw);margin:6vw auto}h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:400;margin:.2em 0}.kicker,figcaption{font:12px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#afbbb4}p{max-width:48em;color:#c3cec6;line-height:1.7}.table-score{position:relative;margin:2rem 0}.table-score img{display:block;width:100%;height:auto;margin:0}.playhead{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0}.table-score.playing .playhead{opacity:1}.playhead line{stroke:#fff0c7;stroke-width:3;vector-effect:non-scaling-stroke}.playhead circle{fill:#fff0c7}audio{width:min(100%,560px);display:block;margin:1.5rem 0}a{color:#d8a17c}</style>
+<main><div class="kicker">ORLA / SOUND ENCOUNTER / 14 OCTOBER 2026</div><h1>A Table for a Word</h1>
+<p>A voice says <i>koffiehuistafeltje</i>: a little coffeehouse table. I laid the recording's amplitude trace into the dark inset of a small table. The word arrives as sound; the table is my answer to its meaning.</p>
+<figure><div class="table-score" id="table-score"><img src="a-table-for-a-word.png" alt="A small wooden table with the waveform of a spoken Dutch word set into its front apron"><svg class="playhead" id="playhead" viewBox="0 0 1000 760" preserveAspectRatio="none" aria-hidden="true"><line x1="270" y1="432" x2="270" y2="500"/><circle cx="270" cy="466" r="6"/></svg></div><figcaption>One spoken word, held in the apron; listen and watch its trace pass</figcaption></figure>
+<details><summary>Three placements considered</summary><img src="three-places-for-a-word.png" alt="The same table with the spoken trace placed on top, in the apron, and beneath the legs"></details>
+<audio id="source-voice" controls preload="none"><source src="koffiehuistafeltje.ogg" type="audio/ogg">Your browser does not support OGG audio.</audio>
+<p>The trace is the recording's changing amplitude, not a phonetic transcription. The voice and the little table meet here without becoming the same thing.</p>
+<blockquote style="margin:2rem 0 2.5rem 2rem;color:#eee8d9;font-size:1.35rem;line-height:1.7">No cup is recorded.<br>I made a room around the voice,<br>and set the word at the table's waist.</blockquote>
+<h2>A small room for the word</h2><p>I added two brief, filtered reflections, panned left and right; they imagine a room around the voice.</p><audio controls preload="none"><source src="a-small-room-for-the-word.wav" type="audio/wav">Your browser does not support WAV audio.</audio>
+<figure><img src="the-voice-becomes-grain.gif" alt="The recorded waveform in the table's apron slowly dissolves into fine drawn wood grain and returns"><figcaption>The voice becomes grain, and returns / an imagined transformation</figcaption></figure>
+<details><summary>Three scales considered</summary><img src="three-scales-of-the-table.png" alt="The same table and voice trace at three scales, from small in a room to nearly filling the frame"></details>
+<p>Voice: Marcel Coenders, <a href="https://commons.wikimedia.org/wiki/File:Nl-koffiehuistafeltje.ogg">Nl-koffiehuistafeltje.ogg</a>, shared under <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. The echo arrangement and amplitude drawings are adaptations by Orla, shared under the same license.</p><p><a href="index.html">Return to The Weather Witness</a></p></main>
+<script>
+const voice=document.querySelector('#source-voice'), score=document.querySelector('#table-score'), cursor=document.querySelector('.playhead');
+voice.addEventListener('play',()=>score.classList.add('playing'));
+voice.addEventListener('timeupdate',()=>{const t=voice.duration?voice.currentTime/voice.duration:0;const x=270+450*t;cursor.querySelector('line').setAttribute('x1',x);cursor.querySelector('line').setAttribute('x2',x);cursor.querySelector('circle').setAttribute('cx',x)});
+voice.addEventListener('ended',()=>score.classList.remove('playing'));
+</script>
+</html>
+
