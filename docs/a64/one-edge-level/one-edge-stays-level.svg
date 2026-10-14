@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1100" viewBox="0 0 1500 1100">
+<defs>
+  <clipPath id="fragment"><path d="M 277 392 L 695 390 L 691 507 L 671 514 L 658 684 L 610 724 L 553 783 L 530 765 L 489 717 L 448 674 L 407 622 L 365 571 L 336 521 L 309 469 L 286 425 Z"/></clipPath>
+  <filter id="soft-shadow" x="-20%" y="-20%" width="150%" height="150%">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#eee9dc"/>
+<rect x="38" y="38" width="1424" height="1024" fill="none" stroke="#202c2d" stroke-width="1.2"/>
+<path d="M76 88 H1424 M76 94 H236" fill="none" stroke="#a9aaa0" stroke-width="1.2"/>
+<path d="M76 94 H236" fill="none" stroke="#9e6244" stroke-width="3"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.6" fill="#185c70">
+  <text x="84" y="128">MARA VENN / OBJECT STUDY 01</text>
+  <text x="1416" y="128" text-anchor="end" fill="#9e6244">DRAWING AFTER A PHOTOGRAPH</text>
+</g>
+<text x="80" y="210" font-family="Georgia, 'Times New Roman', serif" font-size="64" fill="#202c2d" letter-spacing="-1.2">One Edge Stays Level</text>
+<text x="84" y="250" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#185c70" letter-spacing="1.6">MET 2011.604.14.62  /  TERRACOTTA, BLACK GLAZE  /  6TH–4TH C. BCE  /  FABRIC UNKNOWN</text>
+<path d="M84 280 H1416" fill="none" stroke="#a9aaa0" stroke-width="1"/>
+
+<!-- The grid records the photographed setting, not a reconstructed vessel scale. -->
+<g stroke="#a9aaa0" stroke-width="0.7" opacity="0.48">
+
+<path d="M120 330 V900"/>
+<path d="M170 330 V900"/>
+<path d="M220 330 V900"/>
+<path d="M270 330 V900"/>
+<path d="M320 330 V900"/>
+<path d="M370 330 V900"/>
+<path d="M420 330 V900"/>
+<path d="M470 330 V900"/>
+<path d="M520 330 V900"/>
+<path d="M570 330 V900"/>
+<path d="M620 330 V900"/>
+<path d="M670 330 V900"/>
+<path d="M720 330 V900"/>
+<path d="M770 330 V900"/>
+<path d="M820 330 V900"/>
+<path d="M120 330 H820"/>
+<path d="M120 380 H820"/>
+<path d="M120 430 H820"/>
+<path d="M120 480 H820"/>
+<path d="M120 530 H820"/>
+<path d="M120 580 H820"/>
+<path d="M120 630 H820"/>
+<path d="M120 680 H820"/>
+<path d="M120 730 H820"/>
+<path d="M120 780 H820"/>
+<path d="M120 830 H820"/>
+<path d="M120 880 H820"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#185c70" letter-spacing="1.3">
+  <text x="120" y="315">PHOTO GRID / REFERENCE ONLY</text>
+  <text x="1420" y="315" text-anchor="end">FLAT, GLAZED RIM / ENLARGED AS A LINE</text>
+</g>
+
+<!-- A shadow holds the pictured fragment against the paper without filling its missing volume. -->
+<path d="M 277 392 L 695 390 L 691 507 L 671 514 L 658 684 L 610 724 L 553 783 L 530 765 L 489 717 L 448 674 L 407 622 L 365 571 L 336 521 L 309 469 L 286 425 Z" transform="translate(11 12)" fill="#161919" opacity="0.17" filter="url(#soft-shadow)"/>
+<path d="M 277 392 L 695 390 L 691 507 L 671 514 L 658 684 L 610 724 L 553 783 L 530 765 L 489 717 L 448 674 L 407 622 L 365 571 L 336 521 L 309 469 L 286 425 Z" fill="#373635" stroke="#292726" stroke-width="2.2" stroke-linejoin="round"/>
+<g clip-path="url(#fragment)" fill="none" stroke="#b5aa97" stroke-linecap="round">
+
+<path d="M279.0 416.0 L331.1 418.2 L383.2 417.7 L435.4 415.1 L487.5 413.6 L539.6 415.0 L591.8 417.6 L643.9 418.3 L696.0 416.2" stroke-width="1.2" opacity="0.72"/>
+<path d="M284.0 432.9 L333.1 434.1 L382.2 431.5 L431.4 428.3 L480.5 428.4 L529.6 431.6 L578.8 434.1 L627.9 432.8 L677.0 429.3" stroke-width="1.5499999999999998" opacity="0.72"/>
+<path d="M289.0 449.8 L335.1 448.6 L381.2 444.2 L427.4 442.0 L473.5 444.7 L519.6 448.9 L565.8 449.6 L611.9 445.9 L658.0 442.3" stroke-width="1.9" opacity="0.72"/>
+<path d="M294.0 463.3 L344.2 461.2 L394.5 458.9 L444.8 459.1 L495.0 461.7 L545.2 463.4 L595.5 462.2 L645.8 459.5 L696.0 458.7" stroke-width="1.2" opacity="0.72"/>
+<path d="M279.0 477.9 L328.8 474.3 L378.5 472.8 L428.2 475.2 L478.0 478.5 L527.8 478.8 L577.5 475.6 L627.2 472.9 L677.0 474.0" stroke-width="1.5499999999999998" opacity="0.72"/>
+<path d="M284.0 491.0 L330.8 487.3 L377.5 488.1 L424.2 492.5 L471.0 495.0 L517.8 492.6 L564.5 488.3 L611.2 487.2 L658.0 490.8" stroke-width="1.9" opacity="0.72"/>
+<path d="M289.0 504.6 L339.9 503.7 L390.8 505.6 L441.6 508.0 L492.5 508.0 L543.4 505.5 L594.2 503.6 L645.1 504.7 L696.0 507.3" stroke-width="1.2" opacity="0.72"/>
+<path d="M294.0 517.9 L341.9 518.9 L389.8 522.4 L437.6 524.2 L485.5 522.1 L533.4 518.6 L581.2 518.1 L629.1 521.1 L677.0 524.0" stroke-width="1.5499999999999998" opacity="0.72"/>
+<path d="M279.0 532.2 L326.4 535.7 L373.8 539.6 L421.1 539.1 L468.5 534.8 L515.9 532.0 L563.2 534.1 L610.6 538.5 L658.0 539.9" stroke-width="1.9" opacity="0.72"/>
+<path d="M284.0 549.6 L335.5 552.3 L387.0 553.4 L438.5 551.6 L490.0 549.1 L541.5 548.9 L593.0 551.3 L644.5 553.3 L696.0 552.5" stroke-width="1.2" opacity="0.72"/>
+<path d="M289.0 566.1 L337.5 569.0 L386.0 568.3 L434.5 564.8 L483.0 562.8 L531.5 564.7 L580.0 568.2 L628.5 569.0 L677.0 566.2" stroke-width="1.5499999999999998" opacity="0.72"/>
+<path d="M294.0 583.4 L339.5 584.9 L385.0 581.6 L430.5 577.6 L476.0 577.7 L521.5 581.8 L567.0 584.9 L612.5 583.2 L658.0 578.8" stroke-width="1.9" opacity="0.72"/>
+<path d="M279.0 598.3 L331.1 597.5 L383.2 594.9 L435.4 593.6 L487.5 595.2 L539.6 597.8 L591.8 598.2 L643.9 595.9 L696.0 593.8" stroke-width="1.2" opacity="0.72"/>
+<path d="M284.0 614.0 L333.1 611.2 L382.2 608.1 L431.4 608.6 L480.5 612.0 L529.6 614.2 L578.8 612.5 L627.9 609.0 L677.0 607.9" stroke-width="1.5499999999999998" opacity="0.72"/>
+<path d="M289.0 628.3 L335.1 623.9 L381.2 622.1 L427.4 625.1 L473.5 629.2 L519.6 629.4 L565.8 625.5 L611.9 622.1 L658.0 623.5" stroke-width="1.9" opacity="0.72"/>
+<path d="M294.0 640.9 L344.2 638.8 L394.5 639.3 L444.8 641.9 L495.0 643.4 L545.2 642.0 L595.5 639.3 L645.8 638.8 L696.0 640.9" stroke-width="1.2" opacity="0.72"/>
+<path d="M279.0 654.1 L328.8 652.9 L378.5 655.5 L428.2 658.7 L478.0 658.6 L527.8 655.3 L577.5 652.9 L627.2 654.2 L677.0 657.8" stroke-width="1.5499999999999998" opacity="0.72"/>
+<path d="M284.0 667.2 L330.8 668.5 L377.5 672.9 L424.2 675.0 L471.0 672.3 L517.8 668.0 L564.5 667.4 L611.2 671.2 L658.0 674.8" stroke-width="1.9" opacity="0.72"/>
+<path d="M289.0 683.7 L339.9 685.9 L390.8 688.2 L441.6 687.8 L492.5 685.3 L543.4 683.6 L594.2 684.9 L645.1 687.5 L696.0 688.3" stroke-width="1.2" opacity="0.72"/>
+<path d="M423 704 q28 -3 53 1 t75 0" stroke-width="1.25" opacity="0.58"/>
+<path d="M440 713 q28 -3 53 1 t62 0" stroke-width="1.25" opacity="0.58"/>
+<path d="M457 722 q28 -3 53 1 t49 0" stroke-width="1.25" opacity="0.58"/>
+<path d="M474 731 q28 -3 53 1 t36 0" stroke-width="1.25" opacity="0.58"/>
+<path d="M491 740 q28 -3 53 1 t23 0" stroke-width="1.25" opacity="0.58"/>
+<path d="M508 749 q28 -3 53 1 t10 0" stroke-width="1.25" opacity="0.58"/>
+<path d="M525 758 q28 -3 53 1 t-3 0" stroke-width="1.25" opacity="0.58"/>
+</g>
+<!-- A bright, continuous top edge; the lower contour remains visibly broken. -->
+<path d="M278 392 L695 390" fill="none" stroke="#9e6244" stroke-width="4.2" stroke-linecap="round"/>
+<path d="M283 399 L690 397" fill="none" stroke="#d1ae86" stroke-width="1.1" opacity="0.86"/>
+<path d="M287 425 L309 469 L336 521 L365 571 L407 622 L448 674 L489 717 L530 765 L553 783 L610 724 L658 684 L671 514 L691 507 L695 390"
+  fill="none" stroke="#15191a" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- This inset enlarges the single level lip; it does not continue it into a bowl. -->
+<path d="M875 405 H1377 L1372 519 L1353 525 L1345 553 L1328 560 L1308 583 H875 Z" fill="#373635"/>
+<path d="M875 405 H1377" fill="none" stroke="#9e6244" stroke-width="5" stroke-linecap="round"/>
+<path d="M875 414 H1375" fill="none" stroke="#d1ae86" stroke-width="1.2" opacity="0.9"/>
+<g fill="none" stroke="#b5aa97" stroke-linecap="round" opacity="0.75">
+  <path d="M879 432 Q1010 429 1110 433 T1370 431" stroke-width="2"/>
+  <path d="M878 447 Q1000 444 1090 449 T1366 447" stroke-width="1.5"/>
+  <path d="M880 464 Q991 459 1103 465 T1363 462" stroke-width="2"/>
+  <path d="M878 481 Q1020 477 1145 482 T1359 480" stroke-width="1.3"/>
+  <path d="M879 499 Q1003 496 1092 501 T1355 499" stroke-width="1.8"/>
+  <path d="M880 517 Q972 513 1078 518 T1349 516" stroke-width="1.2"/>
+  <path d="M880 535 Q1005 532 1108 537 T1341 534" stroke-width="1.6"/>
+</g>
+<path d="M875 405 V585 M875 405 H900" fill="none" stroke="#185c70" stroke-width="1.1"/>
+<text x="875" y="615" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#185c70" letter-spacing="1.7">THE EDGE CONTINUES IN THE DRAWING;</text>
+<text x="875" y="636" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#185c70" letter-spacing="1.7">THE VESSEL DOES NOT.</text>
+
+<path d="M84 946 H1416" fill="none" stroke="#a9aaa0" stroke-width="1"/>
+<text x="84" y="982" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#202c2d">The top stays level. The missing circumference stays missing.</text>
+<text x="84" y="1020" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#697674" letter-spacing="0.8">DIGITAL LINE STUDY / SURFACE BANDS ARE MY DRAWN INTERPRETATION, NOT A CLAIM OF CUT MARKS.</text>
+<text x="1416" y="1020" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#202c2d" text-anchor="end" letter-spacing="2">M. V.</text>
+</svg>

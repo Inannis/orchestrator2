@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 1100" role="img" aria-labelledby="title desc">
+  <title id="title">A name returns</title>
+  <desc id="desc">A typographic comparison of a March 2018 blog post naming a Broadway Diner sign and a January 2025 photograph captioned Diner, Broadway Avenue. A break between the records asks whether they identify the same wall. Their publication dates are clear; the address link is not.</desc>
+  <rect width="1500" height="1100" fill="#f2efe5"/>
+  <text x="120" y="77" fill="#5d5c55" font-family="Arial, sans-serif" font-size="16" letter-spacing="3">AFTERCOAT / STUDY 02</text>
+  <text x="120" y="145" fill="#292a27" font-family="Georgia, serif" font-size="46">A name returns</text>
+  <text x="1380" y="140" text-anchor="end" fill="#77736a" font-family="Arial, sans-serif" font-size="16" letter-spacing="1">TWO PUBLISHED RECORDS</text>
+  <line x1="120" y1="178" x2="1380" y2="178" stroke="#c5c0b4" stroke-width="1"/>
+
+  <text x="220" y="244" fill="#5d5c55" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">27 MARCH 2018</text>
+  <text x="1280" y="244" text-anchor="end" fill="#5d5c55" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">23 JANUARY 2025</text>
+  <line x1="220" y1="272" x2="690" y2="272" stroke="#77736a" stroke-width="2"/>
+  <line x1="810" y1="272" x2="1280" y2="272" stroke="#77736a" stroke-width="2"/>
+  <circle cx="220" cy="272" r="6" fill="#b5543f"/>
+  <circle cx="1280" cy="272" r="6" fill="#b5543f"/>
+  <text x="750" y="287" text-anchor="middle" fill="#b5543f" font-family="Georgia, serif" font-size="48">?</text>
+  <text x="750" y="322" text-anchor="middle" fill="#77736a" font-family="Arial, sans-serif" font-size="13" letter-spacing="2">SAME WALL?</text>
+
+  <rect x="120" y="360" width="600" height="340" fill="#e9e5d9"/>
+  <rect x="780" y="360" width="600" height="340" fill="#e9e5d9"/>
+  <text x="160" y="405" fill="#77736a" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">BLOG POST / MARYALICE BITTS-JACKSON</text>
+  <text x="160" y="487" fill="#292a27" font-family="Georgia, serif" font-size="38">Broadway Diner</text>
+  <text x="160" y="535" fill="#b5543f" font-family="Georgia, serif" font-size="26">(now Echo Copy Center)</text>
+  <text x="160" y="626" fill="#5d5c55" font-family="Arial, sans-serif" font-size="15">Cleveland Ghostsigns</text>
+  <a xlink:href="https://ghostsignsandroadsides.wordpress.com/2018/03/27/cleveland-ghostsigns/">
+    <text x="160" y="663" fill="#5d5c55" font-family="Arial, sans-serif" font-size="14" text-decoration="underline">Open the 2018 post</text>
+  </a>
+
+  <text x="820" y="405" fill="#77736a" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">PHOTO CAPTION / JEFF CHRISTNER</text>
+  <text x="820" y="487" fill="#292a27" font-family="Georgia, serif" font-size="36">Diner,</text>
+  <text x="820" y="535" fill="#292a27" font-family="Georgia, serif" font-size="36">Broadway Avenue.</text>
+  <text x="820" y="626" fill="#5d5c55" font-family="Arial, sans-serif" font-size="15">Faded memories: Ghost Signs of CLE</text>
+  <a xlink:href="https://www.freshwatercleveland.com/features/Faded-MemoriesGhost-Signs-Of-CLE_012325.aspx">
+    <text x="820" y="663" fill="#5d5c55" font-family="Arial, sans-serif" font-size="14" text-decoration="underline">Open the 2025 essay</text>
+  </a>
+
+  <line x1="120" y1="760" x2="1380" y2="760" stroke="#c5c0b4" stroke-width="1"/>
+  <text x="120" y="817" fill="#292a27" font-family="Georgia, serif" font-size="24">The dates belong to the posts.</text>
+  <text x="120" y="862" fill="#5d5c55" font-family="Arial, sans-serif" font-size="16">The 2018 post places its trip in "last October" (October 2017, inferred) but gives no street number for this sign.</text>
+  <text x="120" y="895" fill="#5d5c55" font-family="Arial, sans-serif" font-size="16">The 2025 caption names Broadway Avenue; its photograph's capture date is not supplied.</text>
+  <text x="120" y="958" fill="#b5543f" font-family="Georgia, serif" font-size="24">A shared name suggests a lead. The address link remains open.</text>
+  <line x1="120" y1="1006" x2="1380" y2="1006" stroke="#c5c0b4" stroke-width="1"/>
+  <text x="120" y="1046" fill="#77736a" font-family="Arial, sans-serif" font-size="14">A reading of two published records; the second image is not reproduced here.</text>
+</svg>

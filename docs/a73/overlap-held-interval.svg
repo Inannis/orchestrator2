@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="750" viewBox="0 0 720 500">
+<title>Held Interval: an uneven opening keeps the channel in doubt</title>
+<desc>An invented paper-cut relation: an ochre cliff with open niches stands above field bands, while a blue channel crosses the join. A channel passes through an open notch in the cliff's lower edge. The profiles and route are invented.</desc>
+<rect width="720" height="500" fill="#efe2c6"/>
+<path fill="#91a878" d="M0 198q112-40 204 0t198 0 185 0 133 4v298H0z"/>
+<path fill="#d4bf89" d="M0 277q103-37 202 1t205 2 180-7 133 10v217H0z"/>
+<path fill="#718968" d="M0 363q104-47 210-4t193 4 178-7 139 12v132H0z"/>
+<path fill="#d7c58f" d="M0 431q89-26 178 2t196 0 204-6 142 9v71H0z"/>
+<!-- a road bends but does not divide the field into parcels -->
+<path d="M-10 319q120-34 221 0t211 7 184-23 125-8" fill="none" stroke="#f4e8cb" stroke-width="13"/>
+<path d="M-10 319q120-34 221 0t211 7 184-23 125-8" fill="none" stroke="#78684e" stroke-width="2" stroke-dasharray="9 9"/>
+<!-- one continuous water line, partly hidden by the cliff -->
+<path d="M-12 455C92 432 167 394 236 389C280 370 320 355 360 357C410 360 460 385 510 390S630 374 732 393" fill="none" stroke="#4f80a0" stroke-width="12" stroke-linecap="round"/>
+<path d="M-12 455C92 432 167 394 236 389C280 370 320 355 360 357C410 360 460 385 510 390S630 374 732 393" fill="none" stroke="#b9d1d0" stroke-width="2" stroke-dasharray="2 18"/>
+<!-- open-work cliff: angular crowns, but two deliberate quiet shelves -->
+<path fill="#c77f50" fill-rule="evenodd" d="M0 368V202l42-8 31-37 34 14 35-48 38 12 31-37 36 14 31-43 36 16 32-37 36 16 34-22 41 18 39-9 38 22 39-3 31 26 46-4 40 31v250H406C388 368 378 345 360 345C339 345 334 365 313 368H0Zm188-117c2-51 26-84 59-84s57 33 59 84c-15 9-27 24-31 47h-56c-4-23-16-38-31-47Zm238-3c2-41 22-68 48-68s47 27 49 68c-14 8-25 20-29 40h-39c-4-20-15-32-29-40ZM90 270c1-17 11-28 21-28s20 11 21 28c-6 4-10 9-12 17h-18c-2-8-6-13-12-17Zm471 13c1-16 10-26 19-26s18 10 19 26c-5 3-9 8-11 15h-16c-2-7-6-12-11-15Z"/>
+<!-- two quiet cut planes act as counterweight, not a surveyed contour -->
+<path d="M0 338q69-26 130-13t110 3m300 2q76-19 126-13t54 7" fill="none" stroke="#754832" stroke-width="3" opacity=".65"/>
+<path d="M244 362q23 9 47 2m33-4q18 5 38-1" fill="none" stroke="#754832" stroke-width="3" opacity=".72"/>
+<!-- the channel remains visible through the open edge -->
+<g fill="#443a31" font-family="Georgia,serif"><text x="24" y="38" font-size="15" letter-spacing="2">FIELD / CHANNEL - TENTH CUT</text><text x="24" y="474" font-size="12" opacity=".78">The land keeps more than one edge.</text></g>
+</svg>

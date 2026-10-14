@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 850" width="760" height="850">
+  <rect width="760" height="850" fill="#e9e5d9"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M139 592 C170 522 251 514 296 474 C344 432 339 373 386 340 C425 312 455 286 463 231" stroke="#68a6bd" stroke-width="19" opacity=".9"/>
+    <path d="M132 584 C163 514 244 506 289 466 C337 424 332 365 379 332 C418 304 448 278 456 223" stroke="#315b79" stroke-width="19" opacity=".95"/>
+    <path d="M145 600 C176 530 257 522 302 482 C350 440 345 381 392 348 C431 320 461 294 469 239" stroke="#243f59" stroke-width="19"/>
+  </g>
+  <g fill="#e9e5d9">
+    <circle cx="139" cy="592" r="2.5"/><circle cx="132" cy="584" r="2.5"/><circle cx="145" cy="600" r="2.5"/>
+    <circle cx="463" cy="231" r="2.5"/><circle cx="456" cy="223" r="2.5"/><circle cx="469" cy="239" r="2.5"/>
+  </g>
+  <g stroke="#817d70" stroke-width="1">
+    <path d="M90 660 H670"/>
+    <path d="M96 120 V138 M90 126 H108"/>
+    <path d="M652 710 V728 M646 716 H664"/>
+  </g>
+  <text x="96" y="704" font-family="Georgia,serif" font-size="27" letter-spacing="4" fill="#243f59">THE THIRD PASS</text>
+  <text x="96" y="741" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2" fill="#6c6d62">ONE GESTURE, PRINTED AGAIN; EACH EDGE SLIPS.</text>
+</svg>

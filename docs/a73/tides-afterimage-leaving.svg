@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000" role="img" aria-labelledby="title desc">
+  <title id="title">The Tide's Afterimage: Leaving Vessel</title>
+  <desc id="desc">A red paper bowl holds its weight as a broad blue current rises from the rim and opens toward the sky. One drop falls back toward the bowl.</desc>
+  <rect width="900" height="1000" fill="#efe2c6"/>
+  <path d="M95 166h710M95 836h710" stroke="#c6b899" stroke-width="1"/>
+  <text x="96" y="129" fill="#443a31" font-family="Georgia,serif" font-size="18" letter-spacing="3">THE WATER LEAVES; THE BOWL REMAINS</text>
+  <text x="804" y="871" text-anchor="end" fill="#443a31" font-family="Georgia,serif" font-size="16" letter-spacing="2">VYT AITKEN · 09</text>
+  <path d="M270 809q180-37 360 0" fill="none" stroke="#c99c59" stroke-width="8"/>
+  <path d="M303 783q147 35 294 0l-27 24q-119 21-240 0z" fill="#718968"/>
+  <path d="M330 783q120 25 240 0" fill="none" stroke="#443a31" stroke-width="4"/>
+  <path d="M405 773l17-286q28-15 56 0l17 286q-43 17-90 0z" fill="#c77f50"/>
+  <path d="M418 566q32 17 64 0" fill="none" stroke="#efe2c6" stroke-width="7"/>
+  <path d="M384 477q56-21 112 0l-15 27q-40 18-82 0z" fill="#443a31"/>
+  <path d="M393 479q47 16 94 0l-12 17q-35 14-70 0z" fill="#c99c59"/>
+  <!-- The deeper belly gives the vessel a held, resting weight. -->
+  <path d="M227 443q223 40 446 0-23 68-103 91-121 35-240 0-79-23-103-91z" fill="#b7503e"/>
+  <path d="M247 449q203 31 406 0-33 31-105 44-99 19-196 0-70-13-105-44z" fill="#efe2c6"/>
+  <path d="M262 455q188 26 376 0-42 23-99 31-89 14-178 0-57-8-99-31z" fill="#4f80a0"/>
+  <!-- One continuous surge; its open end points out, not back into itself. -->
+  <path d="M611 457c39-36 78-74 98-120 20-46 18-84-2-103-22-20-54-11-64 12-8 19 2 38 20 44" fill="none" stroke="#4f80a0" stroke-width="37" stroke-linecap="round"/>
+  <path d="M611 457c39-36 78-74 98-120 20-46 18-84-2-103-22-20-54-11-64 12-8 19 2 38 20 44" fill="none" stroke="#b9d1d0" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 19"/>
+  <path d="M548 389q9-14 18 0-1 13-9 20-8-7-9-20z" fill="#c99c59"/>
+  <path d="M299 544q-49 15-66 53m335-51q49 15 66 53" fill="none" stroke="#443a31" stroke-width="4"/>
+</svg>

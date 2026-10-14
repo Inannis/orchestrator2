@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="900" viewBox="0 0 1360 900">
+<defs>
+ <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f2ead8"/><stop offset="1" stop-color="#e6d8bc"/></linearGradient>
+ <linearGradient id="board" x2="0" y2="1"><stop stop-color="#d7c08c"/><stop offset="1" stop-color="#bba271"/></linearGradient>
+ <pattern id="grain" width="48" height="19" patternUnits="userSpaceOnUse"><path d="M0 5Q15 1 31 5T48 5M4 14Q21 10 42 14" fill="none" stroke="#806a45" stroke-width=".8" opacity=".28"/></pattern>
+ <filter id="glow"><feGaussianBlur stdDeviation="28"/></filter>
+</defs>
+<rect width="1360" height="900" fill="url(#paper)"/>
+<text x="72" y="76" font-family="Georgia,serif" font-size="13" letter-spacing="5" fill="#a25942">CARRY THE LIGHT OUT / A COUNTER-IMAGE</text>
+<text x="72" y="135" font-family="Georgia,serif" font-size="40" fill="#272c32">A board of their own</text>
+<text x="74" y="170" font-family="Georgia,serif" font-size="15" fill="#6f695d">An invented image inside the Utsusemi chapter's Go game; the watcher reaches the edge, and a stone turns the line.</text>
+<path d="M72 196H1288" stroke="#b8a47c" stroke-width="2"/>
+<rect x="72" y="222" width="1216" height="500" fill="#252a31"/>
+<ellipse cx="680" cy="471" rx="360" ry="280" fill="#f3e6c8" opacity=".12" filter="url(#glow)"/>
+<!-- board as a light field, not as a historical artifact -->
+<rect x="386" y="268" width="588" height="408" rx="3" fill="url(#board)" stroke="#554433" stroke-width="12"/>
+<rect x="395" y="277" width="570" height="390" fill="url(#grain)" opacity=".74"/>
+<g stroke="#4d4535" stroke-width="2" opacity=".8">
+ <path d="M434 306V638M497 306V638M560 306V638M623 306V638M686 306V638M749 306V638M812 306V638M875 306V638M938 306V638"/>
+ <path d="M434 306H938M434 347.5H938M434 389H938M434 430.5H938M434 472H938M434 513.5H938M434 555H938M434 596.5H938M434 638H938"/>
+</g>
+<g fill="#4d4535"><circle cx="560" cy="389" r="4"/><circle cx="812" cy="389" r="4"/><circle cx="686" cy="472" r="4"/><circle cx="560" cy="555" r="4"/><circle cx="812" cy="555" r="4"/></g>
+<!-- stones: a move remains between the players -->
+<circle cx="623" cy="430.5" r="20" fill="#22262c" stroke="#d6c18c" stroke-width="2"/>
+<circle cx="749" cy="472" r="20" fill="#e9dfc8" stroke="#6d624a" stroke-width="2"/>
+<circle cx="812" cy="430.5" r="20" fill="#22262c" stroke="#d6c18c" stroke-width="2"/>
+<!-- abstract shadow hands enter from opposite edges; neither owns the whole board -->
+<path d="M100 405Q165 374 239 394L347 417Q381 425 379 444Q377 461 352 459L272 449 232 479 172 464 109 460Z" fill="#20252b"/>
+<path d="M325 425Q358 401 386 409Q406 416 402 429L381 445 356 447Z" fill="#20252b"/>
+<path d="M1262 559Q1197 590 1123 570L1015 547Q981 539 983 520Q985 503 1010 505L1090 515 1130 485 1190 500 1253 504Z" fill="#20252b"/>
+<path d="M1037 539Q1004 563 976 555Q956 548 960 535L981 519 1006 517Z" fill="#20252b"/>
+<!-- the sight-line crosses the frame, meets a black stone, and is deflected along the grid -->
+<path d="M1105 294L974 330L646 424" stroke="#b45f45" stroke-width="3" stroke-dasharray="7 10" fill="none"/>
+<circle cx="1105" cy="294" r="6" fill="#b45f45"/>
+<circle cx="623" cy="430.5" r="24" fill="none" stroke="#b45f45" stroke-width="2" opacity=".9"/>
+<path d="M607 447Q584 462 560 472" stroke="#b45f45" stroke-width="3" stroke-dasharray="6 8" fill="none"/>
+<text x="96" y="706" font-family="Georgia,serif" font-size="12" letter-spacing="3" fill="#e9dfca">TWO PLAYERS / ONE BOARD / SIGHT LINE MEETS THE FIRST STONE</text>
+<text x="72" y="783" font-family="Georgia,serif" font-size="18" fill="#34383b">The chapter gives the game to two women, then filters their image through a watcher.</text>
+<text x="72" y="814" font-family="Georgia,serif" font-size="15" fill="#70695d">The watcher enters the field. The first black stone turns the line into play.</text>
+<text x="72" y="860" font-family="Georgia,serif" font-size="12" letter-spacing="2" fill="#a25942">PRESENT-DAY STAGE INVENTION / NOT A RECONSTRUCTION / NO VOICE OR MOTIVE CLAIMED FOR EITHER PLAYER</text>
+</svg>

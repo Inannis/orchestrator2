@@ -1,0 +1,35 @@
+<!doctype html><meta charset=utf-8><title>Stand still</title><meta name=viewport content="width=device-width,initial-scale=1">
+<style>html,body{margin:0;height:100%;background:#0c0a08;overflow:hidden}canvas{display:block;width:100vw;height:100vh}
+#t{position:fixed;left:0;right:0;bottom:6vh;text-align:center;font:14px Georgia,serif;color:#4f4636;opacity:0;transition:opacity 12s}</style>
+<canvas id=c></canvas><div id=t>He has not moved either.</div>
+<script>
+const c=document.getElementById('c'),x=c.getContext('2d'),img=new Image();img.src='darkhat.png';
+let W,H,still=0,last=performance.now(),lastMove=location.hash=="#still"?last-30000:last;
+function size(){W=c.width=innerWidth;H=c.height=innerHeight}size();addEventListener('resize',size);
+['mousemove','keydown','touchmove','touchstart','scroll','wheel','mousedown'].forEach(e=>addEventListener(e,()=>{lastMove=performance.now()},{passive:true}));
+const E=[[340,322],[412,322]];
+function frame(now){
+  const idle=(now-lastMove)/1000;
+  const k=Math.min(1,Math.max(0,(idle-1.5)/6));      // 0 moving ... 1 fully still
+  const s=Math.min(W,H)*0.9/720,ox=(W-720*s)/2,oy=(H-720*s)/2;
+  x.fillStyle='#0c0a08';x.fillRect(0,0,W,H);
+  if(img.complete){
+    x.globalAlpha=1;x.drawImage(img,ox,oy,720*s,720*s);
+    // darkness grows over the picture, leaving only the eyes
+    x.save();x.globalAlpha=1;
+    const m=document.createElement('canvas');m.width=W;m.height=H;const g=m.getContext('2d');
+    g.fillStyle='rgba(12,10,8,'+(0.9*k)+')';g.fillRect(0,0,W,H);
+    g.globalCompositeOperation='destination-out';
+    for(const [ex,ey] of E){
+      const r=(46+60*(1-k))*s, cx=ox+ex*s, cy=oy+ey*s;
+      const gr=g.createRadialGradient(cx,cy,0,cx,cy,r);
+      gr.addColorStop(0,'rgba(0,0,0,'+k+')');gr.addColorStop(0.45,'rgba(0,0,0,'+0.55*k+')');gr.addColorStop(1,'rgba(0,0,0,0)');
+      g.fillStyle=gr;g.fillRect(cx-r,cy-r,2*r,2*r);
+    }
+    x.drawImage(m,0,0);x.restore();
+  }
+  document.getElementById('t').style.opacity=idle>40?1:0;
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>

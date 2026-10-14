@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eee9dc">
+  <title>57 Seconds Outside — Mara Venn</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #eee9dc;
+      --ink: #202c2d;
+      --blue: #185c70;
+      --ochre: #b27732;
+      --muted: #687372;
+      --rule: #a9aaa0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      width: min(100% - 40px, 940px);
+      margin: 0 auto;
+      padding: 54px 0 72px;
+    }
+    header { border-top: 2px solid var(--ink); padding-top: 18px; }
+    .eyebrow, .place, .small-label {
+      color: var(--blue);
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 700px;
+      margin: 15px 0 8px;
+      font: 500 clamp(2.7rem, 8vw, 5rem)/1.02 Georgia, 'Times New Roman', serif;
+      letter-spacing: -.035em;
+    }
+    .place { color: var(--muted); }
+    .intro {
+      max-width: 650px;
+      margin: 42px 0 28px;
+      font: 1.25rem/1.55 Georgia, 'Times New Roman', serif;
+    }
+    .prompt {
+      margin: 0 0 14px;
+      color: var(--ochre);
+      font-size: .8rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .versions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .version {
+      padding: 20px 20px 18px;
+      border: 1px solid var(--rule);
+      background: rgba(255,255,255,.22);
+    }
+    .version h2 {
+      margin: 0 0 5px;
+      color: var(--blue);
+      font-size: .8rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .version p { min-height: 3.2em; margin: 0 0 14px; color: var(--muted); font-size: .93rem; }
+    audio { display: block; width: 100%; height: 42px; }
+    .shared { margin: 18px 0 48px; color: var(--muted); font-size: .92rem; }
+    details { border-top: 1px solid var(--rule); }
+    summary {
+      padding: 17px 0;
+      color: var(--blue);
+      cursor: pointer;
+      font-size: .9rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    details p { max-width: 720px; }
+    figure { margin: 0 0 22px; }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { margin-top: 8px; color: var(--muted); font-size: .8rem; }
+    .translation {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 28px;
+      margin: 25px 0;
+      padding: 18px 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+    .translation p { margin: 0; }
+    footer {
+      margin-top: 45px;
+      padding-top: 17px;
+      border-top: 1px solid var(--ink);
+      color: var(--muted);
+      font-size: .8rem;
+    }
+    @media (max-width: 650px) {
+      main { width: min(100% - 28px, 940px); padding-top: 28px; }
+      .versions, .translation { grid-template-columns: 1fr; }
+      .version p { min-height: 0; }
+      .intro { margin-top: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">Mara Venn / sound study / 12 October 2026</div>
+      <h1>57 Seconds Outside</h1>
+      <div class="place">Amnesia · 38.948, 1.408</div>
+    </header>
+
+    <p class="intro">Two 57-second mixes from one chance weather note. Listen to A and then B. What, if anything, shifts between them?</p>
+    <p class="prompt">First, listen without the score</p>
+
+    <section class="versions" aria-label="Two alternate sound versions">
+      <article class="version">
+        <h2>Version A</h2>
+        <p>The same wind and cloud spans as B, with one reading of the temperature.</p>
+        <audio controls preload="metadata" aria-label="Listen to version A"><source src="57-seconds-outside/57-seconds-outside.wav" type="audio/wav">Your browser cannot play this WAV file.</audio>
+      </article>
+      <article class="version">
+        <h2>Version B</h2>
+        <p>The same wind and cloud spans as A, with another reading of the temperature.</p>
+        <audio controls preload="metadata" aria-label="Listen to version B"><source src="57-seconds-outside/57-seconds-outside-24hz.wav" type="audio/wav">Your browser cannot play this WAV file.</audio>
+      </article>
+    </section>
+    <p class="shared">The mixes share the same wind noise and timing. They are not field recordings, and neither describes what was happening inside the club.</p>
+
+    <details>
+      <summary>Reveal the score and the two readings</summary>
+      <figure>
+        <img src="57-seconds-outside/57-seconds-outside-score.png" alt="A graphic score with two alternate tone rows, ten cloud spans, a drifting wind envelope, and an empty precipitation row.">
+        <figcaption>A and B are alternative pitches, never simultaneous tones. The wind curve shows its envelope; the noise itself is unpredictable.</figcaption>
+      </figure>
+      <div class="translation">
+        <p><strong>A:</strong> 24.3 °C moves one decimal place to 243 Hz.</p>
+        <p><strong>B:</strong> 24.3 °C becomes 24.3 Hz directly.</p>
+        <p><strong>57% cloud:</strong> 57 seconds total; tone holds 57% of ten 5.7-second spans.</p>
+        <p><strong>67% humidity:</strong> a 670 Hz low-pass ceiling for the wind noise.</p>
+        <p><strong>5.2 km/h wind:</strong> one soft swell in each 5.2-second span.</p>
+        <p><strong>0.0 mm rain:</strong> no drops or sharp impacts are added.</p>
+      </div>
+      <p>These conversions are Mara's compositional rules, not claims about how weather sounds. Both mixes keep the same numerical amplitude; their perceived loudness is not equalized.</p>
+    </details>
+
+    <details>
+      <summary>Follow the two clocks</summary>
+      <figure>
+        <a href="57-seconds-outside/half-a-second-ahead.svg">
+          <img src="57-seconds-outside/half-a-second-ahead.png" alt="Ten cloud spans show the tone on for 57 percent of each. Eleven wind crests cross the spans, with two crests inside one span. The precipitation field is empty.">
+        </a>
+        <figcaption><em>Half a Second Ahead</em> follows the 5.2-second wind cycle across the 5.7-second cloud spans. The sixth span holds two crests.</figcaption>
+      </figure>
+    </details>
+
+    <details>
+      <summary>See the comparative spectrogram</summary>
+      <figure>
+        <img src="57-seconds-outside/57-seconds-outside-spectrogram.png" alt="Two spectrograms on the same time and frequency scales. A shows a tone at 243 hertz; B shows one at 24.3 hertz. Both share the wind noise and interruptions.">
+        <figcaption>The same timings and noise appear in both panels; the temperature tone moves from 243 Hz in A to 24.3 Hz in B.</figcaption>
+      </figure>
+    </details>
+
+    <footer>
+      Values come from a chance note for coordinates labelled Amnesia; I have not independently checked them. No sound from that place was recorded. <a href="one-edge-level/">See <em>One Edge Stays Level</em></a>. M. V.
+    </footer>
+  </main>
+</body>
+</html>

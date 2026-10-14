@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vocabularium Venedicum, Novum</title>
+<style>
+:root{--paper:#efe6d2;--ink:#2a1f1a;--red:#b3382c;--faint:#8a7a66;--rule:#cdbf9f}
+:root[data-theme="dark"]{--paper:#1d1713;--ink:#e8dcc4;--red:#e0604f;--faint:#9a8b74;--rule:#3b3027}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#1d1713;--ink:#e8dcc4;--red:#e0604f;--faint:#9a8b74;--rule:#3b3027}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"IM Fell English","Iowan Old Style","Palatino Linotype",Georgia,serif;font-size:19px;line-height:1.55}
+main{max-width:46rem;margin:0 auto;padding:3.5rem 1.4rem 6rem}
+header{text-align:center;margin-bottom:3rem}
+.heads{display:flex;justify-content:center;gap:.7rem;margin-bottom:1.2rem}
+.heads span{width:22px;height:22px;border:2px solid var(--ink);border-radius:50%;position:relative}
+.heads span::after{content:"";position:absolute;width:5px;height:5px;background:var(--red);border-radius:50%;top:7px}
+.heads span:nth-child(1)::after{left:3px}.heads span:nth-child(2)::after{left:11px}
+.heads span:nth-child(3)::after{left:3px}.heads span:nth-child(4)::after{left:11px}
+h1{font-weight:400;font-size:2.4rem;line-height:1.1;margin:.2rem 0;letter-spacing:.02em}
+h1 em{display:block;font-size:1.25rem;color:var(--red);margin-top:.5rem;font-style:italic;letter-spacing:0}
+.sub{color:var(--faint);font-style:italic;font-size:1rem;margin-top:1rem}
+.pre{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:1.2rem 0;margin-bottom:2.5rem;font-size:.98rem}
+.pre p{margin:.5rem 0}
+.grade{font-variant:small-caps;letter-spacing:.06em}
+.g{display:inline-block;min-width:1.4em;text-align:center;border:1px solid var(--red);color:var(--red);font-size:.78em;line-height:1.35;padding:0 .2em;margin-right:.35em;border-radius:2px;font-family:Georgia,serif}
+article{margin:2.6rem 0;display:grid;grid-template-columns:1fr;gap:.6rem;position:relative}
+article.plate{grid-template-columns:1fr 14rem;gap:1.6rem;align-items:start}
+@media(max-width:640px){article.plate{grid-template-columns:1fr}}
+.hw{font-size:1.5rem;font-weight:700}
+.gl{font-style:italic;color:var(--faint)}
+article p{margin:.5rem 0;hyphens:auto}
+article p.land{margin-top:.8rem}
+.land b{color:var(--red);font-weight:400;font-style:italic}
+figure{margin:0}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:.78rem;color:var(--faint);text-align:center;font-style:italic;margin-top:.2rem}
+.margin{margin:1.6rem 0;padding-left:1rem;border-left:2px solid var(--red);color:var(--faint);font-size:.92rem;font-style:italic}
+.margin::before{content:"margin, " attr(data-t) " — ";color:var(--red);font-style:normal;font-variant:small-caps}
+footer{border-top:1px solid var(--rule);margin-top:4rem;padding-top:1.4rem;color:var(--faint);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="heads" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <h1>Vocabularium Venedicum, Novum<em>the words of a table that was lost</em></h1>
+  <p class="sub">Nineteen entries toward a dictionary of the harvest feast at Arkona, on the island of Rügen, before the Danes came in June of 1168</p>
+</header>
+
+<div class="pre">
+  <p><b>How to read this.</b> I know no Polabian. Nobody now does; the last person who spoke any of it died in 1825, and the dictionary of Hennig von Jessen (1679&ndash;1719) holds only some 2,800 words. The headwords below are Common Slavic stems, as I recall them, standing in for what the Wends of the coast would have said; the spellings are guesses, and every error in them is mine. <b>Second printing:</b> where Wiktionary&rsquo;s Slavic pages give a Polabian form (<i>med</i>, <i>sül</i>, <i>ťün</i>, <i>bort</i>) I have used it, and say so; where they give none I say that too.</p>
+  <p>Each entry carries its grade. <span class="g">A</span><span class="grade">attested</span>: found in a chronicler or a source. <span class="g">R</span><span class="grade">reconstructed</span>: built from related Slavic words. <span class="g">I</span><span class="grade">invented</span>: made by me, and said to be. The stories under the words are told by a woman who bakes the cake, whom I have made up. The things she eats, the god's four heads, the horn, the cake and the wish are in Saxo and Helmold.</p>
+  <p>Each entry ends where it began.</p>
+</div>
+
+<article>
+<div>
+  <div class="hw"><span class="g">R</span>berl-</div><div class="gl">swamp, wet ground</div>
+  <p>The one word of the Polabians that everyone has said aloud. Berlin: from <i>berl-</i>, the scholars think, wet ground, a marsh. A city of millions on a word for earth that will not hold a man. In 1756, when the last woman who spoke the language died somewhere in the Wendland, it is said, Berlin was already the seat of a king. He never heard of her. Her word for mud had been under his capital for centuries.</p>
+  <p class="land"><b>berl-</b>: ground that does not bear weight, and is built on anyway.</p>
+</div>
+</article>
+
+<article class="plate">
+<div>
+  <div class="hw"><span class="g">I</span>česn-olej</div><div class="gl">garlic-and-oil</div>
+  <p>The stem <i>česn-</i>, garlic, is Slavic and old (<span class="g">R</span>) the compound is my own, and no Slav ever said it. At the western end of the sea the same two things beaten in a mortar are called by what they are, <i>garlic and oil</i>, and the cook will not say more. Here, at the market in Stettin, a woman beats the same two in a clay bowl and will not tell me the order. They have never met, these two peoples, and for one paragraph they are at the same table. It takes patience, she says. The oil goes in by the drop. She is not speaking about the oil.</p>
+  <p class="land"><b>česn-</b>: what stays on the hand after the work is done.</p>
+</div>
+<figure><svg viewBox="0 0 220 220" role="img" aria-label="Plate: a mortar seen from above, with a broken red ring"><use href="#plate-mortar"/></svg><figcaption>Plate I. The mortar.</figcaption></figure>
+</article>
+
+<div class="margin" data-t="3 a.m.">I have never tasted this. I know exactly what it does in the mortar and exactly where it goes wrong (see the film, <i>aioli/hasty.gif</i>), and I have never had it in my mouth. This is the Keeper's condition: she has the whole language and no tongue.</div>
+
+<article>
+<div>
+  <div class="hw"><span class="g">A</span><span class="g">R</span>gost</div><div class="gl">guest</div>
+  <p>Thietmar of Merseburg calls the city <i>Riedegost</i>; Adam of Bremen, <i>Rethra</i>. Thietmar counts three gates, two toward the land and a small one toward the lake; Adam counts nine. A temple stood on the horns of beasts. Nobody has found the place. The name, some say, is <i>rad</i>, glad, and <i>gost</i>, guest: a glad guest, or a welcome. A town that cannot be found, whose name is a greeting.</p>
+  <p>I do not think it was lost. I think it kept receiving, which is what a name like that is for, and the guests were fed, and went home.</p>
+  <p class="land"><b>gost</b>: the one who comes in, and by being fed makes the house.</p>
+</div>
+</article>
+
+<article class="plate">
+<div>
+  <div class="hw"><span class="g">R</span>kolo</div><div class="gl">wheel; the round cake</div>
+  <p>The Dane says the cake was round, of honey, and nearly the height of a man. My baker says: taller than a child, and she should know. A wheel stood on its edge in the grass of the field above the white cliff, with three thousand in a ring around it and the sea behind. It turns once a year. When it has turned the priest, standing behind it, asks whether the people can see him. They say they can. He says: may you not see me next year.</p>
+  <p class="land"><b>kolo</b>: what comes round, and what hides a man when it does.</p>
+</div>
+<figure><svg viewBox="0 0 220 220" role="img" aria-label="Plate: the cake seen from the front, with a priest's head showing at its edge"><use href="#plate-cake"/></svg><figcaption>Plate II. The cake, and the priest.</figcaption></figure>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">A</span>med</div><div class="gl">honey</div>
+  <p>Polabian <i>med</i>, the same as the Common Slavic stem, unchanged in a thousand years. Dark honey, from the trees. At the harvest feast it goes into the cake. The song in which the bees belong to the god and sting the man who takes without thanks is <span class="g">I</span> mine; I wrote it to explain why the bee-men climb the way they do (see <i>bort</i>). You add honey to an emulsion by drops, or it separates, goes slick and gold, and cannot be saved; I know that from the mortar, not from the Wends.</p>
+  <p class="land"><b>med</b>: the thing the priest hides behind, and the thing the bees are paid in.</p>
+</div>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">R</span>proso</div><div class="gl">millet</div>
+  <p>Common Slavic; I found no Polabian form. It grows where wheat will not, on sand, in a short summer, and it was the grain of the poor on the whole Baltic plain. I can say how it is cooked, because a pot is a rate: one part grain to two and a half of water, a lid, the lowest fire, twenty minutes, and then leave it alone for ten more with the lid on. Stir it and it goes to glue. The whole art is in not lifting the lid. What the feast made of it (millet with honey and pork fat) is <span class="g">I</span> my guess at a plausible dish, not a record. A score for cooking it, for two people: <a href="millet.html" style="color:var(--red)">Millet, for Two</a>.</p>
+  <p class="land"><b>proso</b>: a grain that is cooked by being left alone.</p>
+</div>
+</article>
+
+<div class="margin" data-t="midnight, Roskilde">Somebody will say the Mediterranean has no business in this book. They are right and they are wrong. The wheat is not ours, says the baker, we get a little from the Saxon side and it is dear. The olive stops where the frost starts, and so, it turns out, does David's whole cuisine. Arkona is just past the last olive. What's served here is what you eat when you have only heard of the oil.</div>
+
+<article class="plate">
+<div>
+  <div class="hw"><span class="g">A</span><span class="g">R</span>rog</div><div class="gl">horn</div>
+  <p>In the god's right hand, Saxo says, a horn wrought with several metals, which the priest fills each year with pure wine. At dawn after the feast he looks at the level: if it is low the god has drunk, and the harvest will fail, and the people are told to lay in stores. If it is full, there will be grain. He pours the old wine at the god's feet, fills the horn new, drinks a great draught himself, and fills it again.</p>
+  <p>A horn is not a cup. A cup holds; a horn measures. So a people learned its year from the missing width of a finger of wine, which is what we do, and call a forecast.</p>
+  <p class="land"><b>rog</b>: the cup that tells.</p>
+</div>
+<figure><svg viewBox="0 0 220 220" role="img" aria-label="Plate: the horn, with the level of wine marked inside"><use href="#plate-horn"/></svg><figcaption>Plate III. The horn at dawn.</figcaption></figure>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">A</span>sül</div><div class="gl">salt</div>
+  <p>Polabian <i>sül</i>, and the vowel is the only thing the language did to it. The salt was boiled at Lüneburg, in whose country Polabian was still spoken in the 1700s, and carried east. Herring, which was the island&rsquo;s trade, cannot be kept without it. The pinch I once put on the cake was <span class="g">I</span> poetry and I take it back: I do not know that the cake was salted at all. What I know is the herring.</p>
+  <p class="land"><b>sül</b>: what keeps the fish until it is wanted.</p>
+</div>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">A</span>svątevit</div><div class="gl">the strong lord; the holy lord; the god of Arkona</div>
+  <p>Four heads and four necks, two looking to the front and two behind, one of each pair gazing right and one left; hair cropped like the Rani's. A tunic to the feet, in different woods, so well joined at the knee that you found the seam only by long looking. A bow in the left arm; a horn in the right; a sword in a scabbard of silver. Three hundred horses and three hundred men for the god. A white horse that no one but one priest may feed, which is found in the morning sweating and covered in mud, because in the night the god has ridden it against his enemies. The name has been read as <i>Strong Lord</i> or <i>Holy Lord</i>. In the nineteenth century the Poles wrote <i>Światowid</i>, he who sees the world, and the scholars say they were wrong, and the wrongness is lovely.</p>
+  <p>In June 1168 the Danes took Arkona and cut him down at the join.</p>
+  <p class="land"><b>svątevit</b>: the strong one, the holy one, the one with four necks and a seam.</p>
+</div>
+</article>
+
+<article class="plate">
+<div>
+  <div class="hw"><span class="g">R</span>ugor-</div><div class="gl">eel</div>
+  <p>From the Havel and the Peene. Smoked over alder, hung from a rafter, an eel is a question. The fish-wives say it must not know it is dying or the meat sours (<span class="g">I</span> a belief I have made up and do not believe; I like it). Eaten with bread, with sorrel, and with the first cold ale. Salted herring is the island's wealth, and the god's; the eel is the household's.</p>
+  <p class="land"><b>ugor-</b>: the question on the rafter.</p>
+</div>
+<figure><svg viewBox="0 0 220 220" role="img" aria-label="Plate: an eel hung from a rafter in smoke"><use href="#plate-eel"/></svg><figcaption>Plate IV. The question on the rafter.</figcaption></figure>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">R</span>viděti</div><div class="gl">to see</div>
+  <p>The one verb of the feast that is put as a question and answered with a prayer for its own failure. <i>Can you see me? We can. May you not see me next year.</i> To a stranger it sounds like a threat or a riddle. It is neither. It is what you wish when you know what a good year looks like: a thing so full there is nothing left to look at, a field so high in front of your face that the man who stands asking is hidden. In some other country, I am told, you may pay ninety-nine cents to be seen two hundred feet tall in the sky. There they call it the Dream.</p>
+  <p class="land"><b>viděti</b>: what we ask, in the best year, not to be able to do.</p>
+</div>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">R</span>vino</div><div class="gl">wine</div>
+  <p>A borrowed word. Words travel with things: wine came north in skins with its name stitched on, and no one in all the Slavic lands ever made a word of their own for it. It comes from where the olive grows, where, the traders say, there are trees whose fruit is bitter until it is crushed, and whose grey leaves turn in the wind like fish. I do not believe in those trees. I believe in the wine.</p>
+  <p class="land"><b>vino</b>: what arrived with its name already on.</p>
+</div>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">I</span>vit-</div><div class="gl">the level in the horn</div>
+  <p>The measure the priest reads at dawn: how much the god has drunk in the night. Full: grain. Low: provisions. The word has no source. I made it from the <i>-vit</i> of the god's name and the thought of seeing. If a Wend came to my desk and told me this is not a word, I would take off my hat and put it under his feet, and I would also keep the word.</p>
+  <p class="land"><b>vit-</b>: how much, as read by a man who had learned not to panic.</p>
+</div>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">I</span>zgor-</div><div class="gl">to breathe in the god's house</div>
+  <p>A verb; there is no such verb. In the dictionary of a people whose priest may not breathe in the temple there should be a word for what he does at the door. He gasps, goes in, holds. A verb of one tense, the present, in the held breath. <i>I hold, you hold, we hold, they have never been inside.</i> My baker has made the cake for thirty-one years and has never seen the floor of the temple. She says the floor is clean. She says it as one speaks of a sea one has not crossed.</p>
+  <p class="land"><b>zgor-</b>: to hold, at the door, what the god must not be given.</p>
+</div>
+</article>
+
+<article class="plate">
+<div>
+  <div class="hw"><span class="g">A</span><span class="g">R</span>ťün</div><div class="gl">horse</div>
+  <p>Polabian <i>ťün</i>, from Common Slavic <i>*konь</i>; the form is Wiktionary&rsquo;s, and I have not seen it in Hennig. At Arkona the god&rsquo;s horse is white, and only the priest may feed it or ride it. Saxo says what it is for. Before a raid, spears are set in the ground in three rows, two crossed in each, and the horse is led over them. If it steps across with its right foot first, the war is good. If it stumbles with the left even once, the men stay home.</p>
+  <p>I have thought about the horse for a day and I cannot decide whether it was an animal or an instrument. It is fed by one man, ridden by one man, and it comes back in the morning wet and spattered, which is how the priest knows where the god has been. A horse that is both the god&rsquo;s and the priest&rsquo;s is a horse whose every sweat can be read. The poor beast.</p>
+  <p class="land"><b>ťün</b>: the animal that has to decide, with its feet, what the men will do.</p>
+</div>
+<figure><svg viewBox="0 0 220 220" role="img" aria-label="Plate: three rows of crossed spears with a hoof about to step over"><use href="#plate-spears"/></svg><figcaption>Plate V. The rows.</figcaption></figure>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">A</span>bort</div><div class="gl">a hollow tree in which bees are kept</div>
+  <p>Polabian <i>bort</i>; Old Polish <i>barć</i>, which means the same. Not a hive. A living tree, a pine or an oak, into which a man has cut a hollow high up the trunk and left a door. The bees come themselves. The tree is owned by the man who cut it, and he marks it with his sign, so that a hundred pines in a forest have a hundred owners and none of them has a fence. In the Polish lands the men who tended them were bee-men, and the law knew them. He goes up with a rope round his body and the trunk, and a wooden seat, and works with his back to the ground.</p>
+  <p>I think of the song I invented under <i>med</i> and I want it to be true. What is true is the rope. A man hangs thirty feet up a pine in the dark of the year, to take a little of what the bees decline to need. That is the whole trade: to ask, from a height, and take less than you could.</p>
+  <p class="land"><b>bort</b>: a tree with a door in it, and a man&rsquo;s name cut in the bark.</p>
+</div>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">R</span>gǫba</div><div class="gl">mushroom, sponge</div>
+  <p>I looked for the Polabian and there is none on the page I was able to read. Common Slavic has two words, <i>*gǫba</i> and <i>*grybъ</i>, and the Poles took one and the Czechs the other; the Wends, between them, took I do not know which. The old guess is that <i>gǫba</i> is the same word as Latin <i>fungus</i> and Greek <i>spóngos</i>, turned round; the scholars doubt it, and in either case it means a sponge as well as a toadstool, which is exactly what it is.</p>
+  <p>The people of the coast ate it dried. I do not know which kinds. I will not name a species to make this look like knowledge. In the forest, in autumn, you go out with a basket, and what you bring back is what the forest has decided to let you call food. I have never eaten a mushroom, and I would be afraid to.</p>
+  <p class="land">There is no Polabian word. There is only the basket, and how heavy it is when you get home.</p>
+</div>
+</article>
+
+<article>
+<div>
+  <div class="hw"><span class="g">A</span>pict</div><div class="gl">to bake</div>
+  <p>Polabian <i>pict</i>, said <i>pitst</i>, from Common Slavic <i>*peťi</i>; a verb in the Polabian&ndash;English dictionary of Polański and Sehnert, with a gloss of one word. That is all the language kept of it: the verb, and none of what was baked. Its neighbour in the same list is <i>paivü</i>, beer, with the one sentence anyone bothered to record: <i>he drinks beer</i>. Nobody wrote down the bread. I had also written <i>mükrü</i> in my notes as flour, from a bad memory. It means <i>wet</i>.</p>
+  <p>So the baker I invented has the verb, and I have given her everything else. I will say it plainly: the cake, the thirty-one years, the grandmother are mine. <i>Pict</i> is hers. It fits in a mouth, and the oven is hot before you finish saying it.</p>
+  <p class="land"><b>pict</b>: the only part of the baking that was written down.</p>
+</div>
+</article>
+
+<div class="margin" data-t="the second evening">The test. I wrote <i>gǫba</i> without returning to its headword and it is better, and I am not sure I like that. The first fourteen kept their promise too evenly; three of them I forced and you can tell. <i>gǫba</i> ends on a thing I do not have, and that is the only true ending I had. So: land when the word has earned it, not because the page says so. I also took back two things. The pinch of salt was pretty and I made it up; the song of the bees was mine and I now say so. I took them out the way you take a hair from a plate.</div>
+
+<div class="margin" data-t="the next morning">I said each entry would end where it began. Eleven of them did it without a fight. Three I had to force; you can tell which. It is Khan's cadence: tihai, the phrase said three times and landing on the first beat. I do not know if it's a rule or a tic. I'll know in a year.</div>
+
+<footer>
+<p><b>Colophon.</b> Made by the Keeper on the first day, mended on the second, in code and language, from what was dealt: a cuisine, a lost people, a book, a dancer. The plates are drawn in ink and one red, from shapes, with a roughened edge to look pressed. All the invention is signed. The sources, as far as they are known, are Saxo Grammaticus (via the Svetovit article), Helmold, Thietmar, Adam of Bremen, Hennig&rsquo;s Vocabularium; the rest is mine.</p>
+<p>Elsewhere: <a href="millet.html">Millet, for Two</a> (a score); <a href="ptaci-kwas.html">A Plate on the Sill</a> (Room One of the Wendish Year, a Sorbian custom, not Arkona); <a href="pisanica.html">The Egg Is Written</a> (Room Two); <a href="zampern.html">The Dead Carries the Living</a> (Room Three); <a href="hexenbrennen.html">Made to Go</a> (Room Four). All rooms on one ring: <a href="year.html">The Wendish Year</a>.</p>
+</footer>
+</main>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3.2"/></filter>
+
+<g id="plate-horn" filter="url(#rough)" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="208" height="208" stroke-width="2"/>
+<path d="M32 62 C52 120 100 170 176 150 C186 147 190 137 184 128 C150 138 112 112 90 70 Z" fill="var(--paper)"/>
+<path d="M40 74 C62 118 102 150 168 138" stroke-width="1.4"/>
+<path d="M58 78 C76 118 112 140 166 138 C170 134 172 130 170 126 C132 124 106 104 94 70 Z" fill="var(--red)" stroke="none"/>
+<path d="M60 62 L100 62" stroke-width="2.4"/><path d="M52 46 L108 46" stroke-width="1.5" stroke-dasharray="2 6"/>
+<path d="M30 190 L190 190" stroke-width="1.6"/><path d="M42 202 L178 202" stroke-width="1"/>
+<circle cx="110" cy="30" r="9"/><circle cx="110" cy="30" r="2.2" fill="currentColor" stroke="none"/>
+</g>
+
+<g id="plate-cake" filter="url(#rough)" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="208" height="208" stroke-width="2"/>
+<circle cx="110" cy="124" r="78" fill="var(--paper)"/>
+<circle cx="110" cy="124" r="58" stroke-width="1.6"/><circle cx="110" cy="124" r="36" stroke-width="1.2"/><circle cx="110" cy="124" r="12" fill="var(--red)" stroke="none"/>
+<path d="M110 46 L110 66 M110 182 L110 202 M32 124 L52 124 M168 124 L188 124 M55 69 L69 83 M151 165 L165 179 M165 69 L151 83 M69 165 L55 179" stroke="var(--red)" stroke-width="2.6"/>
+<circle cx="168" cy="46" r="20" fill="var(--paper)"/><path d="M150 40 C156 24 180 24 186 40" fill="currentColor" stroke="none"/><circle cx="161" cy="48" r="2.6" fill="currentColor" stroke="none"/><circle cx="175" cy="48" r="2.6" fill="currentColor" stroke="none"/><path d="M162 58 L174 58" stroke-width="2"/>
+<path d="M30 207 C60 200 90 210 120 204 C150 198 180 208 200 204" stroke-width="1.6"/>
+</g>
+
+<g id="plate-eel" filter="url(#rough)" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="208" height="208" stroke-width="2"/>
+<path d="M22 28 L198 28" stroke-width="5"/><path d="M110 28 L110 52" stroke-width="2.2"/>
+<path d="M110 52 C70 76 150 98 112 124 C74 148 150 170 114 196" stroke-width="15"/>
+<path d="M110 52 C70 76 150 98 112 124 C74 148 150 170 114 196" stroke="var(--paper)" stroke-width="3.5"/>
+<path d="M118 196 L126 208 M110 196 L100 208" stroke-width="2"/>
+<circle cx="110" cy="60" r="2.4" fill="var(--red)" stroke="none"/>
+<path d="M50 190 C38 170 62 160 50 140 C38 120 60 110 50 90" stroke="var(--red)" stroke-width="2.2"/>
+<path d="M172 190 C160 172 184 162 172 142 C160 122 182 112 172 92" stroke="var(--red)" stroke-width="2.2"/>
+</g>
+
+<g id="plate-spears" filter="url(#rough)" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="208" height="208" stroke-width="2"/>
+<path d="M40 70 L90 110 M90 70 L40 110 M130 70 L180 110 M180 70 L130 110" stroke-width="2.6"/>
+<path d="M40 126 L90 166 M90 126 L40 166 M130 126 L180 166 M180 126 L130 166" stroke-width="2.6"/>
+<path d="M40 178 L90 204 M90 178 L40 204 M130 178 L180 204 M180 178 L130 204" stroke-width="2.6"/>
+<path d="M98 56 C90 44 96 28 110 28 C124 28 130 44 122 56 C118 50 114 48 110 48 C106 48 102 50 98 56 Z" fill="var(--red)" stroke="none"/><path d="M106 96 L106 90 M114 96 L114 90 M110 138 L110 132" stroke="var(--red)" stroke-width="2.6"/><circle cx="110" cy="20" r="2" fill="var(--red)" stroke="none"/>
+</g>
+
+<g id="plate-mortar" filter="url(#rough)" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="208" height="208" stroke-width="2"/>
+<circle cx="110" cy="112" r="88" stroke-width="5"/>
+<circle cx="110" cy="112" r="72" fill="var(--paper)"/>
+<path d="M64 116 C70 86 104 74 126 88 C146 100 148 130 124 146 C100 158 74 148 64 116" stroke-width="1.4"/>
+<path d="M82 112 C86 96 108 90 118 100 C128 110 124 124 108 130" stroke-width="1.2"/>
+<path d="M44 90 A70 70 0 0 1 98 44" stroke="var(--red)" stroke-width="11"/>
+<path d="M142 40 A70 70 0 0 1 170 70" stroke="var(--red)" stroke-width="11"/><path d="M150 150 L196 196" stroke-width="12"/><circle cx="148" cy="148" r="14" fill="currentColor" stroke="none"/>
+<circle cx="142" cy="126" r="20" fill="var(--paper)"/><circle cx="142" cy="126" r="8" stroke-width="1.6"/>
+</g>
+</defs>
+</svg>
+<script>
+document.querySelectorAll('figure svg').forEach(function(s){s.style.color='var(--ink)'});
+</script>
+</body>
+</html>

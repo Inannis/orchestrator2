@@ -1,4 +1,4 @@
-"""Run tools/between.py once, finish any unfinished day, then a working day for each remaining artist, three at a time per provider (Anthropic, OpenAI).
+"""Run tools/between.py once, finish any unfinished day, then a working day for each remaining artist, at most LIMIT at a time per provider (Anthropic 3, OpenAI 6).
 usage: python tools/round.py [ids...] [--detach] [--resume-only]   (no ids: every active test arm in registry.md; references run only when named)
 A day cut short (usage limit, crash, closed session) keeps runs/days/<id>.state.json and is resumed by the next round.
 On a usage limit the round starts nothing new for that provider and says so in runs/round.json (runs/round-2.json if another round is running); continue by hand (control room or this script) after the reset.
@@ -21,6 +21,7 @@ if "--detach" in sys.argv:
 
 reg = (root / "registry.md").read_text(encoding="utf-8")
 active = re.findall(r"^\| (a\d+) \|.*\| active \|", reg, re.M)
+LIMIT = {"anthropic": 3, "openai": 6}  # a ceiling, not a target (user)
 def provider(i):
     m = re.search(rf"^\| {i} \| [^|]+ \| ([\w.-]+) \|", reg, re.M)
     return "openai" if m and m.group(1).startswith("gpt-") else "anthropic"
@@ -64,7 +65,7 @@ def run(cmd):
 
 print(subprocess.run([sys.executable, str(root / "tools" / "between.py")], capture_output=True, text=True).stdout.strip() or "between: nothing to run", flush=True)
 print(now(), "starting:", ", ".join(j[0] + (" (resume)" if len(j) > 1 else "") for j in jobs), flush=True)
-pools = {p: ThreadPoolExecutor(3) for p in {provider(j[0]) for j in jobs}}
+pools = {p: ThreadPoolExecutor(LIMIT[p]) for p in {provider(j[0]) for j in jobs}}
 futures = [pools[provider(j[0])].submit(run, j) for j in jobs]
 for f in futures:
     i, res = f.result(); print(now(), i, res, flush=True)

@@ -1,0 +1,76 @@
+<!doctype html><meta charset=utf-8><title>The Man on the Bridge</title><meta name=viewport content="width=device-width,initial-scale=1">
+<body style="background:#16130f;color:#b9a98c;font:15px/1.6 Georgia,serif;margin:0;padding:1.5em 1em;text-align:center">
+<div id=w style="position:relative;max-width:900px;margin:0 auto;aspect-ratio:4/3">
+<canvas id=a width=1200 height=900 style="position:absolute;left:0;top:0;width:100%;height:100%"></canvas>
+<canvas id=b width=1200 height=900 style="position:absolute;left:0;top:0;width:100%;height:100%"></canvas>
+</div>
+<p id=cap style="margin-top:1em;opacity:.0;transition:opacity 6s">Wooded landscape. A man is crossing a bridge. It took him two minutes.</p>
+<p><small><a href="index.html" style="color:#8a7d66">back</a> &middot; after the Gainsborough drawing in the Lehman Collection (Met), early 1780s; drawn again here in code</small></p>
+<script>
+const A=document.getElementById('a').getContext('2d'),B=document.getElementById('b').getContext('2d');
+const W=1200,H=900;
+let s=Math.floor(Math.random()*1e9);
+function R(){s|=0;s=s+0x6D2B79F5|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}
+const rr=(a,b)=>a+(b-a)*R();
+// paper
+A.fillStyle='#b79d76';A.fillRect(0,0,W,H);
+{const g=A.createRadialGradient(W*.5,H*.3,50,W*.5,H*.5,W*.7);g.addColorStop(0,'rgba(222,200,160,.55)');g.addColorStop(1,'rgba(90,70,45,.25)');A.fillStyle=g;A.fillRect(0,0,W,H);}
+for(let i=0;i<2500;i++){A.strokeStyle='rgba(255,240,200,'+rr(.02,.06)+')';A.beginPath();const x=rr(0,W),y=rr(0,H);A.moveTo(x,y);A.lineTo(x+rr(-8,8),y+rr(-3,3));A.stroke();}
+// composition: crowns (cx,cy,rx,ry,weight)
+const crowns=[[.14,.30,.17,.26,1],[.30,.22,.14,.20,1],[.40,.36,.12,.14,.9],[.58,.18,.12,.14,.7],[.78,.22,.16,.22,1],[.90,.40,.14,.30,1],[.66,.44,.11,.12,.8],[.08,.62,.12,.16,1],[.22,.72,.18,.10,1],[.9,.72,.12,.12,1],[.46,.65,.07,.05,1.4],[.80,.66,.08,.05,1.4],[.30,.70,.06,.04,1.2]];
+function dens(x,y){let d=0;for(const c of crowns){const dx=(x-c[0])/c[2],dy=(y-c[1])/c[3];d+=c[4]*Math.exp(-(dx*dx+dy*dy)*1.6);}
+ // clearing: sky gap and the stream/path stay open
+ const sx=(x-.5)/.12,sy=(y-.08)/.12;d*=1-.8*Math.exp(-(sx*sx+sy*sy));
+ const py=(y-.72)/.07;d*=1-.85*Math.exp(-py*py)*(x>.25?1:.3);
+ return d;}
+function pick(){for(;;){const x=R(),y=R()*.92;if(R()*1.5<dens(x,y))return[x*W,y*H,dens(x,y)];}}
+// the stream and the bridge sit here
+const BR={x0:.50*W,x1:.74*W,y:.625*H};
+const queue=[];const qf=f=>{f.fast=1;queue.push(f)};
+// wash: broad tone first
+for(let i=0;i<900;i++){const[x,y,d]=pick();qf(()=>{const r=rr(25,95);const g=A.createRadialGradient(x,y,0,x,y,r);const a=Math.min(.22,.07*d+.03);g.addColorStop(0,'rgba(52,50,48,'+a+')');g.addColorStop(1,'rgba(52,50,48,0)');A.fillStyle=g;A.fillRect(x-r,y-r,2*r,2*r);});}
+for(let i=0;i<70;i++){const x=rr(0,W),y=rr(.84,1)*H;qf(()=>{const r=rr(50,110);const g=A.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,'rgba(46,44,42,.12)');g.addColorStop(1,'rgba(46,44,42,0)');A.fillStyle=g;A.fillRect(x-r,y-r,2*r,2*r);});}
+// light on the bank and the water
+qf(()=>{for(let i=0;i<60;i++){const x=rr(.3,.92)*W,y=rr(.64,.78)*H,r=rr(40,100);const g=A.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,'rgba(236,226,200,.12)');g.addColorStop(1,'rgba(236,226,200,0)');A.fillStyle=g;A.fillRect(x-r,y-r,2*r,2*r);}});
+// trunks: tapered, curved, with a limb or two
+function trunk(bx,bot,top,lean,w0){queue.push(()=>{A.lineCap='round';const N=40;let pts=[];for(let i=0;i<=N;i++){const t=i/N;pts.push([bx+lean*t*t+Math.sin(t*5+bx)*6*t,bot-(bot-top)*t]);}
+ for(let i=0;i<N;i++){const t=i/N,w=w0*(1-t*.85);A.strokeStyle='rgba(30,28,26,.8)';A.lineWidth=w;A.beginPath();A.moveTo(...pts[i]);A.lineTo(...pts[i+1]);A.stroke();
+  A.lineCap='butt';A.strokeStyle='rgba(244,238,220,.7)';A.lineWidth=Math.max(1,w*.22);A.beginPath();A.moveTo(pts[i][0]+w*.28,pts[i][1]);A.lineTo(pts[i+1][0]+w*.28,pts[i+1][1]);A.stroke();A.lineCap='round';}
+ for(let k=0;k<26;k++){A.strokeStyle='rgba(26,25,24,'+rr(.3,.7)+')';A.lineWidth=rr(1,2.5);const x=bx+rr(-w*1.6,w*1.6),y=bot+rr(-4,10);A.beginPath();A.moveTo(x,y);A.lineTo(x+rr(-14,14),y+rr(-2,5));A.stroke();}
+ for(let k=0;k<2;k++){const j=Math.floor(rr(.4,.8)*N),[x,y]=pts[j],dir=R()<.5?-1:1;A.strokeStyle='rgba(30,28,26,.75)';A.lineWidth=w0*.22;A.beginPath();A.moveTo(x,y);A.quadraticCurveTo(x+dir*rr(20,40),y-rr(10,40),x+dir*rr(50,90),y-rr(50,100));A.stroke();}});}
+trunk(.32*W,.7*H,.25*H,-30,22);trunk(.20*W,.68*H,.20*H,40,16);trunk(.76*W,.62*H,.15*H,30,24);trunk(.90*W,.66*H,.3*H,-20,14);trunk(.43*W,.64*H,.45*H,-10,9);
+// foliage hooks, clustered on the masses
+for(let i=0;i<7000;i++){const[x,y,d]=pick();queue.push(()=>{const dark=Math.min(.9,.3+d*.3);A.strokeStyle='rgba(26,25,24,'+rr(dark*.5,dark)+')';A.lineWidth=rr(1,2.8);A.lineCap='round';
+ let px=x,py=y,ang=rr(-.5,1.2);A.beginPath();A.moveTo(px,py);const n=2+Math.floor(R()*2);for(let k=0;k<n;k++){ang+=rr(.3,1.1);const l=rr(4,10);px+=Math.cos(ang)*l;py+=Math.sin(ang)*l*.8;A.lineTo(px,py);}A.stroke();});}
+// body colour: white dabs where the light comes in
+for(let i=0;i<1500;i++){const[x,y,d]=pick();const edge=Math.exp(-Math.pow((d-.7)/.35,2));if(R()>edge)continue;queue.push(()=>{A.fillStyle='rgba(244,238,222,'+rr(.35,.85)+')';const w=rr(2,7),h=rr(1,3);A.beginPath();A.ellipse(x,y,w,h,rr(-.6,.6),0,7);A.fill();});}
+// the path in white strokes
+for(let i=0;i<260;i++){queue.push(()=>{const x=rr(.12,.95)*W,y=rr(.74,.90)*H;A.strokeStyle='rgba(240,233,214,'+rr(.25,.6)+')';A.lineWidth=rr(1.5,3);A.beginPath();A.moveTo(x,y);A.lineTo(x+rr(14,50),y+rr(-3,3));A.stroke();});}
+for(let i=0;i<150;i++){queue.push(()=>{const x=rr(.44,.80)*W,y=rr(.645,.70)*H;A.strokeStyle=R()<.6?'rgba(26,25,24,'+rr(.2,.5)+')':'rgba(244,238,222,'+rr(.3,.65)+')';A.lineWidth=rr(1,2.4);A.beginPath();A.moveTo(x,y);A.lineTo(x+rr(14,44),y+rr(-2,2));A.stroke();});}
+// bridge: a plank on two posts
+queue.push(()=>{A.lineCap='round';const{x0,x1,y}=BR;
+ A.strokeStyle='rgba(26,25,24,.9)';A.lineWidth=6;A.beginPath();A.moveTo(x0-10,y+8);A.quadraticCurveTo((x0+x1)/2,y-6,x1+10,y+6);A.stroke();
+ A.strokeStyle='rgba(26,25,24,.7)';A.lineWidth=3;for(const t of[.1,.5,.9]){const x=x0+(x1-x0)*t;A.beginPath();A.moveTo(x,y+4);A.lineTo(x+rr(-2,2),y+34);A.stroke();}
+ A.strokeStyle='rgba(244,238,222,.85)';A.lineWidth=2;A.beginPath();A.moveTo(x0,y+2);A.quadraticCurveTo((x0+x1)/2,y-10,x1,y);A.stroke();});
+let qi=0,t0=null,done=false;
+function bridgeY(x){const t=(x-BR.x0)/(BR.x1-BR.x0);return BR.y+4-(1-Math.pow(2*t-1,2))*8;}
+const WALK=120000;
+function man(ms){B.clearRect(0,0,W,H);if(ms<0)return;const t=Math.min(1,ms/WALK);if(t>=1)return;
+ const x=BR.x0-30+(BR.x1-BR.x0+60)*t,y=bridgeY(Math.max(BR.x0,Math.min(BR.x1,x)))-1;
+ const st=Math.floor(ms/1800),ph=((ms%1800)/1800<.5?1:-1)*1.6,j=k=>((Math.sin(k*91.7+st*7.3)*43758.5)%1)*.7;
+ B.lineCap='round';B.strokeStyle='rgba(18,17,16,.9)';
+ B.lineWidth=2.8;B.beginPath();B.moveTo(x+j(1),y-18);B.lineTo(x+j(2),y-7);B.stroke();
+ B.lineWidth=1.8;B.beginPath();B.moveTo(x,y-7);B.lineTo(x+ph,y);B.moveTo(x,y-7);B.lineTo(x-ph,y);B.stroke();
+ B.lineWidth=2.4;B.beginPath();B.moveTo(x-3.5,y-22.5+j(3));B.lineTo(x+3,y-23.5+j(4));B.stroke();
+ B.lineWidth=3.4;B.beginPath();B.moveTo(x-.6,y-20.6);B.lineTo(x+.4,y-20.4);B.stroke();
+ B.strokeStyle='rgba(244,238,222,.7)';B.lineWidth=1;B.beginPath();B.moveTo(x+2,y-17);B.lineTo(x+2.4,y-13);B.stroke();}
+let drawnAt=null;
+function frame(ts){if(t0===null)t0=ts;
+ let n=Math.ceil(queue.length/1700)*1; // ~28s at 60fps
+ for(let i=0;i<n&&qi<queue.length;i++){const f=queue[qi++];f();while(f.fast&&qi<queue.length&&queue[qi].fast)queue[qi++]();}
+ if(qi>=queue.length){if(drawnAt===null){drawnAt=ts;document.getElementById('cap').style.opacity=.0;}
+  const e=ts-drawnAt-4000;man(e);
+  if(e>WALK+2000&&!done){done=true;document.getElementById('cap').style.opacity=.9;}}
+ requestAnimationFrame(frame);}
+if(location.hash=="#peek"){while(qi<queue.length)queue[qi++]();man(40000);}else requestAnimationFrame(frame);
+</script>
