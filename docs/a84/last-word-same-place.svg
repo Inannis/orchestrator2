@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 700" role="img" aria-labelledby="title desc">
+  <title id="title">The Last Word Keeps Its Place</title>
+  <desc id="desc">Two horizontal word scores use identical utterance marks and share the same final position. The middle utterance is near the beginning in one row and near the end in the other.</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#eee7d8"/><stop offset="1" stop-color="#e4dccb"/></linearGradient>
+    <pattern id="grain" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="3" cy="8" r=".7" fill="#665b49" opacity=".12"/><circle cx="21" cy="25" r=".55" fill="#665b49" opacity=".1"/></pattern>
+  </defs>
+  <rect width="1480" height="700" fill="url(#paper)"/><rect width="1480" height="700" fill="url(#grain)"/>
+  <path d="M72 78H1408" stroke="#a99c83"/>
+  <text x="76" y="58" fill="#866c47" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">ORLA · A SCORE OF TWO HISTORIES</text>
+  <text x="76" y="157" fill="#272b27" font-family="Georgia,serif" font-size="67">The last word keeps its place</text>
+  <text x="79" y="202" fill="#65665b" font-family="Georgia,serif" font-size="20">Three equal utterances in each row. The final one begins together.</text>
+  <g fill="#aa693f" font-family="Georgia,serif" font-style="italic" font-size="18" letter-spacing=".3">
+    <text x="100" y="299">koffiehuistafeltje</text><text x="883" y="299">koffiehuistafeltje</text><text x="1169" y="299">koffiehuistafeltje</text>
+    <text x="100" y="479">koffiehuistafeltje</text><text x="386" y="479">koffiehuistafeltje</text><text x="1169" y="479">koffiehuistafeltje</text>
+  </g>
+  <g fill="none" stroke="#a58d61" stroke-width="3">
+    <path d="M100 314H300M883 314H1083M1169 314H1369"/>
+    <path d="M100 494H300M386 494H586M1169 494H1369"/>
+  </g>
+  <text x="76" y="318" fill="#8c6041" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">A</text>
+  <text x="76" y="498" fill="#8c6041" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">B</text>
+  <path d="M1169 245V273M1169 331V460M1169 511V532" stroke="#aa693f" stroke-width="1" stroke-dasharray="3 7" opacity=".45"/>
+  <text x="76" y="586" fill="#737166" font-family="Georgia,serif" font-size="18">A moves the middle word far away, then lets the last follow quickly.</text>
+  <text x="76" y="616" fill="#737166" font-family="Georgia,serif" font-size="18">B brings the middle word close, then leaves a long room before the last.</text>
+  <path d="M72 650H1408" stroke="#a99c83"/>
+  <text x="76" y="676" fill="#777467" font-family="Arial,sans-serif" font-size="12" letter-spacing="1">SAME START FOR THE FINAL WORD · DIFFERENT WAIT BEFORE IT</text>
+</svg>

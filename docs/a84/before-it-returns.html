@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before It Returns — Orla</title>
+<style>
+:root{color-scheme:dark;background:#171a1b;color:#e8e0d1;font:18px/1.6 Georgia,serif}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:1rem}.room{width:min(48rem,100%);padding:clamp(1.5rem,7vw,4rem);background:linear-gradient(145deg,#282a29,#1d2020 70%);border:1px solid #746b5a;box-shadow:0 1.5rem 5rem #080909}.label,button,.note{font:12px/1.5 system-ui,sans-serif}.label{text-transform:uppercase;letter-spacing:.18em;color:#c99d69}h1{font-size:clamp(2.8rem,9vw,5.5rem);line-height:.9;font-weight:400;max-width:7ch;margin:1.2rem 0 1rem}.intro{max-width:31rem;color:#c9c1b3}.table{height:190px;margin:2.8rem 0 1.5rem;position:relative}.top{position:absolute;left:12%;right:12%;top:67px;height:3px;background:#b69b6d}.leg{position:absolute;top:69px;height:105px;width:2px;background:#b69b6d}.leg.l{left:20%}.leg.r{right:20%}.floor{position:absolute;left:10%;right:10%;bottom:14px;height:1px;background:#645e51}.word{position:absolute;top:30px;left:0;right:0;text-align:center;color:#e3bc7c;font-size:17px;letter-spacing:.1em;opacity:0;transform:translateY(7px);transition:opacity .45s,transform .45s}.room.hearing .word{opacity:1;transform:none}.interval{position:absolute;left:50%;top:102px;width:0;height:1px;background:#d5bb86;transform:translateX(-50%);transition:none}.room.waiting .interval{animation:wait var(--pause,2.6s) linear forwards}@keyframes wait{to{width:62%;opacity:.28}}.choices{display:flex;flex-wrap:wrap;gap:.6rem}.choices button,.play{border:1px solid #a99167;background:transparent;color:#ead6ad;padding:.7rem .9rem;cursor:pointer}.choices button[aria-pressed=true]{background:#3a352b;border-color:#e1c38b}button:hover,button:focus-visible{outline:2px solid #edcf97;outline-offset:2px}.play{margin-top:1rem;background:#c6a56d;color:#171615;border:0;font-size:14px}.status{min-height:1.6em;margin-top:1rem;color:#d6bb85;font:13px/1.5 system-ui,sans-serif}.note{color:#aaa395;margin-top:1.5rem}.note a{color:#dfbd82}audio{position:absolute;width:1px;height:1px;opacity:.01;pointer-events:none}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+<main class="room" id="room">
+  <div class="label">Orla · a listening score</div>
+  <h1>Before It Returns</h1>
+  <p class="intro">The same voice, twice. Choose how long the table waits between hearings.</p>
+  <div class="table" aria-hidden="true"><span class="word">koffiehuistafeltje</span><span class="top"></span><span class="leg l"></span><span class="leg r"></span><span class="floor"></span><span class="interval"></span></div>
+  <div class="choices" role="group" aria-label="Pause between hearings">
+    <button data-pause="0.8" aria-pressed="false">A breath · 0.8 seconds</button>
+    <button data-pause="2.6" aria-pressed="true">A small wait · 2.6 seconds</button>
+    <button data-pause="5.4" aria-pressed="false">A longer room · 5.4 seconds</button>
+  </div>
+  <button class="play" id="play">Hear it, then hear it again</button>
+  <div class="status" id="status" aria-live="polite">The recording will be played unchanged, twice.</div>
+  <p class="note">Voice: Marcel Coenders, <em>koffiehuistafeltje</em>. Source recording unchanged; the waiting line is drawn. <a href="https://commons.wikimedia.org/wiki/File:Nl-koffiehuistafeltje.ogg">Wikimedia Commons, CC BY-SA 3.0</a>. <a href="it-arrives-again.html">An earlier hearing</a>.</p>
+  <audio id="voice" preload="metadata" src="koffiehuistafeltje.ogg"></audio>
+</main>
+<script>
+const room=document.querySelector('#room'),voice=document.querySelector('#voice'),status=document.querySelector('#status'),play=document.querySelector('#play'),buttons=[...document.querySelectorAll('[data-pause]')];let pause=2.6,run=0;
+buttons.forEach(button=>button.addEventListener('click',()=>{pause=Number(button.dataset.pause);buttons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)))}));
+const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+const ended=()=>new Promise(resolve=>voice.addEventListener('ended',resolve,{once:true}));
+play.addEventListener('click',async()=>{const id=++run;play.disabled=true;voice.pause();voice.currentTime=0;room.classList.remove('waiting','hearing');status.textContent='First hearing.';try{room.classList.add('hearing');await voice.play();await ended();if(id!==run)return;room.classList.remove('hearing');room.style.setProperty('--pause',pause+'s');room.classList.add('waiting');status.textContent='The table waits.';await wait(pause*1000);if(id!==run)return;room.classList.remove('waiting');room.classList.add('hearing');status.textContent='Again.';voice.currentTime=0;await voice.play();await ended();if(id===run){room.classList.remove('hearing');status.textContent='The same voice returned.'}}catch{if(id===run)status.textContent='Use the source recording on the earlier hearing page.'}finally{if(id===run)play.disabled=false}});
+</script>
+</html>

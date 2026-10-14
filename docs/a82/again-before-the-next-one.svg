@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">Again, Before the Next One</title>
+<desc id="desc">The same sentence appears twice across a dark green field. A thin chalk line divides the first utterance from its return after a small 4–0 score.</desc>
+<defs>
+  <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#17251f"/><stop offset="1" stop-color="#0e1918"/></linearGradient>
+  <radialGradient id="mist"><stop stop-color="#c9d5b9" stop-opacity=".08"/><stop offset="1" stop-color="#c9d5b9" stop-opacity="0"/></radialGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+  <pattern id="grain" width="31" height="29" patternUnits="userSpaceOnUse"><circle cx="4" cy="8" r=".8" fill="#d7d6c3" opacity=".16"/><circle cx="23" cy="19" r=".55" fill="#d7d6c3" opacity=".12"/></pattern>
+</defs>
+<rect width="1200" height="900" fill="url(#ground)"/>
+<ellipse cx="600" cy="470" rx="570" ry="390" fill="url(#mist)" filter="url(#soft)"/>
+<rect width="1200" height="900" fill="url(#grain)"/>
+<g fill="#d6d8c8" font-family="Georgia,serif">
+  <text x="92" y="92" font-size="15" letter-spacing="4" opacity=".66">ORLA  /  A SENTENCE RETURNS</text>
+  <text x="92" y="170" font-size="48" font-weight="normal">Again, before the next one</text>
+  <text x="92" y="216" font-size="16" letter-spacing="2" opacity=".57">THE WORDS ARRIVE TWICE; THE FIELD HAS CHANGED</text>
+</g>
+<path d="M100 287 C320 281 476 296 600 286 S902 282 1100 289" fill="none" stroke="#d3d7c5" stroke-width="2" opacity=".44"/>
+<path d="M100 287 C316 282 474 295 594 287" fill="none" stroke="#e5e1c9" stroke-width="2" opacity=".36" stroke-dasharray="2 11"/>
+<g fill="#dfe0d2" font-family="Georgia,serif" font-size="31">
+  <text x="100" y="378">We have to face the reality</text>
+  <text x="100" y="427">and look at each game</text>
+  <text x="100" y="476">as it comes.</text>
+</g>
+<text x="101" y="532" fill="#b5c0ae" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" opacity=".64">BEFORE KICK-OFF  /  13 DECEMBER</text>
+<path d="M100 591 C304 584 484 600 602 591 S889 584 1100 592" fill="none" stroke="#d3d7c5" stroke-width="1.5" opacity=".26"/>
+<path d="M594 284 C599 361 591 439 601 509 S594 660 600 746" fill="none" stroke="#d9d6c4" stroke-width="1.2" opacity=".21" stroke-dasharray="3 12"/>
+<g fill="#dfe0d2" font-family="Georgia,serif" font-size="31">
+  <text x="100" y="671" opacity=".86">We have to face the reality</text>
+  <text x="100" y="720" opacity=".86">and look at each game</text>
+  <text x="100" y="769" opacity=".86">as it comes.</text>
+</g>
+<g font-family="Arial,sans-serif" fill="#d9a66f">
+  <text x="820" y="673" font-size="14" letter-spacing="3" opacity=".76">AFTER</text>
+  <text x="815" y="739" font-size="58" letter-spacing="2" opacity=".82">4 - 0</text>
+</g>
+<path d="M807 755 C881 750 970 752 1089 757" fill="none" stroke="#d9a66f" stroke-width="1" opacity=".38"/>
+<text x="818" y="786" fill="#b9c1b1" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.5" opacity=".64">NEWCASTLE  /  LEICESTER</text>
+<text x="100" y="847" fill="#bbc4b4" font-family="Arial,sans-serif" font-size="13" letter-spacing="1" opacity=".58">PATSON DAKA, PRE-MATCH INTERVIEW  /  THE SCORE ENTERS LATER</text>
+</svg>

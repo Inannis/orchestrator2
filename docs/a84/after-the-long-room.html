@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>After the Long Room — Orla</title>
+<style>
+:root{color-scheme:dark;background:#171a1b;color:#e8e0d1;font:18px/1.6 Georgia,serif}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:1rem}.room{width:min(46rem,100%);padding:clamp(1.5rem,7vw,4rem);background:linear-gradient(145deg,#282a29,#1d2020 70%);border:1px solid #746b5a;box-shadow:0 1.5rem 5rem #080909}.label,.note{font:12px/1.5 system-ui,sans-serif}.label{text-transform:uppercase;letter-spacing:.18em;color:#c99d69}h1{font-size:clamp(2.7rem,9vw,5rem);line-height:.92;font-weight:400;max-width:8ch;margin:1.2rem 0}.intro{max-width:32rem;color:#c9c1b3}.table{height:200px;margin:2rem 0;position:relative}.top{position:absolute;left:12%;right:12%;top:68px;height:3px;background:#b69b6d}.leg{position:absolute;top:70px;height:105px;width:2px;background:#b69b6d}.l{left:20%}.r{right:20%}.floor{position:absolute;left:10%;right:10%;bottom:14px;height:1px;background:#645e51}.word{position:absolute;top:30px;left:0;right:0;text-align:center;color:#e3bc7c;font-size:17px;letter-spacing:.1em;opacity:0;transform:translateY(7px);transition:opacity .4s,transform .4s}.room.hearing .word{opacity:1;transform:none}.measure{position:absolute;left:50%;top:105px;width:0;height:2px;background:#d5bb86;transform:translateX(-50%);opacity:0;transition:opacity .4s}.room.first-wait .measure,.room.second-wait .measure,.room.hearing .measure{opacity:.75}.room.carried .measure{width:64%;opacity:.25}.room.carried-small .measure{width:12%;opacity:.25}.room.first-wait .measure{animation:open var(--long,5.4s) linear forwards}.room.second-wait .measure{animation:close var(--short,.8s) linear forwards}@keyframes open{to{width:64%}}@keyframes close{from{width:64%}to{width:12%;opacity:.25}}.play{border:0;background:#c6a56d;color:#171615;padding:.8rem 1rem;font:14px/1.4 system-ui,sans-serif;cursor:pointer}.play:hover,.play:focus-visible{outline:2px solid #edcf97;outline-offset:3px}.play:disabled{opacity:.6;cursor:wait}.status{min-height:1.5em;margin-top:1rem;color:#d6bb85;font:13px/1.5 system-ui,sans-serif}.note{color:#aaa395;margin-top:1.5rem}.note a{color:#dfbd82}audio{position:absolute;width:1px;height:1px;opacity:.01;pointer-events:none}@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+</style>
+<main class="room" id="room">
+  <div class="label">Orla · a second listening score</div>
+  <h1>After the Long Room</h1>
+  <p class="intro">The same word comes three times. The first wait opens wide; the next begins where it left off and contracts.</p>
+  <div class="table" aria-hidden="true"><span class="word">koffiehuistafeltje</span><span class="top"></span><span class="leg l"></span><span class="leg r"></span><span class="floor"></span><span class="measure"></span></div>
+  <button class="play" id="play">Listen through</button>
+  <div class="status" id="status" aria-live="polite">Long wait · short wait.</div>
+  <p class="note">Three unchanged hearings of Marcel Coenders saying <em>koffiehuistafeltje</em>. The line is drawn and kept between pauses; it is not in the recording. <a href="https://commons.wikimedia.org/wiki/File:Nl-koffiehuistafeltje.ogg">Wikimedia Commons, CC BY-SA 3.0</a>. <a href="before-it-returns.html">Choose a pause</a> · <a href="the-word-waits.html">Hear the pauses without the table</a>.</p>
+  <audio id="voice" preload="metadata" src="koffiehuistafeltje.ogg"></audio>
+</main>
+<script>
+const room=document.querySelector('#room'),voice=document.querySelector('#voice'),status=document.querySelector('#status'),play=document.querySelector('#play');let run=0;
+const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+const ended=()=>new Promise(resolve=>voice.addEventListener('ended',resolve,{once:true}));
+async function say(id,label){if(id!==run)return;status.textContent=label;room.classList.add('hearing');voice.currentTime=0;await voice.play();await ended();room.classList.remove('hearing')}
+play.addEventListener('click',async()=>{const id=++run;play.disabled=true;voice.pause();voice.currentTime=0;room.classList.remove('first-wait','second-wait','hearing','carried','carried-small');try{await say(id,'First hearing.');if(id!==run)return;room.classList.add('first-wait');room.style.setProperty('--long','5.4s');status.textContent='The line opens.';await wait(5400);if(id!==run)return;room.classList.remove('first-wait');room.classList.add('carried');await say(id,'It returns.');if(id!==run)return;room.classList.add('second-wait');room.style.setProperty('--short','.8s');status.textContent='The line contracts.';await wait(800);if(id!==run)return;room.classList.remove('second-wait','carried');room.classList.add('carried-small');await say(id,'Again.');if(id===run)status.textContent='Three times. The voice is unchanged.'}catch{if(id===run)status.textContent='Use the source recording on the pause score.'}finally{if(id===run)play.disabled=false}});
+</script>
+</html>

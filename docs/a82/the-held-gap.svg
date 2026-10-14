@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">The Held Gap</title>
+<desc id="desc">Two faint blue fields of voice face across an outlined plane. Three small amber marks wait in the quiet between them.</desc>
+<defs>
+  <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#1a2926"/><stop offset="1" stop-color="#111c1c"/></linearGradient>
+  <radialGradient id="haze"><stop stop-color="#b9cfc0" stop-opacity=".09"/><stop offset="1" stop-color="#b9cfc0" stop-opacity="0"/></radialGradient>
+  <linearGradient id="surface" x2="0" y2="1"><stop stop-color="#bbcbb9" stop-opacity=".035"/><stop offset="1" stop-color="#bbcbb9" stop-opacity="0"/></linearGradient>
+  <pattern id="dust" width="37" height="31" patternUnits="userSpaceOnUse"><circle cx="4" cy="8" r=".7" fill="#e4dfca" opacity=".2"/><circle cx="26" cy="20" r=".55" fill="#e4dfca" opacity=".14"/></pattern>
+  <filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#ground)"/>
+<ellipse cx="600" cy="505" rx="530" ry="330" fill="url(#haze)" filter="url(#blur)"/>
+<rect width="1200" height="900" fill="url(#dust)"/>
+<g fill="#dce0d2" font-family="Georgia,serif">
+  <text x="94" y="90" font-family="Arial,sans-serif" font-size="14" letter-spacing="4" opacity=".63">ORLA / A VISUAL SCORE</text>
+  <text x="94" y="164" font-size="52">The Held Gap</text>
+  <text x="96" y="208" font-family="Arial,sans-serif" font-size="14" letter-spacing="2" opacity=".58">A WORD LEAVES ROOM FOR THREE QUIET ARRIVALS</text>
+</g>
+<!-- A plane, almost a table and almost only an interval. -->
+<ellipse cx="600" cy="536" rx="420" ry="126" fill="url(#surface)" stroke="#b9c8b8" stroke-width="1.4" opacity=".42"/>
+<path d="M185 536 C336 491 438 508 514 534 M686 534 C772 506 870 491 1015 536" fill="none" stroke="#c6d1c1" stroke-width="1.4" opacity=".4"/>
+<path d="M224 569 C374 617 475 598 524 573 M676 573 C733 599 855 617 976 569" fill="none" stroke="#a4b9ad" stroke-width="1" opacity=".25"/>
+<!-- Voice fields: the first fuller, the return quieter. -->
+<g fill="none" stroke="#9bb9bd" stroke-linecap="round">
+ <path d="M150 483 C202 462 221 497 265 477 S326 492 360 478 S405 497 447 487 S478 500 507 490" stroke-width="2.3" opacity=".48"/>
+ <path d="M150 497 C197 520 225 482 268 504 S322 484 363 502 S409 480 448 503 S479 486 511 501" stroke-width="2" opacity=".35"/>
+ <path d="M150 516 C191 500 224 535 270 514 S328 536 365 518 S413 540 451 519 S480 538 516 521" stroke-width="1.8" opacity=".28"/>
+ <path d="M150 540 C197 557 221 523 268 543 S324 526 366 547 S413 525 453 545 S484 528 519 544" stroke-width="1.5" opacity=".2"/>
+ <path d="M1050 493 C1012 481 990 501 961 487 S920 500 887 486 S846 501 816 488 S773 500 744 488 S719 496 696 491" stroke-width="1.8" opacity=".27"/>
+ <path d="M1050 515 C1011 500 989 534 957 514 S918 537 884 516 S845 534 813 516 S770 534 741 517 S717 528 694 521" stroke-width="1.6" opacity=".23"/>
+ <path d="M1050 543 C1009 558 988 527 954 545 S916 526 882 545 S842 527 810 545 S770 527 740 543 S715 531 693 536" stroke-width="1.35" opacity=".18"/>
+</g>
+<!-- The impacts sit in the gap; their small echoes do not become another voice. -->
+<g fill="none" stroke="#d5a36c">
+ <circle cx="530" cy="535" r="7" stroke-width="2.2" opacity=".95"/><circle cx="530" cy="535" r="18" stroke-width="1.2" opacity=".46"/>
+ <circle cx="600" cy="535" r="7" stroke-width="2.2" opacity=".9"/><circle cx="600" cy="535" r="18" stroke-width="1.2" opacity=".41"/>
+ <circle cx="670" cy="535" r="7" stroke-width="2.2" opacity=".84"/><circle cx="670" cy="535" r="18" stroke-width="1.2" opacity=".36"/>
+</g>
+<g fill="#d1d7c8" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" opacity=".57">
+ <text x="198" y="716">THE FIRST WORD</text><text x="536" y="716">THREE TAPS</text><text x="852" y="716">THE RETURN</text>
+</g>
+<path d="M199 689 H1004" stroke="#aeb9ad" stroke-width="1" opacity=".24"/>
+<text x="96" y="832" fill="#b7c3b7" font-family="Arial,sans-serif" font-size="13" letter-spacing="1" opacity=".56">THE PLANE IS DRAWN. THE TABLE IS NOT THERE.</text>
+</svg>

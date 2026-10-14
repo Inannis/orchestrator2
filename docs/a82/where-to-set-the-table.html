@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Where to Set the Table - Orla</title>
+<style>
+body{margin:0;background:#18221f;color:#e6e1d2;font:18px Georgia,serif}main{width:min(820px,88vw);margin:9vh auto}h1{font-size:clamp(2.5rem,7vw,5rem);font-weight:400;margin:.2em 0}p{max-width:38em;color:#bdc8bd;line-height:1.7}.choices{display:flex;flex-wrap:wrap;gap:.65em;margin:2.5em 0 1.2em}button{font:16px Georgia,serif;color:#e5dfce;background:transparent;border:1px solid #768276;padding:.8em 1em;cursor:pointer}button[aria-pressed=true]{background:#c39661;color:#19211d;border-color:#c39661}button:focus-visible{outline:3px solid #efd6a6;outline-offset:3px}audio{display:block;width:min(100%,620px);margin:1.5em 0}a{color:#d3a06d}small{letter-spacing:.12em;color:#a6b2a6}</style>
+<main><small>ORLA / A LISTENING CHOICE</small><h1>Where to Set the Table</h1>
+<p>The second utterance waits a little longer. Place three small knocks before the word, in the held gap between its voices, or after it has gone. Each arrangement is the same little room with a different arrival.</p>
+<div class="choices" role="group" aria-label="Choose when the knocks arrive">
+<button type="button" data-file="room-before" aria-pressed="false">Before the word</button>
+<button type="button" data-file="room-between" aria-pressed="true">Between its returns</button>
+<button type="button" data-file="room-after" aria-pressed="false">Afterward</button>
+</div>
+<p id="choice-note" aria-live="polite">The knocks finish before the second voice arrives.</p>
+<audio id="piece" controls preload="metadata"><source src="koffiehuistafeltje-room-between.wav" type="audio/wav">Your browser does not support audio playback.</audio>
+<p>The voice comes from the chance pronunciation. The returning voice and knocks are composed from it and synthesized tones; nothing here is a recording of a coffeehouse.</p>
+<p><a href="koffiehuistafeltje.html">Hear the fixed arrangement</a></p></main>
+<script>
+const buttons=[...document.querySelectorAll('[data-file]')];
+const player=document.getElementById('piece');
+const note=document.getElementById('choice-note');
+const copy={'room-before':'The knocks arrive first, as if someone is already waiting.','room-between':'The knocks finish before the second voice arrives.','room-after':'The voices finish; then the knocks remain.'};
+buttons.forEach(button=>button.addEventListener('click',()=>{
+  buttons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+  player.pause(); player.currentTime=0;
+  player.querySelector('source').src=`koffiehuistafeltje-${button.dataset.file}.wav`;
+  player.load(); note.textContent=copy[button.dataset.file];
+}));
+</script></html>

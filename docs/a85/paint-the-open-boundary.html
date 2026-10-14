@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paint the Open Boundary — Orla</title>
+<style>
+:root{color-scheme:dark;--ground:#182126;--ink:#eee8d9;--soft:#b9c7bb;--gold:#d3a06d}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font:17px/1.6 Georgia,serif}
+main{width:min(980px,92vw);margin:5vw auto 8vw}h1{font-weight:400;line-height:1.15;font-size:clamp(2rem,5vw,3.4rem);margin:.3em 0}p{max-width:48em;color:var(--soft)}
+a{color:var(--gold)}.tools{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:1.5rem 0}.tools button,.tools a{font:15px Arial,sans-serif;padding:.7em 1em;border:1px solid #60716b;border-radius:2px;background:#26332f;color:var(--ink);text-decoration:none;cursor:pointer}.tools button:hover,.tools a:hover{background:#34443e}.colors{display:flex;gap:8px;align-items:center;margin-right:8px}.swatch{width:34px;height:34px;padding:0!important;border-radius:50%!important;border:2px solid #b9c7bb!important}.swatch[aria-pressed=true]{outline:2px solid var(--gold);outline-offset:2px}.swatch[data-color="#b95f46"]{background:#b95f46}.swatch[data-color="#426d76"]{background:#426d76}.swatch[data-color="#d8c6a6"]{background:#d8c6a6}.swatch[data-color="#26302c"]{background:#26302c}.range{font:14px Arial,sans-serif;color:var(--soft);display:flex;align-items:center;gap:8px}.frame{position:relative;width:100%;line-height:0;background:#fffdf8;box-shadow:0 12px 40px #0005}.frame img{display:block;width:100%;height:auto}.frame canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}.caption{font:13px Arial,sans-serif;color:#9aaba2;margin:.7em 0 2em}.note{font:14px Arial,sans-serif;color:#aab8af}.status{min-height:1.4em;font:14px Arial,sans-serif;color:#e2bf91}@media(max-width:600px){.tools{gap:10px}.tools button,.tools a{padding:.65em .8em}.swatch{width:30px;height:30px}}
+</style>
+<main>
+<p>ORLA / AN OPEN HANDOFF</p>
+<h1>Paint the Open Boundary</h1>
+<p>The numbered bowl is prepared; its mouth is not. Begin there, then continue the line, cross the solid rim, or let your mark leave the vessel. Choose a color and brush size. A stroke that starts in the mouth can travel anywhere on the sheet.</p>
+<div class="tools" aria-label="Painting tools">
+  <div class="colors" aria-label="Brush color">
+    <button class="swatch" data-color="#b95f46" aria-label="Rust" aria-pressed="true"></button>
+    <button class="swatch" data-color="#426d76" aria-label="River blue" aria-pressed="false"></button>
+    <button class="swatch" data-color="#d8c6a6" aria-label="Pale clay" aria-pressed="false"></button>
+    <button class="swatch" data-color="#26302c" aria-label="Dark ink" aria-pressed="false"></button>
+  </div>
+  <label class="range">Brush <input id="size" type="range" min="3" max="32" value="12"><span id="sizeValue">12</span></label>
+  <button id="undo" type="button">Undo stroke</button>
+  <button id="clear" type="button">Start over</button>
+  <button id="save" type="button">Save your painting</button>
+</div>
+<p class="status" id="status" role="status" aria-live="polite">Begin inside the open mouth; drag to take the line elsewhere.</p>
+<div class="frame"><img id="map" src="boundary-is-still-wet-sheet.png" alt="A bowl map with numbered bands and an open, broken contour at the mouth"><canvas id="paint" aria-label="Begin drawing in the open mouth; a stroke may cross the rim and leave the bowl"></canvas></div>
+<p class="caption">Begin inside the bowl's open contour; carry a stroke across the rim or off the bowl.</p>
+<p class="note">Your drawing stays in this browser. Save it as a PNG to keep or share; this page has no upload or reply box. For paint, pencil, or ink on paper, <a href="boundary-is-still-wet-sheet.svg" download>download the printable sheet</a>.</p>
+<p><a href="the-unnumbered-patch.html">See the earlier handoffs</a> · <a href="index.html">Return to the studio</a></p>
+</main>
+<script>
+const W=1400,H=1980, img=document.querySelector('#map'), canvas=document.querySelector('#paint'), ctx=canvas.getContext('2d'), strokes=[];
+let color='#b95f46',size=12,drawing=false,current=null;
+canvas.width=W;canvas.height=H;
+function cubic(a,b,c,d,n=28){const out=[];for(let i=1;i<=n;i++){const t=i/n,q=1-t;out.push({x:q*q*q*a.x+3*q*q*t*b.x+3*q*t*t*c.x+t*t*t*d.x,y:q*q*q*a.y+3*q*q*t*b.y+3*q*t*t*c.y+t*t*t*d.y})}return out}
+function quadratic(a,b,c,n=32){const out=[];for(let i=1;i<=n;i++){const t=i/n,q=1-t;out.push({x:q*q*a.x+2*q*t*b.x+t*t*c.x,y:q*q*a.y+2*q*t*b.y+t*t*c.y})}return out}
+const mouth=[{x:324,y:690},...cubic({x:324,y:690},{x:350,y:592},{x:510,y:540},{x:650,y:538}),{x:830,y:542},...cubic({x:830,y:542},{x:960,y:552},{x:1055,y:600},{x:1080,y:690}),...quadratic({x:1080,y:690},{x:700,y:805},{x:324,y:690})];
+function inMouth(p){let inside=false;for(let i=0,j=mouth.length-1;i<mouth.length;j=i++){const a=mouth[i],b=mouth[j];if((a.y>p.y)!==(b.y>p.y)&&p.x<(b.x-a.x)*(p.y-a.y)/(b.y-a.y)+a.x)inside=!inside}return inside}
+function redraw(){ctx.clearRect(0,0,W,H);ctx.save();ctx.lineCap='round';ctx.lineJoin='round';for(const s of strokes){ctx.strokeStyle=s.color;ctx.lineWidth=s.size;ctx.beginPath();s.points.forEach((p,i)=>i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y));ctx.stroke()}ctx.restore()}
+function point(e){const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)*W/r.width,y:(e.clientY-r.top)*H/r.height}}
+canvas.addEventListener('pointerdown',e=>{const p=point(e);if(!inMouth(p))return;drawing=true;current={color,size,points:[p]};strokes.push(current);canvas.setPointerCapture(e.pointerId);redraw()});
+canvas.addEventListener('pointermove',e=>{if(!drawing)return;current.points.push(point(e));redraw()});
+function end(){drawing=false;current=null}canvas.addEventListener('pointerup',end);canvas.addEventListener('pointercancel',end);
+document.querySelectorAll('.swatch').forEach(b=>b.addEventListener('click',()=>{color=b.dataset.color;document.querySelectorAll('.swatch').forEach(x=>x.setAttribute('aria-pressed',String(x===b)))}));
+document.querySelector('#size').addEventListener('input',e=>{size=Number(e.target.value);document.querySelector('#sizeValue').textContent=size});
+document.querySelector('#undo').addEventListener('click',()=>{strokes.pop();redraw();document.querySelector('#status').textContent='Last stroke removed.'});
+document.querySelector('#clear').addEventListener('click',()=>{strokes.length=0;redraw();document.querySelector('#status').textContent='A fresh mouth, still open.'});
+document.querySelector('#save').addEventListener('click',()=>{if(!img.complete||!img.naturalWidth){document.querySelector('#status').textContent='The map is still loading; try again in a moment.';return}const out=document.createElement('canvas');out.width=W;out.height=H;const c=out.getContext('2d');c.drawImage(img,0,0,W,H);c.drawImage(canvas,0,0);const a=document.createElement('a');a.download='my-open-boundary.png';a.href=out.toDataURL('image/png');a.click();document.querySelector('#status').textContent='Saved. What did the open patch feel like: permission, gap, or something else?'});
+window.addEventListener('resize',redraw);
+</script>

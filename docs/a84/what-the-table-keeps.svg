@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 880" role="img" aria-labelledby="title desc">
+  <title id="title">What the Table Keeps</title>
+  <desc id="desc">Four drawn tables show a spoken word's interval growing wide, persisting faintly beneath its return, then contracting to a small mark.</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#eee7d8"/><stop offset="1" stop-color="#e4dccb"/></linearGradient>
+    <linearGradient id="shadow" x2="0" y2="1"><stop stop-color="#6d705e" stop-opacity=".16"/><stop offset="1" stop-color="#6d705e" stop-opacity="0"/></linearGradient>
+    <pattern id="grain" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="3" cy="8" r=".7" fill="#665b49" opacity=".12"/><circle cx="21" cy="25" r=".55" fill="#665b49" opacity=".1"/></pattern>
+  </defs>
+  <rect width="1480" height="880" fill="url(#paper)"/>
+  <rect width="1480" height="880" fill="url(#grain)"/>
+  <path d="M72 88H1408" stroke="#a99c83" stroke-width="1"/>
+  <text x="76" y="68" fill="#866c47" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">ORLA · A STILL LISTENING SCORE</text>
+  <text x="76" y="166" fill="#272b27" font-family="Georgia,serif" font-size="72" font-weight="normal">What the Table Keeps</text>
+  <text x="79" y="211" fill="#65665b" font-family="Georgia,serif" font-size="21">One voice, three arrivals; the interval outlasts a hearing.</text>
+  <g transform="translate(76 260)">
+    <rect width="318" height="500" fill="#f1ecdf" opacity=".42"/>
+    <text x="24" y="44" fill="#9a6042" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">01 · BEFORE</text>
+    <text x="24" y="78" fill="#353932" font-family="Georgia,serif" font-size="25">No measure yet</text>
+    <ellipse cx="159" cy="330" rx="113" ry="34" fill="url(#shadow)"/>
+    <path d="M46 273H272M76 275V376M242 275V376M37 378H281" fill="none" stroke="#707564" stroke-width="2"/>
+    <path d="M59 271H259" stroke="#a58d61" stroke-width="4"/>
+    <text x="24" y="450" fill="#777467" font-family="Georgia,serif" font-size="17">The table waits empty.</text>
+  </g>
+  <g transform="translate(414 260)">
+    <rect width="318" height="500" fill="#f1ecdf" opacity=".42"/>
+    <text x="24" y="44" fill="#9a6042" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">02 · 5.4 SECONDS</text>
+    <text x="24" y="78" fill="#353932" font-family="Georgia,serif" font-size="25">The room opens</text>
+    <ellipse cx="159" cy="330" rx="113" ry="34" fill="url(#shadow)"/>
+    <path d="M46 273H272M76 275V376M242 275V376M37 378H281" fill="none" stroke="#707564" stroke-width="2"/>
+    <path d="M59 271H259" stroke="#a58d61" stroke-width="4"/>
+    <path d="M85 312H233" stroke="#bd9862" stroke-width="3" opacity=".84"/>
+    <path d="M85 323H233" stroke="#bd9862" stroke-width="1" opacity=".25"/>
+    <text x="24" y="450" fill="#777467" font-family="Georgia,serif" font-size="17">The line reaches across.</text>
+  </g>
+  <g transform="translate(752 260)">
+    <rect width="318" height="500" fill="#f1ecdf" opacity=".42"/>
+    <text x="24" y="44" fill="#9a6042" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">03 · AGAIN</text>
+    <text x="159" y="216" text-anchor="middle" fill="#aa693f" font-family="Georgia,serif" font-size="20" font-style="italic" letter-spacing="1">koffiehuistafeltje</text>
+    <ellipse cx="159" cy="330" rx="113" ry="34" fill="url(#shadow)"/>
+    <path d="M46 273H272M76 275V376M242 275V376M37 378H281" fill="none" stroke="#707564" stroke-width="2"/>
+    <path d="M59 271H259" stroke="#a58d61" stroke-width="4"/>
+    <path d="M85 312H233" stroke="#bd9862" stroke-width="3" opacity=".3"/>
+    <text x="24" y="450" fill="#777467" font-family="Georgia,serif" font-size="17">The wide line stays faint.</text>
+  </g>
+  <g transform="translate(1090 260)">
+    <rect width="318" height="500" fill="#f1ecdf" opacity=".42"/>
+    <text x="24" y="44" fill="#9a6042" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">04 · 0.8 SECONDS</text>
+    <text x="24" y="78" fill="#353932" font-family="Georgia,serif" font-size="25">The room narrows</text>
+    <ellipse cx="159" cy="330" rx="113" ry="34" fill="url(#shadow)"/>
+    <path d="M46 273H272M76 275V376M242 275V376M37 378H281" fill="none" stroke="#707564" stroke-width="2"/>
+    <path d="M59 271H259" stroke="#a58d61" stroke-width="4"/>
+    <path d="M145 312H173" stroke="#bd9862" stroke-width="3" opacity=".52"/>
+    <path d="M145 323H173" stroke="#bd9862" stroke-width="1" opacity=".18"/>
+    <text x="24" y="450" fill="#777467" font-family="Georgia,serif" font-size="17">A small trace remains.</text>
+  </g>
+  <path d="M76 796H1408" stroke="#a99c83" stroke-width="1"/>
+  <text x="78" y="829" fill="#777467" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2">The drawn line is an invention; Marcel Coenders's recording is unchanged.</text>
+  <text x="1406" y="829" text-anchor="end" fill="#777467" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2">ORLA · 2026</text>
+</svg>

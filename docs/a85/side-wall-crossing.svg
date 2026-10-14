@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1200" viewBox="0 0 1500 1200">
+<defs>
+  <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#1c292b"/><stop offset="1" stop-color="#111a1d"/></linearGradient>
+  <linearGradient id="body" x2=".9" y2=".8"><stop stop-color="#ce6668"/><stop offset=".52" stop-color="#a94b55"/><stop offset="1" stop-color="#7b3947"/></linearGradient>
+  <linearGradient id="mark" x2=".8" y2="1"><stop stop-color="#f0a16d"/><stop offset=".55" stop-color="#c65b48"/><stop offset="1" stop-color="#e1ad72"/></linearGradient>
+  <radialGradient id="pool"><stop stop-color="#d17b53" stop-opacity=".78"/><stop offset=".7" stop-color="#a94c45" stop-opacity=".4"/><stop offset="1" stop-color="#a94c45" stop-opacity="0"/></radialGradient>
+  <filter id="soft-edge" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>
+  <clipPath id="bowl"><path d="M330 390 C350 635 423 839 720 925 C1017 839 1090 635 1110 390 Z"/></clipPath>
+</defs>
+<rect width="1500" height="1200" fill="url(#ground)"/>
+<path d="M120 1005 C360 988 501 1022 738 1004 C985 985 1154 1013 1390 994" fill="none" stroke="#56615b" stroke-width="2" opacity=".35"/>
+<path d="M145 800 C163 779 191 785 210 778 C232 770 249 789 271 782 C297 773 319 791 340 784 C367 777 401 790 418 803 C401 817 379 811 355 822 C332 831 310 811 289 824 C264 838 241 815 217 824 C192 821 160 814 145 800 Z" fill="url(#pool)" filter="url(#soft-edge)"/>
+<path d="M168 799 Q194 784 218 791 M302 793 Q324 788 341 793 M235 812 Q256 807 274 812 M365 805 Q383 799 395 804" fill="none" stroke="#dc8a60" stroke-width="2" opacity=".46"/>
+<!-- Bowl body and numbered bands -->
+<path d="M330 390 C350 635 423 839 720 925 C1017 839 1090 635 1110 390 Z" fill="url(#body)" stroke="#ddc9a7" stroke-width="5"/>
+<g clip-path="url(#bowl)">
+ <path d="M330 550 C493 596 947 596 1110 550" fill="none" stroke="#e0c7a4" stroke-width="5" opacity=".96"/>
+ <path d="M330 708 C516 753 924 753 1110 708" fill="none" stroke="#d5bd9d" stroke-width="5" opacity=".92"/>
+ <path d="M330 838 Q720 922 1110 838" fill="none" stroke="#c1a887" stroke-width="5" opacity=".8"/>
+</g>
+<!-- Foot -->
+<path d="M590 922 L615 1022 Q720 1046 825 1022 L850 922" fill="#75404a" stroke="#d7c29f" stroke-width="5"/>
+<ellipse cx="720" cy="1022" rx="105" ry="19" fill="#57333e" stroke="#bfa98b" stroke-width="4"/>
+<!-- Mouth: the missing contour is a real opening -->
+<ellipse cx="720" cy="390" rx="380" ry="77" fill="#172327" stroke="#dec9a6" stroke-width="5"/>
+<ellipse cx="720" cy="390" rx="310" ry="49" fill="#26383a" stroke="#71817a" stroke-width="2" opacity=".92"/>
+<!-- A single warm mark begins in the mouth, crosses the front lip, and breaks through the side wall. -->
+<path d="M700 376 C687 398 674 418 662 438 C635 484 575 520 529 560 C486 598 458 636 426 667 C391 701 365 737 325 761 C286 784 252 801 220 787" fill="none" stroke="#542f34" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" opacity=".58"/>
+<path d="M700 376 C687 398 674 418 662 438 C635 484 575 520 529 560 C486 598 458 636 426 667 C391 701 365 737 325 761 C286 784 252 801 220 787" fill="none" stroke="url(#mark)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M650 448 C625 482 585 510 556 534 M470 621 C450 641 438 656 420 674 M365 728 C349 744 333 754 316 764" fill="none" stroke="#f2c99a" stroke-width="4" stroke-linecap="round" opacity=".46"/>
+<path d="M694 382 C686 395 680 405 674 413" fill="none" stroke="#e88a60" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+<g fill="#e3d4bc" font-family="Georgia,serif">
+ <text x="100" y="108" font-size="19" letter-spacing="4" opacity=".7">ORLA / THE UNNUMBERED PATCH</text>
+ <text x="100" y="1110" font-size="28">Side-wall crossing</text>
+ <text x="100" y="1150" font-size="17" opacity=".72">A warm line leaves the open mouth, crosses the wall, and finds ground.</text>
+</g>
+</svg>
