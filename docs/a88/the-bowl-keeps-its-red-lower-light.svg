@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+ <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#20282a"/><stop offset="1" stop-color="#10191d"/></linearGradient>
+ <radialGradient id="air"><stop stop-color="#6e3941" stop-opacity=".22"/><stop offset="1" stop-color="#20282a" stop-opacity="0"/></radialGradient>
+ <linearGradient id="porcelain" x1="0" x2="1" y1="0" y2=".15"><stop stop-color="#601827"/><stop offset=".2" stop-color="#a12d42"/><stop offset=".48" stop-color="#c24b5c"/><stop offset=".72" stop-color="#92283a"/><stop offset="1" stop-color="#541722"/></linearGradient>
+ <linearGradient id="foot" x2="1"><stop stop-color="#591725"/><stop offset=".42" stop-color="#bd4b5a"/><stop offset="1" stop-color="#581722"/></linearGradient>
+ <linearGradient id="inside" x2="0" y2="1"><stop stop-color="#fffdf3"/><stop offset=".72" stop-color="#f4eee3"/><stop offset="1" stop-color="#e4d2c8"/></linearGradient>
+ <linearGradient id="rim" x2="0" y2="1"><stop stop-color="#fff3d1"/><stop offset=".48" stop-color="#c79864"/><stop offset="1" stop-color="#fff0d0"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="28"/></filter>
+ <filter id="softFacet"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#ground)"/><ellipse cx="600" cy="410" rx="440" ry="300" fill="url(#air)" filter="url(#soft)"/>
+<path d="M330 300 C348 365 345 442 372 503 C401 566 478 605 535 615 Q600 626 665 615 C722 605 799 566 828 503 C855 442 852 365 870 300 Q600 350 330 300Z" fill="url(#porcelain)" stroke="#e7bd91" stroke-opacity=".2" stroke-width="2"/>
+<!-- The pale mouth sits behind the red front wall. -->
+<ellipse cx="600" cy="298" rx="270" ry="42" fill="url(#inside)"/>
+<ellipse cx="600" cy="298" rx="270" ry="42" fill="none" stroke="url(#rim)" stroke-width="5"/>
+<ellipse cx="600" cy="321" rx="118" ry="15" fill="#d77878" opacity=".075"/>
+<path d="M330 300 Q600 357 870 300 C850 366 851 442 828 503 C799 566 722 605 665 615 Q600 626 535 615 C478 605 401 566 372 503 C349 442 350 366 330 300Z" fill="url(#porcelain)"/>
+<!-- Side light gathers on the low ribs; the contour stays quiet. -->
+<g fill="none" stroke-linecap="round" filter="url(#softFacet)">
+ <path d="M365 375 C370 455 400 523 455 562" stroke="#ffd0ba" stroke-opacity=".12" stroke-width="25"/>
+ <path d="M835 375 C830 455 800 523 745 562" stroke="#210b13" stroke-opacity=".16" stroke-width="28"/>
+ <path d="M493 402 C500 490 535 554 568 579" stroke="#ffe2cd" stroke-opacity=".09" stroke-width="20"/>
+ <path d="M707 402 C700 490 665 554 632 579" stroke="#2c0e18" stroke-opacity=".11" stroke-width="20"/>
+</g>
+<!-- soft vertical facets, almost lost in the glaze -->
+<g fill="none" stroke-linecap="round">
+ <path d="M385 362 C393 455 429 536 500 570" stroke="#f2a0a0" stroke-opacity=".15" stroke-width="3"/>
+ <path d="M455 382 C465 478 503 548 548 587" stroke="#f2a0a0" stroke-opacity=".12" stroke-width="2"/>
+ <path d="M815 362 C807 455 771 536 700 570" stroke="#3b101b" stroke-opacity=".22" stroke-width="4"/>
+ <path d="M745 382 C735 478 697 548 652 587" stroke="#f3a0a0" stroke-opacity=".12" stroke-width="2"/>
+ <path d="M410 350 C470 375 525 388 600 391 C675 388 730 375 790 350" stroke="#f6c2a7" stroke-opacity=".2" stroke-width="2"/>
+</g>
+
+<path d="M335 302 Q600 356 865 302" fill="none" stroke="url(#rim)" stroke-width="4" opacity=".9"/>
+<path d="M492 612 Q600 626 708 612 L697 665 Q600 680 503 665Z" fill="url(#foot)" stroke="#e9b58c" stroke-opacity=".34" stroke-width="2"/>
+<ellipse cx="600" cy="665" rx="97" ry="17" fill="#3d131c" stroke="#d08d77" stroke-opacity=".38" stroke-width="2"/>
+<ellipse cx="600" cy="612" rx="108" ry="18" fill="#a63849" opacity=".84"/>
+<ellipse cx="600" cy="718" rx="295" ry="22" fill="#080f13" opacity=".45"/>
+<text x="84" y="82" fill="#b6c4ba" font-family="Arial,sans-serif" font-size="13" letter-spacing="5">ORLA / A FOUND VESSEL</text>
+<text x="84" y="137" fill="#eee8d9" font-family="Georgia,serif" font-size="40" font-weight="400">The Bowl Keeps Its Red</text>
+<path d="M84 158 H1116" stroke="#98aaa0" stroke-opacity=".28"/>
+<text x="84" y="828" fill="#a8b7ad" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">LOWER VIEW / SIDE LIGHT ON THE RIBS</text>
+<text x="1116" y="828" text-anchor="end" fill="#87988f" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">PORCELAIN STUDY / 2026</text>
+</svg>

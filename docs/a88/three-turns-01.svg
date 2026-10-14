@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1200" viewBox="0 0 1000 1200">
+<defs>
+  <radialGradient id="halo"><stop stop-color="#b9cabb" stop-opacity=".14"/><stop offset="1" stop-color="#81978e" stop-opacity="0"/></radialGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#d5e4ce" stop-opacity=".46"/><stop offset=".12" stop-color="#71a3a0" stop-opacity=".24"/><stop offset=".38" stop-color="#164b56" stop-opacity=".59"/><stop offset=".76" stop-color="#092733" stop-opacity=".79"/><stop offset=".94" stop-color="#467b78" stop-opacity=".44"/><stop offset="1" stop-color="#e0d9bc" stop-opacity=".35"/></linearGradient>
+  <linearGradient id="inside" x1=".2" y1="0" x2=".55" y2="1"><stop stop-color="#71877d" stop-opacity="0"/><stop offset=".17" stop-color="#526d67" stop-opacity=".16"/><stop offset=".38" stop-color="#20464b" stop-opacity=".74"/><stop offset=".57" stop-color="#173840" stop-opacity=".94"/><stop offset="1" stop-color="#071923" stop-opacity=".98"/></linearGradient>
+  <linearGradient id="rim" x2="0" y2="1"><stop stop-color="#f0efdc" stop-opacity=".74"/><stop offset=".34" stop-color="#a9cac1" stop-opacity=".28"/><stop offset=".7" stop-color="#213e48" stop-opacity=".72"/><stop offset="1" stop-color="#d5e3d3" stop-opacity=".52"/></linearGradient>
+  <linearGradient id="whiteWave" x1="0" y1="0" x2="1" y2=".4"><stop stop-color="#d5d7c9" stop-opacity="0"/><stop offset=".17" stop-color="#e2e1d5" stop-opacity=".75"/><stop offset=".62" stop-color="#f4eddb" stop-opacity=".92"/><stop offset="1" stop-color="#cadbd0" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="warm" x2="1" y2="1"><stop stop-color="#f5d697"/><stop offset="1" stop-color="#e6864e"/></linearGradient>
+  <clipPath id="vessel"><path d="M 432 285 Q 500 266 568 285 L 564 371 C 566 428 642 464 695 527 C 749 592 763 717 723 805 C 688 883 611 923 500 935 C 389 923 312 883 277 805 C 237 717 251 592 305 527 C 358 464 434 428 436 371 Z"/></clipPath>
+  <filter id="blur"><feGaussianBlur stdDeviation="24"/></filter>
+  <filter id="shadow"><feGaussianBlur stdDeviation="17"/></filter>
+  <style>
+    .kicker{font:12px Arial,sans-serif;letter-spacing:.28em;fill:#b9c7bb}
+    .title{font:38px Georgia,serif;fill:#eee8d9}
+    .caption{font:12px Arial,sans-serif;letter-spacing:.17em;fill:#9eafa5}
+  </style>
+</defs>
+<rect width="1000" height="1200" fill="#182126"/>
+<ellipse cx="500" cy="595" rx="358" ry="472" fill="url(#halo)"/>
+<text x="72" y="94" class="kicker">GLASS / WEATHER / CÔA</text>
+<text x="72" y="143" class="title">The Weather Witness / turn 1</text>
+<path d="M72 167 H928" stroke="#80928d" stroke-opacity=".34"/>
+<ellipse cx="503" cy="967" rx="262" ry="34" fill="#05090b" opacity=".76" filter="url(#shadow)"/>
+<g clip-path="url(#vessel)">
+  <rect x="232" y="265" width="536" height="680" fill="url(#glass)"/>
+  <rect x="268" y="472" width="464" height="467" fill="url(#inside)" opacity=".92"/>
+  <g transform="translate(80.00000000000003 0) scale(0.69 1)">
+  <!-- an unsettled sky, laid on in broad passes -->
+  <path d="M258 550 C336 500 390 536 453 505 C516 473 562 525 626 488 C686 453 724 501 759 470 L770 594 C710 617 658 571 602 601 C536 636 475 581 420 620 C350 666 302 606 245 652Z" fill="#667d74" opacity=".25"/>
+  <path d="M267 567 C339 527 389 561 452 532 C513 505 566 551 622 520 C671 493 711 520 744 500" fill="none" stroke="#d6d4c0" stroke-opacity=".31" stroke-width="16" stroke-linecap="round"/>
+  <path d="M256 623 C312 586 362 625 417 594 C474 562 524 610 576 582 C644 545 687 586 755 547" fill="none" stroke="#d2d0ba" stroke-opacity=".21" stroke-width="12" stroke-linecap="round"/>
+  <!-- the hillline is carried by the glass, not drawn around it -->
+  <path d="M266 676 C345 663 375 629 438 650 C489 668 532 642 579 651 C641 664 696 623 742 634" fill="none" stroke="#111e24" stroke-opacity=".56" stroke-width="34"/>
+  <path d="M253 743 C306 710 345 729 389 700 C433 671 467 712 511 687 C555 660 590 697 627 668 C668 635 709 666 752 642" fill="none" stroke="url(#whiteWave)" stroke-opacity="0.22" stroke-width="28" stroke-linecap="round"/>
+  <path d="M256 754 C309 723 345 746 394 709 M449 704 C485 727 517 686 554 687 M597 687 C629 704 660 661 700 657" fill="none" stroke="#f3eee0" stroke-opacity="0.1892" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M271 785 C311 762 340 778 370 757 M520 761 C554 744 578 757 601 738 M652 717 C677 703 702 711 724 693" fill="none" stroke="#9eaaa0" stroke-opacity=".38" stroke-width="3" stroke-linecap="round"/>
+  <!-- remembered horse: only a contour, and only when the turning light finds it -->
+  <g fill="none" stroke="#dbc89d" stroke-opacity="0.075" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M375 618 Q408 601 443 609 L463 595 L479 608 L465 622 L444 621 Q430 634 415 637 L399 650 M421 634 L427 652 M442 620 L451 637 M462 620 L474 637 M393 642 L385 657" stroke-width="2.5"/>
+    <path d="M414 608 Q403 599 397 590 M464 609 Q477 603 484 598" stroke-width="2"/>
+    <circle cx="459" cy="610" r="1.9" fill="#dbc89d" stroke="none"/>
+  </g>
+  <!-- the one warm mark -->
+  <g transform="translate(648 805) scale(1.0) translate(-648 -805)">
+  <path d="M636 802 Q650 797 662 803 Q650 810 636 807Z" fill="url(#warm)" opacity="0.48"/>
+  <path d="M622 811 Q648 816 671 809" fill="none" stroke="#f1ba72" stroke-opacity="0.33599999999999997" stroke-width="2"/>
+  </g>
+  <!-- slow bands of depth, with a bubble kept in the wall -->
+  <path d="M285 849 Q500 905 715 847" fill="none" stroke="#9eb9b0" stroke-opacity=".13" stroke-width="14"/>
+  <circle cx="550" cy="571" r="13" fill="#d3e0ce" fill-opacity=".12" stroke="#e5e4d1" stroke-opacity=".3" stroke-width="1.4"/>
+  <circle cx="550" cy="571" r="4" fill="#f2ecda" fill-opacity=".36"/>
+  </g>
+</g>
+<!-- blown wall and rim -->
+<path d="M 432 285 Q 500 266 568 285 L 564 371 C 566 428 642 464 695 527 C 749 592 763 717 723 805 C 688 883 611 923 500 935 C 389 923 312 883 277 805 C 237 717 251 592 305 527 C 358 464 434 428 436 371 Z" fill="none" stroke="#d1e0d1" stroke-opacity=".73" stroke-width="3"/>
+<path d="M432 285 Q500 267 568 285 L564 371 C566 428 642 464 695 527 C749 592 763 717 723 805 C688 883 611 923 500 935 C389 923 312 883 277 805 C237 717 251 592 305 527 C358 464 434 428 436 371Z" fill="url(#glass)" fill-opacity=".24" stroke="none"/>
+<path d="M432 285 Q500 267 568 285 Q566 299 500 305 Q434 299 432 285Z" fill="url(#rim)" stroke="#edf0dc" stroke-opacity=".8" stroke-width="2"/>
+<path d="M435 292 Q500 307 565 292" fill="none" stroke="#f8f2df" stroke-opacity=".56" stroke-width="2"/>
+<path d="M438 318 C433 402 394 430 340 496 C300 549 278 640 289 720" fill="none" stroke="#eff1dc" stroke-opacity=".74" stroke-width="8" stroke-linecap="round"/>
+<path d="M451 333 C451 414 412 449 365 504 C329 546 315 612 321 656" fill="none" stroke="#b5d6cc" stroke-opacity=".26" stroke-width="3" stroke-linecap="round"/>
+<path d="M556 324 C557 414 617 451 663 514 C703 571 717 652 704 721" fill="none" stroke="#e3ead7" stroke-opacity=".52" stroke-width="4" stroke-linecap="round"/>
+<path d="M305 844 Q500 956 695 844" fill="none" stroke="#d9e3d1" stroke-opacity=".56" stroke-width="4"/>
+<path d="M373 885 Q500 929 627 885" fill="none" stroke="#bbd1c3" stroke-opacity=".22" stroke-width="8"/>
+<ellipse cx="500" cy="290" rx="69" ry="17" fill="none" stroke="#e4eadb" stroke-opacity=".28" stroke-width="2"/>
+<text x="72" y="1084" class="caption">TURN STUDY 01  /  SMOKE-BLUE GLASS · WEATHER FIRST, TRACE SECOND</text>
+<text x="928" y="1084" text-anchor="end" class="caption">WEATHER VESSEL · NO. 1</text>
+</svg>
