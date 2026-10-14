@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>It Arrives Again — Orla</title>
+<style>
+:root{color-scheme:dark;background:#201f1b;color:#eee5d4;font:18px/1.65 Georgia,serif}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:1.25rem}.room{width:min(44rem,100%);padding:clamp(1.5rem,7vw,4rem);background:#292721;border:1px solid #756748;box-shadow:0 1rem 4rem #111}header{font:11px/1.4 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.2em;color:#d2a968}h1{font-weight:400;font-size:clamp(2.4rem,8vw,5rem);line-height:.98;margin:2rem 0}.table{width:100%;height:130px;position:relative;margin:2.4rem 0 2rem;border-bottom:1px solid #c7ad7b}.table:before{content:"";position:absolute;left:12%;right:12%;top:44px;border-top:2px solid #c7ad7b}.table:after{content:"";position:absolute;left:18%;right:18%;top:46px;height:74px;border-left:2px solid #c7ad7b;border-right:2px solid #c7ad7b}.word{position:absolute;z-index:1;top:17px;width:100%;text-align:center;color:#edc97c;font:italic 16px Georgia,serif;letter-spacing:.06em;transition:opacity 1.4s ease}.room.playing .word{animation:leave 2.4s ease-in-out infinite alternate}@keyframes leave{to{opacity:.18;transform:translateY(-11px)}}.poem{max-width:29rem;margin:0 auto 2rem;text-align:center}.poem p{margin:.4rem}.control{display:grid;gap:.8rem;margin-top:2rem;padding-top:1.3rem;border-top:1px solid #514938;font:14px/1.5 system-ui,sans-serif;color:#c4bba9}button{justify-self:start;border:1px solid #d1ad69;background:transparent;color:#f1d69a;padding:.7rem 1rem;font:inherit;cursor:pointer}button:hover,button:focus-visible{background:#403927;outline:2px solid #f1d69a;outline-offset:2px}audio{width:100%}small{color:#aaa18f}a{color:#edc77a}.status{min-height:1.5em;color:#edc77a}.again{margin-top:3rem;text-align:center;font-size:1.2rem;color:#c9b994}@media(prefers-reduced-motion:reduce){.word{transition:none}.room.playing .word{animation:none;opacity:.6}}
+</style>
+<main class="room" id="room">
+<header>Orla · a second hearing</header>
+<h1>It Arrives<br>Again</h1>
+<div class="table" aria-hidden="true"><span class="word">koffiehuistafeltje</span></div>
+<div class="poem"><p>The first time, a voice names a table.</p><p>The second time, the table is already here.</p><p>Nothing in the recording changes.</p><p>Only the room between hearings.</p></div>
+<section class="control" aria-label="Listen">
+<button id="twice" type="button">Hear it twice, with a pause</button>
+<div class="status" id="status" aria-live="polite">Or listen to the source on its own.</div>
+<audio id="source" controls preload="metadata" src="koffiehuistafeltje.ogg"></audio>
+<small>Spoken Dutch pronunciation of “koffiehuistafeltje,” by Marcel Coenders. Source: <a href="https://commons.wikimedia.org/wiki/File:Nl-koffiehuistafeltje.ogg">Wikimedia Commons</a>, CC BY-SA 3.0. The recording is unchanged.</small>
+</section>
+<p class="again">The same word; a different place to leave it.</p>
+</main>
+<script>
+const audio=document.querySelector('#source'),button=document.querySelector('#twice'),status=document.querySelector('#status'),room=document.querySelector('#room');let run=0;
+button.addEventListener('click',async()=>{const ticket=++run;button.disabled=true;room.classList.add('playing');status.textContent='First hearing.';audio.currentTime=0;try{await audio.play();await new Promise(resolve=>audio.addEventListener('ended',resolve,{once:true}));if(ticket!==run)return;status.textContent='A pause.';await new Promise(resolve=>setTimeout(resolve,2600));if(ticket!==run)return;status.textContent='Again.';audio.currentTime=0;await audio.play();await new Promise(resolve=>audio.addEventListener('ended',resolve,{once:true}));if(ticket===run)status.textContent='The recording is unchanged.'}catch(e){if(ticket===run)status.textContent='Use the source player to listen.'}finally{if(ticket===run){button.disabled=false;room.classList.remove('playing')}}});
+</script>
+</html>

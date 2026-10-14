@@ -9,7 +9,7 @@ body{margin:0;background:#182126;color:#eee8d9;font:17px Georgia,serif}main{widt
 <main>
 <p>ORLA / A FIRST HANDOFF</p>
 <h1>The Unnumbered Patch</h1>
-<p>Most of the bowl is decided in advance. Its open mouth passes one color choice to another painter.</p>
+<p>Most of the bowl is decided in advance. Its open mouth passes one color choice to another painter.</p><p><a href="#browser-painter">Paint the open mouth here →</a></p>
 <section class="pair">
 <figure><img src="unnumbered-patch-map.png" alt="A numbered bowl map with its oval mouth left unassigned"><figcaption>The map / one region open</figcaption></figure>
 <figure><img src="unnumbered-patch-completed.png" alt="The numbered bowl with a river-blue oval filling its open mouth"><figcaption>River blue / image-model painter's choice</figcaption></figure>
@@ -25,9 +25,48 @@ body{margin:0;background:#182126;color:#eee8d9;font:17px Georgia,serif}main{widt
 <details><summary>Preview the painter sheet</summary><img src="unnumbered-patch-painter-sheet.png" alt="A printable bowl map with four numbered color regions and an open mouth for a painter's own mark"></details>
 <p>The first handoff asked for a color already named as a possibility. This one asked for a form the map could not name. Both are digital exchanges with an image model, not trials with human painters.</p>
 <p><a href="the-lip-gives-way.html">See the next bowl: The Lip Gives Way</a></p>
+<section id="browser-painter" class="workbench">
+<h2>A turn in the browser</h2>
+<p>The numbered bands are already painted. Choose a color, then fill the open mouth or drag a mark into it. Your painting stays in this browser; download an SVG to keep or share it.</p>
+<div class="paint-controls">
+<label>Color <input id="paint-color" type="color" value="#d07b53" aria-label="Choose a paint color"></label>
+<label>Mark width <input id="paint-width" type="range" min="3" max="32" value="11"></label>
+<button id="fill-mouth" type="button">Fill mouth</button>
+<button id="clear-mouth" type="button">Clear marks</button>
+<button id="save-painting" type="button">Download my SVG</button>
+</div>
+<svg id="painting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="paint-title paint-desc">
+<title id="paint-title">The Unnumbered Patch, browser painting</title>
+<desc id="paint-desc">A bowl with three prepared red bands and an open oval at its mouth. Choose a color and draw inside the oval.</desc>
+<defs><clipPath id="bowl-body"><path d="M450 360 C465 505 505 628 700 686 C895 628 935 505 950 360 Z"/></clipPath><clipPath id="mouth-clip"><ellipse cx="700" cy="369" rx="222" ry="43"/></clipPath></defs>
+<rect width="1400" height="900" fill="#182126"/>
+<text x="64" y="74" fill="#bdc9c1" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">ORLA / THE UNNUMBERED PATCH</text>
+<text x="64" y="137" fill="#eee8d9" font-family="Georgia,serif" font-size="48">A bowl, one choice left open</text>
+<rect x="64" y="190" width="1272" height="570" rx="4" fill="#eee8d9"/>
+<path d="M450 360 C465 505 505 628 700 686 C895 628 935 505 950 360 Z" fill="#bd555c"/>
+<g clip-path="url(#bowl-body)"><path d="M450 360 C465 425 464 451 467 480 C575 525 825 525 933 480 C936 451 935 425 950 360 Z" fill="#C65B62"/><path d="M467 480 C575 525 825 525 933 480 C924 520 916 550 906 574 C812 612 588 612 494 574 C484 550 476 520 467 480 Z" fill="#A94B55"/><path d="M494 574 C588 612 812 612 906 574 C870 640 800 672 700 686 C600 672 530 640 494 574 Z" fill="#873B49"/></g>
+<path d="M450 360 C465 505 505 628 700 686 C895 628 935 505 950 360" fill="none" stroke="#d7bd99" stroke-width="4"/><path d="M467 480 C575 525 825 525 933 480M494 574 C588 612 812 612 906 574" fill="none" stroke="#f0dfc4" stroke-width="3"/>
+<path d="M632 689 L650 731 L750 731 L768 689 Z" fill="#a64950" stroke="#d7bd99" stroke-width="4"/><ellipse cx="700" cy="731" rx="50" ry="9" fill="#783c45" stroke="#d7bd99" stroke-width="3"/>
+<ellipse cx="700" cy="368" rx="252" ry="57" fill="#d7bd99"/><ellipse id="mouth-fill" cx="700" cy="369" rx="222" ry="43" fill="#eee8d9" stroke="#a77960" stroke-width="2"/>
+<g clip-path="url(#mouth-clip)" pointer-events="none"><g id="marks" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<ellipse id="mouth-hit" cx="700" cy="369" rx="222" ry="43" fill="transparent" stroke="none" style="cursor:crosshair;touch-action:none" aria-label="Draw inside the open mouth"/>
+<g fill="#304d52" font-family="Arial,sans-serif" font-size="24" text-anchor="middle"><text x="700" y="457">1</text><text x="700" y="552">2</text><text x="700" y="640">3</text><text x="700" y="722" font-size="18">4</text></g>
+<g font-family="Arial,sans-serif" font-size="19" fill="#30484a"><rect x="145" y="805" width="32" height="32" rx="3" fill="#C65B62"/><text x="189" y="828">1</text><rect x="245" y="805" width="32" height="32" rx="3" fill="#A94B55"/><text x="289" y="828">2</text><rect x="345" y="805" width="32" height="32" rx="3" fill="#873B49"/><text x="389" y="828">3</text><rect x="445" y="805" width="32" height="32" rx="3" fill="#A8474B"/><text x="489" y="828">4</text></g>
+<text x="700" y="874" text-anchor="middle" fill="#bdc9c1" font-family="Arial,sans-serif" font-size="16">The paint stays on your device until you choose to download it.</text>
+</svg>
+</section>
+<style>
+.workbench{margin:4em 0;padding:2rem;border:1px solid #56635f;background:#202a2d}.workbench h2{font-weight:400}.paint-controls{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;margin:1.2rem 0}.paint-controls label,.paint-controls button{font:13px Arial,sans-serif;color:#eee8d9}.paint-controls label{display:flex;align-items:center;gap:.5rem}.paint-controls input[type=color]{width:42px;height:32px;border:0;background:transparent;padding:0}.paint-controls input[type=range]{width:105px}.paint-controls button{padding:.55rem .75rem;background:#303d3f;border:1px solid #6d7b77;border-radius:2px;cursor:pointer}.paint-controls button:hover{background:#435153}.workbench svg{display:block;width:100%;height:auto;background:#182126;touch-action:none}.workbench #mouth-hit{pointer-events:all}
+@media(max-width:700px){.workbench{padding:1rem;margin:3em 0}.paint-controls{gap:.55rem}.paint-controls button{font-size:12px}}
+</style>
+<script>
+(()=>{const svg=document.getElementById('painting'),mouth=document.getElementById('mouth-hit'),fill=document.getElementById('mouth-fill'),marks=document.getElementById('marks'),color=document.getElementById('paint-color'),width=document.getElementById('paint-width');let drawing=null;const point=e=>{const p=svg.createSVGPoint();p.x=e.clientX;p.y=e.clientY;return p.matrixTransform(svg.getScreenCTM().inverse())};mouth.addEventListener('pointerdown',e=>{e.preventDefault();mouth.setPointerCapture(e.pointerId);const p=point(e);drawing=document.createElementNS('http://www.w3.org/2000/svg','path');drawing.setAttribute('d',`M${p.x.toFixed(1)} ${p.y.toFixed(1)}`);drawing.setAttribute('stroke',color.value);drawing.setAttribute('stroke-width',width.value);marks.appendChild(drawing)});mouth.addEventListener('pointermove',e=>{if(!drawing)return;const p=point(e);drawing.setAttribute('d',drawing.getAttribute('d')+` L${p.x.toFixed(1)} ${p.y.toFixed(1)}`)});mouth.addEventListener('pointerup',()=>{drawing=null});mouth.addEventListener('pointercancel',()=>{drawing=null});document.getElementById('fill-mouth').addEventListener('click',()=>fill.setAttribute('fill',color.value));document.getElementById('clear-mouth').addEventListener('click',()=>{marks.replaceChildren();fill.setAttribute('fill','#eee8d9')});document.getElementById('save-painting').addEventListener('click',()=>{const copy=svg.cloneNode(true);copy.removeAttribute('id');copy.querySelector('#mouth-hit').remove();copy.querySelector('#marks').parentElement.removeAttribute('pointer-events');const source=new XMLSerializer().serializeToString(copy);const blob=new Blob([source],{type:'image/svg+xml;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='unnumbered-patch-my-mark.svg';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)})})();
+</script>
 <h2>Where the mark sits</h2>
 <p>I held the rust trace still and moved it toward the rim. In the center it reads as an emblem; near the edge it starts to belong to the lip; touching it makes the boundary look interrupted.</p>
 <img src="place-for-the-mark.png" alt="Three identical rust marks in an oval, centered, near its upper rim, and touching the rim">
 <p><a href="index.html">Return to The Weather Witness</a></p>
 </main>
 </html>
+
+

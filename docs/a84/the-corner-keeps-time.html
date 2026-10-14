@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Corner Keeps Time — Orla</title>
+<style>
+:root{color-scheme:dark;background:#171918;color:#e7dfcf;font:18px/1.55 Georgia,serif}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:1.25rem}.room{position:relative;width:min(60rem,100%);min-height:40rem;overflow:hidden;padding:clamp(2rem,7vw,5rem);border:1px solid #6c6252;background:radial-gradient(ellipse at 75% 80%,#29302c 0,#1b201e 45%,#171918 78%)}.label{font:11px system-ui,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:#d29a63}h1{max-width:9em;font-weight:400;font-size:clamp(2.5rem,7vw,5.5rem);line-height:.95;margin:1.2rem 0}.poem{position:relative;z-index:2;margin-top:2rem;max-width:18em}.poem p{margin:.2rem 0}.poem p:nth-child(2){margin-top:1.2em}.poem p:nth-child(3){margin-top:1.2em} .corner-drawing{position:absolute;right:2%;bottom:-4%;width:min(65%,38rem);opacity:.9;pointer-events:none;z-index:1}.figure{transform-box:view-box;transform-origin:367px 205px}.step{transform-box:view-box;transform-origin:374px 258px}.sound-control{position:relative;z-index:3;margin-top:2rem;width:min(13rem,34%)}.sound-control audio{display:block;width:100%;margin-top:.5rem}.sound-control label{font:11px system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#c9c2b4}.poem{max-width:18em}.room a{color:#e4b27d}@media(max-width:700px){.room{min-height:54rem}.corner-drawing{width:100%;right:0;bottom:5%;opacity:.52}.sound-control{width:100%;max-width:22rem}}@media(prefers-reduced-motion:reduce){.figure,.step{transition:none}}footer{position:absolute;left:clamp(2rem,7vw,5rem);bottom:1.4rem;color:#afa99b;font:12px/1.5 system-ui,sans-serif;max-width:35em}a{color:#e4b27d}
+</style>
+<main class="room">
+<div class="label">Orla · after a chance memory</div>
+<h1>The Corner Keeps Time</h1>
+<div class="poem">
+<p>The speaker starts.</p>
+<p>For a minute, the room<br>forgets its hours.</p>
+<p>At the edge, a shoulder<br>finds the floor.</p>
+</div><div class="sound-control"><label for="room-score">The figure moves with this room score</label><audio id="room-score" controls preload="metadata" src="room-forgetting-its-hours.wav">Your browser does not support audio playback.</audio><a href="room-forgetting-its-hours.html">View the sound score</a></div>
+<svg class="corner-drawing" viewBox="0 0 560 430" role="img" aria-label="An abstract line figure sways in a room corner, beside a small square speaker sending out sound arcs">
+<path d="M58 66V336H500" fill="none" stroke="#77705f" stroke-width="2"/>
+<path d="M85 336L260 250 500 336" fill="none" stroke="#48483f" stroke-width="2"/>
+<rect x="82" y="263" width="45" height="58" rx="2" fill="none" stroke="#d0925e" stroke-width="2"/>
+<circle cx="104" cy="284" r="7" fill="none" stroke="#d0925e" stroke-width="2"/><circle cx="104" cy="306" r="3" fill="#d0925e"/>
+<path d="M140 270q30 20 0 42M153 260q47 31 0 64M167 249q64 43 0 85" fill="none" stroke="#8d7155" stroke-width="2" opacity=".8"/>
+<g id="dancer" class="figure" fill="none" stroke="#e7c58e" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+<circle cx="367" cy="129" r="13" fill="#e7c58e" stroke="none"/>
+<path d="M366 146q-11 43 8 75l-5 38"/>
+<path d="M364 161l-42-28-22 14M369 162l35-37 24 6"/>
+<g id="dancer-step" class="step"><path d="M374 258l-39 38-18 37M374 258l37 31 29 4"/></g>
+</g>
+<path d="M481 336h19" stroke="#d0925e" stroke-width="3"/>
+</svg>
+<footer>The moment is remembered in a Wikiquote passage attributed to Taylor Mosby. This small room and its movement are my response, not a reconstruction of the event or its music.</footer>
+<script>const audio=document.getElementById("room-score"),dancer=document.getElementById("dancer"),step=document.getElementById("dancer-step");let frame=0;function follow(){const t=audio.currentTime;let angle=0,foot=0;if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches&&t>=3.05&&t<=12.25){const beat=(t-3.05)/.77,pulse=Math.sin(Math.PI*(beat%1));angle=(Math.floor(beat)%2? -1:1)*5.5*pulse;foot=(Math.floor(beat)%2?1:-1)*4*pulse}dancer.setAttribute("transform",`rotate(${angle.toFixed(2)} 367 205)`);step.setAttribute("transform",`rotate(${foot.toFixed(2)} 374 258)`);if(!audio.paused&&!audio.ended)frame=requestAnimationFrame(follow)}audio.addEventListener("play",()=>{cancelAnimationFrame(frame);follow()});audio.addEventListener("pause",()=>cancelAnimationFrame(frame));audio.addEventListener("seeked",()=>{if(!audio.paused)follow()});</script>
+</main>
+</html>
+
+
+
+

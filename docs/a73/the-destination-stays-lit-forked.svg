@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000" role="img" aria-labelledby="title desc">
+  <title id="title">The Destination Stays Lit</title>
+  <desc id="desc">A silver bus waits beneath a dark green canopy. Its amber display names Vernouillet, while an invented pale route slips from the display through the bus and forks across the foreground.</desc>
+  <rect width="900" height="1000" fill="#eee2c8"/>
+  <path d="M92 150h716M92 858h716" stroke="#c8bda4" stroke-width="1.5"/>
+  <text x="94" y="112" fill="#433b32" font-family="Georgia,serif" font-size="19" letter-spacing="4">THE DESTINATION STAYS LIT</text>
+  <text x="806" y="893" text-anchor="end" fill="#433b32" font-family="Georgia,serif" font-size="15" letter-spacing="3">VYT AITKEN · 13</text>
+  <!-- A canopy that is both foliage and the dark held behind a message. -->
+  <path d="M112 306c26-45 61-69 104-63 14-60 69-87 124-61 39-51 98-58 140-20 43-36 98-24 120 24 52-20 105 10 111 62 47-8 91 18 100 61l-30 142H130z" fill="#37463d"/>
+  <path d="M168 325c17-35 42-49 76-42 9-43 48-62 88-44 29-37 71-40 101-11 30-26 70-17 84 17 38-14 74 7 80 44 34-6 63 13 70 45" fill="none" stroke="#75806d" stroke-width="3"/>
+  <!-- The long side and blunt front belong to one waiting vehicle. -->
+  <path d="M150 420l83-124h442c49 0 76 26 94 71l26 67v241c-45 29-101 45-163 45H182c-25 0-41-20-41-45V477c0-21 3-40 9-57z" fill="#b9c0b6" stroke="#727e76" stroke-width="4"/>
+  <path d="M233 315h436c32 0 52 17 68 52l21 47H183z" fill="#252c2b"/>
+  <!-- A pale reflection leaves the glass open, not occupied by an invented driver. -->
+  <path d="M263 329h145l-31 76H211zM425 329h223c20 0 33 12 43 34l13 42H395z" fill="#3c4843"/>
+  <path d="M263 340l-32 56m404-58 31 47" stroke="#8c988b" stroke-width="5" opacity=".7"/>
+  <!-- The photographed route and destination, held in the brightest opening. -->
+  <rect x="266" y="435" width="369" height="100" rx="4" fill="#342f25"/>
+  <path d="M280 449h341v72H280z" fill="#bd7b20"/>
+  <text x="297" y="480" fill="#392b1d" font-family="Arial,sans-serif" font-weight="bold" font-size="21" letter-spacing="2">6550</text>
+  <text x="377" y="478" fill="#392b1d" font-family="Arial,sans-serif" font-weight="bold" font-size="19" letter-spacing="1">VERNOUILLET</text>
+  <text x="377" y="506" fill="#392b1d" font-family="Arial,sans-serif" font-size="15" letter-spacing="1">AVENUE DE TRIEL</text>
+  <!-- Front lamps and grille turn the bus into a wide, quiet threshold. -->
+  <path d="M142 558h112v123H146c-9-36-11-78-4-123z" fill="#9ea99e"/>
+  <path d="M161 585h70m-70 21h70m-70 21h70" stroke="#747f76" stroke-width="4"/>
+  <circle cx="169" cy="657" r="20" fill="#e2b85c"/><circle cx="169" cy="657" r="9" fill="#fff0b7"/>
+  <path d="M704 555h77v98h-77z" fill="#9ea99e"/>
+  <circle cx="744" cy="657" r="20" fill="#e2b85c"/><circle cx="744" cy="657" r="9" fill="#fff0b7"/>
+  <path d="M260 563h375" stroke="#d7dbce" stroke-width="3"/>
+  <path d="M313 584h252m-252 19h252m-252 19h252" stroke="#859087" stroke-width="3"/>
+  <!-- The route is an invented paper channel: it leaves the sign, passes the sill and forks. -->
+  <path d="M460 520C460 567 465 600 455 643C443 691 404 720 378 756M455 643C480 694 522 721 548 756M455 643C452 696 455 724 455 756" fill="none" stroke="#efe2c8" stroke-width="9" stroke-linecap="round"/>
+  <path d="M378 756c-39 23-70 46-90 79m260-79c41 22 72 47 93 79m-186-79v82" fill="none" stroke="#6b8190" stroke-width="5" stroke-linecap="round"/>
+  <path d="M128 770c128-20 183-12 245 7 50 15 112 15 167-1 77-22 129-19 220-4v102H128z" fill="#d3c8ac"/>
+  <path d="M150 796c119-18 163-9 225 8 58 16 114 17 174 0 64-18 123-20 187-8" fill="none" stroke="#b9ae94" stroke-width="2"/>
+  <path d="M378 756c-39 23-70 46-90 79m260-79c41 22 72 47 93 79m-186-79v82" fill="none" stroke="#6b8190" stroke-width="5" stroke-linecap="round"/>
+</svg>
