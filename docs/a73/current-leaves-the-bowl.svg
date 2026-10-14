@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 760" role="img" aria-labelledby="title desc">
 <title id="title">A Current Leaves the Bowl</title>
-<desc id="desc">Three successive paper cuts: water held in a bowl, passing its lip, and continuing as fragments of blue.</desc>
+<desc id="desc">Three paper cuts: water held in a bowl, crossing its lip, then leaving through a broken rim as a smaller dark remnant stays.</desc>
 <rect width="1500" height="760" fill="#f1eadb"/>
 <g transform="translate(35 0)">
   <rect width="460" height="760" fill="#173a45"/>
@@ -21,13 +21,16 @@
 </g>
 <g transform="translate(1005 0)">
   <rect width="460" height="760" fill="#173a45"/>
-  <path d="M34 346 Q230 510 426 346 L386 585 Q230 664 74 585Z" fill="#d65c42"/>
-  <path d="M43 343 Q230 490 417 343 Q393 381 369 401 Q230 500 91 401 Q67 381 43 343Z" fill="#ead9a0"/>
-  <path d="M87 353 Q177 425 265 412" fill="none" stroke="#275e69" stroke-width="24" stroke-linecap="round"/>
-  <path d="M274 389 Q310 367 334 343" fill="none" stroke="#8fb8ad" stroke-width="19" stroke-linecap="round"/>
-  <path d="M338 337 Q352 327 365 308 Q365 327 352 342 Q343 349 338 337Z" fill="#8fb8ad"/>
-  <path d="M285 409 Q291 401 298 405 L305 413 L297 420Z" fill="#f1eadb"/>
-  <path d="M365 308 Q389 285 411 289" fill="none" stroke="#8fb8ad" stroke-width="5" opacity=".45"/>
+  <!-- The bowl opens at the right lip; the lower half remains as a shallow cup. -->
+  <path d="M34 346 Q157 465 289 430 L284 527 Q216 596 74 585Z" fill="#d65c42"/>
+  <path d="M43 343 Q154 449 279 421 Q247 462 177 475 Q95 438 43 343Z" fill="#ead9a0"/>
+  <!-- A dark shallow remnant stays in the cut bowl. -->
+  <path d="M88 379 Q164 438 228 426" fill="none" stroke="#275e69" stroke-width="24" stroke-linecap="round"/>
+  <!-- The pale current lifts through the missing lip and keeps moving. -->
+  <path d="M224 420 C265 403 291 387 318 368 C339 353 351 336 360 316" fill="none" stroke="#8fb8ad" stroke-width="13" stroke-linecap="round"/>
+  <path d="M360 316 Q371 304 376 290 Q379 309 369 321 Q363 325 360 316Z" fill="#8fb8ad"/>
+  <path d="M245 409 Q252 400 260 405 L267 414 L256 423Z" fill="#f1eadb"/>
+  <path d="M360 316 Q380 298 400 304" fill="none" stroke="#8fb8ad" stroke-width="4" opacity=".35"/>
 </g>
 <path d="M500 34V726 M985 34V726" stroke="#ead9a0" stroke-width="2" opacity=".55"/>
 </svg>

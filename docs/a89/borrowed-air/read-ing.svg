@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+<rect width="1200" height="1500" fill="#e8e0ce"/>
+<text x="80" y="105" fill="#586c56" font-family="Arial,sans-serif" font-size="22" letter-spacing="7">SIDER / 2026</text>
+<text x="80" y="210" fill="#30352f" font-family="Georgia,serif" font-size="68">Read / ing</text>
+<text x="84" y="260" fill="#68685e" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">THE SHIRT SEAM MAKES THE WORD CONTINUE</text>
+<path d="M330 365 L460 312 Q600 390 740 312 L870 365 L1045 520 L930 660 L850 590 L850 1270 Q600 1340 350 1270 L350 590 L270 660 L155 520 Z" fill="#2c312f"/>
+<path d="M385 392 Q470 350 535 399 L575 610 L390 680 Q350 535 385 392Z" fill="#55574f"/>
+<path d="M815 392 Q730 350 665 399 L625 610 L810 680 Q850 535 815 392Z" fill="#8a6950"/>
+<path d="M535 420 Q600 386 665 420 L710 635 L600 710 L490 635 Z" fill="#b09b72"/>
+<g stroke="#30352f" stroke-width="9">
+ <path d="M405 450 Q405 423 430 423 L477 423 Q502 423 502 450 L522 785 Q520 812 494 818 L424 818 Q398 812 396 785Z" fill="#c39220"/>
+ <path d="M540 438 Q540 411 565 411 L635 411 Q660 411 660 438 L672 810 Q670 837 644 842 L556 842 Q530 837 528 810Z" fill="#d0b77f"/>
+ <path d="M698 450 Q698 423 723 423 L770 423 Q795 423 795 450 L804 785 Q802 812 776 818 L706 818 Q680 812 678 785Z" fill="#535a5b"/>
+</g>
+<path d="M400 675 L514 675 M532 684 L668 684 M681 675 L801 675" fill="none" stroke="#d8d3a0" stroke-width="26"/>
+<path d="M400 706 L514 706 M532 715 L668 715 M681 706 L801 706" fill="none" stroke="#a04f39" stroke-width="5"/>
+<g fill="none" stroke-linecap="round">
+ <path d="M455 818 C445 900 510 916 553 932 C581 942 580 974 580 1000" stroke="#c39220" stroke-width="17"/>
+ <path d="M600 842 C600 900 600 945 600 995" stroke="#d0b77f" stroke-width="17"/>
+ <path d="M741 818 C755 900 690 916 647 932 C619 942 620 974 620 1000" stroke="#87928e" stroke-width="17"/>
+</g>
+<circle cx="600" cy="1027" r="92" fill="#e8e0ce" stroke="#a04f39" stroke-width="12"/>
+<circle cx="600" cy="1027" r="68" fill="none" stroke="#586c56" stroke-width="4"/>
+<path d="M600 1027 L644 987" stroke="#30352f" stroke-width="8" stroke-linecap="round"/>
+<circle cx="600" cy="1027" r="8" fill="#a04f39"/>
+<path d="M548 1071 A67 67 0 0 1 652 1071" fill="none" stroke="#586c56" stroke-width="4" stroke-dasharray="2 10"/>
+<path d="M600 388 L600 1290" fill="none" stroke="#e8e0ce" stroke-width="3" opacity=".72"/>
+<text x="526" y="1190" fill="#e8e0ce" font-family="Arial,sans-serif" font-size="33" font-weight="600" letter-spacing="4">READ</text>
+<text x="625" y="1190" fill="#e8e0ce" font-family="Arial,sans-serif" font-size="33" font-weight="600" letter-spacing="4">ING</text>
+<path d="M352 1268 Q600 1332 848 1268" fill="none" stroke="#a04f39" stroke-width="5"/>
+<text x="80" y="1400" fill="#30352f" font-family="Georgia,serif" font-size="28">The seam crosses the reading.</text>
+<text x="80" y="1440" fill="#68685e" font-family="Arial,sans-serif" font-size="17">Three lines meet here; the word carries on.</text>
+</svg>

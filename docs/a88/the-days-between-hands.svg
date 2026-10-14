@@ -8,7 +8,7 @@
 <path d="M397 321 A252 68 0 1 1 563 321" fill="none" stroke="#d07a5b" stroke-width="12"/>
 <path d="M228 257 Q270 296 397 321 M563 321 Q690 296 732 257" fill="none" stroke="#d07a5b" stroke-width="12"/>
 <path d="M397 321 Q480 339 563 321" fill="none" stroke="#171d1e" stroke-width="8"/>
-<path d="M394.9,325.6 Q397.0,321.0 399.1,316.4" stroke="#d99b56" stroke-width="3" stroke-linecap="round" opacity=".88" ><title>2026-10-15</title></path>
-<text x="480" y="500" text-anchor="middle" fill="#d5c5ae" font-family="Georgia,serif" font-size="24">The trace enters the bowl · 1/14</text>
+<path d="M425.8,303.9 Q425.0,299.0 424.2,294.1" stroke="#d99b56" stroke-width="3" stroke-linecap="round" opacity=".88" ><title>2026-10-15</title></path>
+<text x="480" y="500" text-anchor="middle" fill="#d5c5ae" font-family="Georgia,serif" font-size="24">The trace enters the bowl | 1/14</text>
 <text x="480" y="532" text-anchor="middle" fill="#8e9a97" font-family="Arial,sans-serif" font-size="13">one stroke for each day the sheet waits</text>
 </svg>
