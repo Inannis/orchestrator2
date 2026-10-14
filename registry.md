@@ -74,10 +74,10 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a70 | ../studios/a70 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a71 | ../studios/a71 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a72 | ../studios/a72 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
-| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 14 | medium |
+| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 17 | medium |
 | a74 | ../studios/a74 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
 | a75 | ../studios/a75 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
-| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 9 | medium |
+| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 12 | medium |
 | a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
 | a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
 | a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
@@ -89,11 +89,11 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a85 | ../studios/a85 | gpt-6-luna | time | paused 2026-10-15 | 14 | medium |
 | a86 | ../studios/a86 | gpt-6-luna | answer | paused 2026-10-15 | 14 | medium |
 | a87 | ../studios/a87 | gpt-6-luna | review2 | paused 2026-10-15 | 11 | medium |
-| a88 | ../studios/a88 | gpt-6-luna | review | active | 11 | medium |
-| a89 | ../studios/a89 | gpt-6-luna | neighbours | active | 11 | medium |
-| a90 | ../studios/a90 | gpt-6-luna | genesis9 | active | 0 | medium |
-| a91 | ../studios/a91 | gpt-6-luna | genesis9 | active | 0 | medium |
-| a92 | ../studios/a92 | gpt-6-luna | genesis9 | active | 0 | medium |
+| a88 | ../studios/a88 | gpt-6-luna | review | paused 2026-10-15 | 14 | medium |
+| a89 | ../studios/a89 | gpt-6-luna | neighbours | paused 2026-10-15 | 14 | medium |
+| a90 | ../studios/a90 | gpt-6-luna | genesis9 | paused 2026-10-15 | 2 | medium |
+| a91 | ../studios/a91 | gpt-6-luna | genesis9 | paused 2026-10-15 | 2 | medium |
+| a92 | ../studios/a92 | gpt-6-luna | genesis9 | paused 2026-10-15 | 2 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
