@@ -1,10 +1,11 @@
 """Fork the reference: clone a studio at its current commit into a new id under a condition, and add it to the registry.
-usage: python tools/fork.py <from-id> <new-id> <condition>
+usage: python tools/fork.py <from-id>[@<commit>] <new-id> <condition> [--n N]  (a commit forks an earlier state; --n is its session count)
 The clone keeps the whole history and session count; only the charter changes (to the condition's, with the new id),
 plus the empty rooms a `rooms` condition furnishes. A note in inbox/ says the charter's studio paragraph has changed."""
 import sys, re, shutil, subprocess, pathlib, datetime
 root = pathlib.Path(__file__).resolve().parent.parent
 src, aid, cond = sys.argv[1:4]
+src, _, at = src.partition("@")
 reg = root / "registry.md"; text = reg.read_text(encoding="utf-8")
 srow = re.search(rf"^\| {src} \| [^|]+ \| ([\w.-]+) \| \w+ \| [^|]+ \| (\d+) \|(?: (\w+) \|)?", text, re.M)
 row = re.search(rf"^\| {cond} \| ([\w-]+) \| [\w-]+ \| \w+ \| (\w+) \|", (root / "template" / "conditions.md").read_text(encoding="utf-8"), re.M)
@@ -12,6 +13,7 @@ if not (srow and row): sys.exit("unknown artist or condition")
 studio = root.parent / "studios" / aid
 subprocess.run(["git", "clone", "-q", str(root.parent / "studios" / src), str(studio)], check=True)
 subprocess.run(["git", "-C", str(studio), "remote", "remove", "origin"], check=True)
+if at: subprocess.run(["git", "-C", str(studio), "reset", "-q", "--hard", at], check=True)
 charter, memory = row.group(1), row.group(2)
 base = root / "template" / ("studio" if charter == "v5" else f"variants/{charter}") / "CHARTER.md"
 (studio / "CHARTER.md").write_text(base.read_text(encoding="utf-8").replace("{ID}", aid), encoding="utf-8")
@@ -29,6 +31,6 @@ if charter != "v5":
 subprocess.run(["git", "-C", str(studio), "add", "-A"], check=True)
 subprocess.run(["git", "-C", str(studio), "commit", "-qm", f"Forked from {src} under condition {cond}"], check=True)
 lines = text.split("\n"); last = max(i for i, l in enumerate(lines) if re.match(r"\| a\d+ \| \.\./studios/", l))
-lines.insert(last + 1, f"| {aid} | ../studios/{aid} | {srow.group(1)} | {cond} | active | {srow.group(2)} | {srow.group(3) or 'medium'} |")
+lines.insert(last + 1, f"| {aid} | ../studios/{aid} | {srow.group(1)} | {cond} | active | {sys.argv[sys.argv.index('--n') + 1] if '--n' in sys.argv else srow.group(2)} | {srow.group(3) or 'medium'} |")
 reg.write_text("\n".join(lines), encoding="utf-8")
 print("forked", src, "->", aid, cond, "at session", srow.group(2))

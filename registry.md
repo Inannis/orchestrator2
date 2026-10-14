@@ -81,10 +81,14 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
 | a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
 | a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
-| a80 | ../studios/a80 | gpt-6-luna | review | paused 2026-10-13 | 11 | medium |
+| a80 | ../studios/a80 | gpt-6-luna | review | active | 11 | medium |
 | a81 | ../studios/a81 | gpt-6-luna | review | paused 2026-10-13 | 6 | medium |
-| a82 | ../studios/a82 | gpt-6-luna | review | paused 2026-10-13 | 11 | medium |
+| a82 | ../studios/a82 | gpt-6-luna | review | active | 11 | medium |
 | a83 | ../studios/a83 | gpt-6-luna | review | paused 2026-10-13 | 6 | medium |
+| a84 | ../studios/a84 | gpt-6-luna | long | active | 11 | medium |
+| a85 | ../studios/a85 | gpt-6-luna | time | active | 11 | medium |
+| a86 | ../studios/a86 | gpt-6-luna | answer | active | 11 | medium |
+| a87 | ../studios/a87 | gpt-6-luna | review2 | active | 9 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

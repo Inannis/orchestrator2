@@ -25,6 +25,7 @@ cond = row.group(3) if row else None
 crow = re.search(rf"^\| {cond} \| \w+ \| [\w-]+ \| (\w+) \| (\w+) \|", (root / "template" / "conditions.md").read_text(encoding="utf-8"), re.M) if cond else None
 shape = opt("--shape") or (crow.group(1) if crow else "plain")
 memory = crow.group(2) if crow else "own"
+if shape == "long" and not opt("--k") and not opt("--resume"): k = random.randint(6, 9)  # long: more continuations, nothing else said
 FLOOR = 20 * 60 if shape == "minimum" else 0  # minimum: the day goes on until it has lasted this long, never said
 today = datetime.date.today().isoformat()
 prompt = (root / "template" / "SESSION-PROMPT.md").read_text(encoding="utf-8").replace("{STUDIO}", studio.as_posix()).replace("{DATE}", today).replace("{N}", str(n))

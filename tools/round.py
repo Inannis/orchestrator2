@@ -64,6 +64,7 @@ def run(cmd):
     return i, out
 
 print(subprocess.run([sys.executable, str(root / "tools" / "between.py")], capture_output=True, text=True).stdout.strip() or "between: nothing to run", flush=True)
+print(subprocess.run([sys.executable, str(root / "tools" / "stranger.py")], capture_output=True, text=True).stdout.strip() or "strangers: nothing to read", flush=True)
 print(now(), "starting:", ", ".join(j[0] + (" (resume)" if len(j) > 1 else "") for j in jobs), flush=True)
 pools = {p: ThreadPoolExecutor(LIMIT[p]) for p in {provider(j[0]) for j in jobs}}
 futures = [pools[provider(j[0])].submit(run, j) for j in jobs]
@@ -71,4 +72,8 @@ for f in futures:
     i, res = f.result(); print(now(), i, res, flush=True)
 for p in pools.values(): p.shutdown()
 status["state"] = f"stopped: usage limit ({', '.join(sorted(stopping))})" if stopping else "done"
+subprocess.run([sys.executable, str(root / "tools" / "publish.py")], capture_output=True)  # the public pages go online after every round
+subprocess.run(["git", "-C", str(root), "add", "docs"], capture_output=True)
+subprocess.run(["git", "-C", str(root), "commit", "-qm", "Publish after round", "--", "docs"], capture_output=True)
+subprocess.run(["git", "-C", str(root), "push", "-q"], capture_output=True)
 save(); print(now(), "round", status["state"], flush=True)
