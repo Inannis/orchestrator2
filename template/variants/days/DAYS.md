@@ -16,4 +16,4 @@ Look cold at what is finished and nearly finished. Finish it, title it, choose w
 
 ## Ending any day
 
-Leave for the next day what this one found: in the project notes, the threads, the drawer. In `NOW.md`, say what kind of day tomorrow should be, and why.
+Leave for the next day what this one found: in the project notes, the threads, the drawer. `projects/active/` holds the projects that are alive, each in its own folder; gather loose leftovers into their project or let them go. In `NOW.md`, say what kind of day tomorrow should be, and why.
