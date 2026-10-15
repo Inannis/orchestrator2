@@ -4,7 +4,7 @@ Most days in the studio pick up where the last one stopped and go round the same
 
 ## Intake
 
-Let something in that you didn't make. Most days that means going after what the project you're in needs, and looking again at the candidates it left waiting: how a thing is really made, who did it before you, what it looked like, sounded like, meant. Other days it's something waiting in `inbox/`, an old work of yours, or a wander with no aim. Write down what came in and what it might change.
+Let something in that you didn't make. Most days that means going after what the project you're in needs, and looking again at the candidates it left waiting: how a thing is really made, who did it before you, what it looked like, sounded like, meant. Other days it's something waiting in `inbox/`, an old work of yours, or a wander with no aim. An arrival feeds the project you're in; it starts a new one only when that one is finished or parked. Write down what came in and what it might change.
 
 ## Making
 
@@ -20,7 +20,7 @@ Take what's most alive and push it hard: version after version, each changing so
 
 ## Post-work
 
-Look cold at the candidates from earlier days, as a stranger would: today's wait a night. Finish what is ready (a last version, a title, `projects/finished/`), put in `public/` what should be seen, and decide how it is shown.
+Post-work is for ending things. Look cold at the candidates from earlier days, as a stranger would (today's wait a night), and take the strongest of them to its finish, or let it go. Finish what is ready (a last version, a title, `projects/finished/`), put in `public/` what should be seen, and decide how it is shown.
 
 ## Closing
 
