@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
+<defs>
+  <linearGradient id="plaster" x1="0" x2="1" y1="0" y2=".2"><stop stop-color="#9b9b91"/><stop offset=".38" stop-color="#eeeadb"/><stop offset=".7" stop-color="#c9c8bd"/><stop offset="1" stop-color="#777a76"/></linearGradient>
+  <linearGradient id="room" x2="0" y2="1"><stop stop-color="#151818"/><stop offset="1" stop-color="#080b0c"/></linearGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="900" height="1100" fill="url(#room)"/>
+<!-- Workshop planes, held back as a few uncertain bars. -->
+<path d="M35 256H355M0 278H280M520 300H900M0 772H275M632 884H900" fill="none" stroke="#8c8b80" stroke-opacity=".18" stroke-width="15"/>
+<path d="M310 170V950M596 214V950" fill="none" stroke="#d0c7af" stroke-opacity=".07" stroke-width="5"/>
+<ellipse cx="476" cy="940" rx="258" ry="60" fill="#c6bdab" opacity=".12" filter="url(#blur)"/>
+<!-- The model is reduced to the upright weight and the lifted speaking arm. -->
+<path d="M365 916 C347 837 355 757 371 680 C386 605 396 526 391 458 C388 417 397 388 417 366 C437 343 463 330 491 330 C520 330 546 344 563 370 C584 402 583 446 581 489 C578 571 601 639 621 712 C640 787 647 859 627 916 Q496 944 365 916Z" fill="url(#plaster)"/>
+<!-- Neck and turned head, without a portrait likeness. -->
+<path d="M412 297 C402 270 402 230 411 199 C420 164 447 140 481 140 C515 140 542 162 548 195 C553 222 539 250 522 269 L531 309 C505 331 453 329 423 309Z" fill="url(#plaster)"/>
+<path d="M482 152 C512 153 535 175 536 201 C537 219 524 240 510 249 C501 255 496 267 502 280 L515 301 C492 310 457 309 432 298 C443 281 448 262 442 243 C432 214 445 173 482 152Z" fill="#d9d7cc" opacity=".45"/>
+<!-- Sash and the lowered arm leave a second, quieter angle. -->
+<path d="M381 441 C429 471 476 479 536 454 C557 505 584 562 599 626 C565 672 498 699 425 688 C402 621 397 548 381 441Z" fill="#d3d0c4" opacity=".65"/>
+<path d="M533 460 C567 443 589 426 609 404 C627 384 648 378 663 391 C676 404 667 426 649 442 L605 484 C632 480 655 490 657 507 C659 525 638 539 615 544 L585 551 C596 585 604 623 606 657 C608 679 597 693 580 693 C563 693 553 676 551 656 C546 599 530 539 507 492Z" fill="url(#plaster)"/>
+<!-- A narrow raised palm catches the light; the fingers remain one quiet fan. -->
+<path d="M352 391 C341 374 327 360 311 347 C298 337 293 323 301 313 C309 302 323 306 336 316 L361 337 L348 311 C342 298 346 286 357 282 C370 278 378 288 384 302 L399 333 L397 301 C396 286 405 278 416 280 C429 282 432 295 431 310 L427 345 C442 326 454 313 466 318 C478 323 477 337 468 350 L443 385 C426 412 404 428 380 431Z" fill="url(#plaster)"/>
+<!-- A dark stroke crosses the model: observed as a line, left unexplained. -->
+<path d="M406 414 C420 431 428 447 434 462 C440 478 434 491 428 505 C421 521 420 533 427 550 C435 571 445 588 439 612 C433 635 423 651 423 674 C422 701 414 728 412 750 C410 772 418 790 425 811 C432 836 421 852 426 874" fill="none" stroke="#131616" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+<path d="M408 416 C420 434 429 450 436 464 M428 508 C423 523 423 536 430 552 M438 615 C431 638 425 654 425 675 M414 752 C412 774 420 791 427 813 M424 850 L427 871" fill="none" stroke="#d0cab8" stroke-width="1.2" stroke-linecap="round" opacity=".24"/>
+<!-- A small dark notch under the open hand gives the gesture room to speak. -->
+<path d="M286 450 C329 426 353 413 382 403" fill="none" stroke="#090c0d" stroke-width="2" opacity=".55"/>
+<path d="M76 1020H824" stroke="#c4c4b8" stroke-opacity=".28"/>
+<text x="76" y="78" fill="#bfc1b6" font-family="Arial,sans-serif" font-size="13" letter-spacing="5">ORLA / A RESPONSE TO A WORKSHOP PHOTOGRAPH</text>
+<text x="76" y="124" fill="#eee9dc" font-family="Georgia,serif" font-size="36">A Line Through the Gesture</text>
+<text x="76" y="1060" fill="#aab0a8" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">PLASTER / HAND / UNRESOLVED LINE</text>
+<text x="824" y="1060" text-anchor="end" fill="#7f8984" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">DIGITAL DRAWING / 2026</text>
+</svg>

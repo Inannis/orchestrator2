@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Mouth Left Open — Orla</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#201b1b;color:#eee4d2;font:17px/1.55 Georgia,serif}main{max-width:980px;margin:auto;padding:clamp(20px,5vw,64px)}h1{font-weight:400;font-size:clamp(2rem,5vw,3.4rem);margin:0 0 .3em}p{max-width:42em;color:#cbbfb0}.frame{position:relative;margin:2em 0 1em;background:#171819;border:1px solid #51433b;box-shadow:0 18px 55px #0b0b0bcc}canvas{display:block;width:100%;height:auto;touch-action:none;cursor:crosshair}.tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#cbbfb0;font:14px Arial,sans-serif}.tools button{border:1px solid #766456;background:#292522;color:#eee4d2;padding:10px 15px;cursor:pointer}.tools button[aria-pressed=true]{outline:2px solid #e0ad72;outline-offset:2px}.tools button:hover{background:#39302b}.tools input{accent-color:#d99b56}.note{font-size:14px;color:#a99b8d;margin-top:1em}.back{display:inline-block;margin-top:2em;color:#dfb27b}
+</style>
+<main>
+<h1>A Mouth Left Open</h1>
+<p>A red bowl holds its color in a single unbroken sweep, except at the lip. The small opening is left for a hand that was not here when the bowl was drawn. Choose a pigment, then drag across the bowl to carry a mark over the gap, or let the gap stay open; save a copy to keep what you chose.</p>
+<div class="frame"><canvas id="work" width="960" height="640" aria-label="An interactive painting of a red bowl with a break in its rim. Drag to add a brush mark."></canvas></div>
+<div class="tools" aria-label="Image choices"><label for="opening">Opening: <output id="degrees">68°</output></label><input id="opening" type="range" min="30" max="110" value="68" aria-label="Width of the opening in the bowl rim"><span>Pick up:</span><button data-color="#d99b56" aria-pressed="true">amber</button><button data-color="#7397a2" aria-pressed="false">river blue</button><button data-color="#d6c9ad" aria-pressed="false">chalk</button><button data-color="#9f5141" aria-pressed="false">rust</button><button id="clear">Clear the hand</button><button id="keep">Keep this version</button></div>
+<p class="note">Choose how wide the opening is, then drag a pigment across the bowl or let it remain open. Changing the opening clears any marks. Keep this version saves a PNG to your device; you decide whether to share it.</p>
+<a class="back" href="the-unnumbered-patch.html">← The Unnumbered Patch</a>
+</main>
+<script>
+const c=document.querySelector('#work'),x=c.getContext('2d'),opening=document.querySelector('#opening'),degrees=document.querySelector('#degrees');let pigment='#d99b56',down=false,prev=null;
+const requested=Number(new URLSearchParams(location.search).get('opening'));if(requested>=30&&requested<=110){opening.value=requested;degrees.value=requested+'°'}
+function paint(){
+ x.clearRect(0,0,960,640);
+ const bg=x.createLinearGradient(0,0,960,640);bg.addColorStop(0,'#292b2a');bg.addColorStop(.52,'#1b2020');bg.addColorStop(1,'#302626');x.fillStyle=bg;x.fillRect(0,0,960,640);
+ // Quiet, uneven ground: a few rubbed planes around the bowl.
+ for(let i=0;i<13;i++){x.beginPath();x.ellipse(80+i*72,100+(i%4)*125,95,38+(i%3)*11,-.12,0,Math.PI*2);x.fillStyle=`rgba(188,164,132,${.018+(i%3)*.006})`;x.fill()}
+ // Shadow and body.
+ x.beginPath();x.ellipse(485,508,287,37,0,0,Math.PI*2);x.fillStyle='#0d1111';x.fill();
+ let body=x.createLinearGradient(250,0,730,0);body.addColorStop(0,'#6e302b');body.addColorStop(.22,'#a4483a');body.addColorStop(.48,'#c35d48');body.addColorStop(.72,'#8f3b34');body.addColorStop(1,'#592a29');
+ x.beginPath();x.moveTo(230,294);x.bezierCurveTo(265,438,337,500,484,505);x.bezierCurveTo(628,501,700,431,735,294);x.bezierCurveTo(657,324,580,337,482,337);x.bezierCurveTo(381,337,302,324,230,294);x.closePath();x.fillStyle=body;x.fill();
+ // Broad, imperfect glaze sweep.
+ x.beginPath();x.moveTo(263,350);x.bezierCurveTo(333,393,399,405,477,406);x.bezierCurveTo(575,408,650,382,705,345);x.strokeStyle='rgba(224,137,104,.23)';x.lineWidth=20;x.lineCap='round';x.stroke();
+ // Rim: two separate arcs leave a deliberate opening at the front.
+ let start=Math.PI/2+Number(opening.value)*Math.PI/360,end=start+Math.PI*2-Number(opening.value)*Math.PI/180;
+ x.beginPath();x.ellipse(482,295,252,66,0,start,end);x.strokeStyle='#d07a5b';x.lineWidth=13;x.stroke();
+ x.beginPath();x.ellipse(482,295,241,55,0,Math.PI*1.02,Math.PI*1.98);x.strokeStyle='rgba(242,185,139,.37)';x.lineWidth=3;x.stroke();
+ // The open mouth is a dark interior; no key prescribes its fill.
+ x.beginPath();x.ellipse(482,295,240,54,0,0,Math.PI*2);x.fillStyle='#161d1e';x.fill();
+ x.beginPath();x.ellipse(482,295,231,45,0,0,Math.PI*2);let inside=x.createLinearGradient(0,247,0,344);inside.addColorStop(0,'#293738');inside.addColorStop(1,'#11191a');x.fillStyle=inside;x.fill();
+ // Rim edges laid on top of the mouth, with the lower arc still interrupted.
+ x.beginPath();x.ellipse(482,295,252,66,0,start,end);x.strokeStyle='#d07a5b';x.lineWidth=13;x.stroke();
+ x.beginPath();x.moveTo(277,426);x.quadraticCurveTo(477,482,685,416);x.strokeStyle='rgba(246,189,145,.28)';x.lineWidth=3;x.stroke();
+ x.beginPath();x.moveTo(280,304);x.quadraticCurveTo(300,404,350,454);x.strokeStyle='rgba(244,194,153,.35)';x.lineWidth=4;x.stroke();
+ x.beginPath();x.moveTo(686,307);x.quadraticCurveTo(666,398,625,448);x.strokeStyle='rgba(39,18,21,.55)';x.lineWidth=7;x.stroke();
+ x.fillStyle='rgba(233,213,185,.54)';x.font='italic 18px Georgia';x.fillText('the opening has no number',345,572);
+}
+paint();
+function point(e){const r=c.getBoundingClientRect();return{x:(e.clientX-r.left)*960/r.width,y:(e.clientY-r.top)*640/r.height}}
+c.addEventListener('pointerdown',e=>{down=true;prev=point(e);c.setPointerCapture(e.pointerId)});
+c.addEventListener('pointermove',e=>{if(!down)return;const p=point(e);x.save();x.beginPath();x.moveTo(230,294);x.bezierCurveTo(265,438,337,500,484,505);x.bezierCurveTo(628,501,700,431,735,294);x.bezierCurveTo(657,324,580,337,482,337);x.bezierCurveTo(381,337,302,324,230,294);x.closePath();x.clip();x.beginPath();x.moveTo(prev.x,prev.y);x.lineTo(p.x,p.y);x.strokeStyle=pigment;x.lineWidth=10;x.lineCap='round';x.lineJoin='round';x.stroke();x.restore();prev=p});
+for(const b of document.querySelectorAll('[data-color]'))b.addEventListener('click',()=>{pigment=b.dataset.color;document.querySelectorAll('[data-color]').forEach(q=>q.setAttribute('aria-pressed',q===b))});
+c.addEventListener('pointerup',()=>down=false);c.addEventListener('pointercancel',()=>down=false);document.querySelector('#clear').addEventListener('click',paint);
+opening.addEventListener('input',()=>{degrees.value=opening.value+'°';paint()});
+document.querySelector('#keep').addEventListener('click',()=>{const a=document.createElement('a');a.download='a-mouth-left-open-my-version.png';a.href=c.toDataURL('image/png');a.click()});
+</script>
+</html>

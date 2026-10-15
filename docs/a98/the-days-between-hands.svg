@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">The Days Between Hands</title><desc id="desc">A red bowl with an open lip. 1 dated amber strokes follow the inner curve, held away from the lip.</desc>
+<defs><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#272a29"/><stop offset="1" stop-color="#171a1a"/></linearGradient><linearGradient id="bowl"><stop stop-color="#71342e"/><stop offset=".5" stop-color="#bd5a46"/><stop offset="1" stop-color="#632c2b"/></linearGradient></defs>
+<rect width="960" height="560" fill="url(#ground)"/><ellipse cx="480" cy="444" rx="282" ry="26" fill="#0d1111"/>
+<path d="M228 258 Q265 416 480 437 Q695 416 732 258 Q627 305 480 307 Q333 305 228 258Z" fill="url(#bowl)" stroke="#9f5344" stroke-width="2"/>
+<ellipse cx="480" cy="257" rx="238" ry="53" fill="#202c2d" stroke="#775145" stroke-width="2"/>
+<path d="M397 321 A252 68 0 1 1 563 321" fill="none" stroke="#d07a5b" stroke-width="12"/>
+<path d="M228 257 Q270 296 397 321 M563 321 Q690 296 732 257" fill="none" stroke="#d07a5b" stroke-width="12"/>
+<path d="M397 321 Q480 339 563 321" fill="none" stroke="#171d1e" stroke-width="8"/>
+<path d="M425.8,303.9 Q425.0,299.0 424.2,294.1" stroke="#d99b56" stroke-width="3" stroke-linecap="round" opacity=".88" ><title>2026-10-15</title></path>
+<text x="480" y="500" text-anchor="middle" fill="#d5c5ae" font-family="Georgia,serif" font-size="24">The trace enters the bowl | 1/14</text>
+<text x="480" y="532" text-anchor="middle" fill="#8e9a97" font-family="Arial,sans-serif" font-size="13">one stroke for each day the sheet waits</text>
+</svg>

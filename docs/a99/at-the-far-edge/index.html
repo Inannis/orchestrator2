@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A looking score in two photographic distances: follow the ledge from a Masked Lapwing to the soft figure at the far edge.">
+  <title>Look, then look again — Groundnote</title>
+  <style>
+    :root { color-scheme: light; --paper: #ece8dc; --ink: #282b27; --moss: #65736a; --line: #c8c9bb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+    main { max-width: 1500px; margin: 0 auto; padding: clamp(24px, 5vw, 76px); }
+    header { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+    .maker, .caption, .credit, .score-label { font-family: Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; }
+    .maker { color: var(--moss); margin: 0 0 .8rem; }
+    h1 { font-weight: 400; font-size: clamp(2.3rem, 5vw, 5rem); line-height: .98; letter-spacing: -.04em; margin: 0; }
+    .title-note { max-width: 16rem; color: var(--moss); font-style: italic; margin: 0 0 .25rem; }
+    .grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(230px, .65fr); gap: clamp(26px, 4vw, 60px); padding-top: clamp(26px, 4vw, 60px); align-items: start; }
+    figure { margin: 0; }
+    img { display: block; width: 100%; height: auto; }
+    .whole img { border: 1px solid #d4d0c2; }
+    .caption { color: var(--moss); margin-top: .7rem; }
+    aside { position: sticky; top: 2rem; padding: .2rem 0 0; }
+    .score-label { color: var(--moss); margin: 0 0 1.6rem; }
+    ol { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+    li { counter-increment: step; display: grid; grid-template-columns: 2.2rem 1fr; gap: .4rem; padding: .75rem 0; border-top: 1px solid var(--line); font-size: clamp(1.1rem, 1.7vw, 1.55rem); line-height: 1.25; }
+    li::before { content: '0' counter(step); color: var(--moss); font: .7rem Arial, sans-serif; padding-top: .35rem; }
+    .detail { grid-column: 1 / -1; margin-top: clamp(4px, 1vw, 14px); }
+    .detail img { border-top: 1px solid #faf9f2; border-bottom: 1px solid #faf9f2; }
+    footer { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 1rem; color: #575b53; font: .78rem/1.6 Arial, sans-serif; }
+    a { color: inherit; text-underline-offset: .18em; }
+    @media (max-width: 760px) {
+      main { padding: 22px; }
+      header { display: block; }
+      .title-note { margin-top: 1rem; }
+      .grid { display: flex; flex-direction: column; gap: 1.5rem; }
+      aside { position: static; order: 2; }
+      .whole { order: 1; }
+      .detail { order: 3; }
+      footer { order: 4; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><p class="maker">Groundnote · Looking score</p><h1>Look, then<br>look again.</h1></div>
+      <p class="title-note">A route from the held figure to the yellow at the far edge.</p>
+    </header>
+    <section class="grid" aria-label="Photographic score">
+      <figure class="whole">
+        <img src="whole-frame.jpg" alt="A Masked Lapwing stands on one leg on a stone ledge; another, out-of-focus bird appears at the far right.">
+        <figcaption class="caption">The whole frame</figcaption>
+      </figure>
+      <aside aria-label="Looking score">
+        <p class="score-label">Follow the line</p>
+        <ol>
+          <li>Hold the whole bird.</li>
+          <li>Follow the stone across.</li>
+          <li>Stop where the yellow enters.</li>
+          <li>Wait for the eye to settle.</li>
+        </ol>
+      </aside>
+      <figure class="detail">
+        <img src="ledge-detail.jpg" alt="A close crop of the ledge, the lapwing's lifted foot, and the soft yellow and black of a second bird at the far edge.">
+        <figcaption class="caption">The same ledge, seen again</figcaption>
+      </figure>
+      <footer>
+        Photograph by <a href="https://www.inaturalist.org/observations/408429071">Chris Burwell</a>, “Masked Lapwing,” South Bank, South Brisbane, 15 October 2026; used and cropped under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>. The photograph remains by its maker. The crop and looking score are by Groundnote.
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

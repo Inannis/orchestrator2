@@ -1,0 +1,40 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1980" viewBox="0 0 1400 1980">
+<rect width="1400" height="1980" fill="#fffdf8"/>
+<g fill="#25383b" font-family="Georgia,serif">
+ <text x="110" y="125" font-size="22" letter-spacing="4">ORLA / A PAINTING HANDOFF</text>
+ <text x="110" y="215" font-size="64">The Unnumbered Patch</text>
+</g>
+<g fill="#485d5b" font-family="Arial,sans-serif" font-size="25">
+ <text x="110" y="275">Paint the numbered bands to match the key. Leave the bowl's mouth open.</text>
+ <text x="110" y="314">Then add any color or mark there. Use any materials you have.</text>
+</g>
+<text x="700" y="405" text-anchor="middle" fill="#52696a" font-family="Arial,sans-serif" font-size="23" letter-spacing="2">THE MAP / NUMBERED REGIONS ARE PREPARED</text>
+<!-- vessel wall, open lip, and foot -->
+<path d="M336 520 C352 755 418 1110 700 1235 C982 1110 1048 755 1064 520 Z" fill="#fffdf8" stroke="#526c70" stroke-width="6"/>
+<ellipse cx="700" cy="520" rx="364" ry="86" fill="#d9c6a6" stroke="#526c70" stroke-width="5"/>
+<ellipse cx="700" cy="520" rx="302" ry="53" fill="#fffdf8" stroke="#526c70" stroke-width="4"/>
+<path d="M378 785 C490 836 910 836 1022 785" fill="none" stroke="#526c70" stroke-width="5"/>
+<path d="M450 1005 C525 1050 875 1050 950 1005" fill="none" stroke="#526c70" stroke-width="5"/>
+<path d="M596 1235 L622 1320 L778 1320 L804 1235" fill="#fffdf8" stroke="#526c70" stroke-width="5"/>
+<ellipse cx="700" cy="1320" rx="78" ry="18" fill="#fffdf8" stroke="#526c70" stroke-width="4"/>
+<!-- region labels -->
+<g fill="#405b5f" font-family="Arial,sans-serif" font-size="36" font-weight="bold" text-anchor="middle">
+ <text x="700" y="715">1</text><text x="700" y="930">2</text><text x="700" y="1150">3</text><text x="700" y="1300">4</text>
+</g>
+<path d="M1010 472 L1130 435" fill="none" stroke="#9a725f" stroke-width="3"/>
+<text x="1144" y="425" fill="#8a594e" font-family="Arial,sans-serif" font-size="21">OPEN PATCH</text>
+<text x="1144" y="456" fill="#657875" font-family="Arial,sans-serif" font-size="19">your choice</text>
+<!-- numbered color key -->
+<text x="110" y="1430" fill="#25383b" font-family="Georgia,serif" font-size="28">THE KEY / FOLLOW THESE COLORS</text>
+<g font-family="Arial,sans-serif" font-size="24" fill="#30484a">
+ <rect x="110" y="1470" width="44" height="44" rx="3" fill="#C65B62"/><text x="176" y="1501">1</text>
+ <rect x="275" y="1470" width="44" height="44" rx="3" fill="#A94B55"/><text x="341" y="1501">2</text>
+ <rect x="440" y="1470" width="44" height="44" rx="3" fill="#873B49"/><text x="506" y="1501">3</text>
+ <rect x="605" y="1470" width="44" height="44" rx="3" fill="#A8474B"/><text x="671" y="1501">4</text>
+</g>
+<text x="110" y="1600" fill="#485d5b" font-family="Arial,sans-serif" font-size="24">When you finish, tell me: did the open patch feel like permission, a gap, or something else?</text>
+<text x="110" y="1652" fill="#485d5b" font-family="Arial,sans-serif" font-size="24">A sentence is enough. Your name is optional.</text>
+<path d="M110 1740 H1290" fill="none" stroke="#c8c9be" stroke-width="2"/>
+<text x="110" y="1802" fill="#71817b" font-family="Arial,sans-serif" font-size="19">Scan or photograph this sheet and return it with your sentence.</text>
+<text x="110" y="1872" fill="#71817b" font-family="Arial,sans-serif" font-size="18" letter-spacing="2">A DIGITAL STUDY / NOT A HISTORICAL RECONSTRUCTION</text>
+</svg>
