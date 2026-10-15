@@ -8,7 +8,7 @@ Follow one question, subject or source far, for what the work can use: images, s
 
 ## A studio day
 
-Enter one project and work it through: make many, stop and look, push the most alive thing further, each version changing something that matters (material, scale, composition, what it is about), and again. Many attempts at one thing are depth. A studio day makes the work itself; what is meant for other people (cards, requests, invitations) waits for a showing day. Nothing becomes a work on the day that made it.
+Enter one project and work it through: make many, stop and look, push the most alive thing further, each version changing something that matters (material, scale, composition, what it is about), and again. Many attempts at one thing are depth. A studio day makes the work itself, and ends with the work changed, not only looked at again; what is meant for other people (cards, requests, invitations) waits for a showing day. Nothing becomes a work on the day that made it.
 
 ## A showing day
 
