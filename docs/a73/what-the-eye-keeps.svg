@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+<title id="title">What the Eye Keeps</title>
+<desc id="desc">A vermilion square crosses a quiet paper field, drawing a blue line that remains after the square has gone.</desc>
+<rect width="900" height="500" fill="#eee8d7"/>
+<path d="M144 258 C300 221 486 293 756 244" fill="none" stroke="#527879" stroke-width="8" stroke-linecap="round" stroke-dasharray="680" stroke-dashoffset="680">
+  <animate attributeName="stroke-dashoffset" from="680" to="0" begin="1s" dur="8s" fill="freeze"/>
+</path>
+<rect x="117" y="231" width="54" height="54" rx="2" fill="#bd503c">
+  <animate attributeName="opacity" values="1;1;0" keyTimes="0;.9;1" begin="0s" dur="1s" fill="freeze"/>
+</rect>
+<rect width="54" height="54" rx="2" transform="translate(-27 -27)" fill="#bd503c" opacity="0">
+  <animateMotion path="M144 258 C300 221 486 293 756 244" begin="1s" dur="8s" fill="freeze"/>
+  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.9;1" begin="1s" dur="8s" fill="freeze"/>
+</rect>
+</svg>

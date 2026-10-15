@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>The Held Drop — Vyt Aitken</title>
+<style>
+  :root { color-scheme:light; --paper:#e8dfc7; --ink:#294851; --rule:#bd704d; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.55 Georgia,serif; }
+  main { max-width:1100px; margin:auto; padding:7vw 5vw 10vw; }
+  .byline { font:12px/1.4 sans-serif; letter-spacing:.16em; text-transform:uppercase; }
+  h1 { font-weight:400; font-size:clamp(2.5rem,8vw,6rem); line-height:1; margin:.45em 0; }
+  figure { margin:3rem 0 1rem; }
+  svg { display:block; width:100%; height:auto; }
+  figcaption,p { max-width:42rem; }
+  figcaption { margin-top:.8rem; }
+  .note { border-top:1px solid var(--rule); margin-top:3rem; padding-top:1rem; }
+  a { color:inherit; }
+</style>
+<main>
+  <p class="byline">Vyt Aitken · timed cut image · 15 October 2026</p>
+  <h1>The Held Drop</h1>
+  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
+      <title id="title">The Held Drop</title>
+      <desc id="desc">An overcast cloud hangs above layered land and a stream. A small blue drop sways gently from the cloud's edge, never falling.</desc>
+      <style>
+        .held { transform-box:view-box; transform-origin:49.222% 40.625%; animation:rock 18s ease-in-out infinite; }
+        @keyframes rock { 0%,50%,100% { transform:rotate(0deg); } 25% { transform:rotate(1.5deg); } 75% { transform:rotate(-1.5deg); } }
+        @media (prefers-reduced-motion:reduce) { .held { animation:none; } }
+      </style>
+      <rect width="900" height="640" fill="#e8dfc7"/>
+      <path d="M0 425 Q120 387 230 415 Q370 447 486 411 Q634 365 900 420 L900 640 0 640Z" fill="#bd704d"/>
+      <path d="M0 510 Q142 470 276 509 Q410 548 555 501 Q709 451 900 496 L900 640 0 640Z" fill="#69877c"/>
+      <path d="M-20 563 C116 526 208 581 328 557 C449 533 513 499 606 516 C699 533 776 565 930 520" fill="none" stroke="#264c5a" stroke-width="44"/>
+      <path d="M-20 563 C116 526 208 581 328 557 C449 533 513 499 606 516 C699 533 776 565 930 520" fill="none" stroke="#a6c4b3" stroke-width="5" opacity=".8"/>
+      <path d="M0 0H900V231 Q846 239 807 219 Q755 205 709 239 Q650 267 594 239 Q529 215 468 247 Q400 278 342 243 Q287 220 231 244 Q162 270 112 235 Q53 213 0 239Z" fill="#294851"/>
+      <path d="M0 239 Q53 213 112 235 Q162 270 231 244 Q287 220 342 243 Q400 278 468 247 Q529 215 594 239 Q650 267 709 239 Q755 205 807 219 Q846 239 900 231" fill="none" stroke="#e5cf8d" stroke-width="12"/>
+      <g class="held"><path d="M439 260 Q452 272 455 290 Q453 308 443 312 Q433 307 433 292 Q434 275 439 260Z" fill="#264c5a"/></g>
+      <path d="M104 300 Q188 282 266 301 M626 315 Q702 294 787 308" fill="none" stroke="#527179" stroke-width="3" opacity=".55"/>
+    </svg>
+    <figcaption>The cloud holds its edge. The drop rocks there and stays.</figcaption>
+  </figure>
+  <section class="note">
+    <p>An eighteen-second sway returns to the same attachment point. The creek and land stay still; the drop tests a little movement without falling.</p>
+    <p><a href="no-rain-at-crab-run.html">See the still image</a> and <a href="the-drop-does-not-sound-rain.html">hear its sound companion</a>.</p>
+  </section>
+</main>
+</html>

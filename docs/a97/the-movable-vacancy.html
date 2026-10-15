@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Movable Vacancy — Orla</title>
+<style>
+:root{--paper:#e9e4d8;--ink:#244c52;--muted:#65716b;--warm:#bd632f;--line:#c8c0b1;--cell:min(15vw,112px)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:#243638;font-family:Georgia,'Times New Roman',serif;min-height:100vh}
+main{max-width:1120px;margin:auto;padding:clamp(24px,6vw,76px) clamp(20px,5vw,64px) 40px}
+.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:15px;color:var(--muted);font:11px/1.4 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,66px);font-weight:400;letter-spacing:-.045em;margin:32px 0 8px}.intro{font-size:18px;line-height:1.5;color:#52615d;max-width:650px;margin:0 0 35px}
+.work{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:clamp(28px,6vw,74px);align-items:center}
+.field-wrap{overflow:auto;padding:16px 4px 24px}.field{display:grid;grid-template-columns:repeat(4,var(--cell));grid-template-rows:repeat(4,var(--cell));gap:3px;width:max-content;margin:auto;position:relative}
+.slot{width:var(--cell);height:var(--cell);border:0;padding:0;background:transparent;display:grid;place-items:center;position:relative;cursor:pointer;border-radius:50%;touch-action:manipulation}
+.slot.vacant{cursor:default}.slot.vacant:before{content:"";position:absolute;inset:8%;border:1px solid #b8aa91;background:rgba(189,99,47,.055);transition:all .24s}
+.slot.vacant:after{content:"";position:absolute;width:18%;height:18%;background:#b9ad9b;opacity:.6;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.slot.lifted{cursor:default}.slot.lifted:before{content:"";position:absolute;inset:8%;border:1px dashed var(--warm);background:rgba(189,99,47,.07)}.slot.lifted:after{content:"";position:absolute;width:18%;height:18%;background:var(--warm);opacity:.48;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.slot:focus-visible{outline:2px solid var(--warm);outline-offset:3px}.unit{width:100%;height:100%;overflow:visible;transition:transform .22s,filter .22s}.petal{fill:var(--ink)}.diamond{fill:var(--paper)}
+.hand{display:flex;align-items:center;gap:12px;margin:12px 0}.hand-well{position:relative;width:74px;height:74px;display:grid;place-items:center;border:1px solid var(--line);background:rgba(255,255,255,.14);flex:none}.hand-well .unit{width:88%;height:88%}.hand-well .petal{fill:var(--warm)}.hand-well.empty{border-style:dashed}.hand-well.empty:after{content:"";width:18%;height:18%;background:#b9ad9b;opacity:.6;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}.hand-caption{font:11px/1.4 system-ui,sans-serif;color:var(--muted);max-width:112px}
+aside{border-left:1px solid var(--line);padding:8px 0 8px 24px}.eyebrow{font:11px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}#prompt{font-size:19px;line-height:1.45;min-height:84px;margin:12px 0 22px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0}button.action{background:transparent;border:1px solid #8c9388;color:#344844;padding:9px 12px;font:12px system-ui,sans-serif;cursor:pointer}button.action:hover{background:#ded8cc}button.action:focus-visible{outline:2px solid var(--warm);outline-offset:3px}
+.count{margin-top:24px;font:11px system-ui,sans-serif;letter-spacing:.08em;color:var(--muted)}.instruction{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;color:#6c716b;font:12px/1.6 system-ui,sans-serif}.instruction.secondary{margin-top:12px;border-top:0;padding-top:0}
+.encounter{margin:22px 0 0;border-left:2px solid #bd632f;padding:5px 0 5px 12px;max-width:none}.encounter-label{font:10px system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}.encounter p{margin:7px 0 10px;font-size:15px}.encounter small{font:11px/1.5 system-ui,sans-serif;color:#74766f}.encounter a{color:#52615d}.encounter audio{display:block;width:min(100%,330px);height:34px}
+.encounter details{margin-top:7px;font:11px/1.5 system-ui,sans-serif;color:#65716b}.encounter summary{width:max-content;cursor:pointer;text-decoration:underline;text-underline-offset:3px}.encounter summary:focus-visible{outline:2px solid var(--warm);outline-offset:3px}.encounter details p{margin:5px 0 0;font:11px/1.5 system-ui,sans-serif}
+.measure-study{margin:42px 0 0;border-top:1px solid var(--line);padding-top:20px}.measure-study picture,.measure-study img{display:block;width:100%;height:auto}.measure-study figcaption{max-width:780px;margin:12px auto 0;color:#65716b;font:12px/1.6 system-ui,sans-serif}.measure-study figcaption p{margin:5px 0}.measure-study a{color:#52615d}
+footer{margin-top:46px;padding-top:13px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#7c7c72;font:10px system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:680px){:root{--cell:min(19vw,92px)}.top{gap:8px;flex-wrap:wrap}.work{grid-template-columns:1fr;gap:10px}.field-wrap{padding:10px 0 4px}aside{border-left:0;border-top:1px solid var(--line);padding:18px 0 0;display:block}#prompt{min-height:0;margin:8px 0 14px}.count{margin:12px 0 0}.instruction{margin-top:26px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><span>Orla · a movable screen</span><span>Interactive study · 2026</span></div>
+  <h1>The Movable Vacancy</h1>
+  <p class="intro">Lift one unit from the field. Carry it to the opening, and the opening travels to its old place.</p>
+  <section class="work" aria-label="Movable modular screen">
+    <div class="field-wrap"><div class="field" id="field" role="group" aria-label="Four by four screen. Lift any tile, then place it in the open cell."></div></div>
+    <aside>
+      <div class="eyebrow" id="state">The opening waits for a unit</div>
+      <div class="hand"><div class="hand-well empty" id="hand-well" aria-hidden="true"></div><span class="hand-caption" id="hand-caption">Lift a unit to carry it</span></div>
+      <p id="prompt" aria-live="polite">Choose a tile to begin; lifting it leaves a temporary opening at its source.</p>
+      <div class="actions"><button class="action" id="border-start" type="button">Prepare border study</button><button class="action" id="return-start" type="button">Prepare four-step return</button><button class="action" id="reset" type="button">Return to first arrangement</button></div>
+      <div class="count" id="count">0 MOVES</div>
+      <section class="encounter" aria-label="A found sound">
+        <div class="encounter-label">An encounter, kept beside the screen</div>
+        <p><i>Malträtiertes.</i> Does the word change how you read the opening?</p>
+        <audio controls preload="metadata" aria-label="Pronunciation of malträtiertes" src="found-word.ogg"></audio>
+        <small>German adjective form · pronunciation recording, Berlin · <a href="https://commons.wikimedia.org/wiki/File:De-maltr%C3%A4tiertes.ogg" target="_blank" rel="noreferrer">Wikimedia Commons source</a></small>
+        <details><summary>Show the word's sense</summary><p>“Maltreated,” in an inflected neuter form.</p></details>
+      </section>
+    </aside>
+  </section>
+  <p class="instruction">Lift any tile, then place it in the pale opening. Its former cell becomes the new opening. Tap the dashed source cell to return the tile; reset to begin again.</p>
+  <p class="instruction secondary">For the border comparison, prepare that arrangement here. Then lift the tile below the opening for an inward step, or lift the far-corner tile. The setup counts as one move; reset restores the center opening. For a small return, prepare the four-step study and lift right, below, left, then above: the opening returns while four units change places.</p>
+
+  <figure class="measure-study">
+    <picture>
+      <source media="(max-width:680px)" srcset="diagonal-excess-mobile.png">
+      <img src="diagonal-excess.png" alt="A square diagonal is divided into one side-length and an added 0.414; beside it, a top-edge opening is shown with two possible source tiles outlined on a four-by-four screen.">
+    </picture>
+    <figcaption>
+      <p>The square carries a found approximation for its diagonal. The screen carries my rule for moving a vacancy. I bring them together as a question about measure and choice; the screen does not reconstruct the source geometry.</p>
+      <p>David W. Henderson identifies the prescription as Baudhāyana Śulbasūtra I.61–62; Sen–Bag numbers the same passage 2.12. The line first reached me under a Wikiquote heading for <i>Vedāṅga Jyotiṣa</i>, which does not establish its source. <a href="https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/7-3-2018/cornell_sulbh.pdf">Henderson's account</a> · <a href="https://www.scribd.com/document/1011511037/25-EPHE-Baudhayana-I-1-62">numbering concordance</a>.</p>
+      <p>The close Āpastamba rule appears at I.6 in direct text witnesses. Tiwary prints I.11–12 without naming an edition or concordance, so I leave that number open. Henderson's strip drawing is a possible reconstruction; this screen is mine.</p>
+    </figcaption>
+  </figure>
+  <figure class="measure-study">
+    <picture>
+      <source media="(max-width:680px)" srcset="correction-study-tall.png">
+      <img src="correction-study.png" alt="A length bar shows one side, one third, and one twelfth, followed by a very small amber subtraction. A magnified detail identifies that cut as exactly one four-hundred-eighth.">
+    </picture>
+    <figcaption>
+      <p>The bar keeps the correction at its actual size: about one and a half pixels against a six-hundred-pixel side. The detail enlarges it for sight, while the fraction stays 1/408. This is a reading of the measure, not a reconstruction of how it was made.</p>
+    </figcaption>
+  </figure>
+  <footer><span>A study in repeated units</span><span>Digital work · Orla</span></footer>
+</main>
+<script>
+const field=document.querySelector('#field'), prompt=document.querySelector('#prompt'), state=document.querySelector('#state'), count=document.querySelector('#count'), handWell=document.querySelector('#hand-well'), handCaption=document.querySelector('#hand-caption');
+const start=6; let vacancy=start, selected=-1, moves=0, hand=null, holdStarted=0, moving=false, arrivalTimer=0;
+let tiles=Array.from({length:16},(_,i)=>i);tiles[start]=null;
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const firstPrompt=reduceMotion?'Choose any tile. Place it when ready; the opening changes immediately.':'Choose any tile. Hold it in the pocket; a longer pause makes its arrival slower.';
+const handPrompt=reduceMotion?'Place it in the pale opening when ready. The change is immediate; its old cell becomes the new opening.':'Place it in the pale opening when ready. Its old cell becomes the new opening; holding longer slows the move.';
+const wrongPrompt=reduceMotion?'Place the held unit in the pale opening. Its old place becomes the next opening.':'Place the held unit in the pale opening. A longer pause slows its arrival; its old place becomes the next opening.';
+const borderPrompt=reduceMotion?'Now choose: lift below for a one-cell inward step, or the far corner to cross.':'Now choose: lift below for a one-cell inward step, or the far corner to cross. A longer pause slows its arrival.';
+const returnSources=[7,11,10,6];let returnStep=-1;
+const returnDirections=['the tile to the right of the opening','the tile below it','the tile to its left','the tile above it'];
+function returnPrompt(){if(returnStep<0)return '';if(returnStep>=4)return 'The opening has returned to its first cell. Four units now circle that place in a changed order.';return `Now lift ${returnDirections[returnStep]}, then place it in the opening.`}
+function heldReturnPrompt(){return returnStep<3?`Place it in the opening, then lift ${returnDirections[returnStep+1]}.`:'Place it in the opening; the vacancy will return to its first cell.'}
+const unit=`<svg class="unit" viewBox="0 0 150 150" aria-hidden="true"><path class="petal" d="M75 0 C96 0 96 30 116 34 C136 38 150 54 150 75 C150 96 120 96 116 116 C112 136 96 150 75 150 C54 150 54 120 34 116 C14 112 0 96 0 75 C0 54 30 54 34 34 C38 14 54 0 75 0Z"/><path class="diamond" d="M75 43 107 75 75 107 43 75Z"/></svg>`;
+function paint(focusIndex=-1){field.replaceChildren();for(let i=0;i<16;i++){const b=document.createElement('button');b.type='button';b.className='slot'+(i===vacancy?' vacant':'')+(i===selected?' lifted':'');b.setAttribute('aria-label',i===vacancy?'Open cell':i===selected?'Temporary opening, lifted from this cell':`Screen tile, row ${Math.floor(i/4)+1}, column ${i%4+1}`);if(i!==vacancy&&i!==selected){b.dataset.tileId=tiles[i];b.innerHTML=unit}b.addEventListener('click',()=>act(i));field.append(b)}handWell.classList.toggle('empty',hand===null);handWell.innerHTML=hand===null?'':unit;handCaption.textContent=hand===null?'Lift a unit to carry it':'Unit in hand';count.textContent=`${moves} ${moves===1?'MOVE':'MOVES'}`;if(focusIndex>=0)field.children[focusIndex]?.focus({preventScroll:true})}
+function glide(element,from,to,pocketStart=false,pocketEnd=false,duration=560){if(reduceMotion)return;const dx=from.left-to.left,dy=from.top-to.top,startScale=pocketStart ? .62 : 1,endScale=pocketEnd ? .62 : 1;element.style.zIndex='4';element.animate([{transform:`translate(${dx}px,${dy}px) scale(${startScale})`,offset:0},{transform:`translate(${dx*.72}px,${dy*.72}px) scale(1.12)`,offset:.24},{transform:`translate(${dx*.2}px,${dy*.2}px) scale(1.1)`,offset:.78},{transform:`translate(0,0) scale(${endScale})`,offset:1}],{duration,easing:'cubic-bezier(.2,.72,.18,1)'}).onfinish=()=>element.style.zIndex=''}
+function act(i){if(moving){state.textContent='The unit is travelling';prompt.textContent='Wait for the held unit to land before choosing another tile.';return}if(hand===null){if(i===vacancy)return;if(returnStep>=0&&returnStep<4&&i!==returnSources[returnStep])returnStep=-1;const from=field.children[i].getBoundingClientRect();hand=tiles[i];tiles[i]=null;selected=i;holdStarted=performance.now()+(reduceMotion?0:560);state.textContent='A unit is in hand';prompt.textContent=returnStep>=0?heldReturnPrompt():handPrompt;paint(i);glide(handWell,from,handWell.getBoundingClientRect(),false,true);return}if(i===selected){const from=handWell.getBoundingClientRect();tiles[i]=hand;hand=null;selected=-1;holdStarted=0;state.textContent='The unit has returned';prompt.textContent=returnStep>=0?returnPrompt():'Choose a tile to lift, then carry it to the open cell.';paint(i);glide(field.children[i],from,field.children[i].getBoundingClientRect(),true,false);return}if(i!==vacancy){state.textContent='The open cell is its destination';prompt.textContent=returnStep>=0?heldReturnPrompt():wrongPrompt;paint(i);return}const from=handWell.getBoundingClientRect(),origin=selected,id=hand,held=Math.max(0,performance.now()-holdStarted),holdFactor=Math.min(1,Math.max(0,(held-250)/1750)),distance=Math.hypot(Math.floor(origin/4)-Math.floor(i/4),origin%4-i%4),duration=440+holdFactor*(220+90*distance);tiles[i]=id;hand=null;selected=-1;holdStarted=0;vacancy=origin;moves++;if(returnStep>=0&&origin===returnSources[returnStep])returnStep++;paint(i);if(reduceMotion){state.textContent=returnStep===4?'The opening has returned':'The opening has travelled';prompt.textContent=returnStep>=0?returnPrompt():'The unit now holds the open cell. Lift another tile to move the opening again, or reset.';if(returnStep===4)returnStep=-1;glide(field.children[i],from,field.children[i].getBoundingClientRect(),true,false,duration);return}moving=true;state.textContent='The unit is travelling';prompt.textContent='Wait for the held unit to land before choosing another tile.';glide(field.children[i],from,field.children[i].getBoundingClientRect(),true,false,duration);arrivalTimer=window.setTimeout(()=>{moving=false;arrivalTimer=0;state.textContent=returnStep===4?'The opening has returned':'The opening has travelled';prompt.textContent=returnStep>=0?returnPrompt():'The unit now holds the open cell. Lift another tile to move the opening again, or reset.';if(returnStep===4)returnStep=-1},duration)}
+function reset(){window.clearTimeout(arrivalTimer);arrivalTimer=0;moving=false;vacancy=start;selected=-1;tiles=Array.from({length:16},(_,i)=>i);tiles[start]=null;hand=null;holdStarted=0;moves=0;returnStep=-1;state.textContent='The opening waits for a unit';prompt.textContent=firstPrompt;paint()}
+document.querySelector('#reset').addEventListener('click',reset);
+document.querySelector('#border-start').addEventListener('click',()=>{reset();const from=field.children[2].getBoundingClientRect();tiles[start]=tiles[2];tiles[2]=null;vacancy=2;moves=1;state.textContent='The opening is at the top edge';prompt.textContent=borderPrompt;paint(6);glide(field.children[6],from,field.children[6].getBoundingClientRect(),false,false)});
+document.querySelector('#return-start').addEventListener('click',()=>{reset();returnStep=0;state.textContent='A four-step return is ready';prompt.textContent='Lift the tile to the right, then below, left, and above the opening. It will return to this cell as the four units change order.'});
+paint();
+</script>
+</body>
+</html>
