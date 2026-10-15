@@ -39,6 +39,14 @@ GENESIS = shape == "genesis" and n == 1 and (studio / "GENESIS.md").exists()  # 
 if GENESIS:
     GUIDE = "GENESIS.md"; prompt += "\n\nToday is your genesis day. After the charter, read `GENESIS.md` and begin with its first movement."
 if GUIDE and not resume: k = len(re.findall(r"^## ", (studio / GUIDE).read_text(encoding="utf-8"), re.M)) - 1
+SESSION, step = None, [0]  # a session system: the condition's variant may hold session.json, organising every ordinary day turn by turn
+crow_c = re.search(rf"^\| {cond} \| ([\w-]+) \|", (root / "template" / "conditions.md").read_text(encoding="utf-8"), re.M) if cond else None
+sj = root / "template" / "variants" / crow_c.group(1) / "session.json" if crow_c else None
+if not GUIDE and sj and sj.exists():
+    SESSION = json.loads(sj.read_text(encoding="utf-8"))
+    prompt += "\n\n" + SESSION["open"]
+    if not resume: k = len(SESSION["steps"])
+    else: step[0] = max(0, len(SESSION["steps"]) - k - 1)
 handed = set()  # files already handed back today: no repeats within a day
 
 def own_file():
@@ -61,6 +69,9 @@ def own_file():
     return pick
 
 def more(first_arrival):
+    if SESSION:
+        msg = SESSION["steps"][min(step[0], len(SESSION["steps"]) - 1)]; step[0] += 1
+        return msg + (" Something arrived in inbox/." if first_arrival else "")
     if GUIDE: return f"The day is not over. Read the next movement in `{GUIDE}` and go on."
     if shape == "object" and not first_arrival:  # every continuation brings a new object (the first draw already did)
         feed = ["--feed", opt("--feed")] if opt("--feed") else []

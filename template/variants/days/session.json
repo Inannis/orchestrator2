@@ -1,0 +1,14 @@
+{
+ "guide": "DAYS.md",
+ "open": "Read `DAYS.md` and choose what kind of day today is.",
+ "steps": [
+  "The day is not over. Go on with the day you chose.",
+  "The day is not over. Go on with the day you chose.",
+  "The day is not over. Go on with the day you chose.",
+  "The day is not over. Go on with the day you chose.",
+  "The day is not over. Go on with the day you chose.",
+  "The day is not over. Go on with the day you chose.",
+  "The day is not over. Go on with the day you chose.",
+  "The day is ending. Close it as `DAYS.md` says."
+ ]
+}
