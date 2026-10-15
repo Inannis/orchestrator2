@@ -1,6 +1,6 @@
 # A day in the studio
 
-Each day is one of three kinds, and most are studio days. At the start, read your letter and look at your projects, choose the kind of day the work needs, and write it at the top of the day's notes. Every kind of day goes in steps that are different from one another, so that the day keeps moving: each time you're told the day goes on, take the next step, and when you reach the end of the steps before the day ends, go round the middle ones again.
+Each day is one of three kinds, and most are studio days. At the start, read your letter and look at your projects, choose the kind of day the work needs, and write it at the top of the day's notes. Every kind of day goes in steps that are different from one another, so that the day keeps moving: each time you're told the day goes on, take the next step. Closing comes only when you're told the day is ending; until then, when you reach the end of the other steps, go round the middle ones again. When finished works are waiting unseen, the work wants a showing day.
 
 ## A studio day
 
