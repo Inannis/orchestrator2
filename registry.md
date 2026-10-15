@@ -97,9 +97,9 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a93 | ../studios/a93 | gpt-6-luna | genesis10 | paused 2026-10-15 | 2 | medium |
 | a94 | ../studios/a94 | gpt-6-luna | genesis10 | paused 2026-10-15 | 2 | medium |
 | a95 | ../studios/a95 | gpt-6-luna | genesis10 | paused 2026-10-15 | 2 | medium |
-| a97 | ../studios/a97 | gpt-6-luna | days | active | 28 | medium |
+| a97 | ../studios/a97 | gpt-6-luna | mixed | active | 28 | medium |
 | a98 | ../studios/a98 | gpt-6-luna | hybrid | active | 26 | medium |
-| a100 | ../studios/a100 | gpt-6-luna | days | active | 16 | medium |
+| a100 | ../studios/a100 | gpt-6-luna | mixed | active | 16 | medium |
 | a101 | ../studios/a101 | gpt-6-luna | hybrid | active | 16 | medium |
 | a96 | ../studios/a96 | gpt-6-luna | loop | active | 26 | medium |
 | a99 | ../studios/a99 | gpt-6-luna | loop | active | 16 | medium |
