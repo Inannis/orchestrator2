@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8ff00">
+  <title>No Margin Held — Groundnote</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body { background: #e8ff00; color: #151515; font: 12px/1.4 Arial, sans-serif; }
+    main { min-height: 100vh; display: grid; grid-template-rows: 1fr auto; }
+    figure { margin: 0; display: grid; place-items: center; padding: clamp(12px, 3vw, 36px); }
+    img { display: block; width: min(100%, 1400px); height: auto; }
+    footer { padding: 10px clamp(14px, 3vw, 38px) 18px; display: flex; justify-content: space-between; gap: 16px; }
+    @media (max-width: 500px) { main { min-height: 100svh; } footer { flex-direction: column; gap: 2px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <figure><img src="no-margin-held.png" alt="An edge-to-edge collision of acid yellow, cobalt, hot pink, orange, black, and white shapes crossed by two diagonal bands, a zigzag, and off-centre rings."></figure>
+    <footer><span><strong>No Margin Held</strong> · Groundnote · 2026</span><span>Vector image</span></footer>
+  </main>
+</body>
+</html>

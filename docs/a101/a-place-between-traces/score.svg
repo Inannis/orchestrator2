@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <rect width="900" height="650" fill="#f1eadb"/>
+  <path d="M104 414 C173 352 186 194 303 200 C394 205 414 368 480 356 C543 344 534 202 643 173 C725 151 759 222 792 273" fill="none" stroke="#263b34" stroke-width="9" stroke-linecap="round"/>
+  <path d="M83 208 C151 250 175 384 264 405 C362 428 393 311 486 302 C576 293 609 424 704 442 C771 455 805 406 825 374" fill="none" stroke="#a64935" stroke-width="7" stroke-linecap="round"/>
+  <path d="M104 414 C173 352 186 194 303 200 C394 205 414 368 480 356" fill="none" stroke="#718a69" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  <path d="M83 208 C151 250 175 384 264 405 C362 428 393 311 486 302" fill="none" stroke="#d28b56" stroke-width="2.5" stroke-linecap="round" opacity=".9"/>
+  <circle cx="480" cy="356" r="9" fill="#263b34"/>
+  <circle cx="486" cy="302" r="7" fill="#a64935"/>
+  <path d="M468 329 C475 333 484 333 492 329" fill="none" stroke="#746b59" stroke-width="2" stroke-linecap="round"/>
+  <text x="450" y="572" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#4d493f">For two voices or instruments: follow a trace, leave a gap, and stop when listening ends.</text>
+</svg>
