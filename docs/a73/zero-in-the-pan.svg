@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+<title id="title">Zero in the Pan</title>
+<desc id="desc">A broad ochre paper field dips into an empty, shallow pan-shaped hollow. No water or rain mark appears.</desc>
+<rect width="1000" height="700" fill="#eee8d7"/>
+<path d="M0 372 C160 347 282 363 366 399 C414 420 428 536 500 548 C572 536 586 420 634 399 C718 363 840 347 1000 372 L1000 700 L0 700Z" fill="#d5a954"/>
+<path d="M0 372 C160 347 282 363 366 399 C414 420 428 536 500 548 C572 536 586 420 634 399 C718 363 840 347 1000 372" fill="none" stroke="#a94d3e" stroke-width="5"/>
+<path d="M0 382 C160 357 282 373 366 409 M634 409 C718 373 840 357 1000 382" fill="none" stroke="#f1d38c" stroke-width="2"/>
+<path d="M448 574 Q500 589 552 574" fill="none" stroke="#b78b47" stroke-width="3"/>
+<path d="M470 590 Q500 598 530 590" fill="none" stroke="#b78b47" stroke-width="2" opacity=".65"/>
+</svg>
