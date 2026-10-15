@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+  <rect width="1400" height="980" fill="#eeeae0"/>
+  <!-- A broad upper mass stops before the right edge. -->
+  <path d="M78 82 L1055 55 L1094 264 L63 301 Z" fill="#252a2a"/>
+  <!-- The room-like plane continues beyond the crop at left, but refuses a clean corner. -->
+  <path d="M61 279 L1008 244 L1019 681 L44 731 Z" fill="#d0ccc0"/>
+  <!-- A separate upright plane sits back from the right edge. -->
+  <path d="M1018 184 L1299 169 L1311 503 L1027 523 Z" fill="#81978f"/>
+  <!-- The dark return stops short; the paper gap is the small event. -->
+  <path d="M1026 541 L1298 526 L1310 699 L1034 714 Z" fill="#252a2a"/>
+  <path d="M1158 499 L1171 498 L1173 553 L1160 554 Z" fill="#eeeae0"/>
+  <!-- A fine displaced edge, nearly lost against the broad plane. -->
+  <path d="M1035 526 L1288 513" fill="none" stroke="#f8f5ed" stroke-width="2" opacity=".8"/>
+  <!-- One line travels across the lower field, sinks, then returns. -->
+  <path d="M0 795 C232 759 386 775 534 793 C680 812 809 781 935 799 C1055 816 1132 847 1229 818 C1297 798 1345 781 1400 788" fill="none" stroke="#a7432b" stroke-width="7"/>
+  <path d="M0 808 C260 780 374 795 546 808" fill="none" stroke="#a7432b" stroke-width="1.5" opacity=".55"/>
+  <!-- Small surface ticks sit at unequal distances from the notch. -->
+  <path d="M1097 470 L1122 469 M1201 583 L1235 581 M100 744 L139 741 M1260 735 L1301 732" fill="none" stroke="#7e8079" stroke-width="2" opacity=".65"/>
+</svg>

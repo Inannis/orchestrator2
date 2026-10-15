@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Far the Sill Goes — Vyt Aitken</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #eee6d4; color: #173a45; font: 17px/1.5 Georgia, serif; }
+  main { max-width: 1400px; margin: auto; padding: 5vw; }
+  a { color: inherit; }
+  .back { font: 12px/1.4 sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+  h1 { font-weight: 400; font-size: clamp(2.2rem, 6vw, 4.5rem); line-height: 1; margin: 2rem 0 1rem; max-width: 9em; }
+  figure { margin: 0; }
+  svg { width: 100%; height: auto; display: block; }
+  .control { margin: 2rem 0 0 28%; max-width: 30rem; }
+  label { display: block; margin-bottom: .75rem; }
+  input { width: 100%; accent-color: #c85b43; }
+  .ends { display: flex; justify-content: space-between; color: #6a6255; font: 12px/1.4 sans-serif; }
+  .note { margin: 3rem 0 0 28%; max-width: 30rem; color: #51483e; }
+  @media (max-width: 650px) { .control, .note { margin-left: 12%; } }
+</style>
+<main>
+  <a class="back" href="the-room-lends-its-sill.html">The Room Lends Its Sill</a>
+  <h1>How Far the Sill Goes</h1>
+  <figure>
+    <svg viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+      <title id="title">A floor changes its reach</title>
+      <desc id="desc">An imagined terracotta wall with a dark doorway. A pale floor begins at the threshold; use the slider to extend it past the lower edge. A side view at right marks the edge of the wall.</desc>
+      <rect width="1200" height="760" fill="#eee6d4"/>
+      <path d="M90 72H845V595H90Z" fill="#c85b43"/>
+      <path d="M356 204H617V595H356Z" fill="#173a45"/>
+      <path d="M617 204L661 226V595H617Z" fill="#944536"/>
+      <path d="M90 595H845M90 72V595" fill="none" stroke="#173a45" stroke-width="3"/>
+      <path id="floor" d="M356 515H617L840 630H356Z" fill="#e4d29a"/>
+      <path id="floorSide" d="M617 515L661 537L840 630H840Z" fill="#bea96f"/>
+      <path d="M243 495C250 482 270 482 277 495L289 538H232Z" fill="#275e69"/>
+      <path d="M260 457C274 457 282 468 280 481C278 494 269 500 258 497C247 493 244 482 247 470C249 462 254 458 260 457Z" fill="#275e69"/>
+      <path d="M1002 110H1080V628H1002Z" fill="#c85b43"/>
+      <path d="M1080 110H1100V628H1080Z" fill="#944536"/>
+      <path d="M930 628H1002V674H930Z" fill="#e4d29a"/>
+      <path d="M1098 628H1150" stroke="#8b8069" stroke-width="3"/>
+    </svg>
+  </figure>
+  <div class="control">
+    <label for="reach">How far does the floor lend its edge?</label>
+    <input id="reach" type="range" min="840" max="930" value="840" aria-valuetext="Stops at the wall">
+    <div class="ends"><span>Stops at the wall</span><span>Reaches farther</span></div>
+  </div>
+  <p class="note">The room is invented. One figure waits beside the opening while the floor reaches from the wall toward its returned edge.</p>
+</main>
+<script>
+  const reach = document.querySelector('#reach');
+  const floor = document.querySelector('#floor');
+  const floorSide = document.querySelector('#floorSide');
+  function moveFloor() {
+    const x = Number(reach.value);
+    const y = Math.round(630 + (x - 840) * 0.5);
+    floor.setAttribute('d', `M356 515H617L${x} ${y}H356Z`);
+    floorSide.setAttribute('d', `M617 515L661 537L${x} ${y}H${x}Z`);
+    const position = x - 840;
+    const reading = position < 25 ? 'Stops at the wall' : position > 65 ? 'Carries farther past the wall' : 'Carries a little way beyond the wall';
+    reach.setAttribute('aria-valuetext', reading);
+  }
+  reach.addEventListener('input', moveFloor);
+  moveFloor();
+</script>
+</html>

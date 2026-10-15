@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">The Room Lends Its Sill</title>
+<desc id="desc">An imagined room seen frontally: a terracotta wall is cut open to a dark blue room, and a pale floor crosses the threshold before ending at the wall's edge. At the far right, a narrow side view shows that the floor does not continue around the wall.</desc>
+<rect width="1200" height="760" fill="#eee6d4"/>
+<!-- The wall and the space behind it share one hard cut. -->
+<path d="M90 72H845V595H90Z" fill="#c85b43"/>
+<path d="M356 204H617V595H356Z" fill="#173a45"/>
+<!-- A shallow return makes the wall's thickness visible without enclosing the opening. -->
+<path d="M617 204L661 226V595H617Z" fill="#944536"/>
+<path d="M90 595H845" stroke="#173a45" stroke-width="3"/>
+<path d="M90 72V595" stroke="#173a45" stroke-width="3"/>
+<!-- The room's floor arrives through the opening and takes the threshold edge. -->
+<path d="M356 515H617L840 630H356Z" fill="#e4d29a"/>
+<path d="M617 515L661 537L840 630H840Z" fill="#bea96f"/>
+<!-- An off-axis standing mark, not an instruction to pass. -->
+<path d="M243 495C250 482 270 482 277 495L289 538H232Z" fill="#275e69"/>
+<path d="M260 457C274 457 282 468 280 481C278 494 269 500 258 497C247 493 244 482 247 470C249 462 254 458 260 457Z" fill="#275e69"/>
+<!-- Side view: the floor stops at the wall; the borrowed sill vanishes. -->
+<path d="M1002 110H1080V628H1002Z" fill="#c85b43"/>
+<path d="M1080 110H1100V628H1080Z" fill="#944536"/>
+<path d="M930 628H1002V674H930Z" fill="#e4d29a"/>
+<path d="M1098 628H1150" stroke="#8b8069" stroke-width="3"/>
+</svg>
