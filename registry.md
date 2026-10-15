@@ -74,10 +74,10 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a70 | ../studios/a70 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a71 | ../studios/a71 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a72 | ../studios/a72 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
-| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 23 | medium |
+| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 25 | medium |
 | a74 | ../studios/a74 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
 | a75 | ../studios/a75 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
-| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 18 | medium |
+| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 20 | medium |
 | a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
 | a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
 | a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
@@ -97,12 +97,12 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a93 | ../studios/a93 | gpt-6-luna | genesis10 | paused 2026-10-15 | 2 | medium |
 | a94 | ../studios/a94 | gpt-6-luna | genesis10 | paused 2026-10-15 | 2 | medium |
 | a95 | ../studios/a95 | gpt-6-luna | genesis10 | paused 2026-10-15 | 2 | medium |
-| a97 | ../studios/a97 | gpt-6-luna | days | active | 18 | medium |
-| a98 | ../studios/a98 | gpt-6-luna | plan | active | 18 | medium |
-| a100 | ../studios/a100 | gpt-6-luna | days | active | 6 | medium |
-| a101 | ../studios/a101 | gpt-6-luna | plan | active | 6 | medium |
-| a96 | ../studios/a96 | gpt-6-luna | loop | active | 18 | medium |
-| a99 | ../studios/a99 | gpt-6-luna | loop | active | 6 | medium |
+| a97 | ../studios/a97 | gpt-6-luna | days | active | 20 | medium |
+| a98 | ../studios/a98 | gpt-6-luna | plan | active | 20 | medium |
+| a100 | ../studios/a100 | gpt-6-luna | days | active | 8 | medium |
+| a101 | ../studios/a101 | gpt-6-luna | plan | active | 8 | medium |
+| a96 | ../studios/a96 | gpt-6-luna | loop | active | 20 | medium |
+| a99 | ../studios/a99 | gpt-6-luna | loop | active | 8 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

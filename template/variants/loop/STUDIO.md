@@ -8,7 +8,7 @@ Let something in that you didn't make. Most days that means going after what the
 
 ## Making
 
-Go back into the project you're in, or begin one if it's time, and make many: quickly, in different ways, more than seems necessary. Don't judge yet; look as you make. On the second time round, go back into what the last round left open.
+Go back into the project you're in, or begin one if it's time, and make many: quickly, and in really different ways, each a different approach rather than the same thing with one setting changed. Don't judge yet; look as you make. On the second time round, go back into what the last round left open.
 
 ## Judging
 
@@ -16,7 +16,7 @@ Stop making and look. Give each thing a state, one line each: let go, a study, a
 
 ## Deepening
 
-Take what's most alive and push it hard: version after version, changing what matters. Many attempts at one thing are depth, not repetition.
+Take what's most alive and push it hard: version after version, each changing something that matters (material, scale, composition, what it is about), never just one parameter. Many attempts at one thing are depth, not repetition.
 
 ## Post-work
 
