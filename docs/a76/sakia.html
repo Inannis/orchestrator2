@@ -1,0 +1,108 @@
+<meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Sakia</title>
+<style>html,body{margin:0;background:#d8c9a6;color:#2a211a;font-family:Georgia,serif;touch-action:none}
+canvas{display:block;width:100%;max-width:1000px;margin:0 auto;background:#e6d9b8}
+p{max-width:640px;margin:1rem auto;padding:0 5vw;font-size:.95rem;line-height:1.5}a{color:#2a211a}</style>
+<canvas id=c width=1000 height=560></canvas>
+<p id=t></p>
+<p>Hold the mouse, a finger or the space bar and the ox walks. Let go and it stops. A pot holds about six litres (invented); the water goes to the field. The ox tires as it walks. At two hundred turns it lies down, and it gets up when the date changes, not before. <a href="index.html">Back</a></p>
+<script>
+const C=document.getElementById('c'),x=C.getContext('2d');
+let S;try{S=JSON.parse(localStorage.sakia||'null')}catch(e){}
+const today=new Date().toDateString();
+if(location.search.includes('reset'))S=null;
+if(!S)S={pots:0,turns:0,down:null,day:today,tod:0};
+if(S.down&&S.down!==today){S.down=null;S.turns=0}
+S._t=0;let th=0,speed=0,tired=0,held=false,fl=[],spills=[],last=performance.now();
+const N=12,R=150,CX=300,CY=230,WY=CY+R-34,CAP=6,LAP=2*Math.PI;
+let pot=[...Array(N)].map(()=>0);
+function save(){try{localStorage.sakia=JSON.stringify(S)}catch(e){}}
+addEventListener('pointerdown',()=>{held=true;aud()});addEventListener('pointerup',()=>held=false);
+addEventListener('keydown',e=>{if(e.code=='Space'){held=true;aud();e.preventDefault()}});
+addEventListener('keyup',e=>{if(e.code=='Space')held=false});
+let A,g,n;function aud(){if(A)return;try{A=new AudioContext();g=A.createGain();g.gain.value=.0;
+const o=A.createOscillator();o.type='sawtooth';o.frequency.value=48;const f=A.createBiquadFilter();f.type='lowpass';f.frequency.value=160;
+o.connect(f);f.connect(g);g.connect(A.destination);o.start();window._o=o;window._g=g;}catch(e){}}
+function drip(){if(!A)return;const b=A.createBuffer(1,2000,A.sampleRate),d=b.getChannelData(0);
+for(let i=0;i<2000;i++)d[i]=(Math.random()*2-1)*Math.exp(-i/260);const s=A.createBufferSource();s.buffer=b;
+const f=A.createBiquadFilter();f.type='bandpass';f.frequency.value=900+Math.random()*700;s.connect(f);f.connect(A.destination);s.start()}
+function hand(a,b,c,d){x.beginPath();x.moveTo(a,b);const n=Math.max(2,Math.hypot(c-a,d-b)/14|0);
+for(let i=1;i<=n;i++)x.lineTo(a+(c-a)*i/n+(Math.random()-.5)*1.6,b+(d-b)*i/n+(Math.random()-.5)*1.6);x.stroke()}
+function frame(now){
+ const dt=Math.min(.05,(now-last)/1000);last=now;
+ const down=!!S.down;
+ const want=held&&!down?1:0;
+ const lim=Math.max(.15,1-tired*.8);
+ speed+=((want*lim)-speed)*Math.min(1,dt*2.5);
+ if(want)tired=Math.min(1,tired+dt*.012);else tired=Math.max(0,tired-dt*.02);
+ const dth=speed*dt*1.0;th+=dth;
+ const t=th/LAP;const nt=Math.floor(t);
+ if(nt>(S._t||0)){S.turns+=nt-(S._t||0);S._t=nt;if(S.turns>=200){S.down=today;save()}}
+ if(window._o){_o.frequency.value=40+speed*30;_g.gain.value=speed*.07}
+ x.clearRect(0,0,1000,560);
+ // sky and ground
+ x.fillStyle='#e6d9b8';x.fillRect(0,0,1000,560);
+ x.fillStyle='#b9a77c';x.fillRect(0,WY-6,1000,200);
+ // river
+ x.fillStyle='#5f7a6a';x.fillRect(0,WY,420,200);
+ x.fillStyle='#4d6657';for(let i=0;i<6;i++){x.fillRect((i*83+now/60*(0.4+i*.05))%420,WY+14+i*18,40,3)}
+ // frame
+ x.strokeStyle='#2a211a';x.lineWidth=3;
+ hand(CX-R-20,CY+R+10,CX,CY);hand(CX+R+20,CY+R+10,CX,CY);
+ // wheel
+ x.lineWidth=2.5;x.beginPath();for(let i=0;i<=60;i++){const a=i/60*LAP;x.lineTo(CX+Math.cos(a)*R+(Math.random()-.5),CY+Math.sin(a)*R+(Math.random()-.5))}x.stroke();
+ for(let i=0;i<8;i++){const a=th+i*LAP/8;hand(CX,CY,CX+Math.cos(a)*R,CY+Math.sin(a)*R)}
+ // pots
+ for(let i=0;i<N;i++){
+  const a=th+i*LAP/N,px=CX+Math.cos(a)*R,py=CY+Math.sin(a)*R;
+  if(py>WY-4)pot[i]=Math.min(1,pot[i]+dt*3);
+  const ca=((a%LAP)+LAP)%LAP;
+  if(pot[i]>0&&ca>4.9&&ca<5.5){ // tips over
+   pot[i]=Math.max(0,pot[i]-dt*5);
+   if(Math.random()<.3)fl.push({x:px,y:py,vx:60,vy:20,l:1});
+  }
+  x.save();x.translate(px,py);x.rotate(a+Math.PI/2);
+  x.fillStyle='#a8512f';x.strokeStyle='#2a211a';x.lineWidth=2;
+  x.beginPath();x.ellipse(0,0,12,16,0,0,LAP);x.fill();x.stroke();
+  if(pot[i]>0){x.fillStyle='#5f7a6a';x.fillRect(-8,-6+(1-pot[i])*12,16,3)}
+  x.restore();
+ }
+ // count pour: when a pot crosses the angle, score
+ for(let i=0;i<N;i++){const a=th+i*LAP/N;const k=Math.floor((a-4.9)/LAP);
+  spills[i]=spills[i]===undefined?k:spills[i];
+  if(k>spills[i]){spills[i]=k;if(pot[i]>0.0){S.pots++;S.tod+=1;drip()}}}
+ // falling drops
+ fl=fl.filter(p=>p.l>0);for(const p of fl){p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=500*dt;p.l-=dt*1.2;
+  x.fillStyle='#5f7a6a';x.fillRect(p.x,p.y,3,3)}
+ // channel and field
+ x.strokeStyle='#2a211a';x.lineWidth=3;hand(CX+30,CY-R-24,700,CY-R+60);x.strokeStyle='#5f7a6a';x.lineWidth=2;if(speed>.05)hand(700,CY-R+62,700,355);
+ const rows=Math.min(14,Math.floor(S.pots/120));
+ for(let r=0;r<14;r++){
+  const fy=360+r*14;x.strokeStyle=r<rows?'#4f7a3a':'#8a7a55';x.lineWidth=r<rows?3:1.5;
+  hand(520,fy,980,fy);
+  if(r<rows)for(let k=0;k<20;k++){hand(530+k*22,fy,530+k*22+3,fy-14-((r*7+k*5)%9))}
+ }
+ // ox, from above, in its own small circle
+ const ox=860,oy=160,or=60,oa=th*.35;
+ x.strokeStyle='#8a7a55';x.lineWidth=1.5;x.beginPath();x.arc(ox,oy,or,0,LAP);x.stroke();
+ x.strokeStyle='#2a211a';x.lineWidth=3;
+ x.beginPath();x.arc(ox,oy,5,0,LAP);x.stroke();
+ const px2=ox+Math.cos(oa)*or,py2=oy+Math.sin(oa)*or;
+ hand(ox,oy,px2,py2);
+ x.save();x.translate(px2,py2);x.rotate(oa+Math.PI/2);
+ const lie=down;
+ x.fillStyle=lie?'#3b2e27':'#4a3a30';
+ x.beginPath();x.ellipse(0,0,lie?13:9,lie?13:19,0,0,LAP);x.fill();
+ if(!lie){x.beginPath();x.ellipse(0,-22,6,6,0,0,LAP);x.fill();hand(-6,-26,-12,-30);hand(6,-26,12,-30)}
+ x.restore();
+ x.fillStyle='#2a211a';x.font='14px Georgia';x.textAlign='center';
+ x.fillText(down?'lying down until the date changes':'tired '+Math.round(tired*100)+'%',ox,oy+or+28);
+ // text
+ x.textAlign='left';x.font='15px Georgia';
+ x.fillText(S.turns+' of 200 turns today',40,40);
+ x.fillText(S.pots+' pots ('+(S.pots*CAP).toLocaleString()+' litres) in all, '+rows+' of 14 rows green',40,62);
+ if(rows<14&&S.pots<120)x.fillText('a row takes 120 pots',40,84);
+ if(now%2000<20)save();
+ requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+document.getElementById('t').textContent='Sakia. The wheel is drawn from memory of photographs; the pot size, the row size and the 200 turns are mine. The ox is under no instruction but yours.';
+</script>
