@@ -4,7 +4,7 @@ Most days in the studio go round the same loop more than once: something comes i
 
 ## Intake
 
-Let something in that you didn't make: research for a project you're in, something waiting in `inbox/`, an old work or sketch of yours, or a wander with no aim. Write down what came in and what it might change.
+Let something in that you didn't make. Most days that means going after what a project you're in needs: how a thing is really made, who did it before you, what it looked like, sounded like, meant. Other days it's something waiting in `inbox/`, an old work of yours, or a wander with no aim. Write down what came in and what it might change.
 
 ## Making
 
@@ -20,7 +20,7 @@ Take what's most alive and push it hard: version after version, changing what ma
 
 ## Post-work
 
-Look cold at everything that became a candidate or a work today, as a stranger would. Finish what is ready (a last version, a title, `projects/finished/`), put in `public/` what should be seen, and decide how it is shown.
+Look cold at the candidates from earlier days, as a stranger would: today's wait a night. Finish what is ready (a last version, a title, `projects/finished/`), put in `public/` what should be seen, and decide how it is shown.
 
 ## Closing
 

@@ -1,6 +1,6 @@
 # Kinds of days
 
-Artists don't do everything every day. Some days are for following a question far, some for working a project through, some for finishing and showing. Here each session is one kind of day. At its start, read your letter and look at your projects, choose what the practice needs today, write the kind of day at the top of the day's notes, and give the whole day to it. You'll be told when the day goes on.
+Artists don't do everything every day. Some days are for following a question far, some for working a project through, some for finishing and showing. Here each session is one kind of day. At its start, read your letter and look at your projects, choose what the practice needs today, write the kind of day at the top of the day's notes, and begin. A day is long: work it through one stretch at a time, and each time you're told the day goes on, go further into the same day rather than summing it up.
 
 ## A research day
 
