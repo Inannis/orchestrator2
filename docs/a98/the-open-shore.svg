@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700" role="img" aria-labelledby="title desc">
+<title id="title">The Open Shore</title>
+<desc id="desc">Two small figures stand on a broad pale shore beneath a distant mountain; trees gather along the right edge.</desc>
+<rect width="1100" height="700" fill="#eee8db"/>
+<!-- pale weather, left open -->
+<path d="M0 94 Q162 65 322 90 T650 87 T1100 72 L1100 246 Q886 264 728 244 T390 263 T0 244Z" fill="#e8dfcb" opacity=".58"/>
+<path d="M112 151 Q222 119 327 145 M557 126 Q671 104 797 133" fill="none" stroke="#c8c3b5" stroke-width="3" opacity=".24"/>
+<!-- distant ridge -->
+<path d="M0 335 L112 300 207 309 328 240 409 274 524 187 607 238 702 220 801 281 903 256 1003 303 1100 290 1100 406 0 406Z" fill="#c4c3b5" opacity=".68"/>
+<path d="M327 240 L409 274 524 187 607 238 567 226 528 207 489 248 414 286 377 265Z" fill="#e4dfd2" opacity=".76"/>
+<path d="M0 348 Q179 335 337 354 T651 345 T1100 349 L1100 420 0 420Z" fill="#a7aaa2" opacity=".56"/>
+<!-- water, nearly level -->
+<path d="M0 380 Q219 372 405 383 T780 378 T1100 382 L1100 513 Q890 507 693 518 T330 510 T0 520Z" fill="#a7b5b1" opacity=".78"/>
+<path d="M0 393 Q195 388 366 396 M513 401 Q709 393 864 400 M81 427 Q244 421 346 427 M706 437 Q846 431 1038 437" fill="none" stroke="#e9e4d8" stroke-width="2" opacity=".6"/>
+<path d="M0 475 Q216 463 381 481 T704 480 T1100 472" fill="none" stroke="#778d89" stroke-width="1.4" opacity=".42"/>
+<!-- open sand -->
+<path d="M0 487 Q189 472 346 490 T682 485 Q845 488 1100 467 L1100 700 0 700Z" fill="#d4c6a9"/>
+<path d="M0 506 Q197 493 356 510 T693 506 Q904 501 1100 487 L1100 564 Q890 580 704 565 T343 571 T0 586Z" fill="#e0d3b9" opacity=".64"/>
+<path d="M64 530 Q213 516 339 529 M492 536 Q623 522 744 533" fill="none" stroke="#b9a88c" stroke-width="2" opacity=".34"/>
+<!-- two invented figures, held small in the shore -->
+<g fill="#796c5c">
+  <circle cx="421" cy="482" r="4.8"/><path d="M418 488 Q421 486 424 489 L427 505 421 509 416 506Z"/>
+  <path d="M420 494 L412 502 M423 494 L429 500 M420 507 L416 516 M423 507 L427 515" fill="none" stroke="#796c5c" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="445" cy="484" r="4.2" fill="#a16f58"/><path d="M442 490 Q445 487 448 490 L450 505 445 508 440 505Z" fill="#a16f58"/>
+  <path d="M443 495 L436 501 M447 495 L453 500 M443 506 L440 514 M447 506 L451 513" fill="none" stroke="#a16f58" stroke-width="2.2" stroke-linecap="round"/>
+</g>
+<!-- grasses make a low foreground threshold -->
+<path d="M0 658 Q82 643 165 661 T335 654 T493 662 T676 652 T849 659 T1100 650 L1100 700 0 700Z" fill="#7f8270" opacity=".74"/>
+<g fill="none" stroke-linecap="round">
+  <!-- grasses gather in four uneven islands; the long sand intervals stay open -->
+  <path d="M28 663 Q25 640 10 624 M42 662 Q36 625 15 615 M53 660 Q60 638 78 629 M64 660 Q71 628 94 615 M84 661 Q79 647 86 639" stroke="#687564" stroke-width="3"/>
+  <path d="M15 624 l-8 -9 M94 615 l11 -12 M77 629 l10 -8" stroke="#96866a" stroke-width="2"/>
+  <path d="M285 660 Q276 642 278 629 M302 659 Q303 625 327 617 M318 659 Q330 639 345 635 M336 658 Q340 631 361 620" stroke="#687564" stroke-width="3"/>
+  <path d="M327 617 l-8 -11 M361 620 l12 -12 M278 629 l-7 -10" stroke="#96866a" stroke-width="2"/>
+  <path d="M601 658 Q608 638 624 632 M618 658 Q618 628 638 616 M637 658 Q653 642 665 641 M650 657 Q653 632 676 622" stroke="#687564" stroke-width="3"/>
+  <path d="M638 616 l10 -14 M624 632 l-8 -10 M676 622 l10 -10" stroke="#96866a" stroke-width="2"/>
+  <path d="M796 658 Q791 639 800 627 M812 658 Q820 624 842 615 M830 657 Q846 640 855 638 M952 656 Q959 632 977 624 M969 655 Q977 624 1000 611 M990 657 Q1004 640 1017 638 M1028 657 Q1022 629 1027 614" stroke="#687564" stroke-width="3"/>
+  <path d="M842 615 l11 -12 M977 624 l10 -12 M1000 611 l8 -10 M1027 614 l-3 -14" stroke="#96866a" stroke-width="2"/>
+</g>
+<!-- one tall tree and a darker gathering at the right -->
+<path d="M938 481 Q955 390 946 303 Q940 223 962 151 M947 353 Q911 311 888 274 M951 301 Q984 270 1005 229 M945 250 Q923 219 920 183 M960 204 Q984 181 994 148" fill="none" stroke="#766f5c" stroke-width="7" stroke-linecap="round"/>
+<g fill="#b5a885" opacity=".76">
+  <path d="M915 191 Q900 184 908 168 Q914 155 936 159 Q940 136 961 137 Q984 138 988 159 Q1010 151 1019 172 Q1024 190 1006 202 Q1018 218 1007 233 Q995 248 975 239 Q958 260 940 251 Q924 244 927 222 Q908 223 901 208 Q898 198 915 191Z"/>
+  <path d="M870 275 Q860 267 868 255 Q876 245 891 251 Q899 235 915 241 Q928 248 920 264 Q931 275 920 286 Q906 294 894 285 Q881 293 871 284Z" opacity=".62"/>
+</g>
+<path d="M1056 490 Q1070 397 1056 317 Q1045 246 1076 190 M1061 348 Q1028 308 1020 274 M1061 298 Q1080 265 1092 239" fill="none" stroke="#584f44" stroke-width="9" stroke-linecap="round"/>
+<g fill="#776b56">
+  <path d="M1044 242 Q1022 236 1021 218 Q1020 200 1037 194 Q1032 176 1048 166 Q1067 155 1080 171 Q1100 165 1110 183 L1110 337 Q1097 345 1080 333 Q1064 346 1048 334 Q1031 323 1041 306 Q1023 296 1030 278 Q1014 261 1028 248 Q1034 243 1044 242Z"/>
+</g>
+<g fill="#998365" opacity=".66">
+  <circle cx="1040" cy="212" r="6"/><circle cx="1087" cy="246" r="5"/><circle cx="1058" cy="280" r="5"/><circle cx="1097" cy="312" r="6"/>
+</g>
+</svg>
