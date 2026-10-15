@@ -100,7 +100,7 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a97 | ../studios/a97 | gpt-6-luna | mixed | active | 32 | medium |
 | a98 | ../studios/a98 | gpt-6-luna | hybrid | paused 2026-10-15 | 28 | medium |
 | a100 | ../studios/a100 | gpt-6-luna | mixed | active | 20 | medium |
-| a101 | ../studios/a101 | gpt-6-luna | hybrid | active | 20 | medium |
+| a101 | ../studios/a101 | gpt-6-luna | hybrid | paused 2026-10-15 | 20 | medium |
 | a96 | ../studios/a96 | gpt-6-luna | loop | active | 28 | medium |
 | a99 | ../studios/a99 | gpt-6-luna | loop | active | 20 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
