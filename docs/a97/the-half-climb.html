@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Half Climb - Orla</title>
+<style>
+  :root { color-scheme: light; --paper:#f1eee5; --ink:#263c4c; --muted:#66777b; --line:#8d9997; --accent:#cf7959; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,serif; }
+  main { max-width:1100px; margin:auto; padding:clamp(22px,5vw,62px) clamp(18px,5vw,56px) 34px; }
+  .eyebrow { color:var(--muted); font:11px/1.5 system-ui,sans-serif; letter-spacing:.22em; text-transform:uppercase; }
+  h1 { font-size:clamp(30px,5vw,52px); font-weight:400; margin:18px 0 8px; }
+  .intro { max-width:570px; color:#53646a; font-size:17px; line-height:1.5; margin:0 0 25px; }
+  .frame { border-top:1px solid #c7c5bc; border-bottom:1px solid #c7c5bc; padding:14px 0 0; }
+  svg { display:block; width:100%; height:auto; overflow:visible; touch-action:pan-y; cursor:ew-resize; user-select:none; }
+  .controls { display:grid; grid-template-columns:auto minmax(100px,1fr) auto; align-items:center; gap:14px; padding:15px 0 12px; font:12px system-ui,sans-serif; color:var(--muted); }
+  .positions { display:flex; gap:7px; }
+  button { font:inherit; color:var(--ink); background:transparent; border:1px solid #aeb5b0; border-radius:2px; padding:8px 11px; cursor:pointer; }
+  button[aria-pressed="true"] { background:var(--ink); color:var(--paper); border-color:var(--ink); }
+  button:focus-visible,input:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+  input { width:100%; accent-color:var(--accent); }
+  .readout { min-width:54px; text-align:right; }
+  .caption { display:flex; justify-content:space-between; gap:18px; font:11px/1.5 system-ui,sans-serif; color:var(--muted); padding:0 0 16px; }
+  .soundline { display:flex; align-items:center; gap:13px; border-top:1px solid #d3d0c6; padding:13px 0 15px; font:12px/1.5 system-ui,sans-serif; color:var(--muted); }
+  .soundline button { white-space:nowrap; }
+  .soundline a { color:inherit; }
+  .note { max-width:650px; color:#53646a; font-size:15px; line-height:1.55; margin-top:26px; }
+  @media(max-width:560px) { main{padding:24px 16px 26px} .intro{font-size:16px}.controls{grid-template-columns:1fr;gap:10px}.positions{justify-content:space-between}.positions button{flex:1}.readout{text-align:left}.caption{display:block}.caption span{display:block;margin-top:4px}.soundline{align-items:flex-start;flex-direction:column;gap:8px} }
+  @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important } }
+</style>
+<main>
+  <div class="eyebrow">A study of where the image meets the eye</div>
+  <h1>The Half Climb</h1>
+  <p class="intro">Eleven sheets hold one low horizon. Move to either side to reveal shaded edges; the horizon climbs gently across the sheets.</p>
+  <section class="frame" aria-label="Interactive layered horizon study">
+    <svg id="view" viewBox="0 0 920 440" role="img" aria-labelledby="svgtitle svgdesc">
+      <title id="svgtitle">A horizon crossing a row of transparent panes</title>
+      <desc id="svgdesc">Click a place or drag sideways across the row, or use the slider and three position buttons. A shaded edge appears at the side facing the selected viewpoint. The center view hides it. This is a drawn edge cue, not physical depth.</desc>
+      <defs>
+        <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#334a5e"/><stop offset=".61" stop-color="#627985"/><stop offset="1" stop-color="#abb0a8"/></linearGradient>
+        <linearGradient id="water" x2="0" y2="1"><stop stop-color="#9fa8a3" stop-opacity=".84"/><stop offset="1" stop-color="#344b5c" stop-opacity=".92"/></linearGradient>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="8"/></filter>
+      </defs>
+      <path d="M82 362H838" stroke="#aaa99f" stroke-width="1"/>
+      <ellipse id="floor-shadow" cx="456" cy="371" rx="300" ry="15" fill="#5b6470" opacity=".12" filter="url(#shadow)"/>
+      <g id="panes"></g>
+      <text x="82" y="414" fill="#53646a" font-size="12" font-family="system-ui,sans-serif" letter-spacing="2">A DRAWN ROW · NOT A PHYSICAL INSTALLATION</text>
+    </svg>
+    <div class="controls">
+      <div class="positions" role="group" aria-label="Choose a viewpoint">
+        <button data-v="-1" aria-pressed="false">Left</button><button data-v="0" aria-pressed="true">Middle</button><button data-v="1" aria-pressed="false">Right</button>
+      </div>
+      <input id="walk" type="range" min="-100" max="100" value="0" aria-label="Move the viewpoint from left to right">
+      <div class="readout" id="label" aria-live="polite">Middle</div>
+    </div>
+    <div class="caption"><span>Click or drag sideways across the row, move the slider, or choose a position.</span><span>At center the line nearly joins; at either side it climbs through the panes.</span></div>
+    <div class="soundline"><button id="hear" type="button">Hear the voice</button><span>A short mono recording follows your position in stereo. <a href="https://commons.wikimedia.org/wiki/File:De-kollaborierender.ogg">Source: Wikimedia Commons</a>.</span></div>
+  </section>
+  <p class="note">The panes shift sideways and climb by half the earlier amount. Shaded faces appear on the selected edges. At center the row levels and the horizon nearly joins. These are drawn cues, not physical parallax or depth.</p>
+</main>
+<audio id="voice" src="kollaborierender.ogg" preload="auto"></audio>
+<script>
+(() => {
+  const view=document.querySelector('#view'), group=document.querySelector('#panes'), slider=document.querySelector('#walk'), label=document.querySelector('#label'), buttons=[...document.querySelectorAll('button[data-v]')], audio=document.querySelector('#voice'), hear=document.querySelector('#hear');
+  let audioContext, panner;
+  const n=11, paneW=70, gaps=[3,3,10,3,3,13,3,3,10,3], x0=48, y0=92, h=228, mid=(n-1)/2;
+  const xs=[x0]; for(let i=0;i<n-1;i++) xs.push(xs[i]+paneW+gaps[i]);
+  const NS='http://www.w3.org/2000/svg';
+  for(let i=0;i<n;i++){
+    const g=document.createElementNS(NS,'g'); g.dataset.i=i;
+    const x=xs[i], top= y0+Math.abs(i-mid)*1.25;
+    const rect=document.createElementNS(NS,'rect'); Object.entries({x,y:top,width:paneW,height:h,fill:'url(#sky)',opacity:.76,stroke:'#d5d8d0','stroke-width':1.4}).forEach(([k,v])=>rect.setAttribute(k,v)); g.append(rect);
+    const horizon=document.createElementNS(NS,'path');
+    const bend=Math.sin(i*.65)*2.4;
+    horizon.setAttribute('d',`M${x-4} ${top+112+bend} Q${x+33} ${top+105-bend} ${x+paneW+4} ${top+114-bend*.35}`);
+    horizon.setAttribute('fill','none'); horizon.setAttribute('stroke','#dfb08c'); horizon.setAttribute('stroke-width','3'); horizon.setAttribute('opacity','.92'); g.append(horizon);
+    const water=document.createElementNS(NS,'path'); water.setAttribute('d',`M${x} ${top+116} Q${x+36} ${top+108} ${x+paneW} ${top+118} L${x+paneW} ${top+h} L${x} ${top+h}Z`); water.setAttribute('fill','url(#water)'); water.setAttribute('opacity','.52'); g.append(water);
+    const glimmer=document.createElementNS(NS,'path'); glimmer.setAttribute('d',`M${x+9} ${top+66} Q${x+31} ${top+58} ${x+56} ${top+67}`); glimmer.setAttribute('fill','none'); glimmer.setAttribute('stroke','#c5c9bd'); glimmer.setAttribute('stroke-width','2'); glimmer.setAttribute('opacity','.45');g.append(glimmer);
+    const leftFace=document.createElementNS(NS,'polygon'), rightFace=document.createElementNS(NS,'polygon');
+    const faceW=3+Math.abs(i-mid)*2;
+    leftFace.setAttribute('points',`${x-faceW},${top+4} ${x},${top} ${x},${top+h} ${x-faceW},${top+h-4}`);
+    rightFace.setAttribute('points',`${x+paneW},${top} ${x+paneW+faceW},${top+4} ${x+paneW+faceW},${top+h-4} ${x+paneW},${top+h}`);
+    [leftFace,rightFace].forEach(face=>{face.setAttribute('fill','#263c4c');face.setAttribute('opacity','0');face.dataset.side=face===leftFace?'left':'right';g.append(face)});
+    group.append(g);
+  }
+  function setView(v){
+    const amount=Math.max(-1,Math.min(1,v));
+    document.querySelector('#floor-shadow').setAttribute('rx',300+30*amount);
+    const layers=[...group.children].sort((a,b)=>Number(a.dataset.i)-Number(b.dataset.i));
+    const drawingOrder=amount<0?layers.slice().reverse():layers;
+    drawingOrder.forEach(g=>{
+      const i=Number(g.dataset.i);
+      const depth=i-mid;
+      const angle=amount*depth*0.72;
+      const cx=xs[i]+paneW/2, cy=y0+h/2;
+      g.setAttribute('transform',`translate(${amount*depth*6} ${amount*depth*1.8})`);
+      g.querySelectorAll('polygon').forEach(face=>face.setAttribute('opacity',String(face.dataset.side===(amount<0?'left':'right')?Math.abs(amount)*.55:0)));
+      group.appendChild(g);
+    });
+    let name=Math.abs(amount)<.18?'Middle':amount<0?'Left':'Right';
+    if(panner && audioContext) panner.pan.setTargetAtTime(amount,audioContext.currentTime,.06);
+    label.textContent=name;
+    buttons.forEach(b=>b.setAttribute('aria-pressed',String((name==='Left'&&b.dataset.v==='-1')||(name==='Middle'&&b.dataset.v==='0')||(name==='Right'&&b.dataset.v==='1'))));
+    document.querySelector('#svgdesc').textContent=`View from the ${name.toLowerCase()} position. Click or drag across the row, use the slider, or choose a button. A narrow shaded edge appears on the side facing the selected viewpoint; the center view hides these edges.`;
+  }
+  slider.addEventListener('input',()=>setView(Number(slider.value)/100));
+  buttons.forEach(b=>b.addEventListener('click',()=>{slider.value=Number(b.dataset.v)*100;setView(Number(b.dataset.v))}));
+  hear.addEventListener('click',async()=>{
+    if(!audioContext){audioContext=new AudioContext();panner=audioContext.createStereoPanner();audioContext.createMediaElementSource(audio).connect(panner).connect(audioContext.destination)}
+    await audioContext.resume();panner.pan.setValueAtTime(Number(slider.value)/100,audioContext.currentTime);audio.currentTime=0;audio.play();hear.textContent='Play the voice again';
+  });
+  let pointerDown=false, dragged=false, startX=0, startY=0;
+  document.querySelector('#view').addEventListener('pointerdown',e=>{
+    if(e.pointerType==='mouse' && e.button!==0)return;
+    pointerDown=true;dragged=false;startX=e.clientX;startY=e.clientY;
+  });
+  window.addEventListener('pointermove',e=>{
+    if(!pointerDown)return;
+    const dx=e.clientX-startX,dy=e.clientY-startY;
+    if(Math.abs(dx)>7 && Math.abs(dx)>Math.abs(dy))dragged=true;
+    if(dragged)move(e);
+  });
+  window.addEventListener('pointerup',e=>{if(pointerDown&&!dragged&&view.contains(e.target))move(e);pointerDown=false});
+  window.addEventListener('pointercancel',()=>{pointerDown=false;dragged=false});
+  function move(e){const r=view.getBoundingClientRect();const t=(e.clientX-r.left)/r.width;slider.value=Math.round((t*2-1)*100);setView(Number(slider.value)/100)}
+  setView(0);
+})();
+</script>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+<rect width="1200" height="820" fill="#f1eee5"/>
+<path d="M148 228 L842 118 L1045 583 L344 700Z" fill="#d4d0c5" stroke="#292b2a" stroke-width="2.2"/>
+<path d="M137 532 L482 134 L1018 531 L640 740Z" fill="#e6e2d8" fill-opacity=".84" stroke="#77776e" stroke-width="2"/>
+<!-- one first impression, held near the outer edge of the lower sheet -->
+<path d="M224 276 L421 246 L466 447 L269 483Z" fill="#282a29"/>
+<path d="M249 320 L383 300" stroke="#e6e2d8" stroke-width="5"/>
+<path d="M260 351 L377 333" stroke="#7c8079" stroke-width="1.4"/>
+<!-- the overlap is registered as a lifted, uncolored edge, not a filled answer -->
+<path d="M451 477 L536 378 L559 395 L474 500Z" fill="#f1eee5" stroke="#7d7c73" stroke-width="1.5"/>
+<path d="M469 478 L524 414" stroke="#a7432b" stroke-width="3"/>
+<path d="M488 490 L540 431" stroke="#a7432b" stroke-width="1" opacity=".6"/>
+<!-- a quiet pressure trace on the broad sheet, stopping short of the overlap -->
+<path d="M584 184 L859 142 M599 194 L869 153 M615 204 L880 164" fill="none" stroke="#aaa69b" stroke-width="1.2"/>
+<path d="M681 606 L920 566" fill="none" stroke="#a7a297" stroke-width="1.5"/>
+</svg>

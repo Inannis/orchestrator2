@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fixed Horizon — Orla</title>
+<style>
+  :root { color-scheme:light; --paper:#f1eee5; --ink:#263c4c; --muted:#66777b; --accent:#cf7959; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,serif; }
+  main { max-width:1100px; margin:auto; padding:clamp(22px,5vw,62px) clamp(18px,5vw,56px) 34px; }
+  .eyebrow { color:var(--muted); font:11px/1.5 system-ui,sans-serif; letter-spacing:.22em; text-transform:uppercase; }
+  h1 { font-size:clamp(30px,5vw,52px); font-weight:400; margin:18px 0 8px; }
+  .intro,.note { max-width:650px; color:#53646a; font-size:16px; line-height:1.55; }
+  .intro { margin:0 0 25px; }
+  .frame { border-block:1px solid #c7c5bc; padding:14px 0 0; }
+  svg { display:block; width:100%; height:auto; touch-action:pan-y; cursor:ew-resize; user-select:none; }
+  .controls { display:grid; grid-template-columns:auto minmax(100px,1fr) auto; align-items:center; gap:14px; padding:15px 0 12px; font:12px system-ui,sans-serif; color:var(--muted); }
+  .positions { display:flex; gap:7px; }
+  button { font:inherit; color:var(--ink); background:transparent; border:1px solid #aeb5b0; border-radius:2px; padding:8px 11px; cursor:pointer; }
+  button[aria-pressed="true"] { background:var(--ink); color:var(--paper); border-color:var(--ink); }
+  button:focus-visible,input:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+  input { width:100%; accent-color:var(--accent); }
+  .readout { min-width:54px; text-align:right; }
+  .caption { display:flex; justify-content:space-between; gap:18px; font:11px/1.5 system-ui,sans-serif; color:var(--muted); padding:0 0 16px; }
+  .note { margin-top:26px; }
+  @media(max-width:560px) { main{padding:24px 16px 26px}.intro{font-size:16px}.controls{grid-template-columns:1fr;gap:10px}.positions{justify-content:space-between}.positions button{flex:1}.readout{text-align:left}.caption{display:block}.caption span{display:block;margin-top:4px} }
+  @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important } }
+</style>
+<main>
+  <div class="eyebrow">A study of where the image meets the eye</div>
+  <h1>The Fixed Horizon</h1>
+  <p class="intro">Eleven sheets hold one nearly level copper line. Move to either side to compress or open the overlaps; each soft floor trace follows its pane.</p>
+  <section class="frame" aria-label="Interactive fixed-horizon study">
+    <svg id="view" viewBox="0 0 920 470" role="img" aria-labelledby="svgtitle svgdesc">
+      <title id="svgtitle">A steady horizon in a row of overlapping panes</title>
+      <desc id="svgdesc">Use the slider or the left, middle, and right buttons to shift the row. The pane marks stay level; overlaps and floor traces move. This is a drawn screen projection, not physical parallax.</desc>
+      <defs>
+        <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#334a5e"/><stop offset=".61" stop-color="#627985"/><stop offset="1" stop-color="#abb0a8"/></linearGradient>
+        <linearGradient id="water" x2="0" y2="1"><stop stop-color="#9fa8a3" stop-opacity=".84"/><stop offset="1" stop-color="#344b5c" stop-opacity=".92"/></linearGradient>
+        <filter id="trace" x="-30%" y="-25%" width="160%" height="150%"><feGaussianBlur stdDeviation="2.4"/></filter>
+      </defs>
+      <path d="M82 362H838" stroke="#aaa99f" stroke-width="1"/>
+      <g id="shadows" aria-hidden="true"></g>
+      <g id="panes" aria-hidden="true"></g>
+      <text x="82" y="432" fill="#53646a" font-size="12" font-family="system-ui,sans-serif" letter-spacing="2">A DRAWN ROW · NOT A PHYSICAL INSTALLATION</text>
+    </svg>
+    <div class="controls">
+      <div class="positions" role="group" aria-label="Choose a viewpoint">
+        <button type="button" data-v="-1" aria-pressed="false">Left</button><button type="button" data-v="0" aria-pressed="true">Middle</button><button type="button" data-v="1" aria-pressed="false">Right</button>
+      </div>
+      <input id="walk" type="range" min="-100" max="100" value="0" aria-label="Move the viewpoint from left to right">
+      <div class="readout" id="label" aria-live="polite">Middle</div>
+    </div>
+    <div class="caption"><span>Choose a position, move the slider, or drag sideways across the row.</span><span>The copper line stays level; the sheet gaps change.</span></div>
+  </section>
+  <p class="note">The image marks remain fixed within their panes while horizontal overlap changes. The floor traces are drawn shadows, not cast light. This is an invented screen response to layered viewing, not a reconstruction of Nakanishi's installation or its physical parallax.</p>
+</main>
+<script>
+(() => {
+  const svg=document.querySelector('#view'), panes=document.querySelector('#panes'), shadows=document.querySelector('#shadows'), slider=document.querySelector('#walk'), label=document.querySelector('#label'), buttons=[...document.querySelectorAll('button[data-v]')];
+  const n=11, paneW=70, paneH=228, gaps=[3,3,10,3,3,13,3,3,10,3], x0=48, y0=92, mid=5, floorY=362;
+  const xs=[x0]; for(let i=0;i<n-1;i++) xs.push(xs[i]+paneW+gaps[i]);
+  const NS='http://www.w3.org/2000/svg';
+  const make=(tag,attrs)=>{const el=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);return el};
+  for(let i=0;i<n;i++){
+    const depth=i-mid, x=xs[i], top=y0+Math.abs(depth)*1.15;
+    const shadow=make('g',{'data-i':i});
+    const cx=x+paneW/2, len=42+(i%4)*5, wid=12, dx=(i%3)*1.2, sy=floorY+3+(i%2);
+    const poly=make('polygon',{points:`${cx-wid},${sy} ${cx+wid},${sy} ${cx+dx+wid},${sy+len} ${cx+dx-wid},${sy+len}`,fill:'#4a5664',opacity:'.34',filter:'url(#trace)'});
+    shadow.append(poly); shadows.append(shadow);
+    const g=make('g',{'data-i':i});
+    g.append(make('rect',{x,y:top,width:paneW,height:paneH,fill:'url(#sky)',opacity:'.76',stroke:'#d5d8d0','stroke-width':'1.4'}));
+    const bend=Math.sin(i*.65)*2.4, hy=top+112+bend;
+    g.append(make('path',{d:`M${x-4} ${hy} Q${x+33} ${hy-3} ${x+paneW+4} ${hy+1}`,fill:'none',stroke:'#dfb08c','stroke-width':'3',opacity:'.92'}));
+    g.append(make('path',{d:`M${x} ${top+116} Q${x+36} ${top+108} ${x+paneW} ${top+118} L${x+paneW} ${top+paneH} L${x} ${top+paneH}Z`,fill:'url(#water)',opacity:'.52'}));
+    g.append(make('path',{d:`M${x+9} ${top+66} Q${x+31} ${top+58} ${x+56} ${top+67}`,fill:'none',stroke:'#c5c9bd','stroke-width':'2',opacity:'.45'}));
+    panes.append(g);
+  }
+  function setView(v){
+    const amount=Math.max(-1,Math.min(1,v));
+    const layerPanes=[...panes.children].sort((a,b)=>Number(a.dataset.i)-Number(b.dataset.i));
+    const layerShadows=[...shadows.children].sort((a,b)=>Number(a.dataset.i)-Number(b.dataset.i));
+    const order=amount<0?layerPanes.slice().reverse():layerPanes;
+    order.forEach(g=>{const i=Number(g.dataset.i),shift=amount*(i-mid)*6;g.setAttribute('transform',`translate(${shift} 0)`);panes.append(g)});
+    layerShadows.forEach(g=>{const i=Number(g.dataset.i),shift=amount*(i-mid)*6;g.setAttribute('transform',`translate(${shift} 0)`)});
+    const name=Math.abs(amount)<.18?'Middle':amount<0?'Left':'Right';
+    label.textContent=name;
+    buttons.forEach(b=>b.setAttribute('aria-pressed',String((name==='Left'&&b.dataset.v==='-1')||(name==='Middle'&&b.dataset.v==='0')||(name==='Right'&&b.dataset.v==='1'))));
+    document.querySelector('#svgdesc').textContent=`${name} projected position. Pane marks stay level as horizontal overlaps and individual floor traces shift. A drawn screen study, not physical parallax.`;
+  }
+  slider.addEventListener('input',()=>setView(Number(slider.value)/100));
+  buttons.forEach(b=>b.addEventListener('click',()=>{slider.value=Number(b.dataset.v)*100;setView(Number(b.dataset.v))}));
+  let down=false,dragged=false,startX=0,startY=0;
+  svg.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'&&e.button!==0)return;down=true;dragged=false;startX=e.clientX;startY=e.clientY});
+  window.addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-startX,dy=e.clientY-startY;if(Math.abs(dx)>7&&Math.abs(dx)>Math.abs(dy))dragged=true;if(dragged)move(e)});
+  window.addEventListener('pointerup',e=>{if(down&&!dragged&&svg.contains(e.target))move(e);down=false});
+  window.addEventListener('pointercancel',()=>{down=false;dragged=false});
+  function move(e){const r=svg.getBoundingClientRect(),t=(e.clientX-r.left)/r.width;slider.value=Math.round((t*2-1)*100);setView(Number(slider.value)/100)}
+  setView(0);
+})();
+</script>
+</html>
