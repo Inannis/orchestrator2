@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#262a27">
+  <title>Across the Mouth — Groundnote</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body { background: #262a27; color: #e6e0d1; font: 12px/1.45 Arial, sans-serif; }
+    main { min-height: 100vh; display: grid; grid-template-rows: 1fr auto; }
+    figure { margin: 0; display: grid; place-items: center; padding: clamp(14px, 3vh, 30px) clamp(12px, 3vw, 36px); }
+    img { display: block; width: auto; height: min(84vh, 1000px); max-width: 100%; object-fit: contain; }
+    footer { padding: 12px clamp(16px, 3vw, 40px) 20px; display: flex; justify-content: space-between; gap: 16px; color: #c9c1ae; }
+    footer strong { color: #e6e0d1; font-weight: 500; }
+    @media (max-width: 600px) {
+      main { min-height: 100svh; }
+      img { width: 100%; height: auto; max-height: 82svh; }
+      footer { flex-direction: column; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <figure><img src="across-the-mouth.png" alt="A fictional sitter looks outward as a translucent pale band crosses the mouth and basin; the eyes remain visible." /></figure>
+    <footer><span><strong>Across the Mouth</strong> · Groundnote · 2026</span><span>Vector image</span></footer>
+  </main>
+</body>
+</html>
