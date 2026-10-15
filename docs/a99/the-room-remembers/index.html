@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b19">
+  <title>The Room Remembers — Groundnote</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --night: #171b19;
+      --paper: #ede8dc;
+      --muted: #a9a697;
+      --moss: #9da68a;
+      --ochre: #d4a466;
+      --rule: #41433b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--night);
+      color: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    main { width: min(100% - 3rem, 760px); margin: 0 auto; padding: 5.5rem 0 6rem; }
+    header { border-bottom: 1px solid var(--rule); padding-bottom: 2.5rem; }
+    .artist, .eyebrow, .state-number, .score-label, footer {
+      font-family: "Segoe UI", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .68rem;
+    }
+    .artist { color: var(--moss); }
+    h1 { font-size: clamp(2.7rem, 8vw, 5rem); font-weight: 400; line-height: .98; letter-spacing: -.045em; margin: 1.5rem 0 1rem; }
+    .dek { color: #c7c1b2; max-width: 36rem; font-size: 1.14rem; margin: 0; }
+    .eyebrow { color: var(--ochre); margin: 4.5rem 0 1.3rem; }
+    ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+    li { display: grid; grid-template-columns: 3.5rem 1fr; gap: 1rem; align-items: baseline; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+    .state-number { color: var(--moss); }
+    .sentence { font-size: clamp(1.12rem, 3vw, 1.45rem); }
+    .changed { color: var(--ochre); font-style: italic; }
+    .score { margin-top: 4.5rem; padding: 1.7rem 1.8rem 1.9rem; border-left: 2px solid var(--moss); background: #1d221f; }
+    .score-label { color: var(--moss); margin: 0 0 1rem; }
+    .score p { color: #d2cdbf; margin: 0; max-width: 39rem; }
+    .score p + p { margin-top: .9rem; }
+    footer { color: var(--muted); margin-top: 4rem; }
+    @media (max-width: 520px) {
+      main { width: min(100% - 2rem, 760px); padding-top: 3.5rem; }
+      li { grid-template-columns: 2.3rem 1fr; gap: .55rem; }
+      .score { padding: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="artist">Groundnote</div>
+      <h1>The Room<br>Remembers</h1>
+      <p class="dek">A sentence crosses a threshold one word at a time. The ground enters the room, then the room gives way to song and silence.</p>
+    </header>
+
+    <section aria-labelledby="text-title">
+      <h2 class="eyebrow" id="text-title">Text score · ten states</h2>
+      <ol>
+        <li><span class="state-number">01</span><span class="sentence">The room waits beside the window.</span></li>
+        <li><span class="state-number">02</span><span class="sentence">The room <span class="changed">listens</span> beside the window.</span></li>
+        <li><span class="state-number">03</span><span class="sentence">The room listens <span class="changed">beyond</span> the window.</span></li>
+        <li><span class="state-number">04</span><span class="sentence">The room listens beyond the <span class="changed">doorway</span>.</span></li>
+        <li><span class="state-number">05</span><span class="sentence">The <span class="changed">ground</span> listens beyond the doorway.</span></li>
+        <li><span class="state-number">06</span><span class="sentence">The ground listens <span class="changed">beneath</span> the doorway.</span></li>
+        <li><span class="state-number">07</span><span class="sentence">The ground listens beneath the <span class="changed">house</span>.</span></li>
+        <li><span class="state-number">08</span><span class="sentence">The ground listens beneath the <span class="changed">room</span>.</span></li>
+        <li><span class="state-number">09</span><span class="sentence">The ground listens beneath the <span class="changed">song</span>.</span></li>
+        <li><span class="state-number">10</span><span class="sentence">The ground listens beneath the <span class="changed">silence</span>.</span></li>
+      </ol>
+    </section>
+
+    <section class="score" aria-labelledby="spoken-title">
+      <h2 class="score-label" id="spoken-title">Spoken score</h2>
+      <p>At each interval between studio days, add the next dated state and keep the earlier lines. If days pass without an entry, leave their time as a rest.</p>
+      <p>Read the newest sentence evenly. When it changes, speak the preceding sentence once; give the changed word one beat after its expected place, then read the new sentence evenly through. Leave one breath before the next change. At the last line, let “silence” finish. Stop the pulse.</p>
+    </section>
+
+    <footer>Groundnote · 2026</footer>
+  </main>
+</body>
+</html>
