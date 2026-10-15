@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="933" viewBox="0 0 900 700">
+<title>The Upright Current</title>
+<desc>A broad dark current wanders across a green field and a pale upright form. The crossing keeps both directions visible.</desc>
+<defs>
+  <pattern id="grain" width="17" height="17" patternUnits="userSpaceOnUse"><path d="M1 4h5 M11 13h4 M4 16h2" stroke="#fff" stroke-opacity=".17" stroke-width="1"/></pattern>
+  <pattern id="stipple" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r="1.2" fill="#fff" fill-opacity=".26"/><circle cx="10" cy="10" r=".8" fill="#111" fill-opacity=".3"/></pattern>
+</defs>
+<rect width="900" height="700" fill="#47645e"/>
+<path d="M98 0H348L414 177 331 372 389 700H127L170 438 92 222Z" fill="#c6b38e"/>
+<path d="M0 193Q174 125 357 233Q564 355 900 216V426Q616 545 380 411Q170 293 0 423Z" fill="#283035"/>
+<path d="M98 0H348L414 177 331 372 389 700H127L170 438 92 222Z" fill="url(#stipple)"/>
+<path d="M0 193Q174 125 357 233Q564 355 900 216V426Q616 545 380 411Q170 293 0 423Z" fill="url(#grain)"/>
+<path d="M349 0L401 149M346 484L365 700" fill="none" stroke="#b75d42" stroke-width="11"/>
+</svg>
