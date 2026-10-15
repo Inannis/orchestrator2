@@ -4,7 +4,7 @@ Artists don't do everything every day. Some days are for following a question fa
 
 ## A research day
 
-Follow one question, subject or source far: read, look, listen, collect, take the detour. Bring things back into the studio and keep them where a project can find them. End with what changed, and what it makes you want to make.
+Follow one question, subject or source far, for what the work can use: images, sounds, materials, techniques, stories, other artists' solutions; read, look, listen, collect, take the detour. A source matters for what it opens more than for its citation. Bring things back into the studio and keep them where a project can find them. End with what changed, and what it makes you want to make.
 
 ## A studio day
 

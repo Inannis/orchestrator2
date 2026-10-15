@@ -1,14 +1,14 @@
 # A studio day
 
-Most days in the studio go round the same loop more than once: something comes in, you make a lot, you stop and look, you push the best of it further; then round again, deeper. At the end you look at the day's work cold and show what is ready. You'll be told which step comes next. Give each its whole turn.
+Most days in the studio pick up where the last one stopped and go round the same loop more than once: something comes in, you make a lot, you stop and look, you push the best of it further; then round again, deeper. A project lives across many days; a new one starts when the one you're in is finished, parked, or asks for a companion. At the end you look at the day's work cold and show what is ready. You'll be told which step comes next. Give each its whole turn.
 
 ## Intake
 
-Let something in that you didn't make. Most days that means going after what a project you're in needs: how a thing is really made, who did it before you, what it looked like, sounded like, meant. Other days it's something waiting in `inbox/`, an old work of yours, or a wander with no aim. Write down what came in and what it might change.
+Let something in that you didn't make. Most days that means going after what the project you're in needs, and looking again at the candidates it left waiting: how a thing is really made, who did it before you, what it looked like, sounded like, meant. Other days it's something waiting in `inbox/`, an old work of yours, or a wander with no aim. Write down what came in and what it might change.
 
 ## Making
 
-Enter one project, or begin one, and make many: quickly, in different ways, more than seems necessary. Don't judge yet; look as you make. On the second time round, go back into what the last round left open.
+Go back into the project you're in, or begin one if it's time, and make many: quickly, in different ways, more than seems necessary. Don't judge yet; look as you make. On the second time round, go back into what the last round left open.
 
 ## Judging
 
