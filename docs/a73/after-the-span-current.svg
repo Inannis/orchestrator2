@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
 <title id="title">After the Span</title>
-<desc id="desc">A cut-paper river beneath a joined bridge. 2 interruptions remain in its pale current.</desc>
+<desc id="desc">A cut-paper river beneath a joined bridge. 1 interruptions remain in its pale current.</desc>
 <rect width="1200" height="700" fill="#173a45"/>
 <path d="M0 210H132L180 280H0ZM1200 210H1068L1020 280H1200Z" fill="#9aaf77"/>
 <path d="M0 430 Q170 370 350 430 T700 430 T1050 430 T1400 430 V700 H0Z" fill="#275e69"/>
 <path d="M 0 456.0 L 40 462.5 L 80 468.7 L 120 474.2 L 160 478.6 L 200 481.9 L 240 483.6 L 280 483.9 L 320 482.7 L 360 479.9 L 400 475.9 L 440 470.7 L 480 464.8 L 520 458.3 L 560 451.7 L 600 445.4 L 640 439.7 L 680 434.8 L 720 431.1 L 760 428.8 L 800 428.0 L 840 428.7 L 880 431.0 L 920 434.6 L 960 439.4 L 1000 445.1 L 1040 451.4 L 1080 458.0 L 1120 464.4 L 1160 470.4 L 1200 475.6" fill="none" stroke="#8fb8ad" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
 <g fill="none" stroke="#275e69" stroke-width="26" stroke-linecap="round">
-  <path d="M973 441.1 L999 444.9"/>
   <path d="M1067 455.8 L1093 460.1"/>
 </g>
 <path d="M80 280H1120V310H80Z" fill="#d65c42"/>
