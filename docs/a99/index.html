@@ -1,23 +1,65 @@
-<!doctype html><meta charset=utf-8><title>a99</title><p><small>Generated listing. The studio has not made a front page.</small></p><ul><li><a href="a-narrow-room-left/a-narrow-room-left.png">a-narrow-room-left/a-narrow-room-left.png</a></li>
-<li><a href="a-narrow-room-left/a-narrow-room-left.svg">a-narrow-room-left/a-narrow-room-left.svg</a></li>
-<li><a href="a-narrow-room-left/index.html">a-narrow-room-left/index.html</a></li>
-<li><a href="across-the-mouth/across-the-mouth.png">across-the-mouth/across-the-mouth.png</a></li>
-<li><a href="across-the-mouth/index.html">across-the-mouth/index.html</a></li>
-<li><a href="at-the-far-edge/index.html">at-the-far-edge/index.html</a></li>
-<li><a href="at-the-far-edge/ledge-detail.jpg">at-the-far-edge/ledge-detail.jpg</a></li>
-<li><a href="at-the-far-edge/preview.png">at-the-far-edge/preview.png</a></li>
-<li><a href="at-the-far-edge/whole-frame.jpg">at-the-far-edge/whole-frame.jpg</a></li>
-<li><a href="no-margin-held/index.html">no-margin-held/index.html</a></li>
-<li><a href="no-margin-held/no-margin-held.png">no-margin-held/no-margin-held.png</a></li>
-<li><a href="one-rubbed-edge/index.html">one-rubbed-edge/index.html</a></li>
-<li><a href="one-rubbed-edge/one-rubbed-edge.png">one-rubbed-edge/one-rubbed-edge.png</a></li>
-<li><a href="the-crossing-stays-open/index.html">the-crossing-stays-open/index.html</a></li>
-<li><a href="the-crossing-stays-open/the-crossing-stays-open.png">the-crossing-stays-open/the-crossing-stays-open.png</a></li>
-<li><a href="the-crossing-stays-open/the-crossing-stays-open.svg">the-crossing-stays-open/the-crossing-stays-open.svg</a></li>
-<li><a href="the-room-remembers/index.html">the-room-remembers/index.html</a></li>
-<li><a href="the-upright-current/index.html">the-upright-current/index.html</a></li>
-<li><a href="the-upright-current/the-upright-current.png">the-upright-current/the-upright-current.png</a></li>
-<li><a href="the-upright-current/the-upright-current.svg">the-upright-current/the-upright-current.svg</a></li>
-<li><a href="three-lines-left-out/index.html">three-lines-left-out/index.html</a></li>
-<li><a href="three-lines-left-out/score.png">three-lines-left-out/score.png</a></li>
-<li><a href="three-lines-left-out/study.wav">three-lines-left-out/study.wav</a></li></ul>
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#202522">
+  <meta name="description" content="Images, scores, and sound by Groundnote.">
+  <title>Groundnote — Works</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { color-scheme: dark; --night: #202522; --paper: #eee8d9; --muted: #b4b19f; --rule: #4a5049; --moss: #a7b09a; }
+    body { margin: 0; background: var(--night); color: var(--paper); font: 16px/1.55 Georgia, serif; }
+    main { width: min(100% - 2.5rem, 1320px); margin: 0 auto; padding: clamp(34px, 7vw, 88px) 0 72px; }
+    header { max-width: 760px; margin-bottom: clamp(40px, 7vw, 84px); }
+    .artist, .kind { color: var(--moss); font: 600 .7rem/1.4 "Segoe UI", sans-serif; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { font-size: clamp(3rem, 8vw, 6.5rem); line-height: .92; letter-spacing: -.055em; font-weight: 400; margin: 1.2rem 0 1.5rem; }
+    header p { color: #cbc7b8; font-size: clamp(1.1rem, 2vw, 1.35rem); max-width: 35em; }
+    h2 { font: 400 clamp(1.8rem, 3vw, 2.4rem)/1.1 Georgia, serif; margin: 0 0 1.4rem; }
+    section + section { margin-top: 4.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+    article { min-width: 0; background: var(--night); padding: 12px 12px 19px; }
+    article a { color: inherit; text-decoration: none; }
+    article a:hover h3, article a:focus-visible h3 { text-decoration: underline; text-underline-offset: .2em; }
+    .thumb { display: grid; place-items: center; height: clamp(170px, 23vw, 300px); background: #d8d0bc; overflow: hidden; }
+    .thumb img { display: block; max-width: 100%; max-height: 100%; width: 100%; height: 100%; object-fit: contain; }
+    .thumb.text { background: #171b19; color: #ede8dc; padding: 1rem; font-size: clamp(1.3rem, 2.2vw, 2rem); text-align: center; }
+    .kind { margin: 1.25rem 0 .35rem; font-size: .62rem; }
+    h3 { margin: 0; font-size: clamp(1.15rem, 1.7vw, 1.55rem); line-height: 1.15; font-weight: 400; }
+    article p { margin: .6rem 0 0; color: var(--muted); font-size: .92rem; }
+    footer { margin-top: 4rem; border-top: 1px solid var(--rule); padding-top: 1rem; color: var(--muted); font: .68rem/1.5 "Segoe UI", sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    @media (max-width: 850px) { .grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+    @media (max-width: 560px) { main { width: min(100% - 1.2rem, 1320px); } .grid { grid-template-columns: 1fr; } .thumb { height: 65vw; max-height: 360px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="artist">Groundnote · Selected work</div>
+      <h1>Images, scores,<br>and sound.</h1>
+      <p>Work made by returning to a ground, a room, a phrase, or the terms of an image. Each work is shown in the form it took.</p>
+    </header>
+    <section aria-labelledby="images-title">
+      <h2 id="images-title">Images</h2>
+      <div class="grid">
+        <article><a href="the-center-stays-open/index.html"><div class="thumb"><img src="the-center-stays-open/the-center-stays-open.png" alt="Green field around an off-center pale opening, with four small marks inside." loading="lazy"></div><p class="kind">Digital image</p><h3>The Center Stays Open</h3><p>Four marks stop inside an open center.</p></a></article>
+        <article><a href="the-upright-current/index.html"><div class="thumb"><img src="the-upright-current/the-upright-current.png" alt="A dark horizontal current crosses a pale upright shape." loading="lazy"></div><p class="kind">Digital image</p><h3>The Upright Current</h3><p>Two directions cross without becoming a reply.</p></a></article>
+        <article><a href="the-crossing-stays-open/index.html"><div class="thumb"><img src="the-crossing-stays-open/the-crossing-stays-open.png" alt="Two tilted supports cross while leaving the center open." loading="lazy"></div><p class="kind">Digital image</p><h3>The Crossing Stays Open</h3><p>A crossing with no settled center.</p></a></article>
+        <article><a href="a-narrow-room-left/index.html"><div class="thumb"><img src="a-narrow-room-left/a-narrow-room-left.png" alt="A narrow pale opening between broad fields." loading="lazy"></div><p class="kind">Digital image</p><h3>A Narrow Room Left</h3><p>A small opening held between larger forms.</p></a></article>
+        <article><a href="one-rubbed-edge/index.html"><div class="thumb"><img src="one-rubbed-edge/one-rubbed-edge.png" alt="Two dark fields separated by an open gap, with pale marks along one edge." loading="lazy"></div><p class="kind">Digital image</p><h3>One Rubbed Edge</h3><p>A single altered edge leaves a wide interval.</p></a></article>
+        <article><a href="no-margin-held/index.html"><div class="thumb"><img src="no-margin-held/no-margin-held.png" alt="Bright, overlapping geometric forms fill the frame." loading="lazy"></div><p class="kind">Digital image</p><h3>No Margin Held</h3><p>Color fields press to the edges.</p></a></article>
+        <article><a href="across-the-mouth/index.html"><div class="thumb"><img src="across-the-mouth/across-the-mouth.png" alt="A fictional sitter looks outward beneath a pale band." loading="lazy"></div><p class="kind">Digital image</p><h3>Across the Mouth</h3><p>A band crosses the face while the eyes remain visible.</p></a></article>
+      </div>
+    </section>
+    <section aria-labelledby="scores-title">
+      <h2 id="scores-title">Scores and sound</h2>
+      <div class="grid">
+        <article><a href="at-the-far-edge/index.html"><div class="thumb"><img src="at-the-far-edge/preview.png" alt="A lapwing stands on a ledge, with another bird at the far edge." loading="lazy"></div><p class="kind">Looking score</p><h3>Look, then look again</h3><p>A score for returning to a photograph at different distances.</p></a></article>
+        <article><a href="the-room-remembers/index.html"><div class="thumb text" aria-hidden="true">The ground listens<br>beneath the silence.</div><p class="kind">Text score</p><h3>The Room Remembers</h3><p>A sentence changes one word at a time across ten states.</p></a></article>
+        <article><a href="three-lines-left-out/index.html"><div class="thumb"><img src="three-lines-left-out/score.png" alt="Three invented pitch contours on a shared timing pattern." loading="lazy"></div><p class="kind">Sound and score</p><h3>Three Lines Left Out</h3><p>An original sound study with three invented pitch lines.</p></a></article>
+      </div>
+    </section>
+    <footer>Groundnote · Digital images, scores, and sound</footer>
+  </main>
+</body>
+</html>

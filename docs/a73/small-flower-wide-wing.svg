@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-labelledby="t d">
+<title id="t">Small Flower, Wide Wing</title>
+<desc id="d">A large orange butterfly wing extends toward a small pale violet flower. Dark marks and fine veins break the wing's field; green stems cross below.</desc>
+<rect width="960" height="680" fill="#343a34"/>
+<!-- stems first: they continue beyond the crop and cross without making a frame -->
+<g fill="none" stroke="#77876c" stroke-linecap="round">
+ <path d="M84 710 C168 582 206 467 226 318 S266 135 278 35" stroke-width="17"/>
+ <path d="M340 710 C329 570 382 470 430 382 S484 181 489 44" stroke-width="12"/>
+ <path d="M720 710 C684 566 718 464 748 371 S807 199 855 78" stroke-width="13"/>
+ <path d="M92 564 C186 523 226 506 299 494 M125 417 C200 394 247 365 293 322 M687 523 C622 476 603 430 594 386" stroke-width="8"/>
+</g>
+<g fill="#a1a97d">
+ <path d="M101 564 Q191 503 299 494 Q252 573 101 564Z"/><path d="M141 415 Q217 351 293 322 Q274 399 141 415Z"/>
+ <path d="M683 522 Q624 446 594 386 Q679 420 726 514Z"/><path d="M748 370 Q793 285 855 250 Q851 329 748 370Z"/>
+</g>
+<!-- One broad wing, irregular at the edge and cut by veins -->
+<path fill="#df7137" d="M584 349 C531 315 461 280 386 245 C328 216 282 185 266 143 C248 95 287 47 345 38 C408 27 449 80 478 126 C512 180 555 250 610 319 C646 360 645 376 603 383 C554 393 504 434 452 492 C407 544 374 598 327 607 C273 618 235 581 244 530 C251 485 300 445 354 413 C430 369 507 349 584 349Z"/>
+<g fill="none" stroke="#f1a05a" stroke-width="5" opacity=".85" stroke-linecap="round">
+ <path d="M590 350 C519 286 457 198 416 89"/><path d="M584 353 C486 318 383 265 285 156"/>
+ <path d="M584 357 C477 359 362 399 260 527"/><path d="M584 360 C496 417 413 500 340 594"/>
+ <path d="M515 317 C483 266 459 221 449 181"/><path d="M480 377 C423 393 379 415 338 450"/>
+</g>
+<!-- dark flecks follow the wing's changing direction -->
+<g fill="#292b27">
+ <path d="M325 67 Q344 58 356 75 L348 94 L328 92Z"/><path d="M386 94 Q405 82 418 100 L410 119 L390 117Z"/>
+ <path d="M440 145 Q458 132 471 151 L463 170 L443 167Z"/><path d="M478 208 Q495 195 509 214 L501 233 L481 230Z"/>
+ <path d="M524 270 Q541 257 554 276 L546 294 L526 292Z"/><path d="M285 526 Q301 511 315 529 L307 548 L287 546Z"/>
+ <path d="M339 557 Q358 543 371 562 L363 581 L343 579Z"/><path d="M393 494 Q411 482 425 500 L417 519 L397 517Z"/>
+</g>
+<g fill="#f3eadb" stroke="#343a34" stroke-width="4">
+ <path d="M670 346 C610 297 627 264 656 267 C682 269 690 311 682 340Z"/>
+ <path d="M684 341 C690 279 727 275 737 300 C747 324 714 349 687 356Z"/>
+ <path d="M688 356 C750 332 773 359 755 379 C738 398 704 376 683 364Z"/>
+ <path d="M679 367 C712 419 684 444 662 426 C641 409 662 380 679 360Z"/>
+ <path d="M669 359 C615 393 587 370 603 348 C618 328 649 345 675 352Z"/>
+</g>
+<circle cx="678" cy="355" r="14" fill="#dbad55"/>
+<!-- the animal is only a small body at the edge of the wing and bloom -->
+<path d="M573 352 C599 339 627 340 660 353 C635 366 606 373 578 362Z" fill="#292b27"/>
+<circle cx="650" cy="350" r="6" fill="#1d211e"/>
+<g fill="none" stroke="#292b27" stroke-width="3" stroke-linecap="round">
+ <path d="M642 347 Q650 325 660 321 M646 348 Q663 333 672 335 M620 358 Q603 378 589 380 M628 360 Q618 382 608 392"/>
+</g>
+</svg>
