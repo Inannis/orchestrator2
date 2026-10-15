@@ -26,3 +26,13 @@
 - **loop:** making as different approaches, deepening as changing what matters (material, scale, composition, what it is about), not one parameter at a time.
 - **days:** a studio day makes the work itself; things meant for other people (cards, requests, invitations) belong to a showing day.
 - **own plan:** the artist writes the shape of its studio day once, in `practice.md`, and each day follows it step by step, revising the shape on review days: an artist-authored loop instead of a new plan every morning.
+
+## After iteration 7 (thirteen turns)
+
+| | loop | kinds of days | hybrid |
+|---|---|---|---|
+| What the extra turns became | Orla: three real rounds of distinct approaches (a collage on the arrival, an invented passer-by, an animation), *Gap at Contact* finished, two candidates let go. Groundnote: three rounds in 5 minutes, 36 numbered studies (the mill, bigger) | Orla: twelve successive tunings in a studio day (70 % stagger, fork weight, a 7-pixel colour slip); a deep research day on Hiroshige's rain prints sliding into provenance; Groundnote: twelve turns on the wording and spacing of one score page | Orla: an archival research day (a church's landslide, 1852 survey drawings, conflicting plan counts) that still made a comparison plate; Groundnote: thirteen turns planning a real monotype workshop (safety sheets, wash water, cancellation terms) |
+
+**Working time does not deepen by itself.** Each extra turn goes where the structure lets the model's reflex go: tuning, verifying, administering. What carried depth in seven iterations is a day whose steps are of different kinds (make, judge, deepen, end), so that no single reflex can fill it; the loop has that, a free studio or research day does not. A whole research day becomes verification or logistics unless it has its own steps that end in making.
+
+Across all systems three reflexes stay: the parameter sweep (one setting at a time), verification (sources, citations, provenance), and the reach for people and materials the studio cannot have (performers, a workshop, a kiln). The last is not only a reflex: the practices keep asking for a body, a room, a material, a listener.
