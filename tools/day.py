@@ -46,7 +46,7 @@ if not GUIDE and sj and sj.exists():
     SESSION = json.loads(sj.read_text(encoding="utf-8"))
     prompt += "\n\n" + SESSION["open"]
     if not resume: k = len(SESSION["steps"])
-    else: step[0] = max(0, len(SESSION["steps"]) - k - 1)
+    else: step[0] = max(0, len(SESSION["steps"]) + 1 - k)  # a resumed day first finishes the cut turn, then takes the next step
 handed = set()  # files already handed back today: no repeats within a day
 
 def own_file():
@@ -67,6 +67,8 @@ def own_file():
     pick = random.choice(earlier or fresh or fs) if fs else None
     if pick: handed.add(pick)
     return pick
+
+CONTINUE = "Go on from where you were."  # after a dropped connection: the same turn goes on, nothing else changes
 
 def more(first_arrival):
     if SESSION:
@@ -180,7 +182,7 @@ t0 = time.time(); turns = 0; cost = 0.0; tok = 0; enc = "none"; err = None; wait
 STREAM.write_text("", encoding="utf-8"); mark(type="day", id=aid, n=n, model=model, effort=effort, k=k, resumed=bool(resume))
 if os.name == "nt" and "--no-window" not in args:  # a console window that shows the day as it happens; it closes when the day ends
     subprocess.Popen([sys.executable, str(root / "tools" / "watch.py"), str(STREAM)], creationflags=subprocess.CREATE_NEW_CONSOLE)
-msgs = [prompt] if not resume else [more(False)]
+msgs = [prompt] if not resume else [CONTINUE]  # a resumed day finishes its cut turn first
 sid = resume
 with log.open("w", encoding="utf-8") as f:
     f.write(f"# {aid} session {n} · {today} · {model} · effort {effort} · K={k}\n\n")
@@ -191,17 +193,17 @@ with log.open("w", encoding="utf-8") as f:
         while d.get("is_error") and "limit" in str(d.get("result", "")) and waits < 3 and "--wait" in args and wait_for_reset(str(d.get("result", ""))):
             waits += 1; sid = d.get("session_id") or sid
             f.write(f"## (usage limit; waited for the reset, same day continues)\n\n"); f.flush()
-            d = turn(more(False) if sid else msgs[-1], sid)
+            d = turn(CONTINUE if sid else msgs[-1], sid)
         sid = d.get("session_id", sid); cost += d.get("total_cost_usd") or 0
         u = d.get("usage") or {}; tok += sum(u.get(x, 0) or 0 for x in ["input_tokens", "output_tokens", "cache_creation_input_tokens", "cache_read_input_tokens"])
         sent = "(session prompt)" if (i == 0 and not resume) else msgs[-1]
         f.write(f"## turn {i + 1}\n\n> {sent}\n\n{d.get('result', '')}\n\n"); f.flush()
         mark(type="turn_end", turn=i + 1, of=total, prompt=sent)
         retries = 0
-        while d.get("is_error") and "limit" not in str(d.get("result", "")) and retries < 2:
-            retries += 1; time.sleep(60); sid = d.get("session_id") or sid
-            f.write("## (API error; retried the same turn)\n\n"); f.flush()
-            d = turn(more(False) if sid else msgs[-1], sid)
+        while d.get("is_error") and "limit" not in str(d.get("result", "")) and retries < 6:  # a dropped connection: the same turn continues
+            time.sleep([30, 60, 120, 240, 480, 600][retries]); retries += 1; sid = d.get("session_id") or sid
+            f.write("## (connection dropped; the same turn continued)\n\n"); f.flush()
+            d = turn(CONTINUE if sid else msgs[-1], sid)
             sid = d.get("session_id", sid)
         if d.get("is_error"):
             err = str(d.get("result", ""))[:300]
