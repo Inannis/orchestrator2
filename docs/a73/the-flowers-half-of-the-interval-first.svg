@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 720" role="img" aria-labelledby="title desc">
+<title id="title">The Flower's Half of the Interval</title>
+<desc id="desc">A broad orange wing enters from the left and leaves a dark crescent around a small intact flower. A fine line reaches from the wing's body to one petal; the flower's stem continues beyond the frame.</desc>
+<rect width="1024" height="720" fill="#323832"/>
+<!-- A few stems drift through the lower field; none cages the meeting. -->
+<g fill="none" stroke="#879078" stroke-linecap="round">
+ <path d="M188 755 C230 623 247 507 229 392 S191 185 250 -28" stroke-width="12"/>
+ <path d="M746 754 C765 653 758 539 772 450 S809 373 827 339 S873 221 924 119" stroke-width="10"/>
+ <path d="M113 590 C208 534 251 508 321 469 M697 547 C738 512 754 472 772 450" stroke-width="7"/>
+</g>
+<g fill="#a1a782">
+ <path d="M116 590 Q221 506 321 469 Q277 559 116 590Z"/>
+ <path d="M694 550 Q730 490 772 450 Q783 524 694 550Z"/>
+ <path d="M834 320 Q863 229 924 188 Q913 276 834 320Z"/>
+</g>
+<!-- The wing's broad sweep narrows to one point, then turns away from the bloom. -->
+<path fill="#df7137" d="M-38 -35 L251 -35 C289 61 330 148 393 211 C456 275 537 311 624 329 C657 336 680 337 704 331 C684 348 662 361 630 371 C557 396 494 428 438 481 C375 540 325 609 257 651 C199 687 132 672 100 626 C65 575 85 520 134 471 C186 419 245 381 300 355 C208 336 123 323 54 284 C2 254 -25 205 -38 151Z"/>
+<!-- Broken veins stop short of the small open interval. -->
+<g fill="none" stroke="#f3a365" stroke-width="5" stroke-linecap="round" opacity=".9">
+ <path d="M623 365 C516 401 423 471 351 553 L282 633"/>
+ <path d="M481 409 C423 433 372 467 327 508"/>
+</g>
+<g fill="#292c27">
+ <path d="M115 55 Q136 39 152 63 L145 89 L119 86Z"/>
+ <path d="M210 114 Q235 94 251 121 L243 148 L216 145Z"/>
+ <path d="M309 186 Q332 167 348 194 L340 220 L315 217Z"/>
+ <path d="M402 251 Q427 231 443 258 L435 285 L409 281Z"/>
+ <path d="M167 535 Q191 513 207 541 L199 568 L173 565Z"/>
+ <path d="M264 589 Q286 571 302 597 L294 623 L270 620Z"/>
+</g>
+<!-- The feeding body is a dark, small hinge, separated from the flower's center. -->
+<path fill="#20241f" d="M585 335 C610 322 639 326 668 338 C647 353 619 358 592 350Z"/>
+<circle cx="660" cy="335" r="5" fill="#171a17"/>
+<path d="M666 341 C688 338 700 337 716 333" fill="none" stroke="#20241f" stroke-width="3" stroke-linecap="round"/>
+<g fill="none" stroke="#20241f" stroke-width="2.5" stroke-linecap="round">
+ <path d="M635 340 Q645 319 656 316 M641 342 Q658 326 668 328 M613 351 Q596 369 582 370 M624 353 Q614 373 603 382"/>
+</g>
+<!-- Five separate petals retain their full outline around an untouched center. -->
+<g fill="#f0e8d7" stroke="#323832" stroke-width="3">
+ <path d="M749 316 C712 281 724 252 745 251 C766 250 773 285 758 313Z"/>
+ <path d="M758 313 C758 267 785 255 799 272 C813 290 787 315 763 323Z"/>
+ <path d="M763 323 C806 302 827 322 815 342 C804 361 779 345 758 333Z"/>
+ <path d="M755 331 C779 369 759 393 739 382 C719 371 733 346 750 327Z"/>
+ <path d="M746 324 C704 345 686 323 701 306 C715 290 735 310 753 316Z"/>
+</g>
+<circle cx="754" cy="324" r="11" fill="#d8aa55"/>
+</svg>

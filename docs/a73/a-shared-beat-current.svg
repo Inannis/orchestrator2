@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-labelledby="title desc">
 <title id="title">A Shared Beat: the edge that stays</title>
-<desc id="desc">A green cut shape carries a deepening inward turn. This state is 0 of 12; each day away deepens the notch a little.</desc>
+<desc id="desc">A green cut shape carries a deepening inward turn. This state is 1 of 12; each day away deepens the notch a little.</desc>
 <rect width="900" height="440" fill="#202a2b"/>
-<path fill="#7db4a1" d="M250 159 L333 126 L418 136 L477 167 L543 203 L650 220 L640 220 L650 238 L650 258 L640 258 L543 277 L477 313 L418 344 L333 354 L250 321 L220 277 L220 203Z"/>
-<path fill="none" stroke="#e8dfca" stroke-width="2" d="M650 220H640 M650 258H640" opacity=".75"/>
+<path fill="#7db4a1" d="M250 159 L333 126 L418 136 L477 167 L543 203 L650 220 L635 220 L650 238 L650 258 L635 258 L543 277 L477 313 L418 344 L333 354 L250 321 L220 277 L220 203Z"/>
+<path fill="none" stroke="#e8dfca" stroke-width="2" d="M650 220H635 M650 258H635" opacity=".75"/>
 <text x="52" y="72" fill="#e8dfca" font-family="Georgia,serif" font-size="22">A change kept overnight</text>
-<text x="52" y="392" fill="#a9b1a5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">TURN 00 / 12</text>
+<text x="52" y="392" fill="#a9b1a5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">TURN 01 / 12</text>
 </svg>

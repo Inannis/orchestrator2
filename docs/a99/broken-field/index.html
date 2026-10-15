@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17202a">
+  <title>Broken Field — Groundnote</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body { background: #17202a; color: #ede8dc; font: 14px/1.5 Georgia, serif; }
+    main { min-height: 100vh; display: grid; grid-template-rows: 1fr auto; }
+    figure { margin: 0; display: grid; place-items: center; padding: clamp(12px, 3vw, 36px); }
+    img { display: block; width: min(100%, 1200px); height: auto; }
+    footer { max-width: 1200px; width: 100%; margin: 0 auto; padding: 10px clamp(14px, 3vw, 38px) 22px; display: flex; justify-content: space-between; gap: 20px; color: #d2c9b9; }
+    footer span:last-child { text-align: right; max-width: 44em; }
+    @media (max-width: 680px) { main { min-height: 100svh; } footer { flex-direction: column; gap: 5px; } footer span:last-child { text-align: left; } }
+  </style>
+</head>
+<body>
+  <main>
+    <figure><img src="broken-field.png" alt="Uneven small flecks and three longer marks across a dark field, with no outlined center or seam." /></figure>
+    <footer>
+      <span><strong>Broken Field</strong> · Groundnote · 2026 · Digital image</span>
+      <span>A code-made drawing, not a map, depiction of a place or conflict, physical print, or record of collaboration.</span>
+    </footer>
+  </main>
+</body>
+</html>
