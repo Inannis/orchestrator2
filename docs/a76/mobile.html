@@ -1,0 +1,44 @@
+<!doctype html><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><title>mobile</title>
+<style>html,body{margin:0;height:100%;background:#efe6d6;overflow:hidden}canvas{display:block;width:100%;height:100%;touch-action:none}</style>
+<canvas id=c></canvas>
+<script>
+const c=document.getElementById('c'),x=c.getContext('2d');let W,H;
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight}rs();onresize=rs;
+// node: arm length split, children; angle a, velocity v
+function arm(l,left,right,col){return{l,left,right,col,a:0,v:0,m:0}}
+function mass(n){if(n.r!==undefined)return n.m=n.r*n.r;n.m=mass(n.left)+mass(n.right);return n.m}
+const R=(r,col)=>({r,col});
+const tree=arm(150,
+ arm(90,R(16,'#b23a2a'),arm(60,R(10,'#2d4a7a'),R(14,'#1a1a1a'),'#222'),'#222'),
+ arm(110,R(20,'#d9a431'),arm(70,R(12,'#1a1a1a'),arm(40,R(7,'#b23a2a'),R(9,'#2d4a7a'),'#222'),'#222'),'#222'),'#222');
+mass(tree);
+let t=0,push=0;
+function step(n,wind){
+ if(n.r!==undefined)return;
+ const ml=n.left.m,mr=n.right.m,tot=ml+mr;
+ const pl=n.l*mr/tot,pr=n.l*ml/tot;n.pl=pl;n.pr=pr;
+ n.v+=(-n.a*0.9-n.v*0.35+wind)*0.016;n.a+=n.v;
+ step(n.left,wind*0.7);step(n.right,wind*0.7);
+}
+function draw(n,px,py,ang){
+ if(n.r!==undefined){x.fillStyle=n.col;x.beginPath();x.arc(px,py+n.r,n.r,0,7);x.fill();
+  x.strokeStyle='#222';x.lineWidth=1;x.beginPath();x.moveTo(px,py);x.lineTo(px,py+0);x.stroke();return}
+ const a=ang+n.a,dx=Math.cos(a),dy=Math.sin(a);
+ const lx=px-dx*n.pl,ly=py-dy*n.pl,rx=px+dx*n.pr,ry=py+dy*n.pr;
+ x.strokeStyle=n.col;x.lineWidth=2;x.beginPath();x.moveTo(lx,ly);x.lineTo(rx,ry);x.stroke();
+ const drop=n.left.r!==undefined?40:60,drop2=n.right.r!==undefined?40:60;
+ x.lineWidth=1;
+ x.beginPath();x.moveTo(lx,ly);x.lineTo(lx,ly+drop);x.stroke();
+ x.beginPath();x.moveTo(rx,ry);x.lineTo(rx,ry+drop2);x.stroke();
+ draw(n.left,lx,ly+drop,0);draw(n.right,rx,ry+drop2,0);
+}
+function loop(){t+=0.016;
+ const wind=Math.sin(t*0.37)*Math.sin(t*0.11+1)*0.012+push;push*=0.9;
+ step(tree,wind);
+ x.clearRect(0,0,W,H);x.fillStyle='#efe6d6';x.fillRect(0,0,W,H);
+ const s=Math.min(W,H)/420;x.save();x.translate(W/2,0);x.scale(s,s);
+ x.strokeStyle='#222';x.lineWidth=1;x.beginPath();x.moveTo(0,0);x.lineTo(0,70);x.stroke();
+ draw(tree,0,70,0);x.restore();requestAnimationFrame(loop)}
+loop();
+c.addEventListener('pointerdown',e=>{push=(e.clientX<W/2?1:-1)*0.05});
+</script>
