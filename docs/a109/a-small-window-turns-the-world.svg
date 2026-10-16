@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 720" role="img" aria-labelledby="title desc">
+<title id="title">A Small Window Turns the World</title>
+<desc id="desc">A three-step pinhole experiment. An upright red shape faces a cut card; straight light paths cross at the small opening and form an upside-down image on a screen.</desc>
+<rect width="1500" height="720" fill="#f1eadb"/>
+<g font-family="Georgia,serif" fill="#f1eadb">
+ <g transform="translate(0)">
+  <rect width="490" height="720" fill="#173a45"/>
+  <text x="38" y="66" font-size="25" fill="#ead9a0">01</text>
+  <path d="M58 342 L112 342 L150 278 L188 342 L188 415 L58 415Z" fill="#d65c42"/>
+  <path d="M232 232V364 M232 392V524" fill="none" stroke="#ead9a0" stroke-width="15"/>
+  <path d="M355 232V524" stroke="#8fb8ad" stroke-width="12"/>
+  <text x="53" y="580" font-size="19">upright shape</text>
+  <text x="197" y="580" font-size="19">cut card</text>
+  <text x="323" y="580" font-size="19">screen</text>
+ </g>
+ <g transform="translate(505)">
+  <rect width="490" height="720" fill="#173a45"/>
+  <text x="38" y="66" font-size="25" fill="#ead9a0">02</text>
+  <path d="M58 342 L112 342 L150 278 L188 342 L188 415 L58 415Z" fill="#d65c42"/>
+  <path d="M188 278L232 378L355 478 M188 415L232 378L355 341" fill="none" stroke="#d65c42" stroke-width="4"/>
+  <path d="M232 232V364 M232 392V524" fill="none" stroke="#ead9a0" stroke-width="15"/>
+  <path d="M355 232V524" stroke="#8fb8ad" stroke-width="12"/>
+  <circle cx="232" cy="378" r="7" fill="#f1eadb"/>
+  <text x="55" y="580" font-size="19">two straight paths</text>
+  <text x="202" y="615" font-size="18">cross at the opening</text>
+ </g>
+ <g transform="translate(1010)">
+  <rect width="490" height="720" fill="#173a45"/>
+  <text x="38" y="66" font-size="25" fill="#ead9a0">03</text>
+  <path d="M58 342 L112 342 L150 278 L188 342 L188 415 L58 415Z" fill="#d65c42" opacity=".45"/>
+  <path d="M188 278L232 378L355 478 M188 415L232 378L355 341" fill="none" stroke="#8fb8ad" stroke-width="3" opacity=".8"/>
+  <path d="M232 232V364 M232 392V524" fill="none" stroke="#ead9a0" stroke-width="15"/>
+  <path d="M355 232V524" stroke="#8fb8ad" stroke-width="12"/>
+  <path d="M349 414 L402 414 L440 478 L478 414 L478 341 L349 341Z" fill="#d65c42"/>
+  <text x="365" y="580" text-anchor="middle" font-size="17">image</text>
+  <text x="365" y="607" text-anchor="middle" font-size="17">upside down</text>
+ </g>
+</g>
+<path d="M495 0V720 M1000 0V720" stroke="#ead9a0" stroke-width="2" opacity=".7"/>
+</svg>

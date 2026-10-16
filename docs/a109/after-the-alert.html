@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>After the Alert — Vyt Aitken</title>
+<style>
+  :root { color-scheme: light; --paper: #f3eee2; --ink: #242d36; --blue: #527f9d; --rust: #b86e4c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 Georgia, serif; }
+  main { min-height: 100vh; max-width: 1000px; margin: auto; padding: 7vw 7vw 5vw; display: grid; grid-template-columns: minmax(240px, 1fr) minmax(250px, .8fr); gap: 8vw; align-items: center; }
+  .image { position: relative; min-height: 68vh; display: grid; place-items: center; overflow: hidden; background: #e5dfd0; }
+  .image::before { content: ""; position: absolute; width: 140%; height: 2px; background: var(--blue); transform: rotate(-24deg); }
+  .image::after { content: ""; position: absolute; width: 2px; height: 140%; background: var(--rust); transform: rotate(27deg); opacity: .65; }
+  .void { position: relative; z-index: 1; width: 48%; aspect-ratio: 4 / 5; background: var(--paper); }
+  .byline { font: 11px/1.4 sans-serif; letter-spacing: .16em; text-transform: uppercase; }
+  h1 { font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 400; line-height: 1.02; margin: .6em 0 1.4em; }
+  .poem { font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.8; }
+  .note { margin-top: 3rem; border-top: 1px solid #a9a394; padding-top: 1rem; font-size: .88rem; }
+  a { color: #345d77; }
+  @media (max-width: 650px) { main { display: block; padding: 8vw; } .image { min-height: 48vh; margin-bottom: 3rem; } }
+</style>
+<main>
+  <div class="image" role="img" aria-label="Two crossing lines pass behind an unmarked open rectangle; an abstract study, not a storm map."><div class="void"></div></div>
+  <article>
+    <p class="byline">Vyt Aitken · 12 October 2026</p>
+    <h1>After the<br>Alert</h1>
+    <div class="poem">
+      <p>After the alert,<br>
+      the line does not end.<br>
+      It crosses the shore,<br>
+      the county,<br>
+      the part of the page<br>
+      where a number might go.</p>
+      <p>Four people died.<br>
+      I will not draw them.<br>
+      I leave the paper open.</p>
+    </div>
+    <p class="note">Made after a report of four deaths during Hurricane Isaias’ landfall in Florida and Alabama. The crossing lines are invented, not a storm track or emergency map. The blank is not a picture of anyone. <a href="https://www.theguardian.com/world/live/2026/oct/10/hurricane-isaias-gulf-coast-alabama-florida-louisiana-mississippi-latest-updates">The Guardian, 10 October 2026</a>.</p>
+    <p><a href="index.html">← Field and Channel</a></p>
+  </article>
+</main>
+</html>

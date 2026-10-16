@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
+<title id="title">Before the Other Hand</title>
+<desc id="desc">Two cut-paper hands face across an open field. A red line leaves one hand and stops just short of the other.</desc>
+<rect width="1000" height="640" fill="#173a45"/>
+<!-- The offered hand extends from the left edge. -->
+<path d="M0 445 L142 429 Q166 426 185 408 L263 335 Q280 319 299 329 Q319 340 309 358 L270 404 L322 378 Q344 368 359 383 Q375 399 358 416 L312 458 Q340 448 357 464 Q371 480 352 496 L321 523 Q307 536 284 537 L0 558Z" fill="#ead9a0"/>
+<!-- The receiving hand stays open, without closing around the line. -->
+<path d="M1000 445 L858 429 Q834 426 815 408 L737 335 Q720 319 701 329 Q681 340 691 358 L730 404 L678 378 Q656 368 641 383 Q625 399 642 416 L688 458 Q660 448 643 464 Q629 480 648 496 L679 523 Q693 536 716 537 L1000 558Z" fill="#ead9a0"/>
+<!-- One line leaves the left fingertips; a measured gap remains at the other palm. -->
+<path d="M306 354 C391 322 451 370 518 392 C564 410 596 398 640 391" fill="none" stroke="#d65c42" stroke-width="12" stroke-linecap="round"/>
+
+</svg>

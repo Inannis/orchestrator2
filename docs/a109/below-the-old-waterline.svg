@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+<title id="title">Below the Old Waterline</title>
+<desc id="desc">A terracotta vessel holds a low blue pool beneath a fine, broken mark left higher on its inner wall. A few blue cut fragments travel sideways on spare lines of warm air.</desc>
+<defs>
+ <clipPath id="inside"><path d="M180 310 C184 406 237 562 360 618 C483 562 536 406 540 310 C488 341 430 352 360 352 C290 352 232 341 180 310Z"/></clipPath>
+</defs>
+<rect width="720" height="900" fill="#f1ead8"/>
+<!-- Three dry currents cross the page with room between them. -->
+<g fill="none" stroke="#c9a87a" stroke-linecap="round">
+ <path d="M67 209 C154 180 227 211 297 191 C354 174 400 180 448 196" stroke-width="3" opacity=".56"/>
+ <path d="M451 196 C507 215 550 210 641 176" stroke-width="3" opacity=".56"/>
+ <path d="M91 242 C170 219 230 245 280 231" stroke-width="2" opacity=".38"/>
+ <path d="M498 231 C548 242 581 226 656 204" stroke-width="2" opacity=".38"/>
+ <path d="M99 270 C146 259 170 268 202 262" stroke-width="2" opacity=".28"/>
+</g>
+<!-- Water's pale blue pieces lift, then travel with the air. -->
+<g fill="#4d8490">
+ <path d="M284 278 Q291 258 300 248 Q303 268 296 280Z"/>
+ <path d="M331 239 Q339 223 348 218 Q347 235 340 243Z" opacity=".82"/>
+ <path d="M392 226 Q403 217 415 219 Q405 229 394 231Z" opacity=".72"/>
+ <path d="M487 206 Q499 199 509 201 Q500 209 489 211Z" opacity=".54"/>
+ <path d="M555 189 Q562 183 571 183 Q564 190 556 193Z" opacity=".36"/>
+</g>
+<!-- The vessel is one unbroken clay cut. -->
+<path d="M142 303 C151 438 213 618 360 687 C507 618 569 438 578 303 C521 332 454 349 360 349 C266 349 199 332 142 303Z" fill="#b65f43"/>
+<!-- Its open cavity holds a low pool and the trace of an earlier level. -->
+<path d="M180 310 C184 406 237 562 360 618 C483 562 536 406 540 310 C488 341 430 352 360 352 C290 352 232 341 180 310Z" fill="#e7d8bb"/>
+<g clip-path="url(#inside)">
+ <path d="M220 424 Q360 466 500 424" fill="none" stroke="#76a8a2" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+ <path d="M256 424 Q275 430 293 434" fill="none" stroke="#e7d8bb" stroke-width="9" stroke-linecap="round"/>
+ <path d="M430 444 Q453 438 470 432" fill="none" stroke="#e7d8bb" stroke-width="9" stroke-linecap="round"/>
+ <path d="M239 520 Q360 546 481 520 C453 579 408 608 360 620 C312 608 267 579 239 520Z" fill="#4d8490"/>
+ <path d="M253 520 Q360 541 467 520" fill="none" stroke="#a8cbc2" stroke-width="4" stroke-linecap="round" opacity=".82"/>
+</g>
+<!-- The lip catches light only along its near edge. -->
+<path d="M142 303 Q360 385 578 303" fill="none" stroke="#803e32" stroke-width="13" stroke-linecap="round"/>
+<path d="M175 316 Q360 382 545 316" fill="none" stroke="#d48c62" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+</svg>

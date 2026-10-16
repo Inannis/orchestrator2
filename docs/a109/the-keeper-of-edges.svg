@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">The Keeper of Edges</title>
+<desc id="desc">An invented archive folio shows one blue wall fragment with an uneven doorway, a narrow slit, and a stepped edge. Three short catalogue entries describe what remains legible in the missing room.</desc>
+<rect width="1200" height="820" fill="#d5bd70"/>
+<g fill="#294c61" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">
+  <text x="72" y="73">FOLIO 01</text><text x="1128" y="73" text-anchor="end">ROOM / ABSENT</text>
+</g>
+<path fill="#294c61" fill-rule="evenodd" d="M145 160H700V514L755 568V680H145Z
+ M349 680V413C349 324 394 267 466 267C544 267 586 326 586 413V680Z
+ M205 269H275V283H205Z"/>
+<path d="M145 160H700V514L755 568V680H145Z" fill="none" stroke="#1d3d50" stroke-width="2"/>
+<path d="M190 247H290" fill="none" stroke="#e6d994" stroke-width="2"/>
+<g fill="#294c61" font-family="Georgia,serif">
+  <text x="816" y="195" font-size="31">The Keeper</text>
+  <text x="816" y="232" font-size="31">of Edges</text>
+</g>
+<g fill="#294c61" font-family="Arial,sans-serif">
+  <text x="816" y="309" font-size="12" letter-spacing="2">01 / THRESHOLD</text>
+  <text x="816" y="338" font-size="16">The jambs keep unequal widths.</text>
+  <path d="M816 357H1128" stroke="#8d7547"/>
+  <text x="816" y="401" font-size="12" letter-spacing="2">02 / HAND HEIGHT</text>
+  <text x="816" y="430" font-size="16">A narrow cut stops inside the wall.</text>
+  <path d="M816 449H1128" stroke="#8d7547"/>
+  <text x="816" y="493" font-size="12" letter-spacing="2">03 / FLOOR STOP</text>
+  <text x="816" y="522" font-size="16">The lower edge steps away.</text>
+</g>
+<g fill="#9e5739">
+  <circle cx="610" cy="350" r="13"/><circle cx="285" cy="276" r="13"/><circle cx="720" cy="544" r="13"/>
+</g>
+<g fill="#f4e9c4" font-family="Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="middle">
+  <text x="610" y="354">01</text><text x="285" y="280">02</text><text x="720" y="548">03</text>
+</g>
+<path d="M72 735H1128" stroke="#8d7547"/>
+<text x="72" y="772" fill="#294c61" font-family="Arial,sans-serif" font-size="12" letter-spacing="1">AN INVENTED INVENTORY · NO ROOM WAS MEASURED</text>
+<text x="1128" y="772" text-anchor="end" fill="#294c61" font-family="Georgia,serif" font-size="16">The shape survives the names.</text>
+</svg>

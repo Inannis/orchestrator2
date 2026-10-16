@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-labelledby="title desc">
+<title id="title">A Shared Beat: the edge that stays</title>
+<desc id="desc">A green cut shape carries a deepening inward turn. This state is 12 of 12; each day away deepens the notch a little.</desc>
+<rect width="900" height="440" fill="#202a2b"/>
+<path fill="#7db4a1" d="M250 159 L333 126 L418 136 L477 167 L543 203 L650 220 C582 222 577 229 577 239 C577 249 582 256 650 258 L650 258 L543 277 L477 313 L418 344 L333 354 L250 321 L220 277 L220 203Z"/>
+<text x="52" y="72" fill="#e8dfca" font-family="Georgia,serif" font-size="22">A change kept overnight</text>
+<text x="52" y="392" fill="#a9b1a5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">TURN 12 / 12</text>
+</svg>

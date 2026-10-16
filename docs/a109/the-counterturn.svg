@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+<title id="title">The Counterturn</title>
+<desc id="desc">Two cut forms meet in one continuous field. A terracotta shape presses rightward and bends upward at its narrowed end; a green shape enters from the right, turns down around it, and changes the direction of the meeting. A thin pale interval remains between their edges.</desc>
+<rect width="1200" height="780" fill="#26302e"/>
+<path fill="#d65e43" d="M-45 205 C72 182 176 198 259 230 C345 264 408 310 489 324 C548 334 582 314 610 288 C628 271 645 266 662 276 L662 349 C644 357 625 369 610 389 C582 425 542 449 492 452 C406 457 331 426 247 413 C162 397 65 413 -45 450Z"/>
+<path fill="#7db4a1" d="M1245 312 C1142 272 1058 268 980 290 C906 311 866 350 822 372 C785 391 750 399 719 390 C699 385 686 371 680 355 L680 298 C698 285 718 280 741 294 C768 307 788 330 809 331 C836 331 856 302 889 277 C930 245 980 232 1038 245 C1115 261 1179 298 1245 341Z"/>
+<!-- The pale marks stop on each side; the interval remains open. -->
+<path fill="none" stroke="#efe2c6" stroke-width="3" opacity=".82" d="M665 313 C670 320 674 327 675 334 M668 352 C671 360 674 365 678 369"/>
+<g fill="#efe2c6" font-family="Georgia,serif">
+ <text x="72" y="78" font-size="18" letter-spacing="1">The Counterturn</text>
+ <text x="72" y="710" font-size="16">One edge presses; the other gives it a turn.</text>
+</g>
+</svg>

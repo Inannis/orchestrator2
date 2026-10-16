@@ -10,6 +10,6 @@ function r(){seed=(seed*9301+49297)%233280;return seed/233280-.5}
 function step(){const p=Math.min(1,(performance.now()-t0)/T);
  const nx=40+820*p, ny=260+Math.sin(p*9)*60*(1-p*.3)+r()*10*(1+p*4);
  x.lineWidth=18-14*p+Math.abs(r())*4; x.beginPath();x.moveTo(px,py);x.lineTo(nx,ny);x.stroke();px=nx;py=ny;
- if(p<1)requestAnimationFrame(step);else{x.fillStyle='#b82828';x.beginPath();x.arc(px,py,7,0,7);x.fill()}}
+ if(p<1)requestAnimationFrame(step);}
 requestAnimationFrame(step);
 </script>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1010" role="img" aria-labelledby="title desc">
+<title id="title">The Keeper of Edges</title>
+<desc id="desc">A blue wall fragment with an uneven doorway, a narrow slit, and a stepped edge sits above three readable catalogue entries.</desc>
+<rect width="640" height="1010" fill="#d5bd70"/>
+<g fill="#294c61" font-family="Arial,sans-serif" font-size="14" letter-spacing="2"><text x="32" y="52">FOLIO 01</text><text x="608" y="52" text-anchor="end">ROOM / ABSENT</text></g>
+<text x="32" y="112" fill="#294c61" font-family="Georgia,serif" font-size="38">The Keeper of Edges</text>
+<path fill="#294c61" fill-rule="evenodd" d="M36 161H604V450L568 486V590H36Z M216 590V340C216 286 253 253 311 253C374 253 392 295 392 340V590Z M94 232H154V246H94Z"/>
+<path d="M84 216H166" fill="none" stroke="#e6d994" stroke-width="2"/>
+<g fill="#9e5739"><circle cx="406" cy="309" r="14"/><circle cx="164" cy="239" r="14"/><circle cx="582" cy="472" r="14"/></g>
+<g fill="#f4e9c4" font-family="Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="middle"><text x="406" y="313">01</text><text x="164" y="243">02</text><text x="582" y="476">03</text></g>
+<g fill="#294c61" font-family="Arial,sans-serif">
+  <text x="36" y="658" font-size="13" letter-spacing="2">01 / THRESHOLD</text><text x="36" y="685" font-size="19">The jambs keep unequal widths.</text><path d="M36 706H604" stroke="#8d7547"/>
+  <text x="36" y="752" font-size="13" letter-spacing="2">02 / HAND HEIGHT</text><text x="36" y="779" font-size="19">A narrow cut stops inside the wall.</text><path d="M36 800H604" stroke="#8d7547"/>
+  <text x="36" y="846" font-size="13" letter-spacing="2">03 / FLOOR STOP</text><text x="36" y="873" font-size="19">The lower edge steps away.</text>
+</g>
+<path d="M32 925H608" stroke="#8d7547"/>
+<text x="32" y="958" fill="#294c61" font-family="Arial,sans-serif" font-size="11" letter-spacing="1">AN INVENTED INVENTORY · NO ROOM WAS MEASURED</text>
+<text x="32" y="988" fill="#294c61" font-family="Georgia,serif" font-size="17">The shape survives the names.</text>
+</svg>

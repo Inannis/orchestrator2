@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="t d">
+<title id="t">A Shared Beat</title>
+<desc id="d">Three moments on one dark field. A broad terracotta form advances from the left. A smaller green form yields at their meeting, then keeps a changed edge after the terracotta form has passed.</desc>
+<rect width="1200" height="760" fill="#202a2b"/>
+<g fill="#e8dfca" font-family="Georgia,serif" font-size="18">
+ <text x="72" y="72">before</text><text x="472" y="72">the interval</text><text x="872" y="72">after</text>
+</g>
+<g fill="none" stroke="#75837a" stroke-width="1" opacity=".55"><path d="M400 92V666M800 92V666"/></g>
+<!-- The incoming body advances in three unequal steps. Its weight stays broad and low. -->
+<path fill="#d65e43" d="M-38 258 L40 246 L111 268 L166 291 L213 307 L245 330 L264 354 L252 374 L227 381 L204 398 L162 411 L121 432 L70 441 L-38 466Z"/>
+<path fill="#7db4a1" d="M280 327 L316 313 L347 318 L368 339 L384 359 L378 378 L361 388 L345 406 L324 411 L305 399 L291 379Z"/>
+<!-- The second movement's edge turns under pressure; the gap narrows but does not vanish. -->
+<path fill="#d65e43" d="M364 258 L442 246 L513 268 L568 291 L615 307 L647 330 L666 354 L654 374 L629 381 L606 398 L564 411 L523 432 L472 441 L364 466Z"/>
+<path fill="#7db4a1" d="M678 327 L714 313 L745 318 L766 339 L780 353 L770 367 L754 375 L746 391 L727 401 L708 397 L694 382 L682 362Z"/>
+<!-- The first shape has gone through; the other retains the inward turn. -->
+<path fill="#7db4a1" d="M912 327 L948 313 L979 318 L1000 339 L1008 350 L993 356 L1004 367 L988 375 L980 391 L961 401 L942 397 L928 382 L916 362Z"/>
+<!-- A hairline records the interval without turning it into a connecting emblem. -->
+<g fill="none" stroke="#e8dfca" stroke-width="2" opacity=".72">
+ <path d="M267 357 C302 352 337 352 371 357"/><path d="M668 357 C670 356 672 356 678 358"/>
+</g>
+<g fill="#a9b1a5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">
+ <text x="72" y="690">ARRIVAL</text><text x="472" y="690">YIELD / TURN</text><text x="872" y="690">PASSAGE / TRACE</text>
+</g>
+</svg>

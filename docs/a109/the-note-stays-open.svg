@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">The Note Stays Open</title>
+<desc id="desc">An abstract cut-paper image: a long pale opening holds one warm line above a current that thins as it passes through a broken edge.</desc>
+<rect width="1200" height="760" fill="#f0e6d0"/>
+<path d="M0 0H1200V449 Q1090 427 1009 464 Q908 505 813 463 Q725 421 625 462 Q525 504 436 458 Q340 410 251 454 Q137 510 0 460Z" fill="#173a45"/>
+<path d="M0 610 Q162 541 302 590 Q429 635 548 585 Q681 529 812 584 Q964 647 1200 556 V760H0Z" fill="#d65c42"/>
+<path d="M0 610 Q162 541 302 590 Q429 635 548 585 Q681 529 812 584 Q964 647 1200 556" fill="none" stroke="#ead9a0" stroke-width="12"/>
+<!-- The current is a folded strip crossing the open seam, not a drawn waveform. -->
+<path d="M139 570 C267 549 351 557 442 577 C520 593 582 601 649 565 C710 532 753 497 806 500" fill="none" stroke="#8fb8ad" stroke-width="24" stroke-linecap="round"/>
+<path d="M806 500 Q830 492 849 471 Q843 500 821 508 Q811 510 806 500Z" fill="#8fb8ad"/>
+<!-- A held note, cut free from both banks. -->
+<path d="M440 340 Q624 319 809 340 L809 365 Q624 346 440 365Z" fill="#bd704d"/>
+<path d="M402 352 Q421 345 440 352 M809 352 Q830 345 850 352" fill="none" stroke="#ead9a0" stroke-width="7" stroke-linecap="round"/>
+<!-- A sliver of uncut paper drifts toward the opening. -->
+<path d="M625 406 Q638 394 649 406 L661 418 L648 431 L633 420Z" fill="#f0e6d0"/>
+</svg>

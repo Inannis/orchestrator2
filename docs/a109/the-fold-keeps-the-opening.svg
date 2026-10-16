@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="t d">
+<title id="t">The Fold Keeps the Opening</title>
+<desc id="d">A cut arch in a warm paper sheet. A folded blue plane briefly carries the lower edge of the opening before the dark cut returns.</desc>
+<rect width="1000" height="700" fill="#d8ddd0"/>
+<path d="M0 508 Q230 468 485 499 T1000 478V700H0Z" fill="#837968"/>
+<!-- The sheet occupies the field; its single arched cut reveals a quiet blue-green plane. -->
+<path fill="#b96d53" fill-rule="evenodd" d="M92 80H908V626H92Z M300 560V316 C300 205 380 154 500 154 C620 154 700 205 700 316V510 Q650 524 603 543 Q558 558 520 560Z"/>
+<!-- The recess is visible through the cut, held by a broad pale wall of color. -->
+<path d="M300 560V316 C300 205 380 154 500 154 C620 154 700 205 700 316V510 Q650 524 603 543 Q558 558 520 560Z" fill="#355c62"/>
+<path d="M328 510V319 C328 226 392 184 500 184 C608 184 672 226 672 319V478 Q608 489 564 510 Q506 536 454 510Z" fill="#a7b9a9"/>
+<path d="M361 475 Q430 459 500 475 T639 470" fill="none" stroke="#d8d7bd" stroke-width="13" opacity=".8"/>
+<!-- One folded plane crosses into the opening, but stays a plane rather than a stream. -->
+<path d="M1000 447 Q892 433 805 457 Q758 470 700 510 L700 565 Q779 543 833 520 Q911 488 1000 499Z" fill="#d9d0b4"/>
+<path d="M1000 447 Q892 433 805 457 Q758 470 700 510" fill="none" stroke="#f0e7d0" stroke-width="12"/>
+<path d="M700 510 Q674 522 646 535 Q625 545 603 543" fill="none" stroke="#d9d0b4" stroke-width="25" stroke-linecap="butt"/>
+<path d="M700 565 Q754 545 800 526" fill="none" stroke="#9c967f" stroke-width="7" opacity=".8"/>
+<!-- The cut resumes clearly on the opposite side of the brief shared edge. -->
+<path d="M300 560V316 C300 205 380 154 500 154 C620 154 700 205 700 316V510" fill="none" stroke="#714f43" stroke-width="13" stroke-linecap="square"/>
+<path d="M520 560 Q558 558 603 543" fill="none" stroke="#714f43" stroke-width="13" stroke-linecap="square"/>
+</svg>

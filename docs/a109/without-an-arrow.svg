@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">Without an Arrow</title>
+<desc id="desc">A blue strip appears at either side of a pale sheet and once through its narrow central cut. Its line bends gently but points nowhere.</desc>
+<rect width="1200" height="800" fill="#203d46"/>
+<!-- One continuous strip passes behind a single cut sheet. -->
+<path d="M0 408C112 400 160 382 236 391C309 399 342 427 419 412C486 399 535 381 604 392C683 405 730 432 806 416C899 397 978 373 1065 390C1112 399 1157 413 1200 409" fill="none" stroke="#84b8ad" stroke-width="34" stroke-linecap="round"/>
+<path fill="#eee6d1" fill-rule="evenodd" d="M112 171L1083 171L1083 628L112 628Z M405 376L795 376L795 442L405 442Z"/>
+<path d="M405 376L795 376M405 442L795 442" fill="none" stroke="#c9c1ac" stroke-width="3"/>
+</svg>

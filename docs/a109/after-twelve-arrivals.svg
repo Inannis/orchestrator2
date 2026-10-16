@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="340 150 540 460" role="img" aria-labelledby="title desc">
+<title id="title">After Twelve Arrivals</title>
+<desc id="desc">A large sage shape fills a charcoal field. Within the opening at its right edge, five fine terracotta contours mark earlier outlines of the same edge. The newest edge bends farthest into the shape.</desc>
+<rect width="1120" height="720" fill="#202a2b"/>
+<path fill="#7db4a1" d="M124 260 L270 203 L430 220 L548 270 L648 330 L810 380 C738 384 734 395 734 408 C734 422 738 433 810 436 L810 436 L648 472 L548 530 L430 579 L270 594 L124 536 L83 450 L83 346Z"/>
+<g fill="none" stroke="#d65e43" stroke-width="2.2" stroke-linecap="round">
+  <path opacity=".34" d="M810 380 C802 384 799 395 799 408 C799 422 802 433 810 436"/>
+  <path opacity=".42" d="M810 380 C790 384 786 395 786 408 C786 422 790 433 810 436"/>
+  <path opacity=".52" d="M810 380 C775 384 770 395 770 408 C770 422 775 433 810 436"/>
+  <path opacity=".64" d="M810 380 C755 384 750 395 750 408 C750 422 755 433 810 436"/>
+  <path opacity=".76" d="M810 380 C734 384 729 395 729 408 C729 422 734 433 810 436"/>
+</g>
+<path fill="none" stroke="#d7d7bd" stroke-width="1.5" opacity=".85" d="M810 380 C738 384 734 395 734 408 C734 422 738 433 810 436"/>
+</svg>

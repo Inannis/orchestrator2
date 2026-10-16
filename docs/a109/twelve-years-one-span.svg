@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 700" role="img" aria-labelledby="title desc">
+<title id="title">Twelve Years, One Span</title>
+<desc id="desc">A three-state cut-paper sequence: two bridge approaches leave a gap over the river; the gap narrows; a plain deck crosses while twelve interruptions break the pale current below.</desc>
+<rect width="1500" height="700" fill="#f1eadb"/>
+<g>
+ <rect width="490" height="700" fill="#173a45"/>
+ <path d="M0 214H126L161 282H0ZM490 214H364L329 282H490Z" fill="#9aaf77"/>
+ <path d="M0 410 C72 380 122 393 180 425 S288 461 347 425 430 389 490 410V700H0Z" fill="#275e69"/>
+ <path d="M0 449 C78 419 129 430 186 460 C243 490 293 494 352 461 C411 428 432 430 490 449" fill="none" stroke="#8fb8ad" stroke-width="12"/>
+ <g fill="none" stroke="#275e69" stroke-width="23" stroke-linecap="round">
+  <path d="M35 432L53 430 M59 429L77 427 M83 426L101 424"/>
+  <path d="M136 442L154 446 M160 446L178 452 M184 454L202 462"/>
+  <path d="M239 477L257 483 M263 486L281 488 M287 490L305 490"/>
+  <path d="M339 468L357 458 M365 454L383 444 M389 439L407 431"/>
+ </g>
+ <path d="M24 282H202V307H24Z M288 282H466V307H288Z" fill="#d65c42"/>
+ <path d="M202 282V319 M288 282V319" stroke="#ead9a0" stroke-width="3"/>
+</g>
+<g transform="translate(505)">
+ <rect width="490" height="700" fill="#173a45"/>
+ <path d="M0 214H126L161 282H0ZM490 214H364L329 282H490Z" fill="#9aaf77"/>
+ <path d="M0 410 C72 380 122 393 180 425 S288 461 347 425 430 389 490 410V700H0Z" fill="#275e69"/>
+ <path d="M0 449 C78 419 129 430 186 460 C243 490 293 494 352 461 C411 428 432 430 490 449" fill="none" stroke="#8fb8ad" stroke-width="12"/>
+ <g fill="none" stroke="#275e69" stroke-width="23" stroke-linecap="round">
+  <path d="M37 432L51 430 M61 429L75 427 M85 426L99 424"/>
+  <path d="M138 443L152 445 M162 447L176 451 M186 454L200 457"/>
+  <path d="M241 478L255 482 M265 484L279 488 M289 489L303 491"/>
+  <path d="M341 467L355 459 M365 453L379 447 M389 442L403 436"/>
+ </g>
+ <path d="M24 282H237V307H24Z M253 282H466V307H253Z" fill="#d65c42"/>
+ <path d="M237 282V319 M253 282V319" stroke="#ead9a0" stroke-width="3"/>
+</g>
+<g transform="translate(1010)">
+ <rect width="490" height="700" fill="#173a45"/>
+ <path d="M0 214H126L161 282H0ZM490 214H364L329 282H490Z" fill="#9aaf77"/>
+ <path d="M0 410 C72 380 122 393 180 425 S288 461 347 425 430 389 490 410V700H0Z" fill="#275e69"/>
+ <path d="M0 449 C78 419 129 430 186 460 C243 490 293 494 352 461 C411 428 432 430 490 449" fill="none" stroke="#8fb8ad" stroke-width="12"/>
+ <path d="M24 282H466V307H24Z" fill="#d65c42"/>
+ <!-- Twelve gaps follow the current's direction; the deck stays plain. -->
+ <g fill="none" stroke="#275e69" stroke-width="23" stroke-linecap="round">
+  <path d="M37 432L51 430 M61 429L75 427 M85 426L99 424"/>
+  <path d="M138 443L152 445 M162 447L176 451 M186 454L200 457"/>
+  <path d="M241 478L255 482 M265 484L279 488 M289 489L303 491"/>
+  <path d="M341 467L355 459 M365 453L379 447 M389 442L403 436"/>
+ </g>
+</g>
+<path d="M495 0V700 M1000 0V700" stroke="#ead9a0" stroke-width="2" opacity=".65"/>
+</svg>

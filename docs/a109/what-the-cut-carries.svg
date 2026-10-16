@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 700" role="img" aria-labelledby="t d">
+<title id="t">What the Cut Carries</title>
+<desc id="d">Three wide cut-paper fields: a blue current holds a pale opening, the opening travels downstream, and the current breaks into remnants around the opening.</desc>
+<rect width="1500" height="700" fill="#f1eadb"/>
+<g>
+ <rect x="0" width="490" height="700" fill="#173a45"/>
+ <path d="M42 386 C112 312 181 316 242 375 C302 434 361 440 448 360 L448 473 C370 545 301 536 230 474 C160 413 111 414 42 490Z" fill="#275e69"/>
+ <path d="M42 386 C112 312 181 316 242 375 C302 434 361 440 448 360" fill="none" stroke="#8fb8ad" stroke-width="18"/>
+ <ellipse cx="247" cy="397" rx="28" ry="48" fill="#f1eadb"/>
+ 
+ <path d="M0 603 Q115 568 245 603 T490 603V700H0Z" fill="#d65c42"/>
+</g>
+<g transform="translate(505)">
+ <rect width="490" height="700" fill="#173a45"/>
+ <path d="M30 380 C117 313 204 327 276 385 C337 435 381 429 460 360 L460 474 C387 529 325 529 251 472 C177 415 112 417 30 488Z" fill="#275e69"/>
+ <path d="M30 380 C117 313 204 327 276 385 C337 435 381 429 460 360" fill="none" stroke="#8fb8ad" stroke-width="18"/>
+ <ellipse cx="337" cy="397" rx="28" ry="48" fill="#f1eadb"/>
+ 
+ <path d="M0 603 Q115 568 245 603 T490 603V700H0Z" fill="#d65c42"/>
+ <path d="M251 472 Q271 487 289 496" fill="none" stroke="#8fb8ad" stroke-width="5" opacity=".8"/>
+</g>
+<g transform="translate(1010)">
+ <rect width="490" height="700" fill="#173a45"/>
+ <path d="M32 380 C111 324 175 333 226 373 L197 420 C143 396 96 415 32 469Z" fill="#275e69"/>
+ <path d="M304 415 C359 437 403 413 458 363 L458 466 C400 508 354 516 290 484Z" fill="#275e69"/>
+ <path d="M32 380 C111 324 175 333 226 373 M304 415 C359 437 403 413 458 363" fill="none" stroke="#8fb8ad" stroke-width="18"/>
+ <ellipse cx="264" cy="401" rx="27" ry="45" fill="#f1eadb"/>
+ 
+ <path d="M0 603 Q115 568 245 603 T490 603V700H0Z" fill="#d65c42"/>
+ <path d="M222 373 L205 359 M305 415 L322 428" stroke="#8fb8ad" stroke-width="5"/>
+</g>
+<path d="M495 0V700 M1000 0V700" stroke="#ead9a0" stroke-width="2" opacity=".65"/>
+</svg>

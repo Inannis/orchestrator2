@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 680" role="img" aria-labelledby="title desc">
+<title id="title">Folio 02: Enough Room to Step</title>
+<desc id="desc">The same three blue fragments, reduced together and placed in a closer frame so their open passage occupies a narrow page.</desc>
+<rect width="640" height="680" fill="#d5bd70"/>
+<g fill="#294c61" font-family="Arial,sans-serif" font-size="13" letter-spacing="2"><text x="36" y="48">FOLIO 02</text><text x="604" y="48" text-anchor="end">ORDER / ALTERED</text></g>
+<g transform="translate(-10 80) scale(.8)">
+  <path fill="#294c61" d="M172 181L348 207L335 353L363 392L331 636L145 622L171 503L151 379Z"/>
+  <path fill="#294c61" d="M674 170L776 182L746 352L783 379L740 573L633 556L653 423L612 390Z"/>
+  <path fill="#294c61" d="M387 536L505 508L624 557L577 653L416 641L360 601Z"/>
+  <g fill="#9e5739"><circle cx="304" cy="275" r="16"/><circle cx="703" cy="246" r="16"/><circle cx="499" cy="581" r="16"/></g>
+  <g fill="#f4e9c4" font-family="Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="middle"><text x="304" y="279">01</text><text x="703" y="250">02</text><text x="499" y="585">03</text></g>
+</g>
+<path d="M36 638H604" stroke="#8d7547"/>
+<text x="36" y="662" fill="#294c61" font-family="Arial,sans-serif" font-size="10" letter-spacing="1">THE OPENING REMAINS OPEN</text>
+</svg>

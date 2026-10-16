@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+<title id="title">The Sill Under Water</title><desc id="desc">A plain worn cup sits on a dark shore beside a broad river. Beneath the moving surface, a broken pale ledge briefly remembers a threshold, then disappears into current.</desc>
+<defs>
+ <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#e8e4db"/><stop offset="1" stop-color="#d6d2c9"/></linearGradient>
+ <linearGradient id="river" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#d2cfc7"/><stop offset=".58" stop-color="#aaa9a2"/><stop offset="1" stop-color="#c2beb5"/></linearGradient>
+ <linearGradient id="bank" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#333430"/><stop offset="1" stop-color="#4a4a44"/></linearGradient>
+ <filter id="tooth"><feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="2" seed="23"/><feColorMatrix values=".23 0 0 0 .25 .23 0 0 0 .24 .23 0 0 0 .21 0 0 0 .18 0"/><feBlend in="SourceGraphic" mode="multiply"/></filter>
+</defs>
+<rect width="1200" height="840" fill="url(#paper)"/>
+<!-- far bank, low enough to let the river remain the subject -->
+<path d="M0 164Q148 151 273 162Q431 175 559 158Q734 136 879 157Q1034 178 1200 148V214Q1036 224 894 206Q724 184 561 210Q390 234 247 211Q123 192 0 218Z" fill="#454640"/>
+<path d="M0 164Q148 151 273 162Q431 175 559 158Q734 136 879 157Q1034 178 1200 148" fill="none" stroke="#292a27" stroke-width="5"/>
+<g fill="none" stroke="#a9a59c" stroke-linecap="round" opacity=".47"><path d="M32 179q64-8 119 0m46-5q41 5 83 0m133 15q55-7 97 2m174-28q55-7 109 2m124 17q61-8 110 1m53-17q47-5 82 1" stroke-width="3"/><path d="M75 199q39-5 72 1m239 13q37-5 71 1m330-45q39-5 77 1m200 32q46-5 77 2" stroke-width="2"/></g>
+<!-- a wide river, open and slightly uneven -->
+<path d="M0 213Q130 190 257 211Q401 239 566 209Q730 179 892 205Q1045 229 1200 207V587Q1055 568 908 591Q751 617 585 588Q421 560 266 592Q125 618 0 588Z" fill="url(#river)"/>
+<!-- submerged sill: fragments caught under the moving water, not a drawn gate -->
+<g fill="none" stroke-linecap="round">
+ <path d="M108 376q54-20 111-9m29 4q48 12 94 2m44-10q34-9 65 1m73 14q54 14 102-1m45-10q31-12 62-2m72 15q56 13 101-2m47-10q39-8 67 2" stroke="#77766f" stroke-width="12" opacity=".36"/>
+ <path d="M122 372q47-15 92-7m42 7q37 9 71 2m51-8q30-7 52 1m81 12q45 11 84-1m59-7q25-8 48-2m84 12q45 9 79-2m70-8q26-5 49 1" stroke="#e5e0d7" stroke-width="4" opacity=".72"/>
+</g>
+<!-- current crosses and obscures the old edge -->
+<g fill="none" stroke-linecap="round">
+ <path d="M84 302q58-13 111 0m61 16q34 8 62 1m143-26q45-14 83-3m92 25q36 7 65-1m149-25q53-15 95-1m60 18q35 6 61-1" stroke="#f2eee5" stroke-width="4" opacity=".78"/>
+ <path d="M158 437q38-12 72-2m94 19q32 4 55-4m131-27q43-13 76 0m67 19q31 6 59-3m165-20q37-10 68-1m66 20q36 6 66-1" stroke="#77756e" stroke-width="5" opacity=".62"/>
+ <path d="M54 499q64-11 113 2m181-1q32 5 58-2m232 7q39 7 72-2m180-5q47-11 81 0m96 8q46 6 80-4" stroke="#e2ddd3" stroke-width="3" opacity=".67"/>
+</g>
+<!-- near bank rises irregularly and holds the ordinary vessel -->
+<path d="M0 581Q125 608 264 583Q419 555 585 585Q750 615 908 588Q1054 565 1200 584V840H0Z" fill="url(#bank)"/>
+<path d="M0 581Q125 608 264 583Q419 555 585 585Q750 615 908 588Q1054 565 1200 584" fill="none" stroke="#292a27" stroke-width="5"/>
+<g fill="none" stroke-linecap="round" opacity=".66"><path d="M46 645q62-18 113-5m45 16q40 8 74-1m-190 79q45-13 84-5m51 8q36 5 67-3m416-102q51-13 91-2m63 19q47 7 83-4m-215 89q57-15 100-4m125 9q42 7 74-3" stroke="#c8c3b9" stroke-width="4"/><path d="M83 696q35-9 60-3m247-42q31 10 58 3m575 88q48-14 76-4" stroke="#222320" stroke-width="5"/></g>
+<!-- cup shadow remains on earth, short of the water -->
+<path d="M716 699Q775 690 828 700Q875 709 898 728Q841 740 780 731Q740 724 716 699Z" fill="#171816" opacity=".52"/>
+<!-- broad plain cup, no handle or emblem; an off-center rubbed patch carries use -->
+<path d="M724 626Q787 647 853 625L842 690Q787 708 735 690Z" fill="#cac5bb" stroke="#302f2b" stroke-width="5" stroke-linejoin="round"/>
+<path d="M724 626Q786 650 853 625" fill="none" stroke="#343530" stroke-width="5"/>
+<path d="M731 631q42 17 113 0m-100 17q37 13 79 5" fill="none" stroke="#817d75" stroke-width="3" stroke-linecap="round"/>
+<path d="M750 655q18-10 35-4m-30 13q11-5 21-2" fill="none" stroke="#e3ded4" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+<path d="M738 686q41 15 91 1" fill="none" stroke="#9a968e" stroke-width="3" stroke-linecap="round"/>
+<!-- grit and one incomplete wash mark -->
+<g fill="#77766f" opacity=".72"><ellipse cx="694" cy="714" rx="13" ry="4"/><ellipse cx="920" cy="664" rx="10" ry="3"/><ellipse cx="884" cy="753" rx="8" ry="3"/><ellipse cx="673" cy="773" rx="6" ry="2"/><ellipse cx="967" cy="714" rx="15" ry="3"/></g>
+<path d="M652 751q35-8 63-1m250-30q28-6 50 0" fill="none" stroke="#d1ccc2" stroke-width="3" stroke-linecap="round" opacity=".72"/>
+<rect width="1200" height="840" filter="url(#tooth)" opacity=".13"/>
+</svg>

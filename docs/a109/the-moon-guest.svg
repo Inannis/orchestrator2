@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="850" viewBox="0 0 1000 850" role="img" aria-labelledby="title desc">
+  <title id="title">The Moon Guest</title>
+  <desc id="desc">A huge gold moon has come down behind a little supper table. A person places a bowl for it while a red thread winds between their hands and the moon.</desc>
+  <rect width="1000" height="850" fill="#efe2c6"/>
+  <path d="M58 156l8 21 22 8-22 8-8 22-8-22-22-8 22-8zM357 92l6 16 17 6-17 6-6 17-6-17-17-6 17-6zM902 187l7 18 18 7-18 7-7 18-7-18-18-7 18-7z" fill="#c99c59"/>
+  <circle cx="653" cy="369" r="258" fill="#c99c59"/>
+  <circle cx="653" cy="369" r="225" fill="none" stroke="#fbf4e4" stroke-width="13"/>
+  <path d="M743 197a33 33 0 1 1-66 0 33 33 0 0 1 66 0M804 350a21 21 0 1 1-42 0 21 21 0 0 1 42 0M609 443a27 27 0 1 1-54 0 27 27 0 0 1 54 0" fill="#efe2c6" opacity=".82"/>
+  <path d="M0 500Q124 403 244 489T478 467T718 485T1000 430V665H0Z" fill="#8d7887"/>
+  <path d="M0 573L113 376l105 177 122-230 117 243 119-204 126 217 103-169 108 169 87-96v182H0Z" fill="#486e7a"/>
+  <path d="M0 573l113-197 41 206 64-29 122-230 40 238 77 5 119-204 39 210 87 10 103-169 40 183 108-96 87 73v92H0Z" fill="#fbf4e4"/>
+  <path d="M0 651Q164 605 322 654T640 644T1000 626V850H0Z" fill="#718968"/>
+  <path d="M0 699Q162 658 316 704T635 696T1000 678M0 765Q156 724 310 770T627 759T1000 741M0 822Q150 782 303 828T621 817T1000 799" fill="none" stroke="#c99c59" stroke-width="13"/>
+  <path d="M-14 829Q136 792 292 835T614 824T1014 803" fill="none" stroke="#4f80a0" stroke-width="23"/>
+  <path d="M311 555h402l-27 29H337z" fill="#b7503e"/>
+  <path d="M346 584l18 132m314-132-18 132" stroke="#443a31" stroke-width="15" stroke-linecap="square"/>
+  <ellipse cx="438" cy="540" rx="51" ry="12" fill="#fbf4e4" stroke="#443a31" stroke-width="5"/>
+  <path d="M390 542q8 43 48 43t48-43" fill="#fbf4e4" stroke="#443a31" stroke-width="5"/>
+  <ellipse cx="438" cy="541" rx="34" ry="7" fill="#c77f50"/>
+  <circle cx="438" cy="541" r="7" fill="#f2d9a0"/>
+  <circle cx="443" cy="537" r="6" fill="#c77f50"/>
+  <path d="M610 555h65v10h-65z" fill="#efe2c6"/>
+  <circle cx="643" cy="548" r="8" fill="#4f80a0"/>
+  <path d="M277 525a19 19 0 1 1 38 0 19 19 0 0 1-38 0" fill="#443a31"/>
+  <path d="M293 544q-22 32-9 62l-25 43m30-55 48-34m-48 30 44 48m-44-48-35-13" fill="none" stroke="#443a31" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M282 548q24-11 37 10l-6 45-33 5-11-38z" fill="#c77f50"/>
+  <path d="M331 561l39 9-6 13-40-8z" fill="#b7503e"/>
+  <path d="M735 555h52v9h-52zm6 9v66m40-66v66" fill="none" stroke="#443a31" stroke-width="8"/>
+  <path d="M740 547q21-45 42 0" fill="none" stroke="#b7503e" stroke-width="7"/>
+  <path d="M337 560C353 520 391 500 431 510S504 527 548 491C590 456 589 412 630 389C686 356 739 328 754 251" fill="none" stroke="#b7503e" stroke-width="8" stroke-linecap="round"/>
+</svg>

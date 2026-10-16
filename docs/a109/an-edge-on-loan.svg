@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
+<title id="title">An Edge on Loan</title>
+<desc id="desc">Three imagined views of a person passing an arched opening. The dark edge pauses at the shoulder in the middle view, then resumes behind the person.</desc>
+<rect width="1400" height="850" fill="#e8e4d7"/>
+<text x="78" y="70" fill="#334e51" font-family="Georgia,serif" font-size="32">An Edge on Loan</text>
+<text x="80" y="106" fill="#68746d" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">THREE MOMENTS IN AN IMAGINED ROOM</text>
+<!-- Three sheets sit in one long field; their floor lines share a level. -->
+<g transform="translate(70 145)">
+  <rect width="400" height="565" fill="#d1cec0"/>
+  <path d="M0 0H400V565H0Z" fill="#bd745c"/>
+  <path d="M77 565V226C77 112 132 52 200 52C268 52 323 112 323 226V565Z" fill="#344f55"/>
+  <path d="M112 565V230C112 145 148 91 200 91C252 91 288 145 288 230V565Z" fill="#aeb8a4"/>
+  <path d="M0 466Q160 445 400 472V565H0Z" fill="#eee7d2"/>
+  <g transform="translate(25 0)">
+  <circle cx="163" cy="315" r="25" fill="#d6a44e"/>
+  <path d="M145 344Q124 370 128 410L137 463L181 463L180 405L197 376Z" fill="#d6a44e"/>
+  <path d="M138 368L105 414L91 452" fill="none" stroke="#d6a44e" stroke-width="15" stroke-linecap="round"/>
+  <path d="M160 462L151 508M176 462L192 508" stroke="#d6a44e" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <path d="M77 565V226C77 112 132 52 200 52C268 52 323 112 323 226V565" fill="none" stroke="#704139" stroke-width="10" stroke-linecap="round"/>
+  <text x="18" y="535" fill="#52615b" font-family="Georgia,serif" font-size="17">before</text>
+</g>
+<g transform="translate(500 145)">
+  <rect width="400" height="565" fill="#d1cec0"/>
+  <path d="M0 0H400V565H0Z" fill="#bd745c"/>
+  <path d="M77 565V226C77 112 132 52 200 52C268 52 323 112 323 226V565Z" fill="#344f55"/>
+  <path d="M112 565V230C112 145 148 91 200 91C252 91 288 145 288 230V565Z" fill="#aeb8a4"/>
+  <path d="M0 466Q160 445 400 472V565H0Z" fill="#eee7d2"/>
+  <!-- The edge pauses before the passer, then meets the shoulder. -->
+  <path d="M77 565V226C77 112 132 52 200 52C268 52 323 112 323 226V310M323 395V565" fill="none" stroke="#704139" stroke-width="10" stroke-linecap="round"/>
+  <g transform="translate(30 0)">
+  <circle cx="219" cy="295" r="25" fill="#d6a44e"/>
+  <path d="M201 324Q181 349 185 390L194 443L238 443L237 385L254 356Z" fill="#d6a44e"/>
+  <path d="M194 349L161 395L147 433" fill="none" stroke="#d6a44e" stroke-width="15" stroke-linecap="round"/>
+  <path d="M216 442L207 488M232 442L248 488" stroke="#d6a44e" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <path d="M323 310Q307 337 284 356Q278 370 267 385" fill="none" stroke="#704139" stroke-width="10" stroke-linecap="round"/>
+  <text x="18" y="535" fill="#52615b" font-family="Georgia,serif" font-size="17">beside</text>
+</g>
+<g transform="translate(930 145)">
+  <rect width="400" height="565" fill="#d1cec0"/>
+  <path d="M0 0H400V565H0Z" fill="#bd745c"/>
+  <path d="M77 565V226C77 112 132 52 200 52C268 52 323 112 323 226V565Z" fill="#344f55"/>
+  <path d="M112 565V230C112 145 148 91 200 91C252 91 288 145 288 230V565Z" fill="#aeb8a4"/>
+  <path d="M0 466Q160 445 400 472V565H0Z" fill="#eee7d2"/>
+  <path d="M77 565V226C77 112 132 52 200 52C268 52 323 112 323 226V565" fill="none" stroke="#704139" stroke-width="10" stroke-linecap="round"/>
+  <g transform="translate(90 0)">
+  <circle cx="259" cy="315" r="25" fill="#d6a44e"/>
+  <path d="M241 344Q220 370 224 410L233 463L277 463L276 405L293 376Z" fill="#d6a44e"/>
+  <path d="M234 368L201 414L187 452" fill="none" stroke="#d6a44e" stroke-width="15" stroke-linecap="round"/>
+  <path d="M256 462L247 508M272 462L288 508" stroke="#d6a44e" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <text x="18" y="535" fill="#52615b" font-family="Georgia,serif" font-size="17">after</text>
+</g>
+<text x="78" y="778" fill="#52615b" font-family="Georgia,serif" font-size="19">The wall lends a contour for one step. The passage remains the passer's.</text>
+</svg>

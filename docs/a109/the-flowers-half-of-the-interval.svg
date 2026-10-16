@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+<title id="t">Contact at the Outer Petal</title>
+<desc id="d">A simplified orange wing narrows toward a small butterfly body. A curved feeler reaches one outer petal of a pale five-petal flower; a single stem leads out of frame.</desc>
+<rect width="900" height="600" fill="#343a34"/>
+<!-- A single stem remains to keep the flower rooted in a plant. -->
+<path d="M734 322 C750 404 742 495 758 625" fill="none" stroke="#879078" stroke-width="10" stroke-linecap="round"/>
+<path d="M744 437 C699 403 671 393 644 393 C669 431 702 449 744 437Z" fill="#a1a782"/>
+<!-- Broad plane; its contour gives way near the small moving body. -->
+<path fill="#df7137" d="M-35 -35 L251 -35 C291 61 330 148 393 211 C450 270 516 306 588 324 C614 331 638 331 659 327 C643 346 620 360 589 371 C526 395 472 429 423 482 C369 541 317 608 257 650 C199 687 132 672 100 626 C65 575 85 520 134 471 C186 419 245 381 300 355 C208 336 123 323 54 284 C2 254 -25 205 -38 151Z"/>
+<!-- Three dark flecks imply a marked wing without mapping it. -->
+<g fill="#292b27">
+ <path d="M140 90 Q159 74 174 95 L167 120 L144 117Z"/>
+ <path d="M252 178 Q272 159 288 181 L281 207 L257 204Z"/>
+ <path d="M370 260 Q390 242 406 265 L399 291 L375 288Z"/>
+</g>
+<!-- Body and fine appendages preserve the visible turn toward the flower. -->
+<path d="M563 332 C587 319 616 323 645 336 C624 351 596 356 570 348Z" fill="#242822"/>
+<circle cx="640" cy="333" r="5" fill="#191d19"/>
+<g fill="none" stroke="#242822" stroke-linecap="round">
+ <path d="M630 331 Q641 310 653 307 M635 333 Q651 317 663 319" stroke-width="2"/>
+ <path d="M647 338 C659 335 669 330 681 324" stroke-width="2"/>
+</g>
+<!-- A whole bloom, contacted at the edge rather than covered at its center. -->
+<g fill="#f0e8d7" stroke="#343a34" stroke-width="3">
+ <path d="M728 280 C691 246 702 217 723 216 C744 215 752 249 737 277Z"/>
+ <path d="M737 277 C737 231 764 219 778 236 C792 254 766 279 742 287Z"/>
+ <path d="M742 287 C785 266 806 286 794 306 C783 325 758 309 737 297Z"/>
+ <path d="M734 295 C758 333 738 357 718 346 C698 335 712 310 729 291Z"/>
+ <path d="M725 288 C683 309 665 287 680 270 C694 254 714 274 732 280Z"/>
+</g>
+<circle cx="733" cy="288" r="11" fill="#d8aa55"/>
+</svg>

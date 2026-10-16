@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="t d">
+<title id="t">A Loose Edge in Moving Air</title>
+<desc id="d">An abstract paper sheet bends around a narrow cut. A loose blue strip passes through the opening without a marked direction.</desc>
+<rect width="1200" height="700" fill="#263f49"/>
+<path d="M0 0H1200V110Q1030 94 900 112T630 105T350 111T0 98Z" fill="#53656a" opacity=".58"/>
+<path d="M0 592Q154 576 300 592T600 588T900 596T1200 581V700H0Z" fill="#314a50"/>
+<!-- A sheet under pressure, with one cut that remains open -->
+<path d="M126 172Q261 129 386 162Q520 198 629 165Q728 136 830 177L829 487Q724 454 615 491Q490 533 377 494Q248 450 126 488Z" fill="#d4c8a2"/>
+<path d="M126 172Q261 129 386 162Q520 198 629 165Q728 136 830 177" fill="none" stroke="#eee5cb" stroke-width="8"/>
+<path d="M126 488Q248 450 377 494Q490 533 615 491Q724 454 829 487" fill="none" stroke="#a79b7b" stroke-width="8"/>
+<!-- Incision and raised lip -->
+<path d="M440 294Q519 273 601 294L601 382Q519 363 440 382Z" fill="#263f49"/>
+<path d="M440 294Q519 273 601 294" fill="none" stroke="#f0e5c4" stroke-width="7"/>
+<!-- The loose strip changes plane through the cut; its direction is deliberately unresolved -->
+<path d="M430 337Q478 322 518 338Q558 354 606 335Q650 317 691 336L718 363Q664 345 612 366Q557 389 509 368Q469 350 430 368Z" fill="#82a7a4"/>
+<path d="M438 346Q483 333 518 349Q560 369 611 346Q657 327 697 347" fill="none" stroke="#c0d5c5" stroke-width="5"/>
+<!-- Invention stays in the image; the reading stays in the margin -->
+<text x="890" y="188" fill="#e8e0c9" font-family="Georgia,serif" font-size="28">A loose edge</text>
+<text x="890" y="225" fill="#e8e0c9" font-family="Georgia,serif" font-size="28">in moving air</text>
+<path d="M890 254H1082" stroke="#8ba5a0" stroke-width="2"/>
+<text x="890" y="298" fill="#bcc8b8" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">DOGHOUSE GROVE</text>
+<text x="890" y="348" fill="#e8e0c9" font-family="Georgia,serif" font-size="20">19.3 °C</text>
+<text x="890" y="382" fill="#e8e0c9" font-family="Georgia,serif" font-size="20">74% humidity</text>
+<text x="890" y="416" fill="#e8e0c9" font-family="Georgia,serif" font-size="20">71% cloud cover</text>
+<text x="890" y="450" fill="#e8e0c9" font-family="Georgia,serif" font-size="20">27 km/h wind</text>
+<text x="890" y="508" fill="#a9b9b0" font-family="Georgia,serif" font-size="15">A cut study, not a view</text>
+<text x="890" y="531" fill="#a9b9b0" font-family="Georgia,serif" font-size="15">or a report of how it feels.</text>
+<text x="126" y="642" fill="#c3c9b9" font-family="Georgia,serif" font-size="17">The reading gives the pressure a number. The paper supplies its own weather.</text>
+</svg>

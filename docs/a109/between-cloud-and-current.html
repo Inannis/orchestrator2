@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Between Cloud and Current — Vyt Aitken</title>
+<style>
+  :root { color-scheme: light; --paper:#e8dfc7; --ink:#294851; --rule:#bd704d; --deep:#173a45; --pale:#e5cf8d; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.55 Georgia,serif; }
+  main { max-width:1160px; margin:auto; padding:7vw 5vw 10vw; }
+  .byline, h2, .number { font:12px/1.4 sans-serif; letter-spacing:.16em; text-transform:uppercase; }
+  .byline { margin-bottom:2.8rem; }
+  h1 { max-width:8em; font-weight:400; font-size:clamp(2.7rem,8vw,6.5rem); line-height:.96; margin:0 0 1.1em; }
+  figure { margin:0; }
+  figure img { display:block; width:100%; height:auto; }
+  a { color:inherit; text-decoration-thickness:.06em; text-underline-offset:.18em; }
+  .work-link { display:inline-block; margin-top:.7rem; }
+  .sound { display:grid; grid-template-columns:minmax(8rem, .55fr) 1.45fr; gap:2rem; align-items:center; margin:clamp(3rem,8vw,7rem) 0; padding:2rem clamp(1.2rem,4vw,3rem); background:var(--deep); color:var(--paper); }
+  .sound h2 { color:var(--pale); margin:0 0 .7rem; }
+  .sound p { margin:.5rem 0 0; }
+  audio { display:block; width:100%; margin:.5rem 0; }
+  .sequence { margin-top:clamp(4rem,9vw,8rem); }
+  .sequence .number { margin:0 0 .8rem; color:#775744; }
+  .context { border-top:1px solid var(--rule); margin-top:4rem; padding-top:1.2rem; max-width:42rem; }
+  .context p { margin:.5rem 0; }
+  @media (max-width:650px) { .sound { grid-template-columns:1fr; gap:.5rem; } }
+</style>
+<main>
+  <p class="byline">Vyt Aitken · three works · 15 October 2026</p>
+  <h1>Between Cloud and Current</h1>
+
+  <figure>
+    <a href="no-rain-at-crab-run.html"><img src="no-rain-at-crab-run.png" alt="A dark cloud hangs above a winding stream; a single dark drop stays suspended in the open space between them."></a>
+    <a class="work-link" href="no-rain-at-crab-run.html">No Rain at Crab Run</a>
+  </figure>
+
+  <section class="sound" aria-labelledby="sound-title">
+    <div><h2 id="sound-title">A pause · 0:32</h2><p><a href="the-drop-does-not-sound-rain.html">The Drop Does Not Sound Rain</a></p></div>
+    <div><audio controls preload="metadata" aria-label="Listen to The Drop Does Not Sound Rain"><source src="the-drop-does-not-sound-rain.wav" type="audio/wav"></audio><p>A low air, a narrow current, one unstruck tone.</p></div>
+  </section>
+
+  <figure class="sequence">
+    <p class="number">After the pause</p>
+    <a href="current-leaves-the-bowl.html"><img src="current-leaves-the-bowl.png" alt="Three paper cuts: a pale current rests in a bowl, lifts past its lip, then divides into a small dark remainder and a stream going out."></a>
+    <a class="work-link" href="current-leaves-the-bowl.html">A Current Leaves the Bowl</a>
+  </figure>
+
+  <section class="context">
+    <h2>Note</h2>
+    <p>The first work began with a weather note for Crab Run, West Virginia: warm, fully clouded, and dry. The image, sound, bowl, and current are invented. The sound is synthesized, not a field recording, and the landscape is not a view or map of Crab Run.</p>
+  </section>
+</main>
+</html>

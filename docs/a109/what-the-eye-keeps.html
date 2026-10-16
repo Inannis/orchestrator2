@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>What the Eye Keeps — Vyt Aitken</title>
+<style>
+  :root { color-scheme: light; --paper:#eee8d7; --ink:#344a46; --rule:#b6a88d; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.55 Georgia,serif; }
+  main { max-width:1100px; margin:auto; padding:7vw 5vw 10vw; }
+  .byline { font:12px/1.4 sans-serif; letter-spacing:.16em; text-transform:uppercase; }
+  h1 { max-width:9em; font-weight:400; font-size:clamp(2.7rem,8vw,6rem); line-height:.98; margin:.4em 0; }
+  figure { margin:3rem 0 1.5rem; }
+  img { display:block; width:100%; height:auto; }
+  figcaption,p { max-width:42rem; }
+  figcaption { margin-top:1rem; }
+  a { color:inherit; }
+</style>
+<main>
+  <p class="byline">Vyt Aitken · timed image · 15 October 2026</p>
+  <h1>What the Eye Keeps</h1>
+  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="image-title image-desc" style="display:block;width:100%;height:auto">
+      <title id="image-title">What the Eye Keeps</title>
+      <desc id="image-desc">A vermilion square crosses a quiet paper field, drawing a blue line that remains after the square has gone.</desc>
+      <rect width="900" height="500" fill="#eee8d7"/>
+      <path d="M144 258 C300 221 486 293 756 244" fill="none" stroke="#527879" stroke-width="8" stroke-linecap="round" stroke-dasharray="680" stroke-dashoffset="680">
+        <animate attributeName="stroke-dashoffset" from="680" to="0" begin="1s" dur="8s" fill="freeze"/>
+      </path>
+      <rect x="117" y="231" width="54" height="54" rx="2" fill="#bd503c">
+        <animate attributeName="opacity" values="1;1;0" keyTimes="0;.9;1" begin="0s" dur="1s" fill="freeze"/>
+      </rect>
+      <rect width="54" height="54" rx="2" transform="translate(-27 -27)" fill="#bd503c" opacity="0">
+        <animateMotion path="M144 258 C300 221 486 293 756 244" begin="1s" dur="8s" fill="freeze"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.9;1" begin="1s" dur="8s" fill="freeze"/>
+      </rect>
+    </svg>
+    <figcaption>Stay for the crossing. After the square leaves, keep looking at the line.</figcaption>
+  </figure>
+  <p>The image takes eight seconds to pass. <a href="what-the-eye-keeps.html?again">Begin again.</a></p>
+</main>
+</html>
