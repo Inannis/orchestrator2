@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1120" viewBox="0 0 1500 1120">
+<rect width="1500" height="1120" fill="#f0ede5"/>
+<text x="64" y="58" font-family="Arial,sans-serif" font-size="14" letter-spacing="4" fill="#68706e">OPEN FOLD / PAPER PROPOSAL 02</text>
+<text x="60" y="132" font-family="Georgia,serif" font-size="58" fill="#202522">A panel that translates</text>
+<text x="64" y="176" font-family="Georgia,serif" font-size="22" fill="#555a56">A paper screen moves through the opening without turning on a hinge.</text>
+<rect x="52" y="222" width="950" height="684" fill="#e2dfd5"/>
+<!-- floor and room planes -->
+<path d="M180 720L430 610L855 716L600 850Z" fill="#c8c4b8" opacity=".6"/>
+<path d="M180 715L430 605L855 710L600 845Z" fill="#f6f3e9" stroke="#8b8b82" stroke-width="2"/>
+<path d="M430 605L855 710L855 370L430 265Z" fill="#252a28" stroke="#202522" stroke-width="2"/>
+<path d="M180 715L430 605L430 265L180 375Z" fill="#d1cec4" stroke="#85847d" stroke-width="2"/>
+<path d="M430 265L855 370L855 403L430 298Z" fill="#d9d5c9" stroke="#85847d" stroke-width="1"/>
+<!-- cut aperture -->
+<path d="M520 470L755 528L755 635L520 577Z" fill="#f2efe7" stroke="#c8c4b8" stroke-width="2"/>
+<!-- proposed shallow rails -->
+<path d="M505 452L770 518L770 535L505 469Z" fill="#a94832"/>
+<path d="M505 579L770 645L770 662L505 596Z" fill="#a94832"/>
+<path d="M505 452L770 518M505 579L770 645" fill="none" stroke="#713c30" stroke-width="2"/>
+<!-- three positions, inactive outlines -->
+<path d="M520 469L610 491L610 599L520 577Z" fill="#d8ad87" fill-opacity=".19" stroke="#f0ede5" stroke-width="2" stroke-dasharray="7 7"/>
+<path d="M665 505L755 527L755 635L665 613Z" fill="#d8ad87" fill-opacity=".13" stroke="#f0ede5" stroke-width="2" stroke-dasharray="7 7"/>
+<!-- selected screen -->
+<path d="M592 487L684 510L684 618L592 595Z" fill="#d8ad87" stroke="#202522" stroke-width="3"/>
+<path d="M602 503L674 521M602 514L674 532M602 525L674 543M602 536L674 554M602 547L674 565M602 558L674 576" stroke="#f6f3e9" stroke-width="2" opacity=".8"/>
+<!-- travel direction -->
+<path d="M542 673L611 690M708 714L778 731" fill="none" stroke="#a94832" stroke-width="4"/>
+<path d="M597 679L619 692L593 696M723 720L701 708L727 704" fill="none" stroke="#a94832" stroke-width="4"/>
+<text x="470" y="750" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.4" fill="#714637">SLIDE TO CHANGE THE SEAM</text>
+<!-- explanatory callout -->
+<path d="M689 527L805 470L936 470" fill="none" stroke="#a94832" stroke-width="2"/>
+<circle cx="689" cy="527" r="5" fill="#a94832"/>
+<text x="791" y="447" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.1" fill="#714637">PROPOSED SCREEN TRAVEL</text>
+<!-- right-side position study -->
+<g transform="translate(1040 240)">
+ <text x="0" y="24" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#a94832">THREE CHOICES</text>
+ <line x1="0" y1="43" x2="380" y2="43" stroke="#c9c4b8"/>
+ <rect x="0" y="70" width="350" height="82" fill="#252a28"/>
+ <rect x="44" y="94" width="260" height="34" fill="#f0ede5"/>
+ <rect x="44" y="94" width="260" height="34" fill="#a94832" opacity=".93"/>
+ <text x="0" y="176" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2" fill="#68706e">01 / COVER</text>
+ <rect x="0" y="205" width="350" height="82" fill="#252a28"/>
+ <rect x="44" y="229" width="260" height="34" fill="#f0ede5"/>
+ <rect x="44" y="229" width="145" height="34" fill="#a94832" opacity=".93"/>
+ <text x="0" y="311" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2" fill="#68706e">02 / LEAVE A SEAM</text>
+ <rect x="0" y="340" width="350" height="82" fill="#252a28"/>
+ <rect x="44" y="364" width="260" height="34" fill="#f0ede5"/>
+ <text x="0" y="446" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2" fill="#68706e">03 / UNCOVER</text>
+ <line x1="0" y1="472" x2="380" y2="472" stroke="#c9c4b8"/>
+ <text x="0" y="512" font-family="Georgia,serif" font-size="24" fill="#202522">The hand sets the interval.</text>
+ <text x="0" y="548" font-family="Georgia,serif" font-size="16" fill="#555a56">A moving plane changes what can be</text>
+ <text x="0" y="574" font-family="Georgia,serif" font-size="16" fill="#555a56">seen, shaded, or left open.</text>
+ <text x="0" y="628" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.4" fill="#a94832">THE RAIL IS A PROPOSAL</text>
+ <text x="0" y="658" font-family="Georgia,serif" font-size="15" fill="#555a56">Clearance, capture, and friction</text>
+ <text x="0" y="683" font-family="Georgia,serif" font-size="15" fill="#555a56">remain to be tested in paper.</text>
+</g>
+<line x1="62" y1="955" x2="1438" y2="955" stroke="#c8c4b8"/>
+<text x="64" y="1002" font-family="Georgia,serif" font-size="25" fill="#202522">A quiet screen makes movement part of the threshold.</text>
+<text x="64" y="1043" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.6" fill="#68706e">DIGITAL PAPER-MODEL PROPOSAL / DRAWN MECHANISM / NO PHYSICAL BUILD IS SHOWN</text>
+</svg>

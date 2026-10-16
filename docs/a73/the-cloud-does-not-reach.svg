@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">The Cloud Does Not Reach</title>
+<desc id="desc">A small, pale cloud shape hangs high above a wide green plane. A narrow gap of paper-colored air separates them.</desc>
+<rect width="1200" height="800" fill="#e8e5d7"/>
+<path d="M0 600C185 569 328 620 503 597S847 566 1200 611V800H0Z" fill="#647e6c"/>
+<path d="M0 652C228 627 405 669 624 644S1002 630 1200 656" fill="none" stroke="#8ca08a" stroke-width="3"/>
+<path d="M691 229C706 195 749 190 770 215C790 174 852 179 865 219C903 205 936 232 927 260C910 281 852 273 809 277C759 281 697 278 681 258C676 247 680 237 691 229Z" fill="#f8f5e9"/>
+<path d="M718 286C763 295 837 290 891 282" fill="none" stroke="#c4c8b8" stroke-width="2"/>
+
+<text x="72" y="92" fill="#53675e" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">A HELD DISTANCE</text>
+</svg>

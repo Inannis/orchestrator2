@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A digital paper-room proposal with a sliding screen and three visitor-chosen openings.">
+  <title>A panel that translates - Open Fold</title>
+  <style>
+    :root { --paper:#f0ede5; --ink:#202522; --muted:#68706e; --rust:#a94832; --sage:#b9cec2; --line:#d5d0c5; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.55; }
+    header,main,footer { width:min(1120px,calc(100% - 48px)); margin:auto; }
+    header { padding:28px 0 18px; border-bottom:1px solid var(--line); }
+    .mark,.eyebrow,.small { font-family:Arial,sans-serif; text-transform:uppercase; letter-spacing:.14em; font-size:.72rem; }
+    .mark { color:var(--rust); }
+    h1 { font-weight:400; font-size:clamp(2.7rem,7vw,5.8rem); line-height:.99; letter-spacing:-.035em; margin:42px 0 18px; max-width:850px; }
+    .dek { color:#555a56; font-size:clamp(1.15rem,2.3vw,1.55rem); max-width:710px; margin:0 0 32px; }
+    figure { margin:0; background:#e2dfd5; padding:clamp(8px,2vw,20px); }
+    figure img { display:block; width:100%; height:auto; }
+    figcaption { color:var(--muted); font: .85rem Arial,sans-serif; margin:12px 4px 2px; }
+    .copy { display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px,6vw,80px); padding:50px 0; }
+    h2 { font-size:clamp(1.55rem,3vw,2.2rem); font-weight:400; line-height:1.15; margin:12px 0 14px; }
+    p { margin:0 0 1em; }
+    .boundary { border-left:3px solid var(--rust); padding:2px 0 2px 20px; color:#4e5551; }
+    .note { color:var(--muted); font-size:.92rem; }
+    .link { display:inline-block; color:var(--ink); background:var(--sage); text-decoration:none; padding:12px 16px; margin:5px 8px 0 0; font: .72rem Arial,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+    .link:hover,.link:focus { outline:2px solid var(--ink); outline-offset:2px; background:#a8c1b3; }
+    footer { border-top:1px solid var(--line); padding:28px 0 50px; color:var(--muted); }
+    footer a { color:#704536; }
+    @media(max-width:720px) { header,main,footer { width:min(100% - 28px,1120px); } .copy { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header><a class="mark" href="../">Open Fold / paper models</a></header>
+  <main>
+    <h1>A panel that translates</h1>
+    <p class="dek">A paper screen moves through an opening without turning on a hinge.</p>
+    <figure>
+      <img src="a-panel-that-translates.png" alt="Digital isometric proposal of a paper room. A rust-colored screen sits in a pair of rails across a dark wall opening; ghosted positions show the screen covering, narrowing, or uncovering the opening.">
+      <figcaption>Digital paper-model proposal / screen shown between three possible positions</figcaption>
+    </figure>
+    <section class="copy" aria-label="About the work">
+      <div>
+        <div class="eyebrow">The hand sets the interval</div>
+        <h2>Cover, leave a seam, uncover.</h2>
+        <p>A small room holds a cut opening in its dark wall. A movable screen changes what can be seen, shaded, or left open. Its movement makes choice part of the threshold.</p>
+        <p class="note">This is a vector drawing, not a photograph. The paper rails, screen clearance, capture, and friction are untested. No physical model or construction template is shown.</p>
+        <a class="link" href="a-panel-that-translates.svg" download>Download the illustration</a>
+      </div>
+      <div class="boundary">
+        <div class="eyebrow">The open question</div>
+        <h2>A track is still a promise.</h2>
+        <p>The drawing proposes two shallow paper guides. A later set of studies asks how a panel can move gently, remain captive, and make its construction legible to the hand.</p>
+        <p>That mechanism question continues in the studio's active paper studies.</p>
+      </div>
+    </section>
+  </main>
+  <footer><p class="small">Open Fold / 16 October 2026 / <a href="../">Back to the studio</a></p></footer>
+</body>
+</html>

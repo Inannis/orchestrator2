@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+<rect width="1200" height="820" fill="#263349"/>
+<rect x="28" y="28" width="1144" height="764" fill="#f1e7d4" stroke="#d6ae68" stroke-width="3"/>
+<text x="68" y="76" font-family="Arial,sans-serif" font-size="15" letter-spacing="4" fill="#263349">THE KEY OF AN OFFER  /  WORK 02</text>
+<text x="68" y="126" font-family="Georgia,serif" font-size="42" fill="#263349">A Place to Sit</text>
+<path d="M68 154H1132V634H68Z" fill="#536c73"/>
+<!-- the rain darkens the whole park -->
+<path d="M68 154H1132V336Q902 372 676 340T68 358Z" fill="#314354"/>
+<g stroke="#93a49a" stroke-width="3" opacity=".75">
+  <path d="M125 179L105 224M221 167L200 214M315 184L294 229M424 166L402 213M530 184L510 230M643 164L622 211M750 185L729 232M862 165L841 212M974 182L953 228M1081 166L1060 213"/>
+  <path d="M170 255L151 299M374 244L354 290M578 256L558 302M789 244L769 290M1001 253L981 299"/>
+</g>
+<!-- empty stand recedes behind the single seat -->
+<path d="M68 336H1132V374H68Z" fill="#bd8c57" opacity=".9"/>
+<path d="M99 346H192M216 346H304M330 346H414M896 346H978M1002 346H1097" stroke="#e1c993" stroke-width="3" opacity=".8"/>
+<!-- seat back and legs -->
+<path d="M192 272L1002 272L1043 434L167 434Z" fill="#b95743" stroke="#263349" stroke-width="6"/>
+<path d="M219 294L976 294L1002 398L197 398Z" fill="#314354" stroke="#d6ae68" stroke-width="3"/>
+<path d="M204 405L1031 405L1073 480L166 480Z" fill="#d6ae68" stroke="#263349" stroke-width="6"/>
+<path d="M223 420L1008 420L1032 460L204 460Z" fill="#536c73" stroke="#263349" stroke-width="3"/>
+<path d="M249 475L273 475L248 582L220 582ZM966 475L993 475L1025 582L997 582Z" fill="#303948" stroke="#263349" stroke-width="4"/>
+<path d="M215 580H285M990 580H1035" stroke="#263349" stroke-width="8"/>
+<!-- the sleeve reaches into the weather -->
+<path d="M68 472H239L356 444L435 424L475 448L450 480L365 495L278 535L68 535Z" fill="#29394b" stroke="#263349" stroke-width="5"/>
+<path d="M245 475L353 447L428 430L465 440L482 461L463 479L420 472L375 486L315 514L264 518Z" fill="#d6a171" stroke="#263349" stroke-width="4"/>
+<path d="M314 489L366 470M331 500L386 480M348 510L403 489" fill="none" stroke="#263349" stroke-width="2" opacity=".65"/>
+<!-- wiped patch: deliberately left without a number -->
+<path d="M496 415L718 415L744 454L713 477L495 472L472 450Z" fill="#e9dfcd" stroke="#f1e7d4" stroke-width="3"/>
+<path d="M493 425L704 424M485 435L728 435M481 462L705 467" stroke="#d6ae68" stroke-width="3" opacity=".8"/>
+<!-- a ball left in the cleared place -->
+<circle cx="616" cy="444" r="27" fill="#f1e7d4" stroke="#263349" stroke-width="3"/>
+<path d="M600 422Q622 444 602 466M632 422Q610 444 632 466" fill="none" stroke="#b95743" stroke-width="2.5"/>
+<path d="M596 429L602 432M598 437L604 440M599 449L605 452M628 429L634 432M626 437L632 440M625 449L631 452" stroke="#b95743" stroke-width="2"/>
+<!-- painted rain carries across the seat, stopping at the wipe -->
+<g fill="none" stroke="#93a49a" stroke-width="3" opacity=".85">
+  <path d="M287 410L271 441M432 409L416 438M770 408L754 434M873 410L857 437M939 411L923 437"/>
+</g>
+<!-- key marks live on the keyed fields; the cleared place stays open -->
+<g font-family="Arial,sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#263349">
+ <circle cx="130" cy="490" r="14" fill="#f1e7d4"/><text x="130" y="495">01</text>
+ <circle cx="931" cy="338" r="14" fill="#f1e7d4"/><text x="931" y="343">04</text>
+ <circle cx="851" cy="444" r="14" fill="#f1e7d4"/><text x="851" y="449">11</text>
+ <circle cx="1018" cy="514" r="14" fill="#f1e7d4"/><text x="1018" y="519">16</text>
+ <circle cx="616" cy="444" r="14" fill="#d6ae68"/><text x="616" y="449">07</text>
+</g>
+<path d="M68 658H1132" stroke="#263349" stroke-width="1.5"/>
+<g font-family="Arial,sans-serif" font-size="11" letter-spacing="1.2" fill="#263349">
+  <circle cx="86" cy="690" r="8" fill="#29394b"/><text x="101" y="694">SLEEVE / 01</text>
+  <circle cx="260" cy="690" r="8" fill="#314354"/><text x="275" y="694">RAIN / 04</text>
+  <circle cx="415" cy="690" r="8" fill="#f1e7d4" stroke="#263349"/><text x="430" y="694">BALL / 07</text>
+  <circle cx="575" cy="690" r="8" fill="#d6ae68"/><text x="590" y="694">SEAT / 11</text>
+  <circle cx="750" cy="690" r="8" fill="#303948"/><text x="765" y="694">FRAME / 16</text>
+</g>
+<text x="1132" y="744" text-anchor="end" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="#263349">I WIPED THE PLACE WHERE YOU COULD SIT.</text>
+</svg>
