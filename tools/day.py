@@ -178,6 +178,7 @@ if not resume and memory in ("rooms", "desk", "deskw", "studio", "project") and 
     (studio / "NOW.md").replace(studio / "days" / f"{n - 1:03d}.md")
 if not resume and memory in ("desk", "deskw"):
     subprocess.run([sys.executable, str(root / "tools" / "desk.py"), str(studio)])
+commit_error = None
 t0 = time.time(); turns = 0; cost = 0.0; tok = 0; enc = "none"; err = None; waits = 0
 STREAM.write_text("", encoding="utf-8"); mark(type="day", id=aid, n=n, model=model, effort=effort, k=k, resumed=bool(resume))
 if os.name == "nt" and "--no-window" not in args:  # a console window that shows the day as it happens; it closes when the day ends
@@ -237,11 +238,18 @@ if turns and (studio / ".git").exists():  # whatever the artist left uncommitted
     pats = ["*-profile/", ".*-profile/", "*profile*/Default/", "__pycache__/", "*.tmp", ".cache/"]
     have = excl.read_text(encoding="utf-8") if excl.exists() else ""
     if any(p not in have for p in pats): excl.write_text(have + "\n" + "\n".join(p for p in pats if p not in have) + "\n", encoding="utf-8")
-    subprocess.run(["git", "-C", str(studio), "add", "-A"], capture_output=True)
-    subprocess.run(["git", "-C", str(studio), "commit", "-qm", f"End of session {n}, as left"], capture_output=True)
+    for p in studio.rglob("*"):  # a file named after a Windows device (nul.png, con.txt) blocks every commit: rename it
+        if ".git" not in p.parts and re.match(r"^(con|prn|aux|nul|com\d|lpt\d)(\..*)?$", p.name, re.I):
+            try: os.rename("\\\\?\\" + str(p), "\\\\?\\" + str(p.with_name("_" + p.name)))
+            except OSError: pass
+    added = subprocess.run(["git", "-C", str(studio), "add", "-A"], capture_output=True, text=True)
+    committed = subprocess.run(["git", "-C", str(studio), "commit", "-qm", f"End of session {n}, as left"], capture_output=True, text=True)
+    if added.returncode or (committed.returncode and "nothing to commit" not in committed.stdout + committed.stderr):
+        commit_error = (added.stderr + committed.stderr).strip()[-300:]
 line = {"run": f"{aid}-{n:03d}", "artist": aid, "n": n, "date": today, "model": model, "effort": effort, "condition": cond, "shape": shape,
         "minutes": round((time.time() - t0) / 60), "turns": turns, "k": k, "encounter": enc, "tokens": tok, "cost_usd": round(cost, 2),
         "error": err, "session_id": sid, "resumed": bool(resume), "note": None}
+if commit_error: line["commit_error"] = commit_error  # the studio's history failed to record this day
 if row and not opt("--studio") and turns:
     with (root / "runs" / "runs.ndjson").open("a", encoding="utf-8") as f: f.write(json.dumps(line) + "\n")
 if not err and state_file.exists(): state_file.unlink()

@@ -27,7 +27,7 @@ Read after `instructions.md`. These files are the whole memory of the orchestrat
 1. Read the files above. Answer `../studios/*/requests/` and `notes/requests/` with typed inbox files (`note-`, `receipt-`), the user's words verbatim.
 2. Resume unfinished days of active and reference artists only (`round.py <ids>` resumes them first).
 3. Decide who runs and why; run by name. Watch `runs/round.json`.
-4. Read the days and the studios, the reference pair included. Fill each ledger `note`; rewrite observations for artists read. Check memory surfaces for sprawl. Never touch a studio's own files.
+4. Read the days and the studios, the reference pair included. Fill each ledger `note`; rewrite observations for artists read. Check memory surfaces for sprawl, and any `commit_error` in the ledger (a studio whose history stopped recording). Never touch a studio's own files.
 5. At a closed window: judge, decide, update hypotheses, conditions, registry and the reference.
 6. Commit, push, one log line with the practice/system/admin ratio. Update "Where it stands".
 
