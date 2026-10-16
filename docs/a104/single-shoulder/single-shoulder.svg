@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080">
+<rect width="1440" height="1080" fill="#f2efe7"/>
+<text x="90" y="72" fill="#68716c" font-family="Arial,sans-serif" font-size="16" letter-spacing="5">OPEN FOLD  /  VOEGEN SAMEN</text>
+<text x="90" y="174" fill="#202725" font-family="Georgia,serif" font-size="72">The single shoulder</text>
+<text x="94" y="224" fill="#68716c" font-family="Arial,sans-serif" font-size="21">One edge held in a rail; the other left free.</text>
+<text x="95" y="302" fill="#a94732" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">A DIGITAL PAPER-MODEL PROPOSAL</text>
+
+<!-- Main proposal: panel crossing two rails; one small folded shoulder catches the upper rail. -->
+<rect x="95" y="355" width="825" height="465" fill="#202725"/>
+<path d="M165 470H850M165 700H850" stroke="#a94732" stroke-width="34"/>
+<path d="M165 470H850M165 700H850" stroke="#d1aa85" stroke-width="3" stroke-dasharray="8 11" opacity=".9"/>
+<rect x="445" y="420" width="180" height="330" fill="#b9cec2" stroke="#f2efe7" stroke-width="6"/>
+<!-- A folded runner meets only the upper rail. -->
+<path d="M625 455H730V476H650V495H710" fill="#d8ad87" stroke="#a94732" stroke-width="4" stroke-linejoin="round"/>
+<path d="M535 405V432" stroke="#a94732" stroke-width="3"/>
+<path d="M524 424L535 443L546 424" fill="#a94732"/>
+<path d="M350 585H275" stroke="#f2efe7" stroke-width="3"/>
+<path d="M275 585L294 574V596Z" fill="#f2efe7"/>
+<path d="M350 585L331 574V596Z" fill="#f2efe7"/>
+<text x="175" y="435" fill="#f2efe7" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">UPPER RAIL</text>
+<text x="175" y="750" fill="#f2efe7" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">LOWER RAIL</text>
+<text x="645" y="545" fill="#f2efe7" font-family="Georgia,serif" font-size="19">one shoulder</text>
+<path d="M647 530L620 489" stroke="#f2efe7" stroke-width="1.5"/>
+<text x="302" y="625" fill="#f2efe7" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">SCREEN SLIDES</text>
+
+<!-- The unresolved risk: yaw around the captured corner. -->
+<rect x="965" y="355" width="380" height="465" fill="#e6e1d7"/>
+<text x="995" y="400" fill="#68716c" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">OPEN QUESTION</text>
+<path d="M1020 620H1290" stroke="#a94732" stroke-width="13"/>
+<rect x="1128" y="485" width="38" height="260" fill="#b9cec2" stroke="#202725" stroke-width="2"/>
+<path d="M1147 500L1208 512L1192 766L1130 748Z" fill="none" stroke="#68716c" stroke-width="2" stroke-dasharray="7 7"/>
+<circle cx="1147" cy="500" r="7" fill="#a94732"/>
+<path d="M1190 540C1227 558 1233 591 1214 614" fill="none" stroke="#a94732" stroke-width="2"/>
+<path d="M1208 606L1214 621L1224 610Z" fill="#a94732"/>
+<text x="995" y="785" fill="#202725" font-family="Georgia,serif" font-size="18">Could the free edge yaw?</text>
+
+<path d="M95 870H1345" stroke="#202725" stroke-width="2"/>
+<text x="95" y="925" fill="#202725" font-family="Georgia,serif" font-size="24">One point of capture may ease drag; it may also let the screen turn.</text>
+<text x="95" y="972" fill="#68716c" font-family="Arial,sans-serif" font-size="15" letter-spacing="1">CLEARANCE, MOVING FORCE, LIFT-OUT AND WEAR ARE UNTESTED.</text>
+<text x="95" y="1010" fill="#68716c" font-family="Arial,sans-serif" font-size="15" letter-spacing="1">NO PHYSICAL MODEL OR CONSTRUCTION TEMPLATE IS SHOWN.</text>
+<text x="1345" y="72" text-anchor="end" fill="#a94732" font-family="Arial,sans-serif" font-size="14">04</text>
+</svg>

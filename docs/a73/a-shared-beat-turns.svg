@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
-<title id="title">A Shared Beat: first cut beside turn 11</title>
-<desc id="desc">The green cut shape at its first edge and turn 11 of 12. The notch deepens while the body's broad outline holds.</desc>
+<title id="title">A Shared Beat: first cut beside turn 12</title>
+<desc id="desc">The green cut shape at its first edge and turn 12 of 12. The notch deepens while the body's broad outline holds.</desc>
 <rect width="1000" height="500" fill="#202a2b"/>
 <path fill="none" stroke="#75837a" stroke-width="1" opacity=".55" d="M500 58V438"/>
 <g fill="#7db4a1">
  <path transform="translate(-84 100) scale(.7)" d="M250 159 L333 126 L418 136 L477 167 L543 203 L650 220 C642 222 637 229 637 239 C637 249 642 256 650 258 L650 258 L543 277 L477 313 L418 344 L333 354 L250 321 L220 277 L220 203Z"/>
- <path transform="translate(475 100) scale(.7)" d="M250 159 L333 126 L418 136 L477 167 L543 203 L650 220 C587 222 582 229 582 239 C582 249 587 256 650 258 L650 258 L543 277 L477 313 L418 344 L333 354 L250 321 L220 277 L220 203Z"/>
+ <path transform="translate(475 100) scale(.7)" d="M250 159 L333 126 L418 136 L477 167 L543 203 L650 220 C582 222 577 229 577 239 C577 249 582 256 650 258 L650 258 L543 277 L477 313 L418 344 L333 354 L250 321 L220 277 L220 203Z"/>
 </g>
 <g fill="#e8dfca" font-family="Georgia,serif" font-size="19">
- <text x="150" y="390">the first cut</text><text x="635" y="390">turn 11 / 12</text>
+ <text x="150" y="390">the first cut</text><text x="635" y="390">turn 12 / 12</text>
 </g>
 <text x="52" y="462" fill="#a9b1a5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">THE EDGE ADVANCES; THE WEIGHT STAYS</text>
 </svg>
