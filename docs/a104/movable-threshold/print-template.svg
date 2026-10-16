@@ -1,0 +1,83 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1587" height="1122" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="#fffefa"/>
+<text x="12" y="9" font-family="Arial,sans-serif" font-size="3.6" letter-spacing=".7" fill="#242520">THE MOVABLE THRESHOLD / PAPER MODEL TEMPLATE</text>
+<text x="408" y="9" text-anchor="end" font-family="Arial,sans-serif" font-size="2.6" letter-spacing=".35" fill="#6b6a63">A3 LANDSCAPE · PRINT AT 100% · MODEL 1:25</text>
+<line x1="12" y1="12" x2="408" y2="12" stroke="#bbb7ad" stroke-width=".3"/>
+<!-- vellum eave; body plus two small glue flaps -->
+<text x="12" y="20" font-family="Arial,sans-serif" font-size="2.8" letter-spacing=".25" fill="#55554e">TRACE ON VELLUM / 100 × 45 mm SHADE</text>
+<path d="M12 30H120V83H112V75H12Z" fill="#eeeae0" stroke="#a44934" stroke-width=".5"/>
+<path d="M12 38H112M112 30V75" fill="none" stroke="#4b6f86" stroke-width=".45" stroke-dasharray="2 1.4"/>
+<text x="44" y="59" font-family="Georgia,serif" font-size="3.2" fill="#75736a">vellum / leave translucent</text>
+<text x="115" y="54" font-family="Arial,sans-serif" font-size="2.2" fill="#66655d" transform="rotate(90 115 54)">GLUE TAB</text>
+<text x="18" y="36" font-family="Arial,sans-serif" font-size="2.2" fill="#66655d">GLUE TAB</text>
+
+<!-- floor -->
+<text x="12" y="84" font-family="Arial,sans-serif" font-size="2.8" letter-spacing=".25" fill="#55554e">FLOOR / 160 × 120 mm</text>
+<rect x="12" y="87" width="160" height="120" fill="#f3f0e7" stroke="#a44934" stroke-width=".55"/>
+<!-- pivot and three angled tabs, all cut slots -->
+<circle cx="26" cy="87" r="1.2" fill="#a44934"/>
+<text x="19" y="96" font-family="Arial,sans-serif" font-size="2.3" fill="#7b493b">P</text>
+<path d="M79.7 118L84.9 121M61.6 137.7L65 142.7M37 147.9L37.6 153.9" stroke="#a44934" stroke-width=".7"/>
+<text x="87" y="131" font-family="Arial,sans-serif" font-size="2.4" fill="#7b493b">1 / NARROW</text>
+<text x="67" y="153" font-family="Arial,sans-serif" font-size="2.4" fill="#7b493b">2 / MID</text>
+<text x="42" y="166" font-family="Arial,sans-serif" font-size="2.4" fill="#7b493b">3 / OPEN</text>
+<path d="M26 87Q72 90 82 120" fill="none" stroke="#9d9a90" stroke-width=".35" stroke-dasharray="1.5 2"/>
+<path d="M26 87Q61 107 63 140" fill="none" stroke="#9d9a90" stroke-width=".35" stroke-dasharray="1.5 2"/>
+<path d="M26 87Q43 109 37 151" fill="none" stroke="#9d9a90" stroke-width=".35" stroke-dasharray="1.5 2"/>
+<text x="32" y="196" font-family="Arial,sans-serif" font-size="2.3" letter-spacing=".15" fill="#696860">three radial slots let the wing set a new aperture</text>
+
+<!-- back wall -->
+<text x="210" y="15" font-family="Arial,sans-serif" font-size="2.8" letter-spacing=".25" fill="#55554e">BACK WALL / 160 × 65 mm / DARK CARD</text>
+<path d="M210 17H370V90H210Z" fill="#292b27" stroke="#a44934" stroke-width=".55"/>
+<path d="M210 82H370" stroke="#4b6f86" stroke-width=".45" stroke-dasharray="2 1.4"/>
+<!-- opening cut in the wall -->
+<path d="M278 43L291 46V65L278 62Z" fill="#fffefa" stroke="#a44934" stroke-width=".45"/>
+<text x="213" y="87" font-family="Arial,sans-serif" font-size="2.2" fill="#bdbbb4">FOLD UNDER / GLUE TO FLOOR</text>
+<!-- wing pivot position -->
+<path d="M224 30V78" stroke="#d78564" stroke-width=".55" stroke-dasharray="2 1.4"/>
+<text x="226" y="34" font-family="Arial,sans-serif" font-size="2.2" fill="#d5b4a5">HINGE AT P / KEEP FREE TO SWING</text>
+
+<!-- right side wall -->
+<text x="210" y="92" font-family="Arial,sans-serif" font-size="2.8" letter-spacing=".25" fill="#55554e">RIGHT WALL / 120 × 65 mm</text>
+<path d="M204 96H336V169H204Z" fill="#e4e1d8" stroke="#a44934" stroke-width=".55"/>
+<path d="M210 96V161M204 161H336" stroke="#4b6f86" stroke-width=".45" stroke-dasharray="2 1.4"/>
+<text x="278" y="166" font-family="Arial,sans-serif" font-size="2.2" fill="#68675f">FOLD + GLUE FLANGE</text>
+<text x="205" y="128" font-family="Arial,sans-serif" font-size="2" fill="#696860" transform="rotate(-90 205 128)">CORNER GLUE TAB</text>
+
+<!-- left wall -->
+<text x="210" y="173" font-family="Arial,sans-serif" font-size="2.8" letter-spacing=".25" fill="#55554e">LEFT WALL / 120 × 65 mm</text>
+<path d="M204 177H336V250H204Z" fill="#d3d0c7" stroke="#a44934" stroke-width=".55"/>
+<path d="M210 177V242M204 242H336" stroke="#4b6f86" stroke-width=".45" stroke-dasharray="2 1.4"/>
+<text x="278" y="247" font-family="Arial,sans-serif" font-size="2.2" fill="#68675f">FOLD + GLUE FLANGE</text>
+<text x="205" y="209" font-family="Arial,sans-serif" font-size="2" fill="#696860" transform="rotate(-90 205 209)">CORNER GLUE TAB</text>
+
+<!-- visitor-set wing with living hinge tongue and anchor toe -->
+<text x="340" y="173" font-family="Arial,sans-serif" font-size="2.8" letter-spacing=".15" fill="#55554e">MOVABLE WING</text>
+<path d="M338 176H414V249H406V241H344V241H338Z" fill="#a95038" stroke="#a44934" stroke-width=".55"/>
+<path d="M344 176V241M344 241H406" stroke="#4b6f86" stroke-width=".45" stroke-dasharray="2 1.4"/>
+<text x="345" y="211" font-family="Arial,sans-serif" font-size="2.2" fill="#f5eee4" transform="rotate(-90 345 211)">FLEX HINGE</text>
+<text x="379" y="237" font-family="Arial,sans-serif" font-size="2" fill="#f5eee4">FLOOR TAB</text>
+<text x="345" y="254" font-family="Arial,sans-serif" font-size="2.2" fill="#696860">65 mm high / 70 mm long</text>
+
+<!-- low entry sill -->
+<text x="12" y="214" font-family="Arial,sans-serif" font-size="2.8" letter-spacing=".2" fill="#55554e">LOW THRESHOLD / 160 × 18 mm</text>
+<path d="M12 217H172V243H12Z" fill="#b69a52" stroke="#a44934" stroke-width=".55"/>
+<path d="M12 235H172" stroke="#4b6f86" stroke-width=".45" stroke-dasharray="2 1.4"/>
+<text x="53" y="240" font-family="Arial,sans-serif" font-size="2.2" fill="#544a32">FOLD UNDER FLOOR</text>
+
+<!-- note and line key -->
+<text x="12" y="254" font-family="Arial,sans-serif" font-size="2.7" letter-spacing=".2" fill="#55554e">ASSEMBLY / 1 CUT THE RUST LINES + THREE FLOOR SLOTS.  2 SCORE BLUE DASHES.  3 GLUE WALL FLANGES UNDER THE FLOOR; FOLD A SEAT FROM THE OFFCUT.</text>
+<text x="12" y="260" font-family="Arial,sans-serif" font-size="2.7" letter-spacing=".2" fill="#55554e">4 MOUNT THE VELLUM EAVE ON THE BACK AND RIGHT WALLS.  5 ATTACH THE WING AT P; SET ITS TOE IN SLOT 1, 2, OR 3.</text>
+<line x1="12" y1="270" x2="29" y2="270" stroke="#a44934" stroke-width=".7"/><text x="32" y="271" font-family="Arial,sans-serif" font-size="2.5" fill="#55554e">CUT</text>
+<line x1="54" y1="270" x2="71" y2="270" stroke="#4b6f86" stroke-width=".7" stroke-dasharray="2 1.4"/><text x="74" y="271" font-family="Arial,sans-serif" font-size="2.5" fill="#55554e">SCORE / FOLD</text>
+<line x1="123" y1="270" x2="140" y2="270" stroke="#a44934" stroke-width=".7" stroke-dasharray=".5 1.3"/><text x="143" y="271" font-family="Arial,sans-serif" font-size="2.5" fill="#55554e">GLUE FLANGE</text>
+<text x="12" y="281" font-family="Georgia,serif" font-size="2.8" fill="#55554e">Build from one sheet of uncoated card; trace the eave onto translucent paper. Keep the hinge loose enough to move.</text>
+<!-- 50 mm calibration bar -->
+<path d="M350 286H400M350 283V289M400 283V289" fill="none" stroke="#22231f" stroke-width=".55"/>
+<text x="350" y="278" font-family="Arial,sans-serif" font-size="2.5" fill="#55554e">50 mm CHECK BAR</text>
+</svg>
+
+
+
+
+

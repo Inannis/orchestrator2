@@ -34,7 +34,7 @@
   <path d="M194 349L161 395L147 433" fill="none" stroke="#d6a44e" stroke-width="15" stroke-linecap="round"/>
   <path d="M216 442L207 488M232 442L248 488" stroke="#d6a44e" stroke-width="14" stroke-linecap="round"/>
   </g>
-  <path d="M323 310Q307 337 284 356" fill="none" stroke="#704139" stroke-width="10" stroke-linecap="round"/>
+  <path d="M323 310Q307 337 284 356Q278 370 267 385" fill="none" stroke="#704139" stroke-width="10" stroke-linecap="round"/>
   <text x="18" y="535" fill="#52615b" font-family="Georgia,serif" font-size="17">beside</text>
 </g>
 <g transform="translate(930 145)">

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A speculative paper room whose visitor sets the opening, with a printable construction score.">
+  <title>The movable threshold — Open Fold</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f0ede5;
+      --ink: #202522;
+      --muted: #68706e;
+      --rust: #a94832;
+      --sage: #b9cec2;
+      --line: #d5d0c5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+    header, main, footer { width: min(1120px, calc(100% - 48px)); margin: auto; }
+    header { padding: 28px 0 18px; border-bottom: 1px solid var(--line); }
+    .mark, .eyebrow, .caption, .links, .small {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .72rem;
+    }
+    .mark { color: var(--rust); }
+    h1 { font-weight: 400; font-size: clamp(2.7rem, 7vw, 5.8rem); line-height: .99; letter-spacing: -.035em; margin: 42px 0 18px; max-width: 850px; }
+    .dek { color: #555a56; font-size: clamp(1.15rem, 2.3vw, 1.55rem); max-width: 710px; margin: 0 0 32px; }
+    figure { margin: 0; }
+    .hero { background: #e2dfd5; padding: clamp(8px, 2vw, 20px); }
+    .hero img, .template img { width: 100%; height: auto; display: block; }
+    figcaption { color: var(--muted); font-family: Arial, sans-serif; font-size: .85rem; margin: 12px 4px 2px; }
+    .intro { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(28px, 6vw, 80px); padding: 54px 0; }
+    h2 { font-size: clamp(1.55rem, 3vw, 2.2rem); font-weight: 400; line-height: 1.15; margin: 0 0 14px; }
+    p { margin: 0 0 1em; }
+    .boundary { border-left: 3px solid var(--rust); padding: 2px 0 2px 20px; color: #4e5551; }
+    .template { display: grid; grid-template-columns: minmax(260px, .9fr) 1.1fr; gap: clamp(24px, 5vw, 64px); align-items: start; padding: 40px 0 64px; border-top: 1px solid var(--line); }
+    .template figure { background: #fffefa; padding: 12px; }
+    .links { display: inline-block; color: var(--ink); background: var(--sage); padding: 12px 16px; text-decoration: none; margin: 6px 8px 0 0; }
+    .links:hover, .links:focus { background: #a8c1b3; outline: 2px solid var(--ink); outline-offset: 2px; }
+    .note { color: var(--muted); font-size: .92rem; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 50px; color: var(--muted); }
+    footer a { color: #704536; }
+    @media (max-width: 720px) {
+      header, main, footer { width: min(100% - 28px, 1120px); }
+      .intro, .template { grid-template-columns: 1fr; }
+      .intro { padding: 36px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header><div class="mark">Open Fold · paper models</div></header>
+  <main>
+    <h1>The movable threshold</h1>
+    <p class="dek">A small room to pause, with an opening its visitor can set.</p>
+
+    <figure class="hero">
+      <img src="movable-threshold.png" alt="A digital isometric drawing of a cut-and-fold paper room: three pale walls, a dark wall with a light opening, a translucent eave, and a rust-colored movable wing set inside the floor.">
+      <figcaption>Digital model proposal · 1:25 · shown with the wing in its middle position</figcaption>
+    </figure>
+
+    <section class="intro" aria-label="About the work">
+      <div>
+        <div class="eyebrow">A threshold with agency</div>
+        <h2>The hand sets the opening.</h2>
+        <p>A folded wing can sit in one of three floor slots, changing the width and direction of entry. A cut aperture catches light in the dark wall; a translucent eave shades only part of the room, leaving the center open.</p>
+        <p>The work asks whether shelter can be offered without deciding how a person enters, speaks, or stays.</p>
+      </div>
+      <div class="boundary">
+        <div class="eyebrow">Where it comes from</div>
+        <p>This is a speculative response to publicly shared accounts of the 2004 Chumash tomol crossing to Swaxil on Limuw. It depicts no Chumash dwelling, place, story, or ceremony, and speaks for no community. The crossing and its accounts remain with the people who made and shared them.</p>
+        <p class="note">The image is a vector rendering, not a photograph. No paper prototype has been cut or assembled; the wing, hinge, slots, and eave have not been tested in use.</p>
+      </div>
+    </section>
+
+    <section class="template" aria-labelledby="template-title">
+      <figure>
+        <img src="print-template.png" alt="A3 landscape cut-and-fold pattern with a floor, three walls, a movable wing, a vellum eave, and a 50 millimetre calibration bar.">
+        <figcaption>The open construction score · A3 · 1:1 parts</figcaption>
+      </figure>
+      <div>
+        <div class="eyebrow">Take the pattern</div>
+        <h2 id="template-title">A room in one sheet.</h2>
+        <p>The template lays out the floor, wall panels, three wing positions, and separate eave. It is an invitation to test the paper, not a claim that the mechanism has already been proven.</p>
+        <p class="note">Print at 100% / Actual size and check the 50 mm bar before cutting. The eave is traced onto translucent paper; the rest is designed for uncoated card.</p>
+        <a class="links" href="print-template.svg" download>Download the SVG template</a>
+        <a class="links" href="print-template.png">View the template</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="small">Reading carried with the work</p>
+    <p><a href="https://sanctuaries.noaa.gov/earthisblue/wk259-stories-from-the-blue-chumash.html">NOAA · Homecoming: Journey to Limuw</a> · <a href="https://www.nps.gov/chis/learn/historyculture/tomolcrossing.htm">Channel Islands National Park · Chumash Tomol Crossing</a> · <a href="https://www.gutenberg.org/ebooks/54340">T. A. Richardson · The Art of Architectural Modelling in Paper</a></p>
+    <p class="small">Open Fold · 16 October 2026</p>
+  </footer>
+</body>
+</html>
