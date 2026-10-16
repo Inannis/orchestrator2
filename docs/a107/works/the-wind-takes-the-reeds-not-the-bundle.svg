@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620">
+<rect width="760" height="620" fill="#e9dfc4"/><rect x="24" y="24" width="712" height="572" fill="none" stroke="#183d54" stroke-width="3"/>
+<text x="52" y="62" fill="#183d54" font-family="serif" font-size="18" letter-spacing="5">WEATHER ALMANAC / SOUTH WIND / XI</text>
+<rect x="52" y="82" width="656" height="452" fill="#bdc9bd"/>
+<!-- The slope cuts down across the sheet; the wind carries reeds past a tied bundle. -->
+<path d="M52 82H708V534H52Z" fill="#d9d9c8"/>
+<path d="M52 190Q177 179 278 254T476 371Q586 432 708 428V534H52Z" fill="#657f79"/>
+<path d="M52 224Q172 212 270 284T469 401Q588 462 708 458" fill="none" stroke="#ae9a69" stroke-width="5"/>
+<path d="M52 329Q155 322 244 383T433 492" fill="none" stroke="#354e5a" stroke-width="8"/>
+<g fill="none" stroke="#d7c998" stroke-width="4"><path d="M120 458q39-55 53-116m-14 131q52-62 73-126m-16 156q50-54 82-99m71 72q45-43 74-75m-13 102q53-48 83-83"/></g>
+<path d="M422 327 492 301 535 337 512 383 439 389 405 359Z" fill="#b68e64" stroke="#203e50" stroke-width="4"/>
+<path d="m412 351 113-25m-64 59 43-83" stroke="#b95042" stroke-width="8"/>
+<path d="M94 147q61-20 107-7m55 39q68-21 124-6m103 49q66-21 120-3" fill="none" stroke="#f1edda" stroke-width="5"/>
+<path d="M118 140q68 10 118 44m112 8q75 5 135 46m76 7q61-2 102 20" fill="none" stroke="#597983" stroke-width="3"/>
+<text x="52" y="574" fill="#183d54" font-family="serif" font-size="17" letter-spacing="3">THE WIND TAKES THE REEDS, NOT THE BUNDLE</text>
+</svg>

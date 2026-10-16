@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080">
+<rect width="1440" height="1080" fill="#f2efe7"/>
+<text x="90" y="74" fill="#68716c" font-family="Arial" font-size="16" letter-spacing="5">OPEN FOLD  /  VOEGEN SAMEN</text>
+<text x="90" y="174" fill="#202725" font-family="Georgia" font-size="72">Three rests</text>
+<text x="94" y="222" fill="#68716c" font-family="Arial" font-size="21">One screen, held at three intervals.</text>
+<text x="1170" y="75" fill="#a94732" font-family="Arial" font-size="14" letter-spacing="3">PAPER PROPOSAL / 2026</text>
+<!-- room and wall -->
+<path d="M135 330L850 275L1090 405V835L845 944L135 840Z" fill="#d8ad87"/>
+<path d="M135 330L850 275V750L135 840Z" fill="#202725"/>
+<path d="M850 275L1090 405V835L850 750Z" fill="#68716c"/>
+<path d="M135 840L850 750L1090 835L355 956Z" fill="#d4cfc4"/>
+<!-- opening -->
+<path d="M270 445L755 404V715L270 772Z" fill="#101715"/>
+<path d="M305 470L720 435V684L305 733Z" fill="#343e39"/>
+<!-- three possible screen positions -->
+<path d="M350 451L470 441V712L350 726Z" fill="#d8ad87" opacity=".38" stroke="#f2efe7" stroke-width="2" stroke-dasharray="8 8"/>
+<path d="M525 436L645 426V691L525 704Z" fill="#b8d0c6" opacity=".96" stroke="#f2efe7" stroke-width="3"/>
+<path d="M705 420L825 410V669L705 682Z" fill="#d8ad87" opacity=".35" stroke="#f2efe7" stroke-width="2" stroke-dasharray="8 8"/>
+<!-- exposed tracks -->
+<path d="M250 422L778 378L786 397L258 442Z" fill="#a94732"/>
+<path d="M270 763L768 704L775 723L278 782Z" fill="#a94732"/>
+<!-- side notched spine / tooth -->
+<path d="M810 392L866 387L866 422L850 425L850 446L866 443L866 480L850 483L850 504L866 501L866 538L850 541L850 562L866 559L866 596L850 599L850 620L866 617L866 654L810 659Z" fill="#d8ad87" stroke="#a94732" stroke-width="3"/>
+<path d="M646 526L850 504" stroke="#b8d0c6" stroke-width="10"/>
+<path d="M823 489L850 504L824 519" fill="none" stroke="#a94732" stroke-width="4"/>
+<!-- small finger cue -->
+<path d="M884 457C905 457 916 468 916 485V524C916 538 907 547 896 547C885 547 878 538 878 526V476C878 465 880 457 884 457Z" fill="#f2efe7" stroke="#202725" stroke-width="2"/>
+<path d="M896 447V420" stroke="#a94732" stroke-width="3"/><path d="M888 430L896 414L904 430" fill="none" stroke="#a94732" stroke-width="3"/>
+<!-- legend inset -->
+<path d="M976 310H1310V650H976Z" fill="#e8e3d9" stroke="#202725" stroke-width="2"/>
+<text x="1002" y="348" fill="#a94732" font-family="Arial" font-size="13" letter-spacing="2">ENLARGED / SIDE RAIL</text>
+<path d="M1020 390H1255V420H1020V446H1230V476H1020V502H1255V532H1020V558H1230V588H1020" fill="none" stroke="#a94732" stroke-width="10"/>
+<path d="M1040 478H1160" stroke="#b8d0c6" stroke-width="16"/>
+<path d="M1160 466L1180 478L1160 490" fill="none" stroke="#202725" stroke-width="3"/>
+<path d="M1189 455V430" stroke="#a94732" stroke-width="3"/><path d="M1181 438L1189 422L1197 438" fill="none" stroke="#a94732" stroke-width="3"/>
+<text x="1002" y="624" fill="#68716c" font-family="Arial" font-size="15">Lift the tooth to shift the screen.</text>
+<!-- closing caption -->
+<path d="M92 990H1348" stroke="#202725" stroke-width="2"/>
+<text x="94" y="1034" fill="#202725" font-family="Georgia" font-size="22">A seam is not the only rest. The rail offers three pauses between closing and passage.</text>
+<text x="1110" y="1034" fill="#68716c" font-family="Arial" font-size="14" letter-spacing="1">DIGITAL PROPOSAL / UNTESTED</text>
+</svg>

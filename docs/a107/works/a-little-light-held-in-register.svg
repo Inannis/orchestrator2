@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620">
+<defs><pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M3 5l6 1m9 12 7-1M7 25l4-1" stroke="#243d50" stroke-width="1" opacity=".3"/></pattern></defs>
+<rect width="760" height="620" fill="#e9dfc4"/><rect x="24" y="24" width="712" height="572" fill="none" stroke="#183d54" stroke-width="3"/>
+<text x="52" y="62" fill="#183d54" font-family="serif" font-size="18" letter-spacing="5">WEATHER ALMANAC / NIGHT / XV</text>
+<rect x="52" y="82" width="656" height="452" fill="#283d50"/>
+<!-- Rain crosses the reflection as separate ink passes; light survives in small misregistered pieces. -->
+<path d="M52 82H708V534H52Z" fill="#293f52"/>
+<path d="M355 175 468 140 574 180V285H355Z" fill="#7d7467" stroke="#192f43" stroke-width="5"/>
+<path d="M335 181 465 132 594 181" fill="none" stroke="#192f43" stroke-width="11"/>
+<rect x="411" y="198" width="104" height="60" fill="#dda155" stroke="#f1dfbd" stroke-width="3"/>
+<path d="M425 208h34v40h-34Z" fill="#f1ce86"/><path d="M465 208h39v40h-39Z" fill="#c98449"/>
+<path d="M52 286Q171 263 265 289T460 286Q599 264 708 290V534H52Z" fill="#355c6c"/>
+<path d="M456 276 514 365 473 398 530 431 493 469 551 512 525 534H638L584 483 616 449 558 412 592 377 542 342 565 308Z" fill="#d09a56" opacity=".62"/>
+<path d="M448 276 506 363 465 396 522 429 485 467 543 510" fill="none" stroke="#efcf8d" stroke-width="5"/>
+<g stroke="#d8e0d5" stroke-width="3" opacity=".8"><path d="m101 109-16 50m73-47-17 52m103-60-16 50m83-44-17 50m317-42-15 48m-422 56-14 42m181-37-15 44m229-29-14 43m77-28-13 40"/></g>
+<path d="M52 369Q171 346 265 370T460 368Q599 346 708 370" fill="none" stroke="#b89059" stroke-width="4"/>
+<rect x="52" y="82" width="656" height="452" fill="url(#grain)"/>
+<path d="M55 83 707 80M53 86v446m5 3 646 1" stroke="#d4bd8f" stroke-width="2" stroke-dasharray="4 8" opacity=".6"/>
+<text x="52" y="574" fill="#183d54" font-family="serif" font-size="17" letter-spacing="3">A LITTLE LIGHT, HELD IN REGISTER</text>
+</svg>
+

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620">
+<defs>
+  <pattern id="paper" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M3 6l4 1m15 8 6 1M8 26l5-1" stroke="#66766f" stroke-width=".8" opacity=".2"/>
+  </pattern>
+  <clipPath id="window"><path d="M238 164H584V496H238Z"/></clipPath>
+</defs>
+<rect width="760" height="620" fill="#e8dfc6"/>
+<rect x="24" y="24" width="712" height="572" fill="none" stroke="#183d54" stroke-width="3"/>
+<text x="52" y="62" fill="#183d54" font-family="serif" font-size="18" letter-spacing="5">WEATHER ALMANAC / RAIN / V</text>
+<rect x="52" y="82" width="656" height="452" fill="#293f54"/>
+<!-- The rain-filled opening is a room's only light; the viewer stands just inside it. -->
+<path d="M52 82H708V156H52Z" fill="#1f3549"/>
+<path d="M52 82 219 163V500L52 534ZM708 82 604 163V500L708 534Z" fill="#344e63"/>
+<path d="M238 164H584V496H238Z" fill="#b8cbc3" stroke="#eadfbe" stroke-width="8"/>
+<g clip-path="url(#window)">
+  <path d="M228 321 321 258 389 307 468 239 596 296V378H228Z" fill="#819b98"/>
+  <path d="M228 356Q307 329 377 354T492 348Q545 335 600 352V425Q532 411 467 430T344 423Q278 405 228 427Z" fill="#47848a"/>
+  <path d="M228 390Q307 365 377 389T492 384Q545 372 600 388" fill="none" stroke="#dfb35e" stroke-width="4"/>
+  <path d="M237 435Q314 414 383 435T506 429Q548 421 584 431V499H237Z" fill="#315f72"/>
+  <path d="M283 440v32m17-35v27m94-20v35m15-33v25m102-37v28m17-31v24" stroke="#e6c377" stroke-width="3" opacity=".65"/>
+  <g stroke="#f2f0df" stroke-width="3" opacity=".85"><path d="m268 187-18 44m57-50-18 45m76-49-18 45m78-52-18 46m80-48-18 44m62-36-16 42m-237 56-14 35m100-32-15 37m108-35-14 36m67-25-11 30"/></g>
+  <path d="M238 164H584M238 164V496M584 164V496" fill="none" stroke="#efe3c3" stroke-width="4"/>
+  <path d="M405 164V496M238 316H584" fill="none" stroke="#8da5a1" stroke-width="3"/>
+</g>
+<!-- The cape hangs without a wearer, its hem close to the sill's reflected river. -->
+<path d="M146 202v24m-17-24h34m-17 24q-42 27-27 94l27 14 27-14q15-67-27-94Z" fill="#c2a876" stroke="#e9ddbd" stroke-width="4"/>
+<path d="M137 241q9 9 18 0m-36 54q18 9 54 0" fill="none" stroke="#927f5e" stroke-width="2" opacity=".8"/>
+<path d="M143 202v-16" stroke="#e9ddbd" stroke-width="3"/>
+<!-- A low oil lamp warms the floor but cannot reach the river. -->
+<path d="M111 450h62l-8 17h-46Z" fill="#b85d47" stroke="#e9ddbd" stroke-width="3"/>
+<path d="M141 449v-27m-8 0h16" stroke="#e8d7aa" stroke-width="3"/>
+<path d="M141 417q-12-15 0-26 12 11 0 26Z" fill="#e5ad5d"/>
+<path d="M79 500H191" stroke="#8b9a90" stroke-width="3"/>
+<path d="M62 520q40-8 77 0t69 0" fill="none" stroke="#b5a276" stroke-width="2" opacity=".6"/>
+<rect x="52" y="82" width="656" height="452" fill="url(#paper)"/>
+<text x="52" y="574" fill="#183d54" font-family="serif" font-size="17" letter-spacing="3">THE ROOM HOLDS ITS BREATH</text>
+</svg>
