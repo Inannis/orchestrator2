@@ -41,7 +41,7 @@ Read after `instructions.md`. These files are the whole memory of the orchestrat
 - What the system relies on (commits, publishing, file locations) is done by tools, never left to an artist's memory.
 - Never bypass a human-verification wall. Always the real date. Memory hygiene first, for them and for me.
 
-## Where it stands (2026-10-16)
-Reference R9 (`ref`: genesis of five chance inheritances with a manifesto over whole lists, a warm whole text, the review with its look, time as an instrument): a73 (Luna, Vyt Aitken, s41) and a76 (Sonnet, Sakia, s37). Open: H56, loop (a96, a99) against mixed (a97, a100); next a fresh cohort from genesis, three and three, then R10 and a restart check. Then the candidates in order: memory sprawl over long runs (a73), the Luna look, audience (ask the user first). Paused: everyone else.
-Known: the prose as a whole sets the register; the inheritance sets the ground; the review turns a practice; arrivals reach a formed practice, charter changes don't; working time deepens only inside a day of different steps; Luna's handwriting is careful, gentle, plate-like.
+## Where it stands (2026-10-17)
+Reference R10 (`ref`: genesis of five chance inheritances with a manifesto over whole lists, a warm whole text, the loop as every ordinary day with named turns, the review with its look, time as an instrument): a73 (Luna, Vyt Aitken, s41) and a76 (Sonnet cross-reference, Sakia, s37). Open: restart check for R10 (a108, fresh, five sessions beside the pair). Next, in order: memory sprawl over long runs (a73: 46 entries in `active/`), the Luna look, kinds of days with named steps; audience only after asking the user. Paused: everyone else.
+Known: the prose as a whole sets the register; the inheritance sets the ground; the review turns a practice; arrivals reach a formed practice, charter changes don't; working time deepens only inside a day of different named steps; Luna's handwriting is careful, gentle, plate-like.
 Waiting on the user, not chased: a3's performances (requests 002, 004), listens (006), a26's German handwriting, the a7 replay clones.
