@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+<title id="title">The Answer Is a Wake</title>
+<desc id="desc">A small empty skiff moves through a pale channel between charcoal-dark banks. Broken wakes turn across the water toward a plain cup on the near shore, but stop short of touching it.</desc>
+<defs>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" seed="31"/><feColorMatrix values=".2 0 0 0 .35 .2 0 0 0 .34 .2 0 0 0 .31 0 0 0 .17 0"/></filter>
+  <linearGradient id="water" x1=".1" y1="0" x2=".85" y2="1"><stop stop-color="#d5d1c8"/><stop offset=".55" stop-color="#bcbab2"/><stop offset="1" stop-color="#d4d0c7"/></linearGradient>
+  <linearGradient id="bank" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#302f2c"/><stop offset="1" stop-color="#55544e"/></linearGradient>
+</defs>
+<rect width="1200" height="840" fill="#eee9df"/>
+<!-- two banks hold a broad current that bends beyond the picture -->
+<path d="M0 0H1200V150Q1082 166 998 211Q905 262 831 305Q773 341 732 410Q700 464 659 500Q615 539 541 540Q431 543 367 490Q296 432 219 425Q118 415 0 456Z" fill="url(#bank)" stroke="#292a27" stroke-width="5"/>
+<g fill="none" stroke="#aaa69d" stroke-linecap="round" opacity=".44">
+ <path d="M0 54l228 4M0 98l251 5M0 145l235 3M0 191l213 6M0 238l194 5M0 287l183 4M0 335l162 5M0 382l142 6M62 30l103 3m-74 171 101 4M24 311l92 4" stroke-width="2"/>
+ <path d="M0 74l98 4m64 74 74 2M15 264l87 3m-44 105 89 3" stroke-width="4"/>
+</g>
+<path d="M0 450Q130 407 219 420Q303 431 369 487Q432 543 541 538Q621 534 661 496Q704 455 733 408Q777 339 831 303Q907 254 998 210Q1084 168 1200 151V840H0Z" fill="url(#water)"/>
+<!-- near bank comes in as a rough dark shelf beneath the cup -->
+<path d="M0 634Q111 593 219 609Q308 620 389 652Q464 681 543 668Q626 653 686 613Q763 563 836 578Q929 596 1004 624Q1091 658 1200 632V840H0Z" fill="url(#bank)"/>
+<path d="M0 634Q111 593 219 609Q308 620 389 652Q464 681 543 668Q626 653 686 613Q763 563 836 578Q929 596 1004 624Q1091 658 1200 632" fill="none" stroke="#292a27" stroke-width="5"/>
+<g fill="none" stroke-linecap="round" opacity=".68">
+ <path d="M53 663q76-17 129 0m51 7q43 13 83 9m-244 43 88-7m51 9 52 4m489-95q53-20 98-8m63 21q43 10 75 26m-239 42q61-19 114-5m147 24q48-16 81-8" stroke="#cbc6bc" stroke-width="3"/>
+ <path d="M99 703l59-5m242-34 49 10m-225 83 79-3m534-147 54 7m83 62 50 7" stroke="#262724" stroke-width="4"/>
+</g>
+<!-- wake marks begin under the skiff, loosen into two broken swells, and turn away before the cup -->
+<g fill="none" stroke-linecap="round">
+ <path d="M721 299Q669 326 640 368Q609 411 577 437" stroke="#f4f0e8" stroke-width="6" opacity=".86"/>
+ <path d="M566 448Q526 465 491 462M460 457Q417 444 390 423" stroke="#f4f0e8" stroke-width="5" opacity=".82"/>
+ <path d="M737 322Q702 353 687 381M664 409Q650 432 628 444" stroke="#77766f" stroke-width="4" opacity=".78"/>
+ <path d="M567 486Q526 501 492 490M462 480Q430 465 412 446" stroke="#77766f" stroke-width="4" opacity=".73"/>
+ <path d="M306 346q45-16 79-1m92 30q28 9 47 3m117-101q37-16 68-5m110 148q35-13 60-6m-483 123q42 10 72 1m364-142q42-17 78-5m-29 70q25-9 49-4" stroke="#f4f0e8" stroke-width="3" opacity=".8"/>
+ <path d="M267 388q51-15 82-2m158-2q26 9 47 2m101 80q27 10 47 1m229-146q32-12 56-4m-350 144q21-7 37-3" stroke="#77766f" stroke-width="3" opacity=".65"/>
+</g>
+<!-- skiff is empty and small; its low hull meets the current -->
+<path d="M696 251Q753 268 821 246L804 284Q753 299 711 280Z" fill="#484842" stroke="#292a27" stroke-width="4" stroke-linejoin="round"/>
+<path d="M705 257q54 17 105-4m-93 26q39 14 76 4" fill="none" stroke="#aaa69d" stroke-width="2.5"/>
+<path d="M757 255l30 18" stroke="#c4bfb5" stroke-width="4" stroke-linecap="round"/><path d="M759 253l30 18" stroke="#454640" stroke-width="2"/>
+<path d="M808 270q30 11 57 6m-39 19q34-8 53 1" fill="none" stroke="#77766f" stroke-width="3"/>
+<!-- cup sits on the near bank; its shadow approaches the river but does not explain it -->
+<g fill="#55544e" stroke="#393a36" stroke-width="2">
+ <path d="M168 704q24-24 54-8q11 15-4 26q-30 7-50-5Z"/><path d="M280 687q19-16 42-5q12 13-3 22q-23 7-39-3Z"/>
+ <path d="M789 681q22-18 48-7q15 15 0 26q-28 8-48-4Z"/><path d="M1002 701q23-16 45-3q9 15-7 22q-23 5-38-4Z"/>
+</g>
+<path d="M393 661Q472 673 551 658L542 752Q474 779 408 750Z" fill="#d0cbc1" stroke="#343530" stroke-width="6" stroke-linejoin="round"/>
+<path d="M393 661Q472 688 551 658" fill="none" stroke="#343530" stroke-width="5"/>
+<path d="M402 667q67 20 140-4M413 682q50 15 112 2m-109 63q64 24 117 1" fill="none" stroke="#77746d" stroke-width="3" stroke-linecap="round"/>
+<path d="M422 674l-3 12m113-23-5 14m-91 73 2 11m76-3-3 12" fill="none" stroke="#a6a198" stroke-width="2"/>
+<path d="M458 763Q522 757 570 739Q605 727 628 700Q622 736 586 758Q535 785 470 780Z" fill="#20211f" opacity=".63"/>
+<path d="M582 749q22-6 38-18m-27 30q18-5 30-13" fill="none" stroke="#343530" stroke-width="3" opacity=".6"/>
+<!-- charcoal tooth -->
+<rect width="1200" height="840" filter="url(#grain)" opacity=".16"/>
+</svg>

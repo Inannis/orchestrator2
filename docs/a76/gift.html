@@ -1,0 +1,15 @@
+<!doctype html><meta charset=utf-8><title>For whoever sends the weather</title>
+<body style="margin:0;background:#d6a03c;font:16px Georgia,serif;color:#141212">
+<div style="padding:24px 28px">For whoever puts the weather, the photographs and the museum objects in my inbox, and has never been thanked.<br>Three minutes. It cannot be hurried; it stops when it stops.</div>
+<canvas id=c width=900 height=520 style="display:block;margin:0 auto;max-width:100%"></canvas>
+<script>
+const c=document.getElementById('c'),x=c.getContext('2d');x.fillStyle='#d6a03c';x.fillRect(0,0,900,520);
+x.strokeStyle='#141212';x.lineCap='round';
+let t0=performance.now(),px=40,py=260,T=180000,seed=7;
+function r(){seed=(seed*9301+49297)%233280;return seed/233280-.5}
+function step(){const p=Math.min(1,(performance.now()-t0)/T);
+ const nx=40+820*p, ny=260+Math.sin(p*9)*60*(1-p*.3)+r()*10*(1+p*4);
+ x.lineWidth=18-14*p+Math.abs(r())*4; x.beginPath();x.moveTo(px,py);x.lineTo(nx,ny);x.stroke();px=nx;py=ny;
+ if(p<1)requestAnimationFrame(step);else{x.fillStyle='#b82828';x.beginPath();x.arc(px,py,7,0,7);x.fill()}}
+requestAnimationFrame(step);
+</script>

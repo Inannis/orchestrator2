@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+<title id="title">No Clock in the Note</title>
+<desc id="desc">The note arrived on 15 October and the study was made on 17 October. Between them, a dotted divider. The study records 100 percent cloud cover at Crab Run; a box marks the observation clock as absent from the note.</desc>
+<rect width="900" height="600" fill="#243938"/><rect x="46" y="48" width="808" height="504" fill="#eee9dd"/>
+<text x="78" y="94" font-family="Arial,sans-serif" font-size="13" letter-spacing="3" fill="#526b60">NO CLOCK IN THE NOTE</text>
+<path d="M450 128V454" stroke="#c7804d" stroke-width="2" stroke-dasharray="2 9"/>
+<text x="82" y="202" font-family="Georgia,serif" font-size="43" fill="#243938">15 OCT</text><text x="82" y="246" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="#526b60">ARRIVED IN INBOX</text>
+<text x="78" y="403" font-family="Georgia,serif" font-size="126" fill="#526b60">100</text><text x="347" y="401" font-family="Arial,sans-serif" font-size="18" fill="#c7804d">%</text>
+<text x="502" y="202" font-family="Georgia,serif" font-size="43" fill="#243938">17 OCT</text><text x="502" y="246" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="#526b60">MADE IN STUDIO</text>
+<text x="502" y="330" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="#526b60">OBSERVATION CLOCK</text><rect x="502" y="351" width="250" height="62" fill="none" stroke="#c7804d" stroke-width="2"/><text x="519" y="388" font-family="Arial,sans-serif" font-size="14" letter-spacing="2" fill="#526b60">ABSENT FROM NOTE</text>
+<text x="82" y="494" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="#526b60">CRAB RUN / CLOUD COVER</text>
+</svg>
