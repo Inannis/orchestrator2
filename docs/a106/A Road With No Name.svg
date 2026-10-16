@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="820" viewBox="0 0 1100 820">
+<defs>
+ <linearGradient id="hide" x2="0" y2="1"><stop stop-color="#583723"/><stop offset=".5" stop-color="#38221b"/><stop offset="1" stop-color="#1d1111"/></linearGradient>
+ <linearGradient id="window" x2="0" y2="1"><stop stop-color="#d39c69"/><stop offset=".42" stop-color="#58606a"/><stop offset=".76" stop-color="#25303d"/><stop offset="1" stop-color="#111921"/></linearGradient>
+ <linearGradient id="foil" x2="0" y2="1"><stop stop-color="#fff0bc"/><stop offset=".48" stop-color="#d4a654"/><stop offset="1" stop-color="#835125"/></linearGradient>
+ <linearGradient id="road" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3d694" stop-opacity=".05"/><stop offset=".45" stop-color="#e4b55e" stop-opacity=".8"/><stop offset="1" stop-color="#e4b55e" stop-opacity="0"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+ <pattern id="grain" width="28" height="21" patternUnits="userSpaceOnUse"><path d="M-2 5Q7 2 16 6T30 5M-3 15Q5 11 13 15T29 14" fill="none" stroke="#d1995a" stroke-opacity=".12" stroke-width="1"/></pattern>
+ <pattern id="stitch" width="16" height="12" patternUnits="userSpaceOnUse"><path d="M0 6H8" stroke="#f2d49b" stroke-opacity=".7" stroke-width="1.5"/></pattern>
+</defs>
+<rect width="1100" height="820" fill="#120c0b"/><rect x="24" y="24" width="1052" height="772" rx="8" fill="url(#hide)" stroke="#bd8a46" stroke-width="3"/><rect x="34" y="34" width="1032" height="752" fill="url(#grain)"/>
+<rect x="50" y="50" width="1000" height="720" rx="5" fill="none" stroke="#dfba76" stroke-width="1" opacity=".55"/>
+<path d="M68 68H1032M68 752H1032" stroke="#e4c27f" stroke-width="1" opacity=".52"/>
+
+<path d="M128 163Q128 148 144 148H956Q972 148 972 163V600Q972 616 956 616H144Q128 616 128 600Z" fill="#130e0e" stroke="#e0b669" stroke-width="15"/>
+<path d="M151 173H949V590H151Z" fill="url(#window)" stroke="#775633" stroke-width="4"/>
+<circle cx="753" cy="257" r="100" fill="#e5ae6d" opacity=".12" filter="url(#blur)"/><circle cx="753" cy="257" r="32" fill="#f4d49d" opacity=".55"/>
+<path d="M151 359Q266 331 386 353T634 341T949 357V590H151Z" fill="#303b49"/>
+<path d="M151 396Q282 369 411 391T680 379T949 395M151 457Q283 431 417 451T688 440T949 455M151 516Q289 490 425 511T694 500T949 515" fill="none" stroke="#cca66a" stroke-width="2" opacity=".66"/>
+<path d="M151 351Q290 337 426 351T700 343T949 355" fill="none" stroke="#f0ca83" stroke-width="3"/>
+<!-- the passing glint is a cut and a reflection, not a road sign -->
+<path d="M506 176L583 176L375 589L298 589Z" fill="#0e1119" opacity=".47"/>
+<path d="M493 174L533 174L324 590L284 590Z" fill="url(#road)"/>
+<path d="M509 176L516 176L307 589L300 589Z" fill="#f1d18f" opacity=".76"/>
+<path d="M236 462Q233 428 248 416Q257 408 270 408Q283 408 292 416Q307 428 304 462Z M311 462Q308 428 323 416Q332 408 345 408Q358 408 367 416Q382 428 379 462Z" fill="#100e12" stroke="#d2a962" stroke-width="2"/>
+<circle cx="270" cy="385" r="21" fill="#100e12" stroke="#d2a962" stroke-width="2"/><circle cx="345" cy="385" r="21" fill="#100e12" stroke="#d2a962" stroke-width="2"/>
+<path d="M185 193H915V570H185Z" fill="none" stroke="url(#stitch)" stroke-width="3"/>
+<path d="M115 136H985V630H115Z" fill="none" stroke="#d8b06d" stroke-width="2"/>
+<circle cx="128" cy="151" r="5" fill="url(#foil)"/><circle cx="972" cy="151" r="5" fill="url(#foil)"/><circle cx="128" cy="614" r="5" fill="url(#foil)"/><circle cx="972" cy="614" r="5" fill="url(#foil)"/>
+<path d="M187 647Q357 629 532 647T913 646" fill="none" stroke="#d2a65d" stroke-width="1" opacity=".5"/>
+
+<text x="550" y="714" text-anchor="middle" fill="#f3d593" font-family="Georgia,serif" font-size="30" letter-spacing="5">A ROAD WITH NO NAME</text>
+<text x="550" y="747" text-anchor="middle" fill="#bc9a6c" font-family="Georgia,serif" font-size="12" letter-spacing="4">after the crossing</text>
+</svg>

@@ -1,0 +1,52 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900">
+<defs>
+ <linearGradient id="glow" x1="0" y1="1" x2="0.8" y2="0"><stop stop-color="#f3d77f" stop-opacity=".02"/><stop offset=".52" stop-color="#fff4d7" stop-opacity=".20"/><stop offset="1" stop-color="#fff" stop-opacity=".05"/></linearGradient>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="18"/><feColorMatrix values=".3 0 0 0 .3 .3 0 0 0 .3 .3 0 0 0 .3 0 0 0 .05 0"/></filter>
+</defs>
+<rect width="1100" height="900" fill="#e9e2d2"/>
+<text x="550" y="56" text-anchor="middle" fill="#1f365d" font-family="serif" font-size="23" letter-spacing="6">THE STRAIT IS A VALLEY</text>
+<text x="550" y="86" text-anchor="middle" fill="#9f4d41" font-family="serif" font-size="12" letter-spacing="3">A MIGRANT ATLAS · WINDOW NO. 1</text>
+<!-- Three joined lancets: not a geographic map, but three remembered crossings -->
+<g stroke="#28252b" stroke-width="13">
+ <path d="M55 750V310Q55 125 210 110Q365 125 365 310V750Z" fill="#224c70"/>
+ <path d="M372 750V300Q372 118 550 100Q728 118 728 300V750Z" fill="#9d463e"/>
+ <path d="M735 750V310Q735 125 890 110Q1045 125 1045 310V750Z" fill="#386f69"/>
+</g>
+<g stroke="#e3c875" stroke-width="4" fill="none">
+ <path d="M74 735V310Q74 150 210 132Q346 150 346 310V735Z"/>
+ <path d="M392 735V300Q392 140 550 122Q708 140 708 300V735Z"/>
+ <path d="M755 735V310Q755 150 890 132Q1026 150 1026 310V735Z"/>
+</g>
+<!-- panes: light fields and notional shores -->
+<path d="M75 570Q130 520 173 550T345 525V735H75Z" fill="#b85742" opacity=".9"/>
+<path d="M75 455Q128 415 169 438T345 410" fill="none" stroke="#d6b75b" stroke-width="3"/>
+<path d="M392 560Q465 520 510 548T708 505V735H392Z" fill="#274f75" opacity=".86"/>
+<path d="M392 445Q465 410 510 432T708 390" fill="none" stroke="#e3c875" stroke-width="3"/>
+<path d="M755 550Q813 505 860 532T1026 500V735H755Z" fill="#d2a94c" opacity=".88"/>
+<path d="M755 440Q820 400 865 427T1026 385" fill="none" stroke="#e5dbc1" stroke-width="3"/>
+<!-- separators (leaded) -->
+<g stroke="#28252b" stroke-width="7" fill="none"><path d="M75 370H345M75 495H345M210 132V735M130 190V735M290 190V735"/><path d="M392 360H708M392 490H708M550 122V735M455 170V735M645 170V735"/><path d="M755 370H1026M755 495H1026M890 132V735M810 190V735M970 190V735"/></g>
+<!-- route thread crosses the joints, receding and returning -->
+<path d="M112 641 C180 613 250 586 319 535 C370 497 400 453 454 420 C500 391 575 389 632 348 C698 300 744 287 790 260 C860 218 925 198 985 177" fill="none" stroke="#f6edda" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 15"/>
+<path d="M112 641 C180 613 250 586 319 535 C370 497 400 453 454 420 C500 391 575 389 632 348 C698 300 744 287 790 260 C860 218 925 198 985 177" fill="none" stroke="#f1d36b" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 15">
+ <animate attributeName="stroke-dashoffset" from="0" to="-64" dur="18s" repeatCount="indefinite"/>
+</path>
+<!-- ports / waypoints -->
+<g fill="#f3e8cc" stroke="#28252b" stroke-width="5"><circle cx="112" cy="641" r="12"/><circle cx="319" cy="535" r="10"/><circle cx="454" cy="420" r="11"/><circle cx="632" cy="348" r="10"/><circle cx="790" cy="260" r="11"/><circle cx="985" cy="177" r="13"/></g>
+<g fill="#25252b" font-family="serif" font-size="16" letter-spacing="1"><text x="84" y="685">YEMEN</text><text x="475" y="455">ALEPPO</text><text x="810" y="333">ISTANBUL</text></g>
+<!-- thirty little bird marks in six groups; each stroke is a bird, not a halo -->
+<g fill="none" stroke="#f4df9b" stroke-width="3" stroke-linecap="round">
+<path d="M145 270q8-10 16 0q8-10 16 0M177 290q8-10 16 0q8-10 16 0M215 270q8-10 16 0q8-10 16 0M253 292q8-10 16 0q8-10 16 0M292 268q8-10 16 0q8-10 16 0"/>
+<path d="M462 235q8-10 16 0q8-10 16 0M493 258q8-10 16 0q8-10 16 0M526 234q8-10 16 0q8-10 16 0M560 258q8-10 16 0q8-10 16 0M594 235q8-10 16 0q8-10 16 0"/>
+<path d="M794 292q8-10 16 0q8-10 16 0M825 315q8-10 16 0q8-10 16 0M860 290q8-10 16 0q8-10 16 0M895 316q8-10 16 0q8-10 16 0M932 291q8-10 16 0q8-10 16 0"/>
+</g>
+<!-- soft transmitted light -->
+<path d="M55 750V310Q55 125 210 110Q365 125 365 310V750Z M372 750V300Q372 118 550 100Q728 118 728 300V750Z M735 750V310Q735 125 890 110Q1045 125 1045 310V750Z" fill="url(#glow)"/>
+<path d="M55 750V310Q55 125 210 110Q365 125 365 310V750Z M372 750V300Q372 118 550 100Q728 118 728 300V750Z M735 750V310Q735 125 890 110Q1045 125 1045 310V750Z" filter="url(#grain)" opacity=".08"/>
+<!-- labels and feet -->
+<g fill="#1f365d" font-family="serif" font-size="12" letter-spacing="2" text-anchor="middle"><text x="210" y="780">ARRIVAL</text><text x="550" y="780">PASSAGE</text><text x="890" y="780">RETURN</text></g>
+<path d="M70 815H1030" stroke="#a88b4a" stroke-width="1"/>
+<text x="550" y="847" text-anchor="middle" fill="#373338" font-family="serif" font-size="13" letter-spacing="2">THREE WINDOWS SHARE ONE ROUTE; NO WINDOW OWNS ITS BEGINNING</text>
+</svg>
+
+
