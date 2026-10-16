@@ -1,0 +1,72 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+<title id="title">Two Banks, One Oar</title>
+<desc id="desc">A small rowboat crosses a broad charcoal-gray river beneath a dark cliff. A boatman works one oar while a wrapped passenger sits upright beside a plain cup. The current continues beyond the frame.</desc>
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="2" seed="19"/>
+    <feColorMatrix values=".18 0 0 0 .32 .18 0 0 0 .31 .18 0 0 0 .29 0 0 0 .17 0"/>
+  </filter>
+  <linearGradient id="river" x1="0" y1="0" x2=".15" y2="1">
+    <stop offset="0" stop-color="#d7d3ca"/><stop offset=".56" stop-color="#bcbab2"/><stop offset="1" stop-color="#d1cdc4"/>
+  </linearGradient>
+  <linearGradient id="clay" x1="0" y1="0" x2="1" y2=".4">
+    <stop stop-color="#d6d1c7"/><stop offset=".48" stop-color="#aaa69d"/><stop offset="1" stop-color="#d9d4ca"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="840" fill="#eee9df"/>
+<!-- distant bank, incomplete where the river takes over -->
+<path d="M704 200Q756 170 811 186Q858 199 905 185Q953 170 999 186Q1050 198 1098 176Q1154 168 1200 184V258Q1119 251 1062 264Q1008 271 956 255Q908 241 861 258Q801 276 748 260Q718 250 679 263Z" fill="#54534e"/>
+<path d="M694 264q54-12 94 0t89 2q58-17 104-1t93 5q58-14 126 0" fill="none" stroke="#343531" stroke-width="5" stroke-linecap="round"/>
+<path d="M745 212q69 11 129 5m183 9 90-2m-414 18q58-7 109 4m217 8q50-12 98-3" fill="none" stroke="#a6a299" stroke-width="2" opacity=".48"/>
+<!-- cliff: one heavy shoulder, kept irregular -->
+<path d="M0 0H330L298 72 324 126 278 172 306 218 261 265 291 315 244 363 277 407 226 456 253 503 211 551 240 600 191 648 217 704 172 754 189 801 166 840H0Z" fill="#302f2c" stroke="#292a27" stroke-width="5"/>
+<g fill="none" stroke="#aaa69d" stroke-linecap="round" opacity=".48">
+  <path d="M22 46l245 5M8 89l261 4M16 135l230 7M0 185l269 4M8 232l225 9M0 279l244 2M12 327l212 7M0 376l253 2M4 423l213 9M0 472l230 2M7 521l192 8M0 571l218 5M7 623l166 7M0 675l191 3M4 728l164 6M0 781l174 4" stroke-width="2"/>
+  <path d="M47 62l86 2m66 53 73 4M12 205l111 3m-59 88 89 1m32 48 55 2M16 445l102 3m-52 82 83 3M18 698l92 4" stroke-width="4"/>
+</g>
+<!-- broad river: surface is varied rather than ruled -->
+<path d="M303 254Q405 238 499 260T698 265Q739 254 784 263L1200 260V840H170Q226 745 204 663T237 513Q269 399 303 254Z" fill="url(#river)"/>
+<g fill="none" stroke-linecap="round">
+  <path d="M333 304q63-13 111 2m92 12q73 9 112-7m119 8q44-14 81-4m141 11q73-15 120 0" stroke="#777770" stroke-width="3" opacity=".72"/>
+  <path d="M321 363q46-17 84-7m172 21q42-8 77 5m95-8q61-22 105-8m177 15q54-11 90 3" stroke="#f5f1e9" stroke-width="3" opacity=".9"/>
+  <path d="M298 428q72-19 125-3m74 2q34 8 68-1m146 14q47-16 75-5m156-10q87-17 134 4" stroke="#777770" stroke-width="3" opacity=".74"/>
+  <path d="M282 493q43-8 72 5m116-1q60-16 99 1m97 13q43 8 73-4m140-12q52-17 95-4m116 19q45 7 82-4" stroke="#f5f1e9" stroke-width="3" opacity=".83"/>
+  <path d="M261 557q50-18 91-8m104 27q39-12 80-1m195-14q59-21 107-8m133 21q50-15 100-4" stroke="#666761" stroke-width="3" opacity=".7"/>
+  <path d="M244 625q32-9 63 0m126 5q56-17 94-5m243 17q45-15 78-8m119 4q71-15 112 2" stroke="#f5f1e9" stroke-width="3" opacity=".85"/>
+  <path d="M231 697q73-16 121 3m115-4q35-12 68-5m228 16q51-20 96-4m175 5q58-14 113 1" stroke="#777770" stroke-width="3" opacity=".7"/>
+  <path d="M221 759q47-13 77-5m168 11q44-10 75 2m214-8q63-18 107-7m168 17q49-11 93 0" stroke="#f5f1e9" stroke-width="2.5" opacity=".78"/>
+</g>
+<!-- broken glints; each has its own length and pause -->
+<g fill="none" stroke="#f8f4ec" stroke-linecap="round" opacity=".9">
+  <path d="M361 333l48-4m15-1 18 2M540 398q27-8 48-2M825 343l35-8m25-3 19 1M294 472l21-5m16-1 28 3M691 454q22-7 37-3M451 588l54-3m226 23 24-5m18-1 42 1M348 733l31-4m233-3 49 4m287-8 25-5" stroke-width="3"/>
+</g>
+<!-- boat: small enough to belong to the river, with a hand-worked hull -->
+<path d="M444 502Q513 514 578 503Q639 493 690 499L668 545Q613 560 554 555Q495 552 460 535Z" fill="#77756f" stroke="#302f2c" stroke-width="5" stroke-linejoin="round"/>
+<path d="M451 507q65 15 126 5t104-8M465 530q53 18 103 17t88-9" fill="none" stroke="#c2beb5" stroke-width="2.5"/>
+<path d="M479 542q-7 14-14 20m190-11 12 13" fill="none" stroke="#4a4a45" stroke-width="3"/>
+<!-- passenger seated upright, wrap folds and one hand visible -->
+<path d="M515 499Q509 477 523 464Q538 451 552 463L560 481Q574 473 586 484L599 518Q572 535 535 519Z" fill="url(#clay)" stroke="#373833" stroke-width="4" stroke-linejoin="round"/>
+<path d="M521 479q22 14 48 5m-41 13q30 15 59 4m-48 13q21 12 45 8" fill="none" stroke="#706d66" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M532 458q-2-19 13-22q15-2 20 12l-4 17q-17 7-29-7Z" fill="#6f6d67" stroke="#373833" stroke-width="3"/>
+<path d="M580 487q17 3 24 15l-7 7q-12-6-21-12" fill="#b8b3aa" stroke="#494943" stroke-width="2.5" stroke-linejoin="round"/>
+<!-- boatman leans into one oar, face turned away -->
+<path d="M626 495Q632 475 644 463L665 470Q671 482 663 500L653 519Q638 518 626 506Z" fill="#5d5c56" stroke="#302f2c" stroke-width="3.5"/>
+<path d="M641 464q-4-13 6-18q12-4 17 7l-4 14q-11 5-19-3Z" fill="#484943" stroke="#302f2c" stroke-width="3"/>
+<path d="M643 482Q652 481 660 492" fill="none" stroke="#383934" stroke-width="5" stroke-linecap="round"/>
+<path d="M658 487Q683 516 712 555L742 605" fill="none" stroke="#302f2c" stroke-width="7" stroke-linecap="round"/>
+<path d="M742 605Q759 609 769 626L751 644Q735 635 730 617Z" fill="#55554f" stroke="#302f2c" stroke-width="3"/>
+<path d="M736 619q12 8 17 17" fill="none" stroke="#a6a299" stroke-width="2"/>
+<!-- one ordinary cup, low in the boat, not a relic -->
+<path d="M480 514Q493 519 506 513L503 535Q491 541 482 535Z" fill="#ddd8ce" stroke="#343530" stroke-width="2.5"/>
+<path d="M480 514q14 6 26-1m-23 7q10 5 20 1" fill="none" stroke="#77746d" stroke-width="1.8"/>
+<!-- the crossing continues beyond the hull -->
+<path d="M446 546q-52 7-88 27m319-11q49 1 81 17m-325 1 26-3m278 5 32 6" fill="none" stroke="#5d5e58" stroke-linecap="round" stroke-width="3" opacity=".72"/>
+<!-- near reeds, unevenly spaced and peripheral -->
+<g fill="none" stroke="#41423d" stroke-linecap="round">
+  <path d="M861 840q-8-93 9-168m15 168q19-77 48-123m76 123q-10-89 12-153m26 153q9-62 32-97" stroke-width="5"/>
+  <path d="M856 671q10-31 28-47m53 73q20-28 39-37m48-30q13-31 31-44" stroke-width="3" opacity=".7"/>
+</g>
+<path d="M779 818q31-21 56 0m103-4q26-19 49 1m122-15q32-20 57 1" fill="none" stroke="#494a44" stroke-width="3"/>
+<!-- paper tooth / charcoal dust -->
+<rect width="1200" height="840" filter="url(#grain)" opacity=".18"/>
+</svg>

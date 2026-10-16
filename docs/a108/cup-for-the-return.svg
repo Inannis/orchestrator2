@@ -1,0 +1,59 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+<title id="title">Cup for the Return</title>
+<desc id="desc">A broad, plain pottery cup rests on a rough near shore, its charcoal shadow reaching the waterline. An empty skiff touches the river beyond it. The shore and water leave open who brought the cup back.</desc>
+<defs>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="27"/><feColorMatrix values=".2 0 0 0 .35 .2 0 0 0 .34 .2 0 0 0 .31 0 0 0 .16 0"/></filter>
+  <linearGradient id="river" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#d5d1c8"/><stop offset=".58" stop-color="#b8b7af"/><stop offset="1" stop-color="#d4d0c7"/></linearGradient>
+  <linearGradient id="bank" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#aaa69d"/><stop offset="1" stop-color="#77766f"/></linearGradient>
+</defs>
+<rect width="1200" height="840" fill="#eee9df"/>
+<!-- cliff falling into an open river -->
+<path d="M0 0H273L241 61 270 113 220 153 249 207 201 247 230 296 187 342 211 391 169 438 197 484 153 535 176 581 142 628 164 676 125 723 144 772 111 840H0Z" fill="#302f2c" stroke="#292a27" stroke-width="5"/>
+<g fill="none" stroke="#aaa69d" stroke-linecap="round" opacity=".55">
+  <path d="M18 45l191 2M0 84l225 5M8 126l189 4M0 171l210 3M5 216l180 7M0 261l197 4M11 306l161 7M0 352l184 3M3 398l164 7M0 445l177 4M9 490l134 8M0 537l153 6M7 582l123 8M0 628l140 4M3 673l113 9M0 720l124 4M4 772l96 6" stroke-width="2"/>
+  <path d="M29 64l68 2m61 54 41 2M13 191l108 3m-63 93 91 3M20 416l74 4m14 103 57 4M15 654l77 5" stroke-width="4"/>
+</g>
+<!-- river occupies the upper field and bends around the near bank -->
+<path d="M194 270Q304 242 411 266T632 258Q775 247 913 266T1200 250V627Q1081 620 1005 650Q910 683 823 642Q744 605 665 621Q547 644 448 606Q334 562 194 590Z" fill="url(#river)"/>
+<g fill="none" stroke-linecap="round">
+ <path d="M244 300q56-15 100 1m68 11q60 11 101-2m133 2q50-14 89-3m115 20q57-14 92 0m110-14q77-19 138 0" stroke="#777770" stroke-width="3" opacity=".73"/>
+ <path d="M225 344q43-14 76-3m190 7q48-13 83 2m84-5q33 7 61-2m183 15q65-19 108-5m109 1q39-8 72 3" stroke="#f5f1e9" stroke-width="3" opacity=".9"/>
+ <path d="M212 390q72-18 119-2m88 19q48-19 91-5m113-8q40-10 71 4m142 7q57-16 94-3m132 14q43-12 83-1" stroke="#777770" stroke-width="3" opacity=".69"/>
+ <path d="M207 443q38-10 68 3m121 8q48-18 89-4m65-1q49 10 84-6m117 19q35-11 73-3m109-5q56-18 101-4" stroke="#f5f1e9" stroke-width="3" opacity=".88"/>
+ <path d="M205 495q58-17 103-3m147 15q44-15 82-3m156-4q39-11 69-2m145 8q52-18 100-5" stroke="#777770" stroke-width="3" opacity=".72"/>
+ <path d="M214 546q43-13 79 0m137 16q62-20 108-6m119-6q36 12 69-2m170 2q46-14 85-5" stroke="#f5f1e9" stroke-width="3" opacity=".82"/>
+</g>
+<!-- water pulls outward from the empty boat, but does not close the crossing -->
+<path d="M654 343q70-8 122 1m-116 12q30-2 57 4m-11 58q55-12 91 3m-75 11 37 4m-197 83q56-12 103-3m-84 14q20 1 39 5" fill="none" stroke="#f7f3eb" stroke-width="3" stroke-linecap="round"/>
+<!-- small skiff actually meets the surface; one oar lies quiet inside -->
+<path d="M664 300Q739 323 827 295L804 346Q739 365 684 341Z" fill="#4a4a44" stroke="#292a27" stroke-width="5" stroke-linejoin="round"/>
+<path d="M675 307q75 22 142-4m-128 35q57 23 111 5" fill="none" stroke="#aaa69d" stroke-width="2.5"/>
+<path d="M703 319l78 16" stroke="#b7b2a9" stroke-width="5" stroke-linecap="round"/><path d="M709 317l76 16" stroke="#454640" stroke-width="2"/>
+<path d="M828 313q33 15 67 7m-41 25q44-11 75 0" fill="none" stroke="#777770" stroke-width="3"/>
+<!-- solid shore, uneven boundary; a few stones carry weight -->
+<path d="M111 627Q226 590 346 609Q440 623 515 624Q583 626 657 607Q737 588 818 629Q897 671 1002 639Q1098 610 1200 628V840H0Z" fill="url(#bank)"/>
+<path d="M111 627Q226 590 346 609Q440 623 515 624Q583 626 657 607Q737 588 818 629Q897 671 1002 639Q1098 610 1200 628" fill="none" stroke="#393a36" stroke-width="5" stroke-linecap="round"/>
+<path d="M162 646q56-11 97 5m68-9q44 11 75 8m-176 48 52-6m60 9q31-8 53-3m475 8q47-12 79 3m105-36q50-14 93-2" fill="none" stroke="#cac5bb" stroke-width="3" opacity=".7"/>
+<g fill="#555650" stroke="#3a3b37" stroke-width="2">
+ <path d="M224 758q31-25 68-7q16 20-2 34q-42 12-66-6Z"/><path d="M339 700q23-18 49-7q15 16-3 27q-26 8-45-4Z"/>
+ <path d="M840 746q24-21 54-10q19 17 1 30q-33 10-55-3Z"/><path d="M1040 728q31-18 54 0q9 18-10 27q-28 4-44-9Z"/>
+ <path d="M584 754q17-15 36-5q10 12-3 20q-19 5-32-2Z"/>
+</g>
+<g fill="none" stroke="#d0cbc1" stroke-width="2" opacity=".7"><path d="M231 767q28-14 52-1m71-65q21-10 36-1m506 43q18-12 39-4m143-9q23-10 39 1"/></g>
+<!-- cup on dry ground; a worn broad rim and low pottery body -->
+<ellipse cx="486" cy="660" rx="121" ry="29" fill="#252622" opacity=".4"/>
+<path d="M414 545Q483 559 555 543L546 632Q486 658 426 631Z" fill="#cec9bf" stroke="#343530" stroke-width="6" stroke-linejoin="round"/>
+<path d="M414 545Q484 573 555 543" fill="none" stroke="#343530" stroke-width="5"/>
+<path d="M422 549q62 17 126-4M429 565q49 16 101 3M430 625q55 22 107 1" fill="none" stroke="#77746d" stroke-width="3" stroke-linecap="round"/>
+<path d="M435 555l-3 13m111-19-4 15m-89 49 1 13m73-4-2 14" fill="none" stroke="#a6a198" stroke-width="2"/>
+<!-- shadow extends to the bank's edge; its end opens into river light -->
+<path d="M506 649Q560 648 611 641Q654 635 687 614Q665 649 625 663Q565 678 512 664Z" fill="#20211f" opacity=".62"/>
+<path d="M608 641q27-6 46-17m-30 29q23-5 37-14" fill="none" stroke="#343530" stroke-width="3" opacity=".55"/>
+<!-- reeds stand at the edges without enclosing the cup -->
+<g fill="none" stroke="#41423d" stroke-linecap="round">
+ <path d="M926 630q-9-72 5-131m17 136q11-57 32-91m25 87q-2-73 18-116m22 124q13-55 31-76M282 618q-5-47 8-79m15 84q11-42 29-60" stroke-width="5"/>
+ <path d="M928 515q8-19 18-27m34 58q12-19 28-27m-713 14q9-18 20-24" stroke-width="3"/>
+</g>
+<path d="M892 660q27-17 50 1m69 11q23-16 45 2m90-19q18-12 36 2m-876 21q19-13 34 2" fill="none" stroke="#41423d" stroke-width="3"/>
+<rect width="1200" height="840" filter="url(#grain)" opacity=".16"/>
+</svg>

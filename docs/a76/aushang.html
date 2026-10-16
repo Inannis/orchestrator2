@@ -1,0 +1,53 @@
+<!doctype html><html lang="de"><meta charset="utf-8"><title>Aushang</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+html{background:#6b7a8c}
+body{margin:0;min-height:100vh;display:flex;justify-content:center;align-items:flex-start;padding:5vh 3vw;font-family:"Helvetica Neue",Arial,sans-serif}
+.sheet{background:#f3efe2;width:min(640px,100%);padding:44px 48px 40px;box-shadow:0 2px 0 #0003,0 18px 40px #0005;transform:rotate(-.4deg);position:relative;color:#1b1b1b}
+.sheet:before,.sheet:after{content:"";position:absolute;top:-10px;width:80px;height:24px;background:#d8cf9a99;transform:rotate(-3deg)}
+.sheet:before{left:30px}.sheet:after{right:30px;transform:rotate(4deg)}
+h1{font-size:15px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 4px}
+.sub{font-size:13px;margin:0 0 22px;color:#444}
+p{font-size:15px;line-height:1.5;margin:0 0 14px}
+ul{list-style:none;margin:0 0 18px;padding:0}
+li{display:flex;gap:10px;font-size:15px;line-height:1.45;padding:3px 0;border-bottom:1px dotted #0002}
+li .a{flex:1;transition:opacity 1.6s}
+li .b{flex:1;font-family:"Segoe Print","Bradley Hand",cursive;color:#1a3a8a;font-size:14px;transition:opacity 1.6s}
+li.gone .a{opacity:.0}
+li.same .a{opacity:1;text-decoration:none}
+.foot{font-size:13px;color:#333;margin-top:22px}
+.warm{margin-top:10px;font-family:"Segoe Print","Bradley Hand",cursive;color:#1a3a8a;font-size:14px}
+</style>
+<div class="sheet">
+<h1>Aushang</h1><div class="sub">Gleis 5/6, Nienburg (Weser)</div>
+<p>Wegen Bauarbeiten, Personalmangel und der allgemeinen Lage entfallen bis auf Weiteres:</p>
+<ul id="l"></ul>
+<p><b>Der Blindenleitstreifen bleibt in Betrieb.</b><br>Er ist durchgehend und weist keine Abweichungen auf.</p>
+<div class="foot">Wir bitten um Ihr Verständnis.</div>
+<div class="warm">Die Rippen sind warm.</div>
+</div>
+<script>
+const rows=[
+["der Bahnsteigkiosk","Kaffee, 1,80 €, im Fenster"],
+["das Schild am Mast, Arm 1","Arm 1"],
+["das Schild am Mast, Arm 2","Arm 2"],
+["das Schild am Mast, Arm 3","Arm 3"],
+["die Uhr an der Wand","ein hellerer Fleck in der Form einer Uhr"],
+["das Gleisbett zwischen den Schienen, 11 m","sauberer Schotter, 11 m"],
+["die 17:08 nach Hannover Hbf","die 17:08 nach Hannover Hbf, ersatzweise ab Gleis 6"],
+["der Zug auf Gleis 6","der Zug auf Gleis 6, Ziel: Nienburg (Weser)"],
+["der Unterschied zwischen beiden","keiner"]];
+const ul=document.getElementById('l');
+rows.forEach(([a,b])=>{const li=document.createElement('li');
+li.innerHTML='<span class="a">'+a+'</span><span class="b">Ersatz: '+b+'</span>';ul.appendChild(li)});
+// each line, in turn, loses its original: the substitute's words are written over it, the first words stay underneath as a ghost
+const fast=location.search.includes('fast');
+let n=0;const lis=[...ul.children];
+function swap(){if(n>=rows.length)return;const li=lis[n],a=li.querySelector('.a'),b=li.querySelector('.b'),old=rows[n][0],sub=rows[n][1];
+a.style.opacity=0;
+setTimeout(()=>{a.innerHTML='<s style="opacity:.28">'+old+'</s>';a.style.opacity=1;
+ if(n===rows.length-1){setTimeout(()=>{document.querySelector('.warm').style.opacity=1},fast?10:2500)}
+ n++},fast?10:1700)}
+const iv=setInterval(()=>{swap();if(n>=rows.length)clearInterval(iv)},fast?30:7000);
+document.querySelector('.warm').style.opacity=0;document.querySelector('.warm').style.transition='opacity 3s';
+</script></html>
