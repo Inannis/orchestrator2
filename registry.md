@@ -117,7 +117,12 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a113 | ../studios/a113 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
 | a114 | ../studios/a114 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
 | a115 | ../studios/a115 | gpt-6-luna | ref | paused 2026-10-17 | 5 | medium |
-| a116 | ../studios/a116 | gpt-6-luna | ref | paused 2026-10-17 | 4 | medium |
+| a116 | ../studios/a116 | gpt-6-luna | ref | active | 4 | medium |
+| a121 | ../studios/a121 | gpt-6-luna | press | active | 4 | medium |
+| a120 | ../studios/a120 | gpt-6-luna | press | active | 4 | medium |
+| a117 | ../studios/a117 | gpt-6-luna | gwalk | active | 0 | medium |
+| a118 | ../studios/a118 | gpt-6-luna | gwalk | active | 0 | medium |
+| a119 | ../studios/a119 | gpt-6-luna | gwalk | active | 0 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 

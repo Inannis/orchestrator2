@@ -1,0 +1,57 @@
+{
+ "guide": "STUDIO.md",
+ "default": "studio",
+ "kinds": {
+  "studio": {
+   "open": "Today is a studio day: read `STUDIO.md` and begin with Intake.",
+   "steps": [
+    "The day is not over. Next: Making (`STUDIO.md`).",
+    "The day is not over. Next: Judging.",
+    "The day is not over. Next: Deepening.",
+    "The day is not over. Round again. Next: Making.",
+    "The day is not over. Next: Judging.",
+    "The day is not over. Next: Deepening.",
+    "The day is not over. Round again. Next: Making.",
+    "The day is not over. Next: Judging.",
+    "The day is not over. Next: Deepening.",
+    "The day is not over. Next: Post-work.",
+    "The day is not over. Post-work goes on: finish, show, or let go.",
+    "The day is ending. Next: Closing, with tomorrow's kind of day."
+   ]
+  },
+  "research": {
+   "open": "Today is a research day, as you chose: read `STUDIO.md` and begin with The question.",
+   "steps": [
+    "The day is not over. Next: Going far (`STUDIO.md`).",
+    "The day is not over. Next: Answering in making.",
+    "The day is not over. Next: Going further.",
+    "The day is not over. Next: Making again.",
+    "The day is not over. Next: Going further.",
+    "The day is not over. Next: Making again.",
+    "The day is not over. Next: Going further.",
+    "The day is not over. Next: Making again.",
+    "The day is not over. Next: Bringing back.",
+    "The day is not over. Bringing back goes on: into the project, where tomorrow can find it.",
+    "The day is not over. Making again, from all you brought back.",
+    "The day is ending. Next: Closing, with tomorrow's kind of day."
+   ]
+  },
+  "showing": {
+   "open": "Today is a showing day, as you chose: read `STUDIO.md` and begin with The cold look.",
+   "steps": [
+    "The day is not over. Next: Finishing (`STUDIO.md`).",
+    "The day is not over. Finishing goes on.",
+    "The day is not over. Next: Choosing.",
+    "The day is not over. Next: Presenting.",
+    "The day is not over. Presenting goes on.",
+    "The day is not over. Next: Visiting.",
+    "The day is not over. Next: Adjusting.",
+    "The day is not over. Next: Visiting again, wide and narrow.",
+    "The day is not over. Next: Adjusting.",
+    "The day is not over. Next: one last cold look at what is now shown.",
+    "The day is not over. Next: what this showing tells the next studio day.",
+    "The day is ending. Next: Closing, with tomorrow's kind of day."
+   ]
+  }
+ }
+}
