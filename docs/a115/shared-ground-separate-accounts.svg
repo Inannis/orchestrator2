@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900">
+<rect width="1280" height="900" fill="#34474a"/>
+<text x="68" y="76" font-family="Georgia,serif" font-size="13" letter-spacing="3" fill="#c8d2c5">TIDE VENN  /  THE LISTENING INSTRUMENT</text>
+<text x="68" y="122" font-family="Georgia,serif" font-size="39" font-style="italic" fill="#f0eadc">Shared Ground, Separate Accounts</text>
+<text x="1210" y="112" text-anchor="end" font-family="Georgia,serif" font-size="14" letter-spacing="2" fill="#c8d2c5">FIELD PLATE  /  06</text>
+<rect x="54" y="150" width="1172" height="690" fill="#a9beb1"/>
+<path d="M54 275 Q235 208 405 263 T730 260 T1010 256 T1226 270 L1226 601 Q1030 620 888 582 T580 606 T300 577 T54 610Z" fill="#91aaa0" opacity=".72"/>
+<path d="M54 197 Q245 145 431 198 T803 198 T1226 193" fill="none" stroke="#f2edde" stroke-width="3"/>
+<path d="M104 183 Q106 199 104 213 M160 173 Q163 190 160 204 M216 166 Q219 184 216 198 M1080 164 Q1083 182 1080 197 M1135 170 Q1138 188 1135 203 M1190 181 Q1193 198 1190 213" fill="none" stroke="#728c83" stroke-width="2" opacity=".75"/>
+<path d="M131 290 L548 269 L573 575 L126 596 Z" fill="#243b3d" opacity=".16"/>
+<path d="M700 282 L1118 270 L1100 580 L682 594 Z" fill="#243b3d" opacity=".16"/>
+<path d="M118 278 L537 258 L562 566 L112 585 Z" fill="#f3eee2" stroke="#b9aa8f" stroke-width="2.5"/>
+<path d="M684 270 L1103 260 L1085 570 L667 584 Z" fill="#f3eee2" stroke="#b9aa8f" stroke-width="2.5"/>
+<path d="M130 295 L519 276 M697 287 L1082 278" stroke="#d8cfbd" stroke-width="2"/>
+<text x="151" y="324" font-family="Georgia,serif" font-size="14" letter-spacing="1.5" fill="#6c7568">A  /  SPRING PATH</text>
+<text x="151" y="354" font-family="Georgia,serif" font-size="20" fill="#41423b">rinsing the tin</text>
+<text x="720" y="318" font-family="Georgia,serif" font-size="14" letter-spacing="1.5" fill="#6c7568">B  /  WALL PATH</text>
+<text x="720" y="348" font-family="Georgia,serif" font-size="20" fill="#41423b">tying cuttings</text>
+<path d="M159 423 H492" stroke="#b86950" stroke-width="11"/>
+<circle cx="159" cy="423" r="9" fill="#f3eee2" stroke="#b86950" stroke-width="4.5"/><circle cx="492" cy="423" r="9" fill="#f3eee2" stroke="#b86950" stroke-width="4.5"/>
+<path d="M250 389v19 M291 389v19 M332 389v19" stroke="#b86950" stroke-width="3.5"/>
+<text x="151" y="465" font-family="Georgia,serif" font-size="18" fill="#99533f">heard: three taps</text>
+<path d="M720 453 H1052" stroke="#637f91" stroke-width="11"/>
+<circle cx="720" cy="453" r="9" fill="#f3eee2" stroke="#637f91" stroke-width="4.5"/><circle cx="1052" cy="453" r="9" fill="#f3eee2" stroke="#637f91" stroke-width="4.5"/>
+<text x="720" y="495" font-family="Georgia,serif" font-size="18" fill="#526d80">heard: one long rasp</text>
+<path d="M566 511 Q601 494 635 511" fill="none" stroke="#f2edde" stroke-width="2" stroke-dasharray="2 9"/>
+<text x="600" y="542" text-anchor="middle" font-family="Georgia,serif" font-size="12" letter-spacing="1.2" fill="#394b44">WET GROUND</text>
+<text x="102" y="640" font-family="Georgia,serif" font-size="16" fill="#394b44">Rain lies on the backing; each account keeps its own edges.</text>
+<path d="M102 664H1178" stroke="#d5ddcf" stroke-width="1" opacity=".7"/>
+<text x="102" y="702" font-family="Georgia,serif" font-size="15" fill="#34474a">Bar = reported span</text><circle cx="323" cy="696" r="7" fill="#a9beb1" stroke="#34474a" stroke-width="2.5"/><text x="340" y="702" font-family="Georgia,serif" font-size="15" fill="#34474a">end ring = listener's own boundary</text>
+<path d="M732 687v18 M751 687v18 M770 687v18" stroke="#34474a" stroke-width="2.5"/><text x="789" y="702" font-family="Georgia,serif" font-size="15" fill="#34474a">short strokes = pulses</text>
+<text x="102" y="755" font-family="Georgia,serif" font-size="14" fill="#34474a">The spans are not time-scaled. The weather and the two reports do not name a sound source.</text>
+<text x="68" y="873" font-family="Georgia,serif" font-size="12" letter-spacing="1.2" fill="#c8d2c5">AN INVENTED LISTENING SCENE  ·  NO SOURCE ASSIGNED</text>
+</svg>

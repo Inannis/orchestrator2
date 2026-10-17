@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780">
+<defs>
+ <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#e8dfd1"/><stop offset="1" stop-color="#d8cbb4"/></linearGradient>
+ <linearGradient id="air" x2="0" y2="1"><stop stop-color="#aebdc0"/><stop offset="1" stop-color="#ead8bb"/></linearGradient>
+ <linearGradient id="slope" x2=".3" y2="1"><stop stop-color="#839183"/><stop offset="1" stop-color="#4d685c"/></linearGradient>
+ <linearGradient id="water" x2="0" y2="1"><stop stop-color="#8ca3a1"/><stop offset="1" stop-color="#526f73"/></linearGradient>
+ <pattern id="grain" width="29" height="25" patternUnits="userSpaceOnUse"><circle cx="5" cy="6" r=".8" fill="#f1e6d0" opacity=".28"/><circle cx="21" cy="16" r=".7" fill="#343b36" opacity=".13"/><path d="M12 2v3m14 16h3" stroke="#eee5d5" stroke-width=".6" opacity=".2"/></pattern>
+ <pattern id="stone" width="38" height="18" patternUnits="userSpaceOnUse"><path d="M0 9h38M11 0v9m18 0v9" fill="none" stroke="#716b5c" stroke-width="1" opacity=".42"/></pattern>
+ <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="lift" x="-.2" y="-.2" width="1.5" height="1.5"><feDropShadow dx="1" dy="6" stdDeviation="7" flood-color="#302e28" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1100" height="780" fill="url(#paper)"/>
+<path d="M0 0h1100v212q-165-28-321 4T456 207Q229 180 0 218Z" fill="url(#air)"/>
+<!-- distant roofs and a tower set the hillside into lived scale -->
+<path d="M0 240q147-58 280-19t277-8q179-54 306-4t237-20v184H0Z" fill="#b7997b" opacity=".68"/>
+<path d="M0 292q129-56 263-20t291-11q169-50 306-6t240-13v186H0Z" fill="#76877d" opacity=".92"/>
+<g fill="#ddd4c2" opacity=".91"><path d="M633 258l34-24 39 25v38h-73z"/><path d="M696 270l31-21 35 22v33h-66z"/><path d="M758 258l35-25 37 25v42h-72z"/><path d="M827 272l29-20 33 20v34h-62z"/></g>
+<g fill="#8b6857" opacity=".8"><path d="M627 259l40-29 44 30h-84z"/><path d="M692 269l35-25 39 27h-74z"/><path d="M755 260l38-29 42 28h-80z"/></g>
+<!-- rolling foreground, with water and path turning through separate planes -->
+<path d="M0 379q152-73 300-18t305-4q169-64 309-11t186-16v450H0Z" fill="url(#slope)"/>
+<path d="M0 458q158-62 291-20t306-8q186-69 331-12t172-11v373H0Z" fill="#708478" opacity=".91"/>
+<path d="M0 529q174-64 329-17t296-5q181-66 323-15t152 12v276H0Z" fill="#5d786b" opacity=".96"/>
+<!-- a water cut turns behind a rise, never serving as a ruled line -->
+<path d="M354 389q82-34 147 0t115 1q58-31 133 1t117 0v44q-72-27-129 7t-116 0q-60-29-122 3t-145-5z" fill="url(#water)" opacity=".91"/>
+<path d="M381 414q66-23 119 1t117 2q52-24 102 2t117 1" fill="none" stroke="#c6d0bf" stroke-width="3" opacity=".62"/>
+<!-- separate low wall and pale track: neither reaches the water or the second position -->
+<path d="M-20 586q126-70 230-36t167-24" fill="none" stroke="#d8c7a6" stroke-width="49"/>
+<path d="M-20 586q126-70 230-36t167-24" fill="none" stroke="url(#stone)" stroke-width="42"/>
+<path d="M721 552q97-48 177-17t222-20" fill="none" stroke="#d8c7a6" stroke-width="42" opacity=".9"/>
+<!-- rain-loosened color washes, irregular and unscaled; no end caps or measured spans -->
+<path d="M113 478q29-31 70-19t59 4q35-24 65 1t59 15q-18 31-54 29t-61 14q-39-17-71-5t-67-39z" fill="#c16f55" opacity=".76"/>
+<path d="M733 364q31-29 68-13t62-4q38-17 61 11t59 8q-16 26-51 29t-65 6q-31-22-65-6t-69-31z" fill="#658b99" opacity=".82"/>
+<path d="M143 477q26-17 54-7m150 3q19 14 38 8m396-108q18-11 38-7m128 10q17 11 36 4" fill="none" stroke="#eadcc3" stroke-width="2.5" stroke-linecap="round" opacity=".68"/>
+<!-- two people at separate tasks; neither watches a mark -->
+<g stroke="#293d39" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M232 532v-60m0 16-25 22m25-20 25 17m-25 25-18 30m18-30 22 28"/><path d="M845 473v-60m0 16-24 21m24-19 25 17m-25 25-18 30m18-30 22 28"/></g>
+<circle cx="232" cy="458" r="13" fill="#cb9a74"/><path d="M216 448q16-25 32 0" fill="#465349"/>
+<circle cx="845" cy="399" r="13" fill="#cb9a74"/><path d="M829 389q16-25 32 0" fill="#465349"/>
+<!-- gate, baskets, and working roof anchor the scene in ordinary use -->
+<path d="M165 536v-91m34 83v-89m-44 18h54m-54 27h54" stroke="#584f42" stroke-width="6"/>
+<path d="M820 490q16-19 34 0l-4 18h-26z" fill="#b58c62" stroke="#544e42" stroke-width="2"/>
+<g stroke="#eee7d8" stroke-width="2" opacity=".49"><path d="M63 270l-9 18m193-44-9 18m184-8-9 18m402-38-9 18m179 5-9 18M41 329l-9 18m524 21-9 18m279 20-9 18"/></g>
+<rect width="1100" height="780" fill="url(#grain)" opacity=".72"/>
+<text x="47" y="51" font-family="Georgia,serif" font-size="27" fill="#3d443f" letter-spacing="1.2">NAMES FOR A MADE GROUND</text>
+<text x="48" y="80" font-family="Georgia,serif" font-size="14" fill="#545951">two imagined positions · rain on worked hills</text>
+<!-- the note is an authored loose object, not a key set beneath the fields -->
+<g transform="rotate(-1.5 574 690)" filter="url(#lift)">
+ <path d="M338 641q134-6 254 0t259-2l-5 105q-131 6-252 0t-261 4z" fill="#f1e8d6" stroke="#ac9b7e"/>
+ <path d="M352 656q129-3 250 1t230-2" fill="none" stroke="#d8cbb5" stroke-width="1"/>
+ <text x="363" y="678" font-family="Georgia,serif" font-size="15" fill="#4b4840" font-style="italic">I made this hillside, and named two places: low wall; upper water.</text>
+ <text x="363" y="704" font-family="Georgia,serif" font-size="13" fill="#615d53">The rust and blue washes are inventions, with no scale or sound assigned.</text>
+ <text x="790" y="729" font-family="Georgia,serif" font-size="12" fill="#6a6255">— Tide</text>
+</g>
+</svg>

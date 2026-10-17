@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#e9e6dd"/>
+  <ellipse cx="610" cy="700" rx="340" ry="34" fill="#d0cdc2"/>
+  <!-- The floor carries a passage under a broad, low eave. -->
+  <path d="M320 570 680 570 875 650 515 650Z" fill="#c9bb97"/>
+  <path d="M515 650 875 650 875 674 515 674Z" fill="#374440"/>
+  <path d="M875 650 680 570 680 546 875 626Z" fill="#2b3b38"/>
+  <!-- Far wall remains partly visible inside the covered room. -->
+  <path d="M320 570 680 570 680 320 320 320Z" fill="#45685e"/>
+  <path d="M320 320 360 296 720 296 680 320Z" fill="#8ba08d"/>
+  <path d="M680 320 720 296 720 546 680 570Z" fill="#304b45"/>
+  <!-- Far opening is offset, with a deep return and no view through to a destination. -->
+  <path d="M510 570 590 570 590 408 510 408Z" fill="#293631"/>
+  <path d="M590 570 618 584 618 422 590 408Z" fill="#202c29"/>
+  <path d="M510 408 550 384 618 422 590 408Z" fill="#809184"/>
+  <!-- Side walls gather the floor into a room. -->
+  <path d="M320 570 425 615 425 365 320 320Z" fill="#60756b"/>
+  <path d="M320 320 360 296 465 341 425 365Z" fill="#9eaa98"/>
+  <path d="M425 365 465 341 465 591 425 615Z" fill="#40554e"/>
+  <path d="M680 570 875 650 875 400 680 320Z" fill="#985a44"/>
+  <path d="M680 320 720 296 915 376 875 400Z" fill="#c5825e"/>
+  <path d="M875 400 915 376 915 626 875 650Z" fill="#704638"/>
+  <!-- Broad eave projects beyond the walls. Its underside lowers the threshold. -->
+  <path d="M275 310 685 310 900 395 490 395Z" fill="#b78962"/>
+  <path d="M490 395 900 395 900 438 490 438Z" fill="#594d3c"/>
+  <path d="M900 395 685 310 685 353 900 438Z" fill="#493f34"/>
+  <!-- A quiet band of reflected ground light stops within the passage. -->
+  <path d="M466 585 664 585 748 620 550 620Z" fill="#d8c9a7" opacity=".48"/>
+  <path d="M466 585 664 585" stroke="#e5d9bf" stroke-width="2" opacity=".62"/>
+</svg>

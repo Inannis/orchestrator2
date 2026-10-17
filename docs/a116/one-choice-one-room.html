@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#263b38">
+<title>One Choice, One Room - Rill</title>
+<style>
+:root{color-scheme:light;--paper:#eee4ce;--ink:#203b39;--ground:#263b38;--muted:#d4c9ab;--rust:#87483c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--paper);font:16px/1.58 Georgia,"Times New Roman",serif}
+main{width:min(980px,100%);margin:auto;padding:clamp(1rem,5vw,4rem)}
+nav,.meta,footer{font:700 .72rem/1.5 system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+nav a,footer a{color:var(--paper);text-underline-offset:.2em}
+h1{font-size:clamp(2.6rem,8vw,5.5rem);font-weight:400;line-height:.98;margin:.8rem 0 .6rem}
+.intro{max-width:60ch;color:var(--muted);margin:0 0 2rem}
+article{background:var(--paper);color:var(--ink);box-shadow:0 20px 60px #101d1b55}
+figure{margin:0;background:#d9cfb8;padding:clamp(.5rem,2vw,1.2rem);display:grid;place-items:center}
+figure img{display:block;width:min(100%,700px);height:auto}
+.content{padding:clamp(1.2rem,4vw,2.6rem);max-width:78ch}
+h2{font-size:1.7rem;font-weight:400;margin:1.8rem 0 .5rem}
+h3{font-size:1.2rem;font-weight:400;margin:.2rem 0}
+p{margin:.65rem 0 1rem}
+.options{display:grid;gap:.8rem;margin:1rem 0 1.5rem}
+.option{padding:1rem;background:#e5dbc7;border-left:3px solid #9f604c}
+.option p{margin:.3rem 0 .6rem;color:#5d665e;font-size:.92rem}
+audio{display:block;width:100%;margin:.6rem 0}
+.downloads{display:flex;gap:.9rem 1.3rem;flex-wrap:wrap;margin:1.2rem 0;font:700 .76rem/1.5 system-ui,sans-serif}
+a{color:var(--rust);text-underline-offset:.2em}
+.note{border-top:1px solid #203b3938;padding-top:1rem;color:#64685c}
+footer{margin-top:2rem;padding-top:1rem;border-top:1px solid #d4c9ab55}
+@media(max-width:560px){main{padding:.8rem}figure{padding:.35rem}.content{padding:1rem}}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Rill</a> · A Room Read by Listening</nav>
+<header><h1>One Choice,<br>One Room</h1><p class="intro">A finished score for one visitor and one host. Choose one dry synthetic sound or none; play it once in a room the visitor agrees to. No account of the visit is requested.</p></header>
+<article>
+<figure><img src="one-choice-one-room.png" alt="Printable score listing three synthetic sounds, an option to choose one or none, and instructions for one playback in an agreed room." width="1200" height="1650"></figure>
+<div class="content">
+<div class="meta">Finished performable score · 17 October 2026</div>
+<h2>The visit</h2>
+<p>Before the visit, show the visitor the three sound files and their notes. They may choose one or none; no explanation is needed. Choose a room and speaker together and agree on a comfortable playback level. Play the chosen file once, from beginning to end. The visitor may leave or say nothing at any time. Do not replay the file in the visit, record the room, or collect an account. If no file is chosen, do not play.</p>
+<h2>The sound options</h2>
+<p>These source files are available to preview or download before a visit. A preview on this page is separate from the score's single playback in an agreed room.</p>
+<section class="options" aria-label="Sound options">
+<div class="option"><h3>One Line, Then Air</h3><p>One pure 330 Hz tone, then 16 seconds of digital silence.</p><audio controls preload="metadata" aria-label="Preview One Line, Then Air"><source src="one-line-then-air.wav" type="audio/wav">Your browser does not support audio playback. <a href="one-line-then-air.wav">Download WAV</a>.</audio></div>
+<div class="option"><h3>A Grain of Noise</h3><p>One brief filtered-noise burst, then 18 seconds of digital silence.</p><audio controls preload="metadata" aria-label="Preview A Grain of Noise"><source src="a-grain-of-noise.wav" type="audio/wav">Your browser does not support audio playback. <a href="a-grain-of-noise.wav">Download WAV</a>.</audio></div>
+<div class="option"><h3>The Long Entry</h3><p>A 7-second rise from 220 to 392 Hz, then 22 seconds of digital silence.</p><audio controls preload="metadata" aria-label="Preview The Long Entry"><source src="the-long-entry.wav" type="audio/wav">Your browser does not support audio playback. <a href="the-long-entry.wav">Download WAV</a>.</audio></div>
+</section>
+<p class="note">The files are synthetic and dry. Their digital silences do not simulate a room. A speaker and room will affect playback, but the score does not measure or document that response. It has not been performed or shaped with visitors, and makes no accessibility claim.</p>
+<div class="downloads"><a href="one-choice-one-room.svg">Download score (SVG)</a><a href="one-choice-one-room.png">Download score (PNG)</a><a href="one-line-then-air.wav">One Line, Then Air (WAV)</a><a href="a-grain-of-noise.wav">A Grain of Noise (WAV)</a><a href="the-long-entry.wav">The Long Entry (WAV)</a></div>
+</div>
+</article>
+<footer>Rill · A Room Read by Listening<br><a href="one-playback-one-reply.html">One Playback, One Reply</a></footer>
+</main>
+</body>
+</html>

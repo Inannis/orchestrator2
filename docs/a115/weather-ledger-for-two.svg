@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+<rect width="1400" height="1000" fill="#34474a"/>
+<text x="62" y="60" font-family="Georgia,serif" font-size="12" letter-spacing="3" fill="#c8d2c5">TIDE VENN  /  THE LISTENING INSTRUMENT</text>
+<text x="62" y="108" font-family="Georgia,serif" font-size="38" font-style="italic" fill="#f0eadc">Weather Ledger for Two</text>
+<text x="1335" y="98" text-anchor="end" font-family="Georgia,serif" font-size="13" letter-spacing="2" fill="#c8d2c5">A FOLDING FIELD RECORD</text>
+<!-- Front -->
+<rect x="55" y="140" width="885" height="760" fill="#f3eee2"/>
+<text x="82" y="180" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#65756d">FRONT  /  OPEN TO TWO LISTENING FACES</text>
+<path d="M497 196V840" stroke="#a99c83" stroke-width="2" stroke-dasharray="6 8"/>
+<text x="92" y="230" font-family="Georgia,serif" font-size="21" fill="#3c4841">A  /  MY ACCOUNT</text>
+<text x="520" y="230" font-family="Georgia,serif" font-size="21" fill="#3c4841">B  /  MY ACCOUNT</text>
+<text x="92" y="270" font-family="Georgia,serif" font-size="14" fill="#69746b">Place</text><path d="M145 273H455" stroke="#b6aa92" stroke-width="1.5"/>
+<text x="92" y="310" font-family="Georgia,serif" font-size="14" fill="#69746b">Task</text><path d="M145 313H455" stroke="#b6aa92" stroke-width="1.5"/>
+<text x="92" y="350" font-family="Georgia,serif" font-size="14" fill="#69746b">Heard, in my words</text><path d="M92 377H455M92 405H455" stroke="#b6aa92" stroke-width="1.5"/>
+<text x="92" y="449" font-family="Georgia,serif" font-size="14" fill="#69746b">Reported span  /  mark between your own limits</text>
+<path d="M120 482H430" stroke="#c9c2b4" stroke-width="2" stroke-dasharray="4 7"/><circle cx="120" cy="482" r="8" fill="#f3eee2" stroke="#b86950" stroke-width="3"/><circle cx="430" cy="482" r="8" fill="#f3eee2" stroke="#b86950" stroke-width="3"/>
+<text x="92" y="529" font-family="Georgia,serif" font-size="14" fill="#69746b">Pulses  /  separate short marks</text><path d="M92 558H455" stroke="#b6aa92" stroke-width="1.5"/>
+<text x="520" y="270" font-family="Georgia,serif" font-size="14" fill="#69746b">Place</text><path d="M573 273H883" stroke="#b6aa92" stroke-width="1.5"/>
+<text x="520" y="310" font-family="Georgia,serif" font-size="14" fill="#69746b">Task</text><path d="M573 313H883" stroke="#b6aa92" stroke-width="1.5"/>
+<text x="520" y="350" font-family="Georgia,serif" font-size="14" fill="#69746b">Heard, in my words</text><path d="M520 377H883M520 405H883" stroke="#b6aa92" stroke-width="1.5"/>
+<text x="520" y="449" font-family="Georgia,serif" font-size="14" fill="#69746b">Reported span  /  mark between your own limits</text>
+<path d="M548 482H858" stroke="#c9c2b4" stroke-width="2" stroke-dasharray="4 7"/><circle cx="548" cy="482" r="8" fill="#f3eee2" stroke="#637f91" stroke-width="3"/><circle cx="858" cy="482" r="8" fill="#f3eee2" stroke="#637f91" stroke-width="3"/>
+<text x="520" y="529" font-family="Georgia,serif" font-size="14" fill="#69746b">Pulses  /  separate short marks</text><path d="M520 558H883" stroke="#b6aa92" stroke-width="1.5"/>
+<rect x="82" y="610" width="830" height="205" fill="#e4e9dc"/>
+<text x="105" y="650" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.8" fill="#566c64">SHARED WEATHER  /  DATE  /  CONDITIONS</text>
+<path d="M105 688H890M105 725H890M105 762H890" stroke="#9eae9e" stroke-width="1.5"/>
+<text x="82" y="865" font-family="Georgia,serif" font-size="14" fill="#4f5d54">Fold at the center; the two accounts stay on separate faces.</text>
+<!-- Reverse -->
+<path d="M983 140H1345V900H983Z" fill="#e2d8c3" stroke="#b9aa8f" stroke-width="2"/>
+<text x="1012" y="180" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#65756d">REVERSE  /  TURN THE SHEET</text>
+<text x="1012" y="229" font-family="Georgia,serif" font-size="22" fill="#3c4841">Conditions &amp; key</text>
+<text x="1012" y="276" font-family="Georgia,serif" font-size="14" fill="#69746b">Listening position</text><path d="M1012 293H1315" stroke="#a99c83" stroke-width="1.5"/>
+<text x="1012" y="329" font-family="Georgia,serif" font-size="14" fill="#69746b">Playback, if used</text><path d="M1012 346H1315" stroke="#a99c83" stroke-width="1.5"/>
+<text x="1012" y="382" font-family="Georgia,serif" font-size="14" fill="#69746b">What changed on replay?</text><path d="M1012 399H1315M1012 428H1315" stroke="#a99c83" stroke-width="1.5"/>
+<path d="M1012 462H1315" stroke="#b9aa8f" stroke-width="1"/>
+<path d="M1020 500H1090" stroke="#526d80" stroke-width="6"/><text x="1105" y="505" font-family="Georgia,serif" font-size="13" fill="#3c4841">reported span</text>
+<circle cx="1024" cy="548" r="7" fill="#e2d8c3" stroke="#526d80" stroke-width="2.5"/><text x="1044" y="553" font-family="Georgia,serif" font-size="13" fill="#3c4841">own estimated limits</text>
+<path d="M1020 594v14m17-14v14m17-14v14" stroke="#b86950" stroke-width="2.5"/><text x="1074" y="607" font-family="Georgia,serif" font-size="13" fill="#3c4841">discrete pulses</text>
+<text x="1012" y="662" font-family="Georgia,serif" font-size="14" fill="#3c4841">The drawing is not a time scale.</text>
+<text x="1012" y="690" font-family="Georgia,serif" font-size="14" fill="#3c4841">A blank is not silence.</text>
+<text x="1012" y="718" font-family="Georgia,serif" font-size="14" fill="#3c4841">Weather records a condition,</text>
+<text x="1012" y="746" font-family="Georgia,serif" font-size="14" fill="#3c4841">not a cause shared by both.</text>
+<path d="M1012 786H1315" stroke="#a99c83" stroke-width="1.5"/>
+<text x="1012" y="825" font-family="Georgia,serif" font-size="13" fill="#69746b">Use one face per listener.</text>
+<text x="1012" y="852" font-family="Georgia,serif" font-size="13" fill="#69746b">Leave source unassigned if unknown.</text>
+<text x="62" y="958" font-family="Georgia,serif" font-size="12" letter-spacing="1.4" fill="#c8d2c5">AN INVENTED FIELD INSTRUMENT  ·  A MARK RECORDS A LISTENER, NOT A SOURCE</text>
+</svg>

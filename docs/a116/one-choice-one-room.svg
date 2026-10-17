@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1650" viewBox="0 0 1200 1650">
+<rect width="1200" height="1650" fill="#d7cdbc"/><rect x="58" y="58" width="1084" height="1534" fill="#f4eee3" stroke="#9a907d" stroke-width="2"/>
+<text x="108" y="130" font-family="Arial,sans-serif" font-size="15" letter-spacing="5" fill="#52615c">RILL / FINISHED SCORE</text>
+<text x="106" y="218" font-family="Georgia,serif" font-size="59" fill="#1e3032">One Choice,</text><text x="106" y="282" font-family="Georgia,serif" font-size="59" fill="#1e3032">One Room</text>
+<text x="108" y="336" font-family="Arial,sans-serif" font-size="14" letter-spacing="3" fill="#817865">FOR ONE VISITOR AND ONE HOST</text>
+<path d="M160 440H1040" stroke="#9d927f" stroke-width="2"/><circle cx="230" cy="440" r="10" fill="#bd704e"/><circle cx="600" cy="440" r="10" fill="#55777a"/><circle cx="970" cy="440" r="10" fill="#bd704e"/>
+<text x="178" y="482" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#52615c">CHOOSE</text><text x="564" y="482" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#52615c">AGREE</text><text x="942" y="482" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#52615c">PLAY ONCE</text>
+<text x="108" y="580" font-family="Georgia,serif" font-size="23" fill="#293b3e">Before the visit, show the visitor these three sounds and notes.</text>
+<rect x="108" y="620" width="984" height="82" fill="#e9e2d5"/><text x="132" y="654" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.5" fill="#53635f">01 / ONE LINE, THEN AIR</text><text x="132" y="682" font-family="Georgia,serif" font-size="18" fill="#354448">One pure 330 Hz tone, then 16 seconds of digital silence.</text>
+<rect x="108" y="716" width="984" height="82" fill="#e9e2d5"/><text x="132" y="750" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.5" fill="#53635f">02 / A GRAIN OF NOISE</text><text x="132" y="778" font-family="Georgia,serif" font-size="18" fill="#354448">One brief filtered-noise burst, then 18 seconds of digital silence.</text>
+<rect x="108" y="812" width="984" height="82" fill="#e9e2d5"/><text x="132" y="846" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.5" fill="#53635f">03 / THE LONG ENTRY</text><text x="132" y="874" font-family="Georgia,serif" font-size="18" fill="#354448">A 7-second rise from 220 to 392 Hz, then 22 seconds of silence.</text>
+<text x="108" y="970" font-family="Georgia,serif" font-size="22" fill="#293b3e">The visitor may choose one file, or none. No explanation is needed.</text>
+<text x="108" y="1038" font-family="Georgia,serif" font-size="22" fill="#344648">Choose a room and speaker together. Agree on a comfortable</text><text x="108" y="1080" font-family="Georgia,serif" font-size="22" fill="#344648">playback level before starting. Anyone may change their mind.</text>
+<text x="108" y="1162" font-family="Georgia,serif" font-size="22" fill="#344648">Play the chosen file once, from beginning to end. The visitor</text><text x="108" y="1204" font-family="Georgia,serif" font-size="22" fill="#344648">may leave or say nothing at any time.</text>
+<text x="108" y="1286" font-family="Georgia,serif" font-size="22" fill="#344648">Do not replay the file in the visit, record the room, or collect</text><text x="108" y="1328" font-family="Georgia,serif" font-size="22" fill="#344648">an account. If no file is chosen, do not play.</text>
+<path d="M108 1392H1092" stroke="#b8ae9b"/>
+<text x="108" y="1442" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.3" fill="#817865">THE FILES ARE SYNTHETIC AND DRY. NO ROOM RESPONSE IS ADDED OR CLAIMED.</text>
+<text x="108" y="1522" font-family="Georgia,serif" font-size="17" fill="#52615c">A listening visit, not a measurement or a request for testimony.</text>
+</svg>
