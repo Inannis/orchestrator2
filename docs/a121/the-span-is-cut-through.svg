@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#e9e6dd"/>
+  <ellipse cx="610" cy="704" rx="340" ry="31" fill="#d0cdc2"/>
+  <!-- The room floor and its two outer walls. -->
+  <path d="M330 600 650 600 850 682 530 682Z" fill="#c9bb97"/>
+  <path d="M530 682 850 682 850 705 530 705Z" fill="#374440"/>
+  <path d="M330 600 530 682 530 410 330 330Z" fill="#60756b"/>
+  <path d="M530 682 650 600 650 330 530 410Z" fill="#40554e"/>
+  <path d="M650 600 850 682 850 410 650 330Z" fill="#985a44"/>
+  <path d="M850 682 900 656 900 384 850 410Z" fill="#704638"/>
+  <path d="M330 330 530 410 650 330 450 250Z" fill="#8ba08d"/>
+  <path d="M650 330 850 410 900 384 700 304Z" fill="#c5825e"/>
+  <!-- One deep roof plate rests on the outer walls and the central span. -->
+  <path d="M285 298 465 220 920 412 740 490Z" fill="#b78962"/>
+  <path d="M740 490 920 412 920 454 740 532Z" fill="#594d3c"/>
+  <path d="M920 412 465 220 465 262 920 454Z" fill="#493f34"/>
+  <!-- A bearing span crosses the room. Its cut reaches the floor and turns into shadow. -->
+  <path d="M470 424 635 354 635 562 470 632Z" fill="#45685e"/>
+  <path d="M635 354 674 371 674 579 635 562Z" fill="#304b45"/>
+  <path d="M470 424 635 354 674 371 509 441Z" fill="#9eaa98"/>
+  <path d="M470 632 635 562 674 579 509 649Z" fill="#2b3b38"/>
+  <!-- The opening is narrow at the near edge and deeper on its turning side. -->
+  <path d="M535 468 583 448 583 586 535 606Z" fill="#202c29"/>
+  <path d="M583 448 614 461 614 573 583 586Z" fill="#17221f"/>
+  <path d="M535 606 583 586 614 573 566 594Z" fill="#374440"/>
+  <!-- A short, pale glimpse ends against the offset interior return. -->
+  <path d="M614 486 650 501 650 541 614 526Z" fill="#985a44"/>
+  <path d="M614 526 650 541 650 557 614 542Z" fill="#704638"/>
+</svg>
