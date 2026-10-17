@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850">
+<rect width="1100" height="850" fill="#a9b7b3"/>
+<path d="M0 0 H1100 V172 Q810 142 520 179 T0 165Z" fill="#e7e4d8"/>
+<path d="M0 224 Q204 198 430 225 T880 213 T1100 220 M0 336 Q230 310 490 341 T900 329 T1100 334 M0 545 Q270 520 500 549 T900 538 T1100 542 M0 704 Q240 687 475 711 T870 699 T1100 702" fill="none" stroke="#d3d9cf" stroke-width="6" opacity=".72"/>
+<!-- A body built in separate weights, its contour interrupted by the railing. -->
+<path d="M453 174 C405 216 391 270 416 319 C437 358 496 373 539 342 C579 313 589 254 556 209 C532 179 486 159 453 174Z" fill="#39413e"/>
+<path d="M442 194 C423 165 441 133 467 119 Q488 146 475 179Z" fill="#e8dfc2"/>
+<path d="M493 177 Q542 163 566 197 Q580 219 565 239 Q541 254 509 231Z" fill="#ece6d5"/>
+<path d="M545 196 Q576 205 585 230 L621 289 Q628 301 616 306 Q604 309 598 298 L558 247Z" fill="#795746"/>
+<circle cx="541" cy="194" r="5" fill="#28302c"/>
+<path d="M425 309 Q477 287 532 313 L556 382 L435 393Z" fill="#777d74" opacity=".78"/>
+<!-- The railing is nearer than the body; it hides parts without dividing the whole page. -->
+<path d="M0 349 L1100 326 L1100 379 L0 403Z" fill="#303b38"/>
+<path d="M112 397 L153 396 L176 850 L132 850Z M355 392 L396 391 L418 850 L375 850Z M698 384 L740 383 L761 850 L718 850Z M954 378 L996 377 L1018 850 L974 850Z" fill="#303b38"/>
+<path d="M0 760 L1100 750 L1100 797 L0 808Z" fill="#303b38"/>
+<path d="M426 380 L419 424 M473 381 L480 425" stroke="#323a37" stroke-width="8"/>
+<path d="M405 425 H439 M466 426 H500" stroke="#323a37" stroke-width="5"/>
+<text x="58" y="78" font-family="Georgia,serif" font-size="19" fill="#52615b" letter-spacing="3">A BODY, PARTLY OBSCURED</text>
+</svg>

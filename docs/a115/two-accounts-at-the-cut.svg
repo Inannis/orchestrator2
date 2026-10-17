@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+<defs><pattern id="rain" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(18)"><path d="M4 2v12" stroke="#83979a" stroke-width="2" opacity=".52"/></pattern><pattern id="paper" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".7" fill="#a89e86" opacity=".35"/></pattern></defs>
+<rect width="1400" height="1000" fill="#f1ead8"/><rect x="36" y="32" width="1328" height="936" fill="none" stroke="#48564e" stroke-width="2"/>
+<text x="72" y="84" font-family="Georgia" font-size="19" letter-spacing="5" fill="#48564e">TIDE VENN / LISTENING INSTRUMENTS / FIELD PLATE 02</text>
+<text x="72" y="143" font-family="Georgia" font-size="48" font-style="italic" fill="#33483f">The Sound Between Two Accounts</text>
+<text x="74" y="178" font-family="Arial" font-size="15" letter-spacing="2" fill="#6e756a">AN INVENTED CUT / RAIN AFTER WORK / TWO POSITIONS, LEFT UNJOINED</text>
+<!-- scene -->
+<rect x="72" y="205" width="1256" height="490" fill="#d8e0d8"/><path d="M72 205h1256v155q-130 60-260 25t-250 12q-135 25-264-8t-260 20q-122 24-222-12z" fill="#b7c5b5"/>
+<path d="M72 390q130-55 250-8t245 24q140-30 260 12t250 0q120-25 251 10v267H72z" fill="#c6bda2"/>
+<path d="M72 498q140-34 270 2t260-4q140-27 278 2t270-4q110-18 178 0v201H72z" fill="#9ea996"/>
+<!-- cut water -->
+<path d="M72 568q195-55 368-9t344-3q170-48 302-11t242 4v146H72z" fill="#758f8d"/><path d="M72 568q195-55 368-9t344-3q170-48 302-11t242 4v146H72z" fill="url(#rain)"/>
+<path d="M78 575q190-50 360-7t350-4q160-44 295-8t240 1" fill="none" stroke="#e4e2d0" stroke-width="4" opacity=".8"/>
+<!-- old stack -->
+<path d="M1120 301l20-104 57 4 25 111-10 85h-82z" fill="#8e8878" stroke="#4f5a50" stroke-width="3"/><path d="M1135 248h70m-76 38h84m-89 39h95" stroke="#d4c6a9" stroke-width="4"/>
+<!-- left worker kneeling rinse pan -->
+<g stroke="#46544c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M255 451q20-44 64-39l31 35-18 54-55 7-37-27z" fill="#a45e43"/><circle cx="298" cy="394" r="24" fill="#d3ad83"/><path d="M277 380q16-26 43-10l7 11-45 6z" fill="#46544c"/><path d="M276 493l-27 49 61 21 40-17-21-46" fill="#6c7770"/><path d="M307 478l65 39 34-18" fill="none"/><path d="M403 496q30-16 58 0l-10 21h-60z" fill="#b8aa8d"/><path d="M398 499q30 12 66 0" fill="none" stroke="#667b7b" stroke-width="6"/><path d="M375 517q16 17 30 0m-18 14 13 9" fill="none" stroke="#dce6df" stroke-width="3"/>
+<!-- right worker at gate -->
+<path d="M878 423q29-32 65-15l17 44-19 51-52-2-27-34z" fill="#bd7950"/><circle cx="918" cy="368" r="23" fill="#d5b58e"/><path d="M894 360q7-31 38-18l13 20-51 7z" fill="#46544c"/><path d="M891 496l-38 51 63 8 42-35-8-37" fill="#53645b"/><path d="M917 471l62 15 32-31" fill="none"/><path d="M1009 353v190m42-186v188m-42-139h42m-42 51h42m-42 48h42" fill="none"/><path d="M1002 405q25 9 57 0m-56 54q20 8 55 0" fill="none" stroke="#b49569" stroke-width="8"/><path d="M972 486l34-17m-28 29 27-15" fill="none" stroke="#d5b58e" stroke-width="3"/>
+</g>
+<!-- sound drift marks crossing stream, deliberately ambiguous -->
+<g fill="none" stroke="#e8e3d2" stroke-width="3" opacity=".9"><path d="M480 553q10-14 20 0t20 0t20 0"/><path d="M560 582q9-9 18 0t18 0"/><path d="M668 552q10-13 20 0t20 0t20 0t20 0"/><path d="M780 585q9-10 18 0t18 0"/></g>
+<!-- callout lines -->
+<path d="M320 520L228 639h-118m821-142 105 142h101" fill="none" stroke="#f2ead8" stroke-width="2" stroke-dasharray="5 6"/>
+<text x="102" y="667" font-family="Arial" font-size="13" letter-spacing="2" fill="#f4efdf">RINSE / WEST BANK</text><text x="1120" y="667" font-family="Arial" font-size="13" letter-spacing="2" fill="#f4efdf">LATCH / EAST BANK</text>
+<rect x="72" y="205" width="1256" height="490" fill="none" stroke="#48564e" stroke-width="2"/>
+<!-- records -->
+<rect x="72" y="720" width="610" height="185" fill="#eee5d0" stroke="#778176" stroke-width="2"/><rect x="718" y="720" width="610" height="185" fill="#eee5d0" stroke="#778176" stroke-width="2"/><rect x="72" y="720" width="610" height="185" fill="url(#paper)"/><rect x="718" y="720" width="610" height="185" fill="url(#paper)"/>
+<text x="100" y="756" font-family="Arial" font-size="14" letter-spacing="3" fill="#59675d">ACCOUNT A / WEST BANK</text><text x="100" y="800" font-family="Georgia" font-size="23" fill="#33483f">Three quick knocks; rain on the pan.</text><text x="100" y="842" font-family="Arial" font-size="14" fill="#68736a">TASK: rinse the pan / POSITION: by the low stone</text><text x="100" y="876" font-family="Georgia" font-size="16" font-style="italic" fill="#6e756a">Source left open.</text>
+<text x="746" y="756" font-family="Arial" font-size="14" letter-spacing="3" fill="#59675d">ACCOUNT B / EAST BANK</text><text x="746" y="800" font-family="Georgia" font-size="23" fill="#33483f">A low scrape as the latch turned.</text><text x="746" y="842" font-family="Arial" font-size="14" fill="#68736a">TASK: tie the gate / POSITION: beside the post</text><text x="746" y="876" font-family="Georgia" font-size="16" font-style="italic" fill="#6e756a">Source left open.</text>
+<text x="72" y="940" font-family="Arial" font-size="13" letter-spacing="2" fill="#59675d">KEEP BOTH NOTES / RAIN AND TASK BELONG TO EACH PASS / A DIFFERENCE IS NOT A VERDICT</text>
+</svg>
