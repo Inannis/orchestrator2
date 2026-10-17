@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#e9e6dd"/>
+  <ellipse cx="600" cy="740" rx="355" ry="31" fill="#d0cdc2"/>
+  <!-- A square floor plate supports two leaves meeting at one axis. -->
+  <path d="M290 575 550 420 910 560 650 715Z" fill="#c9bb97"/>
+  <path d="M290 575 650 715 650 746 290 606Z" fill="#374440"/>
+  <path d="M650 715 910 560 910 591 650 746Z" fill="#2b3b38"/>
+  <!-- The cut leaf stands back and left; its arch is a true opening. -->
+  <path d="M330 575 550 444 550 235 330 366Z M427 518 427 432 Q427 402 454 386 Q481 370 481 400 L481 486Z" fill="#56766c" fill-rule="evenodd"/>
+  <path d="M330 366 350 354 570 223 550 235Z" fill="#8ba08d"/>
+  <!-- The second leaf turns toward the viewer and partly veils the cut. -->
+  <path d="M550 444 850 560 850 351 550 235Z" fill="#a65f46"/>
+  <path d="M550 235 570 223 870 339 850 351Z" fill="#cb8762"/>
+  <path d="M550 444 850 560 850 577 550 461Z" fill="#75483c"/>
+  <!-- One shared vertical pin and its floor socket hold the corner. -->
+  <path d="M550 438 550 250" stroke="#e3c477" stroke-width="5"/>
+  <circle cx="550" cy="260" r="8" fill="#f0d78a"/>
+  <circle cx="550" cy="438" r="8" fill="#d6b46d"/>
+  <circle cx="550" cy="438" r="3" fill="#775e3c"/>
+  <!-- A restrained floor line ends at the pivot. -->
+  <path d="M365 580 520 488" fill="none" stroke="#e1d5b9" stroke-width="3" opacity=".75"/>
+</svg>

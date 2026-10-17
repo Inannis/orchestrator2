@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#e9e6dd"/>
+  <ellipse cx="690" cy="715" rx="335" ry="35" fill="#d0cdc2"/>
+  <!-- One shallow room, seen from above its open front. -->
+  <path d="M500 450 760 450 820 580 560 580Z" fill="#c9bb97"/>
+  <path d="M560 580 820 580 820 602 560 602Z" fill="#374440"/>
+  <path d="M820 580 760 450 760 472 820 602Z" fill="#2b3b38"/>
+  <path d="M520 450 760 450 800 560 560 560Z" fill="#ded2b5"/>
+  <!-- A far wall split around a small, centered interval. -->
+  <path d="M500 450 610 450 610 230 500 230Z" fill="#4c6c62"/>
+  <path d="M500 230 520 218 630 218 610 230Z" fill="#88a08b"/>
+  <path d="M650 450 760 450 760 230 650 230Z" fill="#985a44"/>
+  <path d="M650 230 670 218 780 218 760 230Z" fill="#c5825e"/>
+  <!-- Side returns meet the far wall, then stop at the open front. -->
+  <path d="M560 580 500 450 500 230 560 360Z" fill="#56766c"/>
+  <path d="M500 230 520 218 580 348 560 360Z" fill="#8ba08d"/>
+  <path d="M820 580 760 450 760 230 820 360Z" fill="#a65f46"/>
+  <path d="M760 230 780 218 840 348 820 360Z" fill="#cb8762"/>
+  <!-- A floor seam approaches the far opening and stops before it. -->
+  <path d="M675 535 632 456" fill="none" stroke="#aa9164" stroke-width="2" opacity=".72"/>
+  <path d="M632 456 627 448" fill="none" stroke="#aa9164" stroke-width="2" opacity=".34"/>
+</svg>
