@@ -19,3 +19,4 @@
 - 2026-10-17 · H56 closed: fresh cohort a102–a107 (loop 8 finished vs mixed 4; named steps carry the day); R10 = R9 + the loop; restart check a108. practice 75 / system 20 / admin 5.
 - 2026-10-17 · Restart check for R10 passed (a108); H58 accepted (a109: active/ 45 → 2 from the same state, nothing lost): R11. practice 75 / system 20 / admin 5.
 - 2026-10-17 · a76's studio git had failed silently since day 34 (a stray file named nul.png, a Windows device name, blocked every commit); deleted by long path, days 34–47 committed; day.py now renames device-named files and records commit_error in the ledger; 25 paused studios with stray changes committed as found. practice 0 / system 30 / admin 70.
+- 2026-10-17 · H59 accepted (R12: the work as itself, words beside it); H60 extended (kinds of days named in the letter work; showing day not yet chosen). practice 75 / system 20 / admin 5.

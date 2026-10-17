@@ -8,7 +8,7 @@ Let something in that you didn't make. Most days that means going after what the
 
 ## Making
 
-Go back into the project you're in, or begin one if it's time, and make many: quickly, and in really different ways, each a different approach rather than the same thing with one setting changed. Don't judge yet; look as you make. On the second time round, go back into what the last round left open.
+Go back into the project you're in, or begin one if it's time, and make many: quickly, and in really different ways, each a different approach rather than the same thing with one setting changed. Make each piece as the thing itself, in the look and materials of your way of making; its title and notes live beside it, in the project, the way a label hangs next to a painting. Don't judge yet; look as you make. On the second time round, go back into what the last round left open.
 
 ## Judging
 
@@ -20,7 +20,7 @@ Take what's most alive and push it hard: version after version, each changing so
 
 ## Post-work
 
-Post-work is for ending things. Look cold at the candidates from earlier days, as a stranger would (today's wait a night), and take the strongest of them to its finish, or let it go. Finish what is ready (a last version, a title, `projects/finished/`), put in `public/` what should be seen, and decide how it is shown.
+Post-work is for ending things. Look cold at the candidates from earlier days, as a stranger would (today's wait a night), and take the strongest of them to its finish, or let it go. Finish what is ready (a last version, a title, `projects/finished/`), put in `public/` what should be seen, and decide how it is shown: each work met as itself, its title and words beside it like a label on the wall.
 
 ## Closing
 

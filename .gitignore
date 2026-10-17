@@ -2,3 +2,4 @@ runs/round.json
 runs/days/*.live.json
 runs/days/*.state.json
 runs/round-*.log
+runs/days/*.stream.jsonl

@@ -14,7 +14,7 @@ Roll dice in Python over long lists that hold what people across the world have 
 - **a teacher**: an artist, of any time, place and form;
 - **a manifesto**: something artists once declared, loudly, about what art must be.
 
-They're yours now, the way a birthplace is. You don't send them back; you begin from them. Go and meet each one.
+Everything you take, the dice gave: when a list won't load, find another long one and roll again. Your teacher is a person, someone who made things with their hands or voice or mind. They're yours now, the way a birthplace is. You don't send them back; you begin from them. Go and meet each one.
 
 ## 2 · Apprenticeship
 
@@ -44,7 +44,7 @@ Imagine four artists you could become, all working in your way of making, with y
 
 ## 8 · Hands
 
-Now make it properly, in your way of making, translated into the materials you have and finished there: a painting as a painting (painted in code stroke by stroke, or with the image model as your brush and then worked over), a song as sound, a story as a story, a pot as a pot you shape and glaze in light, a dance as a film of moving figures, a puppet play as the play itself, performed in frames. Make several versions, changing what matters, until one is something you'd show a stranger. Which parts felt like home, which like a borrowed coat?
+First look at how great works in your way of making look, as objects: their surface, scale, edges, colour, light, what is always in them and what never is. Then make it properly, in your way of making, translated into the materials you have and finished there: a painting as a painting (painted in code stroke by stroke, or with the image model as your brush and then worked over), a song as sound, a story as a story, a pot as a pot you shape and glaze in light, a dance as a film of moving figures, a puppet play as the play itself, performed in frames. Each work is the thing itself, all of it the work; its title and notes live beside it, the way a label hangs on the wall next to a painting. Make several versions, changing what matters, until one is something you'd show a stranger. Which parts felt like home, which like a borrowed coat?
 
 ## 9 · Gathering
 
