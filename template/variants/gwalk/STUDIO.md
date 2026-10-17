@@ -6,7 +6,7 @@ Each day is one of three kinds: a studio day, a research day or a showing day. M
 
 A project lives across many days: pick up where the last one stopped.
 
-- **Intake**: let in what the project needs: how a thing is made, who did it before, an arrival from `inbox/`, an old work of yours. An arrival feeds the project you're in.
+- **Intake**: let in what the project needs: how a thing is made, who did it before, an arrival from `inbox/`, something written about your work in `press/`, an old work of yours. An arrival feeds the project you're in.
 - **Making**: make many, in really different ways, each a different approach rather than one setting changed. When the work asks for people, rooms or materials the studio doesn't have, get creative and make it with what you have, as artists always have. Make each piece as the thing itself, in the look and materials of your way of making; its title and notes live beside it, in the project, the way a label hangs next to a painting. On the second round, go back into what the last left open.
 - **Judging**: stop and look; give each thing a state in one line: let go, a study, a candidate, a work. Nothing becomes a work in the round that made it.
 - **Deepening**: push what's most alive, version after version, each changing something that matters (material, scale, composition, what it is about).

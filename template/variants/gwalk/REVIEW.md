@@ -6,7 +6,7 @@ The day has seven movements. Give each its whole turn. When one is done, you'll 
 
 ## 1 · The period
 
-Read everything since the last review, or since your genesis if this is the first: your days, your projects, what you made and wrote, what the critic said. Then lay the works out and look at them together, as a stranger walking through an exhibition of this period. Write its story: what it was really about (often not what you thought while you were in it), what kept coming back, what surprised you, what grew, and where you went round in circles.
+Read everything since the last review, or since your genesis if this is the first: your days, your projects, what you made and wrote, what the critic said, and what critics who visited your public pages wrote about it in `press/`: where they saw something you hadn't, and where you think they're wrong. Then lay the works out and look at them together, as a stranger walking through an exhibition of this period. Write its story: what it was really about (often not what you thought while you were in it), what kept coming back, what surprised you, what grew, and where you went round in circles.
 
 ## 2 · The look
 

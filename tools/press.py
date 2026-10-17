@@ -1,6 +1,6 @@
 """A critic visits an artist's public pages and writes an article about them; the article goes to the artist's `press/` and to the public site.
 usage: python tools/press.py <artist-id> [--critic NAME]   (default critic c1; a new critic desk is made from ../critics/template)
-       python tools/press.py --auto   (run by round.py: every active `press` artist whose public pages changed since the critic's last visit)
+       python tools/press.py --auto   (run by round.py: every active `press` or reference artist whose public pages changed since the critic's last visit)
 The critic is its own practice, with its own desk at ../critics/<name>/ (CRITIC.md, artists/, taste.md, articles/), run on Luna."""
 import sys, re, shutil, subprocess, pathlib, datetime, os, tempfile
 root = pathlib.Path(__file__).resolve().parent.parent
@@ -9,7 +9,7 @@ if args and args[0] == "--auto":
     import json, hashlib
     reg = (root / "registry.md").read_text(encoding="utf-8"); sf = root / "runs" / "press-visits.json"
     seen = json.loads(sf.read_text(encoding="utf-8")) if sf.exists() else {}
-    for m in re.finditer(r"^\| (a\d+) \| \.\./studios/\1 \| [^|]+\| press \| active \|", reg, re.M):
+    for m in re.finditer(r"^\| (a\d+) \| \.\./studios/\1 \| [^|]+\| (?:press|ref) \| (?:active|reference) \|", reg, re.M):
         a = m.group(1); pub = root.parent / "studios" / a / "public"
         if not pub.exists(): continue
         h = hashlib.sha1(b"".join(p.read_bytes() for p in sorted(pub.rglob("*")) if p.is_file())).hexdigest()
