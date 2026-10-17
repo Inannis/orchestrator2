@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="980" viewBox="0 0 1200 980">
+<defs>
+ <pattern id="paper" width="15" height="15" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r=".65" fill="#978e79" opacity=".22"/><circle cx="11" cy="12" r=".5" fill="#978e79" opacity=".17"/></pattern>
+ <pattern id="rain" width="25" height="25" patternUnits="userSpaceOnUse" patternTransform="rotate(17)"><path d="M4 2v10" stroke="#65858a" stroke-width="1.4" opacity=".52"/></pattern>
+</defs>
+<rect width="1200" height="980" fill="#ddd6c4"/><rect x="28" y="28" width="1144" height="924" fill="#f2ecdc" stroke="#57564a" stroke-width="2"/><rect x="28" y="28" width="1144" height="924" fill="url(#paper)"/>
+<text x="68" y="76" font-family="Arial,sans-serif" font-size="13" letter-spacing="3" fill="#59685d">TIDE VENN / THE LISTENING INSTRUMENT</text><text x="68" y="137" font-family="Georgia,serif" font-size="47" font-style="italic" fill="#35483f">The Note Beside the Rinse</text>
+<text x="70" y="174" font-family="Georgia,serif" font-size="18" fill="#665f50">A remembered sound, written beside an ordinary task.</text>
+<!-- An open window gives weather; no line connects it to the note. -->
+<path d="M648 198h444v246H648z" fill="#536057" stroke="#4b5148" stroke-width="5"/><path d="M666 216h408v208H666z" fill="#a9bbb0"/><path d="M666 327q104-28 205 0t203-2v99H666z" fill="#758e82"/><path d="M666 216h408v208H666z" fill="url(#rain)"/><path d="M854 216v208m-188-103h408" stroke="#4d574f" stroke-width="7"/>
+<!-- One worker, seen in the middle of drying the cups. -->
+<path d="M174 487q7-105 108-123 101 15 114 123l-13 180H190z" fill="#687b70" stroke="#4b5148" stroke-width="4"/><circle cx="285" cy="351" r="53" fill="#c8a284" stroke="#4b5148" stroke-width="4"/><path d="M233 351q3-65 62-63 40 3 48 47l-18-12-13 13-79 15z" fill="#4a5149"/><path d="M214 518q76 72 171 12l96 79-34 39-118-53-100 51-38-36z" fill="#8d6651" stroke="#4b5148" stroke-width="4"/><path d="M350 548q48 30 100 61l34 16-11 21-49-8-95-37z" fill="#cba98b" stroke="#4b5148" stroke-width="3"/>
+<path d="M88 690q220-28 434 0t358-2q144-21 232 1v206H88z" fill="#806650" stroke="#514e43" stroke-width="3"/>
+<!-- Cups belong to the task, without being made into a source. -->
+<path d="M211 609h74l-7 85q-31 18-60 0z" fill="#e5decc" stroke="#4e5148" stroke-width="3"/><path d="M287 630q37-8 32 30t-34 22" fill="none" stroke="#4e5148" stroke-width="4"/><path d="M322 620h70l-6 76q-27 17-58 0z" fill="#c7c5b2" stroke="#4e5148" stroke-width="3"/><path d="M390 636q34-7 30 27t-30 22" fill="none" stroke="#4e5148" stroke-width="4"/>
+<!-- The note is one loose, unruled surface. -->
+<path d="M518 527q192-19 560 5l-17 314q-272 18-541-9z" fill="#f4edda" stroke="#665e4c" stroke-width="2.5"/>
+<path d="M555 566q192-15 474 4" fill="none" stroke="#d4cbb5" stroke-width="1.2"/>
+<text x="565" y="626" font-family="Georgia,serif" font-size="30" font-style="italic" fill="#a95642">thin, quick; two close taps</text>
+<text x="565" y="698" font-family="Georgia,serif" font-size="21" fill="#41483f">I was drying cups by the west window.</text>
+<text x="565" y="735" font-family="Georgia,serif" font-size="21" fill="#41483f">Light rain on the sill. I could not place</text>
+<text x="565" y="772" font-family="Georgia,serif" font-size="21" fill="#41483f">where the sound came from.</text>
+<path d="M517 857q240 11 560-3" fill="none" stroke="#b5a98d" stroke-width="2"/>
+<text x="69" y="923" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.2" fill="#56645b">INVENTED ACCOUNT · NO SOURCE IDENTIFIED · TASK AND WEATHER ARE THE LISTENER'S CONDITIONS</text>
+</svg>

@@ -1,0 +1,32 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1320" viewBox="0 0 1000 1320" role="img" aria-labelledby="title desc">
+<title id="title">When Terms Blur</title>
+<desc id="desc">A performable score for three people. Before beginning, they choose how each person can pause or leave and what will signal uncertainty. If terms become unclear, the event stops without anyone having to remember or explain the agreement. Any new event begins with fresh terms and choices.</desc>
+<rect width="1000" height="1320" fill="#f1eee5"/>
+<text x="82" y="86" fill="#245c57" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">RILL / A ROOM READ BY LISTENING</text>
+<text x="78" y="210" fill="#252e2b" font-family="Georgia,serif" font-size="68">When Terms</text>
+<text x="78" y="286" fill="#a44331" font-family="Georgia,serif" font-size="68" font-style="italic">Blur</text>
+<text x="84" y="337" fill="#785840" font-family="Arial,sans-serif" font-size="17" letter-spacing="1">A SCORE FOR THREE PEOPLE TO SHAPE BEFORE BEGINNING</text>
+<path d="M84 380H916" stroke="#245c57" stroke-width="2"/>
+<text x="84" y="446" fill="#245c57" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3">BEFORE</text>
+<text x="84" y="506" fill="#252e2b" font-family="Georgia,serif" font-size="27">
+<tspan x="84" dy="0">Choose a small event together, or choose none.</tspan>
+<tspan x="84" dy="42">Together, agree how each person may pause or leave,</tspan>
+<tspan x="84" dy="42">and how you will recognize that signal.</tspan>
+<tspan x="84" dy="42">If a term is unclear or unusable, change it or do not begin.</tspan>
+</text>
+<path d="M84 700H916" stroke="#c8b99e" stroke-width="1"/>
+<text x="84" y="762" fill="#245c57" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3">WHEN TERMS BLUR</text>
+<text x="84" y="824" fill="#252e2b" font-family="Georgia,serif" font-size="29">
+<tspan x="84" dy="0">Stop the event.</tspan>
+<tspan x="84" dy="44">No one has to remember, explain, or defend</tspan>
+<tspan x="84" dy="44">what was agreed.</tspan>
+</text>
+<path d="M84 958H916" stroke="#a44331" stroke-width="2"/>
+<text x="84" y="1018" fill="#245c57" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3">AFTER</text>
+<text x="84" y="1076" fill="#252e2b" font-family="Georgia,serif" font-size="26">
+<tspan x="84" dy="0">The event is over. No record or report is due.</tspan>
+<tspan x="84" dy="42">A new event begins only with fresh terms and choices.</tspan>
+<tspan x="84" dy="42">Passing needs no reason.</tspan>
+</text>
+<text x="84" y="1260" fill="#625b50" font-family="Arial,sans-serif" font-size="14">Composed score; unperformed and not shaped with participants. No access outcome is claimed.</text>
+</svg>

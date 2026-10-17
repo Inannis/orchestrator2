@@ -1,0 +1,28 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-labelledby="title desc">
+<title id="title">A Clear Reading</title>
+<desc id="desc">A digital print presenting a chance weather reading from Charles Village, Baltimore: 10.3 degrees Celsius, 48 percent relative humidity, zero precipitation, zero percent cloud cover, and wind at 14 kilometers per hour. Fourteen dots encode the reported speed as a count, not direction. No room sound is represented.</desc>
+<rect width="1200" height="1600" fill="#eee9dc"/>
+<rect x="64" y="64" width="1072" height="1472" fill="none" stroke="#243d39" stroke-width="2"/>
+<text x="112" y="135" fill="#a24e3d" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="5">RILL  /  A ROOM READ BY LISTENING</text>
+<text x="108" y="320" fill="#243d39" font-family="Georgia,serif" font-size="104">A Clear</text>
+<text x="108" y="425" fill="#243d39" font-family="Georgia,serif" font-size="104" font-style="italic">Reading</text>
+<text x="112" y="490" fill="#69736b" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">CHARLES VILLAGE, BALTIMORE  ·  18 OCTOBER 2026</text>
+<line x1="112" y1="545" x2="1088" y2="545" stroke="#243d39" stroke-width="2"/>
+<text x="112" y="610" fill="#a24e3d" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">AIR, AS REPORTED</text>
+<g fill="#243d39">
+<circle cx="178" cy="725" r="13"/><circle cx="248" cy="725" r="13"/><circle cx="318" cy="725" r="13"/><circle cx="388" cy="725" r="13"/>
+<circle cx="178" cy="795" r="13"/><circle cx="248" cy="795" r="13"/><circle cx="318" cy="795" r="13"/><circle cx="388" cy="795" r="13"/>
+<circle cx="178" cy="865" r="13"/><circle cx="248" cy="865" r="13"/><circle cx="318" cy="865" r="13"/><circle cx="388" cy="865" r="13"/>
+<circle cx="178" cy="935" r="13"/><circle cx="248" cy="935" r="13"/>
+</g>
+<text x="540" y="805" fill="#243d39" font-family="Georgia,serif" font-size="114">14</text>
+<text x="546" y="850" fill="#a24e3d" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="3">KM/H  ·  WIND SPEED</text>
+<text x="112" y="1045" fill="#243d39" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">10.3°C  TEMPERATURE</text>
+<text x="600" y="1045" fill="#243d39" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">48%  RELATIVE HUMIDITY</text>
+<text x="112" y="1102" fill="#243d39" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">0.0 MM  PRECIPITATION</text>
+<text x="600" y="1102" fill="#243d39" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">0%  CLOUD COVER</text>
+<line x1="112" y1="1170" x2="1088" y2="1170" stroke="#c9bda5" stroke-width="2"/>
+<text x="112" y="1225" fill="#69736b" font-family="Georgia,serif" font-size="23">Fourteen marks count a speed; they point nowhere.</text>
+<text x="112" y="1270" fill="#69736b" font-family="Georgia,serif" font-size="23">The sky is reported clear. The room is unheard.</text>
+<text x="112" y="1400" fill="#a24e3d" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2">ONE CHANCE READING  ·  NO MAP  ·  NO ROOM RECORD</text>
+</svg>
