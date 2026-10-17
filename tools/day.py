@@ -44,6 +44,11 @@ crow_c = re.search(rf"^\| {cond} \| ([\w-]+) \|", (root / "template" / "conditio
 sj = root / "template" / "variants" / crow_c.group(1) / "session.json" if crow_c else None
 if not GUIDE and sj and sj.exists():
     SESSION = json.loads(sj.read_text(encoding="utf-8"))
+    if "kinds" in SESSION:  # several kinds of day: the artist named tomorrow's in its letter ('Tomorrow: a research day')
+        letter = studio / "NOW.md" if (studio / "NOW.md").exists() else studio / "days" / f"{n - 1:03d}.md"
+        named = re.findall(r"Tomorrow:\s*an?\s+(\w+)\s+day", letter.read_text(encoding="utf-8", errors="replace"), re.I) if letter.exists() else []
+        kind = named[-1].lower() if named and named[-1].lower() in SESSION["kinds"] else SESSION["default"]
+        SESSION = SESSION["kinds"][kind]
     prompt += "\n\n" + SESSION["open"]
     if not resume: k = len(SESSION["steps"])
     else: step[0] = max(0, len(SESSION["steps"]) + 1 - k)  # a resumed day first finishes the cut turn, then takes the next step
