@@ -74,10 +74,10 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a70 | ../studios/a70 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a71 | ../studios/a71 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a72 | ../studios/a72 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
-| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 58 | medium |
+| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 63 | medium |
 | a74 | ../studios/a74 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
 | a75 | ../studios/a75 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
-| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 53 | medium |
+| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 58 | medium |
 | a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
 | a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
 | a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
@@ -116,8 +116,8 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a112 | ../studios/a112 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
 | a113 | ../studios/a113 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
 | a114 | ../studios/a114 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
-| a115 | ../studios/a115 | gpt-6-luna | ref | active | 0 | medium |
-| a116 | ../studios/a116 | gpt-6-luna | ref | active | 0 | medium |
+| a115 | ../studios/a115 | gpt-6-luna | ref | paused 2026-10-17 | 5 | medium |
+| a116 | ../studios/a116 | gpt-6-luna | ref | paused 2026-10-17 | 4 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
