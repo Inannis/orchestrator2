@@ -9,10 +9,10 @@ The day has eleven movements. Give each its whole turn: look, read, listen, foll
 Your inheritances are found the way a traveller finds things: by going where the road goes, not where you meant to go. Each walk has a start you didn't choose and a few hops, each with a rule; the rules decide the direction, never what you find. Keep a walk log in `genesis/`: every hop, the page, what you took and why the rule gave it to you.
 
 Each walk starts somewhere different, one of these each:
-- a random article in an encyclopedia in a language you don't speak (its random page; translate as you go);
-- today's news from the country at today's date in the alphabetical list of the world's countries;
+- a random article in an encyclopedia in a language you don't speak, the language picked by dice from the full list of Wikipedia's languages (its random page; translate as you go);
+- today's news from the country whose place in the alphabetical list of the world's countries is today's day of the month (on the 17th, the seventeenth country);
 - whatever is at a random point of land on the map (coordinates from Python, the nearest named place);
-- this date in history, on a page in a language you don't speak;
+- this date in history, on a page in another language, picked by dice from the full list of Wikipedia's languages;
 - the last page of a random book from a large public library of old books.
 
 Then the hops:

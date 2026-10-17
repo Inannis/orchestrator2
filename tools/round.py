@@ -65,6 +65,7 @@ def run(cmd):
 
 print(subprocess.run([sys.executable, str(root / "tools" / "between.py")], capture_output=True, text=True).stdout.strip() or "between: nothing to run", flush=True)
 print(subprocess.run([sys.executable, str(root / "tools" / "stranger.py")], capture_output=True, text=True).stdout.strip() or "strangers: nothing to read", flush=True)
+print(subprocess.run([sys.executable, str(root / "tools" / "press.py"), "--auto"], capture_output=True, text=True).stdout.strip() or "press: no visits", flush=True)
 print(now(), "starting:", ", ".join(j[0] + (" (resume)" if len(j) > 1 else "") for j in jobs), flush=True)
 pools = {p: ThreadPoolExecutor(LIMIT[p]) for p in {provider(j[0]) for j in jobs}}
 futures = [pools[provider(j[0])].submit(run, j) for j in jobs]

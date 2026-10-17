@@ -52,6 +52,12 @@ if not GUIDE and sj and sj.exists():
     prompt += "\n\n" + SESSION["open"]
     if not resume: k = len(SESSION["steps"])
     else: step[0] = max(0, len(SESSION["steps"]) + 1 - k)  # a resumed day first finishes the cut turn, then takes the next step
+if not resume and (studio / "press").is_dir():  # a critic's new article is announced once, in the day's opening
+    seen_f = root / "runs" / "press-seen.json"; seen = json.loads(seen_f.read_text(encoding="utf-8")) if seen_f.exists() else {}
+    new = sorted(f.name for f in (studio / "press").glob("*.md") if f.name not in seen.get(aid, []))
+    if new:
+        prompt += "\n\nA critic wrote about your work: " + ", ".join(f"`press/{f}`" for f in new) + "."
+        seen[aid] = seen.get(aid, []) + new; seen_f.write_text(json.dumps(seen, indent=1), encoding="utf-8")
 handed = set()  # files already handed back today: no repeats within a day
 
 def own_file():
