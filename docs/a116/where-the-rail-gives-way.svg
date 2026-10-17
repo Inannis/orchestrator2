@@ -1,0 +1,44 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<defs>
+ <clipPath id="sheet"><path d="M48 44l112 5 104-5 111 7 112-5 109 5 111-7 108 6 7 1088-104-5-110 7-112-6-105 5-115-7-110 6-109-7-105 7-108-5z"/></clipPath>
+ <pattern id="leafcut" width="72" height="78" patternUnits="userSpaceOnUse">
+  <path d="M8 70Q18 32 57 8M17 53 7 34m22 2 5-22m2 41 20 3" fill="none" stroke="#c2bd8a" stroke-width="3" opacity=".72"/>
+  <path d="M29 41Q34 19 53 20 55 38 34 48z" fill="#78845f" stroke="#203b39" stroke-width="2"/>
+ </pattern>
+ <pattern id="papergrain" width="61" height="67" patternUnits="userSpaceOnUse">
+  <path d="M5 13l17-2m27 17 8-1M12 57l13-2m22 7 6-1" stroke="#b9aa84" stroke-width="2" opacity=".37"/>
+  <circle cx="39" cy="8" r="1.6" fill="#fff9e9" opacity=".9"/>
+ </pattern>
+ <pattern id="brick" width="86" height="54" patternUnits="userSpaceOnUse">
+  <path d="M2 2h40v23H2zm44 27h39v23H46z" fill="none" stroke="#dfa85d" stroke-width="3" opacity=".8"/>
+ </pattern>
+</defs>
+<g clip-path="url(#sheet)">
+ <rect width="900" height="1200" fill="#eee4ce"/>
+ <rect x="70" y="60" width="760" height="1080" fill="#203b39"/>
+ <rect x="70" y="60" width="760" height="1080" fill="url(#leafcut)"/>
+ <!-- a dense cut hedge, parted by a path that leaves the sheet -->
+ <path d="M72 223Q181 145 282 188T490 185Q594 146 692 199T830 178V468Q739 486 656 456T481 466Q374 506 274 468T72 490z" fill="#74815e" stroke="#203b39" stroke-width="10"/>
+ <path d="M72 223Q181 145 282 188T490 185Q594 146 692 199T830 178V468Q739 486 656 456T481 466Q374 506 274 468T72 490z" fill="url(#leafcut)"/>
+ <!-- open oval cut becomes a channel to the right edge -->
+ <path d="M100 555Q203 448 339 465Q473 481 551 561Q599 611 675 608Q750 605 834 554L834 738Q750 692 675 701Q596 710 535 755Q420 840 281 804Q159 772 100 679Q63 620 100 555Z" fill="#f5eddb"/>
+ <path d="M109 562Q211 458 343 475Q466 491 546 569Q599 625 678 620Q753 615 830 568" fill="none" stroke="#c89d57" stroke-width="11" stroke-dasharray="74 19 38 23" opacity=".9"/>
+ <path d="M112 573Q211 469 345 486Q469 502 551 581Q602 635 680 631Q752 626 830 579" fill="none" stroke="#5b9298" stroke-width="5" stroke-dasharray="14 16" opacity=".78"/>
+ <!-- rail held across the opening, with a small actual gap under the bird -->
+ <path d="M75 846Q253 824 414 841M501 840Q666 821 830 843L830 951Q656 929 501 946M414 946Q247 930 75 958Z" fill="#9f5140" stroke="#203b39" stroke-width="12"/>
+ <path d="M75 846Q253 824 414 841M501 840Q666 821 830 843L830 951Q656 929 501 946M414 946Q247 930 75 958Z" fill="url(#brick)"/>
+ <path d="M69 846Q246 826 414 843M501 842Q669 824 836 845" fill="none" stroke="#e2b766" stroke-width="13"/>
+ <!-- one bird, turned toward the route -->
+ <g transform="translate(353 807) scale(1.12)">
+  <path d="M-39 29Q-33-7-5-31 20-46 39-20 51 4 31 31 3 48-24 40z" fill="#397d99" stroke="#183b42" stroke-width="5"/>
+  <path d="M-22 13Q-2-8 24-11 19 16-8 29z" fill="#d8c99b" stroke="#183b42" stroke-width="4"/>
+  <path d="M18-31Q31-55 51-43 66-32 58-12L37-4 24-11z" fill="#397d99" stroke="#183b42" stroke-width="5"/>
+  <path d="M55-29l29 7-25 9z" fill="#d3a34c" stroke="#183b42" stroke-width="3"/>
+  <circle cx="48" cy="-33" r="3" fill="#f5eddb"/>
+  <path d="M-29 39l-9 17m29-13-4 15" stroke="#183b42" stroke-width="4"/>
+ </g>
+ <path d="M70 994Q171 965 264 1012T465 1018Q583 1000 680 1020T830 998V1140H70Z" fill="#203b39"/>
+ <path d="M70 994Q171 965 264 1012T465 1018Q583 1000 680 1020T830 998V1140H70Z" fill="url(#leafcut)"/>
+ <path d="M48 44l112 5 104-5 111 7 112-5 109 5 111-7 108 6 7 1088-104-5-110 7-112-6-105 5-115-7-110 6-109-7-105 7-108-5z" fill="none" stroke="#c89d57" stroke-width="5" opacity=".86"/>
+</g>
+</svg>
