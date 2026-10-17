@@ -29,13 +29,14 @@ studio = root.parent / "studios" / aid
 pub = studio / "public"
 if not pub.exists() or not any(pub.iterdir()): sys.exit(f"{aid} shows nothing yet")
 today = datetime.date.today().isoformat()
-visit = desk / "visits" / aid / today
+stamp = datetime.datetime.now().strftime("%Y-%m-%d-%H%M")  # unique per visit: several visits can fall on one day
+visit = desk / "visits" / aid / stamp
 if visit.exists(): shutil.rmtree(visit)
 shutil.copytree(pub, visit)
 before = set((desk / "articles").glob("*.md"))
-brief = (f"Read `CRITIC.md`. Today you visit the artist `{aid}`: a copy of their public pages is in `visits/{aid}/{today}/` "
+brief = (f"Read `CRITIC.md`. Today you visit the artist `{aid}`: a copy of their public pages is in `visits/{aid}/{stamp}/` "
          f"(they are online at https://inannis.github.io/orchestrator2/{aid}/). Make the visit and write the article in `articles/` "
-         f"as `{today}-{aid}.md`, then rewrite your notes.")
+         f"as `{stamp}-{aid}.md`, then rewrite your notes.")
 
 def exe(n, sub):
     w = shutil.which(n)
@@ -54,7 +55,7 @@ new = sorted(set((desk / "articles").glob("*.md")) - before)
 if not new: sys.exit("The critic wrote nothing this time.")
 art = new[-1]
 (studio / "press").mkdir(exist_ok=True)
-shutil.copy(art, studio / "press" / f"{today}-{name}.md")
+shutil.copy(art, studio / "press" / f"{stamp}-{name}.md")
 site = root / "docs" / "press" / name; site.mkdir(parents=True, exist_ok=True)
 shutil.copy(art, site / art.name)
 subprocess.run(["git", "add", "-A"], cwd=desk); subprocess.run(["git", "commit", "-qm", f"Visit to {aid}, {today}"], cwd=desk)

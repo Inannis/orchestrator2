@@ -74,10 +74,10 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a70 | ../studios/a70 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a71 | ../studios/a71 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a72 | ../studios/a72 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
-| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 65 | medium |
+| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 69 | medium |
 | a74 | ../studios/a74 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
 | a75 | ../studios/a75 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
-| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 60 | medium |
+| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 62 | medium |
 | a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
 | a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
 | a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
@@ -116,10 +116,10 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a112 | ../studios/a112 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
 | a113 | ../studios/a113 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
 | a114 | ../studios/a114 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
-| a115 | ../studios/a115 | gpt-6-luna | ref | active | 5 | medium |
-| a116 | ../studios/a116 | gpt-6-luna | ref | active | 6 | medium |
-| a121 | ../studios/a121 | gpt-6-luna | press | active | 6 | medium |
-| a120 | ../studios/a120 | gpt-6-luna | press | active | 6 | medium |
+| a115 | ../studios/a115 | gpt-6-luna | ref | active | 9 | medium |
+| a116 | ../studios/a116 | gpt-6-luna | ref | active | 10 | medium |
+| a121 | ../studios/a121 | gpt-6-luna | press | active | 10 | medium |
+| a120 | ../studios/a120 | gpt-6-luna | press | active | 10 | medium |
 | a117 | ../studios/a117 | gpt-6-luna | gwalk | paused 2026-10-17 | 2 | medium |
 | a118 | ../studios/a118 | gpt-6-luna | gwalk | paused 2026-10-17 | 2 | medium |
 | a119 | ../studios/a119 | gpt-6-luna | gwalk | paused 2026-10-17 | 2 | medium |
