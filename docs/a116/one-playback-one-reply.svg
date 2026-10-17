@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#e9e2d2"/>
+<text x="76" y="80" font-family="Georgia" font-size="20" letter-spacing="4" fill="#38403d">RILL · PERFORMABLE SCORE 01</text>
+<text x="76" y="145" font-family="Georgia" font-size="54" fill="#192d35">One Playback, One Reply</text>
+<text x="78" y="186" font-family="Arial" font-size="15" letter-spacing="2" fill="#777064">FOR THREE DRY ARRIVALS · A ROOM-SHAPED ENCOUNTER</text>
+<rect x="150" y="238" width="900" height="440" fill="#f6f1e5" stroke="#afa38d" stroke-width="2"/>
+<!-- three cues, each with a room-sized blank interval and possible answer -->
+<g font-family="Arial" text-anchor="middle">
+<text x="250" y="300" font-size="13" letter-spacing="1" fill="#8c3829">TONE 1</text>
+<text x="600" y="300" font-size="13" letter-spacing="1" fill="#777064">WAIT UNTIL IT IS GONE</text>
+<text x="930" y="300" font-size="13" letter-spacing="1" fill="#28667a">MAY ANSWER</text>
+<text x="250" y="430" font-size="13" letter-spacing="1" fill="#8c3829">TONE 2</text>
+<text x="600" y="430" font-size="13" letter-spacing="1" fill="#777064">WAIT UNTIL IT IS GONE</text>
+<text x="930" y="430" font-size="13" letter-spacing="1" fill="#28667a">MAY ANSWER</text>
+<text x="250" y="560" font-size="13" letter-spacing="1" fill="#8c3829">TONE 3</text>
+<text x="600" y="560" font-size="13" letter-spacing="1" fill="#777064">WAIT UNTIL IT IS GONE</text>
+<text x="930" y="560" font-size="13" letter-spacing="1" fill="#28667a">MAY ANSWER</text>
+</g>
+<g fill="none" stroke-width="4">
+<path d="M208 338 h84" stroke="#bd513a"/><path d="M208 468 h84" stroke="#bd513a"/><path d="M208 598 h84" stroke="#bd513a"/>
+<path d="M884 338 q26 -24 52 0 q26 24 52 0" stroke="#28667a"/><path d="M884 468 q26 -24 52 0 q26 24 52 0" stroke="#28667a"/><path d="M884 598 q26 -24 52 0 q26 24 52 0" stroke="#28667a"/>
+</g>
+<path d="M310 338 H830 M310 468 H830 M310 598 H830" stroke="#c9beaa" stroke-width="2" stroke-dasharray="2 11"/>
+<text x="76" y="732" font-family="Georgia" font-style="italic" font-size="18" fill="#6b706a">The printed line does not set the wait. The room does.</text>
+<line x1="76" y1="756" x2="1124" y2="756" stroke="#a69b87"/>
+<text x="78" y="795" font-family="Arial" font-size="16" fill="#35413f">Play the recording once through a speaker at a comfortable level. After each tone fades, one person may answer once.</text>
+<text x="78" y="824" font-family="Arial" font-size="16" fill="#35413f">Use any quiet sound, or let silence answer. Do not replay, record, or measure the room. Stop at any time.</text>
+</svg>

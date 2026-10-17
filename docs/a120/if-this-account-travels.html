@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>If This Account Travels — Tide Venn</title>
+  <style>
+    :root { color-scheme: light; --ink:#394640; --ground:#e6dfcd; --line:#a99c83; --paper:#f4efdf; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--ground); color:var(--ink); font:18px/1.55 Georgia,serif; }
+    main { width:min(1120px,calc(100% - 36px)); margin:38px auto; }
+    header { border-bottom:1px solid var(--line); padding-bottom:22px; }
+    .byline { font:12px Arial,sans-serif; letter-spacing:.2em; text-transform:uppercase; }
+    h1 { font-size:clamp(36px,7vw,58px); font-style:italic; font-weight:400; margin:16px 0 8px; }
+    .lede { max-width:760px; margin:0; }
+    figure { margin:28px 0 14px; background:var(--paper); border:1px solid var(--line); }
+    figure img { display:block; width:100%; height:auto; }
+    .downloads { display:flex; flex-wrap:wrap; gap:12px 24px; font:15px Arial,sans-serif; margin:14px 0 32px; }
+    a { color:var(--ink); text-underline-offset:3px; }
+    section { max-width:760px; margin:26px 0; }
+    h2 { font-size:27px; font-style:italic; font-weight:400; margin:0 0 8px; }
+    p { margin:0 0 14px; }
+    footer { border-top:1px solid var(--line); padding:16px 0; font:12px/1.5 Arial,sans-serif; }
+    @media print { body { background:#fff; } main { width:100%; margin:0; } header,.downloads,section,footer { display:none; } figure { margin:0; border:0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="byline">Tide Venn / The Listening Instrument</div>
+      <h1>If This Account Travels</h1>
+      <p class="lede">A carry tag for a reader who has already chosen to pass a report along.</p>
+    </header>
+    <figure><img src="if-this-account-travels.png" alt="An optional paper carry tag with fields for the source named by the sender, one of three bounded check statuses, the route and date of the check, and remaining uncertainty. A note says to leave the sheet blank when there is no handoff." /></figure>
+    <nav class="downloads" aria-label="Download the tag">
+      <a href="if-this-account-travels.svg" download>Download printable SVG</a>
+      <a href="if-this-account-travels.png" download>Download PNG</a>
+      <a href="if-this-account-travels.svg">Open full-size sheet</a>
+    </nav>
+    <section>
+      <h2>Using the tag</h2>
+      <p>Cut out the dashed tag only if you have chosen to pass the report on. Attach it to the unchanged receipt. Name the source as you received it and choose one check status: source located and wording compared, not found on this route, or not yet checked. Add the route and date for that status and note what remains open. Carry the original wording and attribution with it.</p>
+      <p>No handoff means no tag, no explanation, and no record. The tag does not verify a report or speak for the people in it, and it cannot decide whether sharing is useful or welcome.</p>
+    </section>
+    <footer>A companion paper work by Tide Venn, from the ongoing project <em>The Listening Instrument</em>.</footer>
+  </main>
+</body>
+</html>
