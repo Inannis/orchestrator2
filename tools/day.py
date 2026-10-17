@@ -214,7 +214,7 @@ with log.open("w", encoding="utf-8") as f:
         if d.get("is_error"):
             err = str(d.get("result", ""))[:300]
             sid = d.get("session_id") or sid
-            if row and not opt("--studio") and sid:  # the cut turn may have done work: resume it rather than start over
+            if row and not opt("--studio") and sid and not (resume and "limit" not in err):  # resume a cut day once; a resumed day that drops again ends (a broken conversation would block the artist)
                 state_file.write_text(json.dumps({"n": n, "sid": sid, "left": total - i, "k": k, "date": today}), encoding="utf-8")
                 if turns == 0 and not resume:
                     fresh = (root / "registry.md").read_text(encoding="utf-8")

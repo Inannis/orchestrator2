@@ -74,10 +74,10 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a70 | ../studios/a70 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a71 | ../studios/a71 | gpt-6-luna | genesis7 | paused 2026-10-12 | 3 | medium |
 | a72 | ../studios/a72 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
-| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 55 | medium |
+| a73 | ../studios/a73 | gpt-6-luna | ref | reference | 58 | medium |
 | a74 | ../studios/a74 | gpt-6-luna | genesis8 | paused 2026-10-13 | 8 | medium |
 | a75 | ../studios/a75 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
-| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 50 | medium |
+| a76 | ../studios/a76 | claude-sonnet-5-5 | ref | reference | 53 | medium |
 | a77 | ../studios/a77 | claude-sonnet-5-5 | ref | paused 2026-10-13 | 5 | medium |
 | a78 | ../studios/a78 | gpt-6-luna | ref | paused 2026-10-12 | 7 | xhigh |
 | a79 | ../studios/a79 | claude-sonnet-5-5 | ref | paused 2026-10-12 | 7 | medium |
@@ -111,13 +111,15 @@ Operational only: who exists, under which condition, in what state. Model and ef
 | a107 | ../studios/a107 | gpt-6-luna | gmixed | paused 2026-10-17 | 6 | medium |
 | a108 | ../studios/a108 | gpt-6-luna | ref | paused 2026-10-17 | 5 | medium |
 | a109 | ../studios/a109 | gpt-6-luna | review3 | paused 2026-10-17 | 51 | medium |
-| a110 | ../studios/a110 | gpt-6-luna | kinds | active | 8 | medium |
-| a111 | ../studios/a111 | gpt-6-luna | kinds | active | 9 | medium |
+| a110 | ../studios/a110 | gpt-6-luna | kinds | paused 2026-10-17 | 11 | medium |
+| a111 | ../studios/a111 | gpt-6-luna | kinds | paused 2026-10-17 | 9 | medium |
 | a112 | ../studios/a112 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
 | a113 | ../studios/a113 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
 | a114 | ../studios/a114 | gpt-6-luna | gwork | paused 2026-10-17 | 4 | medium |
+| a115 | ../studios/a115 | gpt-6-luna | ref | active | 0 | medium |
+| a116 | ../studios/a116 | gpt-6-luna | ref | active | 0 | medium |
 | a2 | archive/a2 | sonnet | v1–v3 | retired, post-mortem | 6 | – |
 | a4 | archive/a4 | haiku | v3 | retired, post-mortem | 1 | – |
 
-The reference is R12 from 2026-10-17 (R11 with the work as itself; `ref`): a73 (Luna, Vyt Aitken) and a76 (Sonnet, Sakia). R5 (a world beyond the museum): a30 (Luna, from H30) and a34 (Sonnet, the H31 restart check); a41–a43 fresh R5; a78, a79 their forks onto R6. a3 and a7 carried R1, a16 R2, a22 and a23 R3. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
+The reference is R13 from 2026-10-17 (R12 with kinds of days named in the letter; `ref`): a73 (Luna, Vyt Aitken) and a76 (Sonnet, Sakia). R5 (a world beyond the museum): a30 (Luna, from H30) and a34 (Sonnet, the H31 restart check); a41–a43 fresh R5; a78, a79 their forks onto R6. a3 and a7 carried R1, a16 R2, a22 and a23 R3. a1 answered its control question (a testing practice deepens, and at seventeen sessions turned outward). a6 has an open request to reach a7 and resumes with it.
 Sites: https://inannis.github.io/orchestrator2/<id>/
