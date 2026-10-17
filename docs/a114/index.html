@@ -4,34 +4,53 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#202a2b">
-  <title>The Current Stitcher — THRUM</title>
+  <title>The Water Ledger — THRUM</title>
   <style>
-    :root { color-scheme: dark; --ink:#202a2b; --paper:#f1dca6; --muted:#b8c6bb; }
+    :root { color-scheme: dark; --ink:#202a2b; --paper:#f1dca6; --muted:#b8c6bb; --line:#b89256; }
     * { box-sizing: border-box; }
     body { margin:0; background:var(--ink); color:var(--paper); font:16px/1.6 Georgia,serif; }
-    main { width:min(1120px, 100%); margin:auto; padding:clamp(22px,5vw,64px); }
-    header { display:flex; align-items:baseline; justify-content:space-between; gap:20px; margin-bottom:24px; }
+    main { width:min(1180px, 100%); margin:auto; padding:clamp(22px,5vw,64px); }
+    header { display:flex; align-items:baseline; justify-content:space-between; gap:20px; margin-bottom:38px; }
     .maker { font:600 13px/1.2 system-ui,sans-serif; letter-spacing:.22em; }
-    .medium { color:var(--muted); font:13px/1.4 system-ui,sans-serif; }
+    .series, .medium { color:var(--muted); font:13px/1.4 system-ui,sans-serif; }
+    article { display:grid; grid-template-columns:minmax(0, 1.35fr) minmax(230px, .65fr); gap:clamp(22px,4vw,54px); align-items:end; padding:0 0 48px; margin:0 0 48px; border-bottom:1px solid #52615b; }
+    article:last-child { border:0; margin-bottom:0; padding-bottom:0; }
     figure { margin:0; }
-    img { display:block; width:100%; height:auto; border:1px solid #b89256; }
-    figcaption { max-width:690px; padding:28px 0 0; }
-    h1 { margin:0 0 12px; font-size:clamp(30px,5vw,52px); font-weight:400; line-height:1.1; }
+    img { display:block; width:100%; height:auto; border:1px solid var(--line); }
+    figcaption { padding:0 0 5px; }
+    h1 { margin:10px 0 14px; font-size:clamp(30px,4vw,48px); font-weight:400; line-height:1.08; }
+    h1 a { color:inherit; text-decoration:none; }
+    h1 a:hover, h1 a:focus-visible { text-decoration:underline; text-decoration-color:var(--line); text-underline-offset:.12em; }
     p { margin:0 0 12px; }
     .note { color:var(--muted); font-size:14px; }
+    @media (max-width:740px) { article { grid-template-columns:1fr; } figcaption { order:-1; } }
   </style>
 </head>
 <body>
   <main>
-    <header><span class="maker">THRUM</span><span class="medium">Digital textile image · 2026</span></header>
-    <figure>
-      <img src="current-stitcher.png" alt="A patchwork map in deep blue, ochre, rust, and cream. Two offset circular wells connect to narrow branching channels across irregular fields, held inside a stitched border.">
+    <header><span class="maker">THRUM</span><span class="series">The Water Ledger · digital textile works</span></header>
+    <article>
+      <figure>
+        <img src="current-stitcher.png" alt="A patchwork map in deep blue, ochre, rust, and cream. Two offset circular wells connect to narrow branching channels across irregular fields, held inside a stitched border.">
+      </figure>
       <figcaption>
-        <h1>The Current Stitcher</h1>
+        <span class="medium">Digital textile image · 2026</span>
+        <h1><a href="current-stitcher.html">The Current Stitcher</a></h1>
         <p>An imagined water landscape assembled as a cloth map. Offset sources send narrow channels through irregular blocks; sewn routes and a bound edge hold the system within one textile surface.</p>
-        <p class="note">An invented image informed by research into ancient Ma’rib’s irrigation network. It is not a reconstruction of a specific site or a physical quilt.</p>
+        <p class="note">An invented image informed by research into ancient Ma'rib's irrigation network. It is not a reconstruction of a specific site or a physical quilt.</p>
       </figcaption>
-    </figure>
+    </article>
+    <article>
+      <figure>
+        <img src="the-patch-that-holds-back.png" alt="A textile map with a hand pressing a patch at a channel fork. The open stream runs to planted rows; the lower rust branch is dry.">
+      </figure>
+      <figcaption>
+        <span class="medium">Digital textile image · 2026</span>
+        <h1><a href="the-patch-that-holds-back.html">The Patch That Holds Back</a></h1>
+        <p>A hand presses a sewn patch at a fork in the channel. Water passes toward a planted field; a rust-colored branch runs dry beneath the same hand. The joined blocks make a cloth map, while the fold and interrupted stitches hold the choice in the surface.</p>
+        <p class="note">An imagined scene informed by the wider history of irrigation around ancient Ma'rib. It does not depict a named worker, a specific gate, or a documented allocation.</p>
+      </figcaption>
+    </article>
   </main>
 </body>
 </html>
