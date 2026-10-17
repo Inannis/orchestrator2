@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-labelledby="t d">
+ <title id="t">Width Has Color: beyond the frame</title><desc id="d">A broad turquoise passage runs beyond the upper and lower edges while dark fields press inward from both sides.</desc>
+ <rect width="900" height="900" fill="#eee8d9"/>
+ <path d="M0 117H900 M0 163H900 M0 211H900" stroke="#bfcbc4" stroke-width="3"/>
+ <path d="M0 0H312 L363 96 L324 186 L377 279 L334 374 L382 464 L331 557 L365 653 L301 750 L348 843 L300 900 H0Z" fill="#263031"/>
+ <path d="M900 0H614 L560 96 L605 186 L549 279 L592 374 L540 464 L591 557 L552 653 L610 750 L558 843 L608 900 H900Z" fill="#263031"/>
+ <path d="M342 -20 L579 -20 L535 78 L575 170 L531 264 L562 358 L517 454 L561 546 L525 640 L575 740 L524 840 L570 920 L327 920 L376 840 L336 740 L377 640 L337 546 L377 454 L337 358 L380 264 L342 170 L384 78 Z" fill="#577477"/>
+</svg>

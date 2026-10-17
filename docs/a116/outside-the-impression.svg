@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="2835" height="3780" viewBox="0 0 900 1200">
+  <title>Outside the Impression</title>
+  <desc>A dark green field and red built wall are printed inside a straight-edged cream sheet. A wide unprinted cut opens across the wall. Two slightly misregistered blue contours cross the cut and continue past both paper edges into the transparent mount.</desc>
+  <defs>
+    <clipPath id="field"><rect x="96" y="96" width="708" height="1008"/></clipPath>
+  </defs>
+  <rect x="72" y="72" width="756" height="1056" fill="#eee4ce"/>
+  <rect x="96" y="96" width="708" height="1008" fill="#263b38"/>
+  <g clip-path="url(#field)">
+    <path d="M74 390 C203 349 302 400 412 374 C548 341 668 386 826 353 L826 808 C685 774 575 838 448 795 C315 752 204 826 74 778 Z" fill="#a45140"/>
+    <path d="M50 612 C192 589 298 610 424 562 C554 514 662 489 850 463 L850 561 C692 589 590 604 467 659 C318 725 197 695 50 730 Z" fill="#eee4ce"/>
+  </g>
+  <path d="M50 596 C194 573 303 594 429 546 C560 498 670 474 850 447" fill="none" stroke="#203b39" stroke-width="29" stroke-dasharray="32 17 10 18"/>
+  <path d="M50 584 C194 561 303 582 429 534 C560 486 670 462 850 435" fill="none" stroke="#73bfd0" stroke-width="16" stroke-dasharray="32 17 10 18"/>
+  <path d="M50 637 C194 615 301 632 428 589 C556 545 669 518 850 492" fill="none" stroke="#c89d57" stroke-width="5" stroke-dasharray="2 20"/>
+</svg>

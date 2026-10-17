@@ -1,0 +1,22 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1180" viewBox="0 0 1000 1180">
+<rect width="1000" height="1180" fill="#f3eddf"/>
+<text x="72" y="82" font-family="Georgia,serif" font-size="44" fill="#282923">The Room Finishes Last</text>
+<text x="75" y="117" font-family="Arial,sans-serif" font-size="14" letter-spacing="2.4" fill="#777365">A PERFORMABLE SCORE FOR TWO PEOPLE IN A RESONANT ROOM</text>
+<rect x="120" y="170" width="760" height="430" fill="#ebe4d6" stroke="#716d5f" stroke-width="2"/>
+<path d="M153 384 C220 335 279 433 345 384 S472 335 538 384" fill="none" stroke="#466d79" stroke-width="7" stroke-linecap="round"/>
+<path d="M153 384 C230 303 296 465 375 384 S512 303 591 384 S744 465 824 384" fill="none" stroke="#a54634" stroke-width="3" opacity=".75"/>
+<circle cx="190" cy="384" r="13" fill="#282923"/><circle cx="812" cy="384" r="13" fill="#a54634"/>
+<text x="168" y="334" font-family="Arial,sans-serif" font-size="15" letter-spacing="1" fill="#59584f">A · STARTS</text><text x="766" y="334" font-family="Arial,sans-serif" font-size="15" letter-spacing="1" fill="#59584f">B · RETURNS</text>
+<text x="360" y="530" font-family="Arial,sans-serif" font-size="14" letter-spacing="2" fill="#716d5f">THE SOUND'S NATURAL TAIL</text>
+<text x="76" y="668" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="#a54634">THE SCORE</text>
+<text x="76" y="715" font-family="Georgia,serif" font-size="21" fill="#282923">1.</text><text x="116" y="715" font-family="Georgia,serif" font-size="21" fill="#282923">Stand apart in a room that lets an unamplified sound linger.</text>
+<text x="76" y="768" font-family="Georgia,serif" font-size="21" fill="#282923">2.</text><text x="116" y="768" font-family="Georgia,serif" font-size="21" fill="#282923">A makes one soft handclap. B waits for the last trace to disappear.</text>
+<text x="76" y="821" font-family="Georgia,serif" font-size="21" fill="#282923">3.</text><text x="116" y="821" font-family="Georgia,serif" font-size="21" fill="#282923">The answerer moves to another place in the room, then claps once.</text>
+<text x="76" y="874" font-family="Georgia,serif" font-size="21" fill="#282923">4.</text><text x="116" y="874" font-family="Georgia,serif" font-size="21" fill="#282923">After each return fades, either person may answer or let it end.</text>
+<text x="116" y="905" font-family="Georgia,serif" font-size="21" fill="#282923">If no one answers after one easy breath, both leave in silence.</text>
+<path d="M76 953 H924" stroke="#c9bfad" stroke-width="1.5"/>
+<text x="76" y="996" font-family="Arial,sans-serif" font-size="15" fill="#59584f">No counts, recorded echo, or fixed route. Let the room set each interval.</text>
+<text x="76" y="1028" font-family="Arial,sans-serif" font-size="15" fill="#59584f">If its tail is short, the piece is short. The unreturned sound is the ending.</text>
+<text x="76" y="1090" font-family="Arial,sans-serif" font-size="12" letter-spacing="1" fill="#777365">RILL · SCORE, 2026</text>
+</svg>
+
