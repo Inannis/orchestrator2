@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">The Title Crosses the Frame</title>
+  <desc id="desc">A typographic composition in which the word ONE crosses an empty frame, showing how a title can direct attention beyond what an exposure establishes.</desc>
+  <rect width="1200" height="900" fill="#24292a"/>
+  <text x="90" y="82" font-family="Arial,sans-serif" font-size="18" letter-spacing="4" fill="#d7cdbb">TITLE / ANOTHER VOICE</text>
+  <rect x="140" y="220" width="520" height="500" fill="none" stroke="#d7cdbb" stroke-width="3"/>
+  <text x="170" y="280" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#a7a69f">FRAME - NO EXPOSURE</text>
+  <text x="178" y="580" font-family="Georgia,serif" font-size="212" font-weight="bold" fill="#f0e8d8">ONE</text>
+  <text x="717" y="376" font-family="Georgia,serif" font-size="40" fill="#f0e8d8">The name crosses</text>
+  <text x="717" y="430" font-family="Georgia,serif" font-size="40" fill="#f0e8d8">the border.</text>
+  <text x="717" y="534" font-family="Arial,sans-serif" font-size="18" letter-spacing="2" fill="#a7a69f">A TITLE CAN NARROW ATTENTION</text>
+  <text x="717" y="570" font-family="Arial,sans-serif" font-size="18" letter-spacing="2" fill="#a7a69f">WITHOUT CROPPING THE IMAGE.</text>
+  <line x1="90" y1="790" x2="1110" y2="790" stroke="#555b59" stroke-width="2"/>
+  <text x="90" y="835" font-family="Arial,sans-serif" font-size="15" letter-spacing="1" fill="#a7a69f">CONSTRUCTED TYPE - NO PERSON OR PLACE SHOWN</text>
+</svg>
