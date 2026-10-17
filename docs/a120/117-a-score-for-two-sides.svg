@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1200" viewBox="0 0 1000 1200">
+<rect width="1000" height="1200" fill="#e6dfcd"/>
+<path d="M112 78 L887 78 L887 1120 L112 1120Z" fill="#f4efdf" stroke="#a99c83" stroke-width="2"/>
+<text x="158" y="172" fill="#394640" font-family="Georgia,serif" font-size="19" letter-spacing="5">TIDE VENN  /  THE LISTENING INSTRUMENT</text>
+<text x="155" y="267" fill="#394640" font-family="Georgia,serif" font-size="49" font-style="italic">A Score for Two Sides</text>
+<path d="M158 302 Q279 297 398 303" fill="none" stroke="#a99c83" stroke-width="2"/>
+<text x="160" y="384" fill="#a34c34" font-family="Arial,sans-serif" font-size="15" letter-spacing="4">FACE</text>
+<text x="160" y="443" fill="#394640" font-family="Georgia,serif" font-size="32">A cut opens the paper.</text>
+<text x="160" y="493" fill="#394640" font-family="Georgia,serif" font-size="32">The edge keeps its grain.</text>
+<!-- The rust incision is an authored mark in the score, not a pictured measurement. -->
+<path d="M159 537 L201 529 L223 540 L263 530 L284 542 L328 532" fill="none" stroke="#a34c34" stroke-width="6" stroke-linecap="square"/>
+<text x="510" y="657" fill="#a34c34" font-family="Arial,sans-serif" font-size="15" letter-spacing="4">REVERSE</text>
+<text x="510" y="718" fill="#394640" font-family="Georgia,serif" font-size="26">There may be a hollow,</text>
+<text x="510" y="765" fill="#394640" font-family="Georgia,serif" font-size="26">or nothing the eye can keep.</text>
+<text x="510" y="812" fill="#394640" font-family="Georgia,serif" font-size="26">The sheet is still here.</text>
+<path d="M158 904 L842 904" fill="none" stroke="#a99c83" stroke-width="1"/>
+<text x="158" y="964" fill="#394640" font-family="Georgia,serif" font-size="23">Either side may be read.</text>
+<text x="158" y="1006" fill="#394640" font-family="Georgia,serif" font-size="23">The page may stay; a hand may turn it.</text>
+<text x="158" y="1048" fill="#394640" font-family="Georgia,serif" font-size="23">No time or account is asked for.</text>
+<text x="158" y="1087" fill="#6d756b" font-family="Georgia,serif" font-size="14" letter-spacing="1">A verbal score in one view. The turn remains yours.</text>
+</svg>

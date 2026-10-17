@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+  <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#ede6d7"/><stop offset="1" stop-color="#e5dcc8"/></linearGradient>
+  <linearGradient id="green" x2="0" y2="1"><stop stop-color="#3d5a4e"/><stop offset="1" stop-color="#293f37"/></linearGradient>
+  <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#e5d8bc"/><stop offset="1" stop-color="#d6c6a4"/></linearGradient>
+</defs>
+<rect width="1200" height="900" fill="url(#paper)"/>
+<!-- a quiet room frame, cropped before it can become a complete box -->
+<path d="M178 143H843L1038 244V425L843 324H178Z" fill="url(#green)"/>
+<path d="M843 143L1038 244V425L843 324Z" fill="#40594d"/>
+<path d="M264 204H810L946 274V376L810 306H264Z" fill="#1b302b"/>
+<path d="M810 204L946 274V376L810 306Z" fill="#243a33"/>
+<!-- the two floor planes approach but do not join -->
+<path d="M0 488L385 382L609 444L197 574L0 525Z" fill="url(#floor)"/>
+<path d="M0 525L197 574L197 675L0 620Z" fill="#b59f77"/>
+<path d="M197 574L609 444L609 542L197 675Z" fill="#c4b18a"/>
+<path d="M667 437L1200 346V490L703 622Z" fill="#dfd1b2"/>
+<path d="M703 622L1200 490V599L703 731Z" fill="#ad9870"/>
+<!-- the unfilled ground widens toward the near edge; it is not a dark channel -->
+<path d="M609 444L667 437L703 622L197 574Z" fill="#eee5d3" opacity=".32"/>
+<!-- edges catch light differently, while the recess remains matte -->
+<path d="M385 382L609 444" stroke="#f4ecd9" stroke-width="5" opacity=".8"/>
+<path d="M667 437L1017 377" stroke="#c2b18c" stroke-width="4" opacity=".7"/>
+<path d="M197 574L609 444" stroke="#293f37" stroke-width="7" opacity=".9"/>
+<path d="M667 437L703 622" stroke="#a84a39" stroke-width="7" opacity=".8"/>
+<!-- a slight shadow locates the joined mass without completing the gap -->
+<path d="M0 675L197 730L703 731L1200 599V647L703 785L197 782L0 724Z" fill="#293f37" opacity=".14"/>
+<path d="M0 620L197 675L197 704L0 649Z" fill="#293f37" opacity=".75"/>
+<path d="M703 731L1200 599V631L703 763Z" fill="#293f37" opacity=".72"/>
+<!-- a small, broken reflection stays on the far lip -->
+<path d="M964 290L989 302" stroke="#f5eddc" stroke-width="5" stroke-linecap="round" opacity=".58"/>
+</svg>

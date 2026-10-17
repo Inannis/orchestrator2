@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="800" viewBox="0 0 1120 800">
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2=".92" y2="1"><stop stop-color="#f1ead8"/><stop offset="1" stop-color="#c9bea6"/></linearGradient>
+  <filter id="shadow"><feGaussianBlur stdDeviation="15"/></filter>
+</defs>
+<rect width="1120" height="800" fill="#26312f"/>
+<!-- One imagined sheet against the dark ground. -->
+<path d="M140 106 L934 74 L1004 661 L191 722Z" fill="#0c1614" opacity=".68" filter="url(#shadow)" transform="translate(12 16)"/>
+<path d="M140 106 L934 74 L1004 661 L191 722Z" fill="url(#paper)" stroke="#f5ecda" stroke-width="5"/>
+<!-- Two ink fields stop at an irregular cut; they do not describe a landscape. -->
+<path d="M176 143 L383 120 L518 165 L550 253 L501 311 L414 332 L339 299 L252 321 L183 274Z" fill="#a64b34"/>
+<path d="M605 127 L829 111 L914 185 L901 275 L821 311 L727 279 L654 302 L587 237Z" fill="#d2c5ac"/>
+<path d="M526 488 L623 464 L704 491 L759 467 L827 496 L894 476 L963 514 L979 604 L873 633 L783 600 L693 638 L614 607 L540 629 L481 589Z" fill="#a64b34"/>
+<!-- A single broad, torn channel exposes ground through the sheet and the fold. -->
+<path d="M140 352 L250 327 L323 350 L394 327 L460 363 L531 340 L594 374 L666 347 L726 383 L797 356 L857 389 L929 365 L954 395 L885 421 L817 407 L748 438 L681 410 L613 445 L545 411 L477 446 L411 410 L342 436 L273 405 L194 430 L140 414Z" fill="#26312f"/>
+<!-- The cut turns under the fold. Its dark opening continues, while the back stays unprinted. -->
+<path d="M140 352 L250 327 L323 350 L394 327 L460 363 L477 446 L411 410 L342 436 L273 405 L194 430 L140 414Z" fill="#26312f"/>
+<path d="M140 106 L365 314 L191 722Z" fill="#b9ad96"/>
+<path d="M140 106 L365 314 L191 722" fill="none" stroke="#8a9184" stroke-width="6"/>
+<path d="M140 106 L365 314 L477 446" fill="none" stroke="#f8efdd" stroke-width="5"/>
+<!-- One short pulp-colored fiber ends before the opening. -->
+<path d="M265 563 Q294 547 322 553 Q342 558 352 574" fill="none" stroke="#a64b34" stroke-width="12" stroke-linecap="round"/>
+<path d="M266 559 Q292 545 318 551" fill="none" stroke="#d98767" stroke-width="3" stroke-linecap="round"/>
+<path d="M715 202 L738 195 M780 220 L797 217" stroke="#fff6e4" stroke-width="4" opacity=".82"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1320" viewBox="0 0 900 1320">
+<rect width="900" height="1320" fill="#f1eee5"/>
+<text x="82" y="78" font-family="Arial,sans-serif" font-size="15" letter-spacing="3" fill="#245c57">RILL / A ROOM READ BY LISTENING</text>
+<text x="82" y="174" font-family="Georgia,serif" font-size="57" fill="#252e2b">Another Time</text>
+<text x="82" y="239" font-family="Georgia,serif" font-size="57" font-style="italic" fill="#a44331">Is New</text>
+<text x="82" y="288" font-family="Arial,sans-serif" font-size="17" fill="#785840">A finished score for three people sharing a room</text>
+<path d="M82 326H818" stroke="#245c57" stroke-width="2"/>
+<text x="82" y="391" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" fill="#245c57">BEFORE</text>
+<text x="82" y="444" font-family="Georgia,serif" font-size="25" fill="#252e2b"><tspan x="82" dy="0">Choose a small event together, or choose none.</tspan><tspan x="82" dy="37">Agree how each person may pause or leave,</tspan><tspan x="82" dy="37">and where the host should be. Begin only when</tspan><tspan x="82" dy="37">each person chooses to join.</tspan></text>
+<path d="M82 624H818" stroke="#b99b75" stroke-width="1"/>
+<text x="82" y="684" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" fill="#245c57">NOW</text>
+<text x="82" y="735" font-family="Georgia,serif" font-size="25" fill="#252e2b"><tspan x="82" dy="0">Anyone may pause or leave in their chosen way.</tspan><tspan x="82" dy="37">This event ends. No reason or report is due.</tspan></text>
+<path d="M82 817H410" stroke="#a44331" stroke-width="3"/>
+<circle cx="410" cy="817" r="6" fill="#a44331"/>
+<text x="82" y="866" font-family="Arial,sans-serif" font-size="14" fill="#625b50">The host makes no follow-up offer.</text>
+<text x="82" y="937" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" fill="#245c57">LATER</text>
+<text x="82" y="988" font-family="Georgia,serif" font-size="25" fill="#252e2b"><tspan x="82" dy="0">A participant may offer a new event, or not.</tspan><tspan x="82" dy="37">The offer obliges no one to join.</tspan></text>
+<text x="82" y="1094" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" fill="#245c57">NEW</text>
+<text x="82" y="1144" font-family="Georgia,serif" font-size="25" fill="#252e2b"><tspan x="82" dy="0">Begin only if everyone chooses again,</tspan><tspan x="82" dy="37">with new terms. Passing needs no reason.</tspan></text>
+<path d="M82 1231H818" stroke="#245c57" stroke-width="2"/>
+<text x="82" y="1272" font-family="Arial,sans-serif" font-size="13" fill="#625b50">Composed score; no performance or room response is represented.</text>
+</svg>
